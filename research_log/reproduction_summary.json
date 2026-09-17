@@ -1,0 +1,62 @@
+{
+  "num_episodes": 30,
+  "accepted": 14,
+  "failed_anchor": 0,
+  "failed_target": 16,
+  "accept_rate": 0.4666666666666667,
+  "mean_initial_target_iou": 0.21192905043395602,
+  "mean_final_target_iou": 0.40144853602028,
+  "mean_final_anchor_iou": 0.7487211295091936,
+  "direct_target_attempts": 90,
+  "direct_target_accepts": 0,
+  "direct_target_accept_rate": 0.0,
+  "enhancement_attempts": 60,
+  "enhancement_recoveries": 10,
+  "enhancement_recovery_rate": 0.16666666666666666,
+  "anchor_attempts": 0,
+  "focus_attempts": 30,
+  "local_enhance_attempts": 60,
+  "local_target_attempts": 30,
+  "local_anchor_attempts": 0,
+  "local_ref_target_attempts": 30,
+  "local_seg_attempts": 60,
+  "local_seg_accepts": 12,
+  "local_seg_improved": 0,
+  "local_seg_rollbacks": 35,
+  "local_seg_improvement_rate": 0.0,
+  "rollback_attempts": 0,
+  "rollback_improved": 0,
+  "rollback_improvement_rate": 0.0,
+  "rollback_final_count": 0,
+  "final_path_counts": {
+    "max_steps_best_target": 30
+  },
+  "invalid_action_total": 0,
+  "invalid_action_rate_per_step": 0.0,
+  "mean_steps": 14.0,
+  "policy_action_counts": {
+    "SEG_TARGET_DIRECT": 90,
+    "GLOBAL_ENHANCE": 30,
+    "GLOBAL_ENHANCE_STRONG": 30,
+    "LOCAL_ENHANCE_TARGET": 30,
+    "SEG_TARGET_LOCAL": 30,
+    "ROLLBACK_LOCAL_RESULT": 60,
+    "SEG_ANCHOR": 30,
+    "BLACKOUT_WITH_ANCHOR": 30,
+    "SEG_TARGET_WITH_REF": 30,
+    "LOCAL_ENHANCE_REF_TARGET": 30,
+    "SEG_REF_TARGET_LOCAL": 30
+  },
+  "degradation": "extreme",
+  "max_items": 30,
+  "max_steps": 14,
+  "local_roi_scales_target": [
+    1.2
+  ],
+  "local_roi_scales_anchor": [
+    1.5
+  ],
+  "local_roi_scales_ref_target": [
+    1.2
+  ]
+}

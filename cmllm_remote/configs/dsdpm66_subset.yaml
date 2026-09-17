@@ -1,0 +1,46 @@
+run_name: dsdpm66_pilot
+seed: 66
+samples_per_archive: 40
+download_retries: 5
+download_chunk_mb: 8
+deepseek_model: deepseek-v4-flash
+deepseek_base_url: https://api.deepseek.com
+llm_max_retries: 3
+llm_timeout_seconds: 90
+second_validation_with_llm: true
+dataset_articles:
+  - article_id: "26135008"
+    files:
+      - name: drill_rig.zip
+        category: drill_rig
+        size: 5360264149
+        md5: 179fb072005a2e1b4531c1a3e7749b5b
+        download_url: https://ndownloader.figshare.com/files/47349031
+      - name: interaction_between_miner_and_drill_pipe.zip
+        category: interaction_between_miner_and_drill_pipe
+        size: 4793000858
+        md5: 801dc9b6532ffd16c6c5aee594378337
+        download_url: https://ndownloader.figshare.com/files/47350693
+      - name: drill_pipe.zip
+        category: drill_pipe
+        size: 9596653342
+        md5: 37a93acf17ca466147731b2f88652409
+        download_url: https://ndownloader.figshare.com/files/47383888
+  - article_id: "26135107"
+    files:
+      - name: coal_miner.zip
+        category: coal_miner
+        size: 5446428265
+        md5: c019449d9fe16e4e6592f0861af43a3c
+        download_url: https://ndownloader.figshare.com/files/47348143
+      - name: compressed_oxygen_self_rescuer.zip
+        category: compressed_oxygen_self_rescuer
+        size: 6852826853
+        md5: 0a76012539f7df23dc9ee0ca5b54afcf
+        download_url: https://ndownloader.figshare.com/files/47348419
+      - name: mining_helmet.zip
+        category: mining_helmet
+        size: 4593101027
+        md5: 38962954d872710fbdf9a9a8f36b3b19
+        download_url: https://ndownloader.figshare.com/files/47348911
+
