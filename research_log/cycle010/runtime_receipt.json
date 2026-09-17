@@ -1,0 +1,20 @@
+{
+  "run_id": "20260918-074352-cma-cycle010-mgr",
+  "started_at": "2026-09-18T07:43:57+08:00",
+  "finished_at": "2026-09-18T07:44:55+08:00",
+  "duration_seconds": 58,
+  "exit_code": 0,
+  "tests_passed": 32,
+  "new_training_runs": 0,
+  "full_regression_groups": 1,
+  "mgr_validation_groups": 50,
+  "mgr_validation_runs": 1,
+  "confirmation_or_diagnostic_calls": 0,
+  "gate": "FAIL",
+  "replay_archive": {
+    "path": "research_log/cycle010_replay.tgz",
+    "bytes": 663268,
+    "sha256": "2f4d72eeb22362466604dd9a2ef5a27061eed1d88a2eb24dda1e6f76c0e9e785",
+    "local_remote_hash_match": true
+  }
+}

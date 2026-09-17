@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 
 from counterfactual_export import condition_image, export_group, group_seed
+from memory_reobservation import memory_roi, crop_to_roi, bbox_in_roi, restore_mask
 
 import cv2
 import numpy as np
@@ -212,6 +213,7 @@ def build_item(
     main_condition=None,
     ref_condition=None,
     enhance_image=None,
+    reobservation_receipt=None,
 ):
     pair_ids = cf["pair_ids"]
     pairs = [pairs_by_id[pair_id] for pair_id in pair_ids]
@@ -233,13 +235,28 @@ def build_item(
 
     target_masks = [read_mask(pair["helmet_mask_path"], ori_size) for pair in pairs]
     ref_masks = [read_mask(pair["miner_mask_path"], ori_size) for pair in pairs]
-    ref_bboxes = [norm_bbox(pair["miner_bbox_xyxy"], ori_size) for pair in pairs]
+    original_rgb, original_targets, original_refs = image_rgb, target_masks, ref_masks
+    pixel_bboxes = [pair["miner_bbox_xyxy"] for pair in pairs]
+    if reobservation_receipt is not None:
+        # Each identity has its own main observation. ROI never reads helmet GT.
+        assert len(pairs) == 1
+        roi = memory_roi(pixel_bboxes[0], ori_size)
+        image_rgb = crop_to_roi(image_rgb, roi)
+        ref_rgb = crop_to_roi(ref_rgb, roi)
+        ref_masks = [crop_to_roi(ref_masks[0], roi)]
+        pixel_bboxes = [bbox_in_roi(pixel_bboxes[0], roi)]
+        # Inference needs a shape placeholder, not cropped helmet labels.
+        target_masks = [np.zeros(image_rgb.shape[:2], dtype=np.float32)]
+        reobservation_receipt.update(roi_xyxy=list(roi), original_hw=list(ori_size),
+                                     crop_hw=list(image_rgb.shape[:2]),
+                                     ref_bbox_crop=pixel_bboxes[0])
+    ref_bboxes = [norm_bbox(bbox, image_rgb.shape[:2]) for bbox in pixel_bboxes]
     ref_images_clip = torch.stack(
         [
             make_ref_image_clip(
                 ref_rgb,
                 ref_masks[i],
-                pairs[i]["miner_bbox_xyxy"],
+                pixel_bboxes[i],
                 clip_processor,
                 ref_image_mode=ref_image_mode,
                 focus_dilate=focus_dilate,
@@ -316,13 +333,28 @@ def build_item(
         ref_images_clip_t,
         True,
     )
-    return item, image_rgb, np.stack(target_masks, axis=0), np.stack(ref_masks, axis=0), eval_pred_indices
+    return item, original_rgb, np.stack(original_targets, axis=0), np.stack(original_refs, axis=0), eval_pred_indices
+
+
+def predict_item(model, item, tokenizer, dtype, eval_pred_indices):
+    batch = collate_fn([item], tokenizer=tokenizer, conv_type="llava_v1", use_mm_start_end=True, local_rank=0)
+    for key in ["images", "images_clip", "input_ids", "labels", "attention_masks", "offset"]:
+        batch[key] = batch[key].cuda(non_blocking=True)
+    for key in ["masks_list", "label_list", "ref_masks_list", "ref_bboxes_list", "ref_valids_list", "mask_weights_list", "ref_images_clip_list"]:
+        batch[key] = [x.cuda(non_blocking=True) if isinstance(x, torch.Tensor) else x for x in batch[key]]
+    batch["images"] = batch["images"].to(dtype=dtype)
+    batch["images_clip"] = batch["images_clip"].to(dtype=dtype)
+    with torch.no_grad():
+        outputs = model(**batch)
+    pred_masks_all = outputs["pred_masks"][0].detach().float().cpu().numpy() > 0
+    return pred_masks_all[eval_pred_indices]
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", required=True)
     parser.add_argument("--adaptation-checkpoint", default=None)
+    parser.add_argument("--memory-reobservation", action="store_true")
     parser.add_argument("--counterfactual-jsonl", required=True)
     parser.add_argument("--pairs-jsonl", required=True)
     parser.add_argument("--out-dir", required=True)
@@ -472,6 +504,13 @@ def main():
         provenance["enhancer"] = enhancer_provenance
     if adaptation_provenance is not None:
         provenance["adaptation"] = adaptation_provenance
+    if args.memory_reobservation:
+        provenance["memory_reobservation"] = {
+            "scale": 1.25, "roi_source": "supplied_miner_bbox_only",
+            "geometry": "center_expand_floor_ceil_clip; native_crop; existing_aspect_preserving_SAM_resize_and_pad",
+            "inverse": "native_crop_mask_pasted_to_original_zero_outside",
+            "degradation": "full_frame_before_crop_same_group_seed",
+        }
     correct_ious = []
     wrong_ious = []
     rcs_values = []
@@ -480,23 +519,37 @@ def main():
     cf_success = 0
 
     for idx, cf in enumerate(cfs):
-        item, image_rgb, target_masks, ref_masks, eval_pred_indices = build_item(
-            cf,
-            pairs_by_id,
-            clip_processor,
-            transform,
-            args.image_size,
-            args.conversation_mode,
-            ref_image_mode=args.ref_image_mode,
-            focus_dilate=args.focus_dilate,
-            focus_background=args.focus_background,
-            condition=args.condition,
-            seed=args.seed,
-            main_condition=args.main_condition,
-            ref_condition=args.ref_condition,
-            enhance_image=enhance_image,
+        build_options = dict(
+            ref_image_mode=args.ref_image_mode, focus_dilate=args.focus_dilate,
+            focus_background=args.focus_background, condition=args.condition, seed=args.seed,
+            main_condition=args.main_condition, ref_condition=args.ref_condition, enhance_image=enhance_image,
         )
         observation_provenance = provenance
+        if args.memory_reobservation:
+            predictions, targets, references, receipts = [], [], [], []
+            for pair_id in cf["pair_ids"]:
+                receipt = {"pair_id": pair_id}
+                item, image_rgb, target, reference, indices = build_item(
+                    {**cf, "pair_ids": [pair_id]}, pairs_by_id, clip_processor, transform,
+                    args.image_size, args.conversation_mode,
+                    reobservation_receipt=receipt, **build_options,
+                )
+                prediction = predict_item(model, item, tokenizer, dtype, indices)[0]
+                predictions.append(restore_mask(prediction, receipt["roi_xyxy"], receipt["original_hw"]))
+                targets.append(target[0]); references.append(reference[0]); receipts.append(receipt)
+            pred_masks, target_masks, ref_masks = map(np.stack, (predictions, targets, references))
+            observation_provenance = {**provenance, "reobservation_rois": receipts}
+        else:
+            item, image_rgb, target_masks, ref_masks, eval_pred_indices = build_item(
+                cf,
+                pairs_by_id,
+                clip_processor,
+                transform,
+                args.image_size,
+                args.conversation_mode,
+                **build_options,
+            )
+            pred_masks = predict_item(model, item, tokenizer, dtype, eval_pred_indices)
         if enhance_image is not None:
             image_dir = out_dir / "enhanced_images"
             image_dir.mkdir(exist_ok=True)
@@ -511,19 +564,6 @@ def main():
                 "enhanced_png_sha256": hashlib.sha256(image_file.read_bytes()).hexdigest(),
                 "shape": list(image_rgb.shape),
             }}
-        batch = collate_fn([item], tokenizer=tokenizer, conv_type="llava_v1", use_mm_start_end=True, local_rank=0)
-        for key in ["images", "images_clip", "input_ids", "labels", "attention_masks", "offset"]:
-            batch[key] = batch[key].cuda(non_blocking=True)
-        for key in ["masks_list", "label_list", "ref_masks_list", "ref_bboxes_list", "ref_valids_list", "mask_weights_list", "ref_images_clip_list"]:
-            batch[key] = [x.cuda(non_blocking=True) if isinstance(x, torch.Tensor) else x for x in batch[key]]
-        batch["images"] = batch["images"].to(dtype=dtype)
-        batch["images_clip"] = batch["images_clip"].to(dtype=dtype)
-
-        with torch.no_grad():
-            outputs = model(**batch)
-        pred_masks_all = outputs["pred_masks"][0].detach().float().cpu().numpy() > 0
-        pred_masks = pred_masks_all[eval_pred_indices]
-
         if args.export_memory_manifest:
             exported_rows.append(export_group(
                 out_dir, idx, cf, pred_masks, target_masks, ref_masks,

@@ -1,0 +1,909 @@
+{
+  "trials": [
+    {
+      "group_id": "cf_c9029d27c0483181",
+      "entity_id": "pair_dfee24282f912128",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 5391,
+      "target_pixels": 6989,
+      "roi_area_ratio": 0.2584092881944444
+    },
+    {
+      "group_id": "cf_c9029d27c0483181",
+      "entity_id": "pair_ee869f891a591f2f",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 281,
+      "target_pixels": 1654,
+      "roi_area_ratio": 0.0726171875
+    },
+    {
+      "group_id": "cf_1a8999420d2a3bdc",
+      "entity_id": "pair_bf1abb1c701342bf",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 157,
+      "target_pixels": 1254,
+      "roi_area_ratio": 0.076953125
+    },
+    {
+      "group_id": "cf_1a8999420d2a3bdc",
+      "entity_id": "pair_ce218515df76271a",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 444,
+      "target_pixels": 5954,
+      "roi_area_ratio": 0.1480099826388889
+    },
+    {
+      "group_id": "cf_33700f0218d6a1db",
+      "entity_id": "pair_18d52d2501ef2fdd",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 287,
+      "target_pixels": 2204,
+      "roi_area_ratio": 0.04594184027777778
+    },
+    {
+      "group_id": "cf_33700f0218d6a1db",
+      "entity_id": "pair_8a4b3854d85e47ad",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 2449,
+      "target_pixels": 1993,
+      "roi_area_ratio": 0.08201171875
+    },
+    {
+      "group_id": "cf_3eb4e7afbcbc4783",
+      "entity_id": "pair_6de9291af03165d5",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 0,
+      "target_pixels": 3376,
+      "roi_area_ratio": 0.077197265625
+    },
+    {
+      "group_id": "cf_3eb4e7afbcbc4783",
+      "entity_id": "pair_7911e3f2c83d2716",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 185,
+      "target_pixels": 796,
+      "roi_area_ratio": 0.077109375
+    },
+    {
+      "group_id": "cf_86843243c79d2603",
+      "entity_id": "pair_902312e6093adfeb",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 438,
+      "target_pixels": 1677,
+      "roi_area_ratio": 0.151533203125
+    },
+    {
+      "group_id": "cf_86843243c79d2603",
+      "entity_id": "pair_ea24a2c8986f1be0",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 1306,
+      "target_pixels": 9819,
+      "roi_area_ratio": 0.2234375
+    },
+    {
+      "group_id": "cf_646171cbe278fb9c",
+      "entity_id": "pair_4239d8f136a25fad",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 137,
+      "target_pixels": 2003,
+      "roi_area_ratio": 0.08235026041666667
+    },
+    {
+      "group_id": "cf_646171cbe278fb9c",
+      "entity_id": "pair_5c5bda806dc826cb",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 0,
+      "target_pixels": 4014,
+      "roi_area_ratio": 0.09775390625
+    },
+    {
+      "group_id": "cf_4208e726fab4891a",
+      "entity_id": "pair_070bf0b47561fcab",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 1296,
+      "target_pixels": 789,
+      "roi_area_ratio": 0.03630859375
+    },
+    {
+      "group_id": "cf_4208e726fab4891a",
+      "entity_id": "pair_758d782fb1162424",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 179,
+      "target_pixels": 2237,
+      "roi_area_ratio": 0.06952690972222222
+    },
+    {
+      "group_id": "cf_803b6a694535ec15",
+      "entity_id": "pair_8a5ec91962396ad6",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 17,
+      "target_pixels": 861,
+      "roi_area_ratio": 0.097001953125
+    },
+    {
+      "group_id": "cf_803b6a694535ec15",
+      "entity_id": "pair_d146e6cefa98dd2b",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 8375,
+      "target_pixels": 9416,
+      "roi_area_ratio": 0.19270833333333334
+    },
+    {
+      "group_id": "cf_4cd720671d92fd2e",
+      "entity_id": "pair_0f3a3cc6bc8d0fac",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 0,
+      "target_pixels": 3036,
+      "roi_area_ratio": 0.07046223958333334
+    },
+    {
+      "group_id": "cf_4cd720671d92fd2e",
+      "entity_id": "pair_282fa8feb5b1d53b",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 473,
+      "target_pixels": 3647,
+      "roi_area_ratio": 0.09473958333333334
+    },
+    {
+      "group_id": "cf_03e0f4f2dd886689",
+      "entity_id": "pair_1f598cdc5031cf1a",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 11955,
+      "target_pixels": 18028,
+      "roi_area_ratio": 0.21287434895833332
+    },
+    {
+      "group_id": "cf_03e0f4f2dd886689",
+      "entity_id": "pair_7120ccb55cb7c384",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 2,
+      "target_pixels": 3951,
+      "roi_area_ratio": 0.14262152777777778
+    },
+    {
+      "group_id": "cf_b9271168b2a4cbf9",
+      "entity_id": "pair_46ee4caa7947bda4",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 3313,
+      "target_pixels": 3680,
+      "roi_area_ratio": 0.13833333333333334
+    },
+    {
+      "group_id": "cf_b9271168b2a4cbf9",
+      "entity_id": "pair_e8baafb4959f50c8",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 8440,
+      "target_pixels": 19319,
+      "roi_area_ratio": 0.2191775173611111
+    },
+    {
+      "group_id": "cf_5ffe3b4241e31e97",
+      "entity_id": "pair_3d6d7ae8f2474e9d",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 0,
+      "target_pixels": 971,
+      "roi_area_ratio": 0.05067708333333333
+    },
+    {
+      "group_id": "cf_5ffe3b4241e31e97",
+      "entity_id": "pair_62e0bcee3b75b457",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 1719,
+      "target_pixels": 1942,
+      "roi_area_ratio": 0.039752604166666664
+    },
+    {
+      "group_id": "cf_eccb4c9b85399b90",
+      "entity_id": "pair_c1748a612dedd95d",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 172,
+      "target_pixels": 1837,
+      "roi_area_ratio": 0.04796875
+    },
+    {
+      "group_id": "cf_eccb4c9b85399b90",
+      "entity_id": "pair_e88462209f4b8ca5",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 5401,
+      "target_pixels": 16203,
+      "roi_area_ratio": 0.218203125
+    },
+    {
+      "group_id": "cf_273565c8b4382765",
+      "entity_id": "pair_2c2ca21907f11a28",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 11123,
+      "target_pixels": 18434,
+      "roi_area_ratio": 0.3426292438271605
+    },
+    {
+      "group_id": "cf_273565c8b4382765",
+      "entity_id": "pair_b42f453924bc6230",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 1956,
+      "target_pixels": 23712,
+      "roi_area_ratio": 0.19522569444444443
+    },
+    {
+      "group_id": "cf_371758320d780b3d",
+      "entity_id": "pair_d8dd2470d1bb3fab",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 0,
+      "target_pixels": 16686,
+      "roi_area_ratio": 0.14140432098765432
+    },
+    {
+      "group_id": "cf_371758320d780b3d",
+      "entity_id": "pair_e729502405e303d1",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 187,
+      "target_pixels": 17811,
+      "roi_area_ratio": 0.21355034722222221
+    },
+    {
+      "group_id": "cf_afb2ea760a625f27",
+      "entity_id": "pair_da4cb27015b9d90e",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 950,
+      "target_pixels": 4579,
+      "roi_area_ratio": 0.25903645833333333
+    },
+    {
+      "group_id": "cf_afb2ea760a625f27",
+      "entity_id": "pair_debb810fb1120bcd",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 0,
+      "target_pixels": 1049,
+      "roi_area_ratio": 0.09303819444444444
+    },
+    {
+      "group_id": "cf_69928ab61b82fb85",
+      "entity_id": "pair_82444a7587097173",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 479,
+      "target_pixels": 3837,
+      "roi_area_ratio": 0.06596571180555555
+    },
+    {
+      "group_id": "cf_69928ab61b82fb85",
+      "entity_id": "pair_8eedfea6cd314913",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 399,
+      "target_pixels": 2119,
+      "roi_area_ratio": 0.088134765625
+    },
+    {
+      "group_id": "cf_e55b9138be80eb81",
+      "entity_id": "pair_00eed457c4ca50ee",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 402,
+      "target_pixels": 2997,
+      "roi_area_ratio": 0.06609592013888889
+    },
+    {
+      "group_id": "cf_e55b9138be80eb81",
+      "entity_id": "pair_34c3422a648a19c6",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 0,
+      "target_pixels": 2934,
+      "roi_area_ratio": 0.128828125
+    },
+    {
+      "group_id": "cf_e49d9a50bdb728a9",
+      "entity_id": "pair_55cf123fae1f9422",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 1386,
+      "target_pixels": 4158,
+      "roi_area_ratio": 0.17558919270833334
+    },
+    {
+      "group_id": "cf_e49d9a50bdb728a9",
+      "entity_id": "pair_e8c62e9016d6cf6e",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 3055,
+      "target_pixels": 3364,
+      "roi_area_ratio": 0.14547526041666667
+    },
+    {
+      "group_id": "cf_99b0215fccf3f63b",
+      "entity_id": "pair_75a189f73e8e5634",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 533,
+      "target_pixels": 1469,
+      "roi_area_ratio": 0.06532118055555555
+    },
+    {
+      "group_id": "cf_99b0215fccf3f63b",
+      "entity_id": "pair_f2c32ccd0c4715f8",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 10841,
+      "target_pixels": 16059,
+      "roi_area_ratio": 0.2781890190972222
+    },
+    {
+      "group_id": "cf_84320e41bc5af656",
+      "entity_id": "pair_0914f22169767032",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 1435,
+      "target_pixels": 4113,
+      "roi_area_ratio": 0.132294921875
+    },
+    {
+      "group_id": "cf_84320e41bc5af656",
+      "entity_id": "pair_95733ef4b37417e7",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 0,
+      "target_pixels": 3400,
+      "roi_area_ratio": 0.09747395833333333
+    },
+    {
+      "group_id": "cf_26d7eeeecd43037a",
+      "entity_id": "pair_b90dac7e7f4bdf95",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 6006,
+      "target_pixels": 6929,
+      "roi_area_ratio": 0.19676323784722222
+    },
+    {
+      "group_id": "cf_26d7eeeecd43037a",
+      "entity_id": "pair_d4a89f428d1bb0c6",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 7224,
+      "target_pixels": 614,
+      "roi_area_ratio": 0.07710503472222222
+    },
+    {
+      "group_id": "cf_0774290cbf004c7d",
+      "entity_id": "pair_28869619c31f8c92",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 1886,
+      "target_pixels": 11752,
+      "roi_area_ratio": 0.14697591145833333
+    },
+    {
+      "group_id": "cf_0774290cbf004c7d",
+      "entity_id": "pair_ba77882bb02cdf6a",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 1030,
+      "target_pixels": 5292,
+      "roi_area_ratio": 0.12413194444444445
+    },
+    {
+      "group_id": "cf_2a89e76f158b6a5b",
+      "entity_id": "pair_0e189fa2f3e8c7c0",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 425,
+      "target_pixels": 4748,
+      "roi_area_ratio": 0.0884886188271605
+    },
+    {
+      "group_id": "cf_2a89e76f158b6a5b",
+      "entity_id": "pair_a9537ca3a2ce2b36",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 728,
+      "target_pixels": 8681,
+      "roi_area_ratio": 0.1812229938271605
+    },
+    {
+      "group_id": "cf_8065502af4eb2535",
+      "entity_id": "pair_5e23b792d98f68a4",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 327,
+      "target_pixels": 8641,
+      "roi_area_ratio": 0.1768478732638889
+    },
+    {
+      "group_id": "cf_8065502af4eb2535",
+      "entity_id": "pair_9f2b95a73274063f",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 351,
+      "target_pixels": 1220,
+      "roi_area_ratio": 0.09041666666666667
+    },
+    {
+      "group_id": "cf_ae56647f7b0ed80f",
+      "entity_id": "pair_c4e91b9cdc0cba71",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 9561,
+      "target_pixels": 18399,
+      "roi_area_ratio": 0.22016927083333335
+    },
+    {
+      "group_id": "cf_ae56647f7b0ed80f",
+      "entity_id": "pair_e851f113ee939eea",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 10623,
+      "target_pixels": 2559,
+      "roi_area_ratio": 0.12192599826388889
+    },
+    {
+      "group_id": "cf_aa391b9836fd78ee",
+      "entity_id": "pair_06a1dc4e3e515041",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 0,
+      "target_pixels": 17715,
+      "roi_area_ratio": 0.12122395833333334
+    },
+    {
+      "group_id": "cf_aa391b9836fd78ee",
+      "entity_id": "pair_37c82634946f25f5",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 6554,
+      "target_pixels": 12667,
+      "roi_area_ratio": 0.19918499228395062
+    },
+    {
+      "group_id": "cf_02e38a9e5a19c360",
+      "entity_id": "pair_263468c2ddf5fb76",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 428,
+      "target_pixels": 4702,
+      "roi_area_ratio": 0.08027777777777778
+    },
+    {
+      "group_id": "cf_02e38a9e5a19c360",
+      "entity_id": "pair_dc04ff024e121dde",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 2286,
+      "target_pixels": 3192,
+      "roi_area_ratio": 0.14001953125
+    },
+    {
+      "group_id": "cf_01ad18abfbf5459e",
+      "entity_id": "pair_38674bdf7db4b2ed",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 1794,
+      "target_pixels": 827,
+      "roi_area_ratio": 0.12568359375
+    },
+    {
+      "group_id": "cf_01ad18abfbf5459e",
+      "entity_id": "pair_962f5313b2086805",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 6555,
+      "target_pixels": 8828,
+      "roi_area_ratio": 0.17916666666666667
+    },
+    {
+      "group_id": "cf_427af9a92fe7f6cd",
+      "entity_id": "pair_0de775ae7f8ca4a2",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 0,
+      "target_pixels": 3534,
+      "roi_area_ratio": 0.08631944444444445
+    },
+    {
+      "group_id": "cf_427af9a92fe7f6cd",
+      "entity_id": "pair_3074cb2dba94513d",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 596,
+      "target_pixels": 4240,
+      "roi_area_ratio": 0.11066623263888889
+    },
+    {
+      "group_id": "cf_4165dbded0d67baf",
+      "entity_id": "pair_15a09d1fdc096259",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 297,
+      "target_pixels": 878,
+      "roi_area_ratio": 0.07405598958333333
+    },
+    {
+      "group_id": "cf_4165dbded0d67baf",
+      "entity_id": "pair_7b299e46695e42b0",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 4,
+      "target_pixels": 3612,
+      "roi_area_ratio": 0.09098198784722222
+    },
+    {
+      "group_id": "cf_5495414a54138233",
+      "entity_id": "pair_5469de723b6da72d",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 4532,
+      "target_pixels": 9160,
+      "roi_area_ratio": 0.16334635416666668
+    },
+    {
+      "group_id": "cf_5495414a54138233",
+      "entity_id": "pair_e2f976f7917906d3",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 310,
+      "target_pixels": 7284,
+      "roi_area_ratio": 0.06363064236111111
+    },
+    {
+      "group_id": "cf_cd5bf6d06a4f5432",
+      "entity_id": "pair_ac0d8bfe9c1661c5",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 175,
+      "target_pixels": 3636,
+      "roi_area_ratio": 0.0721875
+    },
+    {
+      "group_id": "cf_cd5bf6d06a4f5432",
+      "entity_id": "pair_c2d9446c6d4fb8db",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 5436,
+      "target_pixels": 7912,
+      "roi_area_ratio": 0.168310546875
+    },
+    {
+      "group_id": "cf_149c5aadeca92d12",
+      "entity_id": "pair_1bd36ba388bfd4b4",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 7098,
+      "target_pixels": 8938,
+      "roi_area_ratio": 0.17147569444444444
+    },
+    {
+      "group_id": "cf_149c5aadeca92d12",
+      "entity_id": "pair_3d1a6dc5b8713250",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 2846,
+      "target_pixels": 693,
+      "roi_area_ratio": 0.11041666666666666
+    },
+    {
+      "group_id": "cf_3c4f4b5cb4bb1d77",
+      "entity_id": "pair_103b145283b9c88f",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 3459,
+      "target_pixels": 7243,
+      "roi_area_ratio": 0.1659841579861111
+    },
+    {
+      "group_id": "cf_3c4f4b5cb4bb1d77",
+      "entity_id": "pair_4e983bf2a4d11cbe",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 157,
+      "target_pixels": 6968,
+      "roi_area_ratio": 0.06902018229166666
+    },
+    {
+      "group_id": "cf_f3d2d3f12a7aead4",
+      "entity_id": "pair_2965e2b8ecc4bc25",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 12,
+      "target_pixels": 2867,
+      "roi_area_ratio": 0.11921875
+    },
+    {
+      "group_id": "cf_f3d2d3f12a7aead4",
+      "entity_id": "pair_d14b167ce0280263",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 0,
+      "target_pixels": 1497,
+      "roi_area_ratio": 0.05546657986111111
+    },
+    {
+      "group_id": "cf_5e9c50c7e24dfd0f",
+      "entity_id": "pair_1ae32805d01615a2",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 3481,
+      "target_pixels": 3924,
+      "roi_area_ratio": 0.1630859375
+    },
+    {
+      "group_id": "cf_5e9c50c7e24dfd0f",
+      "entity_id": "pair_9e66a011a42a7a28",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 108,
+      "target_pixels": 878,
+      "roi_area_ratio": 0.077724609375
+    },
+    {
+      "group_id": "cf_1e7d8cfc1625c2da",
+      "entity_id": "pair_14fac578d65d6396",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 226,
+      "target_pixels": 1842,
+      "roi_area_ratio": 0.05915798611111111
+    },
+    {
+      "group_id": "cf_1e7d8cfc1625c2da",
+      "entity_id": "pair_59941987cbb2d335",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 58,
+      "target_pixels": 764,
+      "roi_area_ratio": 0.029427083333333333
+    },
+    {
+      "group_id": "cf_2e36401e0d114aa8",
+      "entity_id": "pair_90b92efae9e9d2c3",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 8,
+      "target_pixels": 808,
+      "roi_area_ratio": 0.07174479166666667
+    },
+    {
+      "group_id": "cf_2e36401e0d114aa8",
+      "entity_id": "pair_bfc414aca21db2fe",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 212,
+      "target_pixels": 3991,
+      "roi_area_ratio": 0.10282552083333334
+    },
+    {
+      "group_id": "cf_1a115ce7f6b388e4",
+      "entity_id": "pair_10cd9300159cd8f8",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 152,
+      "target_pixels": 911,
+      "roi_area_ratio": 0.05476345486111111
+    },
+    {
+      "group_id": "cf_1a115ce7f6b388e4",
+      "entity_id": "pair_92a3a6c3133f912f",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 104,
+      "target_pixels": 1888,
+      "roi_area_ratio": 0.0789453125
+    },
+    {
+      "group_id": "cf_289b3fd7110690be",
+      "entity_id": "pair_82603c63849c0b6a",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 2785,
+      "target_pixels": 8597,
+      "roi_area_ratio": 0.3081640625
+    },
+    {
+      "group_id": "cf_289b3fd7110690be",
+      "entity_id": "pair_ec7ddf7c7749247e",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 0,
+      "target_pixels": 1376,
+      "roi_area_ratio": 0.08379774305555555
+    },
+    {
+      "group_id": "cf_b88a50d6609f6487",
+      "entity_id": "pair_852a6f8fa01385f4",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 344,
+      "target_pixels": 2251,
+      "roi_area_ratio": 0.04623914930555555
+    },
+    {
+      "group_id": "cf_b88a50d6609f6487",
+      "entity_id": "pair_8ca9be40574f083a",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 64,
+      "target_pixels": 829,
+      "roi_area_ratio": 0.05758029513888889
+    },
+    {
+      "group_id": "cf_6b395dbd9b45c431",
+      "entity_id": "pair_5f1e02b478b86291",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 6383,
+      "target_pixels": 18716,
+      "roi_area_ratio": 0.211982421875
+    },
+    {
+      "group_id": "cf_6b395dbd9b45c431",
+      "entity_id": "pair_be7ab541fdb4af4d",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 262,
+      "target_pixels": 1689,
+      "roi_area_ratio": 0.05684895833333333
+    },
+    {
+      "group_id": "cf_4a66376fb7c719e0",
+      "entity_id": "pair_98ed33399344eb77",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 294,
+      "target_pixels": 20566,
+      "roi_area_ratio": 0.17022894965277777
+    },
+    {
+      "group_id": "cf_4a66376fb7c719e0",
+      "entity_id": "pair_fb6a850be1953af9",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 7936,
+      "target_pixels": 8447,
+      "roi_area_ratio": 0.4357378472222222
+    },
+    {
+      "group_id": "cf_c55d2b77e1c81163",
+      "entity_id": "pair_c1e75a5ad923ddc7",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 0,
+      "target_pixels": 1660,
+      "roi_area_ratio": 0.09335069444444444
+    },
+    {
+      "group_id": "cf_c55d2b77e1c81163",
+      "entity_id": "pair_f580bdfa8b667497",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 1958,
+      "target_pixels": 10015,
+      "roi_area_ratio": 0.21796875
+    },
+    {
+      "group_id": "cf_a61afd1b0775da52",
+      "entity_id": "pair_0056ba0d0618e2f4",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 1293,
+      "target_pixels": 2019,
+      "roi_area_ratio": 0.04911024305555556
+    },
+    {
+      "group_id": "cf_a61afd1b0775da52",
+      "entity_id": "pair_b14a46053498a63a",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 55,
+      "target_pixels": 5490,
+      "roi_area_ratio": 0.10710394965277778
+    },
+    {
+      "group_id": "cf_dd011c16faf2a9e3",
+      "entity_id": "pair_0ef076cb77057544",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 168,
+      "target_pixels": 5822,
+      "roi_area_ratio": 0.06298828125
+    },
+    {
+      "group_id": "cf_dd011c16faf2a9e3",
+      "entity_id": "pair_b2f1252d6a00750e",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 3119,
+      "target_pixels": 8388,
+      "roi_area_ratio": 0.14709635416666667
+    },
+    {
+      "group_id": "cf_5e913799bf202735",
+      "entity_id": "pair_7cd713a1305520f4",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 47,
+      "target_pixels": 1190,
+      "roi_area_ratio": 0.08119032118055555
+    },
+    {
+      "group_id": "cf_5e913799bf202735",
+      "entity_id": "pair_bebf44b541a0cd42",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 0,
+      "target_pixels": 1301,
+      "roi_area_ratio": 0.07125651041666667
+    },
+    {
+      "group_id": "cf_8c490484f166a75a",
+      "entity_id": "pair_0fc3abb49ae05ce3",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 278,
+      "target_pixels": 5437,
+      "roi_area_ratio": 0.05966579861111111
+    },
+    {
+      "group_id": "cf_8c490484f166a75a",
+      "entity_id": "pair_5dcb49c2b6c45818",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 973,
+      "target_pixels": 1895,
+      "roi_area_ratio": 0.08167317708333334
+    },
+    {
+      "group_id": "cf_91c35cfa78c4abd9",
+      "entity_id": "pair_15f0f95c497e368a",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 349,
+      "target_pixels": 1388,
+      "roi_area_ratio": 0.11522352430555556
+    },
+    {
+      "group_id": "cf_91c35cfa78c4abd9",
+      "entity_id": "pair_b3e80d96cb3419dd",
+      "target_coverage_by_roi": 1.0,
+      "ref_coverage_by_roi": 1.0,
+      "prediction_pixels": 0,
+      "target_pixels": 989,
+      "roi_area_ratio": 0.07041666666666667
+    }
+  ],
+  "original_shape_and_zero_outside_roi_verified": true,
+  "targets_fully_covered": 100,
+  "targets_no_roi_overlap": 0,
+  "mean_target_coverage": 1.0,
+  "empty_predictions": 15
+}
