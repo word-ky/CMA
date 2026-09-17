@@ -133,7 +133,7 @@ def main(root, groups_path=None, data_name="cycle003"):
     cf_out, pairs_out = out / cf_name, out / "helmet_miner_pairs_restored.jsonl"
     cf_out.write_text("".join(json.dumps(r) + "\n" for r in restored_groups))
     pairs_out.write_text("".join(json.dumps(r) + "\n" for r in restored_pairs.values()))
-    receipt = {"protocol": "fixed_original_first30_regenerated_mask_diagnostic" if data_name == "cycle003" else "fixed_training_selection_regenerated_masks", "groups": len(restored_groups),
+    receipt = {"protocol": "fixed_original_first30_regenerated_mask_diagnostic" if data_name == "cycle003" else "fixed_selection_regenerated_masks", "groups": len(restored_groups),
                "identity_trials": sum(len(g["pair_ids"]) for g in groups), "unique_pairs": len(restored_pairs),
                "selection_manifest_sha256": sha(groups_path), "source_pair_manifest_sha256": sha(pairs_path),
                "archive_sha256": sha(archive), "generator": generator,

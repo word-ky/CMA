@@ -61,10 +61,10 @@ def paired_backward(runner,group,args):
     stats={"seg_clean":float(seg_c.detach()),"rank_clean":float(rank_c.detach())}
     del clean,seg_c,rank_c,clean_loss
     degraded,seg_d,rank_d=condition_forward(runner,group,"target15_b",args)
-    cons=consistency_loss(degraded,clean_teacher)
-    (.5*seg_d+.5*rank_d+.25*cons).backward()
+    cons=consistency_loss(degraded,clean_teacher) if args.lambda_cons else degraded.new_zeros(())
+    (.5*seg_d+.5*rank_d+args.lambda_cons*cons).backward()
     stats.update(seg_degraded=float(seg_d.detach()),rank_degraded=float(rank_d.detach()),consistency=float(cons.detach()))
-    stats["loss"]=.5*(stats["seg_clean"]+stats["seg_degraded"])+.5*(stats["rank_clean"]+stats["rank_degraded"])+.25*stats["consistency"]
+    stats["loss"]=.5*(stats["seg_clean"]+stats["seg_degraded"])+.5*(stats["rank_clean"]+stats["rank_degraded"])+args.lambda_cons*stats["consistency"]
     return stats
 
 
@@ -86,6 +86,7 @@ def main():
     p=argparse.ArgumentParser()
     for name in ("model","vision-tower","jsonl","out-dir"):p.add_argument("--"+name,required=True)
     p.add_argument("--smoke-only",action="store_true")
+    p.add_argument("--lambda-cons",type=float,choices=[0.,.25],default=.25)
     p.add_argument("--vision-pretrained",default=None)
     p.add_argument("--precision",default="bf16")
     p.add_argument("--image-size",type=int,default=1024)
@@ -95,7 +96,7 @@ def main():
     out=Path(args.out_dir); out.mkdir(parents=True,exist_ok=True)
     rows=read_jsonl(args.jsonl); assert len(rows)==300
     config={**vars(args),"seed":seed,"degradation_seed":0,"epochs":1,"lr":5e-6,"weight_decay":1e-4,"clip_norm":1.,
-            "objective":"0.5*(segC+segD)+0.5*(rankC+rankD)+0.25*BCE(D,sigmoid(C.detach()))",
+            "objective":f"0.5*(segC+segD)+0.5*(rankC+rankD)+{args.lambda_cons}*BCE(D,sigmoid(C.detach()))",
             "rank_margin":.05,"master_dtype":"float32","forward_autocast":"bfloat16","enhancer":None,
             "split_sha256":hashlib.sha256(Path(args.jsonl).read_bytes()).hexdigest(),"surfaces":SURFACES}
     (out/"config.json").write_text(json.dumps(config,indent=2)+"\n")

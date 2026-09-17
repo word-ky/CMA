@@ -2,6 +2,8 @@ import ast
 from pathlib import Path
 import torch
 import torch.nn.functional as F
+import pytest
+from types import SimpleNamespace
 
 
 def functions():
@@ -34,7 +36,8 @@ def test_only_declared_surfaces_unfrozen():
     assert not model.model.embed_tokens.weight.requires_grad
 
 
-def test_sequential_backward_equals_declared_paired_objective():
+@pytest.mark.parametrize("lambda_cons",[0.,.25])
+def test_sequential_backward_equals_declared_paired_objective(lambda_cons):
     ns=functions()
     path=Path(__file__).resolve().parents[1]/"scripts/train_w15_degradation_counterfactual.py"
     fn=next(n for n in ast.parse(path.read_text()).body if isinstance(n,ast.FunctionDef) and n.name=="paired_backward")
@@ -44,9 +47,10 @@ def test_sequential_backward_equals_declared_paired_objective():
         return logits,logits.square().mean(),logits.sigmoid().mean()
     ns["condition_forward"]=fake_forward
     exec(compile(ast.Module(body=[fn],type_ignores=[]),str(path),"exec"),ns)
-    ns["paired_backward"](None,None,None)
+    stats=ns["paired_backward"](None,None,SimpleNamespace(lambda_cons=lambda_cons))
+    if lambda_cons==0:assert stats["consistency"]==0
     sequential=parameter.grad.clone(); parameter.grad=None
     c,sc,rc=fake_forward(None,None,"clean",None)
     d,sd,rd=fake_forward(None,None,"target15_b",None)
-    (.5*(sc+sd)+.5*(rc+rd)+.25*ns["consistency_loss"](d,c)).backward()
+    (.5*(sc+sd)+.5*(rc+rd)+lambda_cons*ns["consistency_loss"](d,c)).backward()
     torch.testing.assert_close(parameter.grad,sequential)

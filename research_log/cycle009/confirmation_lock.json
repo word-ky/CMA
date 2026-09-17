@@ -1,0 +1,224 @@
+{
+  "status": "LOCKED_BEFORE_NO_CONSISTENCY_TRAINING",
+  "groups": 30,
+  "shortfall": 0,
+  "rule": "original holdout source order after first30; image-byte exclusion; no score/size/difficulty filtering",
+  "source_sha256": "03d41867ed0185466689eb551bf0701c4bf3e5a937367eafb5f2e3c6c70f6650",
+  "selection_sha256": "b390cf63beb328cbcabc84a0b70f00af7609ca288e09ff03bda9036d56b0c8b9",
+  "protected_unique_image_hashes": 379,
+  "disjoint_from_train300_val50_diagnostic30": true,
+  "selection": [
+    {
+      "group_id": "cf_581c0585406db33d",
+      "source_holdout_index": 30,
+      "image_member": "mining_helmet/images/train/008_02920.jpg",
+      "image_sha256": "79907f767e1888b729e12deb002c8f95353d2f73186a8b0c137fdc365d193e37",
+      "bucket": 9
+    },
+    {
+      "group_id": "cf_b7dc204764014325",
+      "source_holdout_index": 31,
+      "image_member": "mining_helmet/images/train/008_03409.jpg",
+      "image_sha256": "5ca28a7ae5e3012ac503bdde0338fd243ec94ff909d406510e6a4ad8e97e1a17",
+      "bucket": 9
+    },
+    {
+      "group_id": "cf_792054f08d2c1a87",
+      "source_holdout_index": 32,
+      "image_member": "mining_helmet/images/train/050_01389.jpg",
+      "image_sha256": "a86be945745a02e62730e97a00cbd51ac6f6cdb0a8b5954be217c5f1cd9b8fae",
+      "bucket": 9
+    },
+    {
+      "group_id": "cf_6898b1c991b7f8fb",
+      "source_holdout_index": 33,
+      "image_member": "mining_helmet/images/train/008_01059.jpg",
+      "image_sha256": "b72dc76c136c2a3b559ed9bc87c797f2459e2a1ef8c7ac8c892589efb22b9961",
+      "bucket": 8
+    },
+    {
+      "group_id": "cf_58267d184c161f12",
+      "source_holdout_index": 34,
+      "image_member": "mining_helmet/images/train/008_00957.jpg",
+      "image_sha256": "f394abc417c7963071c4b94bc378df155df268703d5338a446f40f2ad8e5e907",
+      "bucket": 8
+    },
+    {
+      "group_id": "cf_0dd2005e0944e4e6",
+      "source_holdout_index": 35,
+      "image_member": "mining_helmet/images/train/025_05135.jpg",
+      "image_sha256": "7c9c88bf757264708d9222fe14c38d0e434fbde0e1a163ea2991dc12379b1d2f",
+      "bucket": 9
+    },
+    {
+      "group_id": "cf_3f8ef6ec3980547d",
+      "source_holdout_index": 36,
+      "image_member": "mining_helmet/images/val/008_00965.jpg",
+      "image_sha256": "789a79b6c469b2f5f43e4314e6cf2c07d955a58abe8d75ec1d00b58dfce42d9b",
+      "bucket": 8
+    },
+    {
+      "group_id": "cf_376866f93a11b8a0",
+      "source_holdout_index": 37,
+      "image_member": "mining_helmet/images/train/064_01023.jpg",
+      "image_sha256": "298ea33fcb9fada5f8931450c2629f0b3cf0bdb52a6b16fa9f0bdc19de3d32f9",
+      "bucket": 8
+    },
+    {
+      "group_id": "cf_0b7e6c5dffa52447",
+      "source_holdout_index": 38,
+      "image_member": "mining_helmet/images/train/008_02402.jpg",
+      "image_sha256": "6231fa146f0b774864484f1b468687ed46ca1de42997985b3a41ea7babdd4188",
+      "bucket": 9
+    },
+    {
+      "group_id": "cf_f5920b288a5b32e2",
+      "source_holdout_index": 39,
+      "image_member": "mining_helmet/images/train/048_01140.jpg",
+      "image_sha256": "1d8043f680d7d218caf63dd835d5e350dd6973ae768a3f3468e4bff0e74694ad",
+      "bucket": 8
+    },
+    {
+      "group_id": "cf_32832e7cd8982989",
+      "source_holdout_index": 40,
+      "image_member": "mining_helmet/images/train/008_03051.jpg",
+      "image_sha256": "767cd8955d280ac5fa9bf93ab402a7d39eede1a7343e39d2ae36fe5dd81bf198",
+      "bucket": 8
+    },
+    {
+      "group_id": "cf_a4fb9030e468c545",
+      "source_holdout_index": 41,
+      "image_member": "mining_helmet/images/train/008_02903.jpg",
+      "image_sha256": "080f2389fb2bfe252020b9e59c4b6034ff5a6bd6f27c8f5e02b8b16819234444",
+      "bucket": 8
+    },
+    {
+      "group_id": "cf_8c6aa4a3ae57ca29",
+      "source_holdout_index": 42,
+      "image_member": "mining_helmet/images/val/008_03055.jpg",
+      "image_sha256": "66a94ea42ad7e48486bf360adae6b76dfe41163285bd5e94fdf15036ab284414",
+      "bucket": 9
+    },
+    {
+      "group_id": "cf_c79cf1f98e6e259c",
+      "source_holdout_index": 43,
+      "image_member": "mining_helmet/images/val/008_00787.jpg",
+      "image_sha256": "d2e679779cf0166e1352671cc3505f14b1bff3ba811a7aa16892f51fc1a00da2",
+      "bucket": 9
+    },
+    {
+      "group_id": "cf_f1d998db8e1084cc",
+      "source_holdout_index": 44,
+      "image_member": "mining_helmet/images/train/030_00527.jpg",
+      "image_sha256": "ff000ec9358132aaa1d7be116ae631a097974fdcd7efcadaf86b09fd2da652ab",
+      "bucket": 8
+    },
+    {
+      "group_id": "cf_be7e0d113ba4ef98",
+      "source_holdout_index": 45,
+      "image_member": "mining_helmet/images/train/050_00953.jpg",
+      "image_sha256": "6fe42f6100f04fac7bd7ae20d030419475954afa5ff451f71d800bc0cb71c8ed",
+      "bucket": 9
+    },
+    {
+      "group_id": "cf_0fb216bf753549bc",
+      "source_holdout_index": 46,
+      "image_member": "mining_helmet/images/train/008_04171.jpg",
+      "image_sha256": "66acb3b022e27ffa97d0ca4302ac6c8156d4907240283bd24f08bbb78c986781",
+      "bucket": 8
+    },
+    {
+      "group_id": "cf_2c5e700b5693489a",
+      "source_holdout_index": 47,
+      "image_member": "mining_helmet/images/train/017_00684.jpg",
+      "image_sha256": "38ed641f028b9bcdd7c025cc5dbc2e9054bb4c15637fe21d6ab268d34ca855f0",
+      "bucket": 9
+    },
+    {
+      "group_id": "cf_9d0eb37960033763",
+      "source_holdout_index": 48,
+      "image_member": "mining_helmet/images/val/008_02865.jpg",
+      "image_sha256": "6cd48edbde985e51c794ff195d352e11ac98184f2f53afacad95adc5a39d9cd5",
+      "bucket": 8
+    },
+    {
+      "group_id": "cf_88d645803f4908e9",
+      "source_holdout_index": 49,
+      "image_member": "mining_helmet/images/train/050_01689.jpg",
+      "image_sha256": "5b8b0ead1f48829a57903e104fb09096d469485a352453755599ab0db32e6086",
+      "bucket": 8
+    },
+    {
+      "group_id": "cf_3ee31ceeaedea171",
+      "source_holdout_index": 50,
+      "image_member": "mining_helmet/images/train/022_02206.jpg",
+      "image_sha256": "1db7ac111726b571639f4f271a3cd35fbcd61dcde0308f4ef8addbafa47713ba",
+      "bucket": 8
+    },
+    {
+      "group_id": "cf_392a9486aac01f18",
+      "source_holdout_index": 51,
+      "image_member": "mining_helmet/images/val/008_02918.jpg",
+      "image_sha256": "739facbb200b9327f800410723715ebfe3f9971890d164eaba09fa9329eb10dc",
+      "bucket": 9
+    },
+    {
+      "group_id": "cf_71fd80c680b2b023",
+      "source_holdout_index": 52,
+      "image_member": "mining_helmet/images/train/008_02432.jpg",
+      "image_sha256": "aff46ff15dcde51a5ca01f5d4f2a2f89c37c77ebe6c90a61fab9541871a68346",
+      "bucket": 9
+    },
+    {
+      "group_id": "cf_272131613d98583f",
+      "source_holdout_index": 53,
+      "image_member": "mining_helmet/images/val/057_01288.jpg",
+      "image_sha256": "5abf23289ab9801b49b05808199e9abac7c62eef58b7f07222e0ce792421459a",
+      "bucket": 8
+    },
+    {
+      "group_id": "cf_759a625cfcb97590",
+      "source_holdout_index": 54,
+      "image_member": "mining_helmet/images/train/050_01609.jpg",
+      "image_sha256": "0ddc65fd2745d0440dc22c8a1ad0651c667ef1199d99b7923f87b13e69b427a5",
+      "bucket": 8
+    },
+    {
+      "group_id": "cf_2cc0906bc033109c",
+      "source_holdout_index": 55,
+      "image_member": "mining_helmet/images/val/022_03394.jpg",
+      "image_sha256": "8132aa62cff45fec8f5bef533b3a24b67d2c230a38cd70c3918feaa8259466b0",
+      "bucket": 8
+    },
+    {
+      "group_id": "cf_c8093f0333d4a26c",
+      "source_holdout_index": 56,
+      "image_member": "mining_helmet/images/train/057_00703.jpg",
+      "image_sha256": "f2252c23e88ed3cefff668ebb22b7c39a89c3fcefa561e83ab78a08a60b26adc",
+      "bucket": 9
+    },
+    {
+      "group_id": "cf_20a2c9073ad7482b",
+      "source_holdout_index": 57,
+      "image_member": "mining_helmet/images/train/037_01659.jpg",
+      "image_sha256": "0aaeade875f7a7fabe63b9b66b6460ecbc7bba1765797af490a2bca46a0f9d25",
+      "bucket": 9
+    },
+    {
+      "group_id": "cf_4ee668b4c4573b8e",
+      "source_holdout_index": 58,
+      "image_member": "mining_helmet/images/train/025_06406.jpg",
+      "image_sha256": "3d02134d994e5dc6e48f4df46a316dbb41203f935992cf69350d912472c8490b",
+      "bucket": 9
+    },
+    {
+      "group_id": "cf_511b78bd32ba769c",
+      "source_holdout_index": 59,
+      "image_member": "mining_helmet/images/train/045_01274.jpg",
+      "image_sha256": "cd224a360ba3a302efb4311f017b1215db075c206f9a928ee497b5cc02841b3c",
+      "bucket": 8
+    }
+  ],
+  "skipped": [],
+  "confirmation_w15_inference_runs": 0
+}
