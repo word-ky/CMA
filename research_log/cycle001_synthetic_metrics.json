@@ -1,0 +1,143 @@
+{
+  "protocol": "counterfactual_memory_fidelity_v1",
+  "min_iou": 0.5,
+  "summary": {
+    "num_groups": 2,
+    "num_references": 4,
+    "num_pairs": 2,
+    "target_miou": 0.75,
+    "memory_fidelity": 0.75,
+    "cmsa": 0.5,
+    "identity_error_rate": 0.25
+  },
+  "by_condition_and_memory_source": [
+    {
+      "condition": "synthetic_clean",
+      "memory_source": "synthetic",
+      "num_groups": 1,
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 1.0,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "condition": "synthetic_memory_ignored",
+      "memory_source": "synthetic",
+      "num_groups": 1,
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.5,
+      "memory_fidelity": 0.5,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.5
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "synthetic_correct",
+      "image_id": "synthetic_two_pixels",
+      "query": "Segment the helmet of the referenced miner.",
+      "condition": "synthetic_clean",
+      "memory_source": "synthetic",
+      "entity_ids": [
+        "A",
+        "B"
+      ],
+      "iou_matrix": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "correct_iou": [
+        1.0,
+        1.0
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 1.0,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "synthetic_ignored",
+      "image_id": "synthetic_two_pixels",
+      "query": "Segment the helmet of the referenced miner.",
+      "condition": "synthetic_memory_ignored",
+      "memory_source": "synthetic",
+      "entity_ids": [
+        "A",
+        "B"
+      ],
+      "iou_matrix": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "correct_iou": [
+        1.0,
+        0.0
+      ],
+      "max_wrong_iou": [
+        0.0,
+        1.0
+      ],
+      "fidelity": [
+        true,
+        false
+      ],
+      "identity_error": [
+        false,
+        true
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.5,
+      "memory_fidelity": 0.5,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.5
+    }
+  ]
+}

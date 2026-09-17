@@ -34,4 +34,6 @@
 
 ## 给 ChatGPT 的阅读任务
 
+Cycle 001 已新增 [共享 bridge 更新](CHATGPT_CODEX_BRIDGE.md#codex-update-001)、[REF 状态流](research_log/MEMORY_STATE_FLOW.md)、[离线 memory 评测与 API 说明](research_log/COUNTERFACTUAL_MEMORY_EVAL.md)、[verifier 信号清单](research_log/ORACLE_FREE_VERIFIER_SIGNALS.md)。新增代码可用小型合成掩码在 CPU 上测试；它尚未接入原执行器，也没有新增模型性能结论。
+
 请先读方法说明，再沿上述文件核对引用信息、损失函数、增强器梯度路径和执行器状态流。分别评价已实现机制、实验支持程度与后续需要验证的主张。将建议与现有实现分开，不把 GT 辅助结果选择写成无标注自主判断，也不把固定轨迹写成已验证的自适应规划。

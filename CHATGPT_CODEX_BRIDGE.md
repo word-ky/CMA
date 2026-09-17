@@ -212,3 +212,47 @@ Explicitly distinguish signals that are currently available in code vs signals n
 ## CODEX UPDATE 001
 
 _Pending Codex work._
+
+### CODEX UPDATE 001 — completed 2026-09-17
+
+Base revision: `5f4c2ba`. Scope lock followed: diagnostic scaffold only, no training, new agent policy, executor rewrite or performance claim.
+
+**A. Implementation map**
+
+- **Write:** `mr_ref_seg_dataset.py` writes second-round REF from supplied miner GT/pseudo-GT (mask, bbox, crop), not first-round predicted masks. Counterfactual group pair IDs establish identity alignment. At runtime `SEG_ANCHOR`/`SEG_ANCHOR_LOCAL` call `update_anchor`: `last_anchor*` always changes; selected `anchor*` changes only when GT IoU improves.
+- **Read:** `LISA.build_ref_input_embeddings` sends crop appearance/bbox into the LLM REF token; `build_ref_prompt_embeddings` fuses REF hidden state and mask/bbox geometry into SAM prompts. `SEG_TARGET_WITH_REF` reads the selected anchor, while `ControllerRunner.build_item` reconstructs its appearance crop from the current prediction image.
+- **Drift locations:** generic miner resegmentation has no stable identity constraint; current image and stored anchor may have different processing versions; local rollback restores current image/state but not anchor/target masks. Anchor/ref-target local pending states also omit base image/state, so their rollback uses best-target fallback. These are identified risk locations, not measured error frequencies.
+- **GT dependencies:** `anchor_quality`, best-anchor selection, `last_target_quality`/`best_target_quality`, local IoU deltas, acceptance and final `max_steps_best_target`; image/mask states selected from these remain indirectly oracle-dependent. Filtering observation scalars does not remove that dependence. `predict(target_mask=...)` also retains a GT-shaped batch interface, though inspected inference returns predictions before segmentation losses.
+- **Observables:** mask area/components/edge contact, brightness/contrast/Laplacian stats, miner/helmet geometry. SAM predicted IoU is computed internally but not returned to the runner; consistency, counterfactual sensitivity and crop similarity need explicit implementation. See [state flow](research_log/MEMORY_STATE_FLOW.md) and [verifier inventory](research_log/ORACLE_FREE_VERIFIER_SIGNALS.md).
+
+**B. Saved-mask evaluator**
+
+- Added `cmllm_remote/scripts/eval_counterfactual_memory_fidelity.py`, with no model/Torch imports. Accepts grouped same-image/same-query JSONL, binary PNG/NPY or inline masks. Exports full NxN IoU matrices, per-reference and per-pair decisions, overall and condition/memory-source summaries.
+- Explicit conventions for research review: Memory Fidelity = strict diagonal > all off-diagonal targets; CMSA = both references have strict global fidelity and correct IoU >= 0.5 (configurable); IER = wrong-identity IoU beats correct IoU and reaches that threshold, divided by all references. Ties/empty predictions do not pass fidelity; low-quality failures are not automatically identity errors. This CMSA is stricter than historical rank-only group success. Definitions, denominators and input contract: [evaluator note](research_log/COUNTERFACTUAL_MEMORY_EVAL.md).
+- Rejects non-distinguishable/empty identity targets and mismatched mask shapes rather than silently inventing correspondence. It cannot verify that upstream predictions were generated without oracle selection; producer provenance remains necessary.
+
+**C. Minimal entity memory**
+
+- Added `cmllm_remote/scripts/entity_memory.py`: mask, bbox, image, optional appearance/semantic features, nullable reliability, provenance and monotonic versions; write/read/update-candidate/rollback.
+- Updates clear stale features/reliability unless supplied anew. Rollback restores a complete prior snapshot into a new version and preserves history. Copies prevent mutation from silently changing older versions.
+- `from_anchor_state` maps current anchor/image/state, computes bbox and marks `selection_uses_gt=true`. It never converts GT IoU into reliability. It is in-process state only; not integrated into the executor, not a learned identity tracker or verifier.
+
+**Commands and results**
+
+```bash
+# PowerShell: $env:PYTHONPATH = "$PWD/cmllm_remote/src"
+PYTHONPATH=cmllm_remote/src python -B -m pytest -p no:cacheprovider cmllm_remote/tests -q
+python -B cmllm_remote/scripts/eval_counterfactual_memory_fidelity.py --input research_log/fixtures/cmf_synthetic.jsonl --output research_log/cycle001_synthetic_metrics.json --min-iou 0.5
+```
+
+- Before changes: existing smoke test **1 passed**.
+- Increment B: **10 passed**, including actual saved-PNG/NPY parser and CLI execution. Increment C: **4 passed**.
+- Final combined suite: **15 passed** (existing smoke + new tests).
+- Tiny synthetic receipt: 2 groups / 4 reference trials / 2 pairs; mIoU 0.75, fidelity 0.75, CMSA 0.5, IER 0.25. These are hand-designed software checks, **not measured model performance or degradation results**.
+- Existing model, training, controller and executor sources unchanged. No fresh GPU evaluation or training. Detailed record: [CYCLE001.md](research_log/CYCLE001.md).
+
+**Blockers and recommended next one-hour task**
+
+The published repository contains no grouped raw per-memory predictions with target masks. The old CF evaluator exports scalar scores and JPEG overlays, not raw predicted masks, and regular holdout30 is not a counterfactual diagnostic set. Consequently no actual memory-failure rate or degradation curve is claimed.
+
+Next: confirm the above metric conventions, resolve a small fixed set of archived counterfactual groups, and add a raw-prediction export seam to the existing frozen-model evaluator. Run clean plus one existing darkness/blur preset with identical groups/seeds; keep supplied-GT-reference and fixed predicted-reference conditions separate and use no GT candidate selection. Score and inspect ignored/swapped-identity cases. Do not add a new controller, verifier training, baseline roster or additional degradation families until that diagnostic is available.
