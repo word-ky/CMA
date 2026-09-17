@@ -1025,3 +1025,179 @@ Fixed first group `cf_d0fa96077bf85e0a`; only unweighted REF BCE+Dice + CF rank 
 ### Exactly one next one-hour recommendation
 
 Move to a bounded **direct w15 adaptation with clean/degraded counterfactual mixing**, using the existing frozen train/validation split and a predeclared trainable-parameter/mixing recipe. Compare to unadapted w15 on that validation set; keep the enhancer and agent out. Await the research owner's exact next contract before starting this new training stage.
+
+
+---
+
+# CHATGPT REVIEW 007 — enhancer line closed; direct w15 adaptation is now the highest-value move
+
+Cycle 007 is accepted as a clean negative result and the enhancer line is now closed. The experiment was sufficiently controlled to make that decision: the exact frozen 300/50 split was reused, the identity-aware REF loss had a verified non-zero gradient path through the main SAM image branch, w15 stayed frozen, one fixed training attempt was run, and the predeclared validation gate failed. New v4 worsened target mIoU from 0.685059 to 0.678440 and CMSA from 0.56 to 0.50, with Fidelity and mean identity margin also decreasing. Do not spend another cycle on teacher choice, enhancer resolution, another loss weight, or a second restoration architecture.
+
+This negative result is scientifically useful because it narrows the Layer-1 bottleneck. Cycle 004 already showed that `target15_b` damage is dominated by the **main image / target-observation path**, not REF appearance. Cycle 005 showed that the frozen enhancer has almost no exploitable oracle upside, and Cycle 007 shows that even an identity-aware enhancer fine-tune does not reverse the loss. The next intervention should therefore act on the memory-grounded segmenter's ability to decode degraded visual evidence, while explicitly preserving the already-strong clean identity behavior.
+
+The training-resolution mismatch in Cycle 007 (384 training versus native/max-side-1024 evaluation) is a plausible engineering contributor, but with the user's time constraint it is not worth reopening the enhancer branch. Treat it as a limitation of that bounded negative experiment, not a reason for another enhancer search.
+
+## CYCLE 008 — one-hour Codex task
+
+### Goal
+
+Run **one bounded direct degradation adaptation of w15** using paired clean/degraded counterfactual groups. No enhancer and no agent. The target is exactly the primary paper claim: retain identity-memory switching on clean inputs while recovering performance under complex coal-mine degradation.
+
+### Priority A — establish the correct no-enhancer validation baseline
+
+On the exact frozen Cycle-006 validation 50 groups, evaluate the **unadapted w15 with no enhancer** under:
+
+- `C`: clean main image + clean REF appearance;
+- `D`: `target15_b` main image + `target15_b` REF appearance.
+
+Use supplied miner identity geometry, the existing CMF scorer, the same queries/identity ordering/seed, and one prediction per memory identity. Report target mIoU, CMSA, Memory Fidelity, mean/median identity margin and IER. If these exact no-enhancer outputs are already cached, verify hashes/config and reuse them instead of rerunning.
+
+Do not use old-v3/new-v4 enhancer numbers as the baseline for this cycle.
+
+### Priority B — minimal trainable subset only
+
+Initialize from the recovered w15 checkpoint. Freeze the LLM backbone, CLIP/vision tower, SAM image encoder and all unrelated parameters. Unfreeze only the existing segmentation/reference adaptation surfaces:
+
+- `visual_model.mask_decoder`;
+- `text_hidden_fcs`;
+- `ref_hidden_fcs`;
+- `ref_visual_fcs`;
+- `ref_input_bbox_fcs`;
+- `ref_input_fcs`;
+- `ref_embedding_scale`.
+
+Before optimization, print/record the exact trainable parameter names and count. Run one fixed-batch smoke backward and verify intended modules receive finite non-zero gradients while frozen modules remain gradient-free. Do not add LoRA to the backbone or unfreeze the SAM image encoder in this cycle.
+
+### Priority C — paired clean/degraded counterfactual objective
+
+Use the exact frozen Cycle-006 300 training groups and 50 validation groups; no split rebuilding and no diagnostic30 access during training/model selection.
+
+For every training group, construct both observations with the same identity pair, masks, bboxes, targets and query:
+
+- clean observation;
+- deterministic `target15_b` observation with the existing group seed.
+
+For each condition, run the normal w15 REF-conditioned target prediction for all identities. Optimize only:
+
+1. `L_seg_clean`: helmet BCE + Dice on clean predictions;
+2. `L_seg_deg`: helmet BCE + Dice on degraded predictions;
+3. `L_rank_clean` and `L_rank_deg`: existing soft-IoU counterfactual ranking with margin `0.05`;
+4. `L_cons`: degradation-consistency distillation from the same-memory clean prediction to the degraded prediction, implemented as binary cross-entropy with degraded logits against `sigmoid(clean_logits.detach())` for each identity.
+
+Use the fixed total objective:
+
+`L = 0.5*(L_seg_clean + L_seg_deg) + 0.5*(L_rank_clean + L_rank_deg) + 0.25*L_cons`.
+
+This is not a new architecture. `L_cons` directly expresses the desired Layer-1 behavior: under the same entity memory, the degraded observation should preserve the clean target grounding.
+
+Predeclare and do not sweep:
+
+- AdamW;
+- learning rate `5e-6`;
+- weight decay `1e-4`;
+- gradient clip norm `1.0`;
+- one epoch / exactly 300 prescribed groups;
+- seed `20260528`;
+- one final checkpoint only, no intermediate checkpoint selection.
+
+If memory requires sequential clean/degraded forwards, that is acceptable; do not reduce the dataset after seeing runtime or losses.
+
+### Priority D — fixed validation gate
+
+Evaluate both the unadapted base w15 and the single adapted checkpoint on the exact 50 validation groups under **both clean and target15_b, with no enhancer**.
+
+Primary gate:
+
+- degraded target mIoU improves by at least `+0.02` over unadapted w15;
+- degraded CMSA does not decrease;
+- clean target mIoU drops by no more than `0.01`;
+- clean CMSA drops by at most one group (`0.02` absolute on 50 groups).
+
+Also report Fidelity and identity margin for interpretation; do not change the gate after seeing them.
+
+If the gate passes, run the untouched Cycle-003 diagnostic30 **once** with the adapted checkpoint, no enhancer, and report base-DD versus adapted-DD plus clean preservation. If the gate fails, do not touch diagnostic30 and do not start a hyperparameter sweep in the same cycle.
+
+### Non-goals
+
+- no enhancer work of any kind;
+- no agent/controller/verifier/RL;
+- no baseline ports;
+- no new degradation family;
+- no predicted-memory protocol;
+- no SAM image-encoder unfreezing;
+- no LLM/CLIP LoRA;
+- no repeated learning-rate/loss-weight attempts;
+- no GT-based candidate selection.
+
+### Deliverable
+
+Append `CODEX UPDATE 008` to `CHATGPT_CODEX_BRIDGE.md` with: no-enhancer base C/D validation metrics; exact trainable parameter list/count; gradient-smoke result; single training command/run; base-vs-adapted C/D validation table; pass/fail under the fixed gate; and, only if passed, the single diagnostic30 result. End with exactly one recommended next one-hour task.
+
+
+---
+
+
+## CODEX UPDATE 008 — direct adaptation passes validation; diagnostic identity gain remains unproven
+
+Completed the single task from `41b614c`. `research_log/CHATGPT_REVIEW_007.md` was mirrored verbatim into this bridge before this update. No enhancer, agent or new split; reused exact Cycle006 train300/val50 with reconstructed masks and recorded image-byte isolation. The no-enhancer baseline was freshly established, not replaced by enhancer results.
+
+### Implementation, parameter scope and gradient verification
+
+`train_w15_degradation_counterfactual.py` reuses the normal evaluator build_item, native image/mask/bbox geometry, `v1_multiround` query and prediction ordering, existing BCE+Dice and counterfactual soft-IoU rank helpers. Both clean and source-resolution deterministic target15_b (group seed0) are constructed for each group. There is no384 training downscale in this cycle. SAM longest-side1024 and CLIP processing are the normal evaluator paths.
+
+Only the following existing surfaces are trainable: **73,442,533 scalars across141 tensors**. Exact names/shapes/dtypes are in `cycle008/trainable_parameters.json` (also the smoke/train directories).
+
+| Surface under model | Parameters | Smoke gradient norm |
+|---|---:|---:|
+| ref_embedding_scale | 1 | 0.046159968 |
+| visual_model.mask_decoder | 4,058,340 | 2.273122468 |
+| text_hidden_fcs | 17,830,144 | 0.640192569 |
+| ref_hidden_fcs | 17,830,144 | 0.003499307 |
+| ref_visual_fcs | 132,608 | 0.000114993 |
+| ref_input_bbox_fcs | 16,801,792 | 0.243747744 |
+| ref_input_fcs | 16,789,504 | 0.814293301 |
+
+LLM backbone, CLIP, SAM image encoder, prompt encoder and all other parameters stay frozen. All7 requested families receive finite, nonzero gradients on the fixed smoke group `cf_d0fa96077bf85e0a`; every frozen parameter remains gradient-free. Six tensors in mask_decoder's IoU-quality prediction head have no gradient because these mask losses do not use its quality output. They remain in the declared subset; no extra quality objective was introduced. Smoke made zero optimizer steps.
+
+Trainable master parameters are FP32 under BF16 autocast; frozen base stays BF16. REF-input gradients traverse the frozen LLM to the trainable projections; no backbone weights are optimized. Clean0.5*(BCE+Dice+rank) backward runs first, then degraded0.5*(BCE+Dice+rank)+0.25*BCE(degraded,sigmoid(clean.detach())) backward, then one optimizer step. A numerical unit test confirms equality to the declared joint gradient. Rank margin0.05; clean prediction detached only for consistency. AdamW5e-6, weight_decay1e-4, clip1.0, seed20260528, one epoch/300 groups; no loss/learning-rate changes or checkpoint selection.
+
+Final checkpoint stores only the declared trainable tensors over immutable base w15. The evaluator's optional `--adaptation-checkpoint` loads that subset into normal BF16 w15; default no-adaptation behavior/scorer is unchanged. **25 CPU tests passed**, real paired-gradient smoke passed, each prescribed group used exactly once, and base/adapted validation and diagnostic identities/queries/seeds/targets/reference masks match.
+
+### Actual runs
+
+- No-enhancer base C/D validation: `20260918-053830-cma-cycle008-base`,05:38:33–05:39:43 +08:00,70s,exit0. Used the unchanged d68d50d evaluator before adding the optional checkpoint loader.
+- Fixed paired-gradient smoke: `20260918-054116-cma-cycle008-smoke`,05:41:21–05:41:32 +08:00,11s,exit0,zero optimizer steps.
+- Sole train + adapted validation + conditional diagnostic: `20260918-054248-cma-cycle008-full`,05:42:53–05:53:25 +08:00,632s,exit0. Exact command: `bash <root>/research_log/run_cycle008_full.sh <root>`; subordinate trainer/evaluator commands are in the committed launchers.
+- Final adaptation checkpoint SHA256: `0541449d9c6d06618de8b3f17a4289cb495e336b6600b35dd7d51a3ad48110d1`,293,810,853 bytes; local/remote copies verified. No duplicate frozen model is required; load over the recorded w15 base.
+
+### Fixed validation50: no enhancer in any cell
+
+| Metric | Base C | Adapted C | Base D | Adapted D |
+|---|---:|---:|---:|---:|
+| target_miou | 0.919718 | 0.920641 | 0.691113 | 0.713416 |
+| cmsa | 0.940000 | 0.960000 | 0.580000 | 0.620000 |
+| memory_fidelity | 0.990000 | 1.000000 | 0.890000 | 0.930000 |
+| mean_identity_margin | 0.919718 | 0.920641 | 0.662931 | 0.698181 |
+| median_identity_margin | 0.963190 | 0.961073 | 0.847463 | 0.856061 |
+| identity_error_rate | 0.000000 | 0.000000 | 0.030000 | 0.020000 |
+
+**Gate PASS, all four criteria true:** degraded mIoU+0.022302>=0.02; degraded CMSA+0.04 (29→31/50); clean mIoU+0.000922; clean CMSA+0.02 (47→48/50). Degraded Fidelity89→93/100 and mean margin+0.035250. This is the predeclared point-estimate gate on one fixed split, not a statistical significance or broad benchmark claim.
+
+### Single diagnostic30 evaluation after PASS
+
+Only the final passing checkpoint was run, once per clean/degraded condition; both base cells were reused from Cycle003. No diagnostic inference occurred before the validation gate. No candidate was selected using diagnostic results.
+
+| Metric | Base C (reused) | Adapted C | Base DD (reused) | Adapted DD |
+|---|---:|---:|---:|---:|
+| target_miou | 0.943108 | 0.938923 | 0.631131 | 0.639207 |
+| cmsa | 0.966667 | 0.966667 | 0.466667 | 0.433333 |
+| memory_fidelity | 1.000000 | 1.000000 | 0.816667 | 0.816667 |
+| mean_identity_margin | 0.943108 | 0.938923 | 0.621451 | 0.639008 |
+| median_identity_margin | 0.958937 | 0.952980 | 0.814648 | 0.829782 |
+| identity_error_rate | 0.000000 | 0.000000 | 0.000000 | 0.000000 |
+
+The diagnostic outcome is mixed: degraded mIoU+0.008076 and mean margin+0.017557, but CMSA14→13/30 and Fidelity unchanged49/60. Clean mIoU−0.004186, with CMSA29/30 and Fidelity60/60 unchanged. Thus clean identity preservation remains good, but the validation identity gain does **not** yet establish a stable diagnostic CMSA improvement. Do not present the passing validation gate as a general identity-robustness breakthrough. This bounded result does not reopen enhancer or agent work.
+
+### Exactly one next one-hour recommendation
+
+Run one **validation-only consistency ablation**: remove L_cons while holding the same initialization,300/50 split, trainable subset, paired observations, optimizer and epoch fixed. Compare to this candidate on the same C/D validation set to isolate whether consistency adds benefit beyond supervised clean/degraded adaptation. Do not use diagnostic30 for further candidate selection. Await the research owner's next explicit task before that run.

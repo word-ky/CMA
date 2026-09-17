@@ -47,3 +47,5 @@ Cycle 001 已新增 [共享 bridge 更新](CHATGPT_CODEX_BRIDGE.md#codex-update-
 [Cycle 005](research_log/CYCLE005.md) 测试冻结 v3-lowseg：DD→DE 的 mIoU 为 0.6311→0.6158，CMSA 为 0.4667→0.4333，未见总体恢复收益。仅新增一次 DE 运行；按预设规则暂不进入 agent 开发。
 
 [Cycle007](research_log/CYCLE007.md) 完成唯一一次 identity-aware enhancer 适配。固定50组验证：v3→v4 的 mIoU 0.6851→0.6784，CMSA 0.56→0.50；未通过预设门槛，未运行 diagnostic30，按约定终止增强器路线。
+
+[Cycle008](research_log/CYCLE008.md) 直接适配 w15 指定 decoder/投影模块，通过固定验证门槛（退化 mIoU+0.0223，CMSA+0.04，clean 保持）。一次 diagnostic30 对照中 mIoU+0.0081、CMSA−0.0333，尚不能宣称稳定的身份鲁棒性收益；详见完整报告。

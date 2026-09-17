@@ -1,0 +1,23 @@
+{
+  "full_run_id": "20260918-054248-cma-cycle008-full",
+  "started_at": "2026-09-18T05:42:53+08:00",
+  "finished_at": "2026-09-18T05:53:25+08:00",
+  "duration_seconds": 632.0,
+  "exit_code": 0,
+  "training_attempts": 1,
+  "optimizer_steps": 300,
+  "tests_passed": 25,
+  "validation_gate": "PASS",
+  "diagnostic30_condition_calls": {
+    "clean": 1,
+    "target15_b": 1
+  },
+  "checkpoint_sha256": "0541449d9c6d06618de8b3f17a4289cb495e336b6600b35dd7d51a3ad48110d1",
+  "replay_archive": {
+    "path": "research_log/cycle008_replay.tgz",
+    "bytes": 268521278,
+    "sha256": "42f6fddc70725d4cdd1f5b07181b5db1aaa8a061ece0fcd0d4396b0c30274b73",
+    "local_remote_hash_match": true
+  },
+  "source_base_commit": "41b614c"
+}

@@ -322,6 +322,7 @@ def build_item(
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", required=True)
+    parser.add_argument("--adaptation-checkpoint", default=None)
     parser.add_argument("--counterfactual-jsonl", required=True)
     parser.add_argument("--pairs-jsonl", required=True)
     parser.add_argument("--out-dir", required=True)
@@ -436,6 +437,16 @@ def main():
     else:
         model = model.float().cuda()
     model.get_model().get_vision_tower().to(device=0)
+    adaptation_provenance = None
+    if args.adaptation_checkpoint:
+        checkpoint = torch.load(args.adaptation_checkpoint, map_location="cpu")
+        model.load_state_dict(checkpoint["trainable_state"], strict=False)
+        adaptation_provenance = {
+            "checkpoint": args.adaptation_checkpoint,
+            "sha256": hashlib.sha256(Path(args.adaptation_checkpoint).read_bytes()).hexdigest(),
+            "trainable_tensors": list(checkpoint["trainable_state"]),
+            "base_model": args.model,
+        }
     model.eval()
 
     clip_processor = CLIPImageProcessor.from_pretrained(args.vision_tower)
@@ -459,6 +470,8 @@ def main():
     }
     if enhancer_provenance is not None:
         provenance["enhancer"] = enhancer_provenance
+    if adaptation_provenance is not None:
+        provenance["adaptation"] = adaptation_provenance
     correct_ious = []
     wrong_ious = []
     rcs_values = []

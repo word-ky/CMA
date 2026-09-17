@@ -1,0 +1,9 @@
+{
+  "ref_embedding_scale": 1,
+  "visual_model.mask_decoder": 4058340,
+  "text_hidden_fcs": 17830144,
+  "ref_hidden_fcs": 17830144,
+  "ref_visual_fcs": 132608,
+  "ref_input_bbox_fcs": 16801792,
+  "ref_input_fcs": 16789504
+}

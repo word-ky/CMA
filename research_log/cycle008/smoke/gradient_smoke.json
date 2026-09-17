@@ -1,0 +1,31 @@
+{
+  "group_id": "cf_d0fa96077bf85e0a",
+  "optimizer_steps": 0,
+  "losses": {
+    "seg_clean": 0.07160967588424683,
+    "rank_clean": 0.0,
+    "seg_degraded": 0.18201348185539246,
+    "rank_degraded": 0.0,
+    "consistency": 0.014363978989422321,
+    "loss": 0.13040257361717522
+  },
+  "surface_gradient_norms": {
+    "visual_model.mask_decoder": 2.2731224677173274,
+    "text_hidden_fcs": 0.6401925691790086,
+    "ref_hidden_fcs": 0.0034993072899732586,
+    "ref_visual_fcs": 0.00011499330798720134,
+    "ref_input_bbox_fcs": 0.2437477441065886,
+    "ref_input_fcs": 0.8142933011363427,
+    "ref_embedding_scale": 0.04615996805110548
+  },
+  "all_gradients_finite": true,
+  "frozen_parameters_gradient_free": true,
+  "trainable_parameters_without_gradient": [
+    "model.visual_model.mask_decoder.iou_prediction_head.layers.0.weight",
+    "model.visual_model.mask_decoder.iou_prediction_head.layers.0.bias",
+    "model.visual_model.mask_decoder.iou_prediction_head.layers.1.weight",
+    "model.visual_model.mask_decoder.iou_prediction_head.layers.1.bias",
+    "model.visual_model.mask_decoder.iou_prediction_head.layers.2.weight",
+    "model.visual_model.mask_decoder.iou_prediction_head.layers.2.bias"
+  ]
+}

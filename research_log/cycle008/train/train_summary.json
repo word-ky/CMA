@@ -1,0 +1,6 @@
+{
+  "steps": 300,
+  "epochs": 1,
+  "trainable_numel": 73442533,
+  "frozen_parameters_gradient_free": true
+}

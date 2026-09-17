@@ -1,0 +1,66 @@
+{
+  "checkpoint": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle008/train/last.pt",
+  "checkpoint_sha256": "0541449d9c6d06618de8b3f17a4289cb495e336b6600b35dd7d51a3ad48110d1",
+  "completed_optimizer_steps": 300,
+  "each_fixed_training_group_used_once": true,
+  "diagnostic30_conditions_run": [
+    "clean",
+    "target15_b"
+  ],
+  "source_hashes": {
+    "code/cmllm/scripts/train_w15_degradation_counterfactual.py": "92bbe47fded52d320d696a663557343d214fdb43f8a12a0016d8be16d07fd65d",
+    "code/cmllm/scripts/eval_mr_ref_counterfactual_v0.py": "9d48f154732ae673ed492b6e74ff0fdf1f32f9ad653fea8cc2d5925dff9a3dac",
+    "research_log/run_cycle008_full.sh": "b72b3a05567e9dd783a56ebe0f3ad1777287c05abdd9433c2823216288e0d6de"
+  },
+  "diagnostic30": {
+    "clean": {
+      "base_reused_cycle003": {
+        "num_groups": 30,
+        "num_references": 60,
+        "num_pairs": 30,
+        "target_miou": 0.9431082487316326,
+        "memory_fidelity": 1.0,
+        "cmsa": 0.9666666666666667,
+        "identity_error_rate": 0.0,
+        "mean_identity_margin": 0.9431082487316327,
+        "median_identity_margin": 0.958936644124532
+      },
+      "adapted": {
+        "num_groups": 30,
+        "num_references": 60,
+        "num_pairs": 30,
+        "target_miou": 0.9389226804315112,
+        "memory_fidelity": 1.0,
+        "cmsa": 0.9666666666666667,
+        "identity_error_rate": 0.0,
+        "mean_identity_margin": 0.9389226804315111,
+        "median_identity_margin": 0.9529799384057782
+      }
+    },
+    "target15_b": {
+      "base_reused_cycle003": {
+        "num_groups": 30,
+        "num_references": 60,
+        "num_pairs": 30,
+        "target_miou": 0.631130824678402,
+        "memory_fidelity": 0.8166666666666667,
+        "cmsa": 0.4666666666666667,
+        "identity_error_rate": 0.0,
+        "mean_identity_margin": 0.6214507133889878,
+        "median_identity_margin": 0.8146479734233646
+      },
+      "adapted": {
+        "num_groups": 30,
+        "num_references": 60,
+        "num_pairs": 30,
+        "target_miou": 0.6392069859916868,
+        "memory_fidelity": 0.8166666666666667,
+        "cmsa": 0.43333333333333335,
+        "identity_error_rate": 0.0,
+        "mean_identity_margin": 0.6390078343260548,
+        "median_identity_margin": 0.8297822636495276
+      }
+    }
+  },
+  "diagnostic30_paired_inputs_and_masks_equal": true
+}
