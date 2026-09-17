@@ -389,3 +389,84 @@ $env:PYTHONPATH = "$PWD/cmllm_remote/src"
 ### Only recommended next step
 
 Restore or explicitly regenerate the image/miner/helmet assets for these exact first 30 groups with provenance, then execute the already-deployed clean/target15_b supplied-reference diagnostic. Decide further work from real CMSA/margin changes; keep predicted memory, verifier and agent work paused until then.
+
+---
+
+## CHATGPT REVIEW 002 — implementation accepted; scientific claim still blocked
+
+Cycle 002 is engineering-correct and stays within the scope lock. The raw-mask export is oracle-free at prediction selection, the clean/`target15_b` conditions reuse identical groups/seeds, and the offline scorer now exposes the exact identity metrics we need. The 19 passing tests are useful evidence that the diagnostic plumbing is consistent, but **there is still zero real model evidence for the paper hypothesis** because no fixed counterfactual group could be fully resolved from the recovered assets.
+
+### Critical protocol interpretation
+
+The current `supplied_ref` protocol fixes the miner mask/bbox identity, but its appearance crop is rebuilt from the clean/degraded observation. Therefore this is best interpreted as **supplied identity geometry + condition-dependent visual memory appearance**. That is appropriate for testing whether degradation corrupts memory use, but do not describe it as a fully clean/oracle memory that is unaffected by degradation.
+
+The use of `target15_b` is also only the first controlled stress test. It covers low-light/contrast/noise/blur, not the full coal-mine set of dust/glare/occlusion. Do not add those yet; first obtain the real paired signal from the already-deployed diagnostic.
+
+### Engineering assessment
+
+- Keep `eval_counterfactual_memory_fidelity.py` and the new export seam unchanged unless a real run exposes a bug.
+- Keep the fixed first-30 selection as the preferred diagnostic because it was chosen before inference and without result filtering.
+- Asset recovery is now the only blocker worth spending time on. No controller, verifier, agent, baseline or training work should start before the first real clean-vs-degraded table exists.
+- If exact historical pseudo-masks cannot be recovered, deterministic regeneration is acceptable for this **diagnostic** as long as provenance is explicit and the regenerated masks are frozen identically for clean and degraded conditions. Do not present regenerated-mask numbers as exact reproduction of the historical test set.
+
+# CYCLE 003 — one-hour Codex task
+
+## Goal
+
+Unblock Layer 1 by producing the **first real clean vs `target15_b` identity-memory robustness table**. Spend this cycle on asset recovery/regeneration and execution only.
+
+## Priority A — recover exact assets before regenerating
+
+On the recovered experiment machine, search project archives/mounts/backups for the exact first-30 image, miner-mask and helmet-mask basenames/paths from `research_log/cycle002/asset_audit.json`.
+
+- Prefer exact historical files when found.
+- Verify/copy them into a stable cycle003 directory and record source path plus SHA-256.
+- Do not replace files based on visual similarity or result quality.
+
+## Priority B — deterministic regeneration fallback
+
+If exact masks are still unavailable, regenerate the missing miner/helmet masks using the archived project pipeline and available source image/box/pair metadata. The goal is not pixel-identical historical reproduction; it is a fixed paired diagnostic.
+
+- Preserve the same counterfactual identity pairing and query.
+- Freeze every regenerated asset before any model inference.
+- Record per asset: `exact_recovered` vs `regenerated`, source image, source annotation/pair metadata, generator/checkpoint/config, and SHA-256.
+- Use the regenerated masks identically for clean and `target15_b` scoring.
+
+If fewer than 20 of the original first 30 groups can be reconstructed after reasonable recovery, deterministically scan the archived holdout in original order and take the **first 30 reconstructable groups based only on pre-inference asset availability**. Label this fallback `reconstructed_holdout_diag`; it is a diagnostic subset, not the final benchmark. Never select by model outcome.
+
+## Priority C — execute the frozen diagnostic
+
+With at least 20 complete groups (prefer 30):
+
+1. run frozen w15 on `clean`;
+2. run the same groups on `target15_b`;
+3. score both manifests with the existing CMF scorer;
+4. report a paired table containing:
+   - target mIoU;
+   - CMSA;
+   - Memory Fidelity;
+   - IER;
+   - mean and median identity margin;
+   - clean→degraded deltas for each metric;
+5. save 6 representative paired failures/successes, without cherry-picking for prettiness: choose by deterministic rules such as largest negative identity-margin delta, identity swaps, and stable successes.
+
+### Required interpretation
+
+Do not tune any threshold, weight, prompt, degradation parameter or model after seeing the numbers. The point is to decide which branch to pursue next:
+
+- **CMSA/margin degrade much more than ordinary mIoU:** strong evidence for the paper's core claim that complex visual degradation damages identity-memory use;
+- **clean CMSA is already weak:** identity-memory mechanism itself needs strengthening before agent work;
+- **all metrics collapse similarly:** robustness is a general segmentation problem, so we need stronger evidence that identity is specifically affected;
+- **little degradation effect:** `target15_b` is not a sufficient stressor; only then consider the next coal-specific degradation condition.
+
+## Non-goals
+
+- no agent/controller/verifier changes;
+- no baseline ports;
+- no retraining or prompt tuning;
+- no new degradation family unless the real `target15_b` table is already complete;
+- no rewriting the memory API.
+
+## Deliverable
+
+Append `CODEX UPDATE 003` with exact asset provenance, number of usable groups, GPU command/runtime status, the real clean/degraded metric table and deltas, deterministic failure-gallery selection, and exactly one recommended next one-hour task based on the observed result.
