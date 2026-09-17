@@ -509,3 +509,100 @@ Full per-group paired deltas: [paired_results.json](research_log/cycle003/paired
 ### Exactly one next recommended task
 
 Keep the same subset/model and add the two off-diagonal cells of a **main-image quality × REF-appearance quality 2×2 control**, with supplied geometry fixed. This separates general segmentation damage from corruption of memory appearance using the two diagonal conditions already measured. No agent, verifier or training work yet.
+
+---
+
+## CHATGPT REVIEW 003 — real signal obtained; isolate where degradation acts
+
+Cycle 003 is accepted and is the first cycle that produces a real Layer-1 diagnostic rather than only infrastructure. The strongest positive result is that the frozen w15 mechanism uses supplied identity memory very well in clean observations: target mIoU is **0.9431**, CMSA is **0.9667**, and Memory Fidelity is **1.0000**. Under the fixed compound degradation, target mIoU falls to **0.6311**, CMSA to **0.4667**, and Memory Fidelity to **0.8167**. This proves that the current coal-mine stressor substantially damages the end task while preserving a strong clean-memory baseline.
+
+However, the present evidence does **not** yet prove that identity memory is damaged more than ordinary segmentation. Mean identity-margin loss (-0.3217) almost matches mIoU loss (-0.3120), IER remains zero under the current quality threshold, and only three of sixty degraded predictions prefer a wrong identity while eight become uninformative against both known targets. The large CMSA drop is partly a threshold/conjunction effect. We therefore should not claim an identity-specific collapse from Cycle 003 alone.
+
+### Critical causal ambiguity
+
+The current evaluator uses the same conditioned image for two distinct roles:
+
+1. the **main observation** consumed by the image/SAM path;
+2. the **REF appearance crop** consumed by the memory/reference path.
+
+Supplied mask/bbox geometry stays fixed. Therefore the diagonal comparison `clean/clean -> degraded/degraded` changes both target visibility and memory appearance simultaneously. The next experiment must separate these two factors before any new model, agent, verifier or training work.
+
+This 2×2 control is directly aligned with the paper's primary claim and with the coal story. If a degraded REF appearance hurts identity metrics even when the main scene is clean, we have direct evidence that complex underground degradation corrupts **memory use**, not merely target localization. If almost all damage comes from the degraded main image while a clean main image tolerates degraded REF appearance, the current supplied-memory story is mostly generic segmentation robustness; then the next scientifically justified direction is memory-write/predicted-memory robustness rather than more REF-appearance engineering.
+
+# CYCLE 004 — one-hour Codex task
+
+## Goal
+
+Run a minimal **main-image quality × REF-appearance quality 2×2 factorial control** on the exact same frozen 30 groups and w15 checkpoint. Do not train or tune anything. This cycle exists only to isolate whether degradation acts through the current scene, the memory appearance, or their interaction.
+
+## Priority A — minimally decouple main and REF conditions
+
+Modify `eval_mr_ref_counterfactual_v0.py` so the condition applied to the main image and the condition used to build `ref_images_clip` can be chosen independently, e.g.:
+
+- `--main-condition clean|target15_b`
+- `--ref-condition clean|target15_b`
+
+Requirements:
+
+- supplied miner mask/bbox geometry and target masks remain identical in all four cells;
+- use the same group seed for both factors so `target15_b` is deterministic;
+- keep query, identity order, ref mode, checkpoint and thresholds frozen;
+- preserve backward compatibility: when `main_condition == ref_condition`, the generated tensors/predictions should reproduce the existing Cycle 003 diagonal protocol. Add a focused test for this.
+
+Do not duplicate the model or change REF fusion. This is an evaluator-only intervention.
+
+## Priority B — run only the two missing off-diagonal cells
+
+Reuse the existing Cycle 003 results for:
+
+- `CC`: main clean, REF clean;
+- `DD`: main target15_b, REF target15_b.
+
+Run only:
+
+- `CD`: main clean, REF target15_b;
+- `DC`: main target15_b, REF clean.
+
+Use the same 30 groups / 60 references, w15, BF16, `v1_multiround`, crop REF and seed 0. No GT-based candidate selection.
+
+## Priority C — report the 2×2 table and effect decomposition
+
+For all four cells report at minimum:
+
+- target mIoU;
+- CMSA;
+- Memory Fidelity;
+- mean and median identity margin;
+- IER for continuity with earlier cycles.
+
+For the continuous metrics `target mIoU` and `mean identity margin`, compute:
+
+- **main-image effect with clean REF:** `DC - CC`;
+- **REF-appearance effect with clean main image:** `CD - CC`;
+- **interaction:** `DD - DC - CD + CC`.
+
+Also report simple counts already available from the IoU matrices, without defining new headline metrics:
+
+- number of references with `wrong-IoU > correct-IoU`;
+- number with both correct and max-wrong IoU equal to zero.
+
+### Required decision rule
+
+- **Material CD degradation with clean main image:** direct evidence that degradation corrupts memory appearance/use; next cycle may strengthen degradation-robust identity memory.
+- **CD nearly unchanged, while DC explains almost all loss:** current effect is primarily generic target-observation degradation; do not overclaim memory-use robustness. Next focus should move to predicted-memory/write corruption under degradation.
+- **Strong negative interaction beyond both single-factor effects:** strongest support for a coupled coal-mine story where degraded observation and degraded memory evidence compound each other; this would later justify agentic memory repair.
+
+Do not choose the interpretation by the metric that looks best. Report all cells and use mean identity margin plus mIoU as the primary continuous decomposition; use CMSA/Fidelity as supporting identity diagnostics.
+
+## Non-goals
+
+- no training/retraining;
+- no new degradation family;
+- no agent/controller/verifier changes;
+- no baseline ports;
+- no memory API rewrite;
+- no threshold tuning or prompt changes.
+
+## Deliverable
+
+Append `CODEX UPDATE 004` with files changed, tests, the exact two new GPU runs, the complete 2×2 table, effect decomposition, and exactly one recommended next one-hour task determined by the decision rule above.
