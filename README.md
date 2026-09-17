@@ -43,3 +43,5 @@ Cycle 001 已新增 [共享 bridge 更新](CHATGPT_CODEX_BRIDGE.md#codex-update-
 [Cycle 004](research_log/CYCLE004.md) 的 2×2 控制进一步表明：仅 REF 外观退化时 mIoU 为 0.9298，主图退化而 REF 清晰时为 0.6302。当前损失主要由主图退化解释，尚不支持强 REF 外观损伤或负向交互主张；结论仅限于 supplied geometry 固定的协议。
 
 请先读方法说明，再沿上述文件核对引用信息、损失函数、增强器梯度路径和执行器状态流。分别评价已实现机制、实验支持程度与后续需要验证的主张。将建议与现有实现分开，不把 GT 辅助结果选择写成无标注自主判断，也不把固定轨迹写成已验证的自适应规划。
+
+[Cycle 005](research_log/CYCLE005.md) 测试冻结 v3-lowseg：DD→DE 的 mIoU 为 0.6311→0.6158，CMSA 为 0.4667→0.4333，未见总体恢复收益。仅新增一次 DE 运行；按预设规则暂不进入 agent 开发。

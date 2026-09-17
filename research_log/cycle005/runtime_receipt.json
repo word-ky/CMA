@@ -1,0 +1,28 @@
+{
+  "run_id": "20260918-031959-cma-cycle005-de",
+  "started_at": "2026-09-18T03:20:03+08:00",
+  "finished_at": "2026-09-18T03:20:33+08:00",
+  "exit_code": 0,
+  "duration_seconds": 30,
+  "new_conditions": [
+    "DE"
+  ],
+  "cpu_tests_passed": 20,
+  "base_commit": "5529d26a91b91b0a79773117db08dbe5145540fe",
+  "executed_evaluator_sha256": "9509ae453dbe01acec43ec9ce36ece550e70147e576030112bbb89f1c4fd5d57",
+  "stage3_executed_snapshot": "stage3_executed.py",
+  "stage3_differences_from_repository": [
+    "LISA_ROOT resolved relative to script (recovery relocation)",
+    "default vision_pretrained=None (unused by imported enhancer functions)"
+  ],
+  "enhancer_loader_and_preprocessing_unchanged": true,
+  "train_task_enhancer_v1_sha256": "32f78181932db0f28d8f604fcaaf9220a3212487e54e30d0689d045bf83ea7e9",
+  "replay_bundle": {
+    "path": "research_log/cycle005_replay.tgz",
+    "bytes": 60274667,
+    "sha256": "b49c926679e8268e57c2f9d642bde233304b33bbb732ec142aaeae7d85c6c221",
+    "local_and_remote_hash_match": true
+  },
+  "launcher_metadata_note": "Workflow meta.json inherited an unrelated releaseId. Actual command explicitly used the CMA recovered root and deployed evaluator; releaseId is not used as code provenance.",
+  "enhancer_functions_ast_equal_to_repository": true
+}

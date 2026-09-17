@@ -1,0 +1,266 @@
+{
+  "cells": {
+    "CC": {
+      "num_groups": 30,
+      "num_references": 60,
+      "num_pairs": 30,
+      "target_miou": 0.9431082487316326,
+      "memory_fidelity": 1.0,
+      "cmsa": 0.9666666666666667,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.9431082487316327,
+      "median_identity_margin": 0.958936644124532,
+      "correct_iou_ge_0_5_count": 59,
+      "source": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle003_supplied_memory/clean",
+      "reused_cycle003": true
+    },
+    "DD": {
+      "num_groups": 30,
+      "num_references": 60,
+      "num_pairs": 30,
+      "target_miou": 0.631130824678402,
+      "memory_fidelity": 0.8166666666666667,
+      "cmsa": 0.4666666666666667,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.6214507133889878,
+      "median_identity_margin": 0.8146479734233646,
+      "correct_iou_ge_0_5_count": 43,
+      "source": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle003_supplied_memory/target15_b",
+      "reused_cycle003": true
+    },
+    "DE": {
+      "num_groups": 30,
+      "num_references": 60,
+      "num_pairs": 30,
+      "target_miou": 0.6157581886816327,
+      "memory_fidelity": 0.8,
+      "cmsa": 0.43333333333333335,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.610108162943597,
+      "median_identity_margin": 0.8160759639242422,
+      "correct_iou_ge_0_5_count": 43,
+      "source": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle005_supplied_memory/DE",
+      "reused_cycle003": false
+    }
+  },
+  "DE_minus_DD": {
+    "target_miou": -0.015372635996769302,
+    "mean_identity_margin": -0.011342550445390787,
+    "cmsa": -0.033333333333333326,
+    "memory_fidelity": -0.016666666666666607
+  },
+  "paired_groups": [
+    {
+      "group_id": "cf_15083517d58230ce",
+      "target_miou_delta": 0.016450740311773515,
+      "mean_identity_margin_delta": 0.016450740311773515,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_79810e446f10b26e",
+      "target_miou_delta": 0.003482473707268119,
+      "mean_identity_margin_delta": 0.003482473707268119,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_5db8c13197ba44b2",
+      "target_miou_delta": -0.0031537749717907015,
+      "mean_identity_margin_delta": -0.0031537749717907015,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_8aa0a810beb52024",
+      "target_miou_delta": 0.01908495507508534,
+      "mean_identity_margin_delta": 0.01908495507508534,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_f99ab9280e06a816",
+      "target_miou_delta": 0.010391275468244365,
+      "mean_identity_margin_delta": 0.010391275468244365,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_98618b015c8fc502",
+      "target_miou_delta": 0.04427153472602041,
+      "mean_identity_margin_delta": 0.04427153472602041,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_7924cbced03b6f46",
+      "target_miou_delta": 0.004982841265139815,
+      "mean_identity_margin_delta": 0.004982841265139815,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_1d77b0f7a4f34726",
+      "target_miou_delta": 0.004583700523809964,
+      "mean_identity_margin_delta": 0.004583700523809964,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_2b433432599075d8",
+      "target_miou_delta": 0.007601869581404741,
+      "mean_identity_margin_delta": 0.007601869581404741,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_eb0278bf698865c9",
+      "target_miou_delta": -0.06790306820862879,
+      "mean_identity_margin_delta": -0.06790306820862879,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_60a2310ce9affa83",
+      "target_miou_delta": 0.019820932632292676,
+      "mean_identity_margin_delta": 0.019820932632292676,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_fb70263dca448084",
+      "target_miou_delta": 0.044278537083926484,
+      "mean_identity_margin_delta": 0.044278537083926484,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_e1a4551d2039f452",
+      "target_miou_delta": -0.027342030212204715,
+      "mean_identity_margin_delta": -0.027342030212204715,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_42619b2aaf91c0e8",
+      "target_miou_delta": -0.02902177625616531,
+      "mean_identity_margin_delta": -0.02902177625616531,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_9eee122f3e475704",
+      "target_miou_delta": 0.022130160744925353,
+      "mean_identity_margin_delta": 0.022130160744925353,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_93558c835cce8c29",
+      "target_miou_delta": 0.001845843390179236,
+      "mean_identity_margin_delta": 0.001845843390179236,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_023f89d30d90720b",
+      "target_miou_delta": 0.014784915269635213,
+      "mean_identity_margin_delta": 0.014784915269635213,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_040619a5f3f909a5",
+      "target_miou_delta": -0.10873525730980838,
+      "mean_identity_margin_delta": -0.10873525730980838,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_533d8c8add5e24c3",
+      "target_miou_delta": -0.01708516943124533,
+      "mean_identity_margin_delta": -0.030169273631139026,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_d32ae4c94aab36c5",
+      "target_miou_delta": -0.012036397785699648,
+      "mean_identity_margin_delta": 0.010637124060730252,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_3ba42bc3f25f5b23",
+      "target_miou_delta": 0.00910007715222777,
+      "mean_identity_margin_delta": 0.00910007715222777,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_9fb58615a914e180",
+      "target_miou_delta": -0.02452193947231529,
+      "mean_identity_margin_delta": -0.02452193947231529,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_a30f69fcde5104de",
+      "target_miou_delta": -0.14576440592372836,
+      "mean_identity_margin_delta": -0.14576440592372836,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_e8e8fa40c6ef55f7",
+      "target_miou_delta": -0.014690982175275646,
+      "mean_identity_margin_delta": 0.09662216671954693,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_e40df336f2c47ea6",
+      "target_miou_delta": -0.0017798256383533273,
+      "mean_identity_margin_delta": -0.0017798256383533273,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_ca28a3d76b3f03e9",
+      "target_miou_delta": -0.26341141278851016,
+      "mean_identity_margin_delta": -0.26341141278851016,
+      "cmsa_delta": -1.0
+    },
+    {
+      "group_id": "cf_1d6ec3bdbac51fdb",
+      "target_miou_delta": 0.003377497278515218,
+      "mean_identity_margin_delta": 0.003377497278515218,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_c16cef759dcc3b36",
+      "target_miou_delta": 0.016673229864852257,
+      "mean_identity_margin_delta": 0.016673229864852257,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_56ed9d5749d28aae",
+      "target_miou_delta": 0.0003507099887185561,
+      "mean_identity_margin_delta": 0.0003507099887185561,
+      "cmsa_delta": 0.0
+    },
+    {
+      "group_id": "cf_7c2502f97a5c4f9b",
+      "target_miou_delta": 0.011055666206624237,
+      "mean_identity_margin_delta": 0.011055666206624237,
+      "cmsa_delta": 0.0
+    }
+  ],
+  "group_change_counts": {
+    "target_miou": {
+      "improved": 18,
+      "worsened": 12,
+      "tied": 0
+    },
+    "cmsa": {
+      "improved": 0,
+      "worsened": 1,
+      "tied": 29
+    }
+  },
+  "all_cells_matched_query_identity_seed_geometry_targets": true,
+  "verified_image_receipts": 30,
+  "enhancer": {
+    "checkpoint": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/enhancer/v3_lowseg_best.pt",
+    "checkpoint_sha256": "3f006e2244e2c6273252837f86c30f352d51fa43a45f33459fe791d230b82553",
+    "implementation": "stage3_rule_controller_v3_seg_local_enhance.run_task_enhancer",
+    "implementation_sha256": "73de6a7b640ca4ea20bb1de54d6c19710ca0f454b95590c23d7cf64d3e6c7859",
+    "max_side": 1024,
+    "autocast": "bfloat16",
+    "frozen": true,
+    "preprocessing": "RGB uint8 /255; AREA downsize; clamp/round uint8; CUBIC restore",
+    "reuse": "one output per seeded observation shared by main and all REF crops"
+  },
+  "new_inference_cells": [
+    "DE"
+  ],
+  "reused_cells": [
+    "CC",
+    "DD"
+  ]
+}

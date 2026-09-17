@@ -105,6 +105,27 @@ def test_frozen_build_item_uses_same_condition_for_image_and_ref(tmp_path, monke
     for clean, degraded in zip(outputs["clean"], outputs["target15_b"]):
         np.testing.assert_array_equal(clean, degraded)
 
+    # Enhancement sees one degraded observation, not identity masks or GT,
+    # and its one output feeds both main and every REF crop.
+    enhancer_inputs = []
+    def enhance(image):
+        enhancer_inputs.append(image.copy())
+        return np.full_like(image, 99)
+
+    captured.clear()
+    item, observed, gt, refs, _ = namespace["build_item"](
+        cf, pairs, clip, transform, 8, mode, condition="target15_b", seed=7,
+        enhance_image=enhance)
+    assert len(enhancer_inputs) == 1
+    np.testing.assert_array_equal(enhancer_inputs[0], condition_image(image, "target15_b", group_seed("synthetic", 7)))
+    np.testing.assert_array_equal(observed, np.full_like(image, 99))
+    np.testing.assert_array_equal(item[1].numpy().transpose(1, 2, 0), observed)
+    assert len(captured) == 2
+    for seen in captured:
+        np.testing.assert_array_equal(seen, observed)
+    np.testing.assert_array_equal(gt, outputs["clean"][0])
+    np.testing.assert_array_equal(refs, outputs["clean"][1])
+
     # All four cells: main tensors follow main condition, REF encoder input
     # follows REF condition. Diagonal outputs equal the legacy interface.
     for main in ("clean", "target15_b"):

@@ -1,4 +1,5 @@
 import argparse
+import hashlib
 import json
 import os
 import sys
@@ -210,6 +211,7 @@ def build_item(
     seed=0,
     main_condition=None,
     ref_condition=None,
+    enhance_image=None,
 ):
     pair_ids = cf["pair_ids"]
     pairs = [pairs_by_id[pair_id] for pair_id in pair_ids]
@@ -224,6 +226,9 @@ def build_item(
     image_rgb = condition_image(source_rgb, main_condition, fixed_seed)
     # Equal conditions reuse the exact Cycle 003 observation for both paths.
     ref_rgb = image_rgb if ref_condition == main_condition else condition_image(source_rgb, ref_condition, fixed_seed)
+    if enhance_image is not None:
+        image_rgb = enhance_image(image_rgb)
+        ref_rgb = image_rgb
     ori_size = image_rgb.shape[:2]
 
     target_masks = [read_mask(pair["helmet_mask_path"], ori_size) for pair in pairs]
@@ -331,6 +336,8 @@ def main():
     parser.add_argument("--main-condition", choices=["clean", "target15_b"], default=None)
     parser.add_argument("--ref-condition", choices=["clean", "target15_b"], default=None)
     parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--global-enhancer", default=None)
+    parser.add_argument("--global-enhancer-max-side", type=int, default=1024)
     parser.add_argument("--export-memory-manifest", action="store_true")
     parser.add_argument(
         "--conversation-mode",
@@ -357,6 +364,31 @@ def main():
     args.ref_condition = args.ref_condition or args.condition
     condition_label = (args.main_condition if args.main_condition == args.ref_condition
                        else f"main_{args.main_condition}__ref_{args.ref_condition}")
+    enhance_image = None
+    enhancer_provenance = None
+    image_receipt = {}
+    if args.global_enhancer:
+        if args.main_condition != args.ref_condition:
+            parser.error("Global enhancement requires the same main and REF condition")
+        from stage3_rule_controller_v3_seg_local_enhance import load_task_enhancer_model, run_task_enhancer
+        enhancer = load_task_enhancer_model(args.global_enhancer)
+        enhancer.requires_grad_(False)
+        enhancer_provenance = {
+            "checkpoint": args.global_enhancer,
+            "checkpoint_sha256": hashlib.sha256(Path(args.global_enhancer).read_bytes()).hexdigest(),
+            "implementation": "stage3_rule_controller_v3_seg_local_enhance.run_task_enhancer",
+            "implementation_sha256": hashlib.sha256(Path(__file__).with_name("stage3_rule_controller_v3_seg_local_enhance.py").read_bytes()).hexdigest(),
+            "max_side": args.global_enhancer_max_side,
+            "autocast": "bfloat16", "frozen": True,
+            "preprocessing": "RGB uint8 /255; AREA downsize; clamp/round uint8; CUBIC restore",
+            "reuse": "one output per seeded observation shared by main and all REF crops",
+        }
+
+        def enhance_image(image):
+            image_receipt["degraded_rgb_sha256"] = hashlib.sha256(image.tobytes()).hexdigest()
+            return run_task_enhancer(enhancer, image, args.global_enhancer_max_side)
+
+        condition_label += "__v3lowseg"
 
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -424,6 +456,8 @@ def main():
         "prediction_selection": "one_forward_per_supplied_identity_no_gt_selection",
         "main_condition": args.main_condition, "ref_condition": args.ref_condition,
     }
+    if enhancer_provenance is not None:
+        provenance["enhancer"] = enhancer_provenance
     correct_ious = []
     wrong_ious = []
     rcs_values = []
@@ -446,7 +480,23 @@ def main():
             seed=args.seed,
             main_condition=args.main_condition,
             ref_condition=args.ref_condition,
+            enhance_image=enhance_image,
         )
+        observation_provenance = provenance
+        if enhance_image is not None:
+            image_dir = out_dir / "enhanced_images"
+            image_dir.mkdir(exist_ok=True)
+            image_file = image_dir / f"{idx:05d}.png"
+            if not cv2.imwrite(str(image_file), cv2.cvtColor(image_rgb, cv2.COLOR_RGB2BGR)):
+                raise OSError(f"Could not save enhanced image: {image_file}")
+            observation_provenance = {**provenance, "image_receipt": {
+                **image_receipt,
+                "source_file_sha256": hashlib.sha256(Path(cf["image_path"]).read_bytes()).hexdigest(),
+                "enhanced_rgb_sha256": hashlib.sha256(image_rgb.tobytes()).hexdigest(),
+                "enhanced_png": str(image_file.relative_to(out_dir)),
+                "enhanced_png_sha256": hashlib.sha256(image_file.read_bytes()).hexdigest(),
+                "shape": list(image_rgb.shape),
+            }}
         batch = collate_fn([item], tokenizer=tokenizer, conv_type="llava_v1", use_mm_start_end=True, local_rank=0)
         for key in ["images", "images_clip", "input_ids", "labels", "attention_masks", "offset"]:
             batch[key] = batch[key].cuda(non_blocking=True)
@@ -464,7 +514,7 @@ def main():
             exported_rows.append(export_group(
                 out_dir, idx, cf, pred_masks, target_masks, ref_masks,
                 condition=condition_label, seed=group_seed(cf["counterfactual_id"], args.seed),
-                provenance=provenance,
+                provenance=observation_provenance,
                 main_condition=args.main_condition, ref_condition=args.ref_condition,
             ))
 
