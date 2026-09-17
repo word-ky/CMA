@@ -4,6 +4,36 @@ Repository: `word-ky/CMA`
 
 Purpose: use ChatGPT for research/problem formulation and Codex for implementation/experiments. This file is the shared handoff state. Do not erase earlier entries; append updates under the current cycle.
 
+## Scope lock — priority order
+
+Time is tight. Do **not** expand the project into extra side problems unless they are necessary for the two layers below.
+
+### Layer 1 — PRIMARY contribution
+
+The paper must first prove two things strongly:
+
+1. **Identity-aware memory**: the system must distinguish which historical entity is being remembered and use that memory causally. Same image + same query + different memory should switch to the corresponding target identity.
+2. **Robust memory use under complex degradation**: low illumination, dust, blur, glare and occlusion must not merely be generic augmentation; they should stress memory writing/retrieval/use, and the proposed method should remain substantially stronger than baselines as degradation becomes harder.
+
+This is the main scientific contribution and the main performance target.
+
+### Layer 2 — SECONDARY contribution
+
+The system should still be an **agent**, but agent scheduling/feedback serves Layer 1. The agent only needs to demonstrate useful adaptive behavior such as deciding when to enhance/focus/re-segment/verify/rollback/stop, and improving final performance or efficiency without GT at inference.
+
+Do not over-invest in fancy RL, large action taxonomies, extra memory taxonomies, or unrelated relation ontologies unless the primary identity-memory/degradation results are already strong.
+
+### Coal-mine story requirement
+
+Every major design choice should support the real underground story:
+
+- visually similar workers make identity association difficult;
+- helmets and safety equipment are small relational targets;
+- low illumination, dust, blur, glare and occlusion corrupt the evidence needed to form and use memory;
+- therefore a coal-mine visual agent must preserve the correct worker identity in memory and actively recover evidence when that memory becomes unreliable.
+
+The paper should read as a general agentic-vision problem **induced by coal-mine perception**, not as a generic method pasted onto a coal dataset.
+
 ## Scientific target
 
 We are reframing the project from `REF-conditioned coal-mine segmentation + enhancement + tool scheduling` into a memory-centric agentic vision problem:
