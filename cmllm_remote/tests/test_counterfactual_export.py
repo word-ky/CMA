@@ -104,3 +104,38 @@ def test_frozen_build_item_uses_same_condition_for_image_and_ref(tmp_path, monke
         assert indices == ([0, 1] if mode == "v0_single_ref" else [1, 3])
     for clean, degraded in zip(outputs["clean"], outputs["target15_b"]):
         np.testing.assert_array_equal(clean, degraded)
+
+    # All four cells: main tensors follow main condition, REF encoder input
+    # follows REF condition. Diagonal outputs equal the legacy interface.
+    for main in ("clean", "target15_b"):
+        for ref in ("clean", "target15_b"):
+            captured.clear()
+            item, observed, gt, refs, indices = namespace["build_item"](
+                cf, pairs, clip, transform, 8, mode, seed=7,
+                main_condition=main, ref_condition=ref)
+            expected_main = condition_image(image, main, group_seed("synthetic", 7))
+            expected_ref = condition_image(image, ref, group_seed("synthetic", 7))
+            np.testing.assert_array_equal(observed, expected_main)
+            np.testing.assert_array_equal(item[1].numpy().transpose(1, 2, 0), expected_main)
+            for seen in captured:
+                np.testing.assert_array_equal(seen, expected_ref)
+            np.testing.assert_array_equal(gt, outputs["clean"][0])
+            np.testing.assert_array_equal(refs, outputs["clean"][1])
+            if main == ref:
+                legacy = namespace["build_item"](cf, pairs, clip, transform, 8, mode, condition=main, seed=7)[0]
+                for new_value, old_value in zip(item, legacy):
+                    if isinstance(new_value, torch.Tensor):
+                        assert torch.equal(new_value, old_value)
+                    else:
+                        assert new_value == old_value
+
+
+def test_cross_condition_export_metadata(tmp_path):
+    masks = np.array([[[1, 0]], [[0, 1]]])
+    cf = {"counterfactual_id": "fixed", "image_path": "x.png",
+          "same_round2_query": "same", "pair_ids": ["A", "B"]}
+    row = export_group(tmp_path, 0, cf, masks, masks, masks,
+                       condition="main_clean__ref_target15_b", main_condition="clean",
+                       ref_condition="target15_b", seed=0, provenance={})
+    assert row["main_condition"] == "clean" and row["ref_condition"] == "target15_b"
+    assert row["factor_degradation_configs"] == {"main": None, "ref": TARGET15_B}

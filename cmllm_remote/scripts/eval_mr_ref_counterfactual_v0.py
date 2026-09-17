@@ -208,6 +208,8 @@ def build_item(
     focus_background=0.0,
     condition="clean",
     seed=0,
+    main_condition=None,
+    ref_condition=None,
 ):
     pair_ids = cf["pair_ids"]
     pairs = [pairs_by_id[pair_id] for pair_id in pair_ids]
@@ -215,10 +217,13 @@ def build_item(
     image_bgr = cv2.imread(image_path)
     if image_bgr is None:
         raise FileNotFoundError(image_path)
-    image_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
-    # Degrade once per group BEFORE main-image and REF-crop encoders. Geometry
-    # and supplied masks remain fixed; all identities share this observation.
-    image_rgb = condition_image(image_rgb, condition, group_seed(cf["counterfactual_id"], seed))
+    source_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
+    main_condition = main_condition or condition
+    ref_condition = ref_condition or condition
+    fixed_seed = group_seed(cf["counterfactual_id"], seed)
+    image_rgb = condition_image(source_rgb, main_condition, fixed_seed)
+    # Equal conditions reuse the exact Cycle 003 observation for both paths.
+    ref_rgb = image_rgb if ref_condition == main_condition else condition_image(source_rgb, ref_condition, fixed_seed)
     ori_size = image_rgb.shape[:2]
 
     target_masks = [read_mask(pair["helmet_mask_path"], ori_size) for pair in pairs]
@@ -227,7 +232,7 @@ def build_item(
     ref_images_clip = torch.stack(
         [
             make_ref_image_clip(
-                image_rgb,
+                ref_rgb,
                 ref_masks[i],
                 pairs[i]["miner_bbox_xyxy"],
                 clip_processor,
@@ -323,6 +328,8 @@ def main():
     parser.add_argument("--vision-pretrained", default="/home/wjq/cmllm/models/sam/sam_vit_h_4b8939.pth")
     parser.add_argument("--overlay-limit", type=int, default=64)
     parser.add_argument("--condition", choices=["clean", "target15_b"], default="clean")
+    parser.add_argument("--main-condition", choices=["clean", "target15_b"], default=None)
+    parser.add_argument("--ref-condition", choices=["clean", "target15_b"], default=None)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--export-memory-manifest", action="store_true")
     parser.add_argument(
@@ -346,6 +353,10 @@ def main():
         default=float(os.environ.get("MR_REF_FOCUS_BACKGROUND", "0.0")),
     )
     args = parser.parse_args()
+    args.main_condition = args.main_condition or args.condition
+    args.ref_condition = args.ref_condition or args.condition
+    condition_label = (args.main_condition if args.main_condition == args.ref_condition
+                       else f"main_{args.main_condition}__ref_{args.ref_condition}")
 
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -411,6 +422,7 @@ def main():
         "model_max_length": args.model_max_length,
         "counterfactual_jsonl": args.counterfactual_jsonl, "pairs_jsonl": args.pairs_jsonl,
         "prediction_selection": "one_forward_per_supplied_identity_no_gt_selection",
+        "main_condition": args.main_condition, "ref_condition": args.ref_condition,
     }
     correct_ious = []
     wrong_ious = []
@@ -432,6 +444,8 @@ def main():
             focus_background=args.focus_background,
             condition=args.condition,
             seed=args.seed,
+            main_condition=args.main_condition,
+            ref_condition=args.ref_condition,
         )
         batch = collate_fn([item], tokenizer=tokenizer, conv_type="llava_v1", use_mm_start_end=True, local_rank=0)
         for key in ["images", "images_clip", "input_ids", "labels", "attention_masks", "offset"]:
@@ -449,8 +463,9 @@ def main():
         if args.export_memory_manifest:
             exported_rows.append(export_group(
                 out_dir, idx, cf, pred_masks, target_masks, ref_masks,
-                condition=args.condition, seed=group_seed(cf["counterfactual_id"], args.seed),
+                condition=condition_label, seed=group_seed(cf["counterfactual_id"], args.seed),
                 provenance=provenance,
+                main_condition=args.main_condition, ref_condition=args.ref_condition,
             ))
 
         n = min(pred_masks.shape[0], target_masks.shape[0])
@@ -511,7 +526,9 @@ def main():
 
     summary = {
         "model": args.model,
-        "condition": args.condition,
+        "condition": condition_label,
+        "main_condition": args.main_condition,
+        "ref_condition": args.ref_condition,
         "memory_source": "supplied_ref",
         "seed": args.seed,
         "counterfactual_jsonl": args.counterfactual_jsonl,

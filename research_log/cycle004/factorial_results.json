@@ -1,0 +1,86 @@
+{
+  "cells": {
+    "CC": {
+      "num_groups": 30,
+      "num_references": 60,
+      "num_pairs": 30,
+      "target_miou": 0.9431082487316326,
+      "memory_fidelity": 1.0,
+      "cmsa": 0.9666666666666667,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.9431082487316327,
+      "median_identity_margin": 0.958936644124532,
+      "wrong_gt_correct_count": 0,
+      "both_iou_zero_count": 0,
+      "source": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle003_supplied_memory/clean",
+      "reused_cycle003": true
+    },
+    "CD": {
+      "num_groups": 30,
+      "num_references": 60,
+      "num_pairs": 30,
+      "target_miou": 0.929783693729444,
+      "memory_fidelity": 1.0,
+      "cmsa": 0.9333333333333333,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.929783693729444,
+      "median_identity_margin": 0.9578802232574044,
+      "wrong_gt_correct_count": 0,
+      "both_iou_zero_count": 0,
+      "source": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle004_supplied_memory/CD",
+      "reused_cycle003": false
+    },
+    "DC": {
+      "num_groups": 30,
+      "num_references": 60,
+      "num_pairs": 30,
+      "target_miou": 0.6301915074619298,
+      "memory_fidelity": 0.8166666666666667,
+      "cmsa": 0.4666666666666667,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.6141668946460752,
+      "median_identity_margin": 0.8111566481245673,
+      "wrong_gt_correct_count": 4,
+      "both_iou_zero_count": 7,
+      "source": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle004_supplied_memory/DC",
+      "reused_cycle003": false
+    },
+    "DD": {
+      "num_groups": 30,
+      "num_references": 60,
+      "num_pairs": 30,
+      "target_miou": 0.631130824678402,
+      "memory_fidelity": 0.8166666666666667,
+      "cmsa": 0.4666666666666667,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.6214507133889878,
+      "median_identity_margin": 0.8146479734233646,
+      "wrong_gt_correct_count": 3,
+      "both_iou_zero_count": 8,
+      "source": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle003_supplied_memory/target15_b",
+      "reused_cycle003": true
+    }
+  },
+  "effects": {
+    "target_miou": {
+      "main_with_clean_ref_DC_minus_CC": -0.3129167412697028,
+      "ref_with_clean_main_CD_minus_CC": -0.013324555002188543,
+      "interaction_DD_minus_DC_minus_CD_plus_CC": 0.014263872218660767
+    },
+    "mean_identity_margin": {
+      "main_with_clean_ref_DC_minus_CC": -0.32894135408555747,
+      "ref_with_clean_main_CD_minus_CC": -0.013324555002188654,
+      "interaction_DD_minus_DC_minus_CD_plus_CC": 0.02060837374510127
+    }
+  },
+  "frozen_assets_reverified": 148,
+  "all_cells_matched_query_identity_seed_geometry_targets": true,
+  "new_inference_cells": [
+    "CD",
+    "DC"
+  ],
+  "reused_cells": [
+    "CC",
+    "DD"
+  ]
+}

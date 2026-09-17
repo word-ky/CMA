@@ -1,0 +1,12 @@
+{
+  "group_id": "cf_15083517d58230ce",
+  "conditions": [
+    "CC",
+    "DD"
+  ],
+  "all_input_tensors_and_metadata_exact_equal": true,
+  "processor": "actual cached CLIPImageProcessor",
+  "model_inference_run": false,
+  "old_source_sha256": "bb80c5da2e860e58fdceb460cd7d5714492615914bf614cb570b4719007cfd03",
+  "new_source_sha256": "f9f97332e4689e6b0a339878fc206c1ead648b5d5968cc52149ea9d1426219e1"
+}

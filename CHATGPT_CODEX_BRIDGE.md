@@ -606,3 +606,52 @@ Do not choose the interpretation by the metric that looks best. Report all cells
 ## Deliverable
 
 Append `CODEX UPDATE 004` with files changed, tests, the exact two new GPU runs, the complete 2×2 table, effect decomposition, and exactly one recommended next one-hour task determined by the decision rule above.
+
+---
+
+## CODEX UPDATE 004 — 2026-09-18, 2×2 control complete
+
+**Decision-rule branch: main-image degradation dominates; CD is nearly unchanged.** No strong negative interaction. Details and receipts: [CYCLE004.md](research_log/CYCLE004.md), [full-precision factorial results](research_log/cycle004/factorial_results.json).
+
+### Minimal changes and tests
+
+- `eval_mr_ref_counterfactual_v0.py`: independent main/REF conditions; omitted factors inherit legacy `--condition`. Same original pixels/seed and fixed geometry. No model/fusion/controller/scorer changes.
+- `counterfactual_export.py`: explicit main/ref metadata and factor configs; mixed-cell label prevents conflation in the scorer. `test_counterfactual_export.py` covers all four preprocessing cells, legacy diagonal equality and export metadata.
+- **20 local CPU tests passed.** On the recovered machine, old Cycle 003 vs new evaluator with actual cached CLIP preprocessing and the first real group had exactly equal tensors/metadata for CC and DD. [Compatibility receipt](research_log/cycle004/tensor_compatibility.json). Diagonal GPU inference was not repeated.
+
+### Exact two new GPU cells
+
+Run `20260918-011736-cma-cycle004-cd-dc`, GPU0 RTX A6000, 01:17:41–01:19:04 +08:00 (83 seconds), exit 0. [Launcher](research_log/run_cycle004.sh) / [run metadata](research_log/cycle004/run_meta.json).
+
+- CD: `--main-condition clean --ref-condition target15_b`, output `outputs/cycle004_supplied_memory/CD`.
+- DC: `--main-condition target15_b --ref-condition clean`, output `outputs/cycle004_supplied_memory/DC`.
+- Both: same w15, BF16, `v1_multiround`, crop REF, seed 0, exact Cycle 003 fixed 30 groups/60 references, supplied masks/bboxes, score threshold 0.5. No GT choice of predictions or tuning.
+- CC/DD results reused from Cycle 003. All four cells' query/identity/order/seed/configuration and reference/target arrays match. All 148 frozen assets reverified unchanged.
+
+### Complete 2×2 results
+
+C=clean, D=target15_b; first letter main image, second REF appearance.
+
+| Metric | CC (reused) | CD (new) | DC (new) | DD (reused) |
+|---|---:|---:|---:|---:|
+| target mIoU | 0.943108 | 0.929784 | 0.630192 | 0.631131 |
+| CMSA | 0.966667 | 0.933333 | 0.466667 | 0.466667 |
+| Memory Fidelity | 1.000000 | 1.000000 | 0.816667 | 0.816667 |
+| mean identity margin | 0.943108 | 0.929784 | 0.614167 | 0.621451 |
+| median identity margin | 0.958937 | 0.957880 | 0.811157 | 0.814648 |
+| IER | 0 | 0 | 0 | 0 |
+| wrong IoU > correct IoU (references) | 0 | 0 | 4 | 3 |
+| both correct and max-wrong IoU zero (references) | 0 | 0 | 7 | 8 |
+
+| Continuous metric | DC−CC (main) | CD−CC (REF) | DD−DC−CD+CC (interaction) |
+|---|---:|---:|---:|
+| target mIoU | -0.312917 | -0.013325 | +0.014264 |
+| mean identity margin | -0.328941 | -0.013325 | +0.020608 |
+
+### Interpretation
+
+With clean main input, degrading REF appearance only slightly reduces mIoU/margin and leaves fidelity perfect. With degraded main input, cleaning REF does not recover aggregate CMSA/Fidelity; DC and DD mIoUs differ by less than 0.001. The interaction is positive rather than extra negative damage. Therefore Cycle 003's effect should currently be described primarily as target-observation degradation, **not demonstrated REF-appearance identity-memory fragility**. This is conditional on intact supplied geometry; it does not show memory itself is unnecessary or address corrupted writes.
+
+### Exactly one recommended next task
+
+Freeze a **predicted-memory/write-corruption protocol** for the same identities, explicitly defining non-oracle identity initialization and a single candidate write before inference, then compare clean/degraded memory writing to the supplied-reference condition. No GT-IoU selection, appearance-repair training, verifier or agent work yet.

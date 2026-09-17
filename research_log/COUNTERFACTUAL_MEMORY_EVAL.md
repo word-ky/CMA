@@ -77,3 +77,11 @@ This is in-process persistence, not a disk database, encoder, learned reliabilit
 The scorer additionally exports per-reference `identity_margin = correct_iou - max_wrong_iou` and its reference-weighted mean/median in overall and stratified reports. Other definitions are unchanged. The old Cycle 001 receipt is retained; the new synthetic margin check is in `cycle002/synthetic_margin_check.json`.
 
 The previously missing raw-mask export seam now exists behind `eval_mr_ref_counterfactual_v0.py --export-memory-manifest`, with `--condition clean|target15_b`. This supersedes the Cycle 001 statement that the script can only save scalars/overlays. Both conditions explicitly use `memory_source=supplied_ref`. Real inputs remain incomplete; see [Cycle 002](CYCLE002.md) for asset audit, frozen group IDs, exact missing paths and the deployed command template. No real model scores yet.
+
+## Cycle 003/004 status and factor controls
+
+Cycle 003 restored the original fixed 30 groups with explicit regenerated-mask provenance and produced real diagonal results; see [CYCLE003.md](CYCLE003.md). The preceding Cycle 002 input blocker is historical.
+
+Cycle 004 adds optional `--main-condition` and `--ref-condition` (`clean` or `target15_b`). Each omitted factor inherits legacy `--condition`, which still defaults to clean. Both factors are constructed from the original image using the same group seed, with supplied geometry/targets unchanged. Equal factors reuse the same array, preserving the prior diagonal protocol.
+
+Exported records include `main_condition`, `ref_condition` and `factor_degradation_configs`. Off-diagonal `condition` labels are `main_clean__ref_target15_b` or `main_target15_b__ref_clean` to prevent scoring different cells as one stratum. For off-diagonal records, use the explicit factor config fields; the old single `degradation_config` field does not describe mixed conditions. Scoring definitions and thresholds remain unchanged.

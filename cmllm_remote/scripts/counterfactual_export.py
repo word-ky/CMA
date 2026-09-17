@@ -38,7 +38,7 @@ def condition_image(image_rgb, condition, seed):
 
 
 def export_group(out_dir, index, cf, predictions, targets, references, *, condition, seed,
-                 provenance):
+                 provenance, main_condition=None, ref_condition=None):
     """Save every output as produced; never choose a mask using ground truth."""
     n = len(cf["pair_ids"])
     if not (len(predictions) == len(targets) == len(references) == n):
@@ -60,5 +60,11 @@ def export_group(out_dir, index, cf, predictions, targets, references, *, condit
         "query": cf["same_round2_query"], "condition": condition,
         "memory_source": "supplied_ref", "seed": seed,
         "degradation_config": TARGET15_B if condition == "target15_b" else None,
+        "main_condition": main_condition or condition,
+        "ref_condition": ref_condition or condition,
+        "factor_degradation_configs": {
+            "main": TARGET15_B if (main_condition or condition) == "target15_b" else None,
+            "ref": TARGET15_B if (ref_condition or condition) == "target15_b" else None,
+        },
         "provenance": provenance, "trials": trials,
     }
