@@ -655,3 +655,80 @@ With clean main input, degrading REF appearance only slightly reduces mIoU/margi
 ### Exactly one recommended next task
 
 Freeze a **predicted-memory/write-corruption protocol** for the same identities, explicitly defining non-oracle identity initialization and a single candidate write before inference, then compare clean/degraded memory writing to the supplied-reference condition. No GT-IoU selection, appearance-repair training, verifier or agent work yet.
+
+---
+
+## CHATGPT REVIEW 004 — causal split accepted; stop forcing a memory-appearance claim
+
+Cycle 004 is decisive and should simplify the paper rather than expand it. The main-image effect is roughly **-0.313 mIoU / -0.329 identity margin**, while degrading only the REF appearance costs only **-0.0133** on both metrics and leaves Memory Fidelity at **1.0**. Cleaning the REF appearance under a degraded main image does not recover CMSA/Fidelity. Therefore we should **not** spend time engineering REF-appearance robustness or claim that `target15_b` primarily corrupts stored appearance memory.
+
+This does **not** weaken the core paper direction. It clarifies the two Layer-1 contributions we actually need:
+
+1. **Identity memory:** same image + same query + different entity memory switches to the corresponding miner's helmet. The clean result (CMSA 0.9667, Fidelity 1.0) already gives a strong diagnostic base for this claim.
+2. **Robust relational perception under coal-mine degradation:** the dominant failure is that complex degradation destroys the visual evidence needed to localize the small target *given* the correct identity. This is still exactly the underground story: similar miners require identity memory, while darkness/noise/blur make the helmet evidence unreliable.
+
+The paper does not need the stronger and currently unsupported statement that degradation must specifically damage the REF appearance representation. Given the user's scope lock and time pressure, the next cycle should move from diagnosis to **performance recovery** using the task-aware enhancer that already exists in the project. Predicted-memory/write corruption remains an important later deployment check, but it is not the highest-value next hour.
+
+# CYCLE 005 — one-hour Codex task
+
+## Goal
+
+Test whether the **existing frozen v3-lowseg task-aware enhancer** can recover the Layer-1 degradation loss on the exact same 30 counterfactual groups, with no retraining and no GT-based candidate selection.
+
+This is the fastest path to the required paper claim: strong identity-aware segmentation **and** strong robustness under complex coal-mine degradation.
+
+## Priority A — add one evaluator path for the existing learned enhancer
+
+Reuse the already recovered `v3-lowseg` checkpoint and the same enhancement preprocessing used by the Stage-3 pipeline. Add only a minimal option to the counterfactual evaluator/launcher so that:
+
+`clean source -> target15_b degradation -> v3-lowseg enhancement -> w15 memory-grounded segmentation`.
+
+Requirements:
+
+- same fixed 30 groups / 60 references, seed 0, w15, BF16, `v1_multiround`, supplied identity masks/bboxes;
+- one enhancer output per source image, reused for both the main image and REF crop, matching the current global-enhancement pipeline semantics;
+- no threshold/prompt/model tuning after seeing results;
+- no GT-IoU candidate selection, rollback, controller or best-of-N selection;
+- save enhancer/checkpoint provenance and image hashes so the run is replayable.
+
+Do not train a new enhancer in this cycle. Do not add a new restoration model.
+
+## Priority B — run exactly one new primary condition
+
+Reuse Cycle 003 `DD` (`target15_b` without enhancement) as the degradation baseline and Cycle 003 `CC` as the clean ceiling. Run only:
+
+- `DE`: `target15_b -> v3-lowseg -> w15`.
+
+Score with the unchanged CMF scorer. Report:
+
+- target mIoU;
+- CMSA;
+- Memory Fidelity;
+- mean/median identity margin;
+- IER;
+- number of references with correct IoU >= 0.5;
+- paired `DE - DD` deltas for mIoU and identity margin.
+
+Also report how many of the 30 groups improve/worsen in target mIoU and CMSA, using the fixed group ordering only.
+
+## Priority C — decision rule
+
+Use the result to decide the next hour; do not add anything else.
+
+- **Clear gain in both mIoU and CMSA**: keep v3-lowseg as the degradation-recovery component; next cycle should remove GT from a minimal agent feedback loop that decides when to invoke it.
+- **mIoU improves but CMSA/fidelity does not**: the enhancer is not identity-aligned enough; next cycle should adapt the enhancer objective using the already-existing counterfactual identity supervision, not build a larger agent.
+- **No material gain or performance worsens**: stop treating the current v3-lowseg as a paper contribution; next cycle should focus on the smallest degradation-robust adaptation of w15/enhancer rather than agent complexity.
+
+## Non-goals
+
+- no predicted-memory protocol this hour;
+- no new training;
+- no new degradation family;
+- no controller/verifier/RL work;
+- no baseline ports;
+- no new memory taxonomy or relation task;
+- no best-of-candidates result selection.
+
+## Deliverable
+
+Append `CODEX UPDATE 005` with exact code changes, enhancer checkpoint/config, tests, the one new GPU run, the complete `CC / DD / DE` table, paired deltas and exactly one next one-hour recommendation determined by the rule above.
