@@ -1,0 +1,2832 @@
+{
+  "protocol": "counterfactual_memory_fidelity_v1",
+  "min_iou": 0.5,
+  "summary": {
+    "num_groups": 50,
+    "num_references": 100,
+    "num_pairs": 50,
+    "target_miou": 0.7123021706753146,
+    "memory_fidelity": 0.91,
+    "cmsa": 0.62,
+    "identity_error_rate": 0.02,
+    "mean_identity_margin": 0.6979883860032083,
+    "median_identity_margin": 0.8548406321928849
+  },
+  "by_condition_and_memory_source": [
+    {
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.7123021706753146,
+      "memory_fidelity": 0.91,
+      "cmsa": 0.62,
+      "identity_error_rate": 0.02,
+      "mean_identity_margin": 0.6979883860032083,
+      "median_identity_margin": 0.8548406321928849
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "cf_c9029d27c0483181",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_c9029d27c0483181.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_dfee24282f912128",
+        "pair_ee869f891a591f2f"
+      ],
+      "iou_matrix": [
+        [
+          0.855344112176277,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "correct_iou": [
+        0.855344112176277,
+        0.0
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.855344112176277,
+        0.0
+      ],
+      "fidelity": [
+        true,
+        false
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.4276720560881385,
+      "memory_fidelity": 0.5,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_1a8999420d2a3bdc",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_1a8999420d2a3bdc.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_bf1abb1c701342bf",
+        "pair_ce218515df76271a"
+      ],
+      "iou_matrix": [
+        [
+          0.4919636617749825,
+          0.0
+        ],
+        [
+          0.0,
+          0.8065959562479285
+        ]
+      ],
+      "correct_iou": [
+        0.4919636617749825,
+        0.8065959562479285
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.4919636617749825,
+        0.8065959562479285
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.6492798090114555,
+      "memory_fidelity": 1.0,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_33700f0218d6a1db",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_33700f0218d6a1db.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_18d52d2501ef2fdd",
+        "pair_8a4b3854d85e47ad"
+      ],
+      "iou_matrix": [
+        [
+          0.9363514119229045,
+          0.0
+        ],
+        [
+          0.0,
+          0.8848920863309353
+        ]
+      ],
+      "correct_iou": [
+        0.9363514119229045,
+        0.8848920863309353
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.9363514119229045,
+        0.8848920863309353
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.91062174912692,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_3eb4e7afbcbc4783",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_3eb4e7afbcbc4783.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_6de9291af03165d5",
+        "pair_7911e3f2c83d2716"
+      ],
+      "iou_matrix": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.888509670079636
+        ]
+      ],
+      "correct_iou": [
+        0.0,
+        0.888509670079636
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.0,
+        0.888509670079636
+      ],
+      "fidelity": [
+        false,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.444254835039818,
+      "memory_fidelity": 0.5,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_86843243c79d2603",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_86843243c79d2603.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_902312e6093adfeb",
+        "pair_ea24a2c8986f1be0"
+      ],
+      "iou_matrix": [
+        [
+          0.6655319148936171,
+          0.0
+        ],
+        [
+          0.0,
+          0.8211120064464141
+        ]
+      ],
+      "correct_iou": [
+        0.6655319148936171,
+        0.8211120064464141
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.6655319148936171,
+        0.8211120064464141
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.7433219606700157,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_646171cbe278fb9c",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_646171cbe278fb9c.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_4239d8f136a25fad",
+        "pair_5c5bda806dc826cb"
+      ],
+      "iou_matrix": [
+        [
+          0.43536875495638383,
+          0.0
+        ],
+        [
+          0.0,
+          0.6143367574810183
+        ]
+      ],
+      "correct_iou": [
+        0.43536875495638383,
+        0.6143367574810183
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.43536875495638383,
+        0.6143367574810183
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.5248527562187011,
+      "memory_fidelity": 1.0,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_4208e726fab4891a",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_4208e726fab4891a.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_070bf0b47561fcab",
+        "pair_758d782fb1162424"
+      ],
+      "iou_matrix": [
+        [
+          0.9457070707070707,
+          0.0
+        ],
+        [
+          0.0,
+          0.9203980099502488
+        ]
+      ],
+      "correct_iou": [
+        0.9457070707070707,
+        0.9203980099502488
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.9457070707070707,
+        0.9203980099502488
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.9330525403286598,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_803b6a694535ec15",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_803b6a694535ec15.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_8a5ec91962396ad6",
+        "pair_d146e6cefa98dd2b"
+      ],
+      "iou_matrix": [
+        [
+          0.4438233650083846,
+          0.0
+        ],
+        [
+          0.0,
+          0.9546610169491525
+        ]
+      ],
+      "correct_iou": [
+        0.4438233650083846,
+        0.9546610169491525
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.4438233650083846,
+        0.9546610169491525
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.6992421909787685,
+      "memory_fidelity": 1.0,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_4cd720671d92fd2e",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_4cd720671d92fd2e.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_0f3a3cc6bc8d0fac",
+        "pair_282fa8feb5b1d53b"
+      ],
+      "iou_matrix": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9281045751633987
+        ]
+      ],
+      "correct_iou": [
+        0.0,
+        0.9281045751633987
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.0,
+        0.9281045751633987
+      ],
+      "fidelity": [
+        false,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.46405228758169936,
+      "memory_fidelity": 0.5,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_03e0f4f2dd886689",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_03e0f4f2dd886689.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_1f598cdc5031cf1a",
+        "pair_7120ccb55cb7c384"
+      ],
+      "iou_matrix": [
+        [
+          0.9760443261448205,
+          0.0
+        ],
+        [
+          0.0,
+          0.9237330657300552
+        ]
+      ],
+      "correct_iou": [
+        0.9760443261448205,
+        0.9237330657300552
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.9760443261448205,
+        0.9237330657300552
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.9498886959374379,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_b9271168b2a4cbf9",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_b9271168b2a4cbf9.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_46ee4caa7947bda4",
+        "pair_e8baafb4959f50c8"
+      ],
+      "iou_matrix": [
+        [
+          0.9019288236892149,
+          0.0
+        ],
+        [
+          0.0,
+          0.982993372039254
+        ]
+      ],
+      "correct_iou": [
+        0.9019288236892149,
+        0.982993372039254
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.9019288236892149,
+        0.982993372039254
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.9424610978642345,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_5ffe3b4241e31e97",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_5ffe3b4241e31e97.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_3d6d7ae8f2474e9d",
+        "pair_62e0bcee3b75b457"
+      ],
+      "iou_matrix": [
+        [
+          0.654994850669413,
+          0.0
+        ],
+        [
+          0.0,
+          0.9077669902912622
+        ]
+      ],
+      "correct_iou": [
+        0.654994850669413,
+        0.9077669902912622
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.654994850669413,
+        0.9077669902912622
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.7813809204803376,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_eccb4c9b85399b90",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_eccb4c9b85399b90.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_c1748a612dedd95d",
+        "pair_e88462209f4b8ca5"
+      ],
+      "iou_matrix": [
+        [
+          0.9229934924078091,
+          0.0
+        ],
+        [
+          0.0,
+          0.940982447873719
+        ]
+      ],
+      "correct_iou": [
+        0.9229934924078091,
+        0.940982447873719
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.9229934924078091,
+        0.940982447873719
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.9319879701407641,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_273565c8b4382765",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_273565c8b4382765.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_2c2ca21907f11a28",
+        "pair_b42f453924bc6230"
+      ],
+      "iou_matrix": [
+        [
+          0.8797267238639974,
+          0.0
+        ],
+        [
+          0.0,
+          0.3458242742038624
+        ]
+      ],
+      "correct_iou": [
+        0.8797267238639974,
+        0.3458242742038624
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.8797267238639974,
+        0.3458242742038624
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.6127754990339299,
+      "memory_fidelity": 1.0,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_371758320d780b3d",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_371758320d780b3d.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_d8dd2470d1bb3fab",
+        "pair_e729502405e303d1"
+      ],
+      "iou_matrix": [
+        [
+          0.7203530355710083,
+          0.0
+        ],
+        [
+          0.0,
+          0.9745900263054794
+        ]
+      ],
+      "correct_iou": [
+        0.7203530355710083,
+        0.9745900263054794
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.7203530355710083,
+        0.9745900263054794
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.8474715309382439,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_afb2ea760a625f27",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_afb2ea760a625f27.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_da4cb27015b9d90e",
+        "pair_debb810fb1120bcd"
+      ],
+      "iou_matrix": [
+        [
+          0.7724525043177893,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "correct_iou": [
+        0.7724525043177893,
+        0.0
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.7724525043177893,
+        0.0
+      ],
+      "fidelity": [
+        true,
+        false
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.38622625215889467,
+      "memory_fidelity": 0.5,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_69928ab61b82fb85",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_69928ab61b82fb85.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_82444a7587097173",
+        "pair_8eedfea6cd314913"
+      ],
+      "iou_matrix": [
+        [
+          0.8076003824091779,
+          0.0
+        ],
+        [
+          0.0,
+          0.2763249895119564
+        ]
+      ],
+      "correct_iou": [
+        0.8076003824091779,
+        0.2763249895119564
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.8076003824091779,
+        0.2763249895119564
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.5419626859605671,
+      "memory_fidelity": 1.0,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_e55b9138be80eb81",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_e55b9138be80eb81.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_00eed457c4ca50ee",
+        "pair_34c3422a648a19c6"
+      ],
+      "iou_matrix": [
+        [
+          0.8889251878471088,
+          0.0
+        ],
+        [
+          0.0,
+          0.7016826923076923
+        ]
+      ],
+      "correct_iou": [
+        0.8889251878471088,
+        0.7016826923076923
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.8889251878471088,
+        0.7016826923076923
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.7953039400774006,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_e49d9a50bdb728a9",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_e49d9a50bdb728a9.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_55cf123fae1f9422",
+        "pair_e8c62e9016d6cf6e"
+      ],
+      "iou_matrix": [
+        [
+          0.6316294696424286,
+          0.0
+        ],
+        [
+          0.0,
+          0.9355296790684464
+        ]
+      ],
+      "correct_iou": [
+        0.6316294696424286,
+        0.9355296790684464
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.6316294696424286,
+        0.9355296790684464
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.7835795743554375,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_99b0215fccf3f63b",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_99b0215fccf3f63b.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_75a189f73e8e5634",
+        "pair_f2c32ccd0c4715f8"
+      ],
+      "iou_matrix": [
+        [
+          0.03478699268968994,
+          0.0
+        ],
+        [
+          0.0,
+          0.8891741071428572
+        ]
+      ],
+      "correct_iou": [
+        0.03478699268968994,
+        0.8891741071428572
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.03478699268968994,
+        0.8891741071428572
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.4619805499162736,
+      "memory_fidelity": 1.0,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_84320e41bc5af656",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_84320e41bc5af656.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_0914f22169767032",
+        "pair_95733ef4b37417e7"
+      ],
+      "iou_matrix": [
+        [
+          0.9179068650984158,
+          0.0
+        ],
+        [
+          0.5040046599679627,
+          0.0
+        ]
+      ],
+      "correct_iou": [
+        0.9179068650984158,
+        0.0
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.5040046599679627
+      ],
+      "identity_margin": [
+        0.9179068650984158,
+        -0.5040046599679627
+      ],
+      "fidelity": [
+        true,
+        false
+      ],
+      "identity_error": [
+        false,
+        true
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.4589534325492079,
+      "memory_fidelity": 0.5,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.5
+    },
+    {
+      "group_id": "cf_26d7eeeecd43037a",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_26d7eeeecd43037a.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_b90dac7e7f4bdf95",
+        "pair_d4a89f428d1bb0c6"
+      ],
+      "iou_matrix": [
+        [
+          0.9301187980433263,
+          0.0
+        ],
+        [
+          0.0,
+          0.6656760772659732
+        ]
+      ],
+      "correct_iou": [
+        0.9301187980433263,
+        0.6656760772659732
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.9301187980433263,
+        0.6656760772659732
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.7978974376546497,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_0774290cbf004c7d",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_0774290cbf004c7d.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_28869619c31f8c92",
+        "pair_ba77882bb02cdf6a"
+      ],
+      "iou_matrix": [
+        [
+          0.8497425495397097,
+          0.06225752817291705
+        ],
+        [
+          0.0,
+          0.95376263571696
+        ]
+      ],
+      "correct_iou": [
+        0.8497425495397097,
+        0.95376263571696
+      ],
+      "max_wrong_iou": [
+        0.06225752817291705,
+        0.0
+      ],
+      "identity_margin": [
+        0.7874850213667927,
+        0.95376263571696
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.9017525926283348,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_2a89e76f158b6a5b",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_2a89e76f158b6a5b.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_0e189fa2f3e8c7c0",
+        "pair_a9537ca3a2ce2b36"
+      ],
+      "iou_matrix": [
+        [
+          0.8543371522094927,
+          0.0
+        ],
+        [
+          0.0,
+          0.34704914178227136
+        ]
+      ],
+      "correct_iou": [
+        0.8543371522094927,
+        0.34704914178227136
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.8543371522094927,
+        0.34704914178227136
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.600693146995882,
+      "memory_fidelity": 1.0,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_8065502af4eb2535",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_8065502af4eb2535.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_5e23b792d98f68a4",
+        "pair_9f2b95a73274063f"
+      ],
+      "iou_matrix": [
+        [
+          0.947008547008547,
+          0.0
+        ],
+        [
+          0.0,
+          0.6632
+        ]
+      ],
+      "correct_iou": [
+        0.947008547008547,
+        0.6632
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.947008547008547,
+        0.6632
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.8051042735042735,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_ae56647f7b0ed80f",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_ae56647f7b0ed80f.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_c4e91b9cdc0cba71",
+        "pair_e851f113ee939eea"
+      ],
+      "iou_matrix": [
+        [
+          0.9594149908592322,
+          0.0
+        ],
+        [
+          0.0,
+          0.8060512024825446
+        ]
+      ],
+      "correct_iou": [
+        0.9594149908592322,
+        0.8060512024825446
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.9594149908592322,
+        0.8060512024825446
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.8827330966708884,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_aa391b9836fd78ee",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_aa391b9836fd78ee.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_06a1dc4e3e515041",
+        "pair_37c82634946f25f5"
+      ],
+      "iou_matrix": [
+        [
+          0.8835822391500451,
+          0.0
+        ],
+        [
+          0.0,
+          0.9260058578695853
+        ]
+      ],
+      "correct_iou": [
+        0.8835822391500451,
+        0.9260058578695853
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.8835822391500451,
+        0.9260058578695853
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.9047940485098152,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_02e38a9e5a19c360",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_02e38a9e5a19c360.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_263468c2ddf5fb76",
+        "pair_dc04ff024e121dde"
+      ],
+      "iou_matrix": [
+        [
+          0.8959380234505863,
+          0.0
+        ],
+        [
+          0.0,
+          0.8560862865947612
+        ]
+      ],
+      "correct_iou": [
+        0.8959380234505863,
+        0.8560862865947612
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.8959380234505863,
+        0.8560862865947612
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.8760121550226737,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_01ad18abfbf5459e",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_01ad18abfbf5459e.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_38674bdf7db4b2ed",
+        "pair_962f5313b2086805"
+      ],
+      "iou_matrix": [
+        [
+          0.3681474480151229,
+          0.0
+        ],
+        [
+          0.0,
+          0.9644100145952621
+        ]
+      ],
+      "correct_iou": [
+        0.3681474480151229,
+        0.9644100145952621
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.3681474480151229,
+        0.9644100145952621
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.6662787313051926,
+      "memory_fidelity": 1.0,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_427af9a92fe7f6cd",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_427af9a92fe7f6cd.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_0de775ae7f8ca4a2",
+        "pair_3074cb2dba94513d"
+      ],
+      "iou_matrix": [
+        [
+          0.0,
+          0.8651162790697674
+        ],
+        [
+          0.0,
+          0.9345111896348646
+        ]
+      ],
+      "correct_iou": [
+        0.0,
+        0.9345111896348646
+      ],
+      "max_wrong_iou": [
+        0.8651162790697674,
+        0.0
+      ],
+      "identity_margin": [
+        -0.8651162790697674,
+        0.9345111896348646
+      ],
+      "fidelity": [
+        false,
+        true
+      ],
+      "identity_error": [
+        true,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.4672555948174323,
+      "memory_fidelity": 0.5,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.5
+    },
+    {
+      "group_id": "cf_4165dbded0d67baf",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_4165dbded0d67baf.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_15a09d1fdc096259",
+        "pair_7b299e46695e42b0"
+      ],
+      "iou_matrix": [
+        [
+          0.5866035182679297,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "correct_iou": [
+        0.5866035182679297,
+        0.0
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.5866035182679297,
+        0.0
+      ],
+      "fidelity": [
+        true,
+        false
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.29330175913396483,
+      "memory_fidelity": 0.5,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_5495414a54138233",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_5495414a54138233.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_5469de723b6da72d",
+        "pair_e2f976f7917906d3"
+      ],
+      "iou_matrix": [
+        [
+          0.8978072822369745,
+          0.0
+        ],
+        [
+          0.0,
+          0.7644151565074135
+        ]
+      ],
+      "correct_iou": [
+        0.8978072822369745,
+        0.7644151565074135
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.8978072822369745,
+        0.7644151565074135
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.831111219372194,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_cd5bf6d06a4f5432",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_cd5bf6d06a4f5432.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_ac0d8bfe9c1661c5",
+        "pair_c2d9446c6d4fb8db"
+      ],
+      "iou_matrix": [
+        [
+          0.7422916666666667,
+          0.0
+        ],
+        [
+          0.0,
+          0.9181626841649128
+        ]
+      ],
+      "correct_iou": [
+        0.7422916666666667,
+        0.9181626841649128
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.7422916666666667,
+        0.9181626841649128
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.8302271754157897,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_149c5aadeca92d12",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_149c5aadeca92d12.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_1bd36ba388bfd4b4",
+        "pair_3d1a6dc5b8713250"
+      ],
+      "iou_matrix": [
+        [
+          0.9646047342563644,
+          0.0
+        ],
+        [
+          0.0,
+          0.13318181818181818
+        ]
+      ],
+      "correct_iou": [
+        0.9646047342563644,
+        0.13318181818181818
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.9646047342563644,
+        0.13318181818181818
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.5488932762190912,
+      "memory_fidelity": 1.0,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_3c4f4b5cb4bb1d77",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_3c4f4b5cb4bb1d77.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_103b145283b9c88f",
+        "pair_4e983bf2a4d11cbe"
+      ],
+      "iou_matrix": [
+        [
+          0.8100759144237405,
+          0.0
+        ],
+        [
+          0.0,
+          0.8262487476742522
+        ]
+      ],
+      "correct_iou": [
+        0.8100759144237405,
+        0.8262487476742522
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.8100759144237405,
+        0.8262487476742522
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.8181623310489963,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_f3d2d3f12a7aead4",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_f3d2d3f12a7aead4.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_2965e2b8ecc4bc25",
+        "pair_d14b167ce0280263"
+      ],
+      "iou_matrix": [
+        [
+          0.9353866755942417,
+          0.0
+        ],
+        [
+          0.0,
+          0.6967526265520535
+        ]
+      ],
+      "correct_iou": [
+        0.9353866755942417,
+        0.6967526265520535
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.9353866755942417,
+        0.6967526265520535
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.8160696510731476,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_5e9c50c7e24dfd0f",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_5e9c50c7e24dfd0f.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_1ae32805d01615a2",
+        "pair_9e66a011a42a7a28"
+      ],
+      "iou_matrix": [
+        [
+          0.969758064516129,
+          0.0
+        ],
+        [
+          0.0,
+          0.9449339207048458
+        ]
+      ],
+      "correct_iou": [
+        0.969758064516129,
+        0.9449339207048458
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.969758064516129,
+        0.9449339207048458
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.9573459926104875,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_1e7d8cfc1625c2da",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_1e7d8cfc1625c2da.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_14fac578d65d6396",
+        "pair_59941987cbb2d335"
+      ],
+      "iou_matrix": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.023246650906225373
+        ]
+      ],
+      "correct_iou": [
+        0.0,
+        0.023246650906225373
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.0,
+        0.023246650906225373
+      ],
+      "fidelity": [
+        false,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.011623325453112687,
+      "memory_fidelity": 0.5,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_2e36401e0d114aa8",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_2e36401e0d114aa8.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_90b92efae9e9d2c3",
+        "pair_bfc414aca21db2fe"
+      ],
+      "iou_matrix": [
+        [
+          0.8786764705882353,
+          0.0
+        ],
+        [
+          0.0,
+          0.7901585048497752
+        ]
+      ],
+      "correct_iou": [
+        0.8786764705882353,
+        0.7901585048497752
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.8786764705882353,
+        0.7901585048497752
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.8344174877190053,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_1a115ce7f6b388e4",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_1a115ce7f6b388e4.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_10cd9300159cd8f8",
+        "pair_92a3a6c3133f912f"
+      ],
+      "iou_matrix": [
+        [
+          0.7579408543263965,
+          0.0
+        ],
+        [
+          0.0,
+          0.9101917255297679
+        ]
+      ],
+      "correct_iou": [
+        0.7579408543263965,
+        0.9101917255297679
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.7579408543263965,
+        0.9101917255297679
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.8340662899280822,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_289b3fd7110690be",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_289b3fd7110690be.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_82603c63849c0b6a",
+        "pair_ec7ddf7c7749247e"
+      ],
+      "iou_matrix": [
+        [
+          0.8966244725738397,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "correct_iou": [
+        0.8966244725738397,
+        0.0
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.8966244725738397,
+        0.0
+      ],
+      "fidelity": [
+        true,
+        false
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.44831223628691985,
+      "memory_fidelity": 0.5,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_b88a50d6609f6487",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_b88a50d6609f6487.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_852a6f8fa01385f4",
+        "pair_8ca9be40574f083a"
+      ],
+      "iou_matrix": [
+        [
+          0.9321148825065274,
+          0.0
+        ],
+        [
+          0.0,
+          0.6234067207415991
+        ]
+      ],
+      "correct_iou": [
+        0.9321148825065274,
+        0.6234067207415991
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.9321148825065274,
+        0.6234067207415991
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.7777608016240632,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_6b395dbd9b45c431",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_6b395dbd9b45c431.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_5f1e02b478b86291",
+        "pair_be7ab541fdb4af4d"
+      ],
+      "iou_matrix": [
+        [
+          0.9798814061838205,
+          0.0
+        ],
+        [
+          0.0,
+          0.8904510837727007
+        ]
+      ],
+      "correct_iou": [
+        0.9798814061838205,
+        0.8904510837727007
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.9798814061838205,
+        0.8904510837727007
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.9351662449782605,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_4a66376fb7c719e0",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_4a66376fb7c719e0.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_98ed33399344eb77",
+        "pair_fb6a850be1953af9"
+      ],
+      "iou_matrix": [
+        [
+          0.894502731712034,
+          0.0
+        ],
+        [
+          0.0,
+          0.9526077360901383
+        ]
+      ],
+      "correct_iou": [
+        0.894502731712034,
+        0.9526077360901383
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.894502731712034,
+        0.9526077360901383
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.9235552339010862,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_c55d2b77e1c81163",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_c55d2b77e1c81163.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_c1e75a5ad923ddc7",
+        "pair_f580bdfa8b667497"
+      ],
+      "iou_matrix": [
+        [
+          0.7502870264064294,
+          0.0
+        ],
+        [
+          0.0,
+          0.9311472161680207
+        ]
+      ],
+      "correct_iou": [
+        0.7502870264064294,
+        0.9311472161680207
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.7502870264064294,
+        0.9311472161680207
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.8407171212872251,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_a61afd1b0775da52",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_a61afd1b0775da52.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_0056ba0d0618e2f4",
+        "pair_b14a46053498a63a"
+      ],
+      "iou_matrix": [
+        [
+          0.9295774647887324,
+          0.0
+        ],
+        [
+          0.0,
+          0.8371584699453551
+        ]
+      ],
+      "correct_iou": [
+        0.9295774647887324,
+        0.8371584699453551
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.9295774647887324,
+        0.8371584699453551
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.8833679673670438,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_dd011c16faf2a9e3",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_dd011c16faf2a9e3.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_0ef076cb77057544",
+        "pair_b2f1252d6a00750e"
+      ],
+      "iou_matrix": [
+        [
+          0.8791077813723821,
+          0.0
+        ],
+        [
+          0.0,
+          0.9315916122378824
+        ]
+      ],
+      "correct_iou": [
+        0.8791077813723821,
+        0.9315916122378824
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.8791077813723821,
+        0.9315916122378824
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.9053496968051322,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_5e913799bf202735",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_5e913799bf202735.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_7cd713a1305520f4",
+        "pair_bebf44b541a0cd42"
+      ],
+      "iou_matrix": [
+        [
+          0.7774113767518549,
+          0.0
+        ],
+        [
+          0.0,
+          0.7689987937273823
+        ]
+      ],
+      "correct_iou": [
+        0.7774113767518549,
+        0.7689987937273823
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.7774113767518549,
+        0.7689987937273823
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.7732050852396186,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_8c490484f166a75a",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_8c490484f166a75a.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_0fc3abb49ae05ce3",
+        "pair_5dcb49c2b6c45818"
+      ],
+      "iou_matrix": [
+        [
+          0.8080610795454546,
+          0.0
+        ],
+        [
+          0.0,
+          0.06264682850430697
+        ]
+      ],
+      "correct_iou": [
+        0.8080610795454546,
+        0.06264682850430697
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.8080610795454546,
+        0.06264682850430697
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": false
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.43535395402488075,
+      "memory_fidelity": 1.0,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.0
+    },
+    {
+      "group_id": "cf_91c35cfa78c4abd9",
+      "image_id": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_91c35cfa78c4abd9.jpg",
+      "query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "condition": "target15_b",
+      "memory_source": "supplied_ref",
+      "entity_ids": [
+        "pair_15f0f95c497e368a",
+        "pair_b3e80d96cb3419dd"
+      ],
+      "iou_matrix": [
+        [
+          0.8624910007199424,
+          0.0
+        ],
+        [
+          0.0,
+          0.5860255447032306
+        ]
+      ],
+      "correct_iou": [
+        0.8624910007199424,
+        0.5860255447032306
+      ],
+      "max_wrong_iou": [
+        0.0,
+        0.0
+      ],
+      "identity_margin": [
+        0.8624910007199424,
+        0.5860255447032306
+      ],
+      "fidelity": [
+        true,
+        true
+      ],
+      "identity_error": [
+        false,
+        false
+      ],
+      "pairs": [
+        {
+          "indices": [
+            0,
+            1
+          ],
+          "success": true
+        }
+      ],
+      "num_references": 2,
+      "num_pairs": 1,
+      "target_miou": 0.7242582727115865,
+      "memory_fidelity": 1.0,
+      "cmsa": 1.0,
+      "identity_error_rate": 0.0
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "selected_candidate": "cycle008",
+  "checkpoint": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle008/train/last.pt",
+  "eligible": {
+    "cycle008": true,
+    "no_cons": true
+  },
+  "validation": {
+    "cycle008": {
+      "clean": {
+        "num_groups": 50,
+        "num_references": 100,
+        "num_pairs": 50,
+        "target_miou": 0.9206407187859778,
+        "memory_fidelity": 1.0,
+        "cmsa": 0.96,
+        "identity_error_rate": 0.0,
+        "mean_identity_margin": 0.9206407187859775,
+        "median_identity_margin": 0.9610728584514363
+      },
+      "target15_b": {
+        "num_groups": 50,
+        "num_references": 100,
+        "num_pairs": 50,
+        "target_miou": 0.7134155440526864,
+        "memory_fidelity": 0.93,
+        "cmsa": 0.62,
+        "identity_error_rate": 0.02,
+        "mean_identity_margin": 0.6981808812406869,
+        "median_identity_margin": 0.8560609006275051
+      }
+    },
+    "no_cons": {
+      "clean": {
+        "num_groups": 50,
+        "num_references": 100,
+        "num_pairs": 50,
+        "target_miou": 0.9207260997640845,
+        "memory_fidelity": 0.99,
+        "cmsa": 0.96,
+        "identity_error_rate": 0.0,
+        "mean_identity_margin": 0.9207260997640845,
+        "median_identity_margin": 0.9617889189711337
+      },
+      "target15_b": {
+        "num_groups": 50,
+        "num_references": 100,
+        "num_pairs": 50,
+        "target_miou": 0.7123021706753146,
+        "memory_fidelity": 0.91,
+        "cmsa": 0.62,
+        "identity_error_rate": 0.02,
+        "mean_identity_margin": 0.6979883860032083,
+        "median_identity_margin": 0.8548406321928849
+      }
+    }
+  },
+  "selection_data": "validation50 only",
+  "selected_at_utc": "2026-09-17T22:30:51.664205+00:00",
+  "confirmation_lock_commit": "3a93aa7",
+  "confirmation_w15_inference_before_selection": 0,
+  "rule": "clean preservation -> degraded CMSA -> degraded mIoU; equal CMSA and abs mIoU delta<0.002 keeps Cycle008",
+  "cycle008_minus_no_cons": {
+    "clean": {
+      "target_miou": -8.538097810673051e-05,
+      "cmsa": 0.0,
+      "memory_fidelity": 0.010000000000000009,
+      "mean_identity_margin": -8.538097810695255e-05,
+      "median_identity_margin": -0.0007160605196974146,
+      "identity_error_rate": 0.0
+    },
+    "target15_b": {
+      "target_miou": 0.001113373377371718,
+      "cmsa": 0.0,
+      "memory_fidelity": 0.020000000000000018,
+      "mean_identity_margin": 0.00019249523747855157,
+      "median_identity_margin": 0.0012202684346201975,
+      "identity_error_rate": 0.0
+    }
+  }
+}

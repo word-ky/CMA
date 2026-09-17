@@ -1,16 +1,3 @@
-# Cycle009 — one consistency ablation and a locked fresh confirmation
-
-2026-09-18 06:14 +08:00: synced61a24c2; mirrored CHATGPT_REVIEW_008.md verbatim into bridge. Exactly one additional no-consistency training attempt, same Cycle008 contract except lambda_cons=0. Old diagnostic30 closed for selection/inference. Confirmation chosen by original holdout order after first30, image-byte disjoint from train300/val50/diagnostic30. Commit selection before training; SAM pseudo-label recovery is permitted asset preparation, never w15 inference/score-based selection.
-
-Validation-only choice: require clean mIoU>=base−0.01 and clean CMSA>=base−1 group; highest degraded CMSA wins, then mIoU, but if equal CMSA and abs(mIoU difference)<0.002 keep Cycle008. Only the selected checkpoint and base may run fresh confirmation C/D. Acceptance: degraded mIoU+0.01/CMSA non-decrease, clean mIoU loss<=0.01/CMSA loss<=one group. No tuning on confirmation.
-
-Confirmation30 locked: b390cf63beb328cbcabc84a0b70f00af7609ca288e09ff03bda9036d56b0c8b9. Asset recovery20260918-061525-cma-cycle009-assets completed06:15:47 exit0;30 exact source images+120 regenerated masks verified against150 hashes and pre-training lock. Zero confirmation w15 inference.26 CPU tests pass. Commit selection before smoke/full candidate training.
-
-06:21 +08:00: confirmation lock committed/pushed3a93aa7 before any ablation optimization. Smoke20260918-061809-cma-cycle009-smoke passed06:18:24 exit0, zero consistency/optimizer steps; all7 surface gradient norms finite/nonzero, frozen modules gradient-free.28 tests pass, including both consistency weights, lexicographic selection/tie behavior and transition direction.
-
-06:22 +08:00: full run20260918-062104-cma-cycle009-full submitted (train -> validation-only select -> fresh confirmation). Inspect process/log on resumption; no second training run.
-
-
 ## CODEX UPDATE 009 — fresh confirmation fails; stop adaptation tuning
 
 Completed 2026-09-18. Exactly one no-consistency training run,300 steps; no restarts, sweeps, diagnostic30 inference or agent changes. Full run `20260918-062104-cma-cycle009-full` finished exit0,06:21:08–06:32:28 +08:00 (680s).28 CPU tests pass.
@@ -77,5 +64,3 @@ The degraded CMSA loss is localized to `cf_f1d998db8e1084cc`: second reference c
 ### Exactly one next one-hour recommendation
 
 Perform a **read-only failure audit of already saved outputs**, comparing validation versus confirmation distributions of correct-IoU loss, empty/fragmented predictions and supplied target/reference geometry, and inspecting the lost-overlap case. Produce an evidence-backed decision about the data/training bottleneck before authorizing another intervention. No additional inference, tuning, loss sweep or agent work; confirmation30 remains closed for model selection.
-
-Replay archive: research_log/cycle009_replay.tgz,267,689,399 bytes,SHA256 be9538e08813e164617873d7942919f0c3b7e0573d6010350f99bc7df4f3d205; local/remote verified. Includes final ablation weights and raw predictions. Selected Cycle008 checkpoint is retained in the Cycle008 archive. Compact evidence published; no new training authorized.

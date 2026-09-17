@@ -1,0 +1,22 @@
+{
+  "model": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/cmllm_lisa_plus_mr_ref_v2b_rank_long2ep_w15_lr5e6_merged_hf",
+  "condition": "target15_b",
+  "main_condition": "target15_b",
+  "ref_condition": "target15_b",
+  "memory_source": "supplied_ref",
+  "seed": 0,
+  "counterfactual_jsonl": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle009/counterfactual_selected_restored.jsonl",
+  "pairs_jsonl": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle009/helmet_miner_pairs_restored.jsonl",
+  "conversation_mode": "v1_multiround",
+  "ref_image_mode": "crop",
+  "focus_dilate": 15,
+  "focus_background": 0.0,
+  "num_counterfactual": 30,
+  "num_ref_trials": 60,
+  "mean_iou_correct": 0.5849101392010978,
+  "mean_iou_wrong": 0.015127251930225908,
+  "mean_rcs": 0.5697828872708719,
+  "median_rcs": 0.7579888550866545,
+  "pair_success_rate": 0.85,
+  "counterfactual_success_rate": 0.7
+}

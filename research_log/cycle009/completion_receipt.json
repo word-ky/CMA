@@ -1,0 +1,25 @@
+{
+  "new_training_attempts": 1,
+  "optimizer_steps": 300,
+  "same_training_group_order_as_cycle008": true,
+  "same_trainable_parameters_and_other_config": true,
+  "all_training_consistency_terms_zero": true,
+  "ablation_checkpoint": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle009/train/last.pt",
+  "ablation_checkpoint_sha256": "826c97c1a184ff6f862c2fc82479858ee3e5cf290cc98dbe0418cd71e61e6c64",
+  "selected_candidate": "cycle008",
+  "selected_checkpoint": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle008/train/last.pt",
+  "selected_checkpoint_sha256": "0541449d9c6d06618de8b3f17a4289cb495e336b6600b35dd7d51a3ad48110d1",
+  "confirmation_gate": "FAIL",
+  "confirmed_asset_hashes": 150,
+  "selection_sha256": "b390cf63beb328cbcabc84a0b70f00af7609ca288e09ff03bda9036d56b0c8b9",
+  "confirmation_conditions_per_model": [
+    "clean",
+    "target15_b"
+  ],
+  "diagnostic30_inference_calls": 0,
+  "source_hashes": {
+    "code/cmllm/scripts/train_w15_degradation_counterfactual.py": "93e883518c6e3701f94789df1fca2494fd73cdc37e4f0e97b891ad46ebad21af",
+    "research_log/cycle009_analysis.py": "a86e5489fb9c338e079ab4e5fadb6f5312b05bdefc0b3e0d40cce729a2f0ebd1",
+    "research_log/run_cycle009_full.sh": "a25cf96d71a93b7292705663ae331c95bcd08bf8c7a82f921964957cb1da0386"
+  }
+}

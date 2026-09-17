@@ -1,0 +1,1046 @@
+{
+  "passed": false,
+  "status": "FAIL",
+  "criteria": {
+    "degraded_miou_gain_at_least_0_01": false,
+    "degraded_cmsa_non_decrease": false,
+    "clean_miou_drop_at_most_0_01": true,
+    "clean_cmsa_drop_at_most_one_group": true
+  },
+  "confirmation": {
+    "clean": {
+      "base": {
+        "num_groups": 30,
+        "num_references": 60,
+        "num_pairs": 30,
+        "target_miou": 0.9053772455833353,
+        "memory_fidelity": 0.9833333333333333,
+        "cmsa": 0.9,
+        "identity_error_rate": 0.0,
+        "mean_identity_margin": 0.9053772455833353,
+        "median_identity_margin": 0.9560612754641292
+      },
+      "selected": {
+        "num_groups": 30,
+        "num_references": 60,
+        "num_pairs": 30,
+        "target_miou": 0.9092784014418179,
+        "memory_fidelity": 0.9833333333333333,
+        "cmsa": 0.9333333333333333,
+        "identity_error_rate": 0.0,
+        "mean_identity_margin": 0.9092784014418179,
+        "median_identity_margin": 0.954970347409928
+      }
+    },
+    "target15_b": {
+      "base": {
+        "num_groups": 30,
+        "num_references": 60,
+        "num_pairs": 30,
+        "target_miou": 0.5849101392010978,
+        "memory_fidelity": 0.85,
+        "cmsa": 0.2,
+        "identity_error_rate": 0.016666666666666666,
+        "mean_identity_margin": 0.5697828872708719,
+        "median_identity_margin": 0.7579888550866545
+      },
+      "selected": {
+        "num_groups": 30,
+        "num_references": 60,
+        "num_pairs": 30,
+        "target_miou": 0.5850752848597328,
+        "memory_fidelity": 0.8666666666666667,
+        "cmsa": 0.16666666666666666,
+        "identity_error_rate": 0.016666666666666666,
+        "mean_identity_margin": 0.5698371896216377,
+        "median_identity_margin": 0.7961078996467157
+      }
+    }
+  },
+  "selected_minus_base": {
+    "clean": {
+      "target_miou": 0.003901155858482608,
+      "cmsa": 0.033333333333333326,
+      "memory_fidelity": 0.0,
+      "mean_identity_margin": 0.003901155858482608,
+      "median_identity_margin": -0.00109092805420119,
+      "identity_error_rate": 0.0
+    },
+    "target15_b": {
+      "target_miou": 0.00016514565863501307,
+      "cmsa": -0.033333333333333354,
+      "memory_fidelity": 0.01666666666666672,
+      "mean_identity_margin": 5.430235076575585e-05,
+      "median_identity_margin": 0.03811904456006121,
+      "identity_error_rate": 0.0
+    }
+  },
+  "transitions": {
+    "clean": {
+      "cmsa_groups": {
+        "fail_to_pass": 1,
+        "pass_to_fail": 0,
+        "pass_to_pass": 27,
+        "fail_to_fail": 2
+      },
+      "correct_iou_0_5_references": {
+        "fail_to_pass": 1,
+        "pass_to_fail": 0,
+        "pass_to_pass": 57,
+        "fail_to_fail": 2
+      }
+    },
+    "target15_b": {
+      "cmsa_groups": {
+        "fail_to_pass": 0,
+        "pass_to_fail": 1,
+        "pass_to_pass": 5,
+        "fail_to_fail": 24
+      },
+      "correct_iou_0_5_references": {
+        "fail_to_pass": 0,
+        "pass_to_fail": 1,
+        "pass_to_pass": 35,
+        "fail_to_fail": 24
+      }
+    }
+  },
+  "paired_groups": {
+    "clean": [
+      {
+        "group_id": "cf_581c0585406db33d",
+        "target_miou_delta": 7.019185069701006e-05,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9765342960288809,
+          0.9801737580752952
+        ],
+        "correct_iou_selected": [
+          0.9764279238440616,
+          0.9804205139615085
+        ]
+      },
+      {
+        "group_id": "cf_b7dc204764014325",
+        "target_miou_delta": -0.005214573109815546,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9855023976803836,
+          0.9476082004555809
+        ],
+        "correct_iou_selected": [
+          0.9857445149793964,
+          0.9369369369369369
+        ]
+      },
+      {
+        "group_id": "cf_792054f08d2c1a87",
+        "target_miou_delta": -0.015643623833316633,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9585798816568047,
+          0.7217917833192266
+        ],
+        "correct_iou_selected": [
+          0.9273927392739274,
+          0.7216916780354706
+        ]
+      },
+      {
+        "group_id": "cf_6898b1c991b7f8fb",
+        "target_miou_delta": -0.005151639501774552,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9600760456273765,
+          0.9906708129720124
+        ],
+        "correct_iou_selected": [
+          0.9500941619585688,
+          0.9903494176372712
+        ]
+      },
+      {
+        "group_id": "cf_58267d184c161f12",
+        "target_miou_delta": -0.004477792521819235,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9347079037800687,
+          0.9845366817811882
+        ],
+        "correct_iou_selected": [
+          0.9263038548752834,
+          0.983985145642335
+        ]
+      },
+      {
+        "group_id": "cf_0dd2005e0944e4e6",
+        "target_miou_delta": 0.0048112362561546496,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.8797068123023858,
+          0.8823657791357485
+        ],
+        "correct_iou_selected": [
+          0.8787273505492937,
+          0.8929677134011499
+        ]
+      },
+      {
+        "group_id": "cf_3f8ef6ec3980547d",
+        "target_miou_delta": 0.008281145788584077,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9787579928470792,
+          0.9068255687973997
+        ],
+        "correct_iou_selected": [
+          0.9782208256582512,
+          0.9239250275633958
+        ]
+      },
+      {
+        "group_id": "cf_376866f93a11b8a0",
+        "target_miou_delta": -0.0002490538470774073,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9680978832007207,
+          0.9713922441195169
+        ],
+        "correct_iou_selected": [
+          0.9679958027282266,
+          0.9709962168978562
+        ]
+      },
+      {
+        "group_id": "cf_0b7e6c5dffa52447",
+        "target_miou_delta": -0.00841102758613399,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.8310077519379845,
+          0.9138110072689511
+        ],
+        "correct_iou_selected": [
+          0.8270483373328762,
+          0.9009483667017913
+        ]
+      },
+      {
+        "group_id": "cf_f5920b288a5b32e2",
+        "target_miou_delta": -0.0027342982363108836,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9783989834815756,
+          0.9458367016976557
+        ],
+        "correct_iou_selected": [
+          0.9704216488357458,
+          0.9483454398708636
+        ]
+      },
+      {
+        "group_id": "cf_32832e7cd8982989",
+        "target_miou_delta": 0.017439701847814293,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.8728991596638656,
+          0.9887438090950023
+        ],
+        "correct_iou_selected": [
+          0.9064200217627857,
+          0.9901023506917107
+        ]
+      },
+      {
+        "group_id": "cf_a4fb9030e468c545",
+        "target_miou_delta": -0.000864177390730303,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9352134146341463,
+          0.9302062729584628
+        ],
+        "correct_iou_selected": [
+          0.9322289156626506,
+          0.9314624171484981
+        ]
+      },
+      {
+        "group_id": "cf_8c6aa4a3ae57ca29",
+        "target_miou_delta": 0.003524700244798451,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9784970574920778,
+          0.9607843137254902
+        ],
+        "correct_iou_selected": [
+          0.9790818634102216,
+          0.9672489082969432
+        ]
+      },
+      {
+        "group_id": "cf_c79cf1f98e6e259c",
+        "target_miou_delta": -0.0013816359591179994,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.985513756316676,
+          0.9012810851544838
+        ],
+        "correct_iou_selected": [
+          0.984411797689806,
+          0.8996197718631179
+        ]
+      },
+      {
+        "group_id": "cf_f1d998db8e1084cc",
+        "target_miou_delta": -0.0009028153758206536,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.9878236349653935,
+          0.0
+        ],
+        "correct_iou_selected": [
+          0.9860180042137522,
+          0.0
+        ]
+      },
+      {
+        "group_id": "cf_be7e0d113ba4ef98",
+        "target_miou_delta": -0.00392668252522832,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9728997289972899,
+          0.946766917293233
+        ],
+        "correct_iou_selected": [
+          0.968981793661497,
+          0.9428314875785693
+        ]
+      },
+      {
+        "group_id": "cf_0fb216bf753549bc",
+        "target_miou_delta": 0.007818949156720656,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9859396801545562,
+          0.9391634980988594
+        ],
+        "correct_iou_selected": [
+          0.9852137576342013,
+          0.9555273189326556
+        ]
+      },
+      {
+        "group_id": "cf_2c5e700b5693489a",
+        "target_miou_delta": -0.0298137600061672,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.4240698557327259,
+          0.9811754862999372
+        ],
+        "correct_iou_selected": [
+          0.3687043444828912,
+          0.9769134775374376
+        ]
+      },
+      {
+        "group_id": "cf_9d0eb37960033763",
+        "target_miou_delta": -0.006229382739051825,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9634146341463414,
+          0.987546699875467
+        ],
+        "correct_iou_selected": [
+          0.9500462534690102,
+          0.9884563150746944
+        ]
+      },
+      {
+        "group_id": "cf_88d645803f4908e9",
+        "target_miou_delta": 0.018025229037016977,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.7225253312548714,
+          0.8733684451568583
+        ],
+        "correct_iou_selected": [
+          0.7474267616785432,
+          0.8845174728072206
+        ]
+      },
+      {
+        "group_id": "cf_3ee31ceeaedea171",
+        "target_miou_delta": 0.0007851223341108771,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9414337650533969,
+          0.9535426692714537
+        ],
+        "correct_iou_selected": [
+          0.9421333031058717,
+          0.9544133758872005
+        ]
+      },
+      {
+        "group_id": "cf_392a9486aac01f18",
+        "target_miou_delta": -0.0002738144228584538,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9884700665188471,
+          0.9455909943714822
+        ],
+        "correct_iou_selected": [
+          0.9879224376731301,
+          0.9455909943714822
+        ]
+      },
+      {
+        "group_id": "cf_71fd80c680b2b023",
+        "target_miou_delta": 0.0021064500130745234,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9861968353720121,
+          0.9523219814241486
+        ],
+        "correct_iou_selected": [
+          0.9848891873740766,
+          0.9578425294482331
+        ]
+      },
+      {
+        "group_id": "cf_272131613d98583f",
+        "target_miou_delta": -0.022372458497379677,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.8841961852861036,
+          0.964715765891907
+        ],
+        "correct_iou_selected": [
+          0.8387942332896461,
+          0.9653728008936051
+        ]
+      },
+      {
+        "group_id": "cf_759a625cfcb97590",
+        "target_miou_delta": -0.0011708519674313855,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9600580973129993,
+          0.975486223662885
+        ],
+        "correct_iou_selected": [
+          0.958273381294964,
+          0.9749292357460574
+        ]
+      },
+      {
+        "group_id": "cf_2cc0906bc033109c",
+        "target_miou_delta": -0.002643123586112517,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9032804232804232,
+          0.9704820830110853
+        ],
+        "correct_iou_selected": [
+          0.9030827702702703,
+          0.9653934888490131
+        ]
+      },
+      {
+        "group_id": "cf_c8093f0333d4a26c",
+        "target_miou_delta": -0.0017374041883716496,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9656880084895649,
+          0.8506304558680893
+        ],
+        "correct_iou_selected": [
+          0.9657848324514992,
+          0.8470588235294118
+        ]
+      },
+      {
+        "group_id": "cf_20a2c9073ad7482b",
+        "target_miou_delta": -0.00976263775085462,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.8634206958879349,
+          0.9512195121951219
+        ],
+        "correct_iou_selected": [
+          0.8371096832375154,
+          0.958005249343832
+        ]
+      },
+      {
+        "group_id": "cf_4ee668b4c4573b8e",
+        "target_miou_delta": -0.0011205153475786211,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9675248683440608,
+          0.9184983154179368
+        ],
+        "correct_iou_selected": [
+          0.9634876588286841,
+          0.9202944942381562
+        ]
+      },
+      {
+        "group_id": "cf_511b78bd32ba769c",
+        "target_miou_delta": 0.17825321761845814,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.3788059701492537,
+          0.9668565510098395
+        ],
+        "correct_iou_selected": [
+          0.7356051703877791,
+          0.9665637860082305
+        ]
+      }
+    ],
+    "target15_b": [
+      {
+        "group_id": "cf_581c0585406db33d",
+        "target_miou_delta": 0.014149230583761052,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.22961222091656874,
+          0.9413077438071858
+        ],
+        "correct_iou_selected": [
+          0.25520147484856465,
+          0.9440169510427122
+        ]
+      },
+      {
+        "group_id": "cf_b7dc204764014325",
+        "target_miou_delta": 0.03206772812963821,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.9505830094392005,
+          0.2613480055020633
+        ],
+        "correct_iou_selected": [
+          0.9549539553977588,
+          0.3211125158027813
+        ]
+      },
+      {
+        "group_id": "cf_792054f08d2c1a87",
+        "target_miou_delta": -0.03304109138772432,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.0,
+          0.7143424449003904
+        ],
+        "correct_iou_selected": [
+          0.0,
+          0.6482602621249418
+        ]
+      },
+      {
+        "group_id": "cf_6898b1c991b7f8fb",
+        "target_miou_delta": 0.005005022880797183,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.21406655652584375,
+          0.9531787418173749
+        ],
+        "correct_iou_selected": [
+          0.22136484205449722,
+          0.9558905020503159
+        ]
+      },
+      {
+        "group_id": "cf_58267d184c161f12",
+        "target_miou_delta": 0.02518273994652709,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.17255826132495417,
+          0.9420525948336048
+        ],
+        "correct_iou_selected": [
+          0.21869726628417144,
+          0.9462790697674418
+        ]
+      },
+      {
+        "group_id": "cf_0dd2005e0944e4e6",
+        "target_miou_delta": 0.03638540910598276,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.7523850823937555,
+          0.7635363039233091
+        ],
+        "correct_iou_selected": [
+          0.7703383729301656,
+          0.8183538315988647
+        ]
+      },
+      {
+        "group_id": "cf_3f8ef6ec3980547d",
+        "target_miou_delta": 0.004365217776578834,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.9464438731790917,
+          0.19089759797724398
+        ],
+        "correct_iou_selected": [
+          0.9487509381365927,
+          0.19732096857290057
+        ]
+      },
+      {
+        "group_id": "cf_376866f93a11b8a0",
+        "target_miou_delta": 0.0038601993273806867,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.896962879640045,
+          0.0
+        ],
+        "correct_iou_selected": [
+          0.9046832782948063,
+          0.0
+        ]
+      },
+      {
+        "group_id": "cf_0b7e6c5dffa52447",
+        "target_miou_delta": 0.011596587500025235,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.8319253783878916,
+          0.20239307535641549
+        ],
+        "correct_iou_selected": [
+          0.850632911392405,
+          0.20687871735195243
+        ]
+      },
+      {
+        "group_id": "cf_f5920b288a5b32e2",
+        "target_miou_delta": 0.0017197804256394722,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.896888346552776,
+          0.8756137479541735
+        ],
+        "correct_iou_selected": [
+          0.9014510278113664,
+          0.8744906275468622
+        ]
+      },
+      {
+        "group_id": "cf_32832e7cd8982989",
+        "target_miou_delta": 0.010053511994363218,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.182596621152511,
+          0.9453545780969479
+        ],
+        "correct_iou_selected": [
+          0.19707123355671383,
+          0.9509869896814716
+        ]
+      },
+      {
+        "group_id": "cf_a4fb9030e468c545",
+        "target_miou_delta": 0.018174819492547012,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.0,
+          0.8174070247933884
+        ],
+        "correct_iou_selected": [
+          0.015055467511885896,
+          0.8387011962665966
+        ]
+      },
+      {
+        "group_id": "cf_8c6aa4a3ae57ca29",
+        "target_miou_delta": -0.0012215399844975883,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.947463768115942,
+          0.1887028242939265
+        ],
+        "correct_iou_selected": [
+          0.9513881019830028,
+          0.1823354104578705
+        ]
+      },
+      {
+        "group_id": "cf_c79cf1f98e6e259c",
+        "target_miou_delta": 0.028035781292859663,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.9377108162806387,
+          0.3811029153494907
+        ],
+        "correct_iou_selected": [
+          0.9407798629059445,
+          0.43410543130990414
+        ]
+      },
+      {
+        "group_id": "cf_f1d998db8e1084cc",
+        "target_miou_delta": -0.33833882056747205,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.9703544846726379,
+          0.6751556310130165
+        ],
+        "correct_iou_selected": [
+          0.9688324745507101,
+          0.0
+        ]
+      },
+      {
+        "group_id": "cf_be7e0d113ba4ef98",
+        "target_miou_delta": 0.0026774185971483733,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.0,
+          0.8899055489964581
+        ],
+        "correct_iou_selected": [
+          0.0,
+          0.8952603861907549
+        ]
+      },
+      {
+        "group_id": "cf_0fb216bf753549bc",
+        "target_miou_delta": 0.0036994059935969714,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.9320868257038469,
+          0.21382219338092148
+        ],
+        "correct_iou_selected": [
+          0.9349087003222342,
+          0.21839913074972836
+        ]
+      },
+      {
+        "group_id": "cf_2c5e700b5693489a",
+        "target_miou_delta": -0.02888836548412399,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.3454887218045113,
+          0.9046277665995975
+        ],
+        "correct_iou_selected": [
+          0.2854838709677419,
+          0.9068558864681191
+        ]
+      },
+      {
+        "group_id": "cf_9d0eb37960033763",
+        "target_miou_delta": 0.011410280477328727,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.2422409258285113,
+          0.9478930675124604
+        ],
+        "correct_iou_selected": [
+          0.25813630041724617,
+          0.9548182538783829
+        ]
+      },
+      {
+        "group_id": "cf_88d645803f4908e9",
+        "target_miou_delta": 0.010710280722283416,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.0,
+          0.75244140625
+        ],
+        "correct_iou_selected": [
+          0.0,
+          0.7738619676945668
+        ]
+      },
+      {
+        "group_id": "cf_3ee31ceeaedea171",
+        "target_miou_delta": 0.10914071469901498,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.0,
+          0.887313894306236
+        ],
+        "correct_iou_selected": [
+          0.2101695537961313,
+          0.8954257699081346
+        ]
+      },
+      {
+        "group_id": "cf_392a9486aac01f18",
+        "target_miou_delta": 0.016806386861766276,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.9511336121505614,
+          0.3595228301110654
+        ],
+        "correct_iou_selected": [
+          0.955010449895501,
+          0.38925876608965826
+        ]
+      },
+      {
+        "group_id": "cf_71fd80c680b2b023",
+        "target_miou_delta": 0.00043329530498908975,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.9529675251959686,
+          0.0
+        ],
+        "correct_iou_selected": [
+          0.9538341158059468,
+          0.0
+        ]
+      },
+      {
+        "group_id": "cf_272131613d98583f",
+        "target_miou_delta": 0.0026147117976642598,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.0,
+          0.9498299319727891
+        ],
+        "correct_iou_selected": [
+          0.0,
+          0.9550593555681176
+        ]
+      },
+      {
+        "group_id": "cf_759a625cfcb97590",
+        "target_miou_delta": 0.0042209300805289285,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.0,
+          0.8765356265356266
+        ],
+        "correct_iou_selected": [
+          0.0,
+          0.8849774866966844
+        ]
+      },
+      {
+        "group_id": "cf_2cc0906bc033109c",
+        "target_miou_delta": 0.003463942199920522,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.8344281980645617,
+          0.9223983635898747
+        ],
+        "correct_iou_selected": [
+          0.8366857223516126,
+          0.9270687237026648
+        ]
+      },
+      {
+        "group_id": "cf_c8093f0333d4a26c",
+        "target_miou_delta": 0.004193217221316825,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9118895966029724,
+          0.533210332103321
+        ],
+        "correct_iou_selected": [
+          0.9225874867444327,
+          0.5308988764044944
+        ]
+      },
+      {
+        "group_id": "cf_20a2c9073ad7482b",
+        "target_miou_delta": 0.023782398770473723,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.7279797783394906,
+          0.4107058266224538
+        ],
+        "correct_iou_selected": [
+          0.7695021165087684,
+          0.4167482859941234
+        ]
+      },
+      {
+        "group_id": "cf_4ee668b4c4573b8e",
+        "target_miou_delta": 0.001499681378773765,
+        "cmsa_base": 1.0,
+        "cmsa_selected": 1.0,
+        "correct_iou_base": [
+          0.9545322063538327,
+          0.8180968696464725
+        ],
+        "correct_iou_selected": [
+          0.9430918157817542,
+          0.8325366229760987
+        ]
+      },
+      {
+        "group_id": "cf_511b78bd32ba769c",
+        "target_miou_delta": 0.021195494621964295,
+        "cmsa_base": 0.0,
+        "cmsa_selected": 0.0,
+        "correct_iou_base": [
+          0.14405525407005426,
+          0.8495575221238938
+        ],
+        "correct_iou_selected": [
+          0.14574101427868044,
+          0.8902627511591963
+        ]
+      }
+    ]
+  },
+  "cmsa_success_groups": {
+    "clean": {
+      "base": 27,
+      "selected": 28
+    },
+    "target15_b": {
+      "base": 6,
+      "selected": 5
+    }
+  },
+  "checkpoint_selection": {
+    "selected_candidate": "cycle008",
+    "checkpoint": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle008/train/last.pt",
+    "eligible": {
+      "cycle008": true,
+      "no_cons": true
+    },
+    "validation": {
+      "cycle008": {
+        "clean": {
+          "num_groups": 50,
+          "num_references": 100,
+          "num_pairs": 50,
+          "target_miou": 0.9206407187859778,
+          "memory_fidelity": 1.0,
+          "cmsa": 0.96,
+          "identity_error_rate": 0.0,
+          "mean_identity_margin": 0.9206407187859775,
+          "median_identity_margin": 0.9610728584514363
+        },
+        "target15_b": {
+          "num_groups": 50,
+          "num_references": 100,
+          "num_pairs": 50,
+          "target_miou": 0.7134155440526864,
+          "memory_fidelity": 0.93,
+          "cmsa": 0.62,
+          "identity_error_rate": 0.02,
+          "mean_identity_margin": 0.6981808812406869,
+          "median_identity_margin": 0.8560609006275051
+        }
+      },
+      "no_cons": {
+        "clean": {
+          "num_groups": 50,
+          "num_references": 100,
+          "num_pairs": 50,
+          "target_miou": 0.9207260997640845,
+          "memory_fidelity": 0.99,
+          "cmsa": 0.96,
+          "identity_error_rate": 0.0,
+          "mean_identity_margin": 0.9207260997640845,
+          "median_identity_margin": 0.9617889189711337
+        },
+        "target15_b": {
+          "num_groups": 50,
+          "num_references": 100,
+          "num_pairs": 50,
+          "target_miou": 0.7123021706753146,
+          "memory_fidelity": 0.91,
+          "cmsa": 0.62,
+          "identity_error_rate": 0.02,
+          "mean_identity_margin": 0.6979883860032083,
+          "median_identity_margin": 0.8548406321928849
+        }
+      }
+    },
+    "selection_data": "validation50 only",
+    "selected_at_utc": "2026-09-17T22:30:51.664205+00:00",
+    "confirmation_lock_commit": "3a93aa7",
+    "confirmation_w15_inference_before_selection": 0,
+    "rule": "clean preservation -> degraded CMSA -> degraded mIoU; equal CMSA and abs mIoU delta<0.002 keeps Cycle008",
+    "cycle008_minus_no_cons": {
+      "clean": {
+        "target_miou": -8.538097810673051e-05,
+        "cmsa": 0.0,
+        "memory_fidelity": 0.010000000000000009,
+        "mean_identity_margin": -8.538097810695255e-05,
+        "median_identity_margin": -0.0007160605196974146,
+        "identity_error_rate": 0.0
+      },
+      "target15_b": {
+        "target_miou": 0.001113373377371718,
+        "cmsa": 0.0,
+        "memory_fidelity": 0.020000000000000018,
+        "mean_identity_margin": 0.00019249523747855157,
+        "median_identity_margin": 0.0012202684346201975,
+        "identity_error_rate": 0.0
+      }
+    }
+  },
+  "paired_inputs_and_masks_equal": true
+}
