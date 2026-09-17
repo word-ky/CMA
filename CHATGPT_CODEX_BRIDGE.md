@@ -256,3 +256,99 @@ python -B cmllm_remote/scripts/eval_counterfactual_memory_fidelity.py --input re
 The published repository contains no grouped raw per-memory predictions with target masks. The old CF evaluator exports scalar scores and JPEG overlays, not raw predicted masks, and regular holdout30 is not a counterfactual diagnostic set. Consequently no actual memory-failure rate or degradation curve is claimed.
 
 Next: confirm the above metric conventions, resolve a small fixed set of archived counterfactual groups, and add a raw-prediction export seam to the existing frozen-model evaluator. Run clean plus one existing darkness/blur preset with identical groups/seeds; keep supplied-GT-reference and fixed predicted-reference conditions separate and use no GT candidate selection. Score and inspect ignored/swapped-identity cases. Do not add a new controller, verifier training, baseline roster or additional degradation families until that diagnostic is available.
+
+---
+
+## CHATGPT REVIEW 001 — accepted, narrow next step
+
+Cycle 001 is directionally correct and should be kept. It advanced the **primary contribution** rather than expanding scope: the CMF evaluator is testable, the memory API preserves provenance/version history, and the audit exposed the exact oracle dependencies instead of hiding them.
+
+### Most important research finding from the audit
+
+The current counterfactual training/evaluation path writes the second-round memory from a **supplied miner GT/pseudo-GT mask/bbox/crop**, not from the first-round predicted miner mask. This distinction is now central to the paper:
+
+- supplied-memory evaluation measures whether the model can **use the correct identity memory**;
+- predicted-memory evaluation measures whether the system can **form and then use identity memory under degradation**.
+
+Do not merge these protocols. The first isolates memory use; the second is the harder end-to-end coal-mine story and will later justify agent feedback/repair.
+
+### Metric decision
+
+Keep the evaluation simple and performance-oriented:
+
+1. **target mIoU** — segmentation quality;
+2. **CMSA** — primary identity-memory success metric, because it requires the prediction to switch to both corresponding identities and also exceed the quality threshold;
+3. **Memory Fidelity** — useful rank diagnostic, but do not headline it alone because a very poor mask can still rank its correct identity slightly above the wrong one;
+4. **IER** — diagnostic for explicit identity swaps.
+
+Also export one continuous identity margin already implicit in the old evaluator:
+
+`identity_margin = IoU(pred, correct_target) - max_j!=i IoU(pred, wrong_target_j)`.
+
+This is not a new contribution or taxonomy; it is the threshold-free curve we need to show how identity association collapses as degradation strengthens.
+
+### Engineering review
+
+- `eval_counterfactual_memory_fidelity.py` is appropriate as an offline scorer. Keep it decoupled from model loading.
+- `EntityMemoryStore` is sufficient for now. **Do not integrate or elaborate it further yet.** We first need real failure curves.
+- The verifier inventory is useful, but verifier/controller work stays Layer 2 and is paused until Layer 1 produces a measurable identity/degradation gap.
+- No baseline implementation, RL/DPO, new relation ontology, or broader agent architecture in the next cycle.
+
+# CYCLE 002 — one-hour Codex task
+
+## Goal
+
+Produce the **first real identity-memory × degradation diagnostic**, or, if weights/data are unavailable in the Codex environment, make the frozen evaluator ready to produce it immediately on the recovered experiment machine.
+
+## Priority A — raw prediction export from the existing frozen counterfactual evaluator
+
+Modify `cmllm_remote/scripts/eval_mr_ref_counterfactual_v0.py` minimally so it can save, for every fixed counterfactual group:
+
+- raw binary predicted target mask for each memory identity (`.png` or `.npy`);
+- corresponding target mask path/copy;
+- `group_id/counterfactual_id`, image id/path, query, entity/pair id;
+- `condition` and `memory_source` provenance;
+- a JSONL manifest directly consumable by `eval_counterfactual_memory_fidelity.py`.
+
+No candidate selection and no GT-based choice of prediction is allowed. One forward prediction per supplied identity memory is the result.
+
+## Priority B — add one deterministic compound degradation condition
+
+Use the **existing project degradation implementation/config**, preferably the archived `target15_b` compound setting already used in reproduction, rather than inventing a new degradation family. Apply it deterministically with fixed seed/group IDs.
+
+For this first diagnostic, use two conditions only:
+
+- `clean`;
+- `target15_b` (compound low-light/contrast/noise/blur).
+
+Keep the exact same counterfactual groups, queries and identity memories across conditions. The supplied miner mask/bbox stays fixed in this protocol; reference appearance should come from the corresponding clean/degraded observation consistently. Label `memory_source=supplied_ref` explicitly. This intentionally isolates **robust memory use** before testing memory-write corruption.
+
+## Priority C — run a small real diagnostic if assets are accessible
+
+On a fixed subset of archived counterfactual holdout groups (use 20–50 groups; do not cherry-pick by result):
+
+1. export raw predictions for clean;
+2. export raw predictions for `target15_b`;
+3. score both with the CMF evaluator;
+4. report mIoU, CMSA, Memory Fidelity, IER and mean/median identity margin;
+5. save 5–10 representative failures categorized only as:
+   - memory ignored / same target selected for different memories;
+   - identity swap;
+   - low-quality segmentation without a clear swap.
+
+These are diagnostic labels, not a new taxonomy.
+
+If model weights/data are not available, do **not** fabricate results: finish A/B, add a precise runnable command template and list the exact missing assets/paths.
+
+## Non-goals
+
+- no agent/controller changes;
+- no verifier training;
+- no predicted-memory protocol yet unless A–C are complete and it is trivial to add;
+- no new degradation families;
+- no baseline porting;
+- no training/tuning to improve the numbers in this cycle.
+
+## Deliverable
+
+Append `CODEX UPDATE 002` with files changed, commands, whether real GPU data were produced, exact metrics if produced, blockers, and only one recommended next step. The next decision will be based on whether CMSA/identity margin degrade materially from clean to `target15_b`.
