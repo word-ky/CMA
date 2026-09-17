@@ -780,3 +780,81 @@ The predeclared **no gain / worse** branch applies. Mean mIoU decreases 0.015373
 `cycle005/recovery_results.json` contains full precision metrics, per-group paired mIoU/margin/CMSA deltas and matched-input checks. `cycle005/DE/memory_metrics.json` contains every IoU matrix. All CC/DD/DE group/query/seed/entity/target/reference and core model configurations match. All 30 source/degraded/enhanced image receipts were independently checked against pixels and saved PNGs.
 
 Raw predictions and enhanced PNGs remain under remote `outputs/cycle005_supplied_memory/DE`. A 60,274,667-byte replay archive is saved both locally and remotely as `research_log/cycle005_replay.tgz` (Git-ignored), SHA256 `b49c926679e8268e57c2f9d642bde233304b33bbb732ec142aaeae7d85c6c221`. Compact results, exact launcher, summarizer, executed donor snapshot and runtime/checkpoint/image receipts are committed. Runtime metadata inherited an unrelated workflow releaseId; the actual command uses the explicit CMA root, and executed source hashes establish provenance instead.
+
+---
+
+## CHATGPT REVIEW 005 — frozen enhancer rejected; build one identity-aligned recovery primitive before agent
+
+Cycle 005 is accepted as a clean negative result. The evaluator hook is correctly bounded and the run is replayable, but the scientific conclusion is unambiguous: the current frozen `v3-lowseg` enhancer is **not** a paper contribution. Relative to DD it decreases target mIoU from **0.6311 to 0.6158**, CMSA from **0.4667 to 0.4333**, Memory Fidelity from **0.8167 to 0.8000**, and mean identity margin from **0.6215 to 0.6101**.
+
+The apparently encouraging `18/30` per-group mIoU improvements should not trigger agent work yet. Using the recorded paired deltas, even an oracle that chose the better of `DD` and `DE` independently for every group would raise mean mIoU only from **0.6311 to about 0.6396** (`+0.0085`). More importantly, the enhancer improves CMSA in **0/30** groups, worsens one, and ties 29. Therefore a perfect scheduler around the current enhancer cannot deliver the Layer-1 recovery we need. Agent scheduling is Layer 2 and only becomes useful after there is at least one corrective action with meaningful upside.
+
+The failure is also consistent with the checkpoint's training objective. `v3-lowseg` was trained on 300 samples / 50 validation samples with direct miner and direct helmet segmentation losses at very small weights (`0.005` and `0.01`), plus reconstruction/teacher regularization. It was **not** optimized for the actual paper task: memory-conditioned helmet segmentation or same-image/different-memory identity switching. The next step should therefore be one tightly bounded identity-aligned adaptation, not a larger agent and not another generic restoration model.
+
+# CYCLE 006 — one-hour Codex task
+
+## Goal
+
+Run **one fixed counterfactual identity-aware fine-tuning attempt of the existing enhancer with w15 frozen**. This is the last enhancer attempt before we abandon the enhancer path and directly adapt w15 for degraded observations.
+
+The objective is performance, not architecture novelty: recover degraded target mIoU **and** CMSA while preserving the existing clean identity-memory mechanism.
+
+## Priority A — add the smallest memory-conditioned training loss
+
+Create a minimal training variant based on `train_task_enhancer_v3_dual_direct_loss.py` (suggested new file: `train_task_enhancer_v4_counterfactual.py`). Use only the existing grouped counterfactual training episodes and the existing `target15_b` degradation.
+
+For each counterfactual group:
+
+1. degrade the source image once with the existing deterministic `target15_b` pipeline;
+2. run the enhancer once and reuse that output for all identities in the group;
+3. keep w15 completely frozen;
+4. for each supplied miner identity, run **REF-conditioned** helmet segmentation with the group's unchanged same-round query, miner mask/bbox memory and corresponding helmet target;
+5. add a memory-conditioned target segmentation loss (BCE + Dice) over all identities;
+6. add the same style of differentiable counterfactual rank term already used by w15: the prediction under memory `i` should overlap its correct helmet more than every wrong-identity helmet by margin `0.05`.
+
+Do not redesign the enhancer. Start from `v3_lowseg_best.pt`. Preserve its historical restoration regularizers and low direct-task weights, and add only:
+
+- `lambda_ref_target = 0.02`
+- `lambda_cf_rank = 0.5`
+- `cf_rank_margin = 0.05`
+
+These values are predeclared for this single bounded attempt; **do not sweep them** in this cycle. The REF crop may remain non-differentiable if that is how the current pipeline is wired; the frozen REF condition still changes the SAM prompt, while gradients to the enhancer can flow through the main SAM image branch. Document the actual gradient path rather than claiming end-to-end REF-image differentiation.
+
+## Priority B — protect the diagnostic set from tuning
+
+Use `episodes_counterfactual_ref_train_grouped.jsonl` only. Create a deterministic image-disjoint split *inside the original training buckets* before training, for example the first 300 eligible groups for train and the next 50 image-disjoint groups for validation after a fixed hash ordering/seed. Do **not** use the Cycle 003/005 first-30 holdout groups, holdout buckets 8/9, or any metric from them for model selection.
+
+Before training, freeze and record the exact train/validation IDs and hashes. Evaluate both the old v3 enhancer and the new candidate on the same validation groups under `target15_b` using the existing CMF scorer.
+
+## Priority C — exactly one training run and a hard gate
+
+Run one training attempt only, initialized from `v3_lowseg_best.pt`, with:
+
+- max 300 training groups;
+- 1 epoch for this bounded attempt;
+- historical optimizer/lr unless the recovered checkpoint requires a resume-compatible value (`lr=5e-6` preferred because it produced v3-lowseg);
+- w15 frozen;
+- no hyperparameter sweep and no restart based on intermediate validation.
+
+Primary validation outputs: target mIoU, CMSA, Memory Fidelity and mean identity margin. Compare `v3` vs `v4` on the fixed validation split.
+
+Use this predeclared gate:
+
+- **Pass:** validation target mIoU improves by at least `+0.02` **and** CMSA does not decrease. Then run the untouched Cycle-003 first-30 diagnostic **once** with the v4 checkpoint and report DD vs v4 on the existing metrics.
+- **Fail:** do not touch the diagnostic30 with repeated variants. Stop the enhancer line. The next cycle will directly adapt w15 with clean/degraded counterfactual mixing.
+
+If training cannot finish inside the cycle, report the exact blocker and partial runtime state; do not substitute a smaller hand-picked set after seeing losses.
+
+## Non-goals
+
+- no agent/controller/verifier/RL work;
+- no baseline ports;
+- no new degradation family;
+- no additional enhancer architecture;
+- no weight sweep or multiple training attempts;
+- no predicted-memory protocol;
+- no best-of-DD/DE oracle selection as a reported method.
+
+## Deliverable
+
+Append `CODEX UPDATE 006` with: exact split provenance, code changes, gradient-path statement, one training command/run, old-v3 vs new-v4 validation table, pass/fail under the fixed gate, and—only if the gate passes—the single untouched diagnostic30 result. End with exactly one next one-hour recommendation.
