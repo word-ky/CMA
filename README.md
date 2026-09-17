@@ -38,4 +38,6 @@ Cycle 001 已新增 [共享 bridge 更新](CHATGPT_CODEX_BRIDGE.md#codex-update-
 
 [Cycle 002](research_log/CYCLE002.md) 增加冻结 CF 评测器的原始掩码导出、clean/target15_b 固定对照及 identity margin。代码已部署并通过 19 项 CPU 测试；固定 30 组的输入资产不完整，尚未产生真实退化指标。缺失清单和恢复后运行命令已记录。
 
+[Cycle 003](research_log/CYCLE003.md) 已补齐同一批 30 组并完成真实对照：clean→target15_b 的 mIoU 为 0.9431→0.6311，CMSA 为 0.9667→0.4667，IER 均为 0。使用明确记录的重建伪掩码，不能视为历史标签精确恢复；目前尚未分离一般分割退化与记忆外观损伤。查看[逐组结果及六组对照图](research_log/cycle003/RESULT.md)。
+
 请先读方法说明，再沿上述文件核对引用信息、损失函数、增强器梯度路径和执行器状态流。分别评价已实现机制、实验支持程度与后续需要验证的主张。将建议与现有实现分开，不把 GT 辅助结果选择写成无标注自主判断，也不把固定轨迹写成已验证的自适应规划。

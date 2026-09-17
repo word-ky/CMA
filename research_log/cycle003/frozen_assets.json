@@ -1,0 +1,2540 @@
+{
+  "protocol": "fixed_original_first30_regenerated_mask_diagnostic",
+  "groups": 30,
+  "identity_trials": 60,
+  "unique_pairs": 59,
+  "selection_manifest_sha256": "d300e763060a4b5b95b53df383859890f4700fb96de6262fc510efb5e57d3ccb",
+  "source_pair_manifest_sha256": "d6d586e9800f518eab7e2efa976cebe2406049e9e17e042fc9187e7d84fc76d6",
+  "archive_sha256": "3ab1c897883bf13f9b402866a0852a8376a1ee8d5e18f32113d4d4690f2cbd36",
+  "generator": {
+    "model": "SAM vit_b",
+    "checkpoint": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/sam_vit_b_01ec64.pth",
+    "checkpoint_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+    "script_sha256": "f485b8a8f8b49cdb2b008719cebe821880a4bd75d82dbbf73abc91ce3d1bcfa6",
+    "torch_version": "2.4.0+cu121",
+    "opencv_version": "4.10.0",
+    "seed": 0,
+    "miner_multimask": true,
+    "miner_selection": "highest SAM predicted quality (no GT)",
+    "helmet_multimask": false,
+    "helmet_box": "COCO clamp -> normalized round(6) -> pixel float32"
+  },
+  "frozen_manifests": {
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/counterfactual_holdout_first30_restored.jsonl": "a044819416be763fe3c85082c2e660483171fae5705259f51ed28b4a27bc6329",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_miner_pairs_restored.jsonl": "0a237739986d9a7d2576fe93f12303e6a91850ca08390fb69522d490c16e47bf"
+  },
+  "assets": [
+    {
+      "type": "image",
+      "group_id": "cf_15083517d58230ce",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/022_02118.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_15083517d58230ce.jpg",
+      "sha256": "a85feb03eca16dbd850402aa5d8ce6d1bed0bb1ccb198abaef42767a11916fc8"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_40ec82c8fbcc1871",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02118_pm_3f056ee9edca1b92.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_15083517d58230ce.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4295,
+      "prompt_box": [
+        1504.354248046875,
+        285.2939453125,
+        1920.0,
+        1079.541015625
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_40ec82c8fbcc1871.png",
+      "sha256": "e4b761eb7e8e14558ef0e0e9620bb9c84ac6d7ccf8b9a0909ba7b41373920548"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_40ec82c8fbcc1871",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-57a8c094da21_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_15083517d58230ce.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4295,
+      "prompt_box": [
+        1761.99936,
+        316.00043999999997,
+        1920.0,
+        493.99956000000003
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_40ec82c8fbcc1871.png",
+      "sha256": "efb5f392bd761cce59d844c67239ba6f623698254efc8caa5da7179a441a1830"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_dcc69c1b6b7eaaf1",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02118_pm_5759c54b09c3b32e.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_15083517d58230ce.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4296,
+      "prompt_box": [
+        388.3267822265625,
+        146.18917846679688,
+        927.48486328125,
+        1079.779541015625
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_dcc69c1b6b7eaaf1.png",
+      "sha256": "9d3caee23cac7abbea2cc49a4a20c6a7561a3bcd412172c5a944b7b1f3146c43"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_dcc69c1b6b7eaaf1",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-18540b5ca650_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_15083517d58230ce.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4296,
+      "prompt_box": [
+        652.99968,
+        147.00096000000002,
+        832.99968,
+        290.00052
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_dcc69c1b6b7eaaf1.png",
+      "sha256": "eab7208df5857378970e6b3f3b8f089a2fce2ca77f20196badaa839816df7128"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_79810e446f10b26e",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/val/050_01423.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_79810e446f10b26e.jpg",
+      "sha256": "405635308bb6fefe7e8f097f45c836af3b52ec5a79fef92962419f777171c95d"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_365f7fe34c9c2cae",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01423_pm_5c9db425d1d6e78e.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_79810e446f10b26e.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 3582,
+      "prompt_box": [
+        312.51519775390625,
+        121.334228515625,
+        629.4832763671875,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_365f7fe34c9c2cae.png",
+      "sha256": "bd50b4b17d6be4c484cc2af6193e956147320eed63562162215a6f053ebf45ea"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_365f7fe34c9c2cae",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-21bc8b00a951_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_79810e446f10b26e.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 3582,
+      "prompt_box": [
+        456.0,
+        121.99968000000001,
+        571.00032,
+        198.00000000000003
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_365f7fe34c9c2cae.png",
+      "sha256": "99e20d9611123cb1c4ae43d9786bfbf136db895a46d8a4f19358d572908a10a5"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_37eb005dcf99f7b4",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01423_pm_e74b12e70bf6cf29.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_79810e446f10b26e.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 3581,
+      "prompt_box": [
+        808.1131591796875,
+        75.75228118896484,
+        948.66845703125,
+        423.723388671875
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_37eb005dcf99f7b4.png",
+      "sha256": "481a38a10a2d21fd70aee145df8fee2a7eeabe6d76bcd17ecc4572bc8c98e242"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_37eb005dcf99f7b4",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-76870b980ab3_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_79810e446f10b26e.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 3581,
+      "prompt_box": [
+        832.0,
+        75.00023999999999,
+        880.0,
+        122.99976000000001
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_37eb005dcf99f7b4.png",
+      "sha256": "ce72f0e7fdf941cb77fbdea2cd738691768f82845c11d274f12524b985bd9667"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_5db8c13197ba44b2",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/050_00622.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_5db8c13197ba44b2.jpg",
+      "sha256": "c5bba27d0966e124c6721a54e786a13dc9fd12927396afdc604b8c84e8df13db"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_56aa8c37a7c3db2e",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_00622_pm_d7c7b677610a5ac8.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_5db8c13197ba44b2.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14022,
+      "prompt_box": [
+        825.3729248046875,
+        62.93505859375,
+        961.0119018554688,
+        427.3465270996094
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_56aa8c37a7c3db2e.png",
+      "sha256": "634ad55a11e43a68f25b704addb42015e6d4ab2ad7bb94cd2333cb98fd6db6a0"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_56aa8c37a7c3db2e",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-17a24bbde141_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_5db8c13197ba44b2.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14022,
+      "prompt_box": [
+        886.99904,
+        62.99999999999999,
+        946.99904,
+        108.99936
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_56aa8c37a7c3db2e.png",
+      "sha256": "bbcc5f3484ca19b0a398f4c67aed687a992502171df2056f4ea96e7923f0ec64"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_c34bd9488f5a63e5",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_00622_pm_4db0dd72fcf61760.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_5db8c13197ba44b2.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14023,
+      "prompt_box": [
+        372.93450927734375,
+        110.147216796875,
+        659.8704833984375,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_c34bd9488f5a63e5.png",
+      "sha256": "5c79fbf1ae8ca563c624fcbad5e11d1eff0d80c12a7ea1d26feb9a8702c0a1a1"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_c34bd9488f5a63e5",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-50d22f71fb14_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_5db8c13197ba44b2.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14023,
+      "prompt_box": [
+        523.00032,
+        111.00024,
+        625.00096,
+        190.00008
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_c34bd9488f5a63e5.png",
+      "sha256": "5745bde0351755c30b27d7f1dcfa510a9da70d4bd0b0ebd5adfbfcefa9f4d720"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_8aa0a810beb52024",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/022_03692.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_8aa0a810beb52024.jpg",
+      "sha256": "352ce68dd092e9b0e8920567cc9f23abd4c79d49e70c02cf94da48bc4b1b25cf"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_4ffd6bcf707eeaff",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_03692_pm_bb643bdd1af84dc3.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_8aa0a810beb52024.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4600,
+      "prompt_box": [
+        696.4095458984375,
+        180.9359130859375,
+        1055.451171875,
+        1080.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_4ffd6bcf707eeaff.png",
+      "sha256": "bfdd870652e8ef194a67f5c66149129de676088930945776a31f935d10041579"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_4ffd6bcf707eeaff",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-eb43cc4409b3_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_8aa0a810beb52024.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4600,
+      "prompt_box": [
+        783.99936,
+        200.99988,
+        949.9987199999999,
+        346.99968
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_4ffd6bcf707eeaff.png",
+      "sha256": "0e85065c75a605f68cecb99e917a7cb0f992d4f7ef6e0a4588d32c8ffe4b7830"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_6f40e0d460d7d8f7",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_03692_pm_f78bfd7e50c231ad.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_8aa0a810beb52024.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4599,
+      "prompt_box": [
+        1643.7493896484375,
+        238.4803466796875,
+        1920.0,
+        1079.7783203125
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_6f40e0d460d7d8f7.png",
+      "sha256": "962c179cbca5aec1f546b829093011e2b0e256b726ecdf2ef02713cfcc1da801"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_6f40e0d460d7d8f7",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-41977136f6d1_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_8aa0a810beb52024.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4599,
+      "prompt_box": [
+        1751.9980799999998,
+        237.0006,
+        1913.99808,
+        385.00056
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_6f40e0d460d7d8f7.png",
+      "sha256": "c106c8fed119706fa741023913813741415f68dbbadf901da73448a04972bb4c"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_f99ab9280e06a816",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/050_01754.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_f99ab9280e06a816.jpg",
+      "sha256": "e3aecb71d05f87fcee973bec7263f070fa2ce9eedc9ec576572f942e2af1c7d1"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_8cfb54f1680edf20",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01754_pm_273aab88e5e7c869.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_f99ab9280e06a816.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14270,
+      "prompt_box": [
+        307.63470458984375,
+        91.92415618896484,
+        579.4622802734375,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_8cfb54f1680edf20.png",
+      "sha256": "f030b5ebc19900946366524a552cd56abb4605c155ccc08169bafd426b5d64a4"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_8cfb54f1680edf20",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-dab157310974_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_f99ab9280e06a816.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14270,
+      "prompt_box": [
+        447.00032,
+        92.00016000000001,
+        546.00064,
+        168.00048
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_8cfb54f1680edf20.png",
+      "sha256": "9ca6eb25853da01c74d2fb53788477465d706600debc762a6af5aa24f9a7c84d"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_ca34f812bd5d47b2",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01754_pm_1dfcfd5d69e055e5.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_f99ab9280e06a816.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14269,
+      "prompt_box": [
+        822.1217651367188,
+        54.287841796875,
+        952.2796630859375,
+        423.097412109375
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_ca34f812bd5d47b2.png",
+      "sha256": "37297ce47675bace412fe99d5f640def1dc2e893ad694ea5d23e707d6987f6a2"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_ca34f812bd5d47b2",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-3733e6736630_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_f99ab9280e06a816.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14269,
+      "prompt_box": [
+        884.0,
+        55.00008,
+        933.99936,
+        95.99976000000001
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_ca34f812bd5d47b2.png",
+      "sha256": "6774dfbfc89e5a018eba028f36752127bce0c969a604cd664da7dbc161bd0331"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_98618b015c8fc502",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/022_02127.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_98618b015c8fc502.jpg",
+      "sha256": "4abfcd8b43d032d017583aef314aff78e8ea29fc717670b06ab936824486906f"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_762775223e916266",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02127_pm_283d52301cc8d518.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_98618b015c8fc502.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4300,
+      "prompt_box": [
+        388.6920166015625,
+        147.6956787109375,
+        928.0269775390625,
+        1079.669189453125
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_762775223e916266.png",
+      "sha256": "c75cc64e4d2d612fe603f288ee6aac95067a9f3a9f5f2bdf3de010377c93ec55"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_762775223e916266",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-aa324b96228a_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_98618b015c8fc502.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4300,
+      "prompt_box": [
+        652.99968,
+        147.99996,
+        828.0,
+        289.00044
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_762775223e916266.png",
+      "sha256": "f9332a34e16d897fd1994966e8e2eebc267a0cb13c4fe60544fdad7fdce63f6f"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_d225f31f2a78538a",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02127_pm_1efd4403194c372d.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_98618b015c8fc502.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4299,
+      "prompt_box": [
+        1504.58544921875,
+        294.8544921875,
+        1920.0,
+        1079.5240478515625
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_d225f31f2a78538a.png",
+      "sha256": "3c1013d7de94c76a7a470572ea5b630011c43ea5abf09ce8191df96702f3e3f1"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_d225f31f2a78538a",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-f49892dae476_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_98618b015c8fc502.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4299,
+      "prompt_box": [
+        1742.00064,
+        308.99988,
+        1917.99936,
+        497.99988
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_d225f31f2a78538a.png",
+      "sha256": "71320f4d8ef11aacbb2228bb27aaa89b47273d0555c61ef46633a0bb8c15c77d"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_7924cbced03b6f46",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/022_03725.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_7924cbced03b6f46.jpg",
+      "sha256": "0007c7868eb35757738a09ebec5cd671cdf69a16769c9dd5f619775f5c516c86"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_0f0e8ba98e1dec8c",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_03725_pm_ca6e2c10d9b74200.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_7924cbced03b6f46.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4616,
+      "prompt_box": [
+        688.4404296875,
+        184.54855346679688,
+        1046.83935546875,
+        1079.626953125
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_0f0e8ba98e1dec8c.png",
+      "sha256": "ab386094169ac2e2d7756b57418274ca9bad9ff7920fbc5916cf9e825acfe0a7"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_0f0e8ba98e1dec8c",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-2e8deee7d185_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_7924cbced03b6f46.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4616,
+      "prompt_box": [
+        777.99936,
+        204.00012,
+        940.0012800000001,
+        345.00059999999996
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_0f0e8ba98e1dec8c.png",
+      "sha256": "542470856b046e94aadbf343ad0784477ae176054332977e934af98e7fd1d9d5"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_65c1874167a8745d",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_03725_pm_b5de514660320c8d.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_7924cbced03b6f46.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4617,
+      "prompt_box": [
+        1559.50146484375,
+        248.88720703125,
+        1914.2939453125,
+        1079.58447265625
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_65c1874167a8745d.png",
+      "sha256": "582905ecca59d0dc06d4c038542c44d47c7ee9a586fc0e8bb5820a4b92d81a97"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_65c1874167a8745d",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-c08e0e004fed_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_7924cbced03b6f46.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4617,
+      "prompt_box": [
+        1733.0016,
+        263.00052,
+        1876.00128,
+        392.00003999999996
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_65c1874167a8745d.png",
+      "sha256": "19d1f024a57156f543cc33025d5fbda2abfea37712bb4169997580739569aa71"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_1d77b0f7a4f34726",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/050_00871.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_1d77b0f7a4f34726.jpg",
+      "sha256": "f72cdbb0388a6d3b71f285d99acb667f6735ae88afd5d1bfbc185f978b768fd4"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_3c28cfa64ae566db",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_00871_pm_071837510cd24c91.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_1d77b0f7a4f34726.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14074,
+      "prompt_box": [
+        823.5208740234375,
+        60.88810348510742,
+        959.0404052734375,
+        427.5114440917969
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_3c28cfa64ae566db.png",
+      "sha256": "d827db1de97443f2ad76543413f4c0d5e04bfca317b6c62afa7d84d92af5dfa3"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_3c28cfa64ae566db",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-e7c443fabd60_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_1d77b0f7a4f34726.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14074,
+      "prompt_box": [
+        897.99936,
+        60.999840000000006,
+        950.00064,
+        101.99951999999999
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_3c28cfa64ae566db.png",
+      "sha256": "35fd1b95c8103cfa5295cca0d8576861d46eea66b752236a7ecaaacd01ce9b13"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_db5eaeb28e613ce2",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_00871_pm_35190268b8fd3309.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_1d77b0f7a4f34726.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14075,
+      "prompt_box": [
+        299.7952880859375,
+        105.415771484375,
+        618.706298828125,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_db5eaeb28e613ce2.png",
+      "sha256": "084ffdf06323ded58127447c4723d6e400c616a2afea0c6b12f043f27f067ab9"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_db5eaeb28e613ce2",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-498510a0f9d7_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_1d77b0f7a4f34726.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14075,
+      "prompt_box": [
+        448.0,
+        107.00063999999999,
+        552.0,
+        180.00071999999997
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_db5eaeb28e613ce2.png",
+      "sha256": "5e3a7b43a24181349e1807d87613b9bcb0b40fa4b49e71ef001caadbccfea338"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_2b433432599075d8",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/048_01139.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_2b433432599075d8.jpg",
+      "sha256": "94b5d5402eeeccaaae1ebb07a40947d04e2ab2891a9ade23ba3ad6f8d4167b86"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_562a2601fd7a1aa0",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/048_01139_pm_92203f2a3e5f0392.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_2b433432599075d8.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 13615,
+      "prompt_box": [
+        369.4629821777344,
+        391.9444274902344,
+        467.83489990234375,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_562a2601fd7a1aa0.png",
+      "sha256": "56223c5067964fd7f7a33e9cc572b869277d425e369c57132985d3e52fefc127"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_562a2601fd7a1aa0",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-e358ed8cefcd_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_2b433432599075d8.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 13615,
+      "prompt_box": [
+        394.00064,
+        390.00024,
+        450.00064000000003,
+        421.99992000000003
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_562a2601fd7a1aa0.png",
+      "sha256": "0983082007cf13b33a12ba864e5378c65703aab16e48b331eb7ae72989c326fb"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_b00989e48ad56994",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/048_01139_pm_ee5e4f7b8ea95670.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_2b433432599075d8.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 13614,
+      "prompt_box": [
+        599.8792724609375,
+        352.9697265625,
+        756.3883666992188,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_b00989e48ad56994.png",
+      "sha256": "c661c28f52616413f67480ee1a9d19d47888c37e225d8a94566a4b71c14bb1b1"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_b00989e48ad56994",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-70c61d6fefe9_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_2b433432599075d8.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 13614,
+      "prompt_box": [
+        628.0,
+        353.99952,
+        680.0,
+        396.00000000000006
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_b00989e48ad56994.png",
+      "sha256": "ef90315bfb8485ea942f785326a2432dd68c741c08265244918c0a27321d38a0"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_eb0278bf698865c9",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/025_01339.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_eb0278bf698865c9.jpg",
+      "sha256": "0d7f75366e42f1a3f23f341e6426fdfc481ea3ef4cab01ebbfee95963739ab6d"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_276a1618f5c04671",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/025_01339_pm_60d8b8b76ed1754f.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_eb0278bf698865c9.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 5604,
+      "prompt_box": [
+        1047.799560546875,
+        510.4234313964844,
+        1279.9564208984375,
+        719.89111328125
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_276a1618f5c04671.png",
+      "sha256": "edce66ea9dd9793b7ce644edfe040c2540d978c245d2c05201ca16c4c3681231"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_276a1618f5c04671",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-5e9184221e91_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_eb0278bf698865c9.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 5604,
+      "prompt_box": [
+        1201.99936,
+        527.99976,
+        1280.0,
+        607.99968
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_276a1618f5c04671.png",
+      "sha256": "6aca5013f971ca10621db0a01bcebb4132560118aa63b127b3ea3f2190cdd27a"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_878de10bc4316d59",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/025_01339_pm_b0ac70ececb6984d.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_eb0278bf698865c9.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 5603,
+      "prompt_box": [
+        193.53988647460938,
+        369.75921630859375,
+        480.3348083496094,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_878de10bc4316d59.png",
+      "sha256": "4dc40a1f8a483850d3f61736abd6487fa47761cc98e67fc10b4781e5e12e6e85"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_878de10bc4316d59",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-7d6bcaa0c9a6_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_eb0278bf698865c9.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 5603,
+      "prompt_box": [
+        196.99967999999998,
+        368.99999999999994,
+        300.99968,
+        452.00015999999994
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_878de10bc4316d59.png",
+      "sha256": "c288c68943a4bb94f57fc62790abc97f60221708c0dc854809094a7129db2564"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_60a2310ce9affa83",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/022_02322.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_60a2310ce9affa83.jpg",
+      "sha256": "077ed958d76996e994368846582def6ed34f643ad89ab5c4f08d39b6de2b1d2a"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_687ffbcb01ddcf5f",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02322_pm_cbf80c93bde76267.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_60a2310ce9affa83.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4391,
+      "prompt_box": [
+        1533.3505859375,
+        275.907958984375,
+        1920.0,
+        1079.540283203125
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_687ffbcb01ddcf5f.png",
+      "sha256": "879c608b24f5c4ec401e9c494f097255d81adfde5eb558e79626191e05dcdb0a"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_687ffbcb01ddcf5f",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-8e5d1d16aad5_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_60a2310ce9affa83.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4391,
+      "prompt_box": [
+        1746.00192,
+        281.99987999999996,
+        1908.0019200000002,
+        417.99996000000004
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_687ffbcb01ddcf5f.png",
+      "sha256": "77c37184eace3dfa0d10fd5f89e6bf9965e376e78002c7999be0feb1a8802487"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_7a863f2db00d7468",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02322_pm_f3b36527a6c85ee2.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_60a2310ce9affa83.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4392,
+      "prompt_box": [
+        826.34423828125,
+        199.014404296875,
+        1223.255859375,
+        1078.994384765625
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_7a863f2db00d7468.png",
+      "sha256": "fecb198b80083739c51473d402af6c630b697f9b78d258200a9c8d888aff73e3"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_7a863f2db00d7468",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-d7af5daa018b_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_60a2310ce9affa83.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4392,
+      "prompt_box": [
+        999.99936,
+        201.00096,
+        1206.0,
+        350.001
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_7a863f2db00d7468.png",
+      "sha256": "ee7588809fd79af937f6ed4169719da7198a519d707a805d2fdb61ab9ee50a61"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_fb70263dca448084",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/065_00999.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_fb70263dca448084.jpg",
+      "sha256": "1c1bf1f16f10bf4c55fffeef42891ac84e49a3947b7e8b6d2903e656e0ecee64"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_987409db414fefb1",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/065_00999_pm_4ae9885c414de9df.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_fb70263dca448084.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 16842,
+      "prompt_box": [
+        773.9940185546875,
+        286.0843200683594,
+        1075.09228515625,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_987409db414fefb1.png",
+      "sha256": "20e66cf116f661868112eef7475bb4d10ffa2c3912a9aa32ffbc20cc51c382d7"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_987409db414fefb1",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-3875acdeb16d_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_fb70263dca448084.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 16842,
+      "prompt_box": [
+        862.9990399999999,
+        288.0,
+        988.99968,
+        389.99951999999996
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_987409db414fefb1.png",
+      "sha256": "5ddbacdd14bdcf7adcfbe6813b99a2225fa1b4ee1bc635f4d9f93115c4c46fce"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_df2a24bafa4765ae",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/065_00999_pm_09063b30051e98b6.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_fb70263dca448084.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 16841,
+      "prompt_box": [
+        6.9602460861206055,
+        283.9107666015625,
+        204.3317108154297,
+        719.8002319335938
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_df2a24bafa4765ae.png",
+      "sha256": "9af84d3199a360b9a16f15ec778fd019161e37cda294d66af79746c2a7d0a850"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_df2a24bafa4765ae",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-6583b275dbc1_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_fb70263dca448084.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 16841,
+      "prompt_box": [
+        39.00032,
+        284.99976,
+        132.99968,
+        356.0004
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_df2a24bafa4765ae.png",
+      "sha256": "ae3688169e854c7810aaded9ec4106b190b5f73bb6ebbc94a63c7d47caa661f2"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_e1a4551d2039f452",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/val/022_02211.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_e1a4551d2039f452.jpg",
+      "sha256": "16a2e6cff41b747d792eaeac58694d88301d7b3a76f73c90ca5346c0863d851a"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_1503a91093c763f2",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02211_pm_4033fc724ee007df.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_e1a4551d2039f452.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 1099,
+      "prompt_box": [
+        388.371826171875,
+        160.0362548828125,
+        956.12353515625,
+        1080.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_1503a91093c763f2.png",
+      "sha256": "e28f5078c3a501eea4a169e19cefeab19c8c929a1e14315c390d46398fb412a6"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_1503a91093c763f2",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-f45bd6d8ae44_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_e1a4551d2039f452.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 1099,
+      "prompt_box": [
+        644.9990399999999,
+        157.99968,
+        831.99936,
+        306.99971999999997
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_1503a91093c763f2.png",
+      "sha256": "546189db193c51662f5711cd209857136a110868d7c870e170e0dbc8c3fe31fc"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_855de49cb1cb9683",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02211_pm_40e437839ad89084.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_e1a4551d2039f452.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 1098,
+      "prompt_box": [
+        1505.41650390625,
+        319.1979675292969,
+        1920.0,
+        1080.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_855de49cb1cb9683.png",
+      "sha256": "c56073556a1ca62a1652fc6f61303914f1297c0d971547533e4c7686881ae12b"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_855de49cb1cb9683",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-b681913433fe_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_e1a4551d2039f452.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 1098,
+      "prompt_box": [
+        1833.9993599999998,
+        321.99984,
+        1920.0,
+        511.99992
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_855de49cb1cb9683.png",
+      "sha256": "02eeab5e9c4b85c8f91b203b619cba6cc5dd6977f72b15c61e1be7371b1aac12"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_42619b2aaf91c0e8",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/val/022_02197.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_42619b2aaf91c0e8.jpg",
+      "sha256": "d752f451ebc1bee942c0f3306b20bf04fc44322a79ac5f1c7b34825044565df1"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_dfb113d42e89ec8f",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02197_pm_be0e34d522285bae.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_42619b2aaf91c0e8.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 1096,
+      "prompt_box": [
+        388.4866638183594,
+        153.06155395507812,
+        933.9744873046875,
+        1080.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_dfb113d42e89ec8f.png",
+      "sha256": "4ec2c9c0ba209104561c1aad9d4ef9daab64cfdc6ad92892ad51a7df87bf7973"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_dfb113d42e89ec8f",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-2a15d3142221_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_42619b2aaf91c0e8.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 1096,
+      "prompt_box": [
+        645.9993599999999,
+        154.00044,
+        835.99872,
+        304.00056
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_dfb113d42e89ec8f.png",
+      "sha256": "0061e0b48609d9e874656250b6540288ef803352656f8bcbe9ff53d77b24387e"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_dfd6fac0d4252456",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02197_pm_e6f1519b841fa69e.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_42619b2aaf91c0e8.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 1097,
+      "prompt_box": [
+        1500.54541015625,
+        300.5684814453125,
+        1920.0,
+        1080.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_dfd6fac0d4252456.png",
+      "sha256": "89d4f1e7c3cff9649ecbe87b25fc94bbdeb5a978e70a31425f992eeb8ab74c04"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_dfd6fac0d4252456",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-86bacc2ea3e7_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_42619b2aaf91c0e8.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 1097,
+      "prompt_box": [
+        1809.99936,
+        322.99884,
+        1920.0,
+        503.00028000000003
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_dfd6fac0d4252456.png",
+      "sha256": "f050a8f2aeb5a2b3bed5578d7981859611dbea7b814705de7be82e31c8565ba6"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_9eee122f3e475704",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/050_01157.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_9eee122f3e475704.jpg",
+      "sha256": "7d0375aaa5f664d08b0b4e5ed4f2e81868cdd31a7b48d173c65ff025a1e0a06c"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_48ef619400c7f970",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01157_pm_3025ea8d03d7c917.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_9eee122f3e475704.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14115,
+      "prompt_box": [
+        296.060546875,
+        123.82585144042969,
+        566.3548583984375,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_48ef619400c7f970.png",
+      "sha256": "292f61b5ec74330269661fa5497fd23e44fa19d4186af101729ad1880fdf8c21"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_48ef619400c7f970",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-f1cb6040f210_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_9eee122f3e475704.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14115,
+      "prompt_box": [
+        457.00096,
+        123.99983999999999,
+        560.0,
+        204.99983999999998
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_48ef619400c7f970.png",
+      "sha256": "59f4bab2410d4d654975528088ce8a393d0759f0c18fb09263b41ca7519b0e8c"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_f6fed7ee396e11c2",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01157_pm_e4f643d7b8eb8bef.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_9eee122f3e475704.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14114,
+      "prompt_box": [
+        818.648193359375,
+        67.61369323730469,
+        954.242431640625,
+        424.697021484375
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_f6fed7ee396e11c2.png",
+      "sha256": "34bfbb465f2f2f079f27eecac1ac9ff4d348651bb09015c9aa1e0f71dde967c0"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_f6fed7ee396e11c2",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-8535dca2bbfd_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_9eee122f3e475704.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14114,
+      "prompt_box": [
+        896.0,
+        69.00048,
+        945.99936,
+        105.99983999999999
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_f6fed7ee396e11c2.png",
+      "sha256": "5161388b69e90618a881fdc9367e0e38d3e6a0739a13b2915fabc1865ceba80c"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_93558c835cce8c29",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/050_01723.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_93558c835cce8c29.jpg",
+      "sha256": "c6f4beceb04c1004c0e383874f3011f8caf0ffc6f069966cce268834a66398a2"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_09510eb52b35ad95",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01723_pm_06273fb5c153f8c4.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_93558c835cce8c29.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14254,
+      "prompt_box": [
+        293.2489013671875,
+        94.658935546875,
+        587.3924560546875,
+        719.816162109375
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_09510eb52b35ad95.png",
+      "sha256": "044e88662b84d9582839c0e8e107723b8bca31e5305366ba1b5c99f0c48350c4"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_09510eb52b35ad95",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-273fa1550620_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_93558c835cce8c29.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14254,
+      "prompt_box": [
+        446.00064000000003,
+        95.99976000000001,
+        555.00032,
+        176.00039999999998
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_09510eb52b35ad95.png",
+      "sha256": "a03e41395f495fd01e95aeb9f80c938da704fcfa1fb36b027d201dd76c83b39a"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_6e5f7020b4ef0064",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01723_pm_20317325bc8fe648.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_93558c835cce8c29.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14253,
+      "prompt_box": [
+        824.49951171875,
+        56.818359375,
+        950.7864990234375,
+        421.0123291015625
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_6e5f7020b4ef0064.png",
+      "sha256": "e1002a028200b521b8eb731e003f2d7e8eaac2d81aee92432922776dbb5e0566"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_6e5f7020b4ef0064",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-03f726d39c09_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_93558c835cce8c29.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 14253,
+      "prompt_box": [
+        895.0003200000001,
+        60.00048,
+        940.0,
+        96.99984
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_6e5f7020b4ef0064.png",
+      "sha256": "d49fcf1f52933a62db134242fd15b94de93f2b5b5336ff5b37c5d104e938b9bc"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_023f89d30d90720b",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/025_04785.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_023f89d30d90720b.jpg",
+      "sha256": "664b40699416d08ab5e5421e6bb51deb5deb4fbf4815b818516d785201b10c38"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_4c82e3f80314a245",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/025_04785_pm_281938055b61d159.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_023f89d30d90720b.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 6409,
+      "prompt_box": [
+        1066.9163818359375,
+        516.5228881835938,
+        1279.760498046875,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_4c82e3f80314a245.png",
+      "sha256": "7367ab5f58d942a38ee0d102a51727c181e71daad20c1bcd58bff358dcc0467f"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_4c82e3f80314a245",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-65d342e4b825_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_023f89d30d90720b.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 6409,
+      "prompt_box": [
+        1184.0,
+        540.0,
+        1272.0,
+        630.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_4c82e3f80314a245.png",
+      "sha256": "b342f8ba7dae296f8da0d98a7e4cec34b2cf6c3ab0f95ea63c2d354cc525c724"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_693a073279903766",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/025_04785_pm_101fd293307f16e7.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_023f89d30d90720b.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 6410,
+      "prompt_box": [
+        495.72943115234375,
+        370.87811279296875,
+        766.9327392578125,
+        719.4035034179688
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_693a073279903766.png",
+      "sha256": "99054738fc74da0eff5aaec34d708346890c0a9c05ff32efbd808d8e4b35cf3c"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_693a073279903766",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-5151a8e1e1d4_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_023f89d30d90720b.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 6410,
+      "prompt_box": [
+        616.0,
+        371.99951999999996,
+        713.99936,
+        469.99944000000005
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_693a073279903766.png",
+      "sha256": "c1a385f704fd2b852717567d3f79169f938f88b992b8272af8b961740edec2c3"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_040619a5f3f909a5",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/022_01895.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_040619a5f3f909a5.jpg",
+      "sha256": "8280342fd0efe0b4dd046d5b4d3a13273f7956297fb49a4ddcc7a302702767a7"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_2ca791cdb6884c09",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_01895_pm_dad99a20f017c8e3.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_040619a5f3f909a5.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4290,
+      "prompt_box": [
+        1480.376220703125,
+        291.5601806640625,
+        1919.879150390625,
+        1080.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_2ca791cdb6884c09.png",
+      "sha256": "adbf026e1aec86843d68da5684f735fb35469d4361c629dc6c47869916fcf908"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_2ca791cdb6884c09",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-85856c5f6355_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_040619a5f3f909a5.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4290,
+      "prompt_box": [
+        1800.0,
+        317.00052,
+        1920.0,
+        500.00004
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_2ca791cdb6884c09.png",
+      "sha256": "8cee084c7d9bef762c4bb4c9a157aec3e6495ad9999f7d9c3d304b913d505928"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_9f34ff1fae7151ab",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_01895_pm_54825b2decf78fde.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_040619a5f3f909a5.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4291,
+      "prompt_box": [
+        555.5489501953125,
+        107.3853759765625,
+        1180.90185546875,
+        1080.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_9f34ff1fae7151ab.png",
+      "sha256": "40854922a701faf9cce266dcf919a0aaf2bc67fd06a36e7c0f35712a84d5c493"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_9f34ff1fae7151ab",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-97281d72c46c_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_040619a5f3f909a5.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 4291,
+      "prompt_box": [
+        672.0,
+        111.00023999999999,
+        849.99936,
+        234.00036
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_9f34ff1fae7151ab.png",
+      "sha256": "ab85b0a5f6fe4b171bbecd67c11e74b1083e828a0c5134389e2e86fbd43b71a3"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_533d8c8add5e24c3",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/064_01017.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_533d8c8add5e24c3.jpg",
+      "sha256": "1769228c3be2aa3d546da034cc194381cbecd609154bebb6be222f7fa879c322"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_2223acccd3fae807",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/064_01017_pm_d1098b344c9690f8.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_533d8c8add5e24c3.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 16720,
+      "prompt_box": [
+        405.21185302734375,
+        112.32365417480469,
+        763.9996337890625,
+        719.8905029296875
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_2223acccd3fae807.png",
+      "sha256": "865c53e64cb3889f875791791c13ab7e6adeb1e25c75b30a47d0d12e0b37581e"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_2223acccd3fae807",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-f010ac3ec2fc_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_533d8c8add5e24c3.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 16720,
+      "prompt_box": [
+        644.00128,
+        113.99976,
+        744.00128,
+        194.00039999999998
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_2223acccd3fae807.png",
+      "sha256": "40652ea9c625c9bcf88c7670353ca5ce2e9687354ebba6066b76565843800c94"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_3bd6608a77d5e76d",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/064_01017_pm_8c6509eb117d9146.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_533d8c8add5e24c3.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 16719,
+      "prompt_box": [
+        808.9889526367188,
+        98.76200866699219,
+        973.5589599609375,
+        456.91217041015625
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_3bd6608a77d5e76d.png",
+      "sha256": "b5e8aa165474f7fcfc3741fe479d5c2eac91646584a31d38abbe4ad192bd1c8d"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_3bd6608a77d5e76d",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-d46b6661bdac_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_533d8c8add5e24c3.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 16719,
+      "prompt_box": [
+        909.0009600000001,
+        99.99936000000001,
+        967.0003199999999,
+        144.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_3bd6608a77d5e76d.png",
+      "sha256": "8ccb08266055a05d1d0e1fdfbfbacebb9b04dadfc7e5c0483fbd2b4be98aca72"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_d32ae4c94aab36c5",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/064_00988.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_d32ae4c94aab36c5.jpg",
+      "sha256": "5b54f4b114f83a4b40ba7678cda0aa4384594afe69573eb9bf4fcfd8b763f13d"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_db0ec0cff34475cb",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/064_00988_pm_142ea4b28e789200.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_d32ae4c94aab36c5.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 16707,
+      "prompt_box": [
+        819.2189331054688,
+        97.80941009521484,
+        975.4205932617188,
+        455.99560546875
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_db0ec0cff34475cb.png",
+      "sha256": "875472e918bf145b9164037e8458bf3007d798c470f3568ab73d00d1f6a63953"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_db0ec0cff34475cb",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-de66dd481f4f_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_d32ae4c94aab36c5.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 16707,
+      "prompt_box": [
+        908.99968,
+        99.00000000000001,
+        963.00032,
+        143.00064
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_db0ec0cff34475cb.png",
+      "sha256": "62338bd8c65bfc73085888f0607ce90956127b51b53481d9a6869d0799f2b7fb"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_e24c9d06b34a6c78",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/064_00988_pm_a6981c314ade6173.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_d32ae4c94aab36c5.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 16706,
+      "prompt_box": [
+        447.136474609375,
+        154.208740234375,
+        772.8056030273438,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_e24c9d06b34a6c78.png",
+      "sha256": "ab6056e4e0157148175518270d5d4143b27fd1391a478d9a28382290950d0c24"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_e24c9d06b34a6c78",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-d3c1daaba649_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_d32ae4c94aab36c5.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 16706,
+      "prompt_box": [
+        668.0,
+        154.00008,
+        770.00064,
+        223.00056
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_e24c9d06b34a6c78.png",
+      "sha256": "a9e6744852f2c74852419e91ab16c75a252829f6604e1bc54379a6ff482b7174"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_3ba42bc3f25f5b23",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/val/008_02605.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_3ba42bc3f25f5b23.jpg",
+      "sha256": "d6e067b2eb7241a1865d3ff6c24425639c0468872c69785ec7581c102308d431"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_117bf005a0753ba3",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02605_pm_d7747840ab93bb9a.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_3ba42bc3f25f5b23.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 462,
+      "prompt_box": [
+        282.9339294433594,
+        374.00628662109375,
+        530.85791015625,
+        719.539794921875
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_117bf005a0753ba3.png",
+      "sha256": "c5f5f36d82f4a317b8733a662f0a26c0fac2faae8d5ba1a14fdea01253112b84"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_117bf005a0753ba3",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-d10519fec3df_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_3ba42bc3f25f5b23.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 462,
+      "prompt_box": [
+        379.00032000000004,
+        372.99960000000004,
+        425.99936,
+        408.00024
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_117bf005a0753ba3.png",
+      "sha256": "099c09831e3459bceca27c49753b317758162b6f5ccbe936bc5b2209bb771b3e"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_b07efa9eaf804dfe",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02605_pm_f21a54e25443f153.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_3ba42bc3f25f5b23.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 463,
+      "prompt_box": [
+        796.27685546875,
+        317.123291015625,
+        1079.735595703125,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_b07efa9eaf804dfe.png",
+      "sha256": "b8d82e7a1866fe9c3d6f3cca33c18768697127143bcc9df3e8d37edf92fee464"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_b07efa9eaf804dfe",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-49d7e4694e32_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_3ba42bc3f25f5b23.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 463,
+      "prompt_box": [
+        841.00096,
+        318.9996,
+        952.0,
+        411.99984
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_b07efa9eaf804dfe.png",
+      "sha256": "841d02014cf5921691c6d45b4264f47067a5cbb291fc05338511c65f5252625a"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_9fb58615a914e180",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/008_02631.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_9fb58615a914e180.jpg",
+      "sha256": "3f2d6160285ae953ff5721c5b105d0d897cc1731f2faddcc1085710e3c48b15b"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_04deeb16859c8931",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02631_pm_01450764137e5a1d.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_9fb58615a914e180.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 1822,
+      "prompt_box": [
+        288.43572998046875,
+        379.00823974609375,
+        491.95550537109375,
+        719.7591552734375
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_04deeb16859c8931.png",
+      "sha256": "72fafa3abd69804390bcd2709a2d5286c8dd30a3d9c8278b6ad8d491e87b6b35"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_04deeb16859c8931",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-9ddad8e31dcc_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_9fb58615a914e180.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 1822,
+      "prompt_box": [
+        349.99935999999997,
+        378.0,
+        404.0,
+        416.99951999999996
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_04deeb16859c8931.png",
+      "sha256": "184ef68245521aa175ba0948ef11dce8e66705e771ea6815f67d47433812e215"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_7cd23ab9e3eae096",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02631_pm_d33be9159d441bc7.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_9fb58615a914e180.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 1821,
+      "prompt_box": [
+        797.3240966796875,
+        303.8106384277344,
+        1082.116455078125,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_7cd23ab9e3eae096.png",
+      "sha256": "6cd2b7b2243b9c083a025f786c7dfe3685bea631b9f40a1660725ffc6c1f14ab"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_7cd23ab9e3eae096",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-20b13d56f046_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_9fb58615a914e180.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 1821,
+      "prompt_box": [
+        875.99872,
+        308.00016,
+        983.99872,
+        418.00032
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_7cd23ab9e3eae096.png",
+      "sha256": "727c41d9e771f049146d0e8cc3dc78ed81fc87588f16baf7f6ac62566d2229f5"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_a30f69fcde5104de",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/val/008_02271.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_a30f69fcde5104de.jpg",
+      "sha256": "bc450fa4187f7ed7c8e0aa0d8ccb90632b14dc17941629acd48c64d31053dbc3"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_242ba20590d9a63f",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02271_pm_82ecddcf7a735c91.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_a30f69fcde5104de.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 445,
+      "prompt_box": [
+        294.01983642578125,
+        373.40447998046875,
+        530.6320190429688,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_242ba20590d9a63f.png",
+      "sha256": "1289cdbfe94cd0d8ca3df4895802068c29aa57fddc50e6b4145078267ca45dd3"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_242ba20590d9a63f",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-13f4e7378b92_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_a30f69fcde5104de.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 445,
+      "prompt_box": [
+        365.99936,
+        374.0004,
+        412.0,
+        408.00024
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_242ba20590d9a63f.png",
+      "sha256": "4db631641a115baa99caa68c6decb9e423f47ebde23e358b5552fd0d7a7e6055"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_6b80d439ac897010",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02271_pm_b473e33914afa664.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_a30f69fcde5104de.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 446,
+      "prompt_box": [
+        822.4130249023438,
+        295.3587341308594,
+        1089.718505859375,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_6b80d439ac897010.png",
+      "sha256": "e8d2993cceb442d01dfafb3453dc84772ffb328ce44b5f4df306f1101950ff1f"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_6b80d439ac897010",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-bf24d7c838af_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_a30f69fcde5104de.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_val.json",
+      "source_annotation_id": 446,
+      "prompt_box": [
+        900.0,
+        293.99976,
+        1015.0003200000001,
+        402.99984000000006
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_6b80d439ac897010.png",
+      "sha256": "3d859ac6746945c874f7928cbd161788c078c727fc4ebc34c4ec4f6719912195"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_e8e8fa40c6ef55f7",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/008_03348.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_e8e8fa40c6ef55f7.jpg",
+      "sha256": "563ac07397cf7cfe7c027d278a1ac008502a2410fd99575cfa0213b88ec1a7e8"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_987b05ec293c37a3",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_03348_pm_d15c173092cc19e3.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_e8e8fa40c6ef55f7.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 2030,
+      "prompt_box": [
+        285.1932067871094,
+        446.45458984375,
+        463.35052490234375,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_987b05ec293c37a3.png",
+      "sha256": "5117a76c06c15ced366ab0264af10f2f698f24b726cbb0838e0c2a85e8e3b231"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_987b05ec293c37a3",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-876b7048afc3_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_e8e8fa40c6ef55f7.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 2030,
+      "prompt_box": [
+        295.00032,
+        446.0004,
+        340.0,
+        480.00024
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_987b05ec293c37a3.png",
+      "sha256": "d08e28c6e332202ed5394f0a27e8c7c12a5a3041d57079dc8823d3e4d50e4396"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_ecb999ee0f97485a",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_03348_pm_c30987a77356648d.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_e8e8fa40c6ef55f7.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 2031,
+      "prompt_box": [
+        752.3919677734375,
+        304.53631591796875,
+        1079.779296875,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_ecb999ee0f97485a.png",
+      "sha256": "c1c8b68c21bcc2e6a9b4232ff92c0e7c37e6e89214ba7158bf929e6b203244fd"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_ecb999ee0f97485a",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-03f76fb18ef8_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_e8e8fa40c6ef55f7.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 2031,
+      "prompt_box": [
+        837.0009600000001,
+        306.00072,
+        940.0,
+        385.99992
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_ecb999ee0f97485a.png",
+      "sha256": "503aff6e4f9876f2a6eb17b886fc6ed6ea4a2386b2784d54e8a2101d65910f62"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_e40df336f2c47ea6",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/008_02400.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_e40df336f2c47ea6.jpg",
+      "sha256": "229280e0072e1366a21dac263a7ae5dd41b747e79a453fe7ec1e56cf7821c58e"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_c5ec892c11095912",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02400_pm_e642baa94d1ce4ff.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_e40df336f2c47ea6.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 1773,
+      "prompt_box": [
+        293.2099304199219,
+        373.3577575683594,
+        530.357177734375,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_c5ec892c11095912.png",
+      "sha256": "1ecfa45e6147a4892648daf80da80aaf6508d28e6055b837c2c0138bc37c7993"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_c5ec892c11095912",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-670c193f4077_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_e40df336f2c47ea6.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 1773,
+      "prompt_box": [
+        388.0,
+        374.0004,
+        431.00032,
+        406.00007999999997
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_c5ec892c11095912.png",
+      "sha256": "6bc67b84ce74a39f6391213f017c73408dfa13a0805b4c439679db7753e87843"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_dcb149898b558d57",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02400_pm_5502a7c2b623591f.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_e40df336f2c47ea6.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 1774,
+      "prompt_box": [
+        809.009765625,
+        295.1548156738281,
+        1108.583740234375,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_dcb149898b558d57.png",
+      "sha256": "f99369670d9c367dba8dba5a359418dc3665250de7a17f3cd15dd7a98daa68c0"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_dcb149898b558d57",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-2e60285ccb83_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_e40df336f2c47ea6.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 1774,
+      "prompt_box": [
+        895.0003200000001,
+        294.99984,
+        1000.99968,
+        378.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_dcb149898b558d57.png",
+      "sha256": "9b85279d52a35c63fbdc2a87575ce2a8512d637499a4e552e9832686923db96a"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_ca28a3d76b3f03e9",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/017_00739.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_ca28a3d76b3f03e9.jpg",
+      "sha256": "27bac74ad6d957429765e8c7cf18bf91b85b6ea847041565e7125e164ffcccb8"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_3fb3cf7a57209f4f",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/017_00739_pm_7555f4f424cd99a3.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_ca28a3d76b3f03e9.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 3394,
+      "prompt_box": [
+        306.8843994140625,
+        408.7225036621094,
+        481.129638671875,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_3fb3cf7a57209f4f.png",
+      "sha256": "689af07463f9c67c93336fd0599d13dd4dd4d362f706c5212fdabc2c84fe3705"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_3fb3cf7a57209f4f",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-00ba5e3255e4_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_ca28a3d76b3f03e9.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 3394,
+      "prompt_box": [
+        311.00032,
+        408.00024,
+        380.0,
+        460.00008
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_3fb3cf7a57209f4f.png",
+      "sha256": "473159da0daac2ebd8808413c2bc5e13b1513d71068eb0d3acde00d419405670"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_492048621eb85a8d",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/017_00739_pm_34efb83fa8ea2b67.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_ca28a3d76b3f03e9.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 3396,
+      "prompt_box": [
+        722.46533203125,
+        352.1167907714844,
+        994.5115966796875,
+        719.847412109375
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_492048621eb85a8d.png",
+      "sha256": "1330624ad0653e1b52bbd5235632ad7e48a531fda85a56ae1a158be72d9cebec"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_492048621eb85a8d",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-5e42c1aa686b_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_ca28a3d76b3f03e9.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 3396,
+      "prompt_box": [
+        793.99936,
+        356.99976000000004,
+        888.0,
+        438.99984
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_492048621eb85a8d.png",
+      "sha256": "d6673bc90104e141d5905e57dd2911cf5e103f802b973abeb90a8468bcd00414"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_1d6ec3bdbac51fdb",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/017_00739.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_1d6ec3bdbac51fdb.jpg",
+      "sha256": "27bac74ad6d957429765e8c7cf18bf91b85b6ea847041565e7125e164ffcccb8"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_f1fc53f8e529c525",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/017_00739_pm_00da6ad32d99c8f5.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_1d6ec3bdbac51fdb.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 3395,
+      "prompt_box": [
+        709.8350830078125,
+        312.7137756347656,
+        838.0552978515625,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_f1fc53f8e529c525.png",
+      "sha256": "3e96969a7cbb6470353e0ef15e642dbda5570ab0bd5de5860f65a9888faca00c"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_f1fc53f8e529c525",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-ef2fb21bcb3b_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_1d6ec3bdbac51fdb.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 3395,
+      "prompt_box": [
+        760.0012800000001,
+        312.99984,
+        836.00128,
+        371.99951999999996
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_f1fc53f8e529c525.png",
+      "sha256": "a4b74e2a1a596b42703fed5a48ce0554371b38229822b082fd01d653fd375aac"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_c16cef759dcc3b36",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/035_00220.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_c16cef759dcc3b36.jpg",
+      "sha256": "5223a61a6c9c1f037e29b0df264be64a525cdfc5ac1950304dee84a3ebb899e9"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_35e2f0553838d978",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/035_00220_pm_ac4394f996e28466.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_c16cef759dcc3b36.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 10322,
+      "prompt_box": [
+        1043.06201171875,
+        448.5635681152344,
+        1194.369384765625,
+        719.72265625
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_35e2f0553838d978.png",
+      "sha256": "5833129a2f926ae6a57e8f57cf622e775c5dc2dfd93d9526250771f8c8ebd919"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_35e2f0553838d978",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-52c5c645df99_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_c16cef759dcc3b36.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 10322,
+      "prompt_box": [
+        1128.99968,
+        447.99984000000006,
+        1183.00032,
+        499.99967999999996
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_35e2f0553838d978.png",
+      "sha256": "95e9c6abc6aa4d9baa5f66e8877a02c7f20f7342fb708ba9d1122b9e4491406a"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_6c95a719c6c61ead",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/035_00220_pm_5062a5eeb00e9c7f.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_c16cef759dcc3b36.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 10323,
+      "prompt_box": [
+        340.7161865234375,
+        369.67572021484375,
+        531.087890625,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_6c95a719c6c61ead.png",
+      "sha256": "63500c8fe537c790302587d58e7130fa430639a3f792d0285b5e82648ce54a3a"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_6c95a719c6c61ead",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-40ac426fe6be_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_c16cef759dcc3b36.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 10323,
+      "prompt_box": [
+        415.00032,
+        371.00016,
+        501.99936,
+        452.00015999999994
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_6c95a719c6c61ead.png",
+      "sha256": "61053463972e16a8a79afdda2ab9325cbd11fe71dd0104182dc79ea26a3a8548"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_56ed9d5749d28aae",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/025_00529.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_56ed9d5749d28aae.jpg",
+      "sha256": "a20637bd02604ce69043f0995ed6ebb30ec268d1bb508063ba7d892c6ea8a880"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_478975359488d131",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/025_00529_pm_0d93f8b8d020f88e.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_56ed9d5749d28aae.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 5514,
+      "prompt_box": [
+        82.28972625732422,
+        381.4541931152344,
+        406.2073669433594,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_478975359488d131.png",
+      "sha256": "2aa6b709826a9070caefd83c6d3584733590c40e42d2ac67d912a150ff321664"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_478975359488d131",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-b38637d62408_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_56ed9d5749d28aae.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 5514,
+      "prompt_box": [
+        84.99968000000001,
+        380.00016,
+        174.00064,
+        483.99984
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_478975359488d131.png",
+      "sha256": "861727bf2aa96d1a8ffb9d006b3471e806fbc737c2d6577d9317c6c6f0a9f227"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_be4e9557f06819e7",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/025_00529_pm_bad6d00d54cf67c0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_56ed9d5749d28aae.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 5515,
+      "prompt_box": [
+        1042.639404296875,
+        519.0389404296875,
+        1279.881591796875,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_be4e9557f06819e7.png",
+      "sha256": "c752c461d2a29d45ab5f6ae006bd2b0e0902029d0a3a938f09be66990a572a21"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_be4e9557f06819e7",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-5ee8d8541fe6_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_56ed9d5749d28aae.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 5515,
+      "prompt_box": [
+        1192.0,
+        540.0,
+        1280.0,
+        630.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_be4e9557f06819e7.png",
+      "sha256": "cb215262729cca51a5a5ce998b42eb2debcd4cb5645ba2708548144bcc5e479a"
+    },
+    {
+      "type": "image",
+      "group_id": "cf_7c2502f97a5c4f9b",
+      "status": "exact_recovered",
+      "source_archive": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/source/mining_helmet.zip",
+      "source_member": "mining_helmet/images/train/008_03096.jpg",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_7c2502f97a5c4f9b.jpg",
+      "sha256": "9033e919f8d856d9ebff2d6e5525154c6f4a1c556cd4b275fd7fce22c9b652ae"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_3bf8d320f8fa75ce",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_03096_pm_70623c75f0f9695e.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_7c2502f97a5c4f9b.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 1956,
+      "prompt_box": [
+        809.7816162109375,
+        299.20361328125,
+        1077.357421875,
+        720.0
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_3bf8d320f8fa75ce.png",
+      "sha256": "5d8a92be304612757e025bc6b44d8bac6f18ff2b45cd36414a0de07923b8fd6e"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_3bf8d320f8fa75ce",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-7a666a819c9c_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_7c2502f97a5c4f9b.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 1956,
+      "prompt_box": [
+        879.00032,
+        300.00024,
+        996.0,
+        406.00007999999997
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_3bf8d320f8fa75ce.png",
+      "sha256": "a293be0a4184eca870285e127ce1fe6bca7743869a541c916a46062fb080ef1c"
+    },
+    {
+      "type": "miner_mask",
+      "pair_id": "pair_f70d68c2f3af1c99",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_03096_pm_1cd22947db1e7229.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_7c2502f97a5c4f9b.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 1957,
+      "prompt_box": [
+        279.328369140625,
+        374.3020935058594,
+        528.7470092773438,
+        719.8214721679688
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/miner_masks/pair_f70d68c2f3af1c99.png",
+      "sha256": "097c1003884bbdfecf3fdcb63d821588fd50a4425cbcfe951626340a7db62b62"
+    },
+    {
+      "type": "helmet_mask",
+      "pair_id": "pair_f70d68c2f3af1c99",
+      "status": "regenerated",
+      "source_path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-715439174f99_0.png",
+      "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/images/cf_7c2502f97a5c4f9b.jpg",
+      "source_pair_manifest": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl",
+      "source_annotation_member": "mining_helmet/COCO_annotations/mining_helmet_train.json",
+      "source_annotation_id": 1957,
+      "prompt_box": [
+        380.99967999999996,
+        373.00032,
+        424.0,
+        405.99935999999997
+      ],
+      "generator": "sam_b_archived_recipe",
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle003/helmet_masks/pair_f70d68c2f3af1c99.png",
+      "sha256": "2f3fefabf6683855b4314305c25b93d34d1a1d45bddec242b2b90200bdb431c4"
+    }
+  ]
+}

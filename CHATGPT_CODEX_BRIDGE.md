@@ -470,3 +470,42 @@ Do not tune any threshold, weight, prompt, degradation parameter or model after 
 ## Deliverable
 
 Append `CODEX UPDATE 003` with exact asset provenance, number of usable groups, GPU command/runtime status, the real clean/degraded metric table and deltas, deterministic failure-gallery selection, and exactly one recommended next one-hour task based on the observed result.
+
+---
+
+## CODEX UPDATE 003 — 2026-09-18, first real paired table complete
+
+**All original first 30 CF groups were reconstructed; no fallback selection.** Run `20260918-005016-cma-cycle003` finished successfully, exit 0, 00:50:20–00:52:38 +08:00 (138 seconds including regeneration and both evaluations), GPU0 RTX A6000. No training/tuning, controller/verifier changes or new degradation. Cycle 002 evaluator/scorer code unchanged.
+
+### Provenance and execution
+
+- Searched project/archive locations `/home/wjq`, `/home/liujianhua/wjq`, and the recovered project's parent for exact mask basenames, excluding known regenerated recovery files; no hits. Local emergency small archive had no matching masks. Records: [exact search](research_log/cycle003/exact_search.json).
+- Recovered source archive image bytes and regenerated missing masks using archived SAM-B: miner box + multimask/highest SAM predicted quality, helmet box from COCO clamp/round-six normalization + single mask. Pseudo-label generation did not use downstream LISA/GT-IoU selection.
+- 30 groups / 60 references per condition comprise 29 distinct source images and 59 unique pairs. **30 exact-recovered image copies + 118 regenerated masks = 148 frozen assets.** Do not present as pixel-identical historical masks or independent final-benchmark trials.
+- Every source, pair/annotation, generator config/checkpoint SHA-256 and output SHA-256 is in [frozen_assets.json](research_log/cycle003/frozen_assets.json). Freeze preceded LISA inference; all asset/manifest hashes still match afterward. Clean/degraded target/reference arrays, identity order, query and seed matched exactly. [Verification](research_log/cycle003/verification.json).
+- Command: `bash research_log/run_cycle003.sh <recovered-root>` calls recovery then the unchanged frozen Cycle 002 runner with restored manifests and `OUT_DIR=outputs/cycle003_supplied_memory`. w15/BF16/multiround/REF-crop/base seed 0; supplied identity geometry + condition-dependent reference appearance.
+
+### Real results (degraded minus clean)
+
+| Metric | Clean | target15_b | Delta |
+|---|---:|---:|---:|
+| target mIoU | 0.943108 | 0.631131 | -0.311977 |
+| CMSA | 0.966667 (29/30) | 0.466667 (14/30) | -0.500000 |
+| Memory Fidelity | 1.000000 (60/60) | 0.816667 (49/60) | -0.183333 |
+| IER | 0.000000 | 0.000000 | 0.000000 |
+| mean identity margin | 0.943108 | 0.621451 | -0.321658 |
+| median identity margin | 0.958937 | 0.814648 | -0.144289 |
+
+Full per-group paired deltas: [paired_results.json](research_log/cycle003/paired_results.json). Matrix reports: [clean](research_log/cycle003/clean/memory_metrics.json), [degraded](research_log/cycle003/target15_b/memory_metrics.json). Full execution/recovery notes: [CYCLE003.md](research_log/CYCLE003.md).
+
+### Interpretation and deterministic examples
+
+- Clean CMSA is strong, so the current mechanism can use supplied identities on this small diagnostic. Degradation clearly hurts task success.
+- **Do not yet claim identity-specific collapse.** Mean-margin drop nearly tracks mIoU drop; the extra 0.009680 is mean wrong-target overlap. CMSA's thresholded two-reference conjunction can amplify ordinary segmentation degradation.
+- Degraded: 17/60 correct IoUs below 0.5; 11/60 correct IoUs zero. Eight rows overlap neither identity target; three favor the wrong target, but maximum wrong IoU is 0.368316, below IER's fixed 0.5. All predictions are nonempty. Thus IER=0 is compatible with low-quality wrong-identity tendencies, and fidelity loss is not simply empty predictions.
+- [Six-example gallery](research_log/cycle003/RESULT.md): first 2 largest negative group-mean margin deltas; no quality-qualified identity-swap candidates; 2 stable successes by sorted group ID; fill remaining 2 by margin delta. No aesthetic selection. Red prediction / green target, clean and degraded paired. Representative failure and success panels visually checked.
+- CPU regression **19 passed**; real run produced 120 raw prediction masks. Compact provenance, restored manifests, scores and gallery are committed; raw data/masks retained remotely and in a local ~13 MiB replay archive, not published as a dataset.
+
+### Exactly one next recommended task
+
+Keep the same subset/model and add the two off-diagonal cells of a **main-image quality × REF-appearance quality 2×2 control**, with supplied geometry fixed. This separates general segmentation damage from corruption of memory appearance using the two diagonal conditions already measured. No agent, verifier or training work yet.

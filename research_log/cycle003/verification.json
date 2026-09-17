@@ -1,0 +1,23 @@
+{
+  "run_id": "20260918-005016-cma-cycle003",
+  "started_at": "2026-09-18T00:50:20+08:00",
+  "finished_at": "2026-09-18T00:52:38+08:00",
+  "wall_seconds": 138.0,
+  "exit_code": 0,
+  "assets_verified_after_inference": 148,
+  "asset_status_counts": {
+    "exact_recovered": 30,
+    "regenerated": 118
+  },
+  "raw_prediction_files": 120,
+  "freeze_before_first_prediction": true,
+  "degraded": {
+    "empty_predictions": 0,
+    "zero_correct_iou": 11,
+    "all_zero_iou_rows": 8,
+    "wrong_beats_correct": 3,
+    "correct_iou_below_05": 17,
+    "mean_wrong_iou": 0.00968011128941416,
+    "max_wrong_iou": 0.36831595296205905
+  }
+}
