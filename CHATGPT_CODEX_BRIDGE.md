@@ -858,3 +858,41 @@ If training cannot finish inside the cycle, report the exact blocker and partial
 ## Deliverable
 
 Append `CODEX UPDATE 006` with: exact split provenance, code changes, gradient-path statement, one training command/run, old-v3 vs new-v4 validation table, pass/fail under the fixed gate, and—only if the gate passes—the single untouched diagnostic30 result. End with exactly one next one-hour recommendation.
+
+---
+
+
+## CODEX UPDATE 006 — split/assets ready; training blocked by missing historical teacher
+
+**Status: BLOCKED, not completed; training has not started.** Base `13cb7a9`. The old v3 checkpoint requires a historical v1 teacher for its teacher regularizer (weight1.0). The exact referenced checkpoint `task_enhancer_v1_train4k_gpu3_20260528/best.pt` is missing. Available v2/v2.1/v3 weights are different checkpoints. Substituting one or removing the regularizer would change the requested fixed experiment. A configured H100-source retrieval attempt failed with SSH exit255 (jump-host public-key authentication denied); no credential files are published.
+
+### Completed preparation
+
+- Reconstructed `episodes_counterfactual_ref_train_grouped.jsonl` using the unchanged historical builder and accepted source manifests: 4,652 total groups, 3,731 in original training buckets0–7. This is a deterministic reconstruction, not a recovered original file byte claim.
+- Fixed seed20260528, sort by SHA256(seed:counterfactual_id), keep one group per unique archive-image byte hash, exclude all 821 unique image hashes from original holdout buckets8/9, select first300 training + next50 validation. Exclusion handles differently named instance copies of the same source image. No outcome or loss-based selection.
+- Selection IDs, image hashes, source hashes and exact manifests are in `research_log/cycle006/split_receipt.json`. Original split manifest SHA256: train `dc561f54ef01f206e3987a36a46c74d9bb1be2a4cdeb5804d07edc284fb10bcc`; val `a844953079d563408088c7ab7eb6a67c2e1f69eea2e83fef942fd6a7acbb4467`.
+- Recovered350 exact archived images and regenerated1,400 pseudo masks using the already recorded SAM-B recipe. These masks are **not exact historical masks**. Fixed IDs, queries, miner bboxes and source-image hashes all preserved. All1,750 asset hashes rechecked; restored train/val manifests and hashes are in `cycle006/assets_ready.json`. Assets occupy134MiB under remote project `shared/data/cycle006`.
+- No Cycle003 diagnostic inference or enhancement-model selection was performed. Byte-level holdout hashes were used only for exclusion.
+
+### Code, tests and actual run
+
+`cmllm_remote/scripts/prepare_cycle006_split.py` reuses the historical builder for the deterministic split; its CPU test checks input-order independence, duplicate-content aliases and holdout exclusion. `research_log/recover_cycle003.py` now accepts optional selected-manifest/output-directory arguments; defaults preserve Cycle003, and the SAM mask recipe is unchanged. `finish_cycle006_assets.py` maps fixed selections to recovered paths and verifies assets. Full CPU suite: **21 passed**, static parse/diff checks passed.
+
+One actual **asset-regeneration** run (not training): `20260918-034552-cma-cycle006-assets`, 03:45:56–03:47:08 +08:00,72 seconds, exit0. Command: `CUDA_VISIBLE_DEVICES=0 <root>/.venv/bin/python <root>/research_log/recover_cycle003.py <root> --groups-jsonl <root>/research_log/cycle006/selected_source_groups.jsonl --data-name cycle006`. The earlier launcher `20260918-034521-cma-cycle006-assets` lost SSH before tmux launch; verified no process/session/log before retrying. Both states are preserved in the runtime receipt.
+
+### Training and gate: not run
+
+The predeclared configuration is saved in `cycle006/training_contract.json`: one epoch, AdamW/lr5e-6, historical restoration weights including teacher1.0, direct miner0.005/helmet0.01, REF target0.02, rank0.5, margin0.05. No new trainer or optimizer step was implemented/run before resolving the required teacher dependency; no smaller substitute dataset or replacement weights were used.
+
+| Validation metric | Old v3 | New v4 | Delta |
+|---|---|---|---|
+| target mIoU | not run | not run | unavailable |
+| CMSA | not run | not run | unavailable |
+| Memory Fidelity | not run | not run | unavailable |
+| mean identity margin | not run | not run | unavailable |
+
+Gate status: **NOT EVALUATED**, neither pass nor fail. Training runs0; diagnostic30 inference runs0. The proposed differentiable path remains the historical main-SAM-image branch with frozen w15 and detached REF/CLIP pixels; no v4 gradient-path claim or gradient test is made yet.
+
+### Exactly one next one-hour recommendation
+
+Recover the exact historical v1 teacher checkpoint (or have the research owner explicitly revise that dependency in the fixed contract), then resume this same frozen300/50 Cycle006 split for the single prescribed attempt. Until that dependency changes, do not substitute a teacher, drop its loss, start direct-w15 adaptation, rerun preparation, or report a failed validation gate.

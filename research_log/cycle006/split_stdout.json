@@ -1,0 +1,33 @@
+{
+  "status": "split_frozen_assets_not_restored_training_not_started",
+  "seed": 20260528,
+  "order": "sha256(seed:counterfactual_id), then counterfactual_id",
+  "selection": "first one group per unique image-byte SHA256; exclude all holdout-bucket image hashes; first300 train, next50 validation",
+  "sources": {
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/episodes_counterfactual_clean_val.jsonl": "03d41867ed0185466689eb551bf0701c4bf3e5a937367eafb5f2e3c6c70f6650",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl": "d6d586e9800f518eab7e2efa976cebe2406049e9e17e042fc9187e7d84fc76d6",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/episodes_counterfactual_ref_train_grouped.jsonl": "d3071a4c85235fadc1cbaa6c91f82355765dbb8ed5e843ded900a10712ed55bc"
+  },
+  "grouped_manifest": "deterministically reconstructed by the unchanged historical builder, not exact recovered file bytes",
+  "original_groups": 4652,
+  "original_training_groups": 3731,
+  "excluded_holdout_image_hashes": 821,
+  "train_groups": 300,
+  "val_groups": 50,
+  "train_val_and_all_holdout_images_disjoint_by_bytes": true,
+  "manifests": {
+    "train": {
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle006/train_grouped_original_paths.jsonl",
+      "sha256": "dc561f54ef01f206e3987a36a46c74d9bb1be2a4cdeb5804d07edc284fb10bcc"
+    },
+    "val": {
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle006/val_grouped_original_paths.jsonl",
+      "sha256": "a844953079d563408088c7ab7eb6a67c2e1f69eea2e83fef942fd6a7acbb4467"
+    }
+  },
+  "missing_original_asset_counts": {
+    "image": 350,
+    "miner_mask": 700,
+    "helmet_mask": 700
+  }
+}

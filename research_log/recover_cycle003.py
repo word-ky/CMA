@@ -25,13 +25,13 @@ def sha(path):
         return hashlib.file_digest(f, "sha256").hexdigest()
 
 
-def main(root):
+def main(root, groups_path=None, data_name="cycle003"):
     root = Path(root)
-    out = root / "shared/data/cycle003"
-    log = root / "research_log/cycle003"
+    out = root / "shared/data" / data_name
+    log = root / "research_log" / data_name
     for folder in (out / "images", out / "miner_masks", out / "helmet_masks", log):
         folder.mkdir(parents=True, exist_ok=True)
-    groups_path = root / "research_log/cycle002/counterfactual_holdout_first30.jsonl"
+    groups_path = Path(groups_path) if groups_path else root / "research_log/cycle002/counterfactual_holdout_first30.jsonl"
     pairs_path = root / "shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl"
     groups = [json.loads(l) for l in groups_path.read_text().splitlines()]
     pairs = {r["pair_id"]: r for r in map(json.loads, pairs_path.read_text().splitlines())}
@@ -129,10 +129,11 @@ def main(root):
             restored["image_path"] = str(image_path)
             restored_groups.append(restored)
             print(json.dumps({"frozen_groups": len(restored_groups), "group_id": group["counterfactual_id"]}), flush=True)
-    cf_out, pairs_out = out / "counterfactual_holdout_first30_restored.jsonl", out / "helmet_miner_pairs_restored.jsonl"
+    cf_name = "counterfactual_holdout_first30_restored.jsonl" if data_name == "cycle003" else "counterfactual_selected_restored.jsonl"
+    cf_out, pairs_out = out / cf_name, out / "helmet_miner_pairs_restored.jsonl"
     cf_out.write_text("".join(json.dumps(r) + "\n" for r in restored_groups))
     pairs_out.write_text("".join(json.dumps(r) + "\n" for r in restored_pairs.values()))
-    receipt = {"protocol": "fixed_original_first30_regenerated_mask_diagnostic", "groups": len(restored_groups),
+    receipt = {"protocol": "fixed_original_first30_regenerated_mask_diagnostic" if data_name == "cycle003" else "fixed_training_selection_regenerated_masks", "groups": len(restored_groups),
                "identity_trials": sum(len(g["pair_ids"]) for g in groups), "unique_pairs": len(restored_pairs),
                "selection_manifest_sha256": sha(groups_path), "source_pair_manifest_sha256": sha(pairs_path),
                "archive_sha256": sha(archive), "generator": generator,
@@ -142,4 +143,10 @@ def main(root):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("root")
+    parser.add_argument("--groups-jsonl")
+    parser.add_argument("--data-name", default="cycle003")
+    args = parser.parse_args()
+    main(args.root, args.groups_jsonl, args.data_name)

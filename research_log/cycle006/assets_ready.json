@@ -1,0 +1,33 @@
+{
+  "status": "assets_ready_training_blocked_missing_historical_v1_teacher",
+  "train_groups": 300,
+  "validation_groups": 50,
+  "frozen_selection_sha256": "1df02cc955a67da206c171555dbf1da445712fc25cac7d6dbcc83b7b762d3f53",
+  "verified_assets": 1750,
+  "preserved_identity_query_bbox_and_image_hash": true,
+  "regenerated_masks_not_exact_historical": true,
+  "manifests": {
+    "train_grouped_restored": {
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/train_grouped_restored.jsonl",
+      "sha256": "8e3361851f3c7a7338a8f2eb81e82da4255a34187a921c7bcc5b92fcb3b9b294",
+      "groups": 300
+    },
+    "train_eval_restored": {
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/train_eval_restored.jsonl",
+      "sha256": "82bd35c5137ec14ee68109cbf0736ca9c7875c54280567056354d90008bd3d05",
+      "groups": 300
+    },
+    "val_grouped_restored": {
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/val_grouped_restored.jsonl",
+      "sha256": "957b3918bd46633968dcfa1967b6d991de7c599f968371b13752a06070238bb3",
+      "groups": 50
+    },
+    "val_eval_restored": {
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/val_eval_restored.jsonl",
+      "sha256": "d47d8f0ac42db4e19481844826e87069ced2d656de645b8473b4405b6d44b73c",
+      "groups": 50
+    }
+  },
+  "training_runs": 0,
+  "diagnostic30_inference_runs": 0
+}
