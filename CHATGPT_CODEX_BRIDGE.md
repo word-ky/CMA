@@ -352,3 +352,40 @@ If model weights/data are not available, do **not** fabricate results: finish A/
 ## Deliverable
 
 Append `CODEX UPDATE 002` with files changed, commands, whether real GPU data were produced, exact metrics if produced, blockers, and only one recommended next step. The next decision will be based on whether CMSA/identity margin degrade materially from clean to `target15_b`.
+
+---
+
+## CODEX UPDATE 002 — 2026-09-18, export ready; real-data run blocked
+
+Implemented the explicitly allowed asset-unavailable deliverable. **A/B are complete and deployed; C has no real GPU predictions or metrics because the fixed CF subset lacks complete image/mask assets.** No training, memory API elaboration, controller/verifier changes or new degradation family.
+
+### Files and protocol
+
+- `eval_mr_ref_counterfactual_v0.py`: optional `--export-memory-manifest`, `--condition clean|target15_b`, `--seed`; every original forward target output is exported once, after the existing `>0` threshold, with target/reference mask copies and ordered identity metadata. No GT-based prediction selection. New relative/env LISA path and explicit `--vision-pretrained none` support the recovered merged checkpoint layout; historical initialization default remains.
+- `counterfactual_export.py`: model-free export helper and exact archived compound degradation. Shared observation is processed once per group before main-image and REF-crop construction. Supplied miner masks/bboxes stay fixed. Both conditions are labeled **supplied_ref**. Seed is MD5(`base_seed:counterfactual_id`) first 8 hex digits; base seed 0, same ordered groups/query/memories.
+- `eval_counterfactual_memory_fidelity.py`: adds per-reference identity margin and reference-weighted mean/median overall and per condition/source. Existing CMSA, Fidelity, IER definitions are unchanged.
+- `run_cycle002_supplied_memory.sh`: frozen w15, BF16, multi-round conversation, REF crop, first 30 groups, clean/target15_b, no controller. Deployed alongside exporter/scorer to the recovered experiment machine.
+- Tests, exact missing-path audit, frozen manifest, commands and interpretation: [CYCLE002.md](research_log/CYCLE002.md). Full assets: [audit](research_log/cycle002/asset_audit.json), [fixed first-30 manifest](research_log/cycle002/counterfactual_holdout_first30.jsonl).
+
+### Actual asset finding
+
+Recovered w15 and runtime are present. Archived CF metadata contain 4,652 groups, with 921 in the original MD5 holdout buckets 8/9. Selected the **first 30 holdout groups in original file order**, not by result or availability (60 identities/condition).
+
+Their original paths miss 30 image references, 60 miner masks and 60 helmet masks (150 references). Searching recovered `shared/data` finds 23 matching basenames from earlier regular holdout restoration, but **zero fully covered groups even counting those candidates**. No available-only subset or regular holdout30 was substituted. Archive/selection SHA-256 and every missing path are in the audit. Regenerating CF masks has not been done in this cycle.
+
+### Commands / evidence
+
+```powershell
+$env:PYTHONPATH = "$PWD/cmllm_remote/src"
+.venv/Scripts/python.exe -B -m pytest -p no:cacheprovider cmllm_remote/tests -q
+.venv/Scripts/python.exe -B cmllm_remote/scripts/eval_counterfactual_memory_fidelity.py --input research_log/fixtures/cmf_synthetic.jsonl --output research_log/cycle002/synthetic_margin_check.json --min-iou 0.5
+```
+
+- **19 tests passed**, including exact pixel equality to the old `degrade_parametric`, fixed seed behavior, export→scorer of deliberately swapped masks, and execution of the actual `build_item` body for both conversation modes with CPU tensors/encoder substitutes. REF and image see the same condition; masks remain fixed.
+- Local OpenCV missing: installed only into project `.venv`, pinned 4.10.0.84 without dependency upgrades. Observed Windows Unicode fixture-path failure repaired with relative test filenames; production I/O untouched.
+- Recovered machine: actual evaluator/LISA imports and `--help` succeeded; launcher `bash -n` succeeded. No new full model inference, GPU diagnostic metrics or failure gallery.
+- Synthetic receipt retains prior designed mIoU/Fidelity 0.75, CMSA 0.5, IER 0.25; new mean margin 0.5, median 1.0. **Software checks only, not evidence of model robustness.**
+
+### Only recommended next step
+
+Restore or explicitly regenerate the image/miner/helmet assets for these exact first 30 groups with provenance, then execute the already-deployed clean/target15_b supplied-reference diagnostic. Decide further work from real CMSA/margin changes; keep predicted memory, verifier and agent work paused until then.

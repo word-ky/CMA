@@ -4,13 +4,15 @@ import os
 import sys
 from pathlib import Path
 
+from counterfactual_export import condition_image, export_group, group_seed
+
 import cv2
 import numpy as np
 import torch
 import torch.nn.functional as F
 from transformers import AutoTokenizer, CLIPImageProcessor
 
-LISA_ROOT = "/home/wjq/cmllm/third_party/LISA"
+LISA_ROOT = os.environ.get("LISA_ROOT", str(Path(__file__).resolve().parents[1] / "third_party/LISA"))
 if LISA_ROOT not in sys.path:
     sys.path.insert(0, LISA_ROOT)
 
@@ -204,6 +206,8 @@ def build_item(
     ref_image_mode="crop",
     focus_dilate=15,
     focus_background=0.0,
+    condition="clean",
+    seed=0,
 ):
     pair_ids = cf["pair_ids"]
     pairs = [pairs_by_id[pair_id] for pair_id in pair_ids]
@@ -212,6 +216,9 @@ def build_item(
     if image_bgr is None:
         raise FileNotFoundError(image_path)
     image_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
+    # Degrade once per group BEFORE main-image and REF-crop encoders. Geometry
+    # and supplied masks remain fixed; all identities share this observation.
+    image_rgb = condition_image(image_rgb, condition, group_seed(cf["counterfactual_id"], seed))
     ori_size = image_rgb.shape[:2]
 
     target_masks = [read_mask(pair["helmet_mask_path"], ori_size) for pair in pairs]
@@ -315,6 +322,9 @@ def main():
     parser.add_argument("--vision-tower", default="openai/clip-vit-large-patch14")
     parser.add_argument("--vision-pretrained", default="/home/wjq/cmllm/models/sam/sam_vit_h_4b8939.pth")
     parser.add_argument("--overlay-limit", type=int, default=64)
+    parser.add_argument("--condition", choices=["clean", "target15_b"], default="clean")
+    parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--export-memory-manifest", action="store_true")
     parser.add_argument(
         "--conversation-mode",
         default="v0_single_ref",
@@ -365,7 +375,7 @@ def main():
         low_cpu_mem_usage=False,
         torch_dtype=dtype,
         vision_tower=args.vision_tower,
-        vision_pretrained=args.vision_pretrained,
+        vision_pretrained=None if args.vision_pretrained.lower() == "none" else args.vision_pretrained,
         seg_token_idx=seg_token_idx,
         ref_token_idx=ref_token_idx,
     )
@@ -392,6 +402,16 @@ def main():
         cfs = cfs[: args.max_items]
 
     rows = []
+    exported_rows = []
+    provenance = {
+        "model": args.model, "precision": args.precision,
+        "vision_tower": args.vision_tower, "conversation_mode": args.conversation_mode,
+        "ref_image_mode": args.ref_image_mode, "focus_dilate": args.focus_dilate,
+        "focus_background": args.focus_background, "image_size": args.image_size,
+        "model_max_length": args.model_max_length,
+        "counterfactual_jsonl": args.counterfactual_jsonl, "pairs_jsonl": args.pairs_jsonl,
+        "prediction_selection": "one_forward_per_supplied_identity_no_gt_selection",
+    }
     correct_ious = []
     wrong_ious = []
     rcs_values = []
@@ -410,6 +430,8 @@ def main():
             ref_image_mode=args.ref_image_mode,
             focus_dilate=args.focus_dilate,
             focus_background=args.focus_background,
+            condition=args.condition,
+            seed=args.seed,
         )
         batch = collate_fn([item], tokenizer=tokenizer, conv_type="llava_v1", use_mm_start_end=True, local_rank=0)
         for key in ["images", "images_clip", "input_ids", "labels", "attention_masks", "offset"]:
@@ -423,6 +445,13 @@ def main():
             outputs = model(**batch)
         pred_masks_all = outputs["pred_masks"][0].detach().float().cpu().numpy() > 0
         pred_masks = pred_masks_all[eval_pred_indices]
+
+        if args.export_memory_manifest:
+            exported_rows.append(export_group(
+                out_dir, idx, cf, pred_masks, target_masks, ref_masks,
+                condition=args.condition, seed=group_seed(cf["counterfactual_id"], args.seed),
+                provenance=provenance,
+            ))
 
         n = min(pred_masks.shape[0], target_masks.shape[0])
         sample = {
@@ -482,6 +511,9 @@ def main():
 
     summary = {
         "model": args.model,
+        "condition": args.condition,
+        "memory_source": "supplied_ref",
+        "seed": args.seed,
         "counterfactual_jsonl": args.counterfactual_jsonl,
         "pairs_jsonl": args.pairs_jsonl,
         "conversation_mode": args.conversation_mode,
@@ -498,6 +530,8 @@ def main():
         "counterfactual_success_rate": float(cf_success / len(rows)) if rows else 0.0,
     }
     write_jsonl(out_dir / "counterfactual_results.jsonl", rows)
+    if args.export_memory_manifest:
+        write_jsonl(out_dir / "memory_predictions.jsonl", exported_rows)
     (out_dir / "counterfactual_summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(summary, ensure_ascii=False, indent=2), flush=True)
 

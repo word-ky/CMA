@@ -54,6 +54,7 @@ def score_masks(predictions, targets, min_iou=0.5):
         "iou_matrix": scores.tolist(),
         "correct_iou": diagonal.tolist(),
         "max_wrong_iou": wrong.tolist(),
+        "identity_margin": (diagonal - wrong).tolist(),
         "fidelity": fidelity.tolist(),
         "identity_error": identity_error.tolist(),
         "pairs": pairs,
@@ -103,6 +104,7 @@ def summarize(rows):
     """Reference-weighted scores and pair-weighted CMSA (not mean of group means)."""
     count = sum(row["num_references"] for row in rows)
     pairs = [pair for row in rows for pair in row["pairs"]]
+    margins = [value for row in rows for value in row["identity_margin"]]
     return {
         "num_groups": len(rows),
         "num_references": count,
@@ -111,6 +113,8 @@ def summarize(rows):
         "memory_fidelity": sum(sum(r["fidelity"]) for r in rows) / count,
         "cmsa": sum(p["success"] for p in pairs) / len(pairs),
         "identity_error_rate": sum(sum(r["identity_error"]) for r in rows) / count,
+        "mean_identity_margin": float(np.mean(margins)),
+        "median_identity_margin": float(np.median(margins)),
     }
 
 

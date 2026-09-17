@@ -71,3 +71,9 @@ restored = memory.rollback(step=11)  # new version; restores mask, image, bbox a
 The legacy adapter copies `anchor` with `anchor_image` and `anchor_state`, computes bbox, leaves reliability unset and records `selection_uses_gt=true`; it does not copy `anchor_quality['iou']` as reliability. This does not purify an oracle-selected anchor. Caller-provided source action/step must correspond to the original anchor write, not simply the current action.
 
 This is in-process persistence, not a disk database, encoder, learned reliability estimator or identity recognizer. Identity preservation must still be measured; storing a stable string does not guarantee the new mask depicts the same person. The API has not been integrated into the old executor in this cycle.
+
+## Cycle 002 extension
+
+The scorer additionally exports per-reference `identity_margin = correct_iou - max_wrong_iou` and its reference-weighted mean/median in overall and stratified reports. Other definitions are unchanged. The old Cycle 001 receipt is retained; the new synthetic margin check is in `cycle002/synthetic_margin_check.json`.
+
+The previously missing raw-mask export seam now exists behind `eval_mr_ref_counterfactual_v0.py --export-memory-manifest`, with `--condition clean|target15_b`. This supersedes the Cycle 001 statement that the script can only save scalars/overlays. Both conditions explicitly use `memory_source=supplied_ref`. Real inputs remain incomplete; see [Cycle 002](CYCLE002.md) for asset audit, frozen group IDs, exact missing paths and the deployed command template. No real model scores yet.

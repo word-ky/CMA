@@ -19,8 +19,10 @@ def test_correct_swap_and_memory_ignored():
     gt = targets()
     correct = score_masks(gt, gt)
     assert correct["iou_matrix"] == [[1, 0], [0, 1]]
+    assert correct["identity_margin"] == [1, 1]
     assert (correct["memory_fidelity"], correct["cmsa"], correct["identity_error_rate"]) == (1, 1, 0)
     swapped = score_masks(gt[::-1], gt)
+    assert swapped["identity_margin"] == [-1, -1]
     assert (swapped["memory_fidelity"], swapped["cmsa"], swapped["identity_error_rate"]) == (0, 0, 1)
     ignored = score_masks(np.repeat(gt[:1], 2, axis=0), gt)
     assert (ignored["memory_fidelity"], ignored["cmsa"], ignored["identity_error_rate"]) == (0.5, 0, 0.5)
@@ -61,6 +63,8 @@ def test_permutation_invariance_and_weighted_aggregation():
     total = summarize([score_masks(targets(), targets()), first])
     assert total["memory_fidelity"] == pytest.approx(4 / 5)
     assert total["cmsa"] == pytest.approx(2 / 4)
+    assert total["mean_identity_margin"] == pytest.approx(3 / 5)
+    assert total["median_identity_margin"] == 1
 
 
 @pytest.mark.parametrize("gt", [np.zeros((2, 1, 2)), np.ones((2, 1, 2))])

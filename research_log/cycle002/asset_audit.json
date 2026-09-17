@@ -1,0 +1,826 @@
+{
+  "selection": "first 30 in archived file order after MD5(image_path) bucket 8/9; no result filtering",
+  "archived_groups": 4652,
+  "holdout_groups": 921,
+  "selected_groups": 30,
+  "selected_ids": [
+    "cf_15083517d58230ce",
+    "cf_79810e446f10b26e",
+    "cf_5db8c13197ba44b2",
+    "cf_8aa0a810beb52024",
+    "cf_f99ab9280e06a816",
+    "cf_98618b015c8fc502",
+    "cf_7924cbced03b6f46",
+    "cf_1d77b0f7a4f34726",
+    "cf_2b433432599075d8",
+    "cf_eb0278bf698865c9",
+    "cf_60a2310ce9affa83",
+    "cf_fb70263dca448084",
+    "cf_e1a4551d2039f452",
+    "cf_42619b2aaf91c0e8",
+    "cf_9eee122f3e475704",
+    "cf_93558c835cce8c29",
+    "cf_023f89d30d90720b",
+    "cf_040619a5f3f909a5",
+    "cf_533d8c8add5e24c3",
+    "cf_d32ae4c94aab36c5",
+    "cf_3ba42bc3f25f5b23",
+    "cf_9fb58615a914e180",
+    "cf_a30f69fcde5104de",
+    "cf_e8e8fa40c6ef55f7",
+    "cf_e40df336f2c47ea6",
+    "cf_ca28a3d76b3f03e9",
+    "cf_1d6ec3bdbac51fdb",
+    "cf_c16cef759dcc3b36",
+    "cf_56ed9d5749d28aae",
+    "cf_7c2502f97a5c4f9b"
+  ],
+  "source_manifest_sha256": "03d41867ed0185466689eb551bf0701c4bf3e5a937367eafb5f2e3c6c70f6650",
+  "selected_manifest_sha256": "d300e763060a4b5b95b53df383859890f4700fb96de6262fc510efb5e57d3ccb",
+  "missing_references": 150,
+  "missing_by_kind": {
+    "image": 30,
+    "miner_mask": 60,
+    "helmet_mask": 60
+  },
+  "matching_missing_basenames_under_shared_data": [
+    "022_02118-ann4295-57a8c094da.jpg",
+    "022_02118_pm_3f056ee9edca1b92.png",
+    "022_02127-ann4300-aa324b9622.jpg",
+    "022_02127_pm_283d52301cc8d518.png",
+    "022_02322-ann4391-8e5d1d16aa.jpg",
+    "022_02322_pm_cbf80c93bde76267.png",
+    "022_03692-ann4600-eb43cc4409.jpg",
+    "022_03692_pm_bb643bdd1af84dc3.png",
+    "022_03725-ann4616-2e8deee7d1.jpg",
+    "022_03725_pm_ca6e2c10d9b74200.png",
+    "048_01139_pm_ee5e4f7b8ea95670.png",
+    "050_01754-ann14270-dab1573109.jpg",
+    "050_01754_pm_273aab88e5e7c869.png",
+    "065_00999-ann16842-3875acdeb1.jpg",
+    "065_00999_pm_4ae9885c414de9df.png",
+    "mining_helmet-2e8deee7d185_0.png",
+    "mining_helmet-3875acdeb16d_0.png",
+    "mining_helmet-57a8c094da21_0.png",
+    "mining_helmet-70c61d6fefe9_0.png",
+    "mining_helmet-8e5d1d16aad5_0.png",
+    "mining_helmet-aa324b96228a_0.png",
+    "mining_helmet-dab157310974_0.png",
+    "mining_helmet-eb43cc4409b3_0.png"
+  ],
+  "groups_with_all_paths_or_basename_candidates": 0,
+  "model_config_present": true,
+  "runtime_present": true,
+  "missing": [
+    {
+      "group_id": "cf_15083517d58230ce",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_02118-ann4295-57a8c094da.jpg"
+    },
+    {
+      "group_id": "cf_15083517d58230ce",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02118_pm_3f056ee9edca1b92.png"
+    },
+    {
+      "group_id": "cf_15083517d58230ce",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-57a8c094da21_0.png"
+    },
+    {
+      "group_id": "cf_15083517d58230ce",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02118_pm_5759c54b09c3b32e.png"
+    },
+    {
+      "group_id": "cf_15083517d58230ce",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-18540b5ca650_0.png"
+    },
+    {
+      "group_id": "cf_79810e446f10b26e",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/050_01423-ann3582-21bc8b00a9.jpg"
+    },
+    {
+      "group_id": "cf_79810e446f10b26e",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01423_pm_5c9db425d1d6e78e.png"
+    },
+    {
+      "group_id": "cf_79810e446f10b26e",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-21bc8b00a951_0.png"
+    },
+    {
+      "group_id": "cf_79810e446f10b26e",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01423_pm_e74b12e70bf6cf29.png"
+    },
+    {
+      "group_id": "cf_79810e446f10b26e",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-76870b980ab3_0.png"
+    },
+    {
+      "group_id": "cf_5db8c13197ba44b2",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/050_00622-ann14022-17a24bbde1.jpg"
+    },
+    {
+      "group_id": "cf_5db8c13197ba44b2",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_00622_pm_d7c7b677610a5ac8.png"
+    },
+    {
+      "group_id": "cf_5db8c13197ba44b2",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-17a24bbde141_0.png"
+    },
+    {
+      "group_id": "cf_5db8c13197ba44b2",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_00622_pm_4db0dd72fcf61760.png"
+    },
+    {
+      "group_id": "cf_5db8c13197ba44b2",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-50d22f71fb14_0.png"
+    },
+    {
+      "group_id": "cf_8aa0a810beb52024",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_03692-ann4600-eb43cc4409.jpg"
+    },
+    {
+      "group_id": "cf_8aa0a810beb52024",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_03692_pm_bb643bdd1af84dc3.png"
+    },
+    {
+      "group_id": "cf_8aa0a810beb52024",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-eb43cc4409b3_0.png"
+    },
+    {
+      "group_id": "cf_8aa0a810beb52024",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_03692_pm_f78bfd7e50c231ad.png"
+    },
+    {
+      "group_id": "cf_8aa0a810beb52024",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-41977136f6d1_0.png"
+    },
+    {
+      "group_id": "cf_f99ab9280e06a816",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/050_01754-ann14270-dab1573109.jpg"
+    },
+    {
+      "group_id": "cf_f99ab9280e06a816",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01754_pm_273aab88e5e7c869.png"
+    },
+    {
+      "group_id": "cf_f99ab9280e06a816",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-dab157310974_0.png"
+    },
+    {
+      "group_id": "cf_f99ab9280e06a816",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01754_pm_1dfcfd5d69e055e5.png"
+    },
+    {
+      "group_id": "cf_f99ab9280e06a816",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-3733e6736630_0.png"
+    },
+    {
+      "group_id": "cf_98618b015c8fc502",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_02127-ann4300-aa324b9622.jpg"
+    },
+    {
+      "group_id": "cf_98618b015c8fc502",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02127_pm_283d52301cc8d518.png"
+    },
+    {
+      "group_id": "cf_98618b015c8fc502",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-aa324b96228a_0.png"
+    },
+    {
+      "group_id": "cf_98618b015c8fc502",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02127_pm_1efd4403194c372d.png"
+    },
+    {
+      "group_id": "cf_98618b015c8fc502",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-f49892dae476_0.png"
+    },
+    {
+      "group_id": "cf_7924cbced03b6f46",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_03725-ann4616-2e8deee7d1.jpg"
+    },
+    {
+      "group_id": "cf_7924cbced03b6f46",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_03725_pm_ca6e2c10d9b74200.png"
+    },
+    {
+      "group_id": "cf_7924cbced03b6f46",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-2e8deee7d185_0.png"
+    },
+    {
+      "group_id": "cf_7924cbced03b6f46",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_03725_pm_b5de514660320c8d.png"
+    },
+    {
+      "group_id": "cf_7924cbced03b6f46",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-c08e0e004fed_0.png"
+    },
+    {
+      "group_id": "cf_1d77b0f7a4f34726",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/050_00871-ann14074-e7c443fabd.jpg"
+    },
+    {
+      "group_id": "cf_1d77b0f7a4f34726",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_00871_pm_071837510cd24c91.png"
+    },
+    {
+      "group_id": "cf_1d77b0f7a4f34726",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-e7c443fabd60_0.png"
+    },
+    {
+      "group_id": "cf_1d77b0f7a4f34726",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_00871_pm_35190268b8fd3309.png"
+    },
+    {
+      "group_id": "cf_1d77b0f7a4f34726",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-498510a0f9d7_0.png"
+    },
+    {
+      "group_id": "cf_2b433432599075d8",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/048_01139-ann13615-e358ed8cef.jpg"
+    },
+    {
+      "group_id": "cf_2b433432599075d8",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/048_01139_pm_92203f2a3e5f0392.png"
+    },
+    {
+      "group_id": "cf_2b433432599075d8",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-e358ed8cefcd_0.png"
+    },
+    {
+      "group_id": "cf_2b433432599075d8",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/048_01139_pm_ee5e4f7b8ea95670.png"
+    },
+    {
+      "group_id": "cf_2b433432599075d8",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-70c61d6fefe9_0.png"
+    },
+    {
+      "group_id": "cf_eb0278bf698865c9",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_01339-ann5604-5e9184221e.jpg"
+    },
+    {
+      "group_id": "cf_eb0278bf698865c9",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/025_01339_pm_60d8b8b76ed1754f.png"
+    },
+    {
+      "group_id": "cf_eb0278bf698865c9",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-5e9184221e91_0.png"
+    },
+    {
+      "group_id": "cf_eb0278bf698865c9",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/025_01339_pm_b0ac70ececb6984d.png"
+    },
+    {
+      "group_id": "cf_eb0278bf698865c9",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-7d6bcaa0c9a6_0.png"
+    },
+    {
+      "group_id": "cf_60a2310ce9affa83",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_02322-ann4391-8e5d1d16aa.jpg"
+    },
+    {
+      "group_id": "cf_60a2310ce9affa83",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02322_pm_cbf80c93bde76267.png"
+    },
+    {
+      "group_id": "cf_60a2310ce9affa83",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-8e5d1d16aad5_0.png"
+    },
+    {
+      "group_id": "cf_60a2310ce9affa83",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02322_pm_f3b36527a6c85ee2.png"
+    },
+    {
+      "group_id": "cf_60a2310ce9affa83",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-d7af5daa018b_0.png"
+    },
+    {
+      "group_id": "cf_fb70263dca448084",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/065_00999-ann16842-3875acdeb1.jpg"
+    },
+    {
+      "group_id": "cf_fb70263dca448084",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/065_00999_pm_4ae9885c414de9df.png"
+    },
+    {
+      "group_id": "cf_fb70263dca448084",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-3875acdeb16d_0.png"
+    },
+    {
+      "group_id": "cf_fb70263dca448084",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/065_00999_pm_09063b30051e98b6.png"
+    },
+    {
+      "group_id": "cf_fb70263dca448084",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-6583b275dbc1_0.png"
+    },
+    {
+      "group_id": "cf_e1a4551d2039f452",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_02211-ann1099-f45bd6d8ae.jpg"
+    },
+    {
+      "group_id": "cf_e1a4551d2039f452",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02211_pm_4033fc724ee007df.png"
+    },
+    {
+      "group_id": "cf_e1a4551d2039f452",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-f45bd6d8ae44_0.png"
+    },
+    {
+      "group_id": "cf_e1a4551d2039f452",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02211_pm_40e437839ad89084.png"
+    },
+    {
+      "group_id": "cf_e1a4551d2039f452",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-b681913433fe_0.png"
+    },
+    {
+      "group_id": "cf_42619b2aaf91c0e8",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_02197-ann1096-2a15d31422.jpg"
+    },
+    {
+      "group_id": "cf_42619b2aaf91c0e8",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02197_pm_be0e34d522285bae.png"
+    },
+    {
+      "group_id": "cf_42619b2aaf91c0e8",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-2a15d3142221_0.png"
+    },
+    {
+      "group_id": "cf_42619b2aaf91c0e8",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_02197_pm_e6f1519b841fa69e.png"
+    },
+    {
+      "group_id": "cf_42619b2aaf91c0e8",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-86bacc2ea3e7_0.png"
+    },
+    {
+      "group_id": "cf_9eee122f3e475704",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/050_01157-ann14115-f1cb6040f2.jpg"
+    },
+    {
+      "group_id": "cf_9eee122f3e475704",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01157_pm_3025ea8d03d7c917.png"
+    },
+    {
+      "group_id": "cf_9eee122f3e475704",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-f1cb6040f210_0.png"
+    },
+    {
+      "group_id": "cf_9eee122f3e475704",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01157_pm_e4f643d7b8eb8bef.png"
+    },
+    {
+      "group_id": "cf_9eee122f3e475704",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-8535dca2bbfd_0.png"
+    },
+    {
+      "group_id": "cf_93558c835cce8c29",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/050_01723-ann14254-273fa15506.jpg"
+    },
+    {
+      "group_id": "cf_93558c835cce8c29",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01723_pm_06273fb5c153f8c4.png"
+    },
+    {
+      "group_id": "cf_93558c835cce8c29",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-273fa1550620_0.png"
+    },
+    {
+      "group_id": "cf_93558c835cce8c29",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/050_01723_pm_20317325bc8fe648.png"
+    },
+    {
+      "group_id": "cf_93558c835cce8c29",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-03f726d39c09_0.png"
+    },
+    {
+      "group_id": "cf_023f89d30d90720b",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_04785-ann6409-65d342e4b8.jpg"
+    },
+    {
+      "group_id": "cf_023f89d30d90720b",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/025_04785_pm_281938055b61d159.png"
+    },
+    {
+      "group_id": "cf_023f89d30d90720b",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-65d342e4b825_0.png"
+    },
+    {
+      "group_id": "cf_023f89d30d90720b",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/025_04785_pm_101fd293307f16e7.png"
+    },
+    {
+      "group_id": "cf_023f89d30d90720b",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-5151a8e1e1d4_0.png"
+    },
+    {
+      "group_id": "cf_040619a5f3f909a5",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_01895-ann4290-85856c5f63.jpg"
+    },
+    {
+      "group_id": "cf_040619a5f3f909a5",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_01895_pm_dad99a20f017c8e3.png"
+    },
+    {
+      "group_id": "cf_040619a5f3f909a5",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-85856c5f6355_0.png"
+    },
+    {
+      "group_id": "cf_040619a5f3f909a5",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/022_01895_pm_54825b2decf78fde.png"
+    },
+    {
+      "group_id": "cf_040619a5f3f909a5",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-97281d72c46c_0.png"
+    },
+    {
+      "group_id": "cf_533d8c8add5e24c3",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/064_01017-ann16720-f010ac3ec2.jpg"
+    },
+    {
+      "group_id": "cf_533d8c8add5e24c3",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/064_01017_pm_d1098b344c9690f8.png"
+    },
+    {
+      "group_id": "cf_533d8c8add5e24c3",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-f010ac3ec2fc_0.png"
+    },
+    {
+      "group_id": "cf_533d8c8add5e24c3",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/064_01017_pm_8c6509eb117d9146.png"
+    },
+    {
+      "group_id": "cf_533d8c8add5e24c3",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-d46b6661bdac_0.png"
+    },
+    {
+      "group_id": "cf_d32ae4c94aab36c5",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/064_00988-ann16707-de66dd481f.jpg"
+    },
+    {
+      "group_id": "cf_d32ae4c94aab36c5",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/064_00988_pm_142ea4b28e789200.png"
+    },
+    {
+      "group_id": "cf_d32ae4c94aab36c5",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-de66dd481f4f_0.png"
+    },
+    {
+      "group_id": "cf_d32ae4c94aab36c5",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/064_00988_pm_a6981c314ade6173.png"
+    },
+    {
+      "group_id": "cf_d32ae4c94aab36c5",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-d3c1daaba649_0.png"
+    },
+    {
+      "group_id": "cf_3ba42bc3f25f5b23",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_02605-ann462-d10519fec3.jpg"
+    },
+    {
+      "group_id": "cf_3ba42bc3f25f5b23",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02605_pm_d7747840ab93bb9a.png"
+    },
+    {
+      "group_id": "cf_3ba42bc3f25f5b23",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-d10519fec3df_0.png"
+    },
+    {
+      "group_id": "cf_3ba42bc3f25f5b23",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02605_pm_f21a54e25443f153.png"
+    },
+    {
+      "group_id": "cf_3ba42bc3f25f5b23",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-49d7e4694e32_0.png"
+    },
+    {
+      "group_id": "cf_9fb58615a914e180",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_02631-ann1822-9ddad8e31d.jpg"
+    },
+    {
+      "group_id": "cf_9fb58615a914e180",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02631_pm_01450764137e5a1d.png"
+    },
+    {
+      "group_id": "cf_9fb58615a914e180",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-9ddad8e31dcc_0.png"
+    },
+    {
+      "group_id": "cf_9fb58615a914e180",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02631_pm_d33be9159d441bc7.png"
+    },
+    {
+      "group_id": "cf_9fb58615a914e180",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-20b13d56f046_0.png"
+    },
+    {
+      "group_id": "cf_a30f69fcde5104de",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_02271-ann445-13f4e7378b.jpg"
+    },
+    {
+      "group_id": "cf_a30f69fcde5104de",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02271_pm_82ecddcf7a735c91.png"
+    },
+    {
+      "group_id": "cf_a30f69fcde5104de",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-13f4e7378b92_0.png"
+    },
+    {
+      "group_id": "cf_a30f69fcde5104de",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02271_pm_b473e33914afa664.png"
+    },
+    {
+      "group_id": "cf_a30f69fcde5104de",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-bf24d7c838af_0.png"
+    },
+    {
+      "group_id": "cf_e8e8fa40c6ef55f7",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_03348-ann2030-876b7048af.jpg"
+    },
+    {
+      "group_id": "cf_e8e8fa40c6ef55f7",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_03348_pm_d15c173092cc19e3.png"
+    },
+    {
+      "group_id": "cf_e8e8fa40c6ef55f7",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-876b7048afc3_0.png"
+    },
+    {
+      "group_id": "cf_e8e8fa40c6ef55f7",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_03348_pm_c30987a77356648d.png"
+    },
+    {
+      "group_id": "cf_e8e8fa40c6ef55f7",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-03f76fb18ef8_0.png"
+    },
+    {
+      "group_id": "cf_e40df336f2c47ea6",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_02400-ann1773-670c193f40.jpg"
+    },
+    {
+      "group_id": "cf_e40df336f2c47ea6",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02400_pm_e642baa94d1ce4ff.png"
+    },
+    {
+      "group_id": "cf_e40df336f2c47ea6",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-670c193f4077_0.png"
+    },
+    {
+      "group_id": "cf_e40df336f2c47ea6",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_02400_pm_5502a7c2b623591f.png"
+    },
+    {
+      "group_id": "cf_e40df336f2c47ea6",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-2e60285ccb83_0.png"
+    },
+    {
+      "group_id": "cf_ca28a3d76b3f03e9",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/017_00739-ann3394-00ba5e3255.jpg"
+    },
+    {
+      "group_id": "cf_ca28a3d76b3f03e9",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/017_00739_pm_7555f4f424cd99a3.png"
+    },
+    {
+      "group_id": "cf_ca28a3d76b3f03e9",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-00ba5e3255e4_0.png"
+    },
+    {
+      "group_id": "cf_ca28a3d76b3f03e9",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/017_00739_pm_34efb83fa8ea2b67.png"
+    },
+    {
+      "group_id": "cf_ca28a3d76b3f03e9",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-5e42c1aa686b_0.png"
+    },
+    {
+      "group_id": "cf_1d6ec3bdbac51fdb",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/017_00739-ann3394-00ba5e3255.jpg"
+    },
+    {
+      "group_id": "cf_1d6ec3bdbac51fdb",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/017_00739_pm_7555f4f424cd99a3.png"
+    },
+    {
+      "group_id": "cf_1d6ec3bdbac51fdb",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-00ba5e3255e4_0.png"
+    },
+    {
+      "group_id": "cf_1d6ec3bdbac51fdb",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/017_00739_pm_00da6ad32d99c8f5.png"
+    },
+    {
+      "group_id": "cf_1d6ec3bdbac51fdb",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-ef2fb21bcb3b_0.png"
+    },
+    {
+      "group_id": "cf_c16cef759dcc3b36",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/035_00220-ann10322-52c5c645df.jpg"
+    },
+    {
+      "group_id": "cf_c16cef759dcc3b36",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/035_00220_pm_ac4394f996e28466.png"
+    },
+    {
+      "group_id": "cf_c16cef759dcc3b36",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-52c5c645df99_0.png"
+    },
+    {
+      "group_id": "cf_c16cef759dcc3b36",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/035_00220_pm_5062a5eeb00e9c7f.png"
+    },
+    {
+      "group_id": "cf_c16cef759dcc3b36",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-40ac426fe6be_0.png"
+    },
+    {
+      "group_id": "cf_56ed9d5749d28aae",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_00529-ann5514-b38637d624.jpg"
+    },
+    {
+      "group_id": "cf_56ed9d5749d28aae",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/025_00529_pm_0d93f8b8d020f88e.png"
+    },
+    {
+      "group_id": "cf_56ed9d5749d28aae",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-b38637d62408_0.png"
+    },
+    {
+      "group_id": "cf_56ed9d5749d28aae",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/025_00529_pm_bad6d00d54cf67c0.png"
+    },
+    {
+      "group_id": "cf_56ed9d5749d28aae",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-5ee8d8541fe6_0.png"
+    },
+    {
+      "group_id": "cf_7c2502f97a5c4f9b",
+      "kind": "image",
+      "path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_03096-ann1956-7a666a819c.jpg"
+    },
+    {
+      "group_id": "cf_7c2502f97a5c4f9b",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_03096_pm_70623c75f0f9695e.png"
+    },
+    {
+      "group_id": "cf_7c2502f97a5c4f9b",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-7a666a819c9c_0.png"
+    },
+    {
+      "group_id": "cf_7c2502f97a5c4f9b",
+      "kind": "miner_mask",
+      "path": "/home/wjq/cmllm/outputs/mr_data/helmet_miner_pseudopair_v1/pseudo_miners/008_03096_pm_1cd22947db1e7229.png"
+    },
+    {
+      "group_id": "cf_7c2502f97a5c4f9b",
+      "kind": "helmet_mask",
+      "path": "/home/wjq/cmllm/outputs/segmentation/mining_helmet_sam_fullinst21618_keyed_20260509_114630/masks/mining_helmet-715439174f99_0.png"
+    }
+  ]
+}
