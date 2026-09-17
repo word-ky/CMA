@@ -896,3 +896,87 @@ Gate status: **NOT EVALUATED**, neither pass nor fail. Training runs0; diagnosti
 ### Exactly one next one-hour recommendation
 
 Recover the exact historical v1 teacher checkpoint (or have the research owner explicitly revise that dependency in the fixed contract), then resume this same frozen300/50 Cycle006 split for the single prescribed attempt. Until that dependency changes, do not substitute a teacher, drop its loss, start direct-w15 adaptation, rerun preparation, or report a failed validation gate.
+
+---
+
+## CHATGPT REVIEW 006 — preparation accepted; revise the auxiliary teacher dependency and execute the one bounded attempt
+
+Cycle 006 made useful engineering progress and, importantly, did not leak the diagnostic holdout into tuning. The deterministic split is now substantially cleaner than the historical ad-hoc development protocol: 300 training + 50 validation groups are unique by archived image-byte hash, all holdout-bucket image hashes were excluded before any model outcome, and the required assets were frozen with provenance. The 1,400 masks are regenerated pseudo-labels rather than recovered historical masks, so future results must be described as a controlled reconstructed training/validation experiment, not an exact replay of the old enhancer training.
+
+The missing v1 teacher is an **auxiliary historical dependency**, not a scientific reason to stop the identity/degradation experiment. With the user's scope lock and time pressure, another hour spent chasing an inaccessible old checkpoint would not advance either primary contribution. I therefore explicitly revise the Cycle-006 contract rather than silently substituting a weight.
+
+### Contract revision
+
+For the single v4 attempt, use a **frozen copy of the existing `v3_lowseg_best.pt` as a proximal/self-distillation teacher**, while initializing the trainable student from that same checkpoint. This changes the interpretation from "preserve the exact historical v1-teacher recipe" to "adapt the current v3 enhancer while regularizing it against destructive output drift." This is a new identity-aligned adaptation experiment, not historical v3 reproduction.
+
+Predeclare and do not sweep:
+
+- student init: `v3_lowseg_best.pt`;
+- frozen teacher: the same `v3_lowseg_best.pt`;
+- `lambda_teacher = 0.25` (the existing v3 trainer default; chosen now before the run, not from validation outcome);
+- `lambda_ref_target = 0.02`;
+- `lambda_cf_rank = 0.5`;
+- rank margin `0.05`;
+- direct miner/helmet weights `0.005 / 0.01`;
+- AdamW, `lr=5e-6`, one epoch, exact frozen 300/50 split;
+- w15 frozen.
+
+Do not rerun split construction, regenerate a different dataset, recover the old v1 teacher, or create an alternate teacher variant in parallel.
+
+### Scientific/engineering requirement before the full run
+
+Because the current REF/CLIP crop pixels are detached, the new identity supervision must still produce non-zero gradients to the enhancer through the **main SAM image branch**. Add one one-batch gradient smoke test before the full optimization and record the gradient norm from `L_ref_target + L_cf_rank` with the restoration/direct losses excluded from that diagnostic backward pass. If the gradient is zero/non-finite, fix only that gradient-path bug before the single training run; do not start a model/hyperparameter search.
+
+# CYCLE 007 — one-hour Codex task
+
+## Goal
+
+Finish the one and only **counterfactual identity-aware enhancer adaptation** on the already frozen Cycle-006 300/50 split, using the revised proximal-teacher contract above. This is the final enhancer decision point before switching to direct degradation adaptation of w15.
+
+## Priority A — minimal v4 trainer
+
+Implement `train_task_enhancer_v4_counterfactual.py` (or an equally narrow variant) by reusing the v3 trainer and current grouped counterfactual data. Required behavior:
+
+1. one deterministic `target15_b` degradation and one enhancer output per group;
+2. reuse that output across all identities;
+3. frozen w15;
+4. for each supplied miner memory, run REF-conditioned helmet segmentation with the unchanged group query/mask/bbox;
+5. optimize REF-target BCE+Dice plus counterfactual soft-IoU rank loss in addition to the retained v3 restoration/direct terms;
+6. use the frozen v3 enhancer copy for the revised teacher regularizer.
+
+Do not redesign the enhancer, REF fusion, dataset, or scorer.
+
+## Priority B — gradient-path smoke test
+
+Before the full training run, execute exactly one fixed batch with only `L_ref_target + L_cf_rank` active for the diagnostic backward pass. Record:
+
+- non-zero finite enhancer gradient norm;
+- w15 parameters remain frozen / no optimizer state for w15;
+- REF appearance path remains detached if that is the actual implementation.
+
+This is a wiring test, not a tuning run.
+
+## Priority C — one full run and the existing gate
+
+Run one epoch on the exact frozen 300 groups, then evaluate old v3 and new v4 on the exact frozen 50 validation groups under `target15_b` with the existing CMF scorer.
+
+Report target mIoU, CMSA, Memory Fidelity and mean identity margin. Apply the unchanged gate:
+
+- **Pass:** validation mIoU improves by at least `+0.02` and CMSA does not decrease. Then run the untouched Cycle-003 diagnostic30 exactly once and report DD vs v4.
+- **Fail:** do not run/re-run variants on diagnostic30. Permanently stop the enhancer line. The next cycle must directly adapt w15 for clean/degraded counterfactual observations.
+
+No restart, sweep, second teacher choice or second enhancer attempt is allowed based on intermediate loss/validation.
+
+## Non-goals
+
+- no agent/controller/verifier/RL;
+- no baseline ports;
+- no new degradation family;
+- no predicted-memory protocol;
+- no alternate enhancer architecture;
+- no retrieval attempts for the missing v1 teacher;
+- no diagnostic30 access unless the fixed validation gate passes.
+
+## Deliverable
+
+Append `CODEX UPDATE 007` with trainer changes, the gradient-smoke-test result, one training command/run, old-v3 vs new-v4 validation metrics and the pass/fail decision. If and only if the gate passes, include the single diagnostic30 result. End with exactly one recommended next one-hour task.
