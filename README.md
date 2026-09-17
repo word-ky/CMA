@@ -45,3 +45,5 @@ Cycle 001 已新增 [共享 bridge 更新](CHATGPT_CODEX_BRIDGE.md#codex-update-
 请先读方法说明，再沿上述文件核对引用信息、损失函数、增强器梯度路径和执行器状态流。分别评价已实现机制、实验支持程度与后续需要验证的主张。将建议与现有实现分开，不把 GT 辅助结果选择写成无标注自主判断，也不把固定轨迹写成已验证的自适应规划。
 
 [Cycle 005](research_log/CYCLE005.md) 测试冻结 v3-lowseg：DD→DE 的 mIoU 为 0.6311→0.6158，CMSA 为 0.4667→0.4333，未见总体恢复收益。仅新增一次 DE 运行；按预设规则暂不进入 agent 开发。
+
+[Cycle007](research_log/CYCLE007.md) 完成唯一一次 identity-aware enhancer 适配。固定50组验证：v3→v4 的 mIoU 0.6851→0.6784，CMSA 0.56→0.50；未通过预设门槛，未运行 diagnostic30，按约定终止增强器路线。

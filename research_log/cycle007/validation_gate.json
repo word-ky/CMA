@@ -1,0 +1,67 @@
+{
+  "status": "FAIL",
+  "passed": false,
+  "gate": {
+    "target_miou_delta_min": 0.02,
+    "cmsa_delta_min": 0
+  },
+  "validation": {
+    "v3": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.6850593801643302,
+      "memory_fidelity": 0.9,
+      "cmsa": 0.56,
+      "identity_error_rate": 0.04,
+      "mean_identity_margin": 0.6486144338890705,
+      "median_identity_margin": 0.8604733976065243
+    },
+    "v4": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.6784396081887294,
+      "memory_fidelity": 0.89,
+      "cmsa": 0.5,
+      "identity_error_rate": 0.04,
+      "mean_identity_margin": 0.6380227322642644,
+      "median_identity_margin": 0.8715161343741622
+    }
+  },
+  "v4_minus_v3": {
+    "target_miou": -0.006619771975600819,
+    "cmsa": -0.06000000000000005,
+    "memory_fidelity": -0.010000000000000009,
+    "mean_identity_margin": -0.01059170162480605,
+    "median_identity_margin": 0.011042736767637895,
+    "identity_error_rate": 0.0
+  },
+  "checkpoint_provenance": {
+    "v3": {
+      "checkpoint": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/enhancer/v3_lowseg_best.pt",
+      "checkpoint_sha256": "3f006e2244e2c6273252837f86c30f352d51fa43a45f33459fe791d230b82553",
+      "implementation": "stage3_rule_controller_v3_seg_local_enhance.run_task_enhancer",
+      "implementation_sha256": "73de6a7b640ca4ea20bb1de54d6c19710ca0f454b95590c23d7cf64d3e6c7859",
+      "max_side": 1024,
+      "autocast": "bfloat16",
+      "frozen": true,
+      "preprocessing": "RGB uint8 /255; AREA downsize; clamp/round uint8; CUBIC restore",
+      "reuse": "one output per seeded observation shared by main and all REF crops"
+    },
+    "v4": {
+      "checkpoint": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle007/train/last.pt",
+      "checkpoint_sha256": "b22b85e601729a7b65ad975cfd735eb03cc34f25c7384a7cb9c011cdc9b90f8f",
+      "implementation": "stage3_rule_controller_v3_seg_local_enhance.run_task_enhancer",
+      "implementation_sha256": "73de6a7b640ca4ea20bb1de54d6c19710ca0f454b95590c23d7cf64d3e6c7859",
+      "max_side": 1024,
+      "autocast": "bfloat16",
+      "frozen": true,
+      "preprocessing": "RGB uint8 /255; AREA downsize; clamp/round uint8; CUBIC restore",
+      "reuse": "one output per seeded observation shared by main and all REF crops"
+    }
+  },
+  "paired_inputs_and_masks_equal": true,
+  "training_attempts": 1,
+  "checkpoint_selection": "sole final epoch checkpoint; no search"
+}

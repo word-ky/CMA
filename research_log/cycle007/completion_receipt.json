@@ -1,0 +1,13 @@
+{
+  "checkpoint": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle007/train/last.pt",
+  "checkpoint_sha256": "b22b85e601729a7b65ad975cfd735eb03cc34f25c7384a7cb9c011cdc9b90f8f",
+  "completed_optimizer_steps": 300,
+  "each_fixed_training_group_used_once": true,
+  "diagnostic30_inference_runs": 0,
+  "source_hashes": {
+    "code/cmllm/scripts/train_task_enhancer_v4_counterfactual.py": "aadf5ff63927c4fa37db51e8e050ad6b137b10330e8a4359e71849ac478e785f",
+    "code/cmllm/scripts/train_task_enhancer_v3_dual_direct_loss.py": "506373c9e0d6ec1a8c9f5db479eac7a090d651e6c6fa3b87bb636ad7078a7098",
+    "code/cmllm/scripts/eval_mr_ref_counterfactual_v0.py": "4094052054eae3cd5608bd1c054ea17ba42d3af55be291561fac6e5a4d59cbc5",
+    "research_log/run_cycle007_full.sh": "d32716083785705eb5008f22d52b4d3a28224ff1eb2a7caabf58c41b701e6a07"
+  }
+}

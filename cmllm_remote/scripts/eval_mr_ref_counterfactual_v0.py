@@ -337,6 +337,7 @@ def main():
     parser.add_argument("--ref-condition", choices=["clean", "target15_b"], default=None)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--global-enhancer", default=None)
+    parser.add_argument("--enhancer-label", default="v3lowseg")
     parser.add_argument("--global-enhancer-max-side", type=int, default=1024)
     parser.add_argument("--export-memory-manifest", action="store_true")
     parser.add_argument(
@@ -388,7 +389,7 @@ def main():
             image_receipt["degraded_rgb_sha256"] = hashlib.sha256(image.tobytes()).hexdigest()
             return run_task_enhancer(enhancer, image, args.global_enhancer_max_side)
 
-        condition_label += "__v3lowseg"
+        condition_label += "__" + args.enhancer_label
 
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,12 @@
+{
+  "group_id": "cf_d0fa96077bf85e0a",
+  "loss_ref_target": 0.7943140864372253,
+  "loss_cf_rank": 0.0,
+  "enhancer_gradient_norm": 14.412564277648926,
+  "all_enhancer_gradients_finite": true,
+  "w15_frozen_no_grad": true,
+  "ref_pixels_detached": true,
+  "main_sam_requires_grad": true,
+  "optimizer_steps": 0,
+  "optimizer_created": false
+}
