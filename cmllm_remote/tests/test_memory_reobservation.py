@@ -74,4 +74,3 @@ def test_build_item_crop_preserves_export_geometry_and_ignores_helmet_values(tmp
     cv2.imwrite('target.png',255-target)
     second=ns['build_item'](cf,pairs,Clip(),Resize(),64,'v1_multiround',reobservation_receipt={})[0]
     for i in (1,2,4,5,9,10,11,12,13):torch.testing.assert_close(item[i],second[i])
-
