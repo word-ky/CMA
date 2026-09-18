@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "row": 2,
+      "path": "research_log/cycle022/scoring/comparison.json",
+      "sha256": "3e25de6c3bf90fef7a1164bec2cd68a37b8d0aa94ef63b7f8473d8f46fdd540d",
+      "pointer": "/summaries/cma_clean"
+    },
+    {
+      "row": 3,
+      "path": "research_log/cycle022/scoring/comparison.json",
+      "sha256": "3e25de6c3bf90fef7a1164bec2cd68a37b8d0aa94ef63b7f8473d8f46fdd540d",
+      "pointer": "/summaries/cma_target15_b"
+    },
+    {
+      "row": 4,
+      "path": "research_log/cycle022/scoring/comparison.json",
+      "sha256": "3e25de6c3bf90fef7a1164bec2cd68a37b8d0aa94ef63b7f8473d8f46fdd540d",
+      "pointer": "/summaries/segllm_clean"
+    },
+    {
+      "row": 5,
+      "path": "research_log/cycle022/scoring/comparison.json",
+      "sha256": "3e25de6c3bf90fef7a1164bec2cd68a37b8d0aa94ef63b7f8473d8f46fdd540d",
+      "pointer": "/summaries/segllm_target15_b"
+    },
+    {
+      "row": 6,
+      "path": "research_log/cycle018/scoring/comparison.json",
+      "sha256": "c9f159ef2a744aff8a44eb4ca7a6c63ad977e0f763ebcae777166302b89869a7",
+      "pointer": "/summaries/cma_base_w15_clean"
+    },
+    {
+      "row": 7,
+      "path": "research_log/cycle018/scoring/comparison.json",
+      "sha256": "c9f159ef2a744aff8a44eb4ca7a6c63ad977e0f763ebcae777166302b89869a7",
+      "pointer": "/summaries/cma_base_w15_target15_b"
+    },
+    {
+      "row": 8,
+      "path": "research_log/cycle018/scoring/comparison.json",
+      "sha256": "c9f159ef2a744aff8a44eb4ca7a6c63ad977e0f763ebcae777166302b89869a7",
+      "pointer": "/summaries/segllm_clean"
+    },
+    {
+      "row": 9,
+      "path": "research_log/cycle018/scoring/comparison.json",
+      "sha256": "c9f159ef2a744aff8a44eb4ca7a6c63ad977e0f763ebcae777166302b89869a7",
+      "pointer": "/summaries/segllm_target15_b"
+    }
+  ],
+  "metrics": [
+    "target_miou",
+    "cmsa",
+    "memory_fidelity",
+    "identity_error_rate",
+    "mean_identity_margin",
+    "median_identity_margin",
+    "num_groups",
+    "num_references"
+  ],
+  "rows": 8,
+  "performance_recomputed": false
+}

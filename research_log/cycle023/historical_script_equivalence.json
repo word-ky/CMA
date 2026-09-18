@@ -1,0 +1,12 @@
+{
+  "build_mr_ref_counterfactual_train.py": {
+    "historical_path": "D:\\work\\fightccfa-agin\\coalminellm\\h100_backup\\emergency-20260518-011026\\scripts\\build_mr_ref_counterfactual_train.py",
+    "lf_sha256": "3530d54b46c653b3d0147ef45626db6127dfa69667924f283388c04fc5dc43bb",
+    "equal_current_after_lf_normalization": true
+  },
+  "run_lisa_finetune_mr_ref_v2b_rank.sh": {
+    "historical_path": "D:\\work\\fightccfa-agin\\coalminellm\\h100_backup\\emergency-20260518-011026\\scripts\\run_lisa_finetune_mr_ref_v2b_rank.sh",
+    "lf_sha256": "83616e861ba2499edbd9f68ef3a70b46890ce8e263c446958b6424ff5e05c1cd",
+    "equal_current_after_lf_normalization": true
+  }
+}

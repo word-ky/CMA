@@ -1,0 +1,1960 @@
+{
+  "status": "UNKNOWN",
+  "status_reason": "Exact historical w15 run-specific manifest/hash and environment overrides unavailable; reconstructed protocol is evidence, not a cryptographically bound training manifest.",
+  "checkpoint_model_files": {
+    "added_tokens.json": "2fe7d7069f251c367d65cdb8f4b3cb103d9ef0f9f9536bfc8b388294f15cfe10",
+    "config.json": "2713d1a90022fa0e511063afbba73a269e0846e22a2d8f735931562aa36b28f3",
+    "generation_config.json": "7779e8100d571fa25da277947041f715feea34377294ed0e74ec372ed3a0f1cf",
+    "model-00001-of-00004.safetensors": "045c59fab79c0bfac08bd8d4da0bfd52944d3eadf3cb26ef554ac87626d64431",
+    "model-00002-of-00004.safetensors": "76db53501af5a730dea94e2a087b6c507b7294c5fc8914bc876370549cb77479",
+    "model-00003-of-00004.safetensors": "81981b218677e34a07b18db4a9d4abe7a26ef5898a89ac2b6da30ae244244e52",
+    "model-00004-of-00004.safetensors": "aede44f1356e8c1a1c27989b2a4365d3997d68dddf272c662365d770158cc9f8",
+    "model.safetensors.index.json": "5f36c3c82fa35c0752b4d940fd665b20449d7b0583da89b19bdb5a2950e0fcce",
+    "special_tokens_map.json": "719833ff26ac897a3ec8ed946028a135de2a351470af59b4008744ab1f0ee9b7",
+    "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+    "tokenizer_config.json": "c79eea18fb072436083e89184315f975db46494c8a35420dd68323319ba5e908"
+  },
+  "exact_historical_training_manifest": null,
+  "exact_training_unique_image_count": null,
+  "exact_training_intersections": {
+    "cycle022_confirmation50": null,
+    "cycle018_val50": null
+  },
+  "reconstructed_manifest": {
+    "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle023/episodes_miner_to_helmet_plus_counterfactual_train_reconstructed.jsonl",
+    "sha256": "9e9c6c7f288e7c7a50c9537d6394091f411724871b6caedaf8c8ed9541f001d1",
+    "regular_rows": 9724,
+    "counterfactual_rows": 3731,
+    "total_rows": 13455,
+    "unique_image_bytes": 8123,
+    "matches_historical_log_counts": true,
+    "source_hashes": {
+      "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/episodes_miner_to_helmet_clean_train.jsonl": "26811716f2bf70ad58ccb12d235b31c6c1ee6d60a3e4b8c1c31b8c05f7b01b42",
+      "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/episodes_counterfactual_clean_val.jsonl": "03d41867ed0185466689eb551bf0701c4bf3e5a937367eafb5f2e3c6c70f6650",
+      "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl": "d6d586e9800f518eab7e2efa976cebe2406049e9e17e042fc9187e7d84fc76d6"
+    },
+    "builder_sha256": "3530d54b46c653b3d0147ef45626db6127dfa69667924f283388c04fc5dc43bb",
+    "regular_input": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/episodes_miner_to_helmet_clean_train.jsonl",
+    "bucket_rule": "md5(image_path) first8hex modulo10 in0..7; paths may alias identical image bytes"
+  },
+  "reconstructed_protocol_intersections": {
+    "cycle022_confirmation50": {
+      "evaluation_images": 50,
+      "overlap_images": 37,
+      "overlaps": [
+        {
+          "group_id": "cf_5144903fbf634d62",
+          "image_sha256": "ddfce7ebb4e5a254448a9bec58b761a3f5d34c492d35d42fc643c6fc6273c842",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_bd8bb3084745d1dd",
+              "image_member": "mining_helmet/images/train/046_01503.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/046_01503-ann13159-0704b7b1d5.jpg",
+              "bucket": 3
+            }
+          ]
+        },
+        {
+          "group_id": "cf_e9834f04c3abb37c",
+          "image_sha256": "9bde5740e89b2186890eea94517acfad97a516f9835a256b971f67f96a881ada",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_f4d1875b1b6598a3",
+              "image_member": "mining_helmet/images/train/023_02163.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_02163-ann5053-c219a0c4c9.jpg",
+              "bucket": 5
+            }
+          ]
+        },
+        {
+          "group_id": "cf_27c187e007537842",
+          "image_sha256": "be3df053df5c2ee9896882acbfa4a29d250515337201ec4f5a7e3a54a4ddb512",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_e28de38f8d63b752",
+              "image_member": "mining_helmet/images/train/026_01151.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/026_01151-ann7335-ac5ef42f04.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_3a39415f65cb660d",
+              "image_member": "mining_helmet/images/train/026_01151.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/026_01151-ann7336-43b3eb496c.jpg",
+              "bucket": 5
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_a451290a61d40294",
+              "image_member": "mining_helmet/images/train/026_01151.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/026_01151-ann7336-43b3eb496c.jpg",
+              "bucket": 5
+            }
+          ]
+        },
+        {
+          "group_id": "cf_be4666754a3bf9d6",
+          "image_sha256": "dbd031f05a9924ad0533405ed109aa893e0f646d5570375a832dc85a8df755a4",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_e719ee1ff8f11873",
+              "image_member": "mining_helmet/images/train/025_06649.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_06649-ann6975-f344801589.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_ac6ad3df6360675f",
+          "image_sha256": "256b70b3a8208d80e4d6925e064f3ea9b218dc36c639403e7a0f648dc0cfa105",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_2237ca3d566a0385",
+              "image_member": "mining_helmet/images/train/023_01643.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01643-ann4954-87a3d72db8.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_abb02bd0d64219d4",
+              "image_member": "mining_helmet/images/train/023_01643.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01643-ann4955-5d7909fe34.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_8ca194211a597bef",
+              "image_member": "mining_helmet/images/train/023_01643.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01643-ann4955-5d7909fe34.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_cee7a9bbfc773070",
+              "image_member": "mining_helmet/images/train/023_01643.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01643-ann4955-5d7909fe34.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_bb58f628412d4c8b",
+          "image_sha256": "d1f33e1ee2cebf133db0e43a7cc659eb05c85988bf6af6edcccc12b40c60c316",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_2d841ff29aa180d3",
+              "image_member": "mining_helmet/images/train/030_02524.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_02524-ann9229-d312ede720.jpg",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "group_id": "cf_b971ae2bd565f957",
+          "image_sha256": "c320ccc6b161d232346b681da7a4f4e27d42294d6a430f94d9a7bc5972c38b57",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_ce55c21676b2ed3f",
+              "image_member": "mining_helmet/images/train/017_00450.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/017_00450-ann3355-704a0252d1.jpg",
+              "bucket": 6
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_0c1a40fa923a8ef9",
+              "image_member": "mining_helmet/images/train/017_00450.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/017_00450-ann3357-0700986f2c.jpg",
+              "bucket": 2
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_a47d7262cd417acf",
+              "image_member": "mining_helmet/images/train/017_00450.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/017_00450-ann3355-704a0252d1.jpg",
+              "bucket": 6
+            }
+          ]
+        },
+        {
+          "group_id": "cf_9b48e1bf55655c4f",
+          "image_sha256": "074ea32c06c6530f19281c2166bd986a579eb09fd6656006ff93fb70d1b9d97c",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_79ee247d6f35a4d4",
+              "image_member": "mining_helmet/images/train/028_00253.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/028_00253-ann7804-bb9f41c3c9.jpg",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "group_id": "cf_3c808c0b60040679",
+          "image_sha256": "8b4895eebaff3f65a7b02372df81bcd914ab13d5538f67935d121f555ae418cf",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_d89510129150c524",
+              "image_member": "mining_helmet/images/train/033_00457.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/033_00457-ann9900-4f16c78a24.jpg",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "group_id": "cf_1ad6080365d3ad1e",
+          "image_sha256": "dc0cf4ea01b7f86658590b018ccdb829934b9abc39cc0b890c41568f0d2726a3",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_1dc5c4be26bd8cb5",
+              "image_member": "mining_helmet/images/train/030_01578.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_01578-ann8810-fa9bf76c13.jpg",
+              "bucket": 6
+            }
+          ]
+        },
+        {
+          "group_id": "cf_266ce9e05a0f1735",
+          "image_sha256": "b1cc761a79a28e2c564784e1b26838801a2c4ad5968c839da06e81ef63d0b0b5",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_7f32612009c816a8",
+              "image_member": "mining_helmet/images/train/025_05642.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_05642-ann6669-ec1011a5cf.jpg",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "group_id": "cf_25b0eca4270731ac",
+          "image_sha256": "d8917546285153ec0f9b526b90d5ae90edce568c12c4bbc9b2e4488e21e1c36f",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_f449dcc04343b4f1",
+              "image_member": "mining_helmet/images/train/025_03838.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_03838-ann6136-d6d65acb6f.jpg",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "group_id": "cf_08482dd970f6f5c8",
+          "image_sha256": "57087d3e888b35092498c5ad8c849f30877c46df7d5da0fa46c7e8b27e406ef7",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_75f6ebb8f4e36ab7",
+              "image_member": "mining_helmet/images/train/024_01564.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/024_01564-ann5391-eeeb8e4aa4.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_ac0b26a65726f5d9",
+              "image_member": "mining_helmet/images/train/024_01564.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/024_01564-ann5389-1cd3cd132c.jpg",
+              "bucket": 1
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_b593caf0f04bd208",
+              "image_member": "mining_helmet/images/train/024_01564.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/024_01564-ann5389-1cd3cd132c.jpg",
+              "bucket": 1
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_2c80ba76c25e6b27",
+              "image_member": "mining_helmet/images/train/024_01564.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/024_01564-ann5389-1cd3cd132c.jpg",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "group_id": "cf_aa258f9354a436ed",
+          "image_sha256": "a87b08cb5d0b2e85563303d478eb40ced2efe9b163589fb2a67d900901207ad8",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_0964e4535f1cf131",
+              "image_member": "mining_helmet/images/train/033_00738.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/033_00738-ann9993-f405067365.jpg",
+              "bucket": 5
+            }
+          ]
+        },
+        {
+          "group_id": "cf_f9c7fa63403c9649",
+          "image_sha256": "ee9723cf01a6c30f99301ed0803542eddb52e28c2019a73052398a63c11e3ce5",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_e4d35b35fed4b098",
+              "image_member": "mining_helmet/images/train/025_04481.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_04481-ann6320-85c284d44c.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_ae3a0a2228c79745",
+          "image_sha256": "02aec8f979f10cf4082ce657dc8eaf7a60eddaace97d2e5aee1b68f516122289",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_434336f368f7e098",
+              "image_member": "mining_helmet/images/train/045_01137.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/045_01137-ann12704-5622be46ea.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_75e6a11b1743f4ad",
+          "image_sha256": "c96e333e260604ef1fc4bc34a512ed31a7ef95e847355c3c5e384ed975e40723",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_154d7405ea623d7b",
+              "image_member": "mining_helmet/images/train/026_01489.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/026_01489-ann7451-a17bf53894.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_0d7e722460f3da50",
+          "image_sha256": "393eda8df007c57a578d5e196910a7afcfe5ae51c08879c3d89821fb9089000a",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_25b07ccd429cc652",
+              "image_member": "mining_helmet/images/train/030_01416.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_01416-ann8719-dcd0ffb2b0.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_e875e771c005658d",
+          "image_sha256": "c454bf79085d37380789c98707497c1e0be9b56b890da3558de1489a52c1bc2e",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_4bf06a5af43ab98a",
+              "image_member": "mining_helmet/images/train/025_05808.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_05808-ann6721-6c6cd57a39.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_904dd843db020d2b",
+          "image_sha256": "d5d3508a5e303639a051bd35032ca1242f434bb2890c3782773d4904097d3c2a",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_c4f6d8bb5c1f01b7",
+              "image_member": "mining_helmet/images/train/022_02236.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_02236-ann4352-0502ba8665.jpg",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "group_id": "cf_cc373975383c7fe5",
+          "image_sha256": "3d80eb038797f2ae766b122b7f4c450b3eac84b114c18d29a3042dafde36f1e6",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_4af9c495c40a10cc",
+              "image_member": "mining_helmet/images/train/023_01469.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01469-ann4917-ab819ef995.jpg",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "group_id": "cf_0ecbd57897071f8b",
+          "image_sha256": "ea255265785b2110396465c406a2e901f24b5da41b2b69c2a5354ec292a13e0a",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_c6f29eb31fc87cae",
+              "image_member": "mining_helmet/images/train/045_00808.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/045_00808-ann12634-41831c6d6a.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_7ddd6d4cb8cb2960",
+          "image_sha256": "e9e9126b2eb8189404ff61ea824b903134bd3bfdc3a6d5ff49a96f3211ec1951",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_b42f3fdf3df0c9e6",
+              "image_member": "mining_helmet/images/train/013_00269.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/013_00269-ann2834-49237031dc.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_833c107a138e4e8a",
+          "image_sha256": "c195c4ea7073a49a5113e8a3578c5a5db04230732efbd420ffc2df2bf972db3d",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_b9fc4e686adb2b07",
+              "image_member": "mining_helmet/images/train/018_01466.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/018_01466-ann3800-fd0c96a3c5.jpg",
+              "bucket": 2
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_be3a50abe762161f",
+              "image_member": "mining_helmet/images/train/018_01466.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/018_01466-ann3799-e8be401662.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_cbdb56b1027b31df",
+              "image_member": "mining_helmet/images/train/018_01466.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/018_01466-ann3800-fd0c96a3c5.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_68d6cb4095308c80",
+          "image_sha256": "c280c5f2a8bb09785569db87d866db497ec93e570fa468ef7bc63e56120298cf",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_c3439d558edfd01c",
+              "image_member": "mining_helmet/images/train/026_01382.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/026_01382-ann7426-94d421f16f.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_365b8939fb090ec0",
+          "image_sha256": "34aa4fa06b43fc3ddcb5207b76185ee6f958fdd3c3c000650f4eac3f07cb2dca",
+          "training_rows": [
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_08faa8ae2078c823",
+              "image_member": "mining_helmet/images/val/023_01631.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01631-ann1260-d636129537.jpg",
+              "bucket": 2
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_3d884fc07c577716",
+              "image_member": "mining_helmet/images/val/023_01631.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01631-ann1260-d636129537.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_907f0f412efeba12",
+          "image_sha256": "88b0f6977c5cc3527176535d51b9f9488cc3ce1a0b2093dd10d333c48c380d85",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_9ae724f3519d2540",
+              "image_member": "mining_helmet/images/train/025_04486.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_04486-ann6324-e5b5b2dc42.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_b98e59ba87e7a9ca",
+          "image_sha256": "0508099086cce5005d8d8bc56d4094f4eadc8cd788f9767cdbb6b6ea20bcace4",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_b30a9d66f8554691",
+              "image_member": "mining_helmet/images/train/030_00487.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_00487-ann8358-c167434eff.jpg",
+              "bucket": 1
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_b44bd15ecc5e0b92",
+              "image_member": "mining_helmet/images/train/030_00487.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_00487-ann8360-cc12de1427.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_04688ea4f0bef7fc",
+              "image_member": "mining_helmet/images/train/030_00487.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_00487-ann8360-cc12de1427.jpg",
+              "bucket": 4
+            }
+          ]
+        },
+        {
+          "group_id": "cf_1f3932d277ee9222",
+          "image_sha256": "0a0c67288f6fa42d5d4e95a5f06dbc1086ccda9f77c6c98e195994a2b63a4150",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_eb7a947e77b2c483",
+              "image_member": "mining_helmet/images/train/018_00779.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/018_00779-ann3565-c7ac89888f.jpg",
+              "bucket": 0
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_60e3439d04d953ae",
+              "image_member": "mining_helmet/images/train/018_00779.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/018_00779-ann3565-c7ac89888f.jpg",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "group_id": "cf_60c856af84a7a214",
+          "image_sha256": "51acbe142978c8ec1288056a03b81b9606cb6ac429c53c4e7b242935d48d93ba",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_2b950a338481570f",
+              "image_member": "mining_helmet/images/train/002_00826.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/002_00826-ann261-97a824131e.jpg",
+              "bucket": 4
+            }
+          ]
+        },
+        {
+          "group_id": "cf_df6e1dfa96697098",
+          "image_sha256": "cc6c93a273ffa0b7e629e5bb7fc7166a4baaa526b82f65b810fc444780cbeea8",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_1e8c3f2d4ab1309a",
+              "image_member": "mining_helmet/images/train/035_01429.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/035_01429-ann10520-1cd29ff2ae.jpg",
+              "bucket": 3
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_c677b830130d93d8",
+              "image_member": "mining_helmet/images/train/035_01429.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/035_01429-ann10521-ed0ff76e31.jpg",
+              "bucket": 2
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_65305db1070edc1d",
+              "image_member": "mining_helmet/images/train/035_01429.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/035_01429-ann10521-ed0ff76e31.jpg",
+              "bucket": 2
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_8ccbd3d56f561764",
+              "image_member": "mining_helmet/images/train/035_01429.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/035_01429-ann10521-ed0ff76e31.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_c5c1d98791e0b8d5",
+          "image_sha256": "2676ce729354f3d474e3926b4f0c0cad570c5c0d8b90b983cab02d0f48c5fff6",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_1788150303aada75",
+              "image_member": "mining_helmet/images/train/030_00483.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_00483-ann8352-05be0adf31.jpg",
+              "bucket": 3
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_659425cc14f11943",
+              "image_member": "mining_helmet/images/train/030_00483.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_00483-ann8352-05be0adf31.jpg",
+              "bucket": 3
+            }
+          ]
+        },
+        {
+          "group_id": "cf_1a5b0b20bd3fddca",
+          "image_sha256": "6a98ed3e0d112d946f1dc4dfa018599e2f917b22c7e7ddcc91c7b9bb20660b08",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_41d583f9b60caebf",
+              "image_member": "mining_helmet/images/train/030_02402.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_02402-ann9142-ae2ee52846.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_2072c7948e4e5dff",
+          "image_sha256": "70e78ca659a412f2316c81a6806a3ed7bd1f33790515bc8f08f0dae8d1632c5c",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_2e78d8c1c4192c84",
+              "image_member": "mining_helmet/images/train/026_01854.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/026_01854-ann7557-bff5891784.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_cdb6079fa6f398c1",
+              "image_member": "mining_helmet/images/train/026_01854.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/026_01854-ann7556-2cb2ecf566.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_4e3788f639ca8baa",
+              "image_member": "mining_helmet/images/train/026_01854.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/026_01854-ann7557-bff5891784.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_6ec87807b7f59d19",
+              "image_member": "mining_helmet/images/train/026_01854.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/026_01854-ann7557-bff5891784.jpg",
+              "bucket": 4
+            }
+          ]
+        },
+        {
+          "group_id": "cf_519bc0cf5e30e5c8",
+          "image_sha256": "e2a1550f6001abb08536a6d52840a16bfe8ec284e18047a9c7d9500611512876",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_eb54ea9af97ed606",
+              "image_member": "mining_helmet/images/train/014_01334.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/014_01334-ann2998-1306006cbd.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_5832d81e62310f02",
+              "image_member": "mining_helmet/images/train/014_01334.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/014_01334-ann2998-1306006cbd.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_de97dec36b42f20c",
+              "image_member": "mining_helmet/images/train/014_01334.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/014_01334-ann2998-1306006cbd.jpg",
+              "bucket": 4
+            }
+          ]
+        },
+        {
+          "group_id": "cf_f7b217dda7be9512",
+          "image_sha256": "78697e5436af10a5e50482e7117d36b05f8676c50a27f29a8d693c58c4196440",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_cb54e6cfe461d32a",
+              "image_member": "mining_helmet/images/train/018_01540.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/018_01540-ann3848-541a792bef.jpg",
+              "bucket": 6
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_8ddf72639cdc14b1",
+              "image_member": "mining_helmet/images/train/018_01540.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/018_01540-ann3847-14a3646f7e.jpg",
+              "bucket": 2
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_e5c1d7b3f509f690",
+              "image_member": "mining_helmet/images/train/018_01540.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/018_01540-ann3847-14a3646f7e.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_16ee9d7dd3a98206",
+          "image_sha256": "3cb397575c8d63e7b8ef966fb63e5c1540463efded362394397da1dcfbe0ba0d",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_5bd50dac09dd049f",
+              "image_member": "mining_helmet/images/train/014_01407.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/014_01407-ann3034-2827c7ed2d.jpg",
+              "bucket": 1
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_fd84a3d55316145c",
+              "image_member": "mining_helmet/images/train/014_01407.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/014_01407-ann3032-85b445b1dd.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_18e2675f5acc455f",
+              "image_member": "mining_helmet/images/train/014_01407.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/014_01407-ann3034-2827c7ed2d.jpg",
+              "bucket": 1
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_5217fea3855e2c16",
+              "image_member": "mining_helmet/images/train/014_01407.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/014_01407-ann3034-2827c7ed2d.jpg",
+              "bucket": 1
+            }
+          ]
+        }
+      ]
+    },
+    "cycle018_val50": {
+      "evaluation_images": 50,
+      "overlap_images": 50,
+      "overlaps": [
+        {
+          "group_id": "cf_c9029d27c0483181",
+          "image_sha256": "5998424c13cdb51305cec1273f28079c67774c66fd16d12d69a6dd32acaee958",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_337d73b1ed6680f5",
+              "image_member": "mining_helmet/images/train/008_03663.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_03663-ann2101-f96f3f6b04.jpg",
+              "bucket": 1
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_54eef9227557ca11",
+              "image_member": "mining_helmet/images/train/008_03663.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_03663-ann2100-45ef43e14f.jpg",
+              "bucket": 2
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_c9029d27c0483181",
+              "image_member": "mining_helmet/images/train/008_03663.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_03663-ann2101-f96f3f6b04.jpg",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "group_id": "cf_1a8999420d2a3bdc",
+          "image_sha256": "f90dc496dc499cdd5467c5b2e0adba05f975fb13b0c8316be84f174b9a99273d",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_77161a71d47d4fea",
+              "image_member": "mining_helmet/images/train/065_00828.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/065_00828-ann16835-12d1f65b1c.jpg",
+              "bucket": 5
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_1a8999420d2a3bdc",
+              "image_member": "mining_helmet/images/train/065_00828.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/065_00828-ann16835-12d1f65b1c.jpg",
+              "bucket": 5
+            }
+          ]
+        },
+        {
+          "group_id": "cf_33700f0218d6a1db",
+          "image_sha256": "3652beafaa4b621f65ddd121487aedcd88359c131155ed9b2f8997bcd8e97b09",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_e53e03568860ee07",
+              "image_member": "mining_helmet/images/train/024_01663.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/024_01663-ann5432-9463083998.jpg",
+              "bucket": 1
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_5194186456a849e6",
+              "image_member": "mining_helmet/images/train/024_01663.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/024_01663-ann5431-3203bcd754.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_33700f0218d6a1db",
+              "image_member": "mining_helmet/images/train/024_01663.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/024_01663-ann5432-9463083998.jpg",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "group_id": "cf_3eb4e7afbcbc4783",
+          "image_sha256": "a01b831415fb039dcd33e86781e51dfb0348f30d18234aa63dc6edddee19d343",
+          "training_rows": [
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_3eb4e7afbcbc4783",
+              "image_member": "mining_helmet/images/val/023_00827.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_00827-ann1201-60ef39cb37.jpg",
+              "bucket": 5
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_26fae4b6f4fa2cfb",
+              "image_member": "mining_helmet/images/val/023_00827.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_00827-ann1201-60ef39cb37.jpg",
+              "bucket": 5
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_4d04ebb563116859",
+              "image_member": "mining_helmet/images/val/023_00827.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_00827-ann1203-20bbe03566.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_86843243c79d2603",
+          "image_sha256": "26e22c50eeba31fa41585e16949cea83c917a63bb94bb078a99dc4d1cc15c8a7",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_caa09bba24c2bf9e",
+              "image_member": "mining_helmet/images/train/063_02608.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/063_02608-ann16625-48e526612b.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_686c35f2027a3c17",
+              "image_member": "mining_helmet/images/train/063_02608.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/063_02608-ann16626-0fc79c0648.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_86843243c79d2603",
+              "image_member": "mining_helmet/images/train/063_02608.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/063_02608-ann16625-48e526612b.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_646171cbe278fb9c",
+          "image_sha256": "3b647f83f61de54d54ab0da615de85b84dfb5838933ef07fbe0b1368c3764b44",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_60a5ccf29ddc2ecf",
+              "image_member": "mining_helmet/images/train/060_01035.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/060_01035-ann16129-4a74d15755.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_c2fe41c7cb39028e",
+              "image_member": "mining_helmet/images/train/060_01035.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/060_01035-ann16128-a3db049771.jpg",
+              "bucket": 3
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_646171cbe278fb9c",
+              "image_member": "mining_helmet/images/train/060_01035.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/060_01035-ann16128-a3db049771.jpg",
+              "bucket": 3
+            }
+          ]
+        },
+        {
+          "group_id": "cf_4208e726fab4891a",
+          "image_sha256": "cc509ea47f3b67b73261bb047aea564c09c59e2a67ab4c32556549a6512b162c",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_0a4b314901b0faff",
+              "image_member": "mining_helmet/images/train/026_00657.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/026_00657-ann7249-eefe0434d7.jpg",
+              "bucket": 0
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_eb50f9d4cd986245",
+              "image_member": "mining_helmet/images/train/026_00657.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/026_00657-ann7248-08252e86a0.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_4208e726fab4891a",
+              "image_member": "mining_helmet/images/train/026_00657.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/026_00657-ann7248-08252e86a0.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_803b6a694535ec15",
+          "image_sha256": "a29d57a86a71bb5866bf632d0178dd16eb561a628e26cc7e928c537ff9dd53e0",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_f03dc3072b45cbab",
+              "image_member": "mining_helmet/images/train/008_02027.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_02027-ann1669-601d900e16.jpg",
+              "bucket": 5
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_7b5907db06855097",
+              "image_member": "mining_helmet/images/train/008_02027.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_02027-ann1670-52acc3f5d8.jpg",
+              "bucket": 0
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_803b6a694535ec15",
+              "image_member": "mining_helmet/images/train/008_02027.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_02027-ann1669-601d900e16.jpg",
+              "bucket": 5
+            }
+          ]
+        },
+        {
+          "group_id": "cf_4cd720671d92fd2e",
+          "image_sha256": "af1278908ec6dd762b017854bde82ffed1a2242d18457e232fe8b31939db5e04",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_bd19545081c2786e",
+              "image_member": "mining_helmet/images/train/023_02115.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_02115-ann5047-b55ebb8da3.jpg",
+              "bucket": 1
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_4cd720671d92fd2e",
+              "image_member": "mining_helmet/images/train/023_02115.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_02115-ann5047-b55ebb8da3.jpg",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "group_id": "cf_03e0f4f2dd886689",
+          "image_sha256": "e53ca248f1aa15a7f2262b527109de9635c0109eb6c8ad854750edbca82c950c",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_809ce717422f6d45",
+              "image_member": "mining_helmet/images/train/030_02029.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_02029-ann8989-aefc15d78d.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_03e0f4f2dd886689",
+              "image_member": "mining_helmet/images/train/030_02029.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_02029-ann8989-aefc15d78d.jpg",
+              "bucket": 4
+            }
+          ]
+        },
+        {
+          "group_id": "cf_b9271168b2a4cbf9",
+          "image_sha256": "c67aaab973f5fb13e100facb9648d528a7a38693fcf8873cc7e7bcc9f55cd50b",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_88c2c7f626618f32",
+              "image_member": "mining_helmet/images/train/030_00530.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_00530-ann8371-fe39995230.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_11b79ce662f570ce",
+              "image_member": "mining_helmet/images/train/030_00530.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_00530-ann8372-ba5aceee5d.jpg",
+              "bucket": 3
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_b9271168b2a4cbf9",
+              "image_member": "mining_helmet/images/train/030_00530.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_00530-ann8371-fe39995230.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_5ffe3b4241e31e97",
+          "image_sha256": "475660eba77d6f052ef4969d000875fdb600c129bb786c96b43c351a645260bf",
+          "training_rows": [
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_5ffe3b4241e31e97",
+              "image_member": "mining_helmet/images/val/024_01208.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/024_01208-ann1336-8256c8af03.jpg",
+              "bucket": 5
+            }
+          ]
+        },
+        {
+          "group_id": "cf_eccb4c9b85399b90",
+          "image_sha256": "95ffc5046d36fca7f031ed6d0dd53b2aaee8b9157ca6a65b0d5c0a903eb12d94",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_513a75588601126e",
+              "image_member": "mining_helmet/images/train/030_02527.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_02527-ann9232-72193e7ded.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_fa7969172175e7bb",
+              "image_member": "mining_helmet/images/train/030_02527.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_02527-ann9233-fb7323dc48.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_eccb4c9b85399b90",
+              "image_member": "mining_helmet/images/train/030_02527.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_02527-ann9232-72193e7ded.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_273565c8b4382765",
+          "image_sha256": "afcb9859c3b04f4de2f03c3b38f41b7db20bdde535d73acebaa276d1fe1857e1",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_1a375c4239607c18",
+              "image_member": "mining_helmet/images/train/022_02157.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_02157-ann4315-36de971fa3.jpg",
+              "bucket": 3
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_6da297299ace4bc8",
+              "image_member": "mining_helmet/images/train/022_02157.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_02157-ann4314-a9eb116665.jpg",
+              "bucket": 2
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_273565c8b4382765",
+              "image_member": "mining_helmet/images/train/022_02157.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_02157-ann4315-36de971fa3.jpg",
+              "bucket": 3
+            }
+          ]
+        },
+        {
+          "group_id": "cf_371758320d780b3d",
+          "image_sha256": "4b6c6c74c6112d46d9c62610f79efa4acb73abbfa227a2e819db5534b2c18596",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_b9a621514f944027",
+              "image_member": "mining_helmet/images/train/022_03711.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_03711-ann4610-f00791184e.jpg",
+              "bucket": 1
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_371758320d780b3d",
+              "image_member": "mining_helmet/images/train/022_03711.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_03711-ann4610-f00791184e.jpg",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "group_id": "cf_afb2ea760a625f27",
+          "image_sha256": "3937cd39e0f33e686983ca7dc2711f4ce8023101aaa363324348499a13f29fe3",
+          "training_rows": [
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_afb2ea760a625f27",
+              "image_member": "mining_helmet/images/val/050_01881.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/050_01881-ann3626-97fcd5e1c7.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_69928ab61b82fb85",
+          "image_sha256": "abbc9b42864f2c6b897986478c5e8aedab33194cf029f42029f589faeb1ee490",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_721d0b9d09a5b89f",
+              "image_member": "mining_helmet/images/train/025_01800.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_01800-ann5667-a4dfdcabf3.jpg",
+              "bucket": 2
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_69928ab61b82fb85",
+              "image_member": "mining_helmet/images/train/025_01800.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_01800-ann5667-a4dfdcabf3.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_e55b9138be80eb81",
+          "image_sha256": "4b969b141007aacf6f3d74d72625f9606e25f9d922a09b739aa6d085ea475ee5",
+          "training_rows": [
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_e55b9138be80eb81",
+              "image_member": "mining_helmet/images/val/025_06962.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_06962-ann1809-a242a45b18.jpg",
+              "bucket": 5
+            }
+          ]
+        },
+        {
+          "group_id": "cf_e49d9a50bdb728a9",
+          "image_sha256": "25032d2c0a7ae183914e0a2f5baf3e1ce58e44439ba86af2977283a3e0959b20",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_99463672d82e61f4",
+              "image_member": "mining_helmet/images/train/065_01812.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/065_01812-ann17033-6e17d60027.jpg",
+              "bucket": 0
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_e49d9a50bdb728a9",
+              "image_member": "mining_helmet/images/train/065_01812.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/065_01812-ann17033-6e17d60027.jpg",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "group_id": "cf_99b0215fccf3f63b",
+          "image_sha256": "684ec1e33c24b5cc5f49c286511335e2cc0ab8a348eb05d825e6872db92b2068",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_634a419f55e7c1af",
+              "image_member": "mining_helmet/images/train/030_01304.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_01304-ann8660-a8310dc7f5.jpg",
+              "bucket": 6
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_38538ecf9fb82ea0",
+              "image_member": "mining_helmet/images/train/030_01304.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_01304-ann8659-3d3f5b04e5.jpg",
+              "bucket": 3
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_99b0215fccf3f63b",
+              "image_member": "mining_helmet/images/train/030_01304.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_01304-ann8659-3d3f5b04e5.jpg",
+              "bucket": 3
+            }
+          ]
+        },
+        {
+          "group_id": "cf_84320e41bc5af656",
+          "image_sha256": "4faab669a044b88c368fb9d2e71426b28d33ac488d4c02ae0580253dc601fb5e",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_1de630149e853a7b",
+              "image_member": "mining_helmet/images/train/011_01219.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/011_01219-ann2441-94d166f7eb.jpg",
+              "bucket": 3
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_84320e41bc5af656",
+              "image_member": "mining_helmet/images/train/011_01219.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/011_01219-ann2441-94d166f7eb.jpg",
+              "bucket": 3
+            }
+          ]
+        },
+        {
+          "group_id": "cf_26d7eeeecd43037a",
+          "image_sha256": "a75e9f80f503b7d470d986128a04858c1daadefc1a30b09fd1487b036063cdcf",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_ae061eba93136c7c",
+              "image_member": "mining_helmet/images/train/008_04317.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_04317-ann2190-e902d15cb7.jpg",
+              "bucket": 2
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_26d7eeeecd43037a",
+              "image_member": "mining_helmet/images/train/008_04317.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_04317-ann2190-e902d15cb7.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_0774290cbf004c7d",
+          "image_sha256": "5c986b94026e6caed55330dab1c8e503ae63a7d1e14b96ba043522c051dc12ae",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_d6b950c4f08f1803",
+              "image_member": "mining_helmet/images/train/027_00510.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/027_00510-ann7677-8869c8e8c9.jpg",
+              "bucket": 6
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_3b91720c49f425dd",
+              "image_member": "mining_helmet/images/train/027_00510.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/027_00510-ann7678-d20174b9af.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_0774290cbf004c7d",
+              "image_member": "mining_helmet/images/train/027_00510.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/027_00510-ann7678-d20174b9af.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_2a89e76f158b6a5b",
+          "image_sha256": "479c76ddadf91cf6016e6ade1726af97faa2476b9d5062b6e46930a528036f0c",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_d277658286d9e6ec",
+              "image_member": "mining_helmet/images/train/043_01019.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/043_01019-ann12320-02030c1854.jpg",
+              "bucket": 2
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_612aaf5ea795bbbc",
+              "image_member": "mining_helmet/images/train/043_01019.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/043_01019-ann12322-5e6a77fac1.jpg",
+              "bucket": 2
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_2a89e76f158b6a5b",
+              "image_member": "mining_helmet/images/train/043_01019.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/043_01019-ann12320-02030c1854.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_8065502af4eb2535",
+          "image_sha256": "b5dabdce3e0ae583110eee31cc768aee51c8fe0e59c4cedb61b471a6143d3bd7",
+          "training_rows": [
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_8065502af4eb2535",
+              "image_member": "mining_helmet/images/val/008_01813.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_01813-ann417-cbbb232331.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_ae56647f7b0ed80f",
+          "image_sha256": "ef69ab51900d7c5e721e184f3614c1939ec721ce5ac64c92454aae39d33a5912",
+          "training_rows": [
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_d56c12d8ce260f65",
+              "image_member": "mining_helmet/images/val/030_02772.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_02772-ann2372-394255ecdb.jpg",
+              "bucket": 1
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_5e67292d03f48c3e",
+              "image_member": "mining_helmet/images/val/030_02772.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_02772-ann2372-394255ecdb.jpg",
+              "bucket": 1
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_ae56647f7b0ed80f",
+              "image_member": "mining_helmet/images/val/030_02772.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_02772-ann2373-05c8fee74b.jpg",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "group_id": "cf_aa391b9836fd78ee",
+          "image_sha256": "7b4b6e283def44591a66b09457632a299697c3969af7a9bc89f2b8a9a6388489",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_3fbac420540e8170",
+              "image_member": "mining_helmet/images/train/022_02411.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_02411-ann4419-a429ae1eaf.jpg",
+              "bucket": 3
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_ceb65741d1e0af90",
+              "image_member": "mining_helmet/images/train/022_02411.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_02411-ann4418-dbed2ed0c6.jpg",
+              "bucket": 5
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_aa391b9836fd78ee",
+              "image_member": "mining_helmet/images/train/022_02411.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/022_02411-ann4418-dbed2ed0c6.jpg",
+              "bucket": 5
+            }
+          ]
+        },
+        {
+          "group_id": "cf_02e38a9e5a19c360",
+          "image_sha256": "a3bc8b3e5afd9a85f62c1ec4bdc1af666c535084d8cda552a41c2159de6e6038",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_3d6080ceb0ec6a1f",
+              "image_member": "mining_helmet/images/train/025_06975.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_06975-ann7162-d709c4df8c.jpg",
+              "bucket": 5
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_92a591d891a83337",
+              "image_member": "mining_helmet/images/train/025_06975.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_06975-ann7163-78ad45b009.jpg",
+              "bucket": 6
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_02e38a9e5a19c360",
+              "image_member": "mining_helmet/images/train/025_06975.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_06975-ann7163-78ad45b009.jpg",
+              "bucket": 6
+            }
+          ]
+        },
+        {
+          "group_id": "cf_01ad18abfbf5459e",
+          "image_sha256": "89907f68e46231298a2705dae0e7f47dccbbbaea3172e6a0650e1942981f9c7c",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_3003cc08bb80764d",
+              "image_member": "mining_helmet/images/train/008_02385.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_02385-ann1758-c52951b423.jpg",
+              "bucket": 0
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_2aac86f2987a47ce",
+              "image_member": "mining_helmet/images/train/008_02385.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_02385-ann1757-1c067abf54.jpg",
+              "bucket": 1
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_01ad18abfbf5459e",
+              "image_member": "mining_helmet/images/train/008_02385.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_02385-ann1757-1c067abf54.jpg",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "group_id": "cf_427af9a92fe7f6cd",
+          "image_sha256": "1d8a873fe08f0c46a9d28972c100359777454683cc20784f7a5634f66362deeb",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_cd866493166c6f7c",
+              "image_member": "mining_helmet/images/train/023_01086.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01086-ann4786-af394fdefe.jpg",
+              "bucket": 6
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_7443e71154663ef0",
+              "image_member": "mining_helmet/images/train/023_01086.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01086-ann4787-60fa3b62d4.jpg",
+              "bucket": 5
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_427af9a92fe7f6cd",
+              "image_member": "mining_helmet/images/train/023_01086.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01086-ann4786-af394fdefe.jpg",
+              "bucket": 6
+            }
+          ]
+        },
+        {
+          "group_id": "cf_4165dbded0d67baf",
+          "image_sha256": "993ab09f5fac25057f2b5a79d4ea7c740f60ea2e73c1e498fdb04a9772d2e72c",
+          "training_rows": [
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_4165dbded0d67baf",
+              "image_member": "mining_helmet/images/val/023_01564.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01564-ann1255-77c4cc3b43.jpg",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "group_id": "cf_5495414a54138233",
+          "image_sha256": "a1743ee388d7bbd63ec17b7830b5ef85ed71c911dd0b62da165060968e6c8948",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_90a0a81f3f50eadc",
+              "image_member": "mining_helmet/images/train/025_06294.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_06294-ann6870-34f4374205.jpg",
+              "bucket": 1
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_14b577c8b97ce54b",
+              "image_member": "mining_helmet/images/train/025_06294.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_06294-ann6869-886efbe954.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_5495414a54138233",
+              "image_member": "mining_helmet/images/train/025_06294.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_06294-ann6870-34f4374205.jpg",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "group_id": "cf_cd5bf6d06a4f5432",
+          "image_sha256": "1728c07dd53d22015037d65b79fbc40a0393e407b386af1884178ed4314ba819",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_b7c6ee970ef92bfc",
+              "image_member": "mining_helmet/images/train/025_05697.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_05697-ann6702-23b85085df.jpg",
+              "bucket": 3
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_c4fea0df017098ce",
+              "image_member": "mining_helmet/images/train/025_05697.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_05697-ann6703-11a07b8a1c.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_cd5bf6d06a4f5432",
+              "image_member": "mining_helmet/images/train/025_05697.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_05697-ann6703-11a07b8a1c.jpg",
+              "bucket": 4
+            }
+          ]
+        },
+        {
+          "group_id": "cf_149c5aadeca92d12",
+          "image_sha256": "2c0fa9440edd600886b20fdabd4312e33ea75123195a3e57c7ce89cdb50bd63d",
+          "training_rows": [
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_149c5aadeca92d12",
+              "image_member": "mining_helmet/images/val/008_04349.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_04349-ann541-935647fc6f.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_3c4f4b5cb4bb1d77",
+          "image_sha256": "0d498bcd80a1ade293d71def5d24ba1b172d6eeb15195f59910d038d1e75ca55",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_b8942c07dd0e8f7f",
+              "image_member": "mining_helmet/images/train/025_02140.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_02140-ann5754-e778669cfc.jpg",
+              "bucket": 6
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_cd3769864826bdbf",
+              "image_member": "mining_helmet/images/train/025_02140.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_02140-ann5755-ab2265714c.jpg",
+              "bucket": 5
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_3c4f4b5cb4bb1d77",
+              "image_member": "mining_helmet/images/train/025_02140.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_02140-ann5754-e778669cfc.jpg",
+              "bucket": 6
+            }
+          ]
+        },
+        {
+          "group_id": "cf_f3d2d3f12a7aead4",
+          "image_sha256": "e59762dc44be1103b8e735e465a5dca933d31702a1c2b45c272de1d07c634e0a",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_e9380c854a95cacd",
+              "image_member": "mining_helmet/images/train/018_01556.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/018_01556-ann3863-84ee0c799c.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_bc70804d60ccfaba",
+              "image_member": "mining_helmet/images/train/018_01556.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/018_01556-ann3861-661762378a.jpg",
+              "bucket": 1
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_f3d2d3f12a7aead4",
+              "image_member": "mining_helmet/images/train/018_01556.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/018_01556-ann3863-84ee0c799c.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_5e9c50c7e24dfd0f",
+          "image_sha256": "b526ac7b4a068d60c816cf7a6d1c00158c6d951f152cbf6f64e086e8a696227d",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_9d69fe6d8727d943",
+              "image_member": "mining_helmet/images/train/023_01255.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01255-ann4841-c63b051e0d.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_3200d4a19d8f5ceb",
+              "image_member": "mining_helmet/images/train/023_01255.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01255-ann4840-0018411991.jpg",
+              "bucket": 5
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_821d44d4e62c546a",
+              "image_member": "mining_helmet/images/train/023_01255.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01255-ann4839-f0a5a9dec9.jpg",
+              "bucket": 1
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_5e9c50c7e24dfd0f",
+              "image_member": "mining_helmet/images/train/023_01255.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01255-ann4841-c63b051e0d.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_7f1bae3e4c83b2ab",
+              "image_member": "mining_helmet/images/train/023_01255.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01255-ann4841-c63b051e0d.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_3955000370b82faa",
+              "image_member": "mining_helmet/images/train/023_01255.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01255-ann4839-f0a5a9dec9.jpg",
+              "bucket": 1
+            }
+          ]
+        },
+        {
+          "group_id": "cf_1e7d8cfc1625c2da",
+          "image_sha256": "2331f2ad5ad28a088813c7b41cebd76fe8902ab563688e1473fefe59e7d9316d",
+          "training_rows": [
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_1e7d8cfc1625c2da",
+              "image_member": "mining_helmet/images/val/026_01392.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/026_01392-ann1877-3f746d947e.jpg",
+              "bucket": 4
+            }
+          ]
+        },
+        {
+          "group_id": "cf_2e36401e0d114aa8",
+          "image_sha256": "83ef590cb2767e8bae8c14cd9d85d689f4653d902dc73af6a559c12f9b5ef96a",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_33192b6d035b02bf",
+              "image_member": "mining_helmet/images/train/023_01088.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01088-ann4790-b9fd1ed320.jpg",
+              "bucket": 6
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_aa6f4b6aaedf5e9e",
+              "image_member": "mining_helmet/images/train/023_01088.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01088-ann4789-93ff32d2f2.jpg",
+              "bucket": 5
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_9d7ab9fc6dfe96e4",
+              "image_member": "mining_helmet/images/train/023_01088.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01088-ann4791-f6ef6112a9.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_6f18921f8967b4f9",
+              "image_member": "mining_helmet/images/train/023_01088.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01088-ann4790-b9fd1ed320.jpg",
+              "bucket": 6
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_d808145c40b70c42",
+              "image_member": "mining_helmet/images/train/023_01088.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01088-ann4790-b9fd1ed320.jpg",
+              "bucket": 6
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_2e36401e0d114aa8",
+              "image_member": "mining_helmet/images/train/023_01088.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01088-ann4791-f6ef6112a9.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_1a115ce7f6b388e4",
+          "image_sha256": "391ea0d6bbfe6d65be2462661e60262b9ee56785c5313e312843d9096eb88464",
+          "training_rows": [
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_1a115ce7f6b388e4",
+              "image_member": "mining_helmet/images/val/026_01647.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/026_01647-ann1888-3c988766c4.jpg",
+              "bucket": 7
+            }
+          ]
+        },
+        {
+          "group_id": "cf_289b3fd7110690be",
+          "image_sha256": "d85a06570c8ebe209b763dd1cc2cd595dd6058a6ebed564e22301ac77460cb51",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_4c469a052bf681ac",
+              "image_member": "mining_helmet/images/train/050_01658.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/050_01658-ann14226-4238505406.jpg",
+              "bucket": 3
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_289b3fd7110690be",
+              "image_member": "mining_helmet/images/train/050_01658.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/050_01658-ann14226-4238505406.jpg",
+              "bucket": 3
+            }
+          ]
+        },
+        {
+          "group_id": "cf_b88a50d6609f6487",
+          "image_sha256": "77e3b8d32242aeb92cdc297099163bbbeaa7cabf5e98e4757782558227d0d0e6",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_c36760d2b970e7d1",
+              "image_member": "mining_helmet/images/train/024_01312.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/024_01312-ann5312-dc10e0fcbc.jpg",
+              "bucket": 0
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_b88a50d6609f6487",
+              "image_member": "mining_helmet/images/train/024_01312.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/024_01312-ann5312-dc10e0fcbc.jpg",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "group_id": "cf_6b395dbd9b45c431",
+          "image_sha256": "dcc40f6225937993eebd03ab51376d182bbf898c446c4c37f39f133891431612",
+          "training_rows": [
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_6b395dbd9b45c431",
+              "image_member": "mining_helmet/images/val/030_02603.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_02603-ann2349-5742df8f55.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_4a66376fb7c719e0",
+          "image_sha256": "cd07366dfa4a5bf042a23adbd400e5bc8f54d2d25348dfa3abb9155df0cf5583",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_dd470f7018bfddd9",
+              "image_member": "mining_helmet/images/train/037_02388.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/037_02388-ann10991-9ef8bbb2d1.jpg",
+              "bucket": 7
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_e1b48288d9300d56",
+              "image_member": "mining_helmet/images/train/037_02388.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/037_02388-ann10990-e4a7a61838.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_4a66376fb7c719e0",
+              "image_member": "mining_helmet/images/train/037_02388.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/037_02388-ann10990-e4a7a61838.jpg",
+              "bucket": 4
+            }
+          ]
+        },
+        {
+          "group_id": "cf_c55d2b77e1c81163",
+          "image_sha256": "0784dee78da236d2ab4050853a6721f6fad43a2f30e4b9a8987bec3042a3a635",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_9078720cc7ea68cf",
+              "image_member": "mining_helmet/images/train/063_02710.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/063_02710-ann16673-7d181b4636.jpg",
+              "bucket": 3
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_b9fb18f77ab70fbf",
+              "image_member": "mining_helmet/images/train/063_02710.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/063_02710-ann16672-a1911666ec.jpg",
+              "bucket": 0
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_c55d2b77e1c81163",
+              "image_member": "mining_helmet/images/train/063_02710.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/063_02710-ann16672-a1911666ec.jpg",
+              "bucket": 0
+            }
+          ]
+        },
+        {
+          "group_id": "cf_a61afd1b0775da52",
+          "image_sha256": "6e998b67a8752a42428bcaac3131edcedfa5470aaa698b93564faf676a52683b",
+          "training_rows": [
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_4a20c9f43a71d1c4",
+              "image_member": "mining_helmet/images/val/035_01289.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/035_01289-ann2640-6ad2a5e136.jpg",
+              "bucket": 6
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_a61afd1b0775da52",
+              "image_member": "mining_helmet/images/val/035_01289.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/035_01289-ann2640-6ad2a5e136.jpg",
+              "bucket": 6
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_e23e8e5b101aa246",
+              "image_member": "mining_helmet/images/val/035_01289.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/035_01289-ann2639-4730462e04.jpg",
+              "bucket": 2
+            }
+          ]
+        },
+        {
+          "group_id": "cf_dd011c16faf2a9e3",
+          "image_sha256": "8ea8ad00abf3d875250072f0788c74e564277a062988593b472e16eac5b8e6b0",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_db73cc1ec34907fa",
+              "image_member": "mining_helmet/images/train/025_00842.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_00842-ann5538-0331e603f9.jpg",
+              "bucket": 3
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_b27a59b75b4ad5a7",
+              "image_member": "mining_helmet/images/train/025_00842.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_00842-ann5539-a3636181d2.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_dd011c16faf2a9e3",
+              "image_member": "mining_helmet/images/train/025_00842.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_00842-ann5539-a3636181d2.jpg",
+              "bucket": 4
+            }
+          ]
+        },
+        {
+          "group_id": "cf_5e913799bf202735",
+          "image_sha256": "5c2229913c55059c7b028847c946086196657867cd1052c91d54b08d025053c0",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_e229cd603a50f6ee",
+              "image_member": "mining_helmet/images/train/048_00278.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/048_00278-ann13491-486ebbc28a.jpg",
+              "bucket": 5
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_f6d7c8fad5603a64",
+              "image_member": "mining_helmet/images/train/048_00278.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/048_00278-ann13492-64a0d9e7a8.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_5e913799bf202735",
+              "image_member": "mining_helmet/images/train/048_00278.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/048_00278-ann13491-486ebbc28a.jpg",
+              "bucket": 5
+            }
+          ]
+        },
+        {
+          "group_id": "cf_8c490484f166a75a",
+          "image_sha256": "c7308a36cb636eac7f9aab1e9d0a92bd41c03751338a0605f34891aa6259a182",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_7c2ecfadc378647b",
+              "image_member": "mining_helmet/images/train/025_01134.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_01134-ann5572-8d11638d45.jpg",
+              "bucket": 2
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_2b521e8d3767e71c",
+              "image_member": "mining_helmet/images/train/025_01134.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_01134-ann5573-a11da14dbd.jpg",
+              "bucket": 4
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_8c490484f166a75a",
+              "image_member": "mining_helmet/images/train/025_01134.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_01134-ann5573-a11da14dbd.jpg",
+              "bucket": 4
+            }
+          ]
+        },
+        {
+          "group_id": "cf_91c35cfa78c4abd9",
+          "image_sha256": "c7f34c3f3af6eec7b46a041bd9948b4df76fa848b0de08541c67abd7020d00da",
+          "training_rows": [
+            {
+              "kind": "regular",
+              "row_id": "ep_439ea7f2dcac1c5d",
+              "image_member": "mining_helmet/images/train/048_00577.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/048_00577-ann13518-84cdccb6c4.jpg",
+              "bucket": 6
+            },
+            {
+              "kind": "regular",
+              "row_id": "ep_ad01ed9ed4dc54be",
+              "image_member": "mining_helmet/images/train/048_00577.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/048_00577-ann13519-13913fd210.jpg",
+              "bucket": 3
+            },
+            {
+              "kind": "counterfactual",
+              "row_id": "cf_91c35cfa78c4abd9",
+              "image_member": "mining_helmet/images/train/048_00577.jpg",
+              "historical_image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/048_00577-ann13518-84cdccb6c4.jpg",
+              "bucket": 6
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "historical_evaluation_exposure": "May16 PROJECT_LOG reports full921 counterfactual holdout evaluation and checkpoint comparison before w15 selection.",
+  "new_model_forwards": 0,
+  "historical_holdout_usage": {
+    "source": "research_log/cycle023/historical_log_excerpts.json",
+    "lines": [
+      877,
+      878,
+      879,
+      881,
+      882
+    ],
+    "finding": "Full 921 counterfactual holdout evaluated during historical checkpoint comparisons; Cycle022 is not historically blind."
+  },
+  "scope": "Reconstructed regular+counterfactual final-stage training only; ancestor/pretraining exposure not exhaustively audited.",
+  "missing_artifacts": [
+    "Exact historical w15 run-bound training manifest/hash",
+    "Run-specific environment/config proving no training-manifest overrides"
+  ],
+  "interpretation": "UNKNOWN exact exposure, with positive byte-level overlaps under the reconstructed documented protocol. Neither PROVEN_ZERO_OVERLAP nor PROTOCOL_INFERRED_ZERO_OVERLAP is supported."
+}

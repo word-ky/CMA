@@ -1,0 +1,12 @@
+{
+  "time_utc": "2026-09-18T15:59:04.899935+00:00",
+  "checks": "8 table rows / 64 numeric cells match frozen JSON exactly; input source hashes unchanged; reconstructed overlap counts checked",
+  "model_inference": false,
+  "training": false,
+  "archive": {
+    "path": "C:\\work\\CMA\\outputs\\cycle023_reconstruction.tgz",
+    "bytes": 3457893,
+    "sha256": "48774f3053eedbf1bc1fc4fbb5f448a6d294daebcc9cb40fafa881974ad4ec43"
+  },
+  "registry_sha256": "f3ac7d680fb3df00f90ae3230c0879987f75b762acfbf568eec9cb32503c8583"
+}

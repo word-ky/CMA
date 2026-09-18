@@ -1,0 +1,9 @@
+"method","split role","condition","mIoU","CMSA","Fidelity","IER","mean margin","median margin","N groups","N identity predictions"
+"CMA base-w15","Cycle022 primary confirmation","clean",0.9086677832392657,0.94,0.98,0.02,0.8929930847278572,0.9567582807056603,50,100
+"CMA base-w15","Cycle022 primary confirmation","target15_b",0.6801693725136052,0.6,0.87,0.02,0.657803018723887,0.8602438247249705,50,100
+"SegLLM pinned","Cycle022 primary confirmation","clean",0.3729382004865751,0.06,0.43,0.38,0.0415679421258808,0,50,100
+"SegLLM pinned","Cycle022 primary confirmation","target15_b",0.2752310457631434,0.02,0.38,0.3,0.016394073408354463,0,50,100
+"CMA base-w15","Cycle018 development/replication","clean",0.9197182918768901,0.94,0.99,0,0.9197182918768901,0.9631895116958757,50,100
+"CMA base-w15","Cycle018 development/replication","target15_b",0.6911134046687633,0.58,0.89,0.03,0.6629313123212343,0.8474629071282657,50,100
+"SegLLM pinned","Cycle018 development/replication","clean",0.4156634442103638,0.04,0.47,0.41,0.04771666887540652,0,50,100
+"SegLLM pinned","Cycle018 development/replication","target15_b",0.33140875520863255,0,0.42,0.39,-0.02785825715773968,0,50,100
