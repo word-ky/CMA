@@ -1,0 +1,27 @@
+{
+  "checks": "All10source manifests match archived local SHA256;402unique image hashes absent from registry;50selected equal exact first50 by mandated hash rule; all selected pair records identical to original accepted metadata with distinct miner/helmet identities.",
+  "selection_sha256": "de4335243a9188cf0e2b55046668eca338fc85ec0e8a5b3c609d490f07e8503f",
+  "exclusion_registry_sha256": "837088966a5ef3fc6f24515318b4e4f0743a9c76e54a08fa1fcd8cbc17768aa7",
+  "inventory_sha256": "69bc3a724c49fd3707bfbc1b3529cd177b4839cee8fd29999258c74454b0cc8b",
+  "selected_sources": {
+    "episodes_counterfactual_review.jsonl": 23,
+    "accepted_pair_combinations": 27
+  },
+  "selected_original_group_qc": {
+    "{'all_pairs_deepseek_accept': True, 'all_pairs_have_clean_episode': False, 'overlay_subjective_check': 'passed_by_user_2026-05-13', 'final_acceptance_rule': 'core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed'}": 23
+  },
+  "pairwise_historical_role_intersections": {
+    "historical_cf_holdout__historical_regular_holdout": 673,
+    "historical_cf_holdout__reconstructed_training": 595,
+    "historical_regular_holdout__reconstructed_training": 1109
+  },
+  "history_files_scanned": 2675,
+  "new_model_forwards": 0,
+  "masks_regenerated": false,
+  "exact_historical_exposure": "UNKNOWN",
+  "archive": {
+    "path": "outputs/cycle024_inventory.tgz",
+    "bytes": 6784628,
+    "sha256": "c2299dad54e90e20c85d6fe4cc603c789104556bb24b83b2635187276e66d710"
+  }
+}

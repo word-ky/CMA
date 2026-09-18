@@ -1,0 +1,26 @@
+{
+  "conclusion": "ENOUGH_FOR_STRONGER_FROZEN_EVAL",
+  "unique_valid_candidates": 402,
+  "excluded_images": 9549,
+  "counts": {
+    "episodes_counterfactual_clean_val.jsonl": {
+      "total_groups": 4652,
+      "excluded_source_image_bytes": 4652
+    },
+    "episodes_counterfactual_review.jsonl": {
+      "total_groups": 3280,
+      "excluded_source_image_bytes": 2541,
+      "valid_before_image_dedup": 432,
+      "not_two_accepted_pairs": 307,
+      "duplicate_valid_source_image": 250
+    },
+    "accepted_pair_combinations": {
+      "total_groups": 6803,
+      "excluded_source_image_bytes": 6357,
+      "valid_before_image_dedup": 435,
+      "not_distinct_miner_and_helmet_identities": 11,
+      "duplicate_valid_source_image": 215
+    }
+  },
+  "split_cross_role_images": 1239
+}
