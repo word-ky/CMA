@@ -1,0 +1,23 @@
+% Requires booktabs; intended for a two-column-width table.
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{Primary Cycle025 \texttt{DOCUMENTED\_PROTOCOL\_DISJOINT\_CONFIRMATION}:
+50 groups / 100 identity references per condition, with supplied identity memories
+and reconstructed pseudo targets. The comparison is system-level; exact run-bound
+w15 and ancestor exposure is unknown. Counts and rates are shown for CMSA,
+Memory Fidelity and IER; margins are unscaled. The set is disjoint from documented
+training/evaluation image-byte registries, not proven exact training-unseen.}
+\label{tab:primary-memory}
+\begin{tabular}{llrrrrr}
+\toprule
+Method & Condition & mIoU (\%) & CMSA & Fidelity & IER & Mean margin \\
+\midrule
+CMA base-w15 & clean & 88.28 & 46/50 (92\%) & 97/100 (97\%) & 1/100 (1\%) & 0.873944 \\
+CMA base-w15 & target15\_b & 67.53 & 29/50 (58\%) & 84/100 (84\%) & 3/100 (3\%) & 0.646666 \\
+SegLLM pinned & clean & 42.71 & 2/50 (4\%) & 49/100 (49\%) & 42/100 (42\%) & 0.049034 \\
+SegLLM pinned & target15\_b & 36.44 & 1/50 (2\%) & 46/100 (46\%) & 38/100 (38\%) & 0.031818 \\
+\bottomrule
+\end{tabular}
+\end{table*}

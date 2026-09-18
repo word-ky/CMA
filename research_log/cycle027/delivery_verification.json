@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-09-19T04:26:31.997402+08:00",
+  "main_figure_hashes_verified": {
+    "png": "ea10a52348e9b1dfc76c6ac4a86db03150d1aaa984e997185ea66079625ad0f0",
+    "pdf": "b896fdb80f853a8648cc5c0cb29d54e845b42a056aff5302fb4d2527fbd6fffb"
+  },
+  "supplementary_bank_files_verified_unchanged": 10,
+  "contribution_bullets": 3,
+  "table_rows": {
+    "primary": 4,
+    "supplementary": 8
+  },
+  "model_calls": 0,
+  "scorer_calls": 0,
+  "new_case_search": false,
+  "latex": {
+    "engine": "MiKTeX-pdfTeX 4.23 (MiKTeX 25.12)",
+    "command": "pdflatex -disable-installer -interaction=nonstopmode -halt-on-error -output-directory=C:/work/CMA/outputs/cycle027_latex ASSEMBLY_PREVIEW.tex",
+    "final_passes": 2,
+    "exit_code": 0,
+    "pages": 4,
+    "undefined_references": false,
+    "overfull_boxes": false,
+    "underfull_hbox_badness": 1527,
+    "observed_dependency_fix": "Installed missing grfext using mpm --install=grfext",
+    "visual_qa": "Tables, text and compact figure inspected; no clipping. Removed empty supplementary heading page. Generic fragment preview, not final venue pagination."
+  },
+  "pdf_render_note": "pdftoppm produced PNGs successfully despite nameToUnicode path warnings for unused Bulgarian/Greek/Thai resources. No replacement PDF stack installed.",
+  "files_sha256": {
+    "ASSEMBLY_PREVIEW.pdf": "70a74219da64c0b90aa8b1d08a782f7f4ef8c32a1de3d282febff41765540d2d",
+    "ASSEMBLY_PREVIEW.tex": "960bff07e703f13f00d6f087bf22625012d1289067286bcd0d4ca44e42f5c8f3",
+    "CONTRIBUTION_WORDING.md": "5edd0717799372c3578ee50b355bd0980c38bda4b7939c95e0a40abf002343af",
+    "CYCLE027_REPORT.md": "b3345e7fd40d8a4d9eb7c29559d089d6442ec1d33ae55c1c8d6067141cb052af",
+    "HANDOFF.md": "b3345e7fd40d8a4d9eb7c29559d089d6442ec1d33ae55c1c8d6067141cb052af",
+    "main_figure_render_receipt.json": "e6caf71f95895395b062142e8792c45f3e0022e091563097bafc25274edf0390",
+    "MAIN_QUAL_FIGURE.pdf": "b896fdb80f853a8648cc5c0cb29d54e845b42a056aff5302fb4d2527fbd6fffb",
+    "MAIN_QUAL_FIGURE.png": "ea10a52348e9b1dfc76c6ac4a86db03150d1aaa984e997185ea66079625ad0f0",
+    "MAIN_QUAL_FIGURE_CAPTION.md": "6a593ada78d52ac076f25b8427718125b0491957c8c9ed3492338d489e190dd6",
+    "MAIN_QUAL_FIGURE_LATEX.tex": "ba0cad9320fdfafafa50193a9b5f1f2954a2cf7234e5fbb770dd6e6e93cf466a",
+    "MAIN_TABLE_LATEX.tex": "b6e887007424e0209906f4605a0054c26bcb331cd65c8e514c177e3d3b064499",
+    "RESULTS_LIMITATIONS_LATEX.tex": "55a69a84d03cc369c1de9794b2558c5e088435d6e0632863baab7146629b67d0",
+    "SUPPLEMENTARY_REPLICATION_TABLE_LATEX.tex": "d2d6474d9218228b86380a4de0fd42e595ed0c0e6aaa1105c842a3d88c41dd40",
+    "table_format_verification.json": "bc332ac87590f0ce4b00963e25647c31173b6d555f4fe30e1ca568cc7d74faa4"
+  }
+}

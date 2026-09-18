@@ -1,0 +1,13 @@
+{
+  "source_csv_sha256": "b7ce6c2f3d79b3d5c35ea46467a9b768f46eb31149fa1827bad3c51f6de64ef7",
+  "source_verification_sha256": "141f128b7611a4e1b8ebb57daf13b918b6035d7ab8aae4cbe34760c0e13e643e",
+  "main_rows": 4,
+  "supplementary_rows": 8,
+  "each_rendered_row_matches_verified_csv": true,
+  "model_calls": 0,
+  "scorer_calls": 0,
+  "tex_sha256": {
+    "MAIN_TABLE_LATEX.tex": "b6e887007424e0209906f4605a0054c26bcb331cd65c8e514c177e3d3b064499",
+    "SUPPLEMENTARY_REPLICATION_TABLE_LATEX.tex": "d2d6474d9218228b86380a4de0fd42e595ed0c0e6aaa1105c842a3d88c41dd40"
+  }
+}

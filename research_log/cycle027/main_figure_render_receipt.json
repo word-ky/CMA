@@ -1,0 +1,97 @@
+{
+  "case_manifest_sha256": "b65b9051c21cc08d3c7e6c1f96f88108a64488ac18cddeb8db33946cac57d619",
+  "layout": [
+    {
+      "group_id": "cf_778571dc8020b5df",
+      "condition": "target15_b",
+      "identity_index": 0
+    },
+    {
+      "group_id": "cf_778571dc8020b5df",
+      "condition": "target15_b",
+      "identity_index": 1
+    },
+    {
+      "group_id": "acceptedpair_b914b3d4a14a9083",
+      "condition": "clean",
+      "identity_index": 0
+    },
+    {
+      "group_id": "acceptedpair_b914b3d4a14a9083",
+      "condition": "target15_b",
+      "identity_index": 0
+    }
+  ],
+  "source_qc": {
+    "cf_778571dc8020b5df": {
+      "counterfactual_id": "cf_778571dc8020b5df",
+      "original_group_record": {
+        "counterfactual_id": "cf_778571dc8020b5df",
+        "image_member": "mining_helmet/images/val/041_00068.jpg",
+        "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/041_00068-ann3062-6d2e19296c.jpg",
+        "split_source": "val",
+        "pair_ids": [
+          "pair_21cb479cc47007c7",
+          "pair_348ceef65e08eac8"
+        ],
+        "helmet_ids": [
+          "mining_helmet-6d2e19296c08",
+          "mining_helmet-67d2ccb8611c"
+        ],
+        "pseudo_miner_ids": [
+          "pm_9aaf1f1bed2b88d8",
+          "pm_a5c9360eb85b0f7e"
+        ],
+        "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+        "cf_score": 0.9945229063200085,
+        "miner_separation": 1.0,
+        "helmet_separation": 1.0,
+        "non_overlap_score": 1.0,
+        "use_as_core_counterfactual": true,
+        "qc": {
+          "all_pairs_deepseek_accept": true,
+          "all_pairs_have_clean_episode": false,
+          "overlay_subjective_check": "passed_by_user_2026-05-13",
+          "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+        }
+      },
+      "generation_provenance": null,
+      "all_pairs_accepted": true
+    },
+    "acceptedpair_b914b3d4a14a9083": {
+      "counterfactual_id": "acceptedpair_b914b3d4a14a9083",
+      "original_group_record": null,
+      "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+      "all_pairs_accepted": true
+    }
+  },
+  "inputs_sha256": {
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_778571dc8020b5df/target15_b.png": "3d8a17c2849f72f061603574353705eff54f72502fbc5881b7d410fbc2dcab60",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/helmet_masks/pair_21cb479cc47007c7.png": "59357e71b1327058a875829f4e09e6f3bb67bfd78b2088530d7f14bac80c7ad1",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_21cb479cc47007c7.png": "dd02c4311ac3d7c3fa944dd785bfa6cf71c2f11d10839adab49fd5434671467b",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_778571dc8020b5df_target15_b_pair_21cb479cc47007c7.npy": "b66ab4668b8084d0c04fe3c764a33f6cb6724ff7f7570488d79e8b158a485fb8",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/cf_778571dc8020b5df/prediction_2.npy": "e3effae3851c0816bfe741065309a2ea11c0daf1428b52928e3b01a1d482ef62",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/helmet_masks/pair_348ceef65e08eac8.png": "4777c21e28e10f15a79d5009da788b10ec4863b59e305cc23d0419aab20d2ba2",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_348ceef65e08eac8.png": "50885ecfa3374d12f587306f7721f4dc0c4c9bc44c9424b3a01100c17708f244",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_778571dc8020b5df_target15_b_pair_348ceef65e08eac8.npy": "f3a54f0b76e9b496320a615fc2d7d089cdf99144cfd37cbd31012b28ca8e9345",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/cf_778571dc8020b5df/prediction_3.npy": "d386cc3c3f075bdc0e65f56bd814cb7bcc13f8a17bdf5c8ef6291845fcd38567",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_b914b3d4a14a9083/clean.png": "07de4cefd0f547cafa47ba85e1d77542551c10f56559fbca00c8e8de14b04930",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/helmet_masks/pair_1b3903f27c3c4b20.png": "d1d06e168288384a83771f35527d1b3fbe0a5c80165c7fcc8779f05b429a05e4",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_1b3903f27c3c4b20.png": "ef45f441386fb7a50d617f88310ea0f3846a1566b2624d45da5cbe2aad9943af",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_b914b3d4a14a9083_clean_pair_1b3903f27c3c4b20.npy": "3bc801e7396274f3fb849ca5d13f04c71f312a5895e6c24fc084ae20b22e9154",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/acceptedpair_b914b3d4a14a9083/prediction_0.npy": "8d6babf83968ff64a16a820aad6528efb64951352c49a7209b37ebd22d349d11",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_b914b3d4a14a9083/target15_b.png": "cd2bce17b876fe3ed056d7ba0c308b2fbbc01dc3f93b720ecd4cad4a8dab6aa3",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_b914b3d4a14a9083_target15_b_pair_1b3903f27c3c4b20.npy": "53fc80724fc163c7330369aa019c1e2ea47b864ac8a2d868bbe7c811a57cd410",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/acceptedpair_b914b3d4a14a9083/prediction_2.npy": "8bf7c812f3560fe3fd992d962be89e1e8fabe603f75af479fcd7becc255139a6"
+  },
+  "all_inputs_unchanged_after_render": true,
+  "outputs_sha256": {
+    "png": "ea10a52348e9b1dfc76c6ac4a86db03150d1aaa984e997185ea66079625ad0f0",
+    "pdf": "b896fdb80f853a8648cc5c0cb29d54e845b42a056aff5302fb4d2527fbd6fffb"
+  },
+  "model_calls": 0,
+  "scorer_calls": 0,
+  "new_case_search": false,
+  "supplementary_bank_modified": false,
+  "display": "Full-frame original observations. 45% identity-colour prediction/memory overlays and white saved-target contours; no brightness/mask changes. Second optional success and identity-error cases omitted for readability."
+}

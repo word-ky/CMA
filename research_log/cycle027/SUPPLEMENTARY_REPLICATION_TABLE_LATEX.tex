@@ -1,0 +1,30 @@
+% Requires booktabs. These replications must not be pooled with the primary table.
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{Separate overlap-affected replications: each block contains 50 groups and
+100 identity references per condition. The reconstructed training protocol overlaps
+37/50 Cycle022 images and 50/50 Cycle018 images; their source holdout was historically
+evaluated. Cycle018 also served development. These are not independent training-unseen
+tests. Supplied memories, reconstructed pseudo targets and system-level comparison
+limitations apply. No pooling is performed.}
+\label{tab:overlap-replications}
+\begin{tabular}{llrrrrr}
+\toprule
+Method & Condition & mIoU (\%) & CMSA & Fidelity & IER & Mean margin \\
+\midrule
+\multicolumn{7}{l}{\textit{Cycle022: historical replication; 37/50 documented overlap}} \\
+CMA base-w15 & clean & 90.87 & 47/50 (94\%) & 98/100 (98\%) & 2/100 (2\%) & 0.892993 \\
+CMA base-w15 & target15\_b & 68.02 & 30/50 (60\%) & 87/100 (87\%) & 2/100 (2\%) & 0.657803 \\
+SegLLM pinned & clean & 37.29 & 3/50 (6\%) & 43/100 (43\%) & 38/100 (38\%) & 0.041568 \\
+SegLLM pinned & target15\_b & 27.52 & 1/50 (2\%) & 38/100 (38\%) & 30/100 (30\%) & 0.016394 \\
+\midrule
+\multicolumn{7}{l}{\textit{Cycle018: development replication; 50/50 documented overlap}} \\
+CMA base-w15 & clean & 91.97 & 47/50 (94\%) & 99/100 (99\%) & 0/100 (0\%) & 0.919718 \\
+CMA base-w15 & target15\_b & 69.11 & 29/50 (58\%) & 89/100 (89\%) & 3/100 (3\%) & 0.662931 \\
+SegLLM pinned & clean & 41.57 & 2/50 (4\%) & 47/100 (47\%) & 41/100 (41\%) & 0.047717 \\
+SegLLM pinned & target15\_b & 33.14 & 0/50 (0\%) & 42/100 (42\%) & 39/100 (39\%) & -0.027858 \\
+\bottomrule
+\end{tabular}
+\end{table*}

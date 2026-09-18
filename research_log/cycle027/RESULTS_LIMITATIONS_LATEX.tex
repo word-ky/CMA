@@ -1,0 +1,43 @@
+% Converted from the frozen Cycle026 Results draft; no new empirical evidence.
+\paragraph{Counterfactual identity-memory evaluation.}
+We hold the observation and semantic query fixed while switching the supplied
+miner identity memory, which changes the intended helmet target.
+Table~\ref{tab:primary-memory} reports the primary 50-group documented-protocol-disjoint
+confirmation. CMA achieves 92\% CMSA on clean observations and 58\% under
+\texttt{target15\_b}, compared with 4\% and 2\% for pinned SegLLM.
+Under degradation, Memory Fidelity is 84\% versus 46\%, and Identity Error Rate
+is 3\% versus 38\%. These results support stronger supplied-memory use on this
+evaluated set. Figure~\ref{fig:main-memory} illustrates the controlled identity
+switch and a retained degradation failure using previously frozen cases.
+
+\paragraph{Robustness under compound degradation.}
+CMA attains 67.53\% mIoU under the fixed compound stressor, compared with
+36.44\% for SegLLM, a paired gap of 31.08 percentage points on identical groups.
+The supported claim is higher absolute degraded performance and retained identity
+fidelity: CMA still fails strict degraded CMSA on 21 of 50 groups.
+The overlap-affected historical and development replications are reported
+separately in Table~\ref{tab:overlap-replications} and are not pooled with the
+primary set.
+
+\paragraph{Comparison scope.}
+SegLLM is a pinned released historical-memory comparator receiving the same
+observations and supplied miner identities through its native interface.
+The comparison is system-level: training exposure and domain adaptation differ,
+and SegLLM's lower clean performance limits architecture-only attribution.
+The counterfactual intervention measures identity-dependent behavior under common
+inputs; it does not isolate the contribution of an individual CMA component.
+
+\paragraph{Limitations.}
+The primary set was selected before inference and is disjoint by source-image
+SHA256 from reconstructed documented final-stage training and historical
+evaluation registries. Exact run-bound w15 and ancestor/pretraining exposure
+remain unknown, so this is not an exact training-unseen test.
+Memories are externally supplied and targets are reconstructed pseudo labels;
+23 groups retain historical review-level episode QC and 27 combine accepted-high
+pairs. Structural validity does not replace independent annotation.
+CMA's clean-to-degraded mIoU decline is 20.75 points, versus 6.26 for SegLLM;
+we do not claim lower degradation sensitivity.
+The evidence does not establish autonomous memory writing, persistence or repair,
+broad corruption generalization, or safety guarantees. Earlier Layer-2
+verifier/controller attempts did not meet their stated requirements and remain
+negative evidence, not a successful agent contribution.
