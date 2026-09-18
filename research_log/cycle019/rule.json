@@ -1,0 +1,23 @@
+{
+  "review_commit": "f033726",
+  "threshold": 0.7,
+  "direct_query": "Please segment the mining helmet in the image.",
+  "selection": "REF if head_score_ref >= 0.7; otherwise DIRECT once; choose DIRECT only if its same-miner head score strictly exceeds REF, ties REF; STOP_ACCEPT",
+  "geometry": "existing stage3_rule_controller_v2_direct_first helmet_geometry moved byte-for-byte into helmet_geometry.py",
+  "cma_manifest_hashes": {
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle008/val_base_clean/memory_predictions.jsonl": "9d2e71c785b072505bd46e395b876bfca3f3669e6fef9824d0ba8fd244a04ef0",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle008/val_base_target15_b/memory_predictions.jsonl": "4ab816818acdc5d4af3044c5e3d5176b71ddc7d3b962d6987a450882ac2a3314"
+  },
+  "degraded_gate": {
+    "miou_delta_min": 0,
+    "cmsa_delta_min": 0,
+    "fail_to_pass_min": 2,
+    "pass_to_fail_max": 1,
+    "both_actions_required": true
+  },
+  "clean_gate": {
+    "miou_drop_max": 0.01,
+    "cmsa_drop_max": 0.02
+  },
+  "oracle": "analysis-only whole-group candidate union, never used by runtime"
+}

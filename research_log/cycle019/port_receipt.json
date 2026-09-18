@@ -1,0 +1,15 @@
+{
+  "cycle": 19,
+  "status": "COMPLETED_FIXED_GATE_FAILED",
+  "ref_reused": 200,
+  "extra_direct_forwards": 11,
+  "direct_selected": 0,
+  "final_masks_equal_ref": 200,
+  "degraded_cmsa_recoveries": 0,
+  "degraded_cmsa_regressions": 0,
+  "runtime_gt_access": false,
+  "scoring_after_freeze": true,
+  "both_actions_used": true,
+  "oracle_scope": "scheduled candidates only",
+  "next_recommendation": "reliability/abstention evaluation; await review"
+}

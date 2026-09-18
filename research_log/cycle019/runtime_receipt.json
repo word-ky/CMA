@@ -1,0 +1,28 @@
+{
+  "run_id": "20260918-183325-cma-cycle019-native-direct",
+  "direct_forward_calls": 11,
+  "ref_reused": 200,
+  "final_masks": 200,
+  "all_final_sha256_equal_ref": true,
+  "archive_bytes": 472394,
+  "archive_sha256": "1ad41f6dadf65dbcfae21315dc50c2c55333eb967683d1f0b10fe2dafe70d09a",
+  "all_fetched_prediction_hashes_verified": true,
+  "extra_direct_seconds": 3.492574700852856,
+  "peak_allocated_vram_bytes": 17257539072,
+  "fallback_head_score_pairs": [
+    {
+      "condition": "clean",
+      "ref_score": 0.0,
+      "direct_score": 0.0,
+      "count": 2
+    },
+    {
+      "condition": "target15_b",
+      "ref_score": 0.0,
+      "direct_score": 0.0,
+      "count": 10
+    }
+  ],
+  "focused_tests": "6 passed in1.18s",
+  "initial_failure": "vision_pretrained string none corrected to Python None before successful inference; no weights/prompt/threshold change"
+}

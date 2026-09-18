@@ -1,0 +1,36 @@
+[autodl] run_id=20260918-183200-cma-cycle019-direct-fallback
+[autodl] started_at=2026-09-18T18:32:05+08:00
+Traceback (most recent call last):
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/scripts/run_memory_consistency_feedback.py", line 133, in <module>
+    main()
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/scripts/run_memory_consistency_feedback.py", line 83, in main
+    runner = ControllerRunner(SimpleNamespace(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/scripts/stage3_rule_controller_v2_direct_first.py", line 252, in __init__
+    self.model = LISAForCausalLM.from_pretrained(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/.venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 316, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/.venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4986, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/third_party/LISA/model/LISA.py", line 288, in __init__
+    self.model = LisaModel(config, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/third_party/LISA/model/LISA.py", line 212, in __init__
+    super(LisaModel, self).__init__(config, **kwargs)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/third_party/LISA/model/LISA.py", line 115, in __init__
+    self.initialize_lisa_modules(self.config)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/third_party/LISA/model/LISA.py", line 119, in initialize_lisa_modules
+    self.visual_model = build_sam_vit_h(self.vision_pretrained)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/third_party/LISA/model/segment_anything/build_sam.py", line 16, in build_sam_vit_h
+    return _build_sam(
+           ^^^^^^^^^^^
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/third_party/LISA/model/segment_anything/build_sam.py", line 105, in _build_sam
+    with open(checkpoint, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'none'
+[autodl] finished_at=2026-09-18T18:32:10+08:00
+[autodl] exit_code=1

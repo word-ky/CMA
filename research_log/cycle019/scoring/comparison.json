@@ -1,0 +1,651 @@
+{
+  "clean": {
+    "ref_only": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.9197182918768901,
+      "memory_fidelity": 0.99,
+      "cmsa": 0.94,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.9197182918768901,
+      "median_identity_margin": 0.9631895116958757
+    },
+    "mcf": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.9197182918768901,
+      "memory_fidelity": 0.99,
+      "cmsa": 0.94,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.9197182918768901,
+      "median_identity_margin": 0.9631895116958757
+    },
+    "cmsa_transitions": {
+      "fail_to_pass": 0,
+      "pass_to_fail": 0,
+      "pass_to_pass": 47,
+      "fail_to_fail": 3
+    },
+    "actions": {
+      "ref_accept": 98,
+      "ref_accept_rate": 0.98,
+      "fallback_requests": 2,
+      "fallback_rate": 0.02,
+      "direct_selected": 0,
+      "extra_direct_calls": 2
+    },
+    "oracle_union_ANALYSIS_ONLY": {
+      "rule": "Whole-group REF pair versus shared direct mask pair; GT CMSA then group mIoU; ties REF. Only actually scheduled direct candidates available.",
+      "summary": {
+        "num_groups": 50,
+        "num_references": 100,
+        "num_pairs": 50,
+        "target_miou": 0.9197182918768901,
+        "memory_fidelity": 0.99,
+        "cmsa": 0.94,
+        "identity_error_rate": 0.0,
+        "mean_identity_margin": 0.9197182918768901,
+        "median_identity_margin": 0.9631895116958757
+      },
+      "max_group_miou_summary": {
+        "num_groups": 50,
+        "num_references": 100,
+        "num_pairs": 50,
+        "target_miou": 0.9197182918768901,
+        "memory_fidelity": 0.99,
+        "cmsa": 0.94,
+        "identity_error_rate": 0.0,
+        "mean_identity_margin": 0.9197182918768901,
+        "median_identity_margin": 0.9631895116958757
+      },
+      "choices": [
+        {
+          "group_id": "cf_c9029d27c0483181",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_1a8999420d2a3bdc",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_33700f0218d6a1db",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_3eb4e7afbcbc4783",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_86843243c79d2603",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_646171cbe278fb9c",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_4208e726fab4891a",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_803b6a694535ec15",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_4cd720671d92fd2e",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_03e0f4f2dd886689",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_b9271168b2a4cbf9",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_5ffe3b4241e31e97",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_eccb4c9b85399b90",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_273565c8b4382765",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_371758320d780b3d",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_afb2ea760a625f27",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_69928ab61b82fb85",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_e55b9138be80eb81",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_e49d9a50bdb728a9",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_99b0215fccf3f63b",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_84320e41bc5af656",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_26d7eeeecd43037a",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_0774290cbf004c7d",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_2a89e76f158b6a5b",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_8065502af4eb2535",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_ae56647f7b0ed80f",
+          "choice": "REF",
+          "direct_available": true
+        },
+        {
+          "group_id": "cf_aa391b9836fd78ee",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_02e38a9e5a19c360",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_01ad18abfbf5459e",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_427af9a92fe7f6cd",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_4165dbded0d67baf",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_5495414a54138233",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_cd5bf6d06a4f5432",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_149c5aadeca92d12",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_3c4f4b5cb4bb1d77",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_f3d2d3f12a7aead4",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_5e9c50c7e24dfd0f",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_1e7d8cfc1625c2da",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_2e36401e0d114aa8",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_1a115ce7f6b388e4",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_289b3fd7110690be",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_b88a50d6609f6487",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_6b395dbd9b45c431",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_4a66376fb7c719e0",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_c55d2b77e1c81163",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_a61afd1b0775da52",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_dd011c16faf2a9e3",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_5e913799bf202735",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_8c490484f166a75a",
+          "choice": "REF",
+          "direct_available": true
+        },
+        {
+          "group_id": "cf_91c35cfa78c4abd9",
+          "choice": "REF",
+          "direct_available": false
+        }
+      ],
+      "coverage_limit": "Not a full all-images direct oracle. Unscheduled candidates were not inferred."
+    }
+  },
+  "target15_b": {
+    "ref_only": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.6911134046687633,
+      "memory_fidelity": 0.89,
+      "cmsa": 0.58,
+      "identity_error_rate": 0.03,
+      "mean_identity_margin": 0.6629313123212343,
+      "median_identity_margin": 0.8474629071282657
+    },
+    "mcf": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.6911134046687633,
+      "memory_fidelity": 0.89,
+      "cmsa": 0.58,
+      "identity_error_rate": 0.03,
+      "mean_identity_margin": 0.6629313123212343,
+      "median_identity_margin": 0.8474629071282657
+    },
+    "cmsa_transitions": {
+      "fail_to_pass": 0,
+      "pass_to_fail": 0,
+      "pass_to_pass": 29,
+      "fail_to_fail": 21
+    },
+    "actions": {
+      "ref_accept": 90,
+      "ref_accept_rate": 0.9,
+      "fallback_requests": 10,
+      "fallback_rate": 0.1,
+      "direct_selected": 0,
+      "extra_direct_calls": 9
+    },
+    "oracle_union_ANALYSIS_ONLY": {
+      "rule": "Whole-group REF pair versus shared direct mask pair; GT CMSA then group mIoU; ties REF. Only actually scheduled direct candidates available.",
+      "summary": {
+        "num_groups": 50,
+        "num_references": 100,
+        "num_pairs": 50,
+        "target_miou": 0.6911134046687633,
+        "memory_fidelity": 0.89,
+        "cmsa": 0.58,
+        "identity_error_rate": 0.03,
+        "mean_identity_margin": 0.6629313123212343,
+        "median_identity_margin": 0.8474629071282657
+      },
+      "max_group_miou_summary": {
+        "num_groups": 50,
+        "num_references": 100,
+        "num_pairs": 50,
+        "target_miou": 0.6911134046687633,
+        "memory_fidelity": 0.89,
+        "cmsa": 0.58,
+        "identity_error_rate": 0.03,
+        "mean_identity_margin": 0.6629313123212343,
+        "median_identity_margin": 0.8474629071282657
+      },
+      "choices": [
+        {
+          "group_id": "cf_c9029d27c0483181",
+          "choice": "REF",
+          "direct_available": true
+        },
+        {
+          "group_id": "cf_1a8999420d2a3bdc",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_33700f0218d6a1db",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_3eb4e7afbcbc4783",
+          "choice": "REF",
+          "direct_available": true
+        },
+        {
+          "group_id": "cf_86843243c79d2603",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_646171cbe278fb9c",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_4208e726fab4891a",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_803b6a694535ec15",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_4cd720671d92fd2e",
+          "choice": "REF",
+          "direct_available": true
+        },
+        {
+          "group_id": "cf_03e0f4f2dd886689",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_b9271168b2a4cbf9",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_5ffe3b4241e31e97",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_eccb4c9b85399b90",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_273565c8b4382765",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_371758320d780b3d",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_afb2ea760a625f27",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_69928ab61b82fb85",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_e55b9138be80eb81",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_e49d9a50bdb728a9",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_99b0215fccf3f63b",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_84320e41bc5af656",
+          "choice": "REF",
+          "direct_available": true
+        },
+        {
+          "group_id": "cf_26d7eeeecd43037a",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_0774290cbf004c7d",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_2a89e76f158b6a5b",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_8065502af4eb2535",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_ae56647f7b0ed80f",
+          "choice": "REF",
+          "direct_available": true
+        },
+        {
+          "group_id": "cf_aa391b9836fd78ee",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_02e38a9e5a19c360",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_01ad18abfbf5459e",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_427af9a92fe7f6cd",
+          "choice": "REF",
+          "direct_available": true
+        },
+        {
+          "group_id": "cf_4165dbded0d67baf",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_5495414a54138233",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_cd5bf6d06a4f5432",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_149c5aadeca92d12",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_3c4f4b5cb4bb1d77",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_f3d2d3f12a7aead4",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_5e9c50c7e24dfd0f",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_1e7d8cfc1625c2da",
+          "choice": "REF",
+          "direct_available": true
+        },
+        {
+          "group_id": "cf_2e36401e0d114aa8",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_1a115ce7f6b388e4",
+          "choice": "REF",
+          "direct_available": true
+        },
+        {
+          "group_id": "cf_289b3fd7110690be",
+          "choice": "REF",
+          "direct_available": true
+        },
+        {
+          "group_id": "cf_b88a50d6609f6487",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_6b395dbd9b45c431",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_4a66376fb7c719e0",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_c55d2b77e1c81163",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_a61afd1b0775da52",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_dd011c16faf2a9e3",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_5e913799bf202735",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_8c490484f166a75a",
+          "choice": "REF",
+          "direct_available": false
+        },
+        {
+          "group_id": "cf_91c35cfa78c4abd9",
+          "choice": "REF",
+          "direct_available": false
+        }
+      ],
+      "coverage_limit": "Not a full all-images direct oracle. Unscheduled candidates were not inferred."
+    }
+  },
+  "fixed_gate": {
+    "passed": false,
+    "checks": {
+      "degraded_miou_not_lower": true,
+      "degraded_cmsa_not_lower": true,
+      "at_least_two_recoveries": false,
+      "at_most_one_regression": true,
+      "both_actions_used": true,
+      "clean_miou_preserved": true,
+      "clean_cmsa_preserved": true
+    }
+  },
+  "measured_oracle_complementarity": {
+    "miou_gain": 0.0,
+    "cmsa_recovery_opportunities": 0,
+    "scope": "scheduled direct candidates only; unscheduled action headroom unknown"
+  }
+}

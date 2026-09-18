@@ -1,0 +1,10 @@
+{
+  "source_commit": "f033726",
+  "source_path": "cmllm_remote/scripts/stage3_rule_controller_v2_direct_first.py",
+  "moved_to": "cmllm_remote/scripts/helmet_geometry.py",
+  "function_source_exact_equal": true,
+  "functions_sha256": {
+    "bbox_from_mask": "36be0a6f110d4bc674fa7813e7fa272d997e184b84d0031cdde19bb884a71fb9",
+    "helmet_geometry": "7e6b85f932858870ccd9b3717502459d04e1b6d1d5b68f25990023fdae8f39fd"
+  }
+}
