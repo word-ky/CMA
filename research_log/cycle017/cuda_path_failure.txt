@@ -1,0 +1,311 @@
+[autodl] run_id=20260918-164923-cma-cycle017-four-trials
+[autodl] started_at=2026-09-18T16:49:29+08:00
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/torch/cuda/__init__.py:619: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Skip loading parameter 'detr.detr.transformer.tgt_embed.weight' to the model due to incompatible shapes: (900, 256) in the checkpoint but (100, 256) in the model! You might want to double check if this is expected.
+Some model parameters or buffers are not found in the checkpoint:
+detr.detr.transformer.tgt_embed.weight
+The checkpoint state_dict contains keys that are not used by the model:
+  text_encoder.body.model.embeddings.position_ids
+  detr.mask_dino.pixel_decoder.input_proj.0.0.{bias, weight}
+  detr.mask_dino.pixel_decoder.input_proj.0.1.{bias, weight}
+  detr.mask_dino.pixel_decoder.input_proj.1.0.{bias, weight}
+  detr.mask_dino.pixel_decoder.input_proj.1.1.{bias, weight}
+  detr.mask_dino.pixel_decoder.input_proj.2.0.{bias, weight}
+  detr.mask_dino.pixel_decoder.input_proj.2.1.{bias, weight}
+  detr.mask_dino.pixel_decoder.input_proj.3.0.{bias, weight}
+  detr.mask_dino.pixel_decoder.input_proj.3.1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.level_embed
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.self_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.self_attn.attention_weights.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.self_attn.value_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.self_attn.output_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.norm1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.linear1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.linear2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.norm2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.self_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.self_attn.attention_weights.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.self_attn.value_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.self_attn.output_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.norm1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.linear1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.linear2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.norm2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.self_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.self_attn.attention_weights.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.self_attn.value_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.self_attn.output_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.norm1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.linear1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.linear2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.norm2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.self_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.self_attn.attention_weights.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.self_attn.value_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.self_attn.output_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.norm1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.linear1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.linear2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.norm2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.self_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.self_attn.attention_weights.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.self_attn.value_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.self_attn.output_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.norm1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.linear1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.linear2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.norm2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.self_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.self_attn.attention_weights.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.self_attn.value_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.self_attn.output_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.norm1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.linear1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.linear2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.norm2.{bias, weight}
+  detr.mask_dino.pixel_decoder.mask_features.0.{bias, weight}
+  detr.mask_dino.pixel_decoder.mask_features.1.{bias, weight}
+  detr.mask_dino.pixel_decoder.mask_features.3.{bias, weight}
+  detr.mask_dino.pixel_decoder.adapter_1.weight
+  detr.mask_dino.pixel_decoder.adapter_1.norm.{bias, weight}
+  detr.mask_dino.pixel_decoder.layer_1.weight
+  detr.mask_dino.pixel_decoder.layer_1.norm.{bias, weight}
+  detr.mask_dino.predictor.enc_output.{bias, weight}
+  detr.mask_dino.predictor.enc_output_norm.{bias, weight}
+  detr.mask_dino.predictor.class_embed.{bias, weight}
+  detr.mask_dino.predictor.label_enc.weight
+  detr.mask_dino.predictor.mask_embed.layers.0.{bias, weight}
+  detr.mask_dino.predictor.mask_embed.layers.1.{bias, weight}
+  detr.mask_dino.predictor.mask_embed.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder_norm.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.0.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.1.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.2.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.3.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.4.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.5.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.6.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.7.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.8.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.norm.{bias, weight}
+  detr.mask_dino.predictor.decoder.ref_point_head.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.ref_point_head.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.0.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.0.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.0.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.1.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.1.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.1.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.2.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.2.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.2.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.3.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.3.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.3.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.4.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.4.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.4.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.5.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.5.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.5.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.6.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.6.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.6.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.7.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.7.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.7.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.8.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.8.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.8.layers.2.{bias, weight}
+  detr.mask_dino.predictor._bbox_embed.layers.0.{bias, weight}
+  detr.mask_dino.predictor._bbox_embed.layers.1.{bias, weight}
+  detr.mask_dino.predictor._bbox_embed.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.0.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.0.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.0.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.1.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.1.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.1.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.2.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.2.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.2.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.3.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.3.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.3.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.4.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.4.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.4.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.5.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.5.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.5.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.6.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.6.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.6.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.7.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.7.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.7.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.8.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.8.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.8.layers.2.{bias, weight}
+  detr.mask_dino_criterion.empty_weight
+  detr.mask_dino_cls_embed.0.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.0.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.1.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.1.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.2.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.2.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.3.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.3.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.4.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.4.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.5.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.5.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.6.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.6.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.7.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.7.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.8.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.8.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.9.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.9.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.10.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.10.dot_product_projection_text.{bias, weight}
+pre_init
+Creating mask encode head: make sure BOX is contained conversation file name
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.36it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.41it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.11it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.17it/s]
+Some weights of the model checkpoint at /home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint were not used when initializing LlavaLlamaForCausalLM: ['model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.weight_l', 'model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.weight_v']
+- This IS expected if you are initializing LlavaLlamaForCausalLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing LlavaLlamaForCausalLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of LlavaLlamaForCausalLM were not initialized from the model checkpoint at /home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint and are newly initialized: ['model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_l', 'model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_v']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/llava/train/llava_trainer.py:204: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `LLaVATrainer.__init__`. Use `processing_class` instead.
+  super().__init__(*args,**kwargs)
+--------------------Dataset Lengths -----------------------
+[1]
+[2026-09-18 16:49:47,798] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+df: /home/liujianhua/.triton/autotune: 没有那个文件或目录
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+Traceback (most recent call last):
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/external_baselines/segllm/run_smoke.py", line 162, in <module>
+    main()
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/external_baselines/segllm/run_smoke.py", line 64, in main
+    inputs = build_conversation(model, tokenizer, history, 2, training_args,
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/llava/train/inference_cli.py", line 154, in build_conversation
+    trainer = LLaVATrainer(model=model,
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/llava/train/llava_trainer.py", line 204, in __init__
+    super().__init__(*args,**kwargs)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/transformers/utils/deprecation.py", line 165, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/transformers/trainer.py", line 586, in __init__
+    unwrapped_model = self.accelerator.unwrap_model(model)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/accelerate/accelerator.py", line 2515, in unwrap_model
+    return extract_model_from_parallel(model, keep_fp32_wrapper)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/accelerate/utils/other.py", line 80, in extract_model_from_parallel
+    from deepspeed import DeepSpeedEngine
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/deepspeed/__init__.py", line 25, in <module>
+    from . import ops
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/deepspeed/ops/__init__.py", line 15, in <module>
+    from ..git_version_info import compatible_ops as __compatible_ops__
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/deepspeed/git_version_info.py", line 29, in <module>
+    op_compatible = builder.is_compatible()
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/deepspeed/ops/op_builder/fp_quantizer.py", line 29, in is_compatible
+    sys_cuda_major, _ = installed_cuda_version()
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/deepspeed/ops/op_builder/builder.py", line 50, in installed_cuda_version
+    raise MissingCUDAException("CUDA_HOME does not exist, unable to compile CUDA op(s)")
+deepspeed.ops.op_builder.builder.MissingCUDAException: CUDA_HOME does not exist, unable to compile CUDA op(s)
+[autodl] finished_at=2026-09-18T16:49:48+08:00
+[autodl] exit_code=1

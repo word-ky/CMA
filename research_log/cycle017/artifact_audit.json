@@ -1,0 +1,76 @@
+{
+  "status": "SAVED_ARTIFACTS_CHECKED",
+  "raster_reads": [
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle015/prepared/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle015/prepared/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/miner_masks/pair_dfee24282f912128.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/miner_masks/pair_ee869f891a591f2f.png"
+  ],
+  "only_prepared_images_and_supplied_miner_masks": true,
+  "masks": [
+    {
+      "condition": "clean",
+      "entity_id": "pair_dfee24282f912128",
+      "remote_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle017/smoke/prediction_0.npy",
+      "file_sha256": "bbaaf71cb162a133b133afa0679c9871408f64dd27c780ddca7c5e813bb5d514",
+      "array_sha256": "b974e2df433c1ccff6008190c39e50d9b1cf6985c18a0487fe099766af7eec12",
+      "shape": [
+        720,
+        1280
+      ],
+      "dtype": "uint8",
+      "file_bytes": 921728,
+      "seconds": 1.1671501309610903,
+      "peak_vram_bytes": 16456006656
+    },
+    {
+      "condition": "clean",
+      "entity_id": "pair_ee869f891a591f2f",
+      "remote_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle017/smoke/prediction_1.npy",
+      "file_sha256": "dbccf39221a04014522b40eb8779d07dd83ef350d85d5796f06372b945a67d88",
+      "array_sha256": "59b5dc5de42cd92f74c89bc08392e3f4bf683efa2fa30b0088cbcb3f6cc614ca",
+      "shape": [
+        720,
+        1280
+      ],
+      "dtype": "uint8",
+      "file_bytes": 921728,
+      "seconds": 0.4312469130381942,
+      "peak_vram_bytes": 16485084160
+    },
+    {
+      "condition": "target15_b",
+      "entity_id": "pair_dfee24282f912128",
+      "remote_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle017/smoke/prediction_2.npy",
+      "file_sha256": "f56081308c6b05df40dcf5677606c708f924f8ebb0f9e8915862e7604623c610",
+      "array_sha256": "edcc1a1f7263f597096e0c77404f2b18f1ed07f74352a7bb3d79c89d41bd80ef",
+      "shape": [
+        720,
+        1280
+      ],
+      "dtype": "uint8",
+      "file_bytes": 921728,
+      "seconds": 0.4448732789605856,
+      "peak_vram_bytes": 16488704512
+    },
+    {
+      "condition": "target15_b",
+      "entity_id": "pair_ee869f891a591f2f",
+      "remote_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle017/smoke/prediction_3.npy",
+      "file_sha256": "d9fb0bb4c3cc975f81794110a0e3668a5a86d3dc8ddf3d8f6cb6758b7d15935b",
+      "array_sha256": "f3cb9b8de048686467308f97297e715e0eb05e82d0f5dc5d0ca58dff19a41fc8",
+      "shape": [
+        720,
+        1280
+      ],
+      "dtype": "uint8",
+      "file_bytes": 921728,
+      "seconds": 0.4447849739808589,
+      "peak_vram_bytes": 16495790080
+    }
+  ],
+  "archive_sha256": "68e524eb93e527e652431dfed0c57c07b15cb66da66a3872d20c5cb30b5ab78c",
+  "archive_bytes": 15252,
+  "forward_trials": 4,
+  "score_computed": false
+}

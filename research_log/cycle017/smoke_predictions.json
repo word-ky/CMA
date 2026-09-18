@@ -1,0 +1,458 @@
+[
+  {
+    "condition": "clean",
+    "entity_id": "pair_dfee24282f912128",
+    "native_prompt": "Segment the mining helmet worn by instance 1.[REF:1]",
+    "semantic_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+    "rendered_conversation": {
+      "task": "segmentation",
+      "base": "[null]",
+      "conversations": [
+        {
+          "from": "human",
+          "value": "[IMAGE256:clean.png] Segment the miner."
+        },
+        {
+          "from": "gpt",
+          "value": "[MASK-DECODE:clean.png|INFERENCE|NULL]"
+        },
+        {
+          "from": "human",
+          "value": "[MASK-ENCODE:clean.png|INFERENCE|NULL][BOX-ENCODE:clean.png|INFERENCE|NULL]Segment the mining helmet worn by instance 1.",
+          "ind": [
+            1
+          ]
+        },
+        {
+          "from": "gpt",
+          "value": "[MASK-DECODE:clean.png|INFERENCE|NULL]"
+        }
+      ]
+    },
+    "native_indices": [
+      0
+    ],
+    "input_ids_sha256": "1a41cec0b1ecdf36605051859e14ce71036bb04b49c075e10d59922addbe7aa5",
+    "original_hw": [
+      720,
+      1280
+    ],
+    "native_input_hw": [
+      576,
+      1024
+    ],
+    "native_padded_hw": [
+      1024,
+      1024
+    ],
+    "supplied_bbox_xyxy": [
+      602.2440795898438,
+      335.63299560546875,
+      1041.72998046875,
+      720.0
+    ],
+    "resized_bbox_xyxy_float": [
+      481.79526367187503,
+      268.506396484375,
+      833.3839843750001,
+      576.0
+    ],
+    "crop_bbox_xyxy_int": [
+      481,
+      268,
+      833,
+      576
+    ],
+    "box_encode_yxyx_over_1024": [
+      0.26171875,
+      0.4697265625,
+      0.5625,
+      0.8134765625
+    ],
+    "crop_hw": [
+      308,
+      352
+    ],
+    "square_pad_hw": [
+      352,
+      352
+    ],
+    "appearance_shape": [
+      3,
+      224,
+      224
+    ],
+    "appearance_sha256": "d9885da57c4fa7e6275989092baec8dc6969c57b4482096f607024385949a220",
+    "bbox_sha256": "f33631d606758c3ccd2fce23888f66b1cc65db0e491bdf4b64e5b76707db1a23",
+    "main_rgb_sha256": "1c10841b736c97098e620c95aa5d7e61a74a9e97d70d6cf0ea9dcee2cfb353d8",
+    "masked_crop_rgb_sha256": "9b000faa385c2906516716dc802f4c0f93c819b96d506ac867ee0711336e4a9b",
+    "decode_conversation_turns": [
+      1,
+      3
+    ],
+    "supervised_seg_token_positions": [
+      303,
+      329
+    ],
+    "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle017/smoke/prediction_0.npy",
+    "native_output_hw": [
+      1024,
+      1024
+    ],
+    "crop_input_hw": [
+      576,
+      1024
+    ],
+    "mapping": "remove right/bottom padding; nearest binary resize once",
+    "seconds": 1.1671501309610903,
+    "peak_vram_bytes": 16456006656,
+    "mask_decode_output_count": 2,
+    "selected_output_index": 1,
+    "selected_conversation_turn": 3,
+    "injected_appearance_sha256": "d9885da57c4fa7e6275989092baec8dc6969c57b4482096f607024385949a220",
+    "injected_bbox_sha256": "f33631d606758c3ccd2fce23888f66b1cc65db0e491bdf4b64e5b76707db1a23",
+    "injected_tensor_hashes_verified": true
+  },
+  {
+    "condition": "clean",
+    "entity_id": "pair_ee869f891a591f2f",
+    "native_prompt": "Segment the mining helmet worn by instance 1.[REF:1]",
+    "semantic_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+    "rendered_conversation": {
+      "task": "segmentation",
+      "base": "[null]",
+      "conversations": [
+        {
+          "from": "human",
+          "value": "[IMAGE256:clean.png] Segment the miner."
+        },
+        {
+          "from": "gpt",
+          "value": "[MASK-DECODE:clean.png|INFERENCE|NULL]"
+        },
+        {
+          "from": "human",
+          "value": "[MASK-ENCODE:clean.png|INFERENCE|NULL][BOX-ENCODE:clean.png|INFERENCE|NULL]Segment the mining helmet worn by instance 1.",
+          "ind": [
+            1
+          ]
+        },
+        {
+          "from": "gpt",
+          "value": "[MASK-DECODE:clean.png|INFERENCE|NULL]"
+        }
+      ]
+    },
+    "native_indices": [
+      0
+    ],
+    "input_ids_sha256": "1a41cec0b1ecdf36605051859e14ce71036bb04b49c075e10d59922addbe7aa5",
+    "original_hw": [
+      720,
+      1280
+    ],
+    "native_input_hw": [
+      576,
+      1024
+    ],
+    "native_padded_hw": [
+      1024,
+      1024
+    ],
+    "supplied_bbox_xyxy": [
+      316.9733581542969,
+      419.959716796875,
+      474.5732116699219,
+      720.0
+    ],
+    "resized_bbox_xyxy_float": [
+      253.5786865234375,
+      335.9677734375,
+      379.6585693359375,
+      576.0
+    ],
+    "crop_bbox_xyxy_int": [
+      253,
+      335,
+      379,
+      576
+    ],
+    "box_encode_yxyx_over_1024": [
+      0.3271484375,
+      0.2470703125,
+      0.5625,
+      0.3701171875
+    ],
+    "crop_hw": [
+      241,
+      126
+    ],
+    "square_pad_hw": [
+      241,
+      241
+    ],
+    "appearance_shape": [
+      3,
+      224,
+      224
+    ],
+    "appearance_sha256": "a8794e7f35f555d0a8eb7eaad7a2d199c9f267bab9e63365f201fc7d33acf392",
+    "bbox_sha256": "9fe7e85050bb989288161bf6850a6214f61edcb5bf53945453d80e80b8a69a3e",
+    "main_rgb_sha256": "1c10841b736c97098e620c95aa5d7e61a74a9e97d70d6cf0ea9dcee2cfb353d8",
+    "masked_crop_rgb_sha256": "349c8fc6d66b752538b83b29d67d9ac9530d594bc6a828b4a95766877d52a412",
+    "decode_conversation_turns": [
+      1,
+      3
+    ],
+    "supervised_seg_token_positions": [
+      303,
+      329
+    ],
+    "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle017/smoke/prediction_1.npy",
+    "native_output_hw": [
+      1024,
+      1024
+    ],
+    "crop_input_hw": [
+      576,
+      1024
+    ],
+    "mapping": "remove right/bottom padding; nearest binary resize once",
+    "seconds": 0.4312469130381942,
+    "peak_vram_bytes": 16485084160,
+    "mask_decode_output_count": 2,
+    "selected_output_index": 1,
+    "selected_conversation_turn": 3,
+    "injected_appearance_sha256": "a8794e7f35f555d0a8eb7eaad7a2d199c9f267bab9e63365f201fc7d33acf392",
+    "injected_bbox_sha256": "9fe7e85050bb989288161bf6850a6214f61edcb5bf53945453d80e80b8a69a3e",
+    "injected_tensor_hashes_verified": true
+  },
+  {
+    "condition": "target15_b",
+    "entity_id": "pair_dfee24282f912128",
+    "native_prompt": "Segment the mining helmet worn by instance 1.[REF:1]",
+    "semantic_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+    "rendered_conversation": {
+      "task": "segmentation",
+      "base": "[null]",
+      "conversations": [
+        {
+          "from": "human",
+          "value": "[IMAGE256:target15_b.png] Segment the miner."
+        },
+        {
+          "from": "gpt",
+          "value": "[MASK-DECODE:target15_b.png|INFERENCE|NULL]"
+        },
+        {
+          "from": "human",
+          "value": "[MASK-ENCODE:target15_b.png|INFERENCE|NULL][BOX-ENCODE:target15_b.png|INFERENCE|NULL]Segment the mining helmet worn by instance 1.",
+          "ind": [
+            1
+          ]
+        },
+        {
+          "from": "gpt",
+          "value": "[MASK-DECODE:target15_b.png|INFERENCE|NULL]"
+        }
+      ]
+    },
+    "native_indices": [
+      0
+    ],
+    "input_ids_sha256": "1a41cec0b1ecdf36605051859e14ce71036bb04b49c075e10d59922addbe7aa5",
+    "original_hw": [
+      720,
+      1280
+    ],
+    "native_input_hw": [
+      576,
+      1024
+    ],
+    "native_padded_hw": [
+      1024,
+      1024
+    ],
+    "supplied_bbox_xyxy": [
+      602.2440795898438,
+      335.63299560546875,
+      1041.72998046875,
+      720.0
+    ],
+    "resized_bbox_xyxy_float": [
+      481.79526367187503,
+      268.506396484375,
+      833.3839843750001,
+      576.0
+    ],
+    "crop_bbox_xyxy_int": [
+      481,
+      268,
+      833,
+      576
+    ],
+    "box_encode_yxyx_over_1024": [
+      0.26171875,
+      0.4697265625,
+      0.5625,
+      0.8134765625
+    ],
+    "crop_hw": [
+      308,
+      352
+    ],
+    "square_pad_hw": [
+      352,
+      352
+    ],
+    "appearance_shape": [
+      3,
+      224,
+      224
+    ],
+    "appearance_sha256": "dce5699c3fbee6a335d576c3ad94311858819696de6144f08a76d398d8ddd051",
+    "bbox_sha256": "f33631d606758c3ccd2fce23888f66b1cc65db0e491bdf4b64e5b76707db1a23",
+    "main_rgb_sha256": "37756a83270f2984d291d86b4dfa7d7195e4db3e467435f06f2244c910f60b85",
+    "masked_crop_rgb_sha256": "155557b72d90c80c5e61a7d3f5a77d8e5771a5200b6dc6ba2e87f2c7d6b2f931",
+    "decode_conversation_turns": [
+      1,
+      3
+    ],
+    "supervised_seg_token_positions": [
+      303,
+      329
+    ],
+    "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle017/smoke/prediction_2.npy",
+    "native_output_hw": [
+      1024,
+      1024
+    ],
+    "crop_input_hw": [
+      576,
+      1024
+    ],
+    "mapping": "remove right/bottom padding; nearest binary resize once",
+    "seconds": 0.4448732789605856,
+    "peak_vram_bytes": 16488704512,
+    "mask_decode_output_count": 2,
+    "selected_output_index": 1,
+    "selected_conversation_turn": 3,
+    "injected_appearance_sha256": "dce5699c3fbee6a335d576c3ad94311858819696de6144f08a76d398d8ddd051",
+    "injected_bbox_sha256": "f33631d606758c3ccd2fce23888f66b1cc65db0e491bdf4b64e5b76707db1a23",
+    "injected_tensor_hashes_verified": true
+  },
+  {
+    "condition": "target15_b",
+    "entity_id": "pair_ee869f891a591f2f",
+    "native_prompt": "Segment the mining helmet worn by instance 1.[REF:1]",
+    "semantic_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+    "rendered_conversation": {
+      "task": "segmentation",
+      "base": "[null]",
+      "conversations": [
+        {
+          "from": "human",
+          "value": "[IMAGE256:target15_b.png] Segment the miner."
+        },
+        {
+          "from": "gpt",
+          "value": "[MASK-DECODE:target15_b.png|INFERENCE|NULL]"
+        },
+        {
+          "from": "human",
+          "value": "[MASK-ENCODE:target15_b.png|INFERENCE|NULL][BOX-ENCODE:target15_b.png|INFERENCE|NULL]Segment the mining helmet worn by instance 1.",
+          "ind": [
+            1
+          ]
+        },
+        {
+          "from": "gpt",
+          "value": "[MASK-DECODE:target15_b.png|INFERENCE|NULL]"
+        }
+      ]
+    },
+    "native_indices": [
+      0
+    ],
+    "input_ids_sha256": "1a41cec0b1ecdf36605051859e14ce71036bb04b49c075e10d59922addbe7aa5",
+    "original_hw": [
+      720,
+      1280
+    ],
+    "native_input_hw": [
+      576,
+      1024
+    ],
+    "native_padded_hw": [
+      1024,
+      1024
+    ],
+    "supplied_bbox_xyxy": [
+      316.9733581542969,
+      419.959716796875,
+      474.5732116699219,
+      720.0
+    ],
+    "resized_bbox_xyxy_float": [
+      253.5786865234375,
+      335.9677734375,
+      379.6585693359375,
+      576.0
+    ],
+    "crop_bbox_xyxy_int": [
+      253,
+      335,
+      379,
+      576
+    ],
+    "box_encode_yxyx_over_1024": [
+      0.3271484375,
+      0.2470703125,
+      0.5625,
+      0.3701171875
+    ],
+    "crop_hw": [
+      241,
+      126
+    ],
+    "square_pad_hw": [
+      241,
+      241
+    ],
+    "appearance_shape": [
+      3,
+      224,
+      224
+    ],
+    "appearance_sha256": "50e2962815ed56fd7fdd2f955e16682a12a0cd2b0d3a66001b0cf61d69a9d47d",
+    "bbox_sha256": "9fe7e85050bb989288161bf6850a6214f61edcb5bf53945453d80e80b8a69a3e",
+    "main_rgb_sha256": "37756a83270f2984d291d86b4dfa7d7195e4db3e467435f06f2244c910f60b85",
+    "masked_crop_rgb_sha256": "70f47dfb860071ed46f9c8564fc5563b04c9d73e8cbe4982f242a7e5003f4b84",
+    "decode_conversation_turns": [
+      1,
+      3
+    ],
+    "supervised_seg_token_positions": [
+      303,
+      329
+    ],
+    "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle017/smoke/prediction_3.npy",
+    "native_output_hw": [
+      1024,
+      1024
+    ],
+    "crop_input_hw": [
+      576,
+      1024
+    ],
+    "mapping": "remove right/bottom padding; nearest binary resize once",
+    "seconds": 0.4447849739808589,
+    "peak_vram_bytes": 16495790080,
+    "mask_decode_output_count": 2,
+    "selected_output_index": 1,
+    "selected_conversation_turn": 3,
+    "injected_appearance_sha256": "50e2962815ed56fd7fdd2f955e16682a12a0cd2b0d3a66001b0cf61d69a9d47d",
+    "injected_bbox_sha256": "9fe7e85050bb989288161bf6850a6214f61edcb5bf53945453d80e80b8a69a3e",
+    "injected_tensor_hashes_verified": true
+  }
+]

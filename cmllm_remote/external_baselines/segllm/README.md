@@ -1,6 +1,6 @@
 # Pinned SegLLM supplied-memory port (Cycle015)
 
-Status: Cycle016 loading returned but failed weight-fidelity acceptance: Transformers4.46.1 renames native gamma parameters to weight names. No forward or prediction. Native ops/imports, checkpoint hashes and preprocessing passed previously. Runner remains unexecuted. See `research_log/CYCLE016_REPORT.md`.
+Status: Cycle017 four-trial weight-faithful wiring smoke passed. Native HF loading requires exact restoration of the two gamma tensors; final target embedding equality is audited without modification. No performance score or full val50 run. See `research_log/CYCLE017_REPORT.md` and runtime receipts.
 
 Only upstream `berkeley-hipie/segllm` revision
 `4593a069f09628ce3a5b46e657f5417fefd7be46` and `Marlo-Z/SegLLM`
@@ -27,10 +27,9 @@ target15_b/B only, seed0. See `research_log/CHATGPT_REVIEW_014.md`.
 | Native output choice | `hipie_utils.py` inference branch | Scores for label0 set to -1, then native predicted-score argmax; CLI takes final round mask. No helmet GT in this branch's selection. Dummy inference target placeholders must never be replaced by actual helmet targets. |
 | Original-resolution export | Final mask and native `mask_data.input_size` | Remove right/bottom native padding, nearest-neighbor binary resize once to frozen original H/W. Requires runtime shape check before CMF export. |
 
-This is a source-derived map, **not runtime proof**. Actual geometry, history
-index, tensor hash, prompt, mask and resource receipts are required before
-claiming the four-trial smoke passed. The draft adapter has not been verified against a loaded
-baseline. The one-hour boundary is approximately 2026-09-18 14:53 +08:00.
+The map originated in Cycle015 source reading. Cycle017 now supplies actual
+weight, history-index, injected-tensor, output-order and export receipts for the
+four frozen trials. This establishes wiring only, not comparative accuracy.
 
 Bootstrap command on the remote project:
 

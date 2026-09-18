@@ -1,0 +1,3 @@
+# Cycle017 complete
+
+Read ../CYCLE017_REPORT.md and port_receipt.json. Two-gamma exact restoration and untouched final target-embedding equality passed in the actual smoke process. Exactly four forwards and four binary720x1280 masks completed, run20260918-165009-cma-cycle017-cuda-path. No score/performance claim. Reuse assets; set existing CUDA_HOME at launch. Full val50 is the single next recommendation, but await new explicit review. Do not rerun the completed four trials or alter prompt/interface/threshold. Raw masks and archive retained on A6000 and local outputs; research_log contains hashes, runtime receipts and full logs.

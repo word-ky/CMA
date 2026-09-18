@@ -1,0 +1,33 @@
+{
+  "cycle": 17,
+  "review_commit": "e9e256a",
+  "status": "FOUR_TRIAL_WEIGHT_FAITHFUL_WIRING_PASSED_NOT_PERFORMANCE",
+  "source_revision": "4593a069f09628ce3a5b46e657f5417fefd7be46",
+  "checkpoint_revision": "095e0637fcba015a02c0686f67b848c79c3cc80b",
+  "native_prompt": "Segment the mining helmet worn by instance 1.[REF:1]",
+  "group": "cf_c9029d27c0483181",
+  "completed_trials": [
+    "clean/A",
+    "clean/B",
+    "target15_b/A",
+    "target15_b/B"
+  ],
+  "model_forward_calls": 4,
+  "accepted_weight_fidelity": true,
+  "gamma_tensors_copied": 2,
+  "target_embedding_copied": false,
+  "all_three_exact_equal": true,
+  "successful_run": "20260918-165009-cma-cycle017-cuda-path",
+  "pre_forward_launch_failure": "CUDA_HOME unset; corrected to existing prefix only",
+  "mask_shape": [
+    720,
+    1280
+  ],
+  "mask_dtype": "uint8",
+  "binary": true,
+  "helmet_target_access": false,
+  "scores_computed": false,
+  "full_val50_started": false,
+  "repeat_successful_inference": false,
+  "next_task_recommendation": "Full frozen val50 clean + target15_b SegLLM comparison; wait for explicit review."
+}

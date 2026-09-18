@@ -1,8 +1,9 @@
 """Load the pinned native model for the baseline health check (no inference).
 
 The loading sequence follows upstream llava/train/inference_cli.py at
-4593a069f09628ce3a5b46e657f5417fefd7be46. Only the CLIP asset location is
-relocated; architecture, checkpoint, dtype and native components are retained.
+4593a069f09628ce3a5b46e657f5417fefd7be46. CLIP is relocated locally;
+the two native gamma tensors omitted by HF's legacy rename are restored
+exactly from the pinned checkpoint. Architecture and native components stay fixed.
 """
 
 import argparse
@@ -42,12 +43,16 @@ def load_native(checkpoint, clip_path, output_dir):
     config = LlavaConfig.from_pretrained(checkpoint)
     original_clip = config.mm_vision_tower
     config.mm_vision_tower = str(clip_path)
-    model = LlavaLlamaForCausalLM.from_pretrained(checkpoint, config=config)
+    model, loading_info = LlavaLlamaForCausalLM.from_pretrained(
+        checkpoint, config=config, output_loading_info=True,
+    )
     model.eval()
     model.initialize_vision_tokenizer(model_args, tokenizer)
     vision_tower = model.get_vision_tower()
     vision_tower.to(dtype=torch.bfloat16, device=training_args.device)
     model.to(dtype=torch.bfloat16, device=training_args.device)
+    from weight_fidelity import restore_and_audit
+    fidelity = restore_and_audit(model, checkpoint, loading_info, output_dir)
     data_args.image_processor = vision_tower.image_processor
     data_args.mask_processor = model.get_segmentator().process_images
     data_args.is_multimodal = True
@@ -57,6 +62,7 @@ def load_native(checkpoint, clip_path, output_dir):
         'clip_snapshot': str(Path(clip_path).resolve()),
         'transport_changes': ['local checkpoint path', 'local cached CLIP path'],
         'reporting_change': 'report_to=none; no external telemetry',
+        'weight_fidelity': fidelity,
     }
 
 

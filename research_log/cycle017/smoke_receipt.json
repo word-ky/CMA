@@ -1,0 +1,662 @@
+{
+  "status": "FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE",
+  "trials": [
+    {
+      "condition": "clean",
+      "entity_id": "pair_dfee24282f912128",
+      "native_prompt": "Segment the mining helmet worn by instance 1.[REF:1]",
+      "semantic_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "rendered_conversation": {
+        "task": "segmentation",
+        "base": "[null]",
+        "conversations": [
+          {
+            "from": "human",
+            "value": "[IMAGE256:clean.png] Segment the miner."
+          },
+          {
+            "from": "gpt",
+            "value": "[MASK-DECODE:clean.png|INFERENCE|NULL]"
+          },
+          {
+            "from": "human",
+            "value": "[MASK-ENCODE:clean.png|INFERENCE|NULL][BOX-ENCODE:clean.png|INFERENCE|NULL]Segment the mining helmet worn by instance 1.",
+            "ind": [
+              1
+            ]
+          },
+          {
+            "from": "gpt",
+            "value": "[MASK-DECODE:clean.png|INFERENCE|NULL]"
+          }
+        ]
+      },
+      "native_indices": [
+        0
+      ],
+      "input_ids_sha256": "1a41cec0b1ecdf36605051859e14ce71036bb04b49c075e10d59922addbe7aa5",
+      "original_hw": [
+        720,
+        1280
+      ],
+      "native_input_hw": [
+        576,
+        1024
+      ],
+      "native_padded_hw": [
+        1024,
+        1024
+      ],
+      "supplied_bbox_xyxy": [
+        602.2440795898438,
+        335.63299560546875,
+        1041.72998046875,
+        720.0
+      ],
+      "resized_bbox_xyxy_float": [
+        481.79526367187503,
+        268.506396484375,
+        833.3839843750001,
+        576.0
+      ],
+      "crop_bbox_xyxy_int": [
+        481,
+        268,
+        833,
+        576
+      ],
+      "box_encode_yxyx_over_1024": [
+        0.26171875,
+        0.4697265625,
+        0.5625,
+        0.8134765625
+      ],
+      "crop_hw": [
+        308,
+        352
+      ],
+      "square_pad_hw": [
+        352,
+        352
+      ],
+      "appearance_shape": [
+        3,
+        224,
+        224
+      ],
+      "appearance_sha256": "d9885da57c4fa7e6275989092baec8dc6969c57b4482096f607024385949a220",
+      "bbox_sha256": "f33631d606758c3ccd2fce23888f66b1cc65db0e491bdf4b64e5b76707db1a23",
+      "main_rgb_sha256": "1c10841b736c97098e620c95aa5d7e61a74a9e97d70d6cf0ea9dcee2cfb353d8",
+      "masked_crop_rgb_sha256": "9b000faa385c2906516716dc802f4c0f93c819b96d506ac867ee0711336e4a9b",
+      "decode_conversation_turns": [
+        1,
+        3
+      ],
+      "supervised_seg_token_positions": [
+        303,
+        329
+      ],
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle017/smoke/prediction_0.npy",
+      "native_output_hw": [
+        1024,
+        1024
+      ],
+      "crop_input_hw": [
+        576,
+        1024
+      ],
+      "mapping": "remove right/bottom padding; nearest binary resize once",
+      "seconds": 1.1671501309610903,
+      "peak_vram_bytes": 16456006656,
+      "mask_decode_output_count": 2,
+      "selected_output_index": 1,
+      "selected_conversation_turn": 3,
+      "injected_appearance_sha256": "d9885da57c4fa7e6275989092baec8dc6969c57b4482096f607024385949a220",
+      "injected_bbox_sha256": "f33631d606758c3ccd2fce23888f66b1cc65db0e491bdf4b64e5b76707db1a23",
+      "injected_tensor_hashes_verified": true
+    },
+    {
+      "condition": "clean",
+      "entity_id": "pair_ee869f891a591f2f",
+      "native_prompt": "Segment the mining helmet worn by instance 1.[REF:1]",
+      "semantic_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "rendered_conversation": {
+        "task": "segmentation",
+        "base": "[null]",
+        "conversations": [
+          {
+            "from": "human",
+            "value": "[IMAGE256:clean.png] Segment the miner."
+          },
+          {
+            "from": "gpt",
+            "value": "[MASK-DECODE:clean.png|INFERENCE|NULL]"
+          },
+          {
+            "from": "human",
+            "value": "[MASK-ENCODE:clean.png|INFERENCE|NULL][BOX-ENCODE:clean.png|INFERENCE|NULL]Segment the mining helmet worn by instance 1.",
+            "ind": [
+              1
+            ]
+          },
+          {
+            "from": "gpt",
+            "value": "[MASK-DECODE:clean.png|INFERENCE|NULL]"
+          }
+        ]
+      },
+      "native_indices": [
+        0
+      ],
+      "input_ids_sha256": "1a41cec0b1ecdf36605051859e14ce71036bb04b49c075e10d59922addbe7aa5",
+      "original_hw": [
+        720,
+        1280
+      ],
+      "native_input_hw": [
+        576,
+        1024
+      ],
+      "native_padded_hw": [
+        1024,
+        1024
+      ],
+      "supplied_bbox_xyxy": [
+        316.9733581542969,
+        419.959716796875,
+        474.5732116699219,
+        720.0
+      ],
+      "resized_bbox_xyxy_float": [
+        253.5786865234375,
+        335.9677734375,
+        379.6585693359375,
+        576.0
+      ],
+      "crop_bbox_xyxy_int": [
+        253,
+        335,
+        379,
+        576
+      ],
+      "box_encode_yxyx_over_1024": [
+        0.3271484375,
+        0.2470703125,
+        0.5625,
+        0.3701171875
+      ],
+      "crop_hw": [
+        241,
+        126
+      ],
+      "square_pad_hw": [
+        241,
+        241
+      ],
+      "appearance_shape": [
+        3,
+        224,
+        224
+      ],
+      "appearance_sha256": "a8794e7f35f555d0a8eb7eaad7a2d199c9f267bab9e63365f201fc7d33acf392",
+      "bbox_sha256": "9fe7e85050bb989288161bf6850a6214f61edcb5bf53945453d80e80b8a69a3e",
+      "main_rgb_sha256": "1c10841b736c97098e620c95aa5d7e61a74a9e97d70d6cf0ea9dcee2cfb353d8",
+      "masked_crop_rgb_sha256": "349c8fc6d66b752538b83b29d67d9ac9530d594bc6a828b4a95766877d52a412",
+      "decode_conversation_turns": [
+        1,
+        3
+      ],
+      "supervised_seg_token_positions": [
+        303,
+        329
+      ],
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle017/smoke/prediction_1.npy",
+      "native_output_hw": [
+        1024,
+        1024
+      ],
+      "crop_input_hw": [
+        576,
+        1024
+      ],
+      "mapping": "remove right/bottom padding; nearest binary resize once",
+      "seconds": 0.4312469130381942,
+      "peak_vram_bytes": 16485084160,
+      "mask_decode_output_count": 2,
+      "selected_output_index": 1,
+      "selected_conversation_turn": 3,
+      "injected_appearance_sha256": "a8794e7f35f555d0a8eb7eaad7a2d199c9f267bab9e63365f201fc7d33acf392",
+      "injected_bbox_sha256": "9fe7e85050bb989288161bf6850a6214f61edcb5bf53945453d80e80b8a69a3e",
+      "injected_tensor_hashes_verified": true
+    },
+    {
+      "condition": "target15_b",
+      "entity_id": "pair_dfee24282f912128",
+      "native_prompt": "Segment the mining helmet worn by instance 1.[REF:1]",
+      "semantic_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "rendered_conversation": {
+        "task": "segmentation",
+        "base": "[null]",
+        "conversations": [
+          {
+            "from": "human",
+            "value": "[IMAGE256:target15_b.png] Segment the miner."
+          },
+          {
+            "from": "gpt",
+            "value": "[MASK-DECODE:target15_b.png|INFERENCE|NULL]"
+          },
+          {
+            "from": "human",
+            "value": "[MASK-ENCODE:target15_b.png|INFERENCE|NULL][BOX-ENCODE:target15_b.png|INFERENCE|NULL]Segment the mining helmet worn by instance 1.",
+            "ind": [
+              1
+            ]
+          },
+          {
+            "from": "gpt",
+            "value": "[MASK-DECODE:target15_b.png|INFERENCE|NULL]"
+          }
+        ]
+      },
+      "native_indices": [
+        0
+      ],
+      "input_ids_sha256": "1a41cec0b1ecdf36605051859e14ce71036bb04b49c075e10d59922addbe7aa5",
+      "original_hw": [
+        720,
+        1280
+      ],
+      "native_input_hw": [
+        576,
+        1024
+      ],
+      "native_padded_hw": [
+        1024,
+        1024
+      ],
+      "supplied_bbox_xyxy": [
+        602.2440795898438,
+        335.63299560546875,
+        1041.72998046875,
+        720.0
+      ],
+      "resized_bbox_xyxy_float": [
+        481.79526367187503,
+        268.506396484375,
+        833.3839843750001,
+        576.0
+      ],
+      "crop_bbox_xyxy_int": [
+        481,
+        268,
+        833,
+        576
+      ],
+      "box_encode_yxyx_over_1024": [
+        0.26171875,
+        0.4697265625,
+        0.5625,
+        0.8134765625
+      ],
+      "crop_hw": [
+        308,
+        352
+      ],
+      "square_pad_hw": [
+        352,
+        352
+      ],
+      "appearance_shape": [
+        3,
+        224,
+        224
+      ],
+      "appearance_sha256": "dce5699c3fbee6a335d576c3ad94311858819696de6144f08a76d398d8ddd051",
+      "bbox_sha256": "f33631d606758c3ccd2fce23888f66b1cc65db0e491bdf4b64e5b76707db1a23",
+      "main_rgb_sha256": "37756a83270f2984d291d86b4dfa7d7195e4db3e467435f06f2244c910f60b85",
+      "masked_crop_rgb_sha256": "155557b72d90c80c5e61a7d3f5a77d8e5771a5200b6dc6ba2e87f2c7d6b2f931",
+      "decode_conversation_turns": [
+        1,
+        3
+      ],
+      "supervised_seg_token_positions": [
+        303,
+        329
+      ],
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle017/smoke/prediction_2.npy",
+      "native_output_hw": [
+        1024,
+        1024
+      ],
+      "crop_input_hw": [
+        576,
+        1024
+      ],
+      "mapping": "remove right/bottom padding; nearest binary resize once",
+      "seconds": 0.4448732789605856,
+      "peak_vram_bytes": 16488704512,
+      "mask_decode_output_count": 2,
+      "selected_output_index": 1,
+      "selected_conversation_turn": 3,
+      "injected_appearance_sha256": "dce5699c3fbee6a335d576c3ad94311858819696de6144f08a76d398d8ddd051",
+      "injected_bbox_sha256": "f33631d606758c3ccd2fce23888f66b1cc65db0e491bdf4b64e5b76707db1a23",
+      "injected_tensor_hashes_verified": true
+    },
+    {
+      "condition": "target15_b",
+      "entity_id": "pair_ee869f891a591f2f",
+      "native_prompt": "Segment the mining helmet worn by instance 1.[REF:1]",
+      "semantic_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+      "rendered_conversation": {
+        "task": "segmentation",
+        "base": "[null]",
+        "conversations": [
+          {
+            "from": "human",
+            "value": "[IMAGE256:target15_b.png] Segment the miner."
+          },
+          {
+            "from": "gpt",
+            "value": "[MASK-DECODE:target15_b.png|INFERENCE|NULL]"
+          },
+          {
+            "from": "human",
+            "value": "[MASK-ENCODE:target15_b.png|INFERENCE|NULL][BOX-ENCODE:target15_b.png|INFERENCE|NULL]Segment the mining helmet worn by instance 1.",
+            "ind": [
+              1
+            ]
+          },
+          {
+            "from": "gpt",
+            "value": "[MASK-DECODE:target15_b.png|INFERENCE|NULL]"
+          }
+        ]
+      },
+      "native_indices": [
+        0
+      ],
+      "input_ids_sha256": "1a41cec0b1ecdf36605051859e14ce71036bb04b49c075e10d59922addbe7aa5",
+      "original_hw": [
+        720,
+        1280
+      ],
+      "native_input_hw": [
+        576,
+        1024
+      ],
+      "native_padded_hw": [
+        1024,
+        1024
+      ],
+      "supplied_bbox_xyxy": [
+        316.9733581542969,
+        419.959716796875,
+        474.5732116699219,
+        720.0
+      ],
+      "resized_bbox_xyxy_float": [
+        253.5786865234375,
+        335.9677734375,
+        379.6585693359375,
+        576.0
+      ],
+      "crop_bbox_xyxy_int": [
+        253,
+        335,
+        379,
+        576
+      ],
+      "box_encode_yxyx_over_1024": [
+        0.3271484375,
+        0.2470703125,
+        0.5625,
+        0.3701171875
+      ],
+      "crop_hw": [
+        241,
+        126
+      ],
+      "square_pad_hw": [
+        241,
+        241
+      ],
+      "appearance_shape": [
+        3,
+        224,
+        224
+      ],
+      "appearance_sha256": "50e2962815ed56fd7fdd2f955e16682a12a0cd2b0d3a66001b0cf61d69a9d47d",
+      "bbox_sha256": "9fe7e85050bb989288161bf6850a6214f61edcb5bf53945453d80e80b8a69a3e",
+      "main_rgb_sha256": "37756a83270f2984d291d86b4dfa7d7195e4db3e467435f06f2244c910f60b85",
+      "masked_crop_rgb_sha256": "70f47dfb860071ed46f9c8564fc5563b04c9d73e8cbe4982f242a7e5003f4b84",
+      "decode_conversation_turns": [
+        1,
+        3
+      ],
+      "supervised_seg_token_positions": [
+        303,
+        329
+      ],
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle017/smoke/prediction_3.npy",
+      "native_output_hw": [
+        1024,
+        1024
+      ],
+      "crop_input_hw": [
+        576,
+        1024
+      ],
+      "mapping": "remove right/bottom padding; nearest binary resize once",
+      "seconds": 0.4447849739808589,
+      "peak_vram_bytes": 16495790080,
+      "mask_decode_output_count": 2,
+      "selected_output_index": 1,
+      "selected_conversation_turn": 3,
+      "injected_appearance_sha256": "50e2962815ed56fd7fdd2f955e16682a12a0cd2b0d3a66001b0cf61d69a9d47d",
+      "injected_bbox_sha256": "9fe7e85050bb989288161bf6850a6214f61edcb5bf53945453d80e80b8a69a3e",
+      "injected_tensor_hashes_verified": true
+    }
+  ],
+  "loading": {
+    "argv": [
+      "--model_name_or_path",
+      "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint",
+      "--load",
+      "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint",
+      "--image_folder",
+      "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle017/smoke",
+      "--mm_use_seg",
+      "True",
+      "--segmentator",
+      "hipie",
+      "--vision_tower",
+      "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/clip-vit-large-patch14",
+      "--mm_projector_type",
+      "mlp2x_gelu",
+      "--tune_mm_mlp_adapter",
+      "False",
+      "--mm_vision_select_layer",
+      "-2",
+      "--mm_use_im_start_end",
+      "False",
+      "--mm_vision_select_feature",
+      "patch",
+      "--mm_use_im_patch_token",
+      "False",
+      "--bf16",
+      "True",
+      "--lora_enable",
+      "False",
+      "--split_loading",
+      "False",
+      "--version",
+      "plain",
+      "--mm_use_gen",
+      "True",
+      "--output_dir",
+      "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle017/smoke",
+      "--per_device_train_batch_size",
+      "1",
+      "--per_device_eval_batch_size",
+      "1",
+      "--model_max_length",
+      "2048",
+      "--dataloader_num_workers",
+      "0",
+      "--lazy_preprocess",
+      "True",
+      "--output_text",
+      "--report_to",
+      "none",
+      "--deepspeed",
+      "./scripts/deepspeed_configs/zero2.json"
+    ],
+    "original_clip_id": "openai/clip-vit-large-patch14",
+    "clip_local_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/clip-vit-large-patch14",
+    "clip_snapshot": "/home/liujianhua/tri-alignment-autodl/shared/hf-cache/hub/models--openai--clip-vit-large-patch14/snapshots/32bd64288804d66eefd0ccbe215aa642df71cc41",
+    "transport_changes": [
+      "local checkpoint path",
+      "local cached CLIP path"
+    ],
+    "reporting_change": "report_to=none; no external telemetry",
+    "weight_fidelity": {
+      "status": "WEIGHT_FIDELITY_PASSED",
+      "native_loading_info": {
+        "missing_keys": [
+          "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_l",
+          "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_v"
+        ],
+        "unexpected_keys": [
+          "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.weight_l",
+          "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.weight_v"
+        ],
+        "mismatched_keys": [],
+        "error_msgs": []
+      },
+      "copied_keys": [
+        "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_l",
+        "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_v"
+      ],
+      "audited_without_assignment": [
+        "model.segmentator.hipie.detr.detr.transformer.tgt_embed.weight"
+      ],
+      "tensors": [
+        {
+          "checkpoint_key": "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_l",
+          "shard": "model-00003-of-00003.safetensors",
+          "raw_shape": [
+            768
+          ],
+          "raw_dtype": "torch.float32",
+          "raw_sha256": "a183a5f550c032f81bbbd2fc81d1eea0835c01f2c0f57b7ccde6353a0be43a7d",
+          "model_key": "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_l",
+          "model_shape": [
+            768
+          ],
+          "model_dtype": "torch.bfloat16",
+          "model_device": "cuda:0",
+          "before_sha256": "b26d6af6a4bf8aae851e4f5dd4869935bc06b466e0c431f233d5156c1904a305",
+          "expected_cast_sha256": "870e9a292003021538864c11a72e118d67887f2a7110531c37c839ff1a08c878",
+          "actual_sha256": "870e9a292003021538864c11a72e118d67887f2a7110531c37c839ff1a08c878",
+          "copied": true,
+          "exact_equal": true
+        },
+        {
+          "checkpoint_key": "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_v",
+          "shard": "model-00003-of-00003.safetensors",
+          "raw_shape": [
+            256
+          ],
+          "raw_dtype": "torch.float32",
+          "raw_sha256": "4afa6970d4a6f324a521084b089049b25c37936ed64757873d629c784091f705",
+          "model_key": "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_v",
+          "model_shape": [
+            256
+          ],
+          "model_dtype": "torch.bfloat16",
+          "model_device": "cuda:0",
+          "before_sha256": "f631494084d21610fbad2f167fe45c5fac559967ac010e34e0b240173b04c4dc",
+          "expected_cast_sha256": "0f750ef2ebd54f24e9a12eeb63bfebbd4b41b3389959eeec1bb648b91d1d5c17",
+          "actual_sha256": "0f750ef2ebd54f24e9a12eeb63bfebbd4b41b3389959eeec1bb648b91d1d5c17",
+          "copied": true,
+          "exact_equal": true
+        },
+        {
+          "checkpoint_key": "model.segmentator.hipie.detr.detr.transformer.tgt_embed.weight",
+          "shard": "model-00003-of-00003.safetensors",
+          "raw_shape": [
+            100,
+            256
+          ],
+          "raw_dtype": "torch.bfloat16",
+          "raw_sha256": "534b009f18b611cddc167bad833cdc6aa4a3aab95b22b6f3f08d450521146f95",
+          "model_key": "model.segmentator.hipie.detr.detr.transformer.tgt_embed.weight",
+          "model_shape": [
+            100,
+            256
+          ],
+          "model_dtype": "torch.bfloat16",
+          "model_device": "cuda:0",
+          "before_sha256": "534b009f18b611cddc167bad833cdc6aa4a3aab95b22b6f3f08d450521146f95",
+          "expected_cast_sha256": "534b009f18b611cddc167bad833cdc6aa4a3aab95b22b6f3f08d450521146f95",
+          "actual_sha256": "534b009f18b611cddc167bad833cdc6aa4a3aab95b22b6f3f08d450521146f95",
+          "copied": false,
+          "exact_equal": true
+        }
+      ],
+      "note": "Native outer load followed by two exact post-cast copies; no other parameter assignment."
+    }
+  },
+  "gpu": "NVIDIA RTX A6000",
+  "smoke_seconds": 4.079893073998392,
+  "gt_access": false,
+  "opened_data_paths": [
+    "/home/liujianhua/.cache/matplotlib/fontlist-v390.json",
+    "/home/liujianhua/tri-alignment-autodl/shared/hf-cache/hub/models--openai--clip-vit-large-patch14/blobs/2c19f6666e0e163c7954df66cb901353fcad088e",
+    "/home/liujianhua/tri-alignment-autodl/shared/hf-cache/hub/models--openai--clip-vit-large-patch14/blobs/5a12a1eb250987a4eee0e3e7d7338c4b22724be1",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/gradio/package.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/gradio_client/package.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/gradio_client/types.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/RN101-quickgelu.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/RN101.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/RN50-quickgelu.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/RN50.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/RN50x16.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/RN50x4.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/ViT-B-16-plus-240.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/ViT-B-16-plus.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/ViT-B-16.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/ViT-B-32-plus-256.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/ViT-B-32-quickgelu.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/ViT-B-32.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/ViT-H-14.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/ViT-H-16.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/ViT-L-14-280.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/ViT-L-14-336.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/ViT-L-14.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/ViT-L-16-320.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/ViT-L-16.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/ViT-g-14.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/timm-efficientnetv2_rw_s.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/timm-resnet50d.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/timm-resnetaa50d.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/timm-resnetblur50.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/timm-swin_base_patch4_window7_224.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/timm-vit_base_patch16_224.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/timm-vit_base_patch32_224.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/open_clip/model_configs/timm-vit_small_patch16_224.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/scripts/deepspeed_configs/zero2.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle015/prepared/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle015/prepared/preparation_receipt.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle015/prepared/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/miner_masks/pair_dfee24282f912128.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/miner_masks/pair_ee869f891a591f2f.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint/config.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint/generation_config.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint/model.safetensors.index.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint/tokenizer_config.json",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_ancillary/bert-base-uncased/config.json"
+  ],
+  "note": "Native history placeholder may yield an unused earlier mask in the same forward; no separate predicted-miner round and no predicted output seeds memory."
+}
