@@ -1,0 +1,18 @@
+{
+  "recorded_utc": "2026-09-18T19:08:26.979634+00:00",
+  "files_sha256": {
+    "PAPER_LAYER1_TABLE.csv": "b7ce6c2f3d79b3d5c35ea46467a9b768f46eb31149fa1827bad3c51f6de64ef7",
+    "PAPER_LAYER1_TABLE.md": "6d70dfc6e356c5edad485112c6229b170f44183889d47f40edcb40c369c07973",
+    "table_verification.json": "141f128b7611a4e1b8ebb57daf13b918b6035d7ab8aae4cbe34760c0e13e643e",
+    "CLAIM_EVIDENCE_LEDGER.md": "233377b55acd57664290bcf33656247e25d9976174b2a55bdc9966c693385ca6",
+    "PAPER_RESULTS_DRAFT.md": "300b8e8206eeda02597b802aa263c7ef23b31e9aa5b80e8034920edd008be5d2",
+    "QUALITATIVE_CASES.json": "b65b9051c21cc08d3c7e6c1f96f88108a64488ac18cddeb8db33946cac57d619",
+    "render_receipt.json": "058335d98935a902036372096fc56e1cc9d88139ac92841d0f00472ea9fb1b5d",
+    "FIGURE_CAPTIONS.md": "c85908441f5f7a4b94caf8812e30f0f685e504d303c7e1b15afb94431c844cf8"
+  },
+  "all_70_remote_input_hashes_unchanged_after_render": true,
+  "ten_local_figure_hashes_match": true,
+  "visual_review": "All five cases inspected on contact sheet; labels, rows and columns readable without clipping; no case substitution.",
+  "model_jobs": 0,
+  "scorer_jobs": 0
+}

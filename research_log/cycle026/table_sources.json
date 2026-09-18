@@ -1,0 +1,94 @@
+{
+  "references": [
+    {
+      "csv_row": 2,
+      "path": "research_log/cycle025/scoring/comparison.json",
+      "sha256": "5075e30e8fe5cc36c4a7c0fea9dd4a268a722ca4ad6ff2c86fcfc9db00a8ac18",
+      "pointer": "/summaries/cma_clean"
+    },
+    {
+      "csv_row": 3,
+      "path": "research_log/cycle025/scoring/comparison.json",
+      "sha256": "5075e30e8fe5cc36c4a7c0fea9dd4a268a722ca4ad6ff2c86fcfc9db00a8ac18",
+      "pointer": "/summaries/cma_target15_b"
+    },
+    {
+      "csv_row": 4,
+      "path": "research_log/cycle025/scoring/comparison.json",
+      "sha256": "5075e30e8fe5cc36c4a7c0fea9dd4a268a722ca4ad6ff2c86fcfc9db00a8ac18",
+      "pointer": "/summaries/segllm_clean"
+    },
+    {
+      "csv_row": 5,
+      "path": "research_log/cycle025/scoring/comparison.json",
+      "sha256": "5075e30e8fe5cc36c4a7c0fea9dd4a268a722ca4ad6ff2c86fcfc9db00a8ac18",
+      "pointer": "/summaries/segllm_target15_b"
+    },
+    {
+      "csv_row": 6,
+      "path": "research_log/cycle022/scoring/comparison.json",
+      "sha256": "3e25de6c3bf90fef7a1164bec2cd68a37b8d0aa94ef63b7f8473d8f46fdd540d",
+      "pointer": "/summaries/cma_clean"
+    },
+    {
+      "csv_row": 7,
+      "path": "research_log/cycle022/scoring/comparison.json",
+      "sha256": "3e25de6c3bf90fef7a1164bec2cd68a37b8d0aa94ef63b7f8473d8f46fdd540d",
+      "pointer": "/summaries/cma_target15_b"
+    },
+    {
+      "csv_row": 8,
+      "path": "research_log/cycle022/scoring/comparison.json",
+      "sha256": "3e25de6c3bf90fef7a1164bec2cd68a37b8d0aa94ef63b7f8473d8f46fdd540d",
+      "pointer": "/summaries/segllm_clean"
+    },
+    {
+      "csv_row": 9,
+      "path": "research_log/cycle022/scoring/comparison.json",
+      "sha256": "3e25de6c3bf90fef7a1164bec2cd68a37b8d0aa94ef63b7f8473d8f46fdd540d",
+      "pointer": "/summaries/segllm_target15_b"
+    },
+    {
+      "csv_row": 10,
+      "path": "research_log/cycle018/scoring/comparison.json",
+      "sha256": "c9f159ef2a744aff8a44eb4ca7a6c63ad977e0f763ebcae777166302b89869a7",
+      "pointer": "/summaries/cma_base_w15_clean"
+    },
+    {
+      "csv_row": 11,
+      "path": "research_log/cycle018/scoring/comparison.json",
+      "sha256": "c9f159ef2a744aff8a44eb4ca7a6c63ad977e0f763ebcae777166302b89869a7",
+      "pointer": "/summaries/cma_base_w15_target15_b"
+    },
+    {
+      "csv_row": 12,
+      "path": "research_log/cycle018/scoring/comparison.json",
+      "sha256": "c9f159ef2a744aff8a44eb4ca7a6c63ad977e0f763ebcae777166302b89869a7",
+      "pointer": "/summaries/segllm_clean"
+    },
+    {
+      "csv_row": 13,
+      "path": "research_log/cycle018/scoring/comparison.json",
+      "sha256": "c9f159ef2a744aff8a44eb4ca7a6c63ad977e0f763ebcae777166302b89869a7",
+      "pointer": "/summaries/segllm_target15_b"
+    }
+  ],
+  "keys": [
+    "target_miou",
+    "cmsa_count",
+    "num_groups",
+    "cmsa",
+    "fidelity_count",
+    "num_references",
+    "memory_fidelity",
+    "ier_count",
+    "num_references",
+    "identity_error_rate",
+    "mean_identity_margin",
+    "median_identity_margin",
+    "num_groups",
+    "num_references"
+  ],
+  "delta_source": "research_log/cycle025/scoring/comparison.json",
+  "delta_pointer": "/method_deltas"
+}

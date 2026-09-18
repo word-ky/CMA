@@ -1,0 +1,243 @@
+{
+  "case_manifest_sha256": "b65b9051c21cc08d3c7e6c1f96f88108a64488ac18cddeb8db33946cac57d619",
+  "figures": [
+    {
+      "group_id": "cf_778571dc8020b5df",
+      "category": "cma_degraded_pass_segllm_fail",
+      "source": "episodes_counterfactual_review.jsonl",
+      "qc": {
+        "counterfactual_id": "cf_778571dc8020b5df",
+        "original_group_record": {
+          "counterfactual_id": "cf_778571dc8020b5df",
+          "image_member": "mining_helmet/images/val/041_00068.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/041_00068-ann3062-6d2e19296c.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_21cb479cc47007c7",
+            "pair_348ceef65e08eac8"
+          ],
+          "helmet_ids": [
+            "mining_helmet-6d2e19296c08",
+            "mining_helmet-67d2ccb8611c"
+          ],
+          "pseudo_miner_ids": [
+            "pm_9aaf1f1bed2b88d8",
+            "pm_a5c9360eb85b0f7e"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9945229063200085,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "png": "research_log/cycle026/figures/01_cf_778571dc8020b5df.png",
+      "png_sha256": "819b733e69d8c507bc2c8e616042df291e6cc91cc3d57b20976c19ee9b790080",
+      "pdf": "research_log/cycle026/figures/01_cf_778571dc8020b5df.pdf",
+      "pdf_sha256": "f58574e9d0ce07df1dafc420f198362cff18e7b267d7d828b311b921b434d07a"
+    },
+    {
+      "group_id": "cf_f6120ac9bd438a95",
+      "category": "cma_degraded_pass_segllm_fail",
+      "source": "episodes_counterfactual_review.jsonl",
+      "qc": {
+        "counterfactual_id": "cf_f6120ac9bd438a95",
+        "original_group_record": {
+          "counterfactual_id": "cf_f6120ac9bd438a95",
+          "image_member": "mining_helmet/images/val/014_00450.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/014_00450-ann722-973d019f1b.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_da4d13d0cd0668d1",
+            "pair_f8716df3909bb9c3"
+          ],
+          "helmet_ids": [
+            "mining_helmet-973d019f1b9a",
+            "mining_helmet-08498f8af99e"
+          ],
+          "pseudo_miner_ids": [
+            "pm_5c07ae22c15c1c22",
+            "pm_72ba0d09d7c2189a"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9898377425316409,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "png": "research_log/cycle026/figures/02_cf_f6120ac9bd438a95.png",
+      "png_sha256": "39fd47a155f5f70e925cf6f54e6f58008c38c50082fdb78cf885d8ce951f2f3c",
+      "pdf": "research_log/cycle026/figures/02_cf_f6120ac9bd438a95.pdf",
+      "pdf_sha256": "f0dbcd58649be706c9eba875ad831de0463bba9998de8e07442f51320e3ebace"
+    },
+    {
+      "group_id": "acceptedpair_18803244d947e2f7",
+      "category": "both_degraded_fail",
+      "source": "accepted_pair_combinations",
+      "qc": {
+        "counterfactual_id": "acceptedpair_18803244d947e2f7",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "png": "research_log/cycle026/figures/03_acceptedpair_18803244d947e2f7.png",
+      "png_sha256": "c0246fed53d20e7cc072d6938fd7bd0ce9c07657ff530718392ecc83ff7066bf",
+      "pdf": "research_log/cycle026/figures/03_acceptedpair_18803244d947e2f7.pdf",
+      "pdf_sha256": "1be016752e0f2fcc0f00072edac3abe1508613e209f78098e47a92c55085354a"
+    },
+    {
+      "group_id": "acceptedpair_b914b3d4a14a9083",
+      "category": "cma_clean_pass_degraded_fail",
+      "source": "accepted_pair_combinations",
+      "qc": {
+        "counterfactual_id": "acceptedpair_b914b3d4a14a9083",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "png": "research_log/cycle026/figures/04_acceptedpair_b914b3d4a14a9083.png",
+      "png_sha256": "d9375338bad5e31ba2a4244eb1820cac6f7e0ae02b00716c2bf3b44d9025cdfe",
+      "pdf": "research_log/cycle026/figures/04_acceptedpair_b914b3d4a14a9083.pdf",
+      "pdf_sha256": "eb4b940b638a1da23810f2b49ba061ad6f2c5edb4fc1d8a9a4ef08d6a6590cbd"
+    },
+    {
+      "group_id": "cf_56a9b1ea716e19d3",
+      "category": "segllm_identity_error_cma_not",
+      "source": "episodes_counterfactual_review.jsonl",
+      "qc": {
+        "counterfactual_id": "cf_56a9b1ea716e19d3",
+        "original_group_record": {
+          "counterfactual_id": "cf_56a9b1ea716e19d3",
+          "image_member": "mining_helmet/images/train/009_00892.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/009_00892-ann2313-c1a93ca4e7.jpg",
+          "split_source": "train",
+          "pair_ids": [
+            "pair_3245d3291f51e0b1",
+            "pair_bc727c6632846fda"
+          ],
+          "helmet_ids": [
+            "mining_helmet-c1a93ca4e75d",
+            "mining_helmet-8ca0cf358a7c"
+          ],
+          "pseudo_miner_ids": [
+            "pm_4da14535248f5332",
+            "pm_dc1818bce7c1916e"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9903118671109827,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "png": "research_log/cycle026/figures/05_cf_56a9b1ea716e19d3.png",
+      "png_sha256": "43bfc0758ab8fe99e0310b6cce3b9ed5453a2c4aeb5578b8411d1f0bbbdbf8da",
+      "pdf": "research_log/cycle026/figures/05_cf_56a9b1ea716e19d3.pdf",
+      "pdf_sha256": "747990dd90043e9ced6c8955e627da76a8eb03522614ac93400a330077684357"
+    }
+  ],
+  "input_hashes_verified": {
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_778571dc8020b5df/clean.png": "5931d0a4fc03253856b89cb2534cfee62a859c5d6981e34f25fc766159dab822",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_21cb479cc47007c7.png": "dd02c4311ac3d7c3fa944dd785bfa6cf71c2f11d10839adab49fd5434671467b",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/helmet_masks/pair_21cb479cc47007c7.png": "59357e71b1327058a875829f4e09e6f3bb67bfd78b2088530d7f14bac80c7ad1",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_778571dc8020b5df_clean_pair_21cb479cc47007c7.npy": "06d09a86ab7a83c286f6c4d2c2c34e5b72bd8fc397590bfcfe3d2a2b6c8c13f4",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/cf_778571dc8020b5df/prediction_0.npy": "df5449b10bc0380780415d62bf30c7a88c644debfc712d2c9e7e2be9a40a5bc1",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_348ceef65e08eac8.png": "50885ecfa3374d12f587306f7721f4dc0c4c9bc44c9424b3a01100c17708f244",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/helmet_masks/pair_348ceef65e08eac8.png": "4777c21e28e10f15a79d5009da788b10ec4863b59e305cc23d0419aab20d2ba2",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_778571dc8020b5df_clean_pair_348ceef65e08eac8.npy": "7cdf67df319e8b56b3bda5e2730d85f2b0dad7b024e837585c18ab832fe90d4b",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/cf_778571dc8020b5df/prediction_1.npy": "647db11b6a99a4ccc1bba9c0e6e59f927e8bbd104024cd0c1f0a82c5312d771d",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_778571dc8020b5df/target15_b.png": "3d8a17c2849f72f061603574353705eff54f72502fbc5881b7d410fbc2dcab60",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_778571dc8020b5df_target15_b_pair_21cb479cc47007c7.npy": "b66ab4668b8084d0c04fe3c764a33f6cb6724ff7f7570488d79e8b158a485fb8",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/cf_778571dc8020b5df/prediction_2.npy": "e3effae3851c0816bfe741065309a2ea11c0daf1428b52928e3b01a1d482ef62",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_778571dc8020b5df_target15_b_pair_348ceef65e08eac8.npy": "f3a54f0b76e9b496320a615fc2d7d089cdf99144cfd37cbd31012b28ca8e9345",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/cf_778571dc8020b5df/prediction_3.npy": "d386cc3c3f075bdc0e65f56bd814cb7bcc13f8a17bdf5c8ef6291845fcd38567",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_f6120ac9bd438a95/clean.png": "9b170bb994bb9f9752d6d09d5bac29b46c2e75e7828573a3d3c8d53095348e99",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_da4d13d0cd0668d1.png": "18edf969a87f573549860d87a97dba2f85875deae70fbd64e178e1c8d249ae62",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/helmet_masks/pair_da4d13d0cd0668d1.png": "479d775437f236c4294455e9f14c2a802ae5fa2559176db6c94cda047c885f29",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_f6120ac9bd438a95_clean_pair_da4d13d0cd0668d1.npy": "6054da0220bcdbea0baa3887fe95baca32a2f54c2f0e012f2de11fa8a82c6ea4",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/cf_f6120ac9bd438a95/prediction_0.npy": "bdcdec2905d62085fe2f1bccd3a97845c447a219ad6ce2bd2d4797ebb742fe16",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_f8716df3909bb9c3.png": "aca4d480beadf378248fd2cb843dad64e13691af4d7e43b06f8508af4f34e4ec",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/helmet_masks/pair_f8716df3909bb9c3.png": "04de277cc009e807318579f3333342a87c623fcf5ed5ff0236f95562f7e90692",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_f6120ac9bd438a95_clean_pair_f8716df3909bb9c3.npy": "9eeba63000e30d46d2eb94884f679732836fd9574999380fee970ca2ae346358",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/cf_f6120ac9bd438a95/prediction_1.npy": "3e848e4bbc5c195df9ffa58642e1e7e2d398fdfd3ad66ff81671e5e34a33687a",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_f6120ac9bd438a95/target15_b.png": "73bb40e90fe9c14a807f91c93d4f3c8bb83f26bfd53edacbd05460dd76c4d82e",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_f6120ac9bd438a95_target15_b_pair_da4d13d0cd0668d1.npy": "c4f9554b9959f8c6f27132810f5ad04da25545f056e23c753c635987a37fe5aa",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/cf_f6120ac9bd438a95/prediction_2.npy": "538cb0df1fa58b26c63fccbfa1ff04ae81600206133fc5ddb6747a576e70d0f1",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_f6120ac9bd438a95_target15_b_pair_f8716df3909bb9c3.npy": "a62f89ffe8dca8a7743ad400b92ffeb7f1d1b15c59dda05920ffdcd32dd9bf26",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/cf_f6120ac9bd438a95/prediction_3.npy": "a4ae75c58961f91994605397ff037dcf88c38da8d3cc8762992bed9fcd893a0c",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_18803244d947e2f7/clean.png": "cc8b539eaa13c24bbc1e3904ffc5c175bd79bbb1dbc04d0e1512c9fe4e7ece60",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_20e0ca585eed85e3.png": "6ae051d3d7a5af80b462df15e3948888459aca4ec002497a10a85d8eb0c28e38",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/helmet_masks/pair_20e0ca585eed85e3.png": "0c50b2bd70605d2cc7f379ddb82db87e072f73b8e8be0b8d2e108b842af7e110",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18803244d947e2f7_clean_pair_20e0ca585eed85e3.npy": "2e9ca29ca8f99a0e72ca003532bda4df758f5419a2e2904586df9861a2497740",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/acceptedpair_18803244d947e2f7/prediction_0.npy": "924b69dbf39a6965e1d9257816d3110e68f03eac1945a0a1f48f3c00ac275782",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_60e47b5cca7db0ac.png": "6ca1ba4f763da4a7240d55226eb12623958b394ea9c673ad7b3365f5615fc0fc",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/helmet_masks/pair_60e47b5cca7db0ac.png": "6ec5fa50964f79b2067fdb5e5b93e6d97aa1c95e84b9a12d35d3b1a6c7787175",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18803244d947e2f7_clean_pair_60e47b5cca7db0ac.npy": "8d7468552adcccb2f7047f157583ed439b120b6af03203f5c1738b5f630c24a2",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/acceptedpair_18803244d947e2f7/prediction_1.npy": "09128a1f4e617f3b0b19c6aa4b5475d731f5e2e5a2f9537fd15fc8c7a9cc9b19",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_18803244d947e2f7/target15_b.png": "9d36712bbb60afcc9e3e560e630c63f2644f75c9434c76bdbf0a72235b3e1f84",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18803244d947e2f7_target15_b_pair_20e0ca585eed85e3.npy": "0055ba27d29bb2f7fda5f67757da2f4e84a7534b76817fb39033bf58ce88c7ba",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/acceptedpair_18803244d947e2f7/prediction_2.npy": "eb14129b0f4a6ceff82f34fb02569b712bce9e5a75b02636abad04e270ca2cfc",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18803244d947e2f7_target15_b_pair_60e47b5cca7db0ac.npy": "7f9246367f67fabb1b6855557959f1020292ab21df7f9f5c8dd051c2aaeb5ec1",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/acceptedpair_18803244d947e2f7/prediction_3.npy": "060a6ded0285ac93a345708de869c47dda7a64b39b07a943041e0d3761482d10",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_b914b3d4a14a9083/clean.png": "07de4cefd0f547cafa47ba85e1d77542551c10f56559fbca00c8e8de14b04930",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_1b3903f27c3c4b20.png": "ef45f441386fb7a50d617f88310ea0f3846a1566b2624d45da5cbe2aad9943af",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/helmet_masks/pair_1b3903f27c3c4b20.png": "d1d06e168288384a83771f35527d1b3fbe0a5c80165c7fcc8779f05b429a05e4",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_b914b3d4a14a9083_clean_pair_1b3903f27c3c4b20.npy": "3bc801e7396274f3fb849ca5d13f04c71f312a5895e6c24fc084ae20b22e9154",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/acceptedpair_b914b3d4a14a9083/prediction_0.npy": "8d6babf83968ff64a16a820aad6528efb64951352c49a7209b37ebd22d349d11",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_892a74d8f93ae161.png": "20d42c4eb544db1ec0652f452dd1927c7a82b858e22c7155893f02a0b51adcdc",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/helmet_masks/pair_892a74d8f93ae161.png": "396cc304f9b00350d376b30f090bfffe5036f126d6f972b35192bc7977ff0d21",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_b914b3d4a14a9083_clean_pair_892a74d8f93ae161.npy": "cb1064675cf7812f0a02a61de0b1bfdc2f7929b1de72ec68a0f0b71fb68c4507",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/acceptedpair_b914b3d4a14a9083/prediction_1.npy": "f55789a5243b6ebd10d4ec237fe8c25a31559e401ab8ac22e9d2bc543c9964c7",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_b914b3d4a14a9083/target15_b.png": "cd2bce17b876fe3ed056d7ba0c308b2fbbc01dc3f93b720ecd4cad4a8dab6aa3",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_b914b3d4a14a9083_target15_b_pair_1b3903f27c3c4b20.npy": "53fc80724fc163c7330369aa019c1e2ea47b864ac8a2d868bbe7c811a57cd410",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/acceptedpair_b914b3d4a14a9083/prediction_2.npy": "8bf7c812f3560fe3fd992d962be89e1e8fabe603f75af479fcd7becc255139a6",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_b914b3d4a14a9083_target15_b_pair_892a74d8f93ae161.npy": "c867e3fc72c3eb1704b8e331e4bb61c8f9a1dbe2c29694b2ac8560546312817b",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/acceptedpair_b914b3d4a14a9083/prediction_3.npy": "b0e290267c4a025dc04950c077974c11f2616d39e0a8c13696a88ec2a66c9396",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_56a9b1ea716e19d3/clean.png": "283f1dd28a4b8333eb612fc5cc58c856df53e1e7b960bd3caec1ec937707a274",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_3245d3291f51e0b1.png": "77404e4e09aec34c229034f64138865ab537f1a6862190c199bc47ac6d0752be",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/helmet_masks/pair_3245d3291f51e0b1.png": "f4b50452657808bba82cc817e2822d50fa11e73a068d6f2eaab58d65680acecc",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_56a9b1ea716e19d3_clean_pair_3245d3291f51e0b1.npy": "1b6a24ae8fc38ce7d5ca06b5d0cdb65ff35cf1eae6abf27c5e7f7f6258199f80",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/cf_56a9b1ea716e19d3/prediction_0.npy": "6f193df1deefe11a435c042a0691db971f82a47e5a903b7a5aec978405b3cacf",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_bc727c6632846fda.png": "e45718ef9b87804df2fa495a9fcca56db02af7ef3963feb6a1c484fb995594db",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/helmet_masks/pair_bc727c6632846fda.png": "53136513cd9b79d1e8966e8090c7fdfbef4d4bb85af663042a497d622c1b7939",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_56a9b1ea716e19d3_clean_pair_bc727c6632846fda.npy": "4eb7edb21ace3865b350430f4979b827f48cd38ea0a7638a4be5ceea4dfcde30",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/cf_56a9b1ea716e19d3/prediction_1.npy": "45eec46761c46b96092bf032d910c380e57e5a78e417ff0eefb9fbc80a748452",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_56a9b1ea716e19d3/target15_b.png": "4bebb31d417ce5beca4b3fe428133304bea6fea6c24345bd434f1d9e4f0ac360",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_56a9b1ea716e19d3_target15_b_pair_3245d3291f51e0b1.npy": "51adeb9e2b643a14fedf548acbae855bf18b8f3bece78e1950aa77d572c4b00e",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/cf_56a9b1ea716e19d3/prediction_2.npy": "89ccbfa6b492bf58a69b740b0883c1c88e901889982fe004dfb1e4cc938cf934",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_56a9b1ea716e19d3_target15_b_pair_bc727c6632846fda.npy": "91adc59750142b8ac5b932cf164b418fcfdb023abb242c6b4145f82cce0bed00",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/segllm/cf_56a9b1ea716e19d3/prediction_3.npy": "776f519bd9e80183271ffdb433b69328a2e17d912e4c159ae29385ce135665a6"
+  },
+  "model_calls": 0,
+  "scorer_calls": 0,
+  "mask_files_modified": false,
+  "display": "Full-frame saved observations; 45% identity-colour alpha mask overlays, no brightening or geometry changes. IoU annotations copied from frozen reports."
+}

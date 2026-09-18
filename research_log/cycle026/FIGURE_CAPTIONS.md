@@ -1,0 +1,11 @@
+# Qualitative panels: captions and usage
+
+Shared caption: **Counterfactual supplied-memory use on the frozen Cycle025 set.** Columns show the fixed observation, supplied miner memory, corresponding helmet pseudo-target, CMA output and SegLLM output. Each condition is repeated with memory A and B; blue and orange identify the intended reference. All panels show full frames and saved binary masks with a display-only alpha overlay. IoU labels are copied from frozen per-reference records. No masks, observations, scores or quantitative memberships were changed. Cases were selected categorically in the frozen manifest order, with previously selected groups skipped; these illustrations are not a representative random sample or a new aggregate evaluation. Targets and memories are reconstructed pseudo masks.
+
+1. `cf_778571dc8020b5df`: first unused group where degraded CMA passes the strict two-identity CMSA criterion and SegLLM fails. Historical review group; incomplete clean-episode acceptance remains disclosed.
+2. `cf_f6120ac9bd438a95`: second group under the same rule. Historical review group with the same episode-QC limitation. The case is selected by manifest order, not by the size of the performance gap.
+3. `acceptedpair_18803244d947e2f7`: first unused group where both methods fail degraded CMSA. This accepted-pair combination illustrates a remaining hard case; its failure remains in all quantitative results.
+4. `acceptedpair_b914b3d4a14a9083`: first unused group where CMA passes clean CMSA but fails under degradation. This accepted-pair combination illustrates the clean-to-degraded limitation rather than a claim of reduced sensitivity.
+5. `cf_56a9b1ea716e19d3`: first unused group containing a degraded SegLLM identity-error reference for which the corresponding CMA reference is not an identity error. Absence of an identity error is not equivalent to CMSA success or high IoU; the low-IoU CMA reference remains visible. Historical review group with incomplete clean-episode acceptance.
+
+Panel filenames and file hashes are listed in `render_receipt.json`; exact group/identity outcomes, source records and QC flags are in `QUALITATIVE_CASES.json`. Use the PDFs for manuscript assembly and PNGs for review. The contact sheet is a QA preview only.
