@@ -1,0 +1,484 @@
+{
+  "status": "FAIL",
+  "criteria": {
+    "miou_gain_at_least_0_02": false,
+    "cmsa_non_decrease": false,
+    "at_least_three_fail_to_pass": false,
+    "at_most_one_pass_to_fail": false
+  },
+  "full": {
+    "num_groups": 50,
+    "num_references": 100,
+    "num_pairs": 50,
+    "target_miou": 0.6911134046687633,
+    "memory_fidelity": 0.89,
+    "cmsa": 0.58,
+    "identity_error_rate": 0.03,
+    "mean_identity_margin": 0.6629313123212343,
+    "median_identity_margin": 0.8474629071282657
+  },
+  "msp": {
+    "num_groups": 50,
+    "num_references": 100,
+    "num_pairs": 50,
+    "target_miou": 0.6469973962691509,
+    "memory_fidelity": 0.94,
+    "cmsa": 0.52,
+    "identity_error_rate": 0.02,
+    "mean_identity_margin": 0.6271063380659115,
+    "median_identity_margin": 0.802046841037406
+  },
+  "msp_minus_full": {
+    "target_miou": -0.04411600839961238,
+    "cmsa": -0.05999999999999994,
+    "memory_fidelity": 0.04999999999999993,
+    "mean_identity_margin": -0.03582497425532272,
+    "median_identity_margin": -0.045416066090859686,
+    "identity_error_rate": -0.009999999999999998
+  },
+  "cmsa_transitions": {
+    "fail_to_pass": 2,
+    "pass_to_fail": 5,
+    "pass_to_pass": 24,
+    "fail_to_fail": 19
+  },
+  "oracle_union_ANALYSIS_ONLY": {
+    "rule": "per-group GT CMSA first, then GT group mIoU, tie full; not deployable",
+    "summary": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.7121350513152181,
+      "memory_fidelity": 0.93,
+      "cmsa": 0.62,
+      "identity_error_rate": 0.02,
+      "mean_identity_margin": 0.6941770787476513,
+      "median_identity_margin": 0.8474629071282657
+    },
+    "choices": [
+      {
+        "group_id": "cf_c9029d27c0483181",
+        "choice": "MSP",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.42538274431249107,
+        "miou_msp": 0.5253635277890025
+      },
+      {
+        "group_id": "cf_1a8999420d2a3bdc",
+        "choice": "full",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.6604557157413053,
+        "miou_msp": 0.599774129985363
+      },
+      {
+        "group_id": "cf_33700f0218d6a1db",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.90842976063003,
+        "miou_msp": 0.8973707941517812
+      },
+      {
+        "group_id": "cf_3eb4e7afbcbc4783",
+        "choice": "full",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.43986254295532645,
+        "miou_msp": 0.42248062015503873
+      },
+      {
+        "group_id": "cf_86843243c79d2603",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.7315048166394218,
+        "miou_msp": 0.5030227755722774
+      },
+      {
+        "group_id": "cf_646171cbe278fb9c",
+        "choice": "MSP",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.3957999364498189,
+        "miou_msp": 0.5605609114749178
+      },
+      {
+        "group_id": "cf_4208e726fab4891a",
+        "choice": "MSP",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.9111269248255549,
+        "miou_msp": 0.9137621260991673
+      },
+      {
+        "group_id": "cf_803b6a694535ec15",
+        "choice": "full",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.6363980786245487,
+        "miou_msp": 0.5706969196925424
+      },
+      {
+        "group_id": "cf_4cd720671d92fd2e",
+        "choice": "MSP",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.4781420765027322,
+        "miou_msp": 0.47886555767657485
+      },
+      {
+        "group_id": "cf_03e0f4f2dd886689",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.9482740445712444,
+        "miou_msp": 0.9247952264195218
+      },
+      {
+        "group_id": "cf_b9271168b2a4cbf9",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.9349832446653745,
+        "miou_msp": 0.9272842831319155
+      },
+      {
+        "group_id": "cf_5ffe3b4241e31e97",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.7693576686882557,
+        "miou_msp": 0.7026174282311105
+      },
+      {
+        "group_id": "cf_eccb4c9b85399b90",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.9283118349619979,
+        "miou_msp": 0.9215150429325116
+      },
+      {
+        "group_id": "cf_273565c8b4382765",
+        "choice": "MSP",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.5425921336828424,
+        "miou_msp": 0.5901084296956038
+      },
+      {
+        "group_id": "cf_371758320d780b3d",
+        "choice": "MSP",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.7755930914634247,
+        "miou_msp": 0.8610908953054929
+      },
+      {
+        "group_id": "cf_afb2ea760a625f27",
+        "choice": "full",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.3832874391018852,
+        "miou_msp": 0.3794725005111429
+      },
+      {
+        "group_id": "cf_69928ab61b82fb85",
+        "choice": "full",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.5049033788887364,
+        "miou_msp": 0.48480700281383315
+      },
+      {
+        "group_id": "cf_e55b9138be80eb81",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.7676817569860468,
+        "miou_msp": 0.5437134920396491
+      },
+      {
+        "group_id": "cf_e49d9a50bdb728a9",
+        "choice": "MSP",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.8020065044803659,
+        "miou_msp": 0.8912924125269215
+      },
+      {
+        "group_id": "cf_99b0215fccf3f63b",
+        "choice": "full",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.6405039123422571,
+        "miou_msp": 0.309009859972887
+      },
+      {
+        "group_id": "cf_84320e41bc5af656",
+        "choice": "MSP",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.45645898484484004,
+        "miou_msp": 0.46038774533269505
+      },
+      {
+        "group_id": "cf_26d7eeeecd43037a",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.7738288101562809,
+        "miou_msp": 0.6171939757490217
+      },
+      {
+        "group_id": "cf_0774290cbf004c7d",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.9505373514581218,
+        "miou_msp": 0.8022503324295174
+      },
+      {
+        "group_id": "cf_2a89e76f158b6a5b",
+        "choice": "full",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.4694284711980412,
+        "miou_msp": 0.22540317923258507
+      },
+      {
+        "group_id": "cf_8065502af4eb2535",
+        "choice": "full",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.695214165655491,
+        "miou_msp": 0.5150531018051416
+      },
+      {
+        "group_id": "cf_ae56647f7b0ed80f",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.8936867806863502,
+        "miou_msp": 0.5245790333810381
+      },
+      {
+        "group_id": "cf_aa391b9836fd78ee",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.9075544712525285,
+        "miou_msp": 0.8939254779964585
+      },
+      {
+        "group_id": "cf_02e38a9e5a19c360",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.8651849714810873,
+        "miou_msp": 0.8384630235355207
+      },
+      {
+        "group_id": "cf_01ad18abfbf5459e",
+        "choice": "full",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.6544216580036375,
+        "miou_msp": 0.6237823099953946
+      },
+      {
+        "group_id": "cf_427af9a92fe7f6cd",
+        "choice": "MSP",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.45959000942507067,
+        "miou_msp": 0.47126030624263837
+      },
+      {
+        "group_id": "cf_4165dbded0d67baf",
+        "choice": "full",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.29008152173913043,
+        "miou_msp": 0.2528269324258629
+      },
+      {
+        "group_id": "cf_5495414a54138233",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.8109356187463422,
+        "miou_msp": 0.6835447553943184
+      },
+      {
+        "group_id": "cf_cd5bf6d06a4f5432",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.8376365497007148,
+        "miou_msp": 0.7544383935588375
+      },
+      {
+        "group_id": "cf_149c5aadeca92d12",
+        "choice": "full",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.5437478209915708,
+        "miou_msp": 0.5394760454746207
+      },
+      {
+        "group_id": "cf_3c4f4b5cb4bb1d77",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.8243979755805295,
+        "miou_msp": 0.7496004338978921
+      },
+      {
+        "group_id": "cf_f3d2d3f12a7aead4",
+        "choice": "MSP",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.8249363435749448,
+        "miou_msp": 0.8259489206954109
+      },
+      {
+        "group_id": "cf_5e9c50c7e24dfd0f",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.9558848075207922,
+        "miou_msp": 0.9416029886228562
+      },
+      {
+        "group_id": "cf_1e7d8cfc1625c2da",
+        "choice": "MSP",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.013474770642201836,
+        "miou_msp": 0.2087893977153554
+      },
+      {
+        "group_id": "cf_2e36401e0d114aa8",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.8078391274710293,
+        "miou_msp": 0.7764727158278403
+      },
+      {
+        "group_id": "cf_1a115ce7f6b388e4",
+        "choice": "MSP",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.45491594498217014,
+        "miou_msp": 0.7970267026375569
+      },
+      {
+        "group_id": "cf_289b3fd7110690be",
+        "choice": "full",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.3408064246277397,
+        "miou_msp": 0.3112122123627613
+      },
+      {
+        "group_id": "cf_b88a50d6609f6487",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.781623125339176,
+        "miou_msp": 0.6854550203903405
+      },
+      {
+        "group_id": "cf_6b395dbd9b45c431",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.9259093803670326,
+        "miou_msp": 0.9197360678435444
+      },
+      {
+        "group_id": "cf_4a66376fb7c719e0",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.9200694536491605,
+        "miou_msp": 0.8960862798146281
+      },
+      {
+        "group_id": "cf_c55d2b77e1c81163",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.8089064563019124,
+        "miou_msp": 0.7906713670764851
+      },
+      {
+        "group_id": "cf_a61afd1b0775da52",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.8788850963361804,
+        "miou_msp": 0.8259397464379723
+      },
+      {
+        "group_id": "cf_dd011c16faf2a9e3",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.8860323740048439,
+        "miou_msp": 0.698895678306561
+      },
+      {
+        "group_id": "cf_5e913799bf202735",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 1.0,
+        "miou_full": 0.7944699334957863,
+        "miou_msp": 0.7097261326225457
+      },
+      {
+        "group_id": "cf_8c490484f166a75a",
+        "choice": "MSP",
+        "cmsa_full": 0.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.4062108466081976,
+        "miou_msp": 0.41285571092605516
+      },
+      {
+        "group_id": "cf_91c35cfa78c4abd9",
+        "choice": "full",
+        "cmsa_full": 1.0,
+        "cmsa_msp": 0.0,
+        "miou_full": 0.7384033810836015,
+        "miou_msp": 0.5896618895488361
+      }
+    ]
+  },
+  "oracle_miou_ANALYSIS_ONLY": {
+    "rule": "per-group GT mIoU maximum; not deployable",
+    "summary": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.7121350513152181,
+      "memory_fidelity": 0.93,
+      "cmsa": 0.62,
+      "identity_error_rate": 0.02,
+      "mean_identity_margin": 0.6941770787476513,
+      "median_identity_margin": 0.8474629071282657
+    }
+  },
+  "paired_original_inputs_and_masks_equal": true,
+  "new_training_runs": 0,
+  "msp_validation_runs": 1,
+  "box_expansion": 1.0,
+  "action_complementarity": {
+    "union_miou_gain": 0.021021646646454895,
+    "cmsa_recovery_opportunities": 2,
+    "passes": false
+  }
+}

@@ -326,6 +326,7 @@ class LISAForCausalLM(LlavaLlamaForCausalLM):
         ref_valids_list: List[torch.FloatTensor] = None,
         ref_images_clip_list: List[torch.FloatTensor] = None,
         mask_weights_list: List[torch.FloatTensor] = None,
+        spatial_memory_boxes_list: List[torch.FloatTensor] = None,
         inference: bool = False,
         **kwargs,
     ):
@@ -510,7 +511,8 @@ class LISAForCausalLM(LlavaLlamaForCausalLM):
                 dense_embeddings,
             ) = self.model.visual_model.prompt_encoder(
                 points=None,
-                boxes=None,
+                boxes=(spatial_memory_boxes_list[i].to(device=text_embeds.device)
+                       if spatial_memory_boxes_list is not None else None),
                 masks=None,
                 text_embeds=text_embeds,
             )

@@ -1,0 +1,37 @@
+{
+  "boxes_plus_text_supported_without_modification": true,
+  "sparse_shape": [
+    4,
+    4,
+    8
+  ],
+  "existing_text_tokens_preserved": true,
+  "resized_boxes": [
+    [
+      0.0,
+      0.0,
+      1024.0,
+      512.0
+    ],
+    [
+      0.0,
+      0.0,
+      1024.0,
+      512.0
+    ],
+    [
+      102.4000015258789,
+      153.60000610351562,
+      204.8000030517578,
+      307.20001220703125
+    ],
+    [
+      102.4000015258789,
+      153.60000610351562,
+      204.8000030517578,
+      307.20001220703125
+    ]
+  ],
+  "ResizeLongestSide_and_border_numeric_test": "PASS",
+  "prompt_encoder_sha256": "860343d95a1f0e419ec3b172b9ca673a4c92162e7357e9697adf43625c18e60a"
+}

@@ -74,3 +74,56 @@ def test_build_item_crop_preserves_export_geometry_and_ignores_helmet_values(tmp
     cv2.imwrite('target.png',255-target)
     second=ns['build_item'](cf,pairs,Clip(),Resize(),64,'v1_multiround',reobservation_receipt={})[0]
     for i in (1,2,4,5,9,10,11,12,13):torch.testing.assert_close(item[i],second[i])
+
+
+def test_msp_keeps_full_frame_and_removes_target_value_dependence(tmp_path, monkeypatch):
+    import ast
+    import cv2
+    import torch
+    import torch.nn.functional as F
+    from counterfactual_export import condition_image, group_seed
+    from memory_spatial_prompt import inference_shape_only_targets, spatial_memory_boxes
+    monkeypatch.chdir(tmp_path)
+    path=Path(__file__).resolve().parents[1]/'scripts/eval_mr_ref_counterfactual_v0.py'
+    tree=ast.parse(path.read_text())
+    tree.body=[n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name not in ('main','predict_item')]
+    ns=dict(np=np,cv2=cv2,torch=torch,F=F,condition_image=condition_image,group_seed=group_seed)
+    exec(compile(tree,str(path),'exec'),ns)
+    ns['build_multiround_conversation']=lambda a,b:'fixed prompt'
+    # No crop functions exist in this namespace: the full-frame path must not call them.
+    class Clip:
+        def preprocess(self,image,return_tensors):
+            return {'pixel_values':torch.from_numpy(cv2.resize(image,(8,8))).permute(2,0,1)[None]}
+    class Resize:
+        def apply_image(self,image):
+            return cv2.resize(image,(64,32))
+        def apply_boxes(self,boxes,image_hw):
+            assert image_hw==(32,64)
+            return boxes.copy()
+    image=np.full((32,64,3),120,dtype=np.uint8)
+    ref=np.zeros((32,64),dtype=np.uint8);ref[4:28,8:56]=255
+    cv2.imwrite('image.png',image);cv2.imwrite('ref.png',ref);cv2.imwrite('target.png',ref)
+    cf={'pair_ids':['a'],'image_path':'image.png','counterfactual_id':'g','same_round2_query':'helmet'}
+    pairs={'a':{'miner_bbox_xyxy':[8,4,56,28],'miner_mask_path':'ref.png','helmet_mask_path':'target.png'}}
+    full,rgb,_,_,indices=ns['build_item'](cf,pairs,Clip(),Resize(),64,'v1_multiround',condition='target15_b',seed=0)
+    msp=inference_shape_only_targets(full,indices)
+    boxes=spatial_memory_boxes([pairs['a']['miner_bbox_xyxy']],rgb.shape[:2],Resize(),True)
+    torch.testing.assert_close(boxes,torch.tensor([[8,4,56,28],[8,4,56,28]],dtype=torch.float32))
+    for i in (1,2,9,10,11,12,13):torch.testing.assert_close(full[i],msp[i])
+    np.testing.assert_array_equal(rgb,condition_image(cv2.cvtColor(image,cv2.COLOR_BGR2RGB),'target15_b',group_seed('g',0)))
+    cv2.imwrite('target.png',255-ref)
+    changed=ns['build_item'](cf,pairs,Clip(),Resize(),64,'v1_multiround',condition='target15_b',seed=0)[0]
+    changed=inference_shape_only_targets(changed,indices)
+    for i in (1,2,4,5,9,10,11,12,13):torch.testing.assert_close(msp[i],changed[i])
+
+
+def test_spatial_boxes_clip_then_reuse_resize_and_keep_identity_order():
+    import torch
+    from memory_spatial_prompt import spatial_memory_boxes
+    class Resize:
+        def apply_boxes(self,boxes,image_hw):
+            assert image_hw==(100,200)
+            np.testing.assert_array_equal(boxes,[[0,0,200,100],[20,30,40,60]])
+            return boxes*np.array([5.12,5.12,5.12,5.12])
+    result=spatial_memory_boxes([[-1,-2,201,102],[20,30,40,60]],(100,200),Resize(),True)
+    torch.testing.assert_close(result,torch.tensor([[0,0,1024,512],[0,0,1024,512],[102.4,153.6,204.8,307.2],[102.4,153.6,204.8,307.2]]))

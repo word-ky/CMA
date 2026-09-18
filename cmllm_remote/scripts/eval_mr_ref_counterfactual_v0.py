@@ -7,6 +7,7 @@ from pathlib import Path
 
 from counterfactual_export import condition_image, export_group, group_seed
 from memory_reobservation import memory_roi, crop_to_roi, bbox_in_roi, restore_mask
+from memory_spatial_prompt import spatial_memory_boxes, inference_shape_only_targets
 
 import cv2
 import numpy as np
@@ -336,7 +337,7 @@ def build_item(
     return item, original_rgb, np.stack(original_targets, axis=0), np.stack(original_refs, axis=0), eval_pred_indices
 
 
-def predict_item(model, item, tokenizer, dtype, eval_pred_indices):
+def predict_item(model, item, tokenizer, dtype, eval_pred_indices, spatial_boxes=None):
     batch = collate_fn([item], tokenizer=tokenizer, conv_type="llava_v1", use_mm_start_end=True, local_rank=0)
     for key in ["images", "images_clip", "input_ids", "labels", "attention_masks", "offset"]:
         batch[key] = batch[key].cuda(non_blocking=True)
@@ -344,6 +345,8 @@ def predict_item(model, item, tokenizer, dtype, eval_pred_indices):
         batch[key] = [x.cuda(non_blocking=True) if isinstance(x, torch.Tensor) else x for x in batch[key]]
     batch["images"] = batch["images"].to(dtype=dtype)
     batch["images_clip"] = batch["images_clip"].to(dtype=dtype)
+    if spatial_boxes is not None:
+        batch["spatial_memory_boxes_list"] = [spatial_boxes.cuda(non_blocking=True)]
     with torch.no_grad():
         outputs = model(**batch)
     pred_masks_all = outputs["pred_masks"][0].detach().float().cpu().numpy() > 0
@@ -355,6 +358,7 @@ def main():
     parser.add_argument("--model", required=True)
     parser.add_argument("--adaptation-checkpoint", default=None)
     parser.add_argument("--memory-reobservation", action="store_true")
+    parser.add_argument("--memory-spatial-prompt", action="store_true")
     parser.add_argument("--counterfactual-jsonl", required=True)
     parser.add_argument("--pairs-jsonl", required=True)
     parser.add_argument("--out-dir", required=True)
@@ -511,6 +515,13 @@ def main():
             "inverse": "native_crop_mask_pasted_to_original_zero_outside",
             "degradation": "full_frame_before_crop_same_group_seed",
         }
+    if args.memory_spatial_prompt:
+        provenance["memory_spatial_prompt"] = {
+            "source": "supplied_miner_bbox_only_no_expansion",
+            "coordinates": "original_pixel_xyxy_clip_then_ResizeLongestSide.apply_boxes",
+            "rows": "same_miner_box_for_both_seg_rows_in_v1_multiround",
+            "full_frame_unchanged": True,
+        }
     correct_ious = []
     wrong_ious = []
     rcs_values = []
@@ -549,7 +560,15 @@ def main():
                 args.conversation_mode,
                 **build_options,
             )
-            pred_masks = predict_item(model, item, tokenizer, dtype, eval_pred_indices)
+            boxes = None
+            if args.memory_spatial_prompt:
+                boxes = spatial_memory_boxes(
+                    [pairs_by_id[p]['miner_bbox_xyxy'] for p in cf['pair_ids']],
+                    image_rgb.shape[:2], transform, args.conversation_mode == 'v1_multiround',
+                )
+                item = inference_shape_only_targets(item, eval_pred_indices)
+                observation_provenance = {**provenance, "sam_spatial_boxes": boxes.tolist()}
+            pred_masks = predict_item(model, item, tokenizer, dtype, eval_pred_indices, boxes)
         if enhance_image is not None:
             image_dir = out_dir / "enhanced_images"
             image_dir.mkdir(exist_ok=True)
