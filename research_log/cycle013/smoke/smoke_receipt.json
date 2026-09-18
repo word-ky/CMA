@@ -1,0 +1,181 @@
+{
+  "group_id": "cf_d0fa96077bf85e0a",
+  "initialization": {
+    "model": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/cmllm_lisa_plus_mr_ref_v2b_rank_long2ep_w15_lr5e6_merged_hf",
+    "vision_tower": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/clip-vit-large-patch14",
+    "jsonl": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/train_grouped_restored.jsonl",
+    "out_dir": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle013/smoke",
+    "smoke_only": true,
+    "vision_pretrained": null,
+    "precision": "bf16",
+    "image_size": 1024,
+    "model_max_length": 512,
+    "seed": 20260528,
+    "degradation_seed": 0,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "clip_norm": 1.0,
+    "steps": 300,
+    "objective": "0.5*(segC+segD)+0.5*(rankC+rankD)",
+    "rank_margin": 0.05,
+    "alpha_init": 1.0,
+    "up_init": 0.0,
+    "bottleneck": 16,
+    "roi_scale": 1.25,
+    "base_frozen": true,
+    "precision_base": "bf16",
+    "adapter_precision": "float32",
+    "split_sha256": "8e3361851f3c7a7338a8f2eb81e82da4255a34187a921c7bcc5b92fcb3b9b294"
+  },
+  "trainable_parameters": 12577,
+  "mapping": [
+    {
+      "local_shape": [
+        1,
+        256,
+        64,
+        64
+      ],
+      "valid_local_grid_hw": [
+        64,
+        30
+      ],
+      "roi_xyxy": [
+        578,
+        34,
+        1054,
+        1080
+      ],
+      "global_grid_roi_xyxy": [
+        19,
+        1,
+        36,
+        36
+      ],
+      "mapped_shape": [
+        1,
+        256,
+        64,
+        64
+      ],
+      "gate_shape": [
+        1,
+        1,
+        64,
+        64
+      ]
+    },
+    {
+      "local_shape": [
+        1,
+        256,
+        64,
+        64
+      ],
+      "valid_local_grid_hw": [
+        64,
+        19
+      ],
+      "roi_xyxy": [
+        1642,
+        130,
+        1920,
+        1080
+      ],
+      "global_grid_roi_xyxy": [
+        54,
+        4,
+        64,
+        36
+      ],
+      "mapped_shape": [
+        1,
+        256,
+        64,
+        64
+      ],
+      "gate_shape": [
+        1,
+        1,
+        64,
+        64
+      ]
+    }
+  ],
+  "initial_max_logit_difference": 0.0,
+  "initial_masks_exact": true,
+  "first_backward": {
+    "parameters": {
+      "alpha": {
+        "norm": 0.0,
+        "finite": true
+      },
+      "down.weight": {
+        "norm": 0.0,
+        "finite": true
+      },
+      "down.bias": {
+        "norm": 0.0,
+        "finite": true
+      },
+      "up.weight": {
+        "norm": 0.05090868100523949,
+        "finite": true
+      },
+      "up.bias": {
+        "norm": 0.3316158056259155,
+        "finite": true
+      }
+    },
+    "frozen_base_gradient_free": true
+  },
+  "second_backward": {
+    "parameters": {
+      "alpha": {
+        "norm": 0.000552703975699842,
+        "finite": true
+      },
+      "down.weight": {
+        "norm": 0.0011684123892337084,
+        "finite": true
+      },
+      "down.bias": {
+        "norm": 0.0005210883682593703,
+        "finite": true
+      },
+      "up.weight": {
+        "norm": 0.04994579404592514,
+        "finite": true
+      },
+      "up.bias": {
+        "norm": 0.32329633831977844,
+        "finite": true
+      }
+    },
+    "frozen_base_gradient_free": true
+  },
+  "alpha_gradient_nonzero": true,
+  "local_features_no_grad": true,
+  "routing": [
+    {
+      "changed_identity": 0,
+      "max_logit_change_by_seg_row": [
+        0.0,
+        0.9828033447265625,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "changed_identity": 1,
+      "max_logit_change_by_seg_row": [
+        0.0,
+        0.0,
+        0.0,
+        0.6031265258789062
+      ]
+    }
+  ],
+  "smoke_optimizer_steps": 1,
+  "state_discarded_after_process": true
+}

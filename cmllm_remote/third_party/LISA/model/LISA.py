@@ -327,6 +327,7 @@ class LISAForCausalLM(LlavaLlamaForCausalLM):
         ref_images_clip_list: List[torch.FloatTensor] = None,
         mask_weights_list: List[torch.FloatTensor] = None,
         spatial_memory_boxes_list: List[torch.FloatTensor] = None,
+        memory_local_features_list = None,
         inference: bool = False,
         **kwargs,
     ):
@@ -517,13 +518,42 @@ class LISAForCausalLM(LlavaLlamaForCausalLM):
                 text_embeds=text_embeds,
             )
             sparse_embeddings = sparse_embeddings.to(pred_embeddings[i].dtype)
-            low_res_masks, iou_predictions = self.model.visual_model.mask_decoder(
-                image_embeddings=image_embeddings[i].unsqueeze(0),
-                image_pe=self.model.visual_model.prompt_encoder.get_dense_pe(),
-                sparse_prompt_embeddings=sparse_embeddings,
-                dense_prompt_embeddings=dense_embeddings,
-                multimask_output=multimask_output,
-            )
+            if memory_local_features_list is None:
+                low_res_masks, iou_predictions = self.model.visual_model.mask_decoder(
+                    image_embeddings=image_embeddings[i].unsqueeze(0),
+                    image_pe=self.model.visual_model.prompt_encoder.get_dense_pe(),
+                    sparse_prompt_embeddings=sparse_embeddings,
+                    dense_prompt_embeddings=dense_embeddings,
+                    multimask_output=multimask_output,
+                )
+            else:
+                evidence = memory_local_features_list[i]
+                # Preserve the original prompt batch shape (BF16 GEMMs differ
+                # for singleton rows). Keep baseline miner outputs; each fused
+                # invocation contributes only its own helmet output.
+                baseline_masks, _ = self.model.visual_model.mask_decoder(
+                    image_embeddings=image_embeddings[i].unsqueeze(0),
+                    image_pe=self.model.visual_model.prompt_encoder.get_dense_pe(),
+                    sparse_prompt_embeddings=sparse_embeddings,
+                    dense_prompt_embeddings=dense_embeddings,
+                    multimask_output=multimask_output,
+                )
+                row_masks = list(baseline_masks.split(1, dim=0))
+                for identity in range(evidence['mapped'].shape[0]):
+                    row = 2 * identity + 1
+                    features = image_embeddings[i].unsqueeze(0)
+                    features = self.memory_dual_scale_adapter(
+                        features.float(), evidence['mapped'][identity:identity+1].float(),
+                        evidence['gate'][identity:identity+1].float()).to(features.dtype)
+                    identity_masks, _ = self.model.visual_model.mask_decoder(
+                        image_embeddings=features,
+                        image_pe=self.model.visual_model.prompt_encoder.get_dense_pe(),
+                        sparse_prompt_embeddings=sparse_embeddings,
+                        dense_prompt_embeddings=dense_embeddings,
+                        multimask_output=multimask_output,
+                    )
+                    row_masks[row] = identity_masks[row:row+1]
+                low_res_masks = torch.cat(row_masks, dim=0)
             low_res_masks = torch.nan_to_num(low_res_masks)
             pred_mask = self.model.visual_model.postprocess_masks(
                 low_res_masks,

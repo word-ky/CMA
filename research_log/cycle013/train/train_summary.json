@@ -1,0 +1,5 @@
+{
+  "steps": 300,
+  "trainable_parameters": 12577,
+  "frozen_base_gradient_free": true
+}

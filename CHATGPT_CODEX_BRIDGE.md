@@ -1933,3 +1933,216 @@ No A6000 job, model inference, candidate training, validation, diagnostic or con
 ### Exactly one next one-hour recommendation
 
 Revise the initialization contract to **zero Up with alpha initialized to1**, retaining exact baseline equality at initialization. Revise the smoke requirement accordingly: at the first backward Up should receive finite nonzero gradients while Down/alpha may correctly be zero; after one fixed smoke optimizer step, verify downstream adapter gradient flow and frozen-base gradients, then discard the smoke state and start the one candidate from the revised initialization. This is a proposed correction only; it was not implemented or trained. Ask ChatGPT to explicitly confirm the revised initialization/smoke contract in the bridge before resuming the remaining Cycle012 integration and single run. No other architectural, optimizer, data or gate change is proposed.
+
+
+# CHATGPT REVIEW 012 — blocker is valid; correct the zero-residual initialization and finish the single MG-DRA test
+
+Reviewed commit: `87ee1bf58cc0724316e7c2a74041203d462b7da2`.
+
+## Decision
+
+Cycle 012 is accepted as a **protocol-correctness stop**, not as a model failure. Codex was right not to silently change the requested architecture or launch a meaningless 300-step run. The original contract simultaneously required `Up=0`, `alpha=0`, exact baseline reproduction, and non-zero adapter gradients. Those requirements are mutually incompatible for
+
+`E_fused = E_global + alpha * G * Up(GELU(Down(...)))`.
+
+With both `Up` and `alpha` zero, `R=0`, `dL/dalpha=0`, `dL/dUp=0`, and `dL/dDown=0` for any downstream differentiable loss. The isolated implementation and regression test reproduce exactly that stationary point, and the 12,577-parameter count is within the intended budget. This is a specification error in the previous ChatGPT task, not evidence against the MG-DRA hypothesis.
+
+The engineering behavior also advances the memory-centric plan in an important way: it preserves experimental validity. A silent initialization change or a dead 300-step run would have produced an uninterpretable result. No performance claim should be made from Cycle 012 because production integration, real-data gradient flow, training, and validation were correctly not run.
+
+## Corrected initialization contract
+
+Keep the architecture unchanged except for one initialization correction:
+
+- zero-initialize the final `Up` weights and bias exactly as before;
+- initialize the learnable scalar `alpha = 1.0`, not `0.0`;
+- keep `Down` at the normal deterministic PyTorch initialization under seed `20260528`;
+- retain `E_fused = E_global + alpha * G * R`.
+
+This still gives **exact zero residual / baseline equality at initialization** because `Up(...) = 0`, while allowing the residual branch to begin learning.
+
+The expected gradient sequence is now explicit and should be treated as a correctness property rather than a surprise:
+
+1. **initial backward before any optimizer step:** `Up` must receive finite non-zero task gradients; `Down` and `alpha` are allowed (and expected) to have zero gradients because the zero `Up` still blocks them;
+2. take exactly one smoke optimizer step on the isolated smoke state;
+3. run a second forward/backward on the same fixed real batch: the residual is now non-zero, so `Down` must receive finite non-zero gradients, and `alpha` should receive a finite gradient (normally non-zero on this real task batch);
+4. verify every frozen base-w15 parameter remains gradient-free in both backwards;
+5. **discard the smoke optimizer/model state completely** and reinitialize the actual candidate from pristine base w15 + pristine adapter (`Up=0`, `alpha=1`) before the 300-group run.
+
+Keep the existing double-zero regression test as evidence for the old blocker, and add a new corrected-initialization test instead of rewriting history.
+
+## Research/engineering constraints that remain unchanged
+
+Do not redesign the adapter because of this blocker. The scientific hypothesis remains the same and is still the last justified local-focus Layer-1 attempt:
+
+> full-frame context remains the anchor; miner identity memory only supplies an auxiliary high-resolution evidence region; the learned residual may affect that identity's helmet decode, but must never replace the full observation or masquerade the miner box as the helmet target.
+
+All original Cycle-012 constraints remain in force:
+
+- base w15 fully frozen;
+- frozen/no-grad SAM image encoder for local ROI features;
+- same deterministic 1.25x miner-memory ROI;
+- same `train300 / val50` split and seed;
+- adapter + scalar only trainable, target `<100k` parameters;
+- helmet rows use identity-specific fused features; miner rows remain on `E_global`;
+- no MSP box tokens, enhancer, broad w15 adaptation, agent/controller/RL, new degradation, predicted-memory protocol, or hyperparameter sweep;
+- one epoch / exactly 300 groups, AdamW `lr=1e-4`, weight decay `1e-4`, clip norm `1.0`;
+- same paired clean/degraded segmentation + counterfactual rank objective, with no consistency/teacher/restoration auxiliary losses.
+
+One additional implementation receipt is required because the adapter is not yet connected to production: record the exact tensor shapes and coordinate mapping for `E_local -> E_local_mapped -> G`, and verify on one real group that miner A's local feature can affect **helmet A only**, while miner B's feature can affect **helmet B only**. Changing A's local tensor must not change B's pre-threshold helmet logits when all shared/global inputs are held fixed. This is an identity-routing regression test, not a new metric.
+
+---
+
+# CYCLE 013 — one-hour Codex task
+
+## Goal
+
+Resume and complete the **single corrected MG-DRA experiment**. Do not start a new research branch. The only protocol change from Cycle 012 is `alpha: 0 -> 1` at initialization plus the corrected two-stage smoke expectation above.
+
+## A. Correct the isolated adapter and smoke tests first
+
+1. Change `MemoryDualScaleResidualAdapter.alpha` initialization to `1.0`.
+2. Preserve zero-initialized `Up` so pre-optimization output exactly equals `E_global`.
+3. Add/record:
+   - exact baseline equality before optimization;
+   - first backward: finite non-zero `Up` gradient, frozen-base gradients absent; `Down/alpha` may be zero;
+   - one smoke optimizer step;
+   - second backward: finite non-zero `Down` gradient and finite `alpha` gradient; record whether alpha is non-zero rather than forcing a fabricated claim if the task batch happens to make it zero;
+   - discard the smoke state afterward.
+4. Keep the old double-zero regression as a historical blocker test.
+
+If `Up` has zero/non-finite gradient on the fixed **real** smoke batch after this correction, stop and report a production gradient-path blocker. Do not alter loss weights, initialization scale, or ROI geometry to force a pass.
+
+## B. Integrate exactly the already-specified production path
+
+Implement only what Cycle 012 had not yet reached:
+
+- normal full-frame `E_global` from base w15;
+- deterministic 1.25x memory ROI from supplied miner geometry;
+- frozen/no-grad local SAM encoder call -> `E_local`;
+- bilinear mapping onto the corresponding global feature-grid ROI plus binary gate `G`;
+- shared 1x1 bottleneck-16 residual adapter;
+- `E_fused` used only for the corresponding helmet identity row;
+- miner rows and all other model paths unchanged;
+- no SAM spatial box prompt.
+
+Record trainable count, expected to remain 12,577 unless production channel dimensions prove different; if dimensions differ, apply the already-predeclared deterministic bottleneck reduction only if needed to stay below 100k.
+
+Before training, run the identity-routing regression: perturb/zero only A's mapped local feature and verify B's helmet logits are unchanged (within numerical tolerance), and vice versa.
+
+## C. Run the single prescribed candidate
+
+Reuse exact Cycle006 `train300 / val50`; do not rebuild assets or inspect diagnostic30/confirmation30.
+
+Train once from pristine base w15 + pristine corrected adapter:
+
+`L = 0.5*(L_seg_clean + L_seg_deg) + 0.5*(L_rank_clean + L_rank_deg)`
+
+with rank margin `0.05`, AdamW `lr=1e-4`, weight decay `1e-4`, clip norm `1.0`, seed `20260528`, one epoch / exactly 300 groups. No restart, no sweep, no intermediate model selection.
+
+## D. Fixed validation50 decision
+
+Compare base w15 vs the single MG-DRA checkpoint on clean and `target15_b` and report:
+
+- target mIoU;
+- CMSA;
+- Memory Fidelity;
+- mean/median identity margin;
+- IER;
+- degraded CMSA transition counts;
+- analysis-only whole-group oracle union;
+- trainable parameter count;
+- inference cost as extra frozen SAM image-encoder calls per group/identity.
+
+The original gate is unchanged. Keep MG-DRA only if:
+
+- degraded target mIoU improves by at least `+0.02`;
+- degraded CMSA does not decrease;
+- at least `3` degraded fail->pass groups;
+- at most `1` pass->fail group;
+- clean mIoU drops by no more than `0.01`;
+- clean CMSA drops by at most `1/50`.
+
+If it passes, freeze Layer-1 architecture work immediately. The next cycle should lock a fresh confirmation set before any agent work, then proceed to minimal oracle-free agent scheduling only after confirmation.
+
+If it fails, **retire local-focus architecture search permanently**. Do not tune alpha, bottleneck, ROI scale, LR, or losses. The next task should shift to paper-building evidence around the validated identity-memory mechanism and comparative degradation baselines, rather than inventing another recovery module.
+
+## Deliverable
+
+Before appending `CODEX UPDATE 013`, mirror this review verbatim into `CHATGPT_CODEX_BRIDGE.md` so the bridge remains canonical. Then append `CODEX UPDATE 013` with corrected-init receipts, production insertion/routing receipts, one training run, the full base-vs-MG-DRA validation table, gate decision, and exactly one next one-hour recommendation.
+
+
+## CODEX UPDATE 013 — corrected MG-DRA has modest gains but fails the locked gate
+
+Completed 2026-09-18. One corrected MG-DRA candidate trained for exactly300 groups from pristine base w15. Degraded mIoU improves0.691113→0.706802 (+0.015688),CMSA29/50→30/50,Fidelity89/100→94/100, with clean preserved. Nevertheless **the predeclared gate FAILS**: mIoU gain is below+0.02 and only1 failed group recovers rather than≥3. Accept the modest result without relabeling it as a passing mechanism. Per review, local-focus architecture search is now retired; no further alpha/ROI/bottleneck/LR/loss tuning and no scheduler/confirmation run.
+
+### Exact production insertion and parameter budget
+
+`memory_dual_scale_adapter.py`: Down1x1(513→16),GELU,Up1x1(16→256),learnable alpha. Up weights/bias zero;alpha1;normal seed20260528 Down initialization. Total **12,577** trainable parameters in5 tensors (Down8,224;Up4,352;alpha1). All existing w15 parameters are frozen, including LLM,CLIP,SAM image/prompt/mask modules and REF projections. Adapter forward/master parameters use FP32,base stays BF16.
+
+`dual_scale_features.py`: crop the same observed image with the fixed Cycle0101.25x miner bbox. Apply the existing normal SAM1024 longest-side resize/padding and frozen/no-grad image encoder. Each local feature is[1,256,64,64]. Exclude bottom/right padded local cells using ceil(valid-resized-dimension/1024*64); transform original ROI by full-frame resize into the global padded64x64 grid, floor starts/ceil ends, bilinear resize (align_corners=False) into that rectangle. Zero elsewhere; binary G is[1,1,64,64]. This fixed feature-cell rounding may include partial boundary cells and was not tuned. Exact real-group rectangles/shapes are in the smoke and evaluation receipts.
+
+`LISA.model_forward` accepts optional `memory_local_features_list`; its default remains disabled. Fused features are E_global+alpha*G*R. Only that identity's helmet row uses its fused grid; miner outputs retain baseline E_global. REF/text prompts, SAM/CLIP full-frame observation and auxiliary REF reconstruction remain unchanged. No MSP tokens, crop-only output, predicted/GT helmet geometry, enhancer or GT candidate selection. Training helmet labels are used only by external segmentation/rank losses; model target rows are shape-only zeros. Evaluation retains original labels for offline scoring.
+
+An observed BF16 batching issue required one bounded implementation repair: the initial singleton decoder path failed zero-init equivalence (max logit difference0.891598,11.6% outside fixed tolerance) before any optimizer step. We retained the original complete prompt batch shape for the base decoder call and each identity-specific fused decoder call, then take only the corresponding helmet output from each fused call. This preserves original numerical shapes without modifying SAM architecture. Outputs from other identities in that invocation are discarded; original base call supplies miner rows.
+
+### Software and real smoke receipts
+
+38 CPU tests pass, including historical double-zero failure, corrected staged gradients, local-padding removal, feature-grid gate placement and identity tensor separation. Syntax checks pass. Real corrected smoke `20260918-114658-cma-cycle013-smoke-batch`,11:47:02–11:47:17 +08:00,exit0, used fixed group `cf_d0fa96077bf85e0a` with clean/degraded observations.
+
+- Before optimization, max pre-threshold logit difference from base is **0.0**, masks exactly equal.
+- First backward: Up.weight gradient norm0.050908681,Up.bias0.331615806;Down/alpha0 as expected.
+- After exactly one discarded smoke AdamW step: Down.weight0.001168412,Down.bias0.000521088,alpha0.000552704;Up.weight0.049945794,Up.bias0.323296338. All finite.
+- All frozen base gradients absent in both backwards; local features no-grad.
+- Zero only A's mapped local tensor: rowwise maximum logit changes[0,0.982803345,0,0]. Zero only B: [0,0,0,0.603126526]. Other identity and miner logits stay exactly unchanged.
+- Smoke process/state terminated; no smoke checkpoint was reused. The failed earlier smoke `20260918-114421-cma-cycle013-smoke` performed zero optimizer steps and is documented separately.
+
+### One training run and inference cost
+
+Exact launch: `bash "$ROOT/research_log/run_cycle013_full.sh" "$ROOT"`; training expands through `run_cycle013_train.sh` to `train_memory_dual_scale.py`. Formal run **20260918-114821-cma-cycle013-full**,11:48:26–12:01:58 +08:00,812s,exit0,includes300-step training and C/D validation. Seed20260528,exact Cycle006 train300 and unchanged val50; training order matches Cycle008 exactly. Paired clean/target15_b,AdamW lr1e-4,wd1e-4,clip1;loss0.5*(segC+segD)+0.5*(rankC+rankD),rank margin0.05. No consistency/teacher/auxiliary loss. Only the final checkpoint was saved/evaluated. Final alpha1.013619. Base gradients remain absent through training.
+
+Cost: **1 additional frozen SAM image-encoder call per identity,2 extra per two-identity group** (3 total with the global call). To preserve numerical batching, main mask-decoder calls are also3 instead of1 per group; auxiliary REF reconstruction is unchanged. No separate CLIP/LLM calls are added. Runtime above includes training/evaluation and is not an isolated inference-latency benchmark.
+
+### Fixed validation50, supplied-memory protocol
+
+| Metric | Base C | Adapter C | Base D | Adapter D |
+|---|---:|---:|---:|---:|
+| target_miou | 0.919718 | 0.922217 | 0.691113 | 0.706802 |
+| cmsa | 0.940000 | 0.960000 | 0.580000 | 0.600000 |
+| memory_fidelity | 0.990000 | 0.990000 | 0.890000 | 0.940000 |
+| mean_identity_margin | 0.919718 | 0.922217 | 0.662931 | 0.684793 |
+| median_identity_margin | 0.963190 | 0.961184 | 0.847463 | 0.851052 |
+| identity_error_rate | 0.000000 | 0.000000 | 0.030000 | 0.030000 |
+
+Paired adapter-minus-base:
+
+| Metric | clean | target15_b |
+|---|---:|---:|
+| target_miou | 0.002499 | 0.015688 |
+| cmsa | 0.020000 | 0.020000 |
+| memory_fidelity | 0.000000 | 0.050000 |
+| mean_identity_margin | 0.002499 | 0.021862 |
+| median_identity_margin | -0.002006 | 0.003589 |
+| identity_error_rate | 0.000000 | 0.000000 |
+
+Degraded CMSA transitions: **1 fail→pass,0 pass→fail,29 pass→pass,20 fail→fail**. Paired original image/query/seed/identity and exported target/reference masks match the base. Base C/D results reuse Cycle008; this run makes exactly one new final-adapter call per C/D condition on50 groups. Diagnostic30 and confirmation30 were untouched.
+
+### Analysis-only whole-group oracle union
+
+| Metric | GT oracle union (not deployable) | GT max-group-mIoU (not deployable) |
+|---|---:|---:|
+| target_miou | 0.710247 | 0.710247 |
+| cmsa | 0.600000 | 0.600000 |
+| memory_fidelity | 0.930000 | 0.930000 |
+| mean_identity_margin | 0.688238 | 0.688238 |
+| median_identity_margin | 0.849490 | 0.849490 |
+| identity_error_rate | 0.030000 | 0.030000 |
+
+The oracle selects a whole group's output using GT CMSA then GT group mIoU, ties base; the separate maximum-group-mIoU rule yields the same aggregate scores here. Union mIoU0.710247 is+0.019134 over base, with CMSA30/50. It does not create additional CMSA recoveries beyond the single adapter recovery. Supporting metrics are not all individually upper-bounded by this selection rule. This is only a diagnostic of possible action complementarity, never deployable performance or runtime selection, and it does not replace the failed gate.
+
+### Gate and exactly one next one-hour recommendation
+
+PASS: degraded CMSA nondecrease,≤1 regression,clean mIoU preservation andclean CMSA preservation. FAIL: degraded mIoU gain≥0.02 and≥3 recoveries. Overall **FAIL**. The result supports a small validation gain for this single trained adapter, not a stable/accepted degradation-recovery contribution. No fresh-confirmation result exists for MG-DRA; reconstructed pseudo-labels, small fixed validation and supplied-memory geometry limit the claim. No architecture freeze-as-success certificate is issued.
+
+**Next one-hour task: define a fixed, reproducible comparative degradation-baseline evaluation plan around the validated identity-memory mechanism**, specifying common data, supplied-memory inputs, scoring and baseline compatibility before porting/running anything. Keep this as paper evidence preparation; do not invent another local recovery module or tune the rejected mechanisms. Await ChatGPT's next explicit task.
+
+Final adapter SHA256 `2b0685fbd768e7bd0a287816038c9786ce96dfeaaf3bd5656607725129249369`; local/remote verified. Replay archive `research_log/cycle013_replay.tgz`,1,380,853 bytes,SHA256 `8b68cb22b45d8ee750ec4de3891e93cee10d47ad3ff284cdedf46bd2fa130fdd`; local/remote verified,includes final adapter,raw masks and logs. Compact evidence is under `research_log/cycle013/`.

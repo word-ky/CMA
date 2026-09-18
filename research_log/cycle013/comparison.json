@@ -1,0 +1,524 @@
+{
+  "status": "FAIL",
+  "criteria": {
+    "degraded_miou_gain_0_02": false,
+    "degraded_cmsa_non_decrease": true,
+    "at_least_3_recoveries": false,
+    "at_most_1_regression": true,
+    "clean_miou_drop_at_most_0_01": true,
+    "clean_cmsa_drop_at_most_one_group": true
+  },
+  "validation": {
+    "clean": {
+      "base": {
+        "num_groups": 50,
+        "num_references": 100,
+        "num_pairs": 50,
+        "target_miou": 0.9197182918768901,
+        "memory_fidelity": 0.99,
+        "cmsa": 0.94,
+        "identity_error_rate": 0.0,
+        "mean_identity_margin": 0.9197182918768901,
+        "median_identity_margin": 0.9631895116958757
+      },
+      "adapter": {
+        "num_groups": 50,
+        "num_references": 100,
+        "num_pairs": 50,
+        "target_miou": 0.9222172760216225,
+        "memory_fidelity": 0.99,
+        "cmsa": 0.96,
+        "identity_error_rate": 0.0,
+        "mean_identity_margin": 0.9222172760216226,
+        "median_identity_margin": 0.9611839380264303
+      }
+    },
+    "target15_b": {
+      "base": {
+        "num_groups": 50,
+        "num_references": 100,
+        "num_pairs": 50,
+        "target_miou": 0.6911134046687633,
+        "memory_fidelity": 0.89,
+        "cmsa": 0.58,
+        "identity_error_rate": 0.03,
+        "mean_identity_margin": 0.6629313123212343,
+        "median_identity_margin": 0.8474629071282657
+      },
+      "adapter": {
+        "num_groups": 50,
+        "num_references": 100,
+        "num_pairs": 50,
+        "target_miou": 0.706801569119194,
+        "memory_fidelity": 0.94,
+        "cmsa": 0.6,
+        "identity_error_rate": 0.03,
+        "mean_identity_margin": 0.6847930154866202,
+        "median_identity_margin": 0.8510522607429513
+      }
+    }
+  },
+  "adapter_minus_base": {
+    "clean": {
+      "target_miou": 0.0024989841447323746,
+      "cmsa": 0.020000000000000018,
+      "memory_fidelity": 0.0,
+      "mean_identity_margin": 0.0024989841447324856,
+      "median_identity_margin": -0.0020055736694454263,
+      "identity_error_rate": 0.0
+    },
+    "target15_b": {
+      "target_miou": 0.015688164450430753,
+      "cmsa": 0.020000000000000018,
+      "memory_fidelity": 0.04999999999999993,
+      "mean_identity_margin": 0.021861703165385937,
+      "median_identity_margin": 0.0035893536146855975,
+      "identity_error_rate": 0.0
+    }
+  },
+  "cmsa_transitions": {
+    "fail_to_pass": 1,
+    "pass_to_fail": 0,
+    "pass_to_pass": 29,
+    "fail_to_fail": 20
+  },
+  "oracle_union_ANALYSIS_ONLY": {
+    "rule": "whole-group GT CMSA then GT mIoU, ties base; non-deployable",
+    "summary": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.7102469093002591,
+      "memory_fidelity": 0.93,
+      "cmsa": 0.6,
+      "identity_error_rate": 0.03,
+      "mean_identity_margin": 0.6882383556676852,
+      "median_identity_margin": 0.8494899470301702
+    },
+    "choices": [
+      {
+        "group_id": "cf_c9029d27c0483181",
+        "oracle_choice": "adapter",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.42538274431249107,
+        "miou_adapter": 0.6407468192757596
+      },
+      {
+        "group_id": "cf_1a8999420d2a3bdc",
+        "oracle_choice": "adapter",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.6604557157413053,
+        "miou_adapter": 0.6758554189332974
+      },
+      {
+        "group_id": "cf_33700f0218d6a1db",
+        "oracle_choice": "base",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.90842976063003,
+        "miou_adapter": 0.9077512752021573
+      },
+      {
+        "group_id": "cf_3eb4e7afbcbc4783",
+        "oracle_choice": "adapter",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.43986254295532645,
+        "miou_adapter": 0.44397879974453935
+      },
+      {
+        "group_id": "cf_86843243c79d2603",
+        "oracle_choice": "base",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.7315048166394218,
+        "miou_adapter": 0.7252614258553265
+      },
+      {
+        "group_id": "cf_646171cbe278fb9c",
+        "oracle_choice": "adapter",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.3957999364498189,
+        "miou_adapter": 0.5348552440041769
+      },
+      {
+        "group_id": "cf_4208e726fab4891a",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.9111269248255549,
+        "miou_adapter": 0.928889103640103
+      },
+      {
+        "group_id": "cf_803b6a694535ec15",
+        "oracle_choice": "adapter",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.6363980786245487,
+        "miou_adapter": 0.6394457245263697
+      },
+      {
+        "group_id": "cf_4cd720671d92fd2e",
+        "oracle_choice": "adapter",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.4781420765027322,
+        "miou_adapter": 0.47911547911547914
+      },
+      {
+        "group_id": "cf_03e0f4f2dd886689",
+        "oracle_choice": "base",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.9482740445712444,
+        "miou_adapter": 0.9468663097465861
+      },
+      {
+        "group_id": "cf_b9271168b2a4cbf9",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.9349832446653745,
+        "miou_adapter": 0.9367873214640561
+      },
+      {
+        "group_id": "cf_5ffe3b4241e31e97",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.7693576686882557,
+        "miou_adapter": 0.7973570787189463
+      },
+      {
+        "group_id": "cf_eccb4c9b85399b90",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.9283118349619979,
+        "miou_adapter": 0.9328709903170886
+      },
+      {
+        "group_id": "cf_273565c8b4382765",
+        "oracle_choice": "base",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.5425921336828424,
+        "miou_adapter": 0.4754607414937271
+      },
+      {
+        "group_id": "cf_371758320d780b3d",
+        "oracle_choice": "base",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.7755930914634247,
+        "miou_adapter": 0.7387796759680303
+      },
+      {
+        "group_id": "cf_afb2ea760a625f27",
+        "oracle_choice": "adapter",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.3832874391018852,
+        "miou_adapter": 0.3899763389976339
+      },
+      {
+        "group_id": "cf_69928ab61b82fb85",
+        "oracle_choice": "base",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.5049033788887364,
+        "miou_adapter": 0.5045496484270849
+      },
+      {
+        "group_id": "cf_e55b9138be80eb81",
+        "oracle_choice": "base",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.7676817569860468,
+        "miou_adapter": 0.7631433112145385
+      },
+      {
+        "group_id": "cf_e49d9a50bdb728a9",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.8020065044803659,
+        "miou_adapter": 0.805844330986683
+      },
+      {
+        "group_id": "cf_99b0215fccf3f63b",
+        "oracle_choice": "base",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.6405039123422571,
+        "miou_adapter": 0.6297316450570191
+      },
+      {
+        "group_id": "cf_84320e41bc5af656",
+        "oracle_choice": "adapter",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.45645898484484004,
+        "miou_adapter": 0.4588051072030836
+      },
+      {
+        "group_id": "cf_26d7eeeecd43037a",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.7738288101562809,
+        "miou_adapter": 0.7842626190323465
+      },
+      {
+        "group_id": "cf_0774290cbf004c7d",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.9505373514581218,
+        "miou_adapter": 0.9606466881007873
+      },
+      {
+        "group_id": "cf_2a89e76f158b6a5b",
+        "oracle_choice": "adapter",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.4694284711980412,
+        "miou_adapter": 0.49693881848687227
+      },
+      {
+        "group_id": "cf_8065502af4eb2535",
+        "oracle_choice": "base",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.695214165655491,
+        "miou_adapter": 0.6905287167901208
+      },
+      {
+        "group_id": "cf_ae56647f7b0ed80f",
+        "oracle_choice": "base",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.8936867806863502,
+        "miou_adapter": 0.8882052039291042
+      },
+      {
+        "group_id": "cf_aa391b9836fd78ee",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.9075544712525285,
+        "miou_adapter": 0.9110217731405508
+      },
+      {
+        "group_id": "cf_02e38a9e5a19c360",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.8651849714810873,
+        "miou_adapter": 0.8679001196413569
+      },
+      {
+        "group_id": "cf_01ad18abfbf5459e",
+        "oracle_choice": "base",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.6544216580036375,
+        "miou_adapter": 0.6527557306725627
+      },
+      {
+        "group_id": "cf_427af9a92fe7f6cd",
+        "oracle_choice": "adapter",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.45959000942507067,
+        "miou_adapter": 0.4666745171926519
+      },
+      {
+        "group_id": "cf_4165dbded0d67baf",
+        "oracle_choice": "base",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.29008152173913043,
+        "miou_adapter": 0.2839230033006702
+      },
+      {
+        "group_id": "cf_5495414a54138233",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.8109356187463422,
+        "miou_adapter": 0.8172966257771141
+      },
+      {
+        "group_id": "cf_cd5bf6d06a4f5432",
+        "oracle_choice": "base",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.8376365497007148,
+        "miou_adapter": 0.8337937619559084
+      },
+      {
+        "group_id": "cf_149c5aadeca92d12",
+        "oracle_choice": "adapter",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.5437478209915708,
+        "miou_adapter": 0.5449236416962677
+      },
+      {
+        "group_id": "cf_3c4f4b5cb4bb1d77",
+        "oracle_choice": "base",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.8243979755805295,
+        "miou_adapter": 0.8233114803760897
+      },
+      {
+        "group_id": "cf_f3d2d3f12a7aead4",
+        "oracle_choice": "base",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.8249363435749448,
+        "miou_adapter": 0.8160945165945166
+      },
+      {
+        "group_id": "cf_5e9c50c7e24dfd0f",
+        "oracle_choice": "base",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.9558848075207922,
+        "miou_adapter": 0.9554450393534386
+      },
+      {
+        "group_id": "cf_1e7d8cfc1625c2da",
+        "oracle_choice": "adapter",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.013474770642201836,
+        "miou_adapter": 0.25545767140873366
+      },
+      {
+        "group_id": "cf_2e36401e0d114aa8",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.8078391274710293,
+        "miou_adapter": 0.826848456409276
+      },
+      {
+        "group_id": "cf_1a115ce7f6b388e4",
+        "oracle_choice": "adapter",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.45491594498217014,
+        "miou_adapter": 0.5561036654545396
+      },
+      {
+        "group_id": "cf_289b3fd7110690be",
+        "oracle_choice": "adapter",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.3408064246277397,
+        "miou_adapter": 0.37272230320699706
+      },
+      {
+        "group_id": "cf_b88a50d6609f6487",
+        "oracle_choice": "base",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.781623125339176,
+        "miou_adapter": 0.7781201369436663
+      },
+      {
+        "group_id": "cf_6b395dbd9b45c431",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.9259093803670326,
+        "miou_adapter": 0.9299960043116264
+      },
+      {
+        "group_id": "cf_4a66376fb7c719e0",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.9200694536491605,
+        "miou_adapter": 0.9214255633333736
+      },
+      {
+        "group_id": "cf_c55d2b77e1c81163",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.8089064563019124,
+        "miou_adapter": 0.8281112013688914
+      },
+      {
+        "group_id": "cf_a61afd1b0775da52",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.8788850963361804,
+        "miou_adapter": 0.8877755909186675
+      },
+      {
+        "group_id": "cf_dd011c16faf2a9e3",
+        "oracle_choice": "base",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.8860323740048439,
+        "miou_adapter": 0.8843656058878409
+      },
+      {
+        "group_id": "cf_5e913799bf202735",
+        "oracle_choice": "adapter",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.7944699334957863,
+        "miou_adapter": 0.8100831613137917
+      },
+      {
+        "group_id": "cf_8c490484f166a75a",
+        "oracle_choice": "adapter",
+        "cmsa_base": 0.0,
+        "cmsa_adapter": 0.0,
+        "miou_base": 0.4062108466081976,
+        "miou_adapter": 0.40782770919867856
+      },
+      {
+        "group_id": "cf_91c35cfa78c4abd9",
+        "oracle_choice": "base",
+        "cmsa_base": 1.0,
+        "cmsa_adapter": 1.0,
+        "miou_base": 0.7384033810836015,
+        "miou_adapter": 0.7314473402715729
+      }
+    ]
+  },
+  "oracle_miou_ANALYSIS_ONLY": {
+    "rule": "whole-group GT mIoU maximum; non-deployable",
+    "summary": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.7102469093002591,
+      "memory_fidelity": 0.93,
+      "cmsa": 0.6,
+      "identity_error_rate": 0.03,
+      "mean_identity_margin": 0.6882383556676852,
+      "median_identity_margin": 0.8494899470301702
+    }
+  },
+  "trainable_parameters": 12577,
+  "extra_frozen_encoder_calls_per_identity": 1,
+  "extra_frozen_encoder_calls_per_group": 2,
+  "exact_cycle008_training_order": true,
+  "base_frozen_gradient_free": true,
+  "training_runs": 1,
+  "optimizer_steps": 300,
+  "checkpoint_sha256": "2b0685fbd768e7bd0a287816038c9786ce96dfeaaf3bd5656607725129249369",
+  "diagnostic_and_confirmation_calls": 0
+}

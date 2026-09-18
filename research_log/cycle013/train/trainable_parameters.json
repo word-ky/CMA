@@ -1,0 +1,44 @@
+{
+  "count": 12577,
+  "parameters": [
+    {
+      "name": "memory_dual_scale_adapter.alpha",
+      "numel": 1,
+      "shape": []
+    },
+    {
+      "name": "memory_dual_scale_adapter.down.weight",
+      "numel": 8208,
+      "shape": [
+        16,
+        513,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "memory_dual_scale_adapter.down.bias",
+      "numel": 16,
+      "shape": [
+        16
+      ]
+    },
+    {
+      "name": "memory_dual_scale_adapter.up.weight",
+      "numel": 4096,
+      "shape": [
+        256,
+        16,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "memory_dual_scale_adapter.up.bias",
+      "numel": 256,
+      "shape": [
+        256
+      ]
+    }
+  ]
+}

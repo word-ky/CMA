@@ -1,0 +1,28 @@
+{
+  "run_id": "20260918-114821-cma-cycle013-full",
+  "started_at": "2026-09-18T11:48:26+08:00",
+  "finished_at": "2026-09-18T12:01:58+08:00",
+  "duration_seconds": 812,
+  "exit_code": 0,
+  "tests_passed": 38,
+  "training_runs": 1,
+  "training_steps": 300,
+  "smoke_optimizer_steps_discarded": 1,
+  "zero_init_max_logit_difference": 0.0,
+  "routing_other_rows_exactly_equal": true,
+  "gate": "FAIL",
+  "diagnostic_confirmation_calls": 0,
+  "checkpoint_sha256": "2b0685fbd768e7bd0a287816038c9786ce96dfeaaf3bd5656607725129249369",
+  "replay_archive": {
+    "path": "research_log/cycle013_replay.tgz",
+    "bytes": 1380853,
+    "sha256": "8b68cb22b45d8ee750ec4de3891e93cee10d47ad3ff284cdedf46bd2fa130fdd",
+    "local_remote_hash_match": true
+  },
+  "failed_smoke_before_optimizer": {
+    "run_id": "20260918-114421-cma-cycle013-smoke",
+    "cause": "singleton BF16 mask-decoder batching changes baseline logits",
+    "max_difference": 0.8915977478027344,
+    "repair": "preserve original prompt batch shape and select only identity helmet output"
+  }
+}

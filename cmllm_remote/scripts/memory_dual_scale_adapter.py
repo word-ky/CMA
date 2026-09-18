@@ -1,9 +1,4 @@
-"""Cycle012 exact proposed adapter, isolated pending initialization correction.
-
-The requested double-zero initialization is stationary for every task loss:
-alpha=0 blocks Up/Down gradients, while Up=0 blocks alpha's gradient.
-This module is not connected to the production evaluator or training loop.
-"""
+"""Cycle013 corrected zero-residual adapter (Up=0, alpha=1)."""
 import torch
 from torch import nn
 
@@ -15,7 +10,7 @@ class MemoryDualScaleResidualAdapter(nn.Module):
         self.up = nn.Conv2d(bottleneck, channels, 1)
         nn.init.zeros_(self.up.weight)
         nn.init.zeros_(self.up.bias)
-        self.alpha = nn.Parameter(torch.zeros(()))
+        self.alpha = nn.Parameter(torch.ones(()))
 
     def forward(self, global_features, local_features_mapped, gate):
         residual = self.up(torch.nn.functional.gelu(

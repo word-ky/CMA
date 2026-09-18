@@ -337,7 +337,7 @@ def build_item(
     return item, original_rgb, np.stack(original_targets, axis=0), np.stack(original_refs, axis=0), eval_pred_indices
 
 
-def predict_item(model, item, tokenizer, dtype, eval_pred_indices, spatial_boxes=None):
+def predict_item(model, item, tokenizer, dtype, eval_pred_indices, spatial_boxes=None, local_evidence=None):
     batch = collate_fn([item], tokenizer=tokenizer, conv_type="llava_v1", use_mm_start_end=True, local_rank=0)
     for key in ["images", "images_clip", "input_ids", "labels", "attention_masks", "offset"]:
         batch[key] = batch[key].cuda(non_blocking=True)
@@ -347,6 +347,8 @@ def predict_item(model, item, tokenizer, dtype, eval_pred_indices, spatial_boxes
     batch["images_clip"] = batch["images_clip"].to(dtype=dtype)
     if spatial_boxes is not None:
         batch["spatial_memory_boxes_list"] = [spatial_boxes.cuda(non_blocking=True)]
+    if local_evidence is not None:
+        batch["memory_local_features_list"] = [local_evidence]
     with torch.no_grad():
         outputs = model(**batch)
     pred_masks_all = outputs["pred_masks"][0].detach().float().cpu().numpy() > 0
@@ -359,6 +361,7 @@ def main():
     parser.add_argument("--adaptation-checkpoint", default=None)
     parser.add_argument("--memory-reobservation", action="store_true")
     parser.add_argument("--memory-spatial-prompt", action="store_true")
+    parser.add_argument("--dual-scale-checkpoint", default=None)
     parser.add_argument("--counterfactual-jsonl", required=True)
     parser.add_argument("--pairs-jsonl", required=True)
     parser.add_argument("--out-dir", required=True)
@@ -484,6 +487,18 @@ def main():
             "base_model": args.model,
         }
     model.eval()
+    dual_scale_provenance = None
+    if args.dual_scale_checkpoint:
+        from memory_dual_scale_adapter import MemoryDualScaleResidualAdapter
+        checkpoint = torch.load(args.dual_scale_checkpoint, map_location="cpu")
+        model.requires_grad_(False)
+        model.memory_dual_scale_adapter = MemoryDualScaleResidualAdapter().cuda()
+        model.memory_dual_scale_adapter.load_state_dict(checkpoint['adapter_state'])
+        model.memory_dual_scale_adapter.requires_grad_(False).eval()
+        dual_scale_provenance = {'checkpoint':args.dual_scale_checkpoint,
+            'sha256':hashlib.sha256(Path(args.dual_scale_checkpoint).read_bytes()).hexdigest(),
+            'trainable_parameters_during_training':12577,'extra_SAM_encoder_calls_per_identity':1,
+            'roi_scale':1.25,'helmet_rows_only':True}
 
     clip_processor = CLIPImageProcessor.from_pretrained(args.vision_tower)
     transform = ResizeLongestSide(args.image_size)
@@ -522,6 +537,8 @@ def main():
             "rows": "same_miner_box_for_both_seg_rows_in_v1_multiround",
             "full_frame_unchanged": True,
         }
+    if dual_scale_provenance is not None:
+        provenance['dual_scale_adapter'] = dual_scale_provenance
     correct_ious = []
     wrong_ious = []
     rcs_values = []
@@ -568,7 +585,15 @@ def main():
                 )
                 item = inference_shape_only_targets(item, eval_pred_indices)
                 observation_provenance = {**provenance, "sam_spatial_boxes": boxes.tolist()}
-            pred_masks = predict_item(model, item, tokenizer, dtype, eval_pred_indices, boxes)
+            local_evidence = None
+            if args.dual_scale_checkpoint:
+                from dual_scale_features import encode_local_memory
+                local_evidence = encode_local_memory(model, image_rgb,
+                    [pairs_by_id[p]['miner_bbox_xyxy'] for p in cf['pair_ids']],
+                    transform, args.image_size, item[6], preprocess_sam, dtype)
+                item = inference_shape_only_targets(item, eval_pred_indices)
+                observation_provenance = {**provenance,'local_feature_mapping':local_evidence['receipts']}
+            pred_masks = predict_item(model, item, tokenizer, dtype, eval_pred_indices, boxes, local_evidence)
         if enhance_image is not None:
             image_dir = out_dir / "enhanced_images"
             image_dir.mkdir(exist_ok=True)
