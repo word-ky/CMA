@@ -1,0 +1,8 @@
+{
+  "recorded_utc": "2026-09-18T11:42:52.383704+00:00",
+  "status": "uploaded_and_extracted_handoff_verified",
+  "remote_root": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917",
+  "archive_bytes": 244047,
+  "archive_sha256": "b3fffc91ffcbccb6dfe79ec68ca718e2020714da1994331f8758cd70599e10d3",
+  "content": "23 files: code/tests, REVIEW019, bridge UPDATE020, report, receipts and diagnostics"
+}

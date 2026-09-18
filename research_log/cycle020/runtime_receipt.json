@@ -1,0 +1,34 @@
+{
+  "recorded_utc": "2026-09-18T11:42:03.059601+00:00",
+  "review_commit": "446c19a",
+  "new_model_forwards": 0,
+  "model_loads": 0,
+  "changed_prediction_masks": 0,
+  "group_actions": 100,
+  "frozen_predictions": 200,
+  "fixed_gate_passed": false,
+  "next_branch": "later_training_only_calibration_review",
+  "focused_tests": {
+    "passed": 6,
+    "elapsed_seconds": 1.9
+  },
+  "diagnostic_crosscheck": "diagnostic_crosscheck.json",
+  "source_sha256": {
+    "cmllm_remote/scripts/memory_contrast_reliability.py": "3ecbe1a0b2babb777948d3890ef525b2c32f6d77c86c3e91b9bc6efa87b9417a",
+    "cmllm_remote/scripts/run_memory_contrast_reliability.py": "00a59c102d3186612f31cc314844323174e0f471c0dedd0987fdaa1cb4a37b00",
+    "cmllm_remote/scripts/score_memory_contrast_reliability.py": "c5fc729dff31a3dc3e4b7f5949985a7734b0ccca1112c534abd160a8953b2c9d",
+    "cmllm_remote/tests/test_memory_contrast_reliability.py": "291631268de165807f90a69f0dc40977532b853d72e50dc1c59f83baf597f859"
+  },
+  "result_archive": {
+    "path": "outputs/cycle020_results.tgz",
+    "bytes": 81467,
+    "sha256": "d8df5e53777645ebaa2aceb8c3f75ded0007637337c94d3c14bde36e925badec",
+    "scope": "remote input/actions/scoring before closeout plots and reports"
+  },
+  "observed_analysis_repairs": [
+    "Remote sklearn unavailable: replaced dependency with exact empirical formulas.",
+    "Remote numpy.trapz unavailable: replaced with explicit trapezoidal sum."
+  ],
+  "runtime_actions_changed_after_scoring": false,
+  "val50_threshold_selected": false
+}

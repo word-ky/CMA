@@ -1,0 +1,1105 @@
+{
+  "clean": {
+    "base_summary": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.9197182918768901,
+      "memory_fidelity": 0.99,
+      "cmsa": 0.94,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.9197182918768901,
+      "median_identity_margin": 0.9631895116958757
+    },
+    "accepted_groups": 48,
+    "total_groups": 50,
+    "coverage": 0.96,
+    "abstained_groups": 2,
+    "abstention_rate": 0.04,
+    "accepted_summary": {
+      "num_groups": 48,
+      "num_references": 96,
+      "num_pairs": 48,
+      "target_miou": 0.9291031004126326,
+      "memory_fidelity": 1.0,
+      "cmsa": 0.9583333333333334,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.9291031004126328,
+      "median_identity_margin": 0.9631895116958757
+    },
+    "abstained_summary": {
+      "num_groups": 2,
+      "num_references": 4,
+      "num_pairs": 2,
+      "target_miou": 0.6944828870190703,
+      "memory_fidelity": 0.75,
+      "cmsa": 0.5,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.6944828870190703,
+      "median_identity_margin": 0.8939347181375197
+    },
+    "abstained_cmsa_failure_rate": 0.5,
+    "failure_recall": 0.3333333333333333,
+    "abstention_precision": 0.5,
+    "counts": {
+      "success_to_accept": 46,
+      "success_to_abstain": 1,
+      "failure_to_accept": 2,
+      "failure_to_abstain": 1
+    },
+    "diagnostics_ANALYSIS_ONLY": {
+      "positive_label": "CMSA success",
+      "auroc": 0.4645390070921986,
+      "auprc_average_precision": 0.9256084946781575,
+      "auprc_trapezoidal": 0.9444838746173674,
+      "risk_coverage_curve": [
+        {
+          "coverage": 0.0,
+          "accepted_groups": 0,
+          "risk_cmsa_failure": null,
+          "threshold_g_ge": null
+        },
+        {
+          "threshold_g_ge": 1.0,
+          "accepted_groups": 21,
+          "coverage": 0.42,
+          "risk_cmsa_failure": 0.09523809523809523
+        },
+        {
+          "threshold_g_ge": 0.9996859789605903,
+          "accepted_groups": 22,
+          "coverage": 0.44,
+          "risk_cmsa_failure": 0.09090909090909094
+        },
+        {
+          "threshold_g_ge": 0.999523639395022,
+          "accepted_groups": 23,
+          "coverage": 0.46,
+          "risk_cmsa_failure": 0.08695652173913049
+        },
+        {
+          "threshold_g_ge": 0.9992829168735176,
+          "accepted_groups": 24,
+          "coverage": 0.48,
+          "risk_cmsa_failure": 0.08333333333333337
+        },
+        {
+          "threshold_g_ge": 0.9992765854834821,
+          "accepted_groups": 25,
+          "coverage": 0.5,
+          "risk_cmsa_failure": 0.07999999999999996
+        },
+        {
+          "threshold_g_ge": 0.9989848860816603,
+          "accepted_groups": 26,
+          "coverage": 0.52,
+          "risk_cmsa_failure": 0.07692307692307687
+        },
+        {
+          "threshold_g_ge": 0.9986329460013671,
+          "accepted_groups": 27,
+          "coverage": 0.54,
+          "risk_cmsa_failure": 0.07407407407407407
+        },
+        {
+          "threshold_g_ge": 0.9986049107142857,
+          "accepted_groups": 28,
+          "coverage": 0.56,
+          "risk_cmsa_failure": 0.0714285714285714
+        },
+        {
+          "threshold_g_ge": 0.9982613735149232,
+          "accepted_groups": 29,
+          "coverage": 0.58,
+          "risk_cmsa_failure": 0.06896551724137934
+        },
+        {
+          "threshold_g_ge": 0.997872340425532,
+          "accepted_groups": 30,
+          "coverage": 0.6,
+          "risk_cmsa_failure": 0.06666666666666665
+        },
+        {
+          "threshold_g_ge": 0.9976525821596244,
+          "accepted_groups": 31,
+          "coverage": 0.62,
+          "risk_cmsa_failure": 0.06451612903225812
+        },
+        {
+          "threshold_g_ge": 0.997164217581851,
+          "accepted_groups": 32,
+          "coverage": 0.64,
+          "risk_cmsa_failure": 0.0625
+        },
+        {
+          "threshold_g_ge": 0.9964454976303317,
+          "accepted_groups": 33,
+          "coverage": 0.66,
+          "risk_cmsa_failure": 0.06060606060606055
+        },
+        {
+          "threshold_g_ge": 0.9948979591836735,
+          "accepted_groups": 34,
+          "coverage": 0.68,
+          "risk_cmsa_failure": 0.05882352941176472
+        },
+        {
+          "threshold_g_ge": 0.9946539110861001,
+          "accepted_groups": 35,
+          "coverage": 0.7,
+          "risk_cmsa_failure": 0.05714285714285716
+        },
+        {
+          "threshold_g_ge": 0.9944506104328524,
+          "accepted_groups": 36,
+          "coverage": 0.72,
+          "risk_cmsa_failure": 0.05555555555555558
+        },
+        {
+          "threshold_g_ge": 0.9914124962984898,
+          "accepted_groups": 37,
+          "coverage": 0.74,
+          "risk_cmsa_failure": 0.05405405405405406
+        },
+        {
+          "threshold_g_ge": 0.989769820971867,
+          "accepted_groups": 38,
+          "coverage": 0.76,
+          "risk_cmsa_failure": 0.052631578947368474
+        },
+        {
+          "threshold_g_ge": 0.9897610921501706,
+          "accepted_groups": 39,
+          "coverage": 0.78,
+          "risk_cmsa_failure": 0.05128205128205132
+        },
+        {
+          "threshold_g_ge": 0.9876065065840434,
+          "accepted_groups": 40,
+          "coverage": 0.8,
+          "risk_cmsa_failure": 0.050000000000000044
+        },
+        {
+          "threshold_g_ge": 0.9858611825192802,
+          "accepted_groups": 41,
+          "coverage": 0.82,
+          "risk_cmsa_failure": 0.04878048780487809
+        },
+        {
+          "threshold_g_ge": 0.983956439301862,
+          "accepted_groups": 42,
+          "coverage": 0.84,
+          "risk_cmsa_failure": 0.04761904761904767
+        },
+        {
+          "threshold_g_ge": 0.9770916334661355,
+          "accepted_groups": 43,
+          "coverage": 0.86,
+          "risk_cmsa_failure": 0.046511627906976716
+        },
+        {
+          "threshold_g_ge": 0.9664304797305145,
+          "accepted_groups": 44,
+          "coverage": 0.88,
+          "risk_cmsa_failure": 0.045454545454545414
+        },
+        {
+          "threshold_g_ge": 0.958139534883721,
+          "accepted_groups": 45,
+          "coverage": 0.9,
+          "risk_cmsa_failure": 0.0444444444444444
+        },
+        {
+          "threshold_g_ge": 0.944666001994018,
+          "accepted_groups": 46,
+          "coverage": 0.92,
+          "risk_cmsa_failure": 0.04347826086956519
+        },
+        {
+          "threshold_g_ge": 0.9356521739130435,
+          "accepted_groups": 47,
+          "coverage": 0.94,
+          "risk_cmsa_failure": 0.04255319148936165
+        },
+        {
+          "threshold_g_ge": 0.7777777777777778,
+          "accepted_groups": 48,
+          "coverage": 0.96,
+          "risk_cmsa_failure": 0.04166666666666663
+        },
+        {
+          "threshold_g_ge": 0.0,
+          "accepted_groups": 50,
+          "coverage": 1.0,
+          "risk_cmsa_failure": 0.06000000000000005
+        }
+      ],
+      "ties_grouped": true,
+      "runtime_rule_changed": false,
+      "threshold_selected": false
+    },
+    "per_group": [
+      {
+        "group_id": "cf_c9029d27c0483181",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_1a8999420d2a3bdc",
+        "action": "ACCEPT",
+        "g": 0.9964454976303317,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_33700f0218d6a1db",
+        "action": "ACCEPT",
+        "g": 0.944666001994018,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_3eb4e7afbcbc4783",
+        "action": "ACCEPT",
+        "g": 0.9914124962984898,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_86843243c79d2603",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_646171cbe278fb9c",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_4208e726fab4891a",
+        "action": "ACCEPT",
+        "g": 0.9858611825192802,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_803b6a694535ec15",
+        "action": "ACCEPT",
+        "g": 0.9976525821596244,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_4cd720671d92fd2e",
+        "action": "ACCEPT",
+        "g": 0.9986049107142857,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_03e0f4f2dd886689",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_b9271168b2a4cbf9",
+        "action": "ACCEPT",
+        "g": 0.9996859789605903,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_5ffe3b4241e31e97",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_eccb4c9b85399b90",
+        "action": "ACCEPT",
+        "g": 0.9944506104328524,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_273565c8b4382765",
+        "action": "ACCEPT",
+        "g": 0.9992829168735176,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_371758320d780b3d",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_afb2ea760a625f27",
+        "action": "ACCEPT",
+        "g": 0.9876065065840434,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_69928ab61b82fb85",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_e55b9138be80eb81",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_e49d9a50bdb728a9",
+        "action": "ACCEPT",
+        "g": 0.9982613735149232,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_99b0215fccf3f63b",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_84320e41bc5af656",
+        "action": "ACCEPT",
+        "g": 0.9992765854834821,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_26d7eeeecd43037a",
+        "action": "ACCEPT",
+        "g": 0.9356521739130435,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_0774290cbf004c7d",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_2a89e76f158b6a5b",
+        "action": "ACCEPT",
+        "g": 0.9948979591836735,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_8065502af4eb2535",
+        "action": "ACCEPT",
+        "g": 0.9664304797305145,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_ae56647f7b0ed80f",
+        "action": "ABSTAIN_ESCALATE",
+        "g": 0.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_aa391b9836fd78ee",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_02e38a9e5a19c360",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_01ad18abfbf5459e",
+        "action": "ACCEPT",
+        "g": 0.9897610921501706,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_427af9a92fe7f6cd",
+        "action": "ACCEPT",
+        "g": 0.7777777777777778,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_4165dbded0d67baf",
+        "action": "ACCEPT",
+        "g": 0.9946539110861001,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_5495414a54138233",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_cd5bf6d06a4f5432",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_149c5aadeca92d12",
+        "action": "ACCEPT",
+        "g": 0.9989848860816603,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_3c4f4b5cb4bb1d77",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_f3d2d3f12a7aead4",
+        "action": "ACCEPT",
+        "g": 0.9986329460013671,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_5e9c50c7e24dfd0f",
+        "action": "ACCEPT",
+        "g": 0.997164217581851,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_1e7d8cfc1625c2da",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_2e36401e0d114aa8",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_1a115ce7f6b388e4",
+        "action": "ACCEPT",
+        "g": 0.997872340425532,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_289b3fd7110690be",
+        "action": "ACCEPT",
+        "g": 0.999523639395022,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_b88a50d6609f6487",
+        "action": "ACCEPT",
+        "g": 0.989769820971867,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_6b395dbd9b45c431",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_4a66376fb7c719e0",
+        "action": "ACCEPT",
+        "g": 0.983956439301862,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_c55d2b77e1c81163",
+        "action": "ACCEPT",
+        "g": 0.958139534883721,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_a61afd1b0775da52",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_dd011c16faf2a9e3",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_5e913799bf202735",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_8c490484f166a75a",
+        "action": "ABSTAIN_ESCALATE",
+        "g": 0.0,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_91c35cfa78c4abd9",
+        "action": "ACCEPT",
+        "g": 0.9770916334661355,
+        "cmsa_success": true
+      }
+    ]
+  },
+  "target15_b": {
+    "base_summary": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.6911134046687633,
+      "memory_fidelity": 0.89,
+      "cmsa": 0.58,
+      "identity_error_rate": 0.03,
+      "mean_identity_margin": 0.6629313123212343,
+      "median_identity_margin": 0.8474629071282657
+    },
+    "accepted_groups": 42,
+    "total_groups": 50,
+    "coverage": 0.84,
+    "abstained_groups": 8,
+    "abstention_rate": 0.16,
+    "accepted_summary": {
+      "num_groups": 42,
+      "num_references": 84,
+      "num_pairs": 42,
+      "target_miou": 0.738886011843204,
+      "memory_fidelity": 0.9523809523809523,
+      "cmsa": 0.6666666666666666,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.7387270933366142,
+      "median_identity_margin": 0.8554173208134315
+    },
+    "abstained_summary": {
+      "num_groups": 8,
+      "num_references": 16,
+      "num_pairs": 8,
+      "target_miou": 0.4403072170029495,
+      "memory_fidelity": 0.5625,
+      "cmsa": 0.125,
+      "identity_error_rate": 0.1875,
+      "mean_identity_margin": 0.26500346199048974,
+      "median_identity_margin": 0.3542811952699415
+    },
+    "abstained_cmsa_failure_rate": 0.875,
+    "failure_recall": 0.3333333333333333,
+    "abstention_precision": 0.875,
+    "counts": {
+      "success_to_accept": 28,
+      "success_to_abstain": 1,
+      "failure_to_accept": 14,
+      "failure_to_abstain": 7
+    },
+    "diagnostics_ANALYSIS_ONLY": {
+      "positive_label": "CMSA success",
+      "auroc": 0.8037766830870279,
+      "auprc_average_precision": 0.7805576595793826,
+      "auprc_trapezoidal": 0.8318194126128285,
+      "risk_coverage_curve": [
+        {
+          "coverage": 0.0,
+          "accepted_groups": 0,
+          "risk_cmsa_failure": null,
+          "threshold_g_ge": null
+        },
+        {
+          "threshold_g_ge": 1.0,
+          "accepted_groups": 17,
+          "coverage": 0.34,
+          "risk_cmsa_failure": 0.23529411764705888
+        },
+        {
+          "threshold_g_ge": 0.9995825941771888,
+          "accepted_groups": 18,
+          "coverage": 0.36,
+          "risk_cmsa_failure": 0.2222222222222222
+        },
+        {
+          "threshold_g_ge": 0.999577677224736,
+          "accepted_groups": 19,
+          "coverage": 0.38,
+          "risk_cmsa_failure": 0.21052631578947367
+        },
+        {
+          "threshold_g_ge": 0.9981926155435064,
+          "accepted_groups": 20,
+          "coverage": 0.4,
+          "risk_cmsa_failure": 0.19999999999999996
+        },
+        {
+          "threshold_g_ge": 0.9965635738831615,
+          "accepted_groups": 21,
+          "coverage": 0.42,
+          "risk_cmsa_failure": 0.19047619047619047
+        },
+        {
+          "threshold_g_ge": 0.9957645065650148,
+          "accepted_groups": 22,
+          "coverage": 0.44,
+          "risk_cmsa_failure": 0.18181818181818177
+        },
+        {
+          "threshold_g_ge": 0.9911690496215307,
+          "accepted_groups": 23,
+          "coverage": 0.46,
+          "risk_cmsa_failure": 0.17391304347826086
+        },
+        {
+          "threshold_g_ge": 0.9908266723888204,
+          "accepted_groups": 24,
+          "coverage": 0.48,
+          "risk_cmsa_failure": 0.16666666666666663
+        },
+        {
+          "threshold_g_ge": 0.9879559532002753,
+          "accepted_groups": 25,
+          "coverage": 0.5,
+          "risk_cmsa_failure": 0.16000000000000003
+        },
+        {
+          "threshold_g_ge": 0.9837037037037037,
+          "accepted_groups": 26,
+          "coverage": 0.52,
+          "risk_cmsa_failure": 0.15384615384615385
+        },
+        {
+          "threshold_g_ge": 0.9775240813414199,
+          "accepted_groups": 27,
+          "coverage": 0.54,
+          "risk_cmsa_failure": 0.18518518518518523
+        },
+        {
+          "threshold_g_ge": 0.9761801645734084,
+          "accepted_groups": 28,
+          "coverage": 0.56,
+          "risk_cmsa_failure": 0.1785714285714286
+        },
+        {
+          "threshold_g_ge": 0.9719170403587444,
+          "accepted_groups": 29,
+          "coverage": 0.58,
+          "risk_cmsa_failure": 0.2068965517241379
+        },
+        {
+          "threshold_g_ge": 0.966491458607096,
+          "accepted_groups": 30,
+          "coverage": 0.6,
+          "risk_cmsa_failure": 0.19999999999999996
+        },
+        {
+          "threshold_g_ge": 0.9618255853410247,
+          "accepted_groups": 31,
+          "coverage": 0.62,
+          "risk_cmsa_failure": 0.19354838709677424
+        },
+        {
+          "threshold_g_ge": 0.9438457175269427,
+          "accepted_groups": 32,
+          "coverage": 0.64,
+          "risk_cmsa_failure": 0.21875
+        },
+        {
+          "threshold_g_ge": 0.9416514717374316,
+          "accepted_groups": 33,
+          "coverage": 0.66,
+          "risk_cmsa_failure": 0.21212121212121215
+        },
+        {
+          "threshold_g_ge": 0.9405158069883528,
+          "accepted_groups": 34,
+          "coverage": 0.68,
+          "risk_cmsa_failure": 0.23529411764705888
+        },
+        {
+          "threshold_g_ge": 0.9290942360475755,
+          "accepted_groups": 35,
+          "coverage": 0.7,
+          "risk_cmsa_failure": 0.22857142857142854
+        },
+        {
+          "threshold_g_ge": 0.9230538022242261,
+          "accepted_groups": 36,
+          "coverage": 0.72,
+          "risk_cmsa_failure": 0.25
+        },
+        {
+          "threshold_g_ge": 0.8447719944725933,
+          "accepted_groups": 37,
+          "coverage": 0.74,
+          "risk_cmsa_failure": 0.2702702702702703
+        },
+        {
+          "threshold_g_ge": 0.8310679611650486,
+          "accepted_groups": 38,
+          "coverage": 0.76,
+          "risk_cmsa_failure": 0.26315789473684215
+        },
+        {
+          "threshold_g_ge": 0.7388353765323993,
+          "accepted_groups": 39,
+          "coverage": 0.78,
+          "risk_cmsa_failure": 0.28205128205128205
+        },
+        {
+          "threshold_g_ge": 0.567060709276698,
+          "accepted_groups": 40,
+          "coverage": 0.8,
+          "risk_cmsa_failure": 0.30000000000000004
+        },
+        {
+          "threshold_g_ge": 0.17549668874172186,
+          "accepted_groups": 41,
+          "coverage": 0.82,
+          "risk_cmsa_failure": 0.31707317073170727
+        },
+        {
+          "threshold_g_ge": 0.047058823529411764,
+          "accepted_groups": 42,
+          "coverage": 0.84,
+          "risk_cmsa_failure": 0.33333333333333337
+        },
+        {
+          "threshold_g_ge": 0.0,
+          "accepted_groups": 46,
+          "coverage": 0.92,
+          "risk_cmsa_failure": 0.3695652173913043
+        },
+        {
+          "threshold_g_ge": -0.22103213242453748,
+          "accepted_groups": 47,
+          "coverage": 0.94,
+          "risk_cmsa_failure": 0.3829787234042553
+        },
+        {
+          "threshold_g_ge": -0.7835915671831344,
+          "accepted_groups": 48,
+          "coverage": 0.96,
+          "risk_cmsa_failure": 0.39583333333333337
+        },
+        {
+          "threshold_g_ge": -1.0,
+          "accepted_groups": 50,
+          "coverage": 1.0,
+          "risk_cmsa_failure": 0.42000000000000004
+        }
+      ],
+      "ties_grouped": true,
+      "runtime_rule_changed": false,
+      "threshold_selected": false
+    },
+    "per_group": [
+      {
+        "group_id": "cf_c9029d27c0483181",
+        "action": "ABSTAIN_ESCALATE",
+        "g": 0.0,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_1a8999420d2a3bdc",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_33700f0218d6a1db",
+        "action": "ACCEPT",
+        "g": 0.9290942360475755,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_3eb4e7afbcbc4783",
+        "action": "ACCEPT",
+        "g": 0.17549668874172186,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_86843243c79d2603",
+        "action": "ACCEPT",
+        "g": 0.9911690496215307,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_646171cbe278fb9c",
+        "action": "ACCEPT",
+        "g": 0.9230538022242261,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_4208e726fab4891a",
+        "action": "ACCEPT",
+        "g": 0.9957645065650148,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_803b6a694535ec15",
+        "action": "ACCEPT",
+        "g": 0.9405158069883528,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_4cd720671d92fd2e",
+        "action": "ABSTAIN_ESCALATE",
+        "g": -0.22103213242453748,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_03e0f4f2dd886689",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_b9271168b2a4cbf9",
+        "action": "ACCEPT",
+        "g": 0.9995825941771888,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_5ffe3b4241e31e97",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_eccb4c9b85399b90",
+        "action": "ACCEPT",
+        "g": 0.999577677224736,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_273565c8b4382765",
+        "action": "ACCEPT",
+        "g": 0.567060709276698,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_371758320d780b3d",
+        "action": "ACCEPT",
+        "g": 0.9416514717374316,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_afb2ea760a625f27",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_69928ab61b82fb85",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_e55b9138be80eb81",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_e49d9a50bdb728a9",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_99b0215fccf3f63b",
+        "action": "ACCEPT",
+        "g": 0.9719170403587444,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_84320e41bc5af656",
+        "action": "ABSTAIN_ESCALATE",
+        "g": -1.0,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_26d7eeeecd43037a",
+        "action": "ACCEPT",
+        "g": 0.9837037037037037,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_0774290cbf004c7d",
+        "action": "ACCEPT",
+        "g": 0.9618255853410247,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_2a89e76f158b6a5b",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_8065502af4eb2535",
+        "action": "ACCEPT",
+        "g": 0.9775240813414199,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_ae56647f7b0ed80f",
+        "action": "ABSTAIN_ESCALATE",
+        "g": 0.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_aa391b9836fd78ee",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_02e38a9e5a19c360",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_01ad18abfbf5459e",
+        "action": "ACCEPT",
+        "g": 0.8447719944725933,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_427af9a92fe7f6cd",
+        "action": "ABSTAIN_ESCALATE",
+        "g": -0.7835915671831344,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_4165dbded0d67baf",
+        "action": "ACCEPT",
+        "g": 0.047058823529411764,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_5495414a54138233",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_cd5bf6d06a4f5432",
+        "action": "ACCEPT",
+        "g": 0.9761801645734084,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_149c5aadeca92d12",
+        "action": "ACCEPT",
+        "g": 0.7388353765323993,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_3c4f4b5cb4bb1d77",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_f3d2d3f12a7aead4",
+        "action": "ACCEPT",
+        "g": 0.9879559532002753,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_5e9c50c7e24dfd0f",
+        "action": "ACCEPT",
+        "g": 0.9981926155435064,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_1e7d8cfc1625c2da",
+        "action": "ABSTAIN_ESCALATE",
+        "g": 0.0,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_2e36401e0d114aa8",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_1a115ce7f6b388e4",
+        "action": "ABSTAIN_ESCALATE",
+        "g": -1.0,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_289b3fd7110690be",
+        "action": "ABSTAIN_ESCALATE",
+        "g": 0.0,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_b88a50d6609f6487",
+        "action": "ACCEPT",
+        "g": 0.9965635738831615,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_6b395dbd9b45c431",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_4a66376fb7c719e0",
+        "action": "ACCEPT",
+        "g": 0.9908266723888204,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_c55d2b77e1c81163",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_a61afd1b0775da52",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_dd011c16faf2a9e3",
+        "action": "ACCEPT",
+        "g": 1.0,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_5e913799bf202735",
+        "action": "ACCEPT",
+        "g": 0.966491458607096,
+        "cmsa_success": true
+      },
+      {
+        "group_id": "cf_8c490484f166a75a",
+        "action": "ACCEPT",
+        "g": 0.9438457175269427,
+        "cmsa_success": false
+      },
+      {
+        "group_id": "cf_91c35cfa78c4abd9",
+        "action": "ACCEPT",
+        "g": 0.8310679611650486,
+        "cmsa_success": true
+      }
+    ]
+  },
+  "fixed_gate": {
+    "passed": false,
+    "checks": {
+      "degraded_both_actions": true,
+      "degraded_coverage_at_least_half": true,
+      "degraded_accepted_cmsa_at_least_075": false,
+      "at_least_11_failures_abstained": false,
+      "abstention_precision_at_least_060": true,
+      "clean_coverage_at_least_080": true,
+      "clean_accepted_cmsa_at_least_094": true
+    }
+  },
+  "next_rule_branch": "later_training_only_calibration_review"
+}

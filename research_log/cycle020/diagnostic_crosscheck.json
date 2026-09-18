@@ -1,0 +1,16 @@
+{
+  "sklearn_version": "1.5.1",
+  "all_metrics_match_to_1e_12": true,
+  "values": {
+    "clean": {
+      "auroc": 0.4645390070921986,
+      "auprc_average_precision": 0.9256084946781578,
+      "auprc_trapezoidal": 0.9444838746173674
+    },
+    "target15_b": {
+      "auroc": 0.8037766830870279,
+      "auprc_average_precision": 0.7805576595793826,
+      "auprc_trapezoidal": 0.8318194126128285
+    }
+  }
+}
