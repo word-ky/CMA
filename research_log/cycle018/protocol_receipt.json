@@ -1,0 +1,395 @@
+{
+  "review_commit": "35ea314",
+  "protocol": "cma_baseline_val50_v1",
+  "same_ordered_groups_and_identities_as_cma": true,
+  "frozen_files": {
+    "research_log/cycle006/val_eval_restored.jsonl": "d47d8f0ac42db4e19481844826e87069ced2d656de645b8473b4405b6d44b73c",
+    "research_log/cycle006/val_grouped_restored.jsonl": "957b3918bd46633968dcfa1967b6d991de7c599f968371b13752a06070238bb3",
+    "research_log/cycle006/frozen_assets.json": "da6cae6cab7460c88182440bdf14a19134b21b4e43656d1bb61908c789213ec9",
+    "cmllm_remote/scripts/counterfactual_export.py": "6e77025f62d0325bf894af329f95b9ec47d37f7fd681d90e89c5cac891ac3121",
+    "cmllm_remote/scripts/eval_counterfactual_memory_fidelity.py": "3cc6192b3ddd97f0010f3382ab0204ee99286e1e372ee0c86f50898c623939d4"
+  },
+  "ordered_groups": [
+    {
+      "group_id": "cf_c9029d27c0483181",
+      "pair_ids": [
+        "pair_dfee24282f912128",
+        "pair_ee869f891a591f2f"
+      ]
+    },
+    {
+      "group_id": "cf_1a8999420d2a3bdc",
+      "pair_ids": [
+        "pair_bf1abb1c701342bf",
+        "pair_ce218515df76271a"
+      ]
+    },
+    {
+      "group_id": "cf_33700f0218d6a1db",
+      "pair_ids": [
+        "pair_18d52d2501ef2fdd",
+        "pair_8a4b3854d85e47ad"
+      ]
+    },
+    {
+      "group_id": "cf_3eb4e7afbcbc4783",
+      "pair_ids": [
+        "pair_6de9291af03165d5",
+        "pair_7911e3f2c83d2716"
+      ]
+    },
+    {
+      "group_id": "cf_86843243c79d2603",
+      "pair_ids": [
+        "pair_902312e6093adfeb",
+        "pair_ea24a2c8986f1be0"
+      ]
+    },
+    {
+      "group_id": "cf_646171cbe278fb9c",
+      "pair_ids": [
+        "pair_4239d8f136a25fad",
+        "pair_5c5bda806dc826cb"
+      ]
+    },
+    {
+      "group_id": "cf_4208e726fab4891a",
+      "pair_ids": [
+        "pair_070bf0b47561fcab",
+        "pair_758d782fb1162424"
+      ]
+    },
+    {
+      "group_id": "cf_803b6a694535ec15",
+      "pair_ids": [
+        "pair_8a5ec91962396ad6",
+        "pair_d146e6cefa98dd2b"
+      ]
+    },
+    {
+      "group_id": "cf_4cd720671d92fd2e",
+      "pair_ids": [
+        "pair_0f3a3cc6bc8d0fac",
+        "pair_282fa8feb5b1d53b"
+      ]
+    },
+    {
+      "group_id": "cf_03e0f4f2dd886689",
+      "pair_ids": [
+        "pair_1f598cdc5031cf1a",
+        "pair_7120ccb55cb7c384"
+      ]
+    },
+    {
+      "group_id": "cf_b9271168b2a4cbf9",
+      "pair_ids": [
+        "pair_46ee4caa7947bda4",
+        "pair_e8baafb4959f50c8"
+      ]
+    },
+    {
+      "group_id": "cf_5ffe3b4241e31e97",
+      "pair_ids": [
+        "pair_3d6d7ae8f2474e9d",
+        "pair_62e0bcee3b75b457"
+      ]
+    },
+    {
+      "group_id": "cf_eccb4c9b85399b90",
+      "pair_ids": [
+        "pair_c1748a612dedd95d",
+        "pair_e88462209f4b8ca5"
+      ]
+    },
+    {
+      "group_id": "cf_273565c8b4382765",
+      "pair_ids": [
+        "pair_2c2ca21907f11a28",
+        "pair_b42f453924bc6230"
+      ]
+    },
+    {
+      "group_id": "cf_371758320d780b3d",
+      "pair_ids": [
+        "pair_d8dd2470d1bb3fab",
+        "pair_e729502405e303d1"
+      ]
+    },
+    {
+      "group_id": "cf_afb2ea760a625f27",
+      "pair_ids": [
+        "pair_da4cb27015b9d90e",
+        "pair_debb810fb1120bcd"
+      ]
+    },
+    {
+      "group_id": "cf_69928ab61b82fb85",
+      "pair_ids": [
+        "pair_82444a7587097173",
+        "pair_8eedfea6cd314913"
+      ]
+    },
+    {
+      "group_id": "cf_e55b9138be80eb81",
+      "pair_ids": [
+        "pair_00eed457c4ca50ee",
+        "pair_34c3422a648a19c6"
+      ]
+    },
+    {
+      "group_id": "cf_e49d9a50bdb728a9",
+      "pair_ids": [
+        "pair_55cf123fae1f9422",
+        "pair_e8c62e9016d6cf6e"
+      ]
+    },
+    {
+      "group_id": "cf_99b0215fccf3f63b",
+      "pair_ids": [
+        "pair_75a189f73e8e5634",
+        "pair_f2c32ccd0c4715f8"
+      ]
+    },
+    {
+      "group_id": "cf_84320e41bc5af656",
+      "pair_ids": [
+        "pair_0914f22169767032",
+        "pair_95733ef4b37417e7"
+      ]
+    },
+    {
+      "group_id": "cf_26d7eeeecd43037a",
+      "pair_ids": [
+        "pair_b90dac7e7f4bdf95",
+        "pair_d4a89f428d1bb0c6"
+      ]
+    },
+    {
+      "group_id": "cf_0774290cbf004c7d",
+      "pair_ids": [
+        "pair_28869619c31f8c92",
+        "pair_ba77882bb02cdf6a"
+      ]
+    },
+    {
+      "group_id": "cf_2a89e76f158b6a5b",
+      "pair_ids": [
+        "pair_0e189fa2f3e8c7c0",
+        "pair_a9537ca3a2ce2b36"
+      ]
+    },
+    {
+      "group_id": "cf_8065502af4eb2535",
+      "pair_ids": [
+        "pair_5e23b792d98f68a4",
+        "pair_9f2b95a73274063f"
+      ]
+    },
+    {
+      "group_id": "cf_ae56647f7b0ed80f",
+      "pair_ids": [
+        "pair_c4e91b9cdc0cba71",
+        "pair_e851f113ee939eea"
+      ]
+    },
+    {
+      "group_id": "cf_aa391b9836fd78ee",
+      "pair_ids": [
+        "pair_06a1dc4e3e515041",
+        "pair_37c82634946f25f5"
+      ]
+    },
+    {
+      "group_id": "cf_02e38a9e5a19c360",
+      "pair_ids": [
+        "pair_263468c2ddf5fb76",
+        "pair_dc04ff024e121dde"
+      ]
+    },
+    {
+      "group_id": "cf_01ad18abfbf5459e",
+      "pair_ids": [
+        "pair_38674bdf7db4b2ed",
+        "pair_962f5313b2086805"
+      ]
+    },
+    {
+      "group_id": "cf_427af9a92fe7f6cd",
+      "pair_ids": [
+        "pair_0de775ae7f8ca4a2",
+        "pair_3074cb2dba94513d"
+      ]
+    },
+    {
+      "group_id": "cf_4165dbded0d67baf",
+      "pair_ids": [
+        "pair_15a09d1fdc096259",
+        "pair_7b299e46695e42b0"
+      ]
+    },
+    {
+      "group_id": "cf_5495414a54138233",
+      "pair_ids": [
+        "pair_5469de723b6da72d",
+        "pair_e2f976f7917906d3"
+      ]
+    },
+    {
+      "group_id": "cf_cd5bf6d06a4f5432",
+      "pair_ids": [
+        "pair_ac0d8bfe9c1661c5",
+        "pair_c2d9446c6d4fb8db"
+      ]
+    },
+    {
+      "group_id": "cf_149c5aadeca92d12",
+      "pair_ids": [
+        "pair_1bd36ba388bfd4b4",
+        "pair_3d1a6dc5b8713250"
+      ]
+    },
+    {
+      "group_id": "cf_3c4f4b5cb4bb1d77",
+      "pair_ids": [
+        "pair_103b145283b9c88f",
+        "pair_4e983bf2a4d11cbe"
+      ]
+    },
+    {
+      "group_id": "cf_f3d2d3f12a7aead4",
+      "pair_ids": [
+        "pair_2965e2b8ecc4bc25",
+        "pair_d14b167ce0280263"
+      ]
+    },
+    {
+      "group_id": "cf_5e9c50c7e24dfd0f",
+      "pair_ids": [
+        "pair_1ae32805d01615a2",
+        "pair_9e66a011a42a7a28"
+      ]
+    },
+    {
+      "group_id": "cf_1e7d8cfc1625c2da",
+      "pair_ids": [
+        "pair_14fac578d65d6396",
+        "pair_59941987cbb2d335"
+      ]
+    },
+    {
+      "group_id": "cf_2e36401e0d114aa8",
+      "pair_ids": [
+        "pair_90b92efae9e9d2c3",
+        "pair_bfc414aca21db2fe"
+      ]
+    },
+    {
+      "group_id": "cf_1a115ce7f6b388e4",
+      "pair_ids": [
+        "pair_10cd9300159cd8f8",
+        "pair_92a3a6c3133f912f"
+      ]
+    },
+    {
+      "group_id": "cf_289b3fd7110690be",
+      "pair_ids": [
+        "pair_82603c63849c0b6a",
+        "pair_ec7ddf7c7749247e"
+      ]
+    },
+    {
+      "group_id": "cf_b88a50d6609f6487",
+      "pair_ids": [
+        "pair_852a6f8fa01385f4",
+        "pair_8ca9be40574f083a"
+      ]
+    },
+    {
+      "group_id": "cf_6b395dbd9b45c431",
+      "pair_ids": [
+        "pair_5f1e02b478b86291",
+        "pair_be7ab541fdb4af4d"
+      ]
+    },
+    {
+      "group_id": "cf_4a66376fb7c719e0",
+      "pair_ids": [
+        "pair_98ed33399344eb77",
+        "pair_fb6a850be1953af9"
+      ]
+    },
+    {
+      "group_id": "cf_c55d2b77e1c81163",
+      "pair_ids": [
+        "pair_c1e75a5ad923ddc7",
+        "pair_f580bdfa8b667497"
+      ]
+    },
+    {
+      "group_id": "cf_a61afd1b0775da52",
+      "pair_ids": [
+        "pair_0056ba0d0618e2f4",
+        "pair_b14a46053498a63a"
+      ]
+    },
+    {
+      "group_id": "cf_dd011c16faf2a9e3",
+      "pair_ids": [
+        "pair_0ef076cb77057544",
+        "pair_b2f1252d6a00750e"
+      ]
+    },
+    {
+      "group_id": "cf_5e913799bf202735",
+      "pair_ids": [
+        "pair_7cd713a1305520f4",
+        "pair_bebf44b541a0cd42"
+      ]
+    },
+    {
+      "group_id": "cf_8c490484f166a75a",
+      "pair_ids": [
+        "pair_0fc3abb49ae05ce3",
+        "pair_5dcb49c2b6c45818"
+      ]
+    },
+    {
+      "group_id": "cf_91c35cfa78c4abd9",
+      "pair_ids": [
+        "pair_15f0f95c497e368a",
+        "pair_b3e80d96cb3419dd"
+      ]
+    }
+  ],
+  "cma_prediction_manifests": {
+    "clean": {
+      "manifest": "research_log\\cycle008\\val_base_clean\\memory_predictions.jsonl",
+      "sha256": "9d2e71c785b072505bd46e395b876bfca3f3669e6fef9824d0ba8fd244a04ef0",
+      "groups": 50,
+      "condition": "clean"
+    },
+    "target15_b": {
+      "manifest": "research_log\\cycle008\\val_base_target15_b\\memory_predictions.jsonl",
+      "sha256": "4ab816818acdc5d4af3044c5e3d5176b71ddc7d3b962d6987a450882ac2a3314",
+      "groups": 50,
+      "condition": "target15_b"
+    }
+  },
+  "source_revision": "4593a069f09628ce3a5b46e657f5417fefd7be46",
+  "checkpoint_revision": "095e0637fcba015a02c0686f67b848c79c3cc80b",
+  "prompt_sha256": "3a50bf23f9acc8d8f74abf2dd5e73a9a26d0f37adfecb73992bc1f850ef26b57",
+  "expected_forwards": 200,
+  "runner_change": "Only optional argv/model_bundle entry and return receipt; per-group native logic unchanged.",
+  "prepared_manifest_sha256": "c97f4e8644e16ea41b08eab72779ce1d35ad8adb88ee942389f9b0698ec3c960",
+  "port_file_sha256": {
+    "check_memory_state.py": "b85d8286ad33cc9cc712730c910bab13a8e239bcef6ad46b401312e29eaa2b59",
+    "load_native.py": "cf7fd4a41e462308c2234e322412c37603acb70899c50ae0223e7a49f711f10d",
+    "memory_state.py": "7b7afe8c81c62867c12646fb865c42660b8b6985126b3d911b41873591493c07",
+    "prepare_inputs.py": "0a638971196e764687dd9ce5767c6bb80fbeabd729bbf410d6074cbb38a02b25",
+    "prepare_val50.py": "30df4c70e9ae2ea0f525626af1106dbf27b43b35dc851851075a21feface02b5",
+    "run_smoke.py": "3ae4d8535be9bb340bb4b9527aff8bf682c28d4842e50304b6a9e7ac79d7580a",
+    "run_val50.py": "f2f6dafed7382bc173cb5c442119f6cb0cf2eb08ebdd21e31551a846a169e08f",
+    "score_val50.py": "633f4a6ad0862e576389375e77fced338c230e5c4aa74bda5f9e1762b60ba1d2",
+    "weight_fidelity.py": "effe58373763fe0d7d364edcabd7c6cf0f50c70f7ee70a672ec98270657c464a"
+  }
+}

@@ -1,6 +1,6 @@
 # Pinned SegLLM supplied-memory port (Cycle015)
 
-Status: Cycle017 four-trial weight-faithful wiring smoke passed. Native HF loading requires exact restoration of the two gamma tensors; final target embedding equality is audited without modification. No performance score or full val50 run. See `research_log/CYCLE017_REPORT.md` and runtime receipts.
+Status: Cycle018 completed the frozen full val50 comparison (200 forwards). See `research_log/CYCLE018_REPORT.md` for metrics and scope limitations. Exact two-gamma restoration and final target-embedding equality remain required. `run_val50.py` loops the unchanged per-group smoke using a shared loaded model; `score_val50.py` operates only after prediction freeze.
 
 Only upstream `berkeley-hipie/segllm` revision
 `4593a069f09628ce3a5b46e657f5417fefd7be46` and `Marlo-Z/SegLLM`

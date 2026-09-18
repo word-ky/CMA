@@ -1,0 +1,790 @@
+[autodl] run_id=20260918-174555-cma-cycle018-val50
+[autodl] started_at=2026-09-18T17:46:00+08:00
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/torch/cuda/__init__.py:619: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Skip loading parameter 'detr.detr.transformer.tgt_embed.weight' to the model due to incompatible shapes: (900, 256) in the checkpoint but (100, 256) in the model! You might want to double check if this is expected.
+Some model parameters or buffers are not found in the checkpoint:
+detr.detr.transformer.tgt_embed.weight
+The checkpoint state_dict contains keys that are not used by the model:
+  text_encoder.body.model.embeddings.position_ids
+  detr.mask_dino.pixel_decoder.input_proj.0.0.{bias, weight}
+  detr.mask_dino.pixel_decoder.input_proj.0.1.{bias, weight}
+  detr.mask_dino.pixel_decoder.input_proj.1.0.{bias, weight}
+  detr.mask_dino.pixel_decoder.input_proj.1.1.{bias, weight}
+  detr.mask_dino.pixel_decoder.input_proj.2.0.{bias, weight}
+  detr.mask_dino.pixel_decoder.input_proj.2.1.{bias, weight}
+  detr.mask_dino.pixel_decoder.input_proj.3.0.{bias, weight}
+  detr.mask_dino.pixel_decoder.input_proj.3.1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.level_embed
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.self_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.self_attn.attention_weights.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.self_attn.value_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.self_attn.output_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.norm1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.linear1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.linear2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.0.norm2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.self_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.self_attn.attention_weights.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.self_attn.value_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.self_attn.output_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.norm1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.linear1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.linear2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.1.norm2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.self_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.self_attn.attention_weights.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.self_attn.value_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.self_attn.output_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.norm1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.linear1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.linear2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.2.norm2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.self_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.self_attn.attention_weights.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.self_attn.value_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.self_attn.output_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.norm1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.linear1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.linear2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.3.norm2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.self_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.self_attn.attention_weights.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.self_attn.value_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.self_attn.output_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.norm1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.linear1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.linear2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.4.norm2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.self_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.self_attn.attention_weights.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.self_attn.value_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.self_attn.output_proj.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.norm1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.linear1.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.linear2.{bias, weight}
+  detr.mask_dino.pixel_decoder.transformer.encoder.layers.5.norm2.{bias, weight}
+  detr.mask_dino.pixel_decoder.mask_features.0.{bias, weight}
+  detr.mask_dino.pixel_decoder.mask_features.1.{bias, weight}
+  detr.mask_dino.pixel_decoder.mask_features.3.{bias, weight}
+  detr.mask_dino.pixel_decoder.adapter_1.weight
+  detr.mask_dino.pixel_decoder.adapter_1.norm.{bias, weight}
+  detr.mask_dino.pixel_decoder.layer_1.weight
+  detr.mask_dino.pixel_decoder.layer_1.norm.{bias, weight}
+  detr.mask_dino.predictor.enc_output.{bias, weight}
+  detr.mask_dino.predictor.enc_output_norm.{bias, weight}
+  detr.mask_dino.predictor.class_embed.{bias, weight}
+  detr.mask_dino.predictor.label_enc.weight
+  detr.mask_dino.predictor.mask_embed.layers.0.{bias, weight}
+  detr.mask_dino.predictor.mask_embed.layers.1.{bias, weight}
+  detr.mask_dino.predictor.mask_embed.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder_norm.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.0.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.0.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.1.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.1.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.2.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.2.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.3.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.3.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.4.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.4.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.5.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.5.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.6.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.6.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.7.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.7.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.cross_attn.sampling_offsets.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.cross_attn.attention_weights.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.cross_attn.value_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.cross_attn.output_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.norm1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.self_attn.{in_proj_bias, in_proj_weight}
+  detr.mask_dino.predictor.decoder.layers.8.self_attn.out_proj.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.norm2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.linear1.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.linear2.{bias, weight}
+  detr.mask_dino.predictor.decoder.layers.8.norm3.{bias, weight}
+  detr.mask_dino.predictor.decoder.norm.{bias, weight}
+  detr.mask_dino.predictor.decoder.ref_point_head.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.ref_point_head.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.0.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.0.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.0.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.1.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.1.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.1.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.2.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.2.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.2.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.3.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.3.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.3.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.4.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.4.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.4.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.5.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.5.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.5.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.6.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.6.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.6.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.7.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.7.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.7.layers.2.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.8.layers.0.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.8.layers.1.{bias, weight}
+  detr.mask_dino.predictor.decoder.bbox_embed.8.layers.2.{bias, weight}
+  detr.mask_dino.predictor._bbox_embed.layers.0.{bias, weight}
+  detr.mask_dino.predictor._bbox_embed.layers.1.{bias, weight}
+  detr.mask_dino.predictor._bbox_embed.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.0.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.0.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.0.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.1.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.1.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.1.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.2.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.2.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.2.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.3.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.3.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.3.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.4.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.4.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.4.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.5.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.5.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.5.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.6.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.6.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.6.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.7.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.7.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.7.layers.2.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.8.layers.0.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.8.layers.1.{bias, weight}
+  detr.mask_dino.predictor.bbox_embed.8.layers.2.{bias, weight}
+  detr.mask_dino_criterion.empty_weight
+  detr.mask_dino_cls_embed.0.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.0.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.1.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.1.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.2.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.2.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.3.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.3.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.4.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.4.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.5.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.5.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.6.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.6.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.7.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.7.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.8.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.8.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.9.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.9.dot_product_projection_text.{bias, weight}
+  detr.mask_dino_cls_embed.10.{bias0, bias_lang, log_scale}
+  detr.mask_dino_cls_embed.10.dot_product_projection_text.{bias, weight}
+pre_init
+Creating mask encode head: make sure BOX is contained conversation file name
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.43it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.46it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.08it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.16it/s]
+Some weights of the model checkpoint at /home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint were not used when initializing LlavaLlamaForCausalLM: ['model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.weight_l', 'model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.weight_v']
+- This IS expected if you are initializing LlavaLlamaForCausalLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing LlavaLlamaForCausalLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of LlavaLlamaForCausalLM were not initialized from the model checkpoint at /home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint and are newly initialized: ['model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_l', 'model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_v']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/llava/train/llava_trainer.py:204: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `LLaVATrainer.__init__`. Use `processing_class` instead.
+  super().__init__(*args,**kwargs)
+--------------------Dataset Lengths -----------------------
+[1]
+[2026-09-18 17:46:19,291] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/llava/train/llava_trainer.py:204: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `LLaVATrainer.__init__`. Use `processing_class` instead.
+  super().__init__(*args,**kwargs)
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/torch/functional.py:512: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3587.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/torch/utils/checkpoint.py:91: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.1), only 1.0.0 is known to be compatible
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=1/50 FORWARDS=4/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=2/50 FORWARDS=8/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=3/50 FORWARDS=12/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=4/50 FORWARDS=16/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=5/50 FORWARDS=20/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=6/50 FORWARDS=24/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=7/50 FORWARDS=28/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=8/50 FORWARDS=32/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=9/50 FORWARDS=36/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=10/50 FORWARDS=40/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=11/50 FORWARDS=44/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=12/50 FORWARDS=48/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=13/50 FORWARDS=52/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=14/50 FORWARDS=56/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=15/50 FORWARDS=60/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=16/50 FORWARDS=64/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=17/50 FORWARDS=68/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=18/50 FORWARDS=72/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=19/50 FORWARDS=76/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=20/50 FORWARDS=80/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=21/50 FORWARDS=84/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=22/50 FORWARDS=88/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=23/50 FORWARDS=92/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=24/50 FORWARDS=96/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=25/50 FORWARDS=100/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=26/50 FORWARDS=104/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=27/50 FORWARDS=108/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=28/50 FORWARDS=112/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=29/50 FORWARDS=116/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=30/50 FORWARDS=120/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=31/50 FORWARDS=124/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=32/50 FORWARDS=128/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=33/50 FORWARDS=132/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=34/50 FORWARDS=136/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=35/50 FORWARDS=140/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=36/50 FORWARDS=144/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=37/50 FORWARDS=148/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=38/50 FORWARDS=152/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=39/50 FORWARDS=156/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=40/50 FORWARDS=160/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=41/50 FORWARDS=164/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=42/50 FORWARDS=168/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=43/50 FORWARDS=172/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=44/50 FORWARDS=176/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=45/50 FORWARDS=180/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=46/50 FORWARDS=184/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=47/50 FORWARDS=188/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=48/50 FORWARDS=192/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=49/50 FORWARDS=196/200
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+--------------------Dataset Lengths -----------------------
+[1]
+FOUR_TRIAL_WIRING_PASSED_NOT_PERFORMANCE
+COMPLETED_GROUPS=50/50 FORWARDS=200/200
+[autodl] finished_at=2026-09-18T17:48:49+08:00
+[autodl] exit_code=0

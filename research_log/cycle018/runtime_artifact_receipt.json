@@ -1,0 +1,56 @@
+{
+  "archive_sha256": "6e9dc1d0de4c8bfa37cb9ca124210c98470dd45fca84deb08c2664d3adbf51b8",
+  "archive_bytes": 899708,
+  "all_200_local_prediction_hashes_match": true,
+  "run_id": "20260918-174555-cma-cycle018-val50",
+  "forward_count": 200,
+  "failed_forwards": 0,
+  "successful_reruns": 0,
+  "load_and_run_to_freeze_seconds": 166.42979454994202,
+  "per_trial_seconds_mean": 0.4085937768680742,
+  "per_trial_seconds_median": 0.40109529299661517,
+  "per_trial_seconds_min": 0.3828122450504452,
+  "per_trial_seconds_max": 0.7756595510290936,
+  "peak_allocated_vram_bytes": 16499173376,
+  "focused_tests": "15 passed in11.34s",
+  "error_descriptors": {
+    "segllm_clean": {
+      "both_targets_iou_below_half": 12,
+      "wrong_target_dominates_at_half": 41
+    },
+    "segllm_target15_b": {
+      "both_targets_iou_below_half": 24,
+      "wrong_target_dominates_at_half": 39
+    },
+    "cma_base_w15_clean": {
+      "both_targets_iou_below_half": 3,
+      "wrong_target_dominates_at_half": 0
+    },
+    "cma_base_w15_target15_b": {
+      "both_targets_iou_below_half": 19,
+      "wrong_target_dominates_at_half": 3
+    }
+  },
+  "first_group_comparison_to_preexisting_cycle017": [
+    {
+      "condition": "clean",
+      "entity_id": "pair_dfee24282f912128",
+      "same_npy_sha256": true
+    },
+    {
+      "condition": "clean",
+      "entity_id": "pair_ee869f891a591f2f",
+      "same_npy_sha256": true
+    },
+    {
+      "condition": "target15_b",
+      "entity_id": "pair_dfee24282f912128",
+      "same_npy_sha256": true
+    },
+    {
+      "condition": "target15_b",
+      "entity_id": "pair_ee869f891a591f2f",
+      "same_npy_sha256": true
+    }
+  ]
+}

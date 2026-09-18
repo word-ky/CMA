@@ -16,13 +16,13 @@ from load_native import load_native
 from memory_state import seed_memory, tensor_hash
 
 
-def main():
+def main(argv=None, model_bundle=None):
     parser = argparse.ArgumentParser()
     parser.add_argument('--checkpoint', required=True)
     parser.add_argument('--clip-path', required=True)
     parser.add_argument('--prepared', required=True)
     parser.add_argument('--output-dir', required=True)
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     opened_data_paths = set()
     def record_open(event, arguments):
         if event == 'open' and isinstance(arguments[0], (str, bytes)):
@@ -36,7 +36,7 @@ def main():
     out = Path(args.output_dir)
     out.mkdir(parents=True, exist_ok=True)
     prepared = json.loads(Path(args.prepared).read_text())
-    model, tokenizer, _, data_args, training_args, loading = load_native(
+    model, tokenizer, _, data_args, training_args, loading = model_bundle or load_native(
         args.checkpoint, args.clip_path, out
     )
     started = time.monotonic()
@@ -156,6 +156,7 @@ def main():
                'note': 'Native history placeholder may yield an unused earlier mask in the same forward; no separate predicted-miner round and no predicted output seeds memory.'}
     (out / 'smoke_receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')
     print(receipt['status'])
+    return receipt
 
 
 if __name__ == '__main__':

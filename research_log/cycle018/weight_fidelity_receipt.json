@@ -1,0 +1,87 @@
+{
+  "status": "WEIGHT_FIDELITY_PASSED",
+  "native_loading_info": {
+    "missing_keys": [
+      "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_l",
+      "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_v"
+    ],
+    "unexpected_keys": [
+      "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.weight_l",
+      "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.weight_v"
+    ],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "copied_keys": [
+    "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_l",
+    "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_v"
+  ],
+  "audited_without_assignment": [
+    "model.segmentator.hipie.detr.detr.transformer.tgt_embed.weight"
+  ],
+  "tensors": [
+    {
+      "checkpoint_key": "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_l",
+      "shard": "model-00003-of-00003.safetensors",
+      "raw_shape": [
+        768
+      ],
+      "raw_dtype": "torch.float32",
+      "raw_sha256": "a183a5f550c032f81bbbd2fc81d1eea0835c01f2c0f57b7ccde6353a0be43a7d",
+      "model_key": "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_l",
+      "model_shape": [
+        768
+      ],
+      "model_dtype": "torch.bfloat16",
+      "model_device": "cuda:0",
+      "before_sha256": "b26d6af6a4bf8aae851e4f5dd4869935bc06b466e0c431f233d5156c1904a305",
+      "expected_cast_sha256": "870e9a292003021538864c11a72e118d67887f2a7110531c37c839ff1a08c878",
+      "actual_sha256": "870e9a292003021538864c11a72e118d67887f2a7110531c37c839ff1a08c878",
+      "copied": true,
+      "exact_equal": true
+    },
+    {
+      "checkpoint_key": "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_v",
+      "shard": "model-00003-of-00003.safetensors",
+      "raw_shape": [
+        256
+      ],
+      "raw_dtype": "torch.float32",
+      "raw_sha256": "4afa6970d4a6f324a521084b089049b25c37936ed64757873d629c784091f705",
+      "model_key": "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_v",
+      "model_shape": [
+        256
+      ],
+      "model_dtype": "torch.bfloat16",
+      "model_device": "cuda:0",
+      "before_sha256": "f631494084d21610fbad2f167fe45c5fac559967ac010e34e0b240173b04c4dc",
+      "expected_cast_sha256": "0f750ef2ebd54f24e9a12eeb63bfebbd4b41b3389959eeec1bb648b91d1d5c17",
+      "actual_sha256": "0f750ef2ebd54f24e9a12eeb63bfebbd4b41b3389959eeec1bb648b91d1d5c17",
+      "copied": true,
+      "exact_equal": true
+    },
+    {
+      "checkpoint_key": "model.segmentator.hipie.detr.detr.transformer.tgt_embed.weight",
+      "shard": "model-00003-of-00003.safetensors",
+      "raw_shape": [
+        100,
+        256
+      ],
+      "raw_dtype": "torch.bfloat16",
+      "raw_sha256": "534b009f18b611cddc167bad833cdc6aa4a3aab95b22b6f3f08d450521146f95",
+      "model_key": "model.segmentator.hipie.detr.detr.transformer.tgt_embed.weight",
+      "model_shape": [
+        100,
+        256
+      ],
+      "model_dtype": "torch.bfloat16",
+      "model_device": "cuda:0",
+      "before_sha256": "534b009f18b611cddc167bad833cdc6aa4a3aab95b22b6f3f08d450521146f95",
+      "expected_cast_sha256": "534b009f18b611cddc167bad833cdc6aa4a3aab95b22b6f3f08d450521146f95",
+      "actual_sha256": "534b009f18b611cddc167bad833cdc6aa4a3aab95b22b6f3f08d450521146f95",
+      "copied": false,
+      "exact_equal": true
+    }
+  ],
+  "note": "Native outer load followed by two exact post-cast copies; no other parameter assignment."
+}
