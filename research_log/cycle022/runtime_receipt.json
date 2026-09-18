@@ -1,0 +1,26 @@
+{
+  "recorded_utc": "2026-09-18T13:49:01.366562+00:00",
+  "run_id": "20260918-213643-cma-cycle022-confirmation",
+  "status": "complete_exit0",
+  "cma_group_forwards": 100,
+  "cma_identity_predictions": 200,
+  "segllm_forwards": 200,
+  "failed_or_retried_predictions": 0,
+  "all_400_local_prediction_hashes_verified": true,
+  "both_prediction_freezes_before_scoring_verified": true,
+  "cma_load_to_freeze_seconds": 53.143240451812744,
+  "segllm_load_to_freeze_seconds": 219.92975211143494,
+  "archive_bytes": 1344694,
+  "archive_sha256": "c137791efbe7436361660b217cdf4e0992263188eea9569a676352d003b5f688",
+  "first_result_retained": true,
+  "layer2_used": false,
+  "post_result_tuning": false,
+  "connection_issue": "Intermittent SSH closes/timeouts. Confirmed earlier asset launches absent; used one AutoDL helper connection to launch existing213643 ID once. Detached experiment continued through read/download failures.",
+  "segllm_git_head": "4593a069f09628ce3a5b46e657f5417fefd7be46",
+  "segllm_tracked_source_changes": false,
+  "segllm_existing_untracked_dependencies": [
+    "projects/",
+    "uninext-segm/projects/HIPIE/bert-base-uncased",
+    "uninext-segm/projects/HIPIE/hipie/data/HIPIE_DEPENDENCY_LICENSE"
+  ]
+}

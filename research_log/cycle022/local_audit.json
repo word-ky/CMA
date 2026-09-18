@@ -1,0 +1,19 @@
+{
+  "recorded_utc": "2026-09-18T13:41:56.293558+00:00",
+  "scanned_files": 750,
+  "prior_unique_image_hashes": 414,
+  "selected_unique_image_hashes": 50,
+  "train300_val50_all_in_registry": true,
+  "cycle003_diagnostic_and_cycle009_confirmation_all_in_registry": true,
+  "zero_selected_overlap": true,
+  "source_manifest_selection_hash": "4180324b305f72001a4793abc0b3f24b085531c4f4aa7c6dc5aa483962c70db5",
+  "full_cpu_tests": {
+    "passed": 54,
+    "seconds": 22.15
+  },
+  "focused_tests": {
+    "passed": 16,
+    "seconds": 11.14
+  },
+  "loader_extraction_block_sha256": "f46433a9cc9a634476c18ab6c7e09de80bdd0fbf16de20354f0b41d2fd489705"
+}

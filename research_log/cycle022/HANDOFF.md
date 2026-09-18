@@ -1,0 +1,3 @@
+# Cycle022 complete — Layer1 confirmed, method development frozen
+
+REVIEW021/45ec6f4 complete. Read ../CYCLE022_REPORT.md. Global registry414images/750files;50fresh selected from762unused unique holdout candidates, zero overlap.54CPUtests passed.100CMAgroupforwards/200identity masks plus200SegLLMforwards; all400hashes locally verified; both freezes before scoring. Degraded CMA68.02%mIoU/30of50CMSA/87%Fidelity/2%IER vs SegLLM27.52%/1of50/38%/30%. Large Layer1 advantage confirmed. Exactly one next recommendation: freeze method development and move to paper evidence/figures/claim wording after review. Layer2 stays retired. No active Cycle022 job or new experiment.

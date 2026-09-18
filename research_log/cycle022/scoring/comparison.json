@@ -1,0 +1,2537 @@
+{
+  "summaries": {
+    "cma_clean": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.9086677832392657,
+      "memory_fidelity": 0.98,
+      "cmsa": 0.94,
+      "identity_error_rate": 0.02,
+      "mean_identity_margin": 0.8929930847278572,
+      "median_identity_margin": 0.9567582807056603,
+      "empty_masks": 0,
+      "cmsa_count": 47,
+      "fidelity_count": 98,
+      "ier_count": 2
+    },
+    "cma_target15_b": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.6801693725136052,
+      "memory_fidelity": 0.87,
+      "cmsa": 0.6,
+      "identity_error_rate": 0.02,
+      "mean_identity_margin": 0.657803018723887,
+      "median_identity_margin": 0.8602438247249705,
+      "empty_masks": 0,
+      "cmsa_count": 30,
+      "fidelity_count": 87,
+      "ier_count": 2
+    },
+    "segllm_clean": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.3729382004865751,
+      "memory_fidelity": 0.43,
+      "cmsa": 0.06,
+      "identity_error_rate": 0.38,
+      "mean_identity_margin": 0.0415679421258808,
+      "median_identity_margin": 0.0,
+      "empty_masks": 0,
+      "cmsa_count": 3,
+      "fidelity_count": 43,
+      "ier_count": 38
+    },
+    "segllm_target15_b": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.2752310457631434,
+      "memory_fidelity": 0.38,
+      "cmsa": 0.02,
+      "identity_error_rate": 0.3,
+      "mean_identity_margin": 0.016394073408354463,
+      "median_identity_margin": 0.0,
+      "empty_masks": 0,
+      "cmsa_count": 1,
+      "fidelity_count": 38,
+      "ier_count": 30
+    }
+  },
+  "degradation_deltas": {
+    "cma": {
+      "direction": "cma_target15_b minus cma_clean",
+      "aggregate": {
+        "target_miou": -0.22849841072566046,
+        "memory_fidelity": -0.10999999999999999,
+        "cmsa": -0.33999999999999997,
+        "identity_error_rate": 0.0,
+        "mean_identity_margin": -0.2351900660039702,
+        "median_identity_margin": -0.09651445598068975,
+        "empty_masks": 0,
+        "cmsa_count": -17,
+        "fidelity_count": -11,
+        "ier_count": 0
+      },
+      "paired_groups": [
+        {
+          "group_id": "cf_5144903fbf634d62",
+          "correct_iou_delta": [
+            -0.022962218022298142,
+            -0.06658723134959288
+          ],
+          "identity_margin_delta": [
+            -0.022962218022298142,
+            -0.06658723134959288
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_e9834f04c3abb37c",
+          "correct_iou_delta": [
+            -0.29861059701790693,
+            -0.9169329073482428
+          ],
+          "identity_margin_delta": [
+            -0.29861059701790693,
+            -0.9169329073482428
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_27c187e007537842",
+          "correct_iou_delta": [
+            -0.8703030303030304,
+            -0.07004269962718135
+          ],
+          "identity_margin_delta": [
+            -0.8703030303030304,
+            -0.07004269962718135
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_be4666754a3bf9d6",
+          "correct_iou_delta": [
+            0.024272001004957744,
+            -0.06171030179658721
+          ],
+          "identity_margin_delta": [
+            0.024272001004957744,
+            -0.06171030179658721
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_c85e301ae7579560",
+          "correct_iou_delta": [
+            -0.8813274224988996,
+            -0.33520684377054566
+          ],
+          "identity_margin_delta": [
+            -0.8813274224988996,
+            -0.33520684377054566
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_ac6ad3df6360675f",
+          "correct_iou_delta": [
+            -0.8898203592814371,
+            -0.9631751227495908
+          ],
+          "identity_margin_delta": [
+            -0.8898203592814371,
+            -0.9631751227495908
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_bb58f628412d4c8b",
+          "correct_iou_delta": [
+            -0.09866585820147866,
+            -0.04902683640976635
+          ],
+          "identity_margin_delta": [
+            -0.09866585820147866,
+            -0.04902683640976635
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_b971ae2bd565f957",
+          "correct_iou_delta": [
+            -0.9501935049638229,
+            -0.7584684690876103
+          ],
+          "identity_margin_delta": [
+            -0.9501935049638229,
+            -0.7584684690876103
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_9b48e1bf55655c4f",
+          "correct_iou_delta": [
+            -0.0212649298492672,
+            -0.01142826673745867
+          ],
+          "identity_margin_delta": [
+            -0.0212649298492672,
+            -0.01142826673745867
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_3c808c0b60040679",
+          "correct_iou_delta": [
+            -0.8734037647181028,
+            -0.16321112111296454
+          ],
+          "identity_margin_delta": [
+            -1.2136591100495904,
+            -0.16321112111296454
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_74988f012eca875d",
+          "correct_iou_delta": [
+            -0.131253334557081,
+            -0.03542490043377888
+          ],
+          "identity_margin_delta": [
+            -0.131253334557081,
+            -0.03542490043377888
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_da20ba37af99334f",
+          "correct_iou_delta": [
+            -0.1201872294126981,
+            -0.05895953757225425
+          ],
+          "identity_margin_delta": [
+            -0.1201872294126981,
+            -0.05895953757225425
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_1ad6080365d3ad1e",
+          "correct_iou_delta": [
+            -0.13863945564090763,
+            -0.9062397742146597
+          ],
+          "identity_margin_delta": [
+            -0.13863945564090763,
+            -0.9062397742146597
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_266ce9e05a0f1735",
+          "correct_iou_delta": [
+            -0.11095994960888989,
+            -0.04811673809356931
+          ],
+          "identity_margin_delta": [
+            -0.11095994960888989,
+            -0.04811673809356931
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_25b0eca4270731ac",
+          "correct_iou_delta": [
+            0.04032882833655127,
+            -0.1218385386469798
+          ],
+          "identity_margin_delta": [
+            0.04032882833655127,
+            -0.1218385386469798
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_08482dd970f6f5c8",
+          "correct_iou_delta": [
+            -0.024936996004381595,
+            -0.02955673750671972
+          ],
+          "identity_margin_delta": [
+            -0.024936996004381595,
+            -0.02955673750671972
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_af67d78cc72355cd",
+          "correct_iou_delta": [
+            -0.8766682006442706,
+            -0.10975151780684733
+          ],
+          "identity_margin_delta": [
+            -0.8766682006442706,
+            -0.10975151780684733
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_aa258f9354a436ed",
+          "correct_iou_delta": [
+            0.0,
+            -0.08634947404836812
+          ],
+          "identity_margin_delta": [
+            0.18075860481178774,
+            -0.08634947404836812
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_f9c7fa63403c9649",
+          "correct_iou_delta": [
+            -0.2566500359303018,
+            -0.06625152108590215
+          ],
+          "identity_margin_delta": [
+            -0.2566500359303018,
+            -0.06625152108590215
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_ae3a0a2228c79745",
+          "correct_iou_delta": [
+            -0.9376463242744073,
+            -0.6049277263919253
+          ],
+          "identity_margin_delta": [
+            -0.9376463242744073,
+            -0.6049277263919253
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_a0c99d5923bf85e7",
+          "correct_iou_delta": [
+            -0.06478043148393287,
+            0.039947710790874336
+          ],
+          "identity_margin_delta": [
+            -0.06478043148393287,
+            0.039947710790874336
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_75e6a11b1743f4ad",
+          "correct_iou_delta": [
+            -0.01814056714524459,
+            -0.1582627324958613
+          ],
+          "identity_margin_delta": [
+            -0.01814056714524459,
+            -0.1582627324958613
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_0d7e722460f3da50",
+          "correct_iou_delta": [
+            -0.04384928325423376,
+            -0.8560548586685778
+          ],
+          "identity_margin_delta": [
+            -0.04384928325423376,
+            -0.8560548586685778
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_e875e771c005658d",
+          "correct_iou_delta": [
+            -0.11327207417088458,
+            -0.08244585425329687
+          ],
+          "identity_margin_delta": [
+            -0.11327207417088458,
+            -0.08244585425329687
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_904dd843db020d2b",
+          "correct_iou_delta": [
+            -0.23205879451478162,
+            -0.05750876329552923
+          ],
+          "identity_margin_delta": [
+            -0.23205879451478162,
+            -0.05750876329552923
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_cc373975383c7fe5",
+          "correct_iou_delta": [
+            -0.003726396150093958,
+            -0.16322578780150543
+          ],
+          "identity_margin_delta": [
+            -0.003726396150093958,
+            -0.16322578780150543
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_0ecbd57897071f8b",
+          "correct_iou_delta": [
+            -0.9609015639374425,
+            -0.030485032359255038
+          ],
+          "identity_margin_delta": [
+            -0.9609015639374425,
+            -0.030485032359255038
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_7ddd6d4cb8cb2960",
+          "correct_iou_delta": [
+            0.20328041064956115,
+            -0.11218069797993868
+          ],
+          "identity_margin_delta": [
+            0.20328041064956115,
+            -0.11218069797993868
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_833c107a138e4e8a",
+          "correct_iou_delta": [
+            0.7717800563593739,
+            -0.017112676162433726
+          ],
+          "identity_margin_delta": [
+            0.7717800563593739,
+            -0.017112676162433726
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_68d6cb4095308c80",
+          "correct_iou_delta": [
+            -0.5000738041780933,
+            -0.1315707747629945
+          ],
+          "identity_margin_delta": [
+            -0.5000738041780933,
+            -0.1315707747629945
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_365b8939fb090ec0",
+          "correct_iou_delta": [
+            -0.9129353233830846,
+            -0.10219699568499985
+          ],
+          "identity_margin_delta": [
+            -1.7760206573502821,
+            -0.10219699568499985
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_c2e0bdf8a8fccd3d",
+          "correct_iou_delta": [
+            -0.33235528366697775,
+            -0.0823230077054351
+          ],
+          "identity_margin_delta": [
+            -0.33235528366697775,
+            -0.0823230077054351
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_c2ae803bc34a0ed2",
+          "correct_iou_delta": [
+            -0.07484024911993414,
+            -0.38183592350597584
+          ],
+          "identity_margin_delta": [
+            -0.07484024911993414,
+            -0.38183592350597584
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_907f0f412efeba12",
+          "correct_iou_delta": [
+            -0.29335439482063563,
+            -0.1521986619023803
+          ],
+          "identity_margin_delta": [
+            -0.29335439482063563,
+            -0.1521986619023803
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_7852cef62ad9ec89",
+          "correct_iou_delta": [
+            -0.11055034371727523,
+            -0.9273504273504274
+          ],
+          "identity_margin_delta": [
+            -0.11055034371727523,
+            -0.9273504273504274
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_b98e59ba87e7a9ca",
+          "correct_iou_delta": [
+            -0.1647280602437058,
+            0.004351308508641516
+          ],
+          "identity_margin_delta": [
+            -0.1647280602437058,
+            0.004351308508641516
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_0d513a145da32cb5",
+          "correct_iou_delta": [
+            -0.0506664501549412,
+            0.019356013485078982
+          ],
+          "identity_margin_delta": [
+            -0.0506664501549412,
+            0.019356013485078982
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_1f3932d277ee9222",
+          "correct_iou_delta": [
+            -0.013294994456776732,
+            -0.034899922095044
+          ],
+          "identity_margin_delta": [
+            -0.013294994456776732,
+            -0.034899922095044
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_60c856af84a7a214",
+          "correct_iou_delta": [
+            0.09876673594127566,
+            -0.10263447390906211
+          ],
+          "identity_margin_delta": [
+            0.4145191499088984,
+            -0.06497034122074141
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_df6e1dfa96697098",
+          "correct_iou_delta": [
+            -0.04252940697095253,
+            -0.9736967957914874
+          ],
+          "identity_margin_delta": [
+            -0.04252940697095253,
+            -0.9736967957914874
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_82f83742cfa4c752",
+          "correct_iou_delta": [
+            -0.17973047387944552,
+            -0.1746651605238353
+          ],
+          "identity_margin_delta": [
+            -0.17973047387944552,
+            -0.1746651605238353
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_c5c1d98791e0b8d5",
+          "correct_iou_delta": [
+            -0.017792223599540025,
+            -0.004629049088628379
+          ],
+          "identity_margin_delta": [
+            -0.017792223599540025,
+            -0.004629049088628379
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_8814d027126c6986",
+          "correct_iou_delta": [
+            -0.013636717799578313,
+            -0.07132829049038647
+          ],
+          "identity_margin_delta": [
+            -0.013636717799578313,
+            -0.07132829049038647
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_6fc98bc0a067ea72",
+          "correct_iou_delta": [
+            -0.030966566975592302,
+            -0.0447319669771693
+          ],
+          "identity_margin_delta": [
+            -0.030966566975592302,
+            -0.0447319669771693
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_1a5b0b20bd3fddca",
+          "correct_iou_delta": [
+            -0.0748290449287975,
+            -0.013428031468874613
+          ],
+          "identity_margin_delta": [
+            -0.0748290449287975,
+            -0.013428031468874613
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_2072c7948e4e5dff",
+          "correct_iou_delta": [
+            -0.9523172905525846,
+            -0.33897439725074563
+          ],
+          "identity_margin_delta": [
+            -0.9523172905525846,
+            -0.33897439725074563
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_519bc0cf5e30e5c8",
+          "correct_iou_delta": [
+            -0.06661098571849966,
+            -0.047164481224200916
+          ],
+          "identity_margin_delta": [
+            -0.06661098571849966,
+            -0.047164481224200916
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_2c6c749bedeac35f",
+          "correct_iou_delta": [
+            -0.030163039402438807,
+            -0.20669452295568536
+          ],
+          "identity_margin_delta": [
+            -0.030163039402438807,
+            -0.20669452295568536
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_f7b217dda7be9512",
+          "correct_iou_delta": [
+            0.002401285583103707,
+            -0.02507921786845968
+          ],
+          "identity_margin_delta": [
+            0.002401285583103707,
+            -0.02507921786845968
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_16ee9d7dd3a98206",
+          "correct_iou_delta": [
+            -0.06482709014131671,
+            -0.4320165885667811
+          ],
+          "identity_margin_delta": [
+            -0.06482709014131671,
+            -0.4320165885667811
+          ],
+          "cmsa_delta": -1
+        }
+      ]
+    },
+    "segllm": {
+      "direction": "segllm_target15_b minus segllm_clean",
+      "aggregate": {
+        "target_miou": -0.09770715472343172,
+        "memory_fidelity": -0.04999999999999999,
+        "cmsa": -0.039999999999999994,
+        "identity_error_rate": -0.08000000000000002,
+        "mean_identity_margin": -0.02517386871752634,
+        "median_identity_margin": 0.0,
+        "empty_masks": 0,
+        "cmsa_count": -2,
+        "fidelity_count": -5,
+        "ier_count": -8
+      },
+      "paired_groups": [
+        {
+          "group_id": "cf_5144903fbf634d62",
+          "correct_iou_delta": [
+            -0.8380035026269702,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.8380035026269702,
+            0.8440766550522648
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_e9834f04c3abb37c",
+          "correct_iou_delta": [
+            -0.22568517073779826,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.22568517073779826,
+            0.20767511177347242
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_27c187e007537842",
+          "correct_iou_delta": [
+            -0.7467965146078934,
+            0.0015220700152207
+          ],
+          "identity_margin_delta": [
+            -0.7474342697099342,
+            0.0015220700152207
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_be4666754a3bf9d6",
+          "correct_iou_delta": [
+            0.05771690795246076,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.05771690795246076,
+            0.15457925724866184
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_c85e301ae7579560",
+          "correct_iou_delta": [
+            0.0,
+            0.3818040435458787
+          ],
+          "identity_margin_delta": [
+            -0.3857030636292223,
+            0.3818040435458787
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_ac6ad3df6360675f",
+          "correct_iou_delta": [
+            0.0,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.0,
+            0.0
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_bb58f628412d4c8b",
+          "correct_iou_delta": [
+            -0.8778789501874665,
+            0.8846897618652965
+          ],
+          "identity_margin_delta": [
+            -1.7570595751531428,
+            1.7612263733030304
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_b971ae2bd565f957",
+          "correct_iou_delta": [
+            0.03276760726617034,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.03276760726617034,
+            -0.04195429894671232
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_9b48e1bf55655c4f",
+          "correct_iou_delta": [
+            0.009196740527142921,
+            -0.9440559440559441
+          ],
+          "identity_margin_delta": [
+            0.009196740527142921,
+            -1.8508228613491773
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_3c808c0b60040679",
+          "correct_iou_delta": [
+            0.9076029567053854,
+            -0.9358322744599746
+          ],
+          "identity_margin_delta": [
+            1.8387789630195133,
+            -1.8438449260150616
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_74988f012eca875d",
+          "correct_iou_delta": [
+            0.0,
+            0.0679137584356646
+          ],
+          "identity_margin_delta": [
+            -0.09578604041343752,
+            0.0679137584356646
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_da20ba37af99334f",
+          "correct_iou_delta": [
+            0.0,
+            -0.8189845474613686
+          ],
+          "identity_margin_delta": [
+            0.8206820682068207,
+            -0.8189845474613686
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_1ad6080365d3ad1e",
+          "correct_iou_delta": [
+            0.0,
+            -0.7168578175071681
+          ],
+          "identity_margin_delta": [
+            0.7042515026848425,
+            -0.7168578175071681
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_266ce9e05a0f1735",
+          "correct_iou_delta": [
+            0.0,
+            -0.2139047240662768
+          ],
+          "identity_margin_delta": [
+            0.11004834636564798,
+            -0.2139047240662768
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_25b0eca4270731ac",
+          "correct_iou_delta": [
+            -0.014049680334382253,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.014049680334382253,
+            0.026034387045210217
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_08482dd970f6f5c8",
+          "correct_iou_delta": [
+            0.0,
+            -5.188219024299112e-05
+          ],
+          "identity_margin_delta": [
+            -0.00734631552948839,
+            -5.188219024299112e-05
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_af67d78cc72355cd",
+          "correct_iou_delta": [
+            0.0,
+            -0.025055578922069333
+          ],
+          "identity_margin_delta": [
+            0.0211100829974199,
+            -0.025055578922069333
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_aa258f9354a436ed",
+          "correct_iou_delta": [
+            0.0,
+            -0.7468203497615262
+          ],
+          "identity_margin_delta": [
+            0.8042789223454834,
+            -0.7468203497615262
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_f9c7fa63403c9649",
+          "correct_iou_delta": [
+            0.0,
+            -0.025028693345525044
+          ],
+          "identity_margin_delta": [
+            0.04795002137868776,
+            -0.025028693345525044
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_ae3a0a2228c79745",
+          "correct_iou_delta": [
+            -0.8798828125,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.8798828125,
+            0.8833333333333333
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_a0c99d5923bf85e7",
+          "correct_iou_delta": [
+            0.0,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.0,
+            0.0
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_75e6a11b1743f4ad",
+          "correct_iou_delta": [
+            0.042010295529022246,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.042010295529022246,
+            -0.025553202687550347
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_0d7e722460f3da50",
+          "correct_iou_delta": [
+            -0.9383948196994,
+            0.15909796213923658
+          ],
+          "identity_margin_delta": [
+            -1.1020118409759958,
+            1.1071890135664315
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_e875e771c005658d",
+          "correct_iou_delta": [
+            0.015000437201124428,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.015000437201124428,
+            0.0490114467899061
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_904dd843db020d2b",
+          "correct_iou_delta": [
+            0.0,
+            -0.10060285008071357
+          ],
+          "identity_margin_delta": [
+            0.10407409808482482,
+            -0.10060285008071357
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_cc373975383c7fe5",
+          "correct_iou_delta": [
+            0.0,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.0,
+            0.0
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_0ecbd57897071f8b",
+          "correct_iou_delta": [
+            -0.8400852878464818,
+            -0.05427172394861979
+          ],
+          "identity_margin_delta": [
+            -1.7209699639918214,
+            -0.05427172394861979
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_7ddd6d4cb8cb2960",
+          "correct_iou_delta": [
+            -0.8655311266139897,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.8655311266139897,
+            0.8737378724124207
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_833c107a138e4e8a",
+          "correct_iou_delta": [
+            0.0,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.0,
+            0.0
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_68d6cb4095308c80",
+          "correct_iou_delta": [
+            0.0,
+            0.9168126094570929
+          ],
+          "identity_margin_delta": [
+            -0.9167397020157756,
+            0.9168126094570929
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_365b8939fb090ec0",
+          "correct_iou_delta": [
+            0.0,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.0,
+            0.0
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_c2e0bdf8a8fccd3d",
+          "correct_iou_delta": [
+            -0.8134822167080231,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.8134822167080231,
+            0.815409971157808
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_c2ae803bc34a0ed2",
+          "correct_iou_delta": [
+            -0.023934421916950055,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.023934421916950055,
+            0.01937733317345003
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_907f0f412efeba12",
+          "correct_iou_delta": [
+            0.0,
+            0.021717674769229922
+          ],
+          "identity_margin_delta": [
+            0.02174341595753171,
+            0.021717674769229922
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_7852cef62ad9ec89",
+          "correct_iou_delta": [
+            0.03006674995088321,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.03006674995088321,
+            -0.019082452508541237
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_b98e59ba87e7a9ca",
+          "correct_iou_delta": [
+            -0.6966953114222625,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.6966953114222625,
+            0.6831869727948159
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_0d513a145da32cb5",
+          "correct_iou_delta": [
+            0.0,
+            -0.39887538939767586
+          ],
+          "identity_margin_delta": [
+            0.399943328820926,
+            -0.39887538939767586
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_1f3932d277ee9222",
+          "correct_iou_delta": [
+            0.7720759746751082,
+            -0.8559139784946237
+          ],
+          "identity_margin_delta": [
+            1.628152733736942,
+            -1.7044099432781894
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_60c856af84a7a214",
+          "correct_iou_delta": [
+            0.0,
+            -0.06710739481580796
+          ],
+          "identity_margin_delta": [
+            0.10811083918799491,
+            -0.06710739481580796
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_df6e1dfa96697098",
+          "correct_iou_delta": [
+            0.0,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.0,
+            0.0
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_82f83742cfa4c752",
+          "correct_iou_delta": [
+            -0.23745462686089835,
+            0.0776355891748981
+          ],
+          "identity_margin_delta": [
+            -0.23745462686089835,
+            0.0776355891748981
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_c5c1d98791e0b8d5",
+          "correct_iou_delta": [
+            -0.07168670843034186,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.07168670843034186,
+            0.07109923649958716
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_8814d027126c6986",
+          "correct_iou_delta": [
+            0.0,
+            0.8706210191082803
+          ],
+          "identity_margin_delta": [
+            -0.013592010196261661,
+            1.7965469450342062
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_6fc98bc0a067ea72",
+          "correct_iou_delta": [
+            0.9223787167449139,
+            -0.9319988224904328
+          ],
+          "identity_margin_delta": [
+            1.8514317803626215,
+            -1.8587053339720307
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_1a5b0b20bd3fddca",
+          "correct_iou_delta": [
+            -0.05338341090436505,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.05338341090436505,
+            0.06289752664369919
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_2072c7948e4e5dff",
+          "correct_iou_delta": [
+            0.0,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.0,
+            0.0
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_519bc0cf5e30e5c8",
+          "correct_iou_delta": [
+            0.0,
+            -0.06560888435272161
+          ],
+          "identity_margin_delta": [
+            0.06286472148541111,
+            -0.06560888435272161
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_2c6c749bedeac35f",
+          "correct_iou_delta": [
+            -0.001105253320113686,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.001105253320113686,
+            -0.0091991913461974
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_f7b217dda7be9512",
+          "correct_iou_delta": [
+            -0.8853633572159673,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.8853633572159673,
+            0.8875770020533881
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_16ee9d7dd3a98206",
+          "correct_iou_delta": [
+            -0.030962320122184694,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.030962320122184694,
+            0.032674129188728696
+          ],
+          "cmsa_delta": 0
+        }
+      ]
+    }
+  },
+  "method_deltas": {
+    "clean": {
+      "direction": "cma_clean minus segllm_clean",
+      "aggregate": {
+        "target_miou": 0.5357295827526906,
+        "memory_fidelity": 0.55,
+        "cmsa": 0.8799999999999999,
+        "identity_error_rate": -0.36,
+        "mean_identity_margin": 0.8514251426019764,
+        "median_identity_margin": 0.9567582807056603,
+        "empty_masks": 0,
+        "cmsa_count": 44,
+        "fidelity_count": 55,
+        "ier_count": -36
+      },
+      "paired_groups": [
+        {
+          "group_id": "cf_5144903fbf634d62",
+          "correct_iou_delta": [
+            0.13115537587770265,
+            0.9596412556053812
+          ],
+          "identity_margin_delta": [
+            0.13115537587770265,
+            1.803717910657646
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_e9834f04c3abb37c",
+          "correct_iou_delta": [
+            0.07617661949608501,
+            0.9169329073482428
+          ],
+          "identity_margin_delta": [
+            0.07617661949608501,
+            1.788244382758079
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_27c187e007537842",
+          "correct_iou_delta": [
+            0.12350651569513693,
+            0.9428721174004193
+          ],
+          "identity_margin_delta": [
+            0.12350651569513693,
+            0.9428721174004193
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_be4666754a3bf9d6",
+          "correct_iou_delta": [
+            0.0614230290941421,
+            0.9816078877512324
+          ],
+          "identity_margin_delta": [
+            0.0614230290941421,
+            1.8464727526160973
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_c85e301ae7579560",
+          "correct_iou_delta": [
+            0.9011350059737157,
+            0.943359375
+          ],
+          "identity_margin_delta": [
+            0.9011350059737157,
+            0.943359375
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_ac6ad3df6360675f",
+          "correct_iou_delta": [
+            0.8898203592814371,
+            0.9631751227495908
+          ],
+          "identity_margin_delta": [
+            0.8898203592814371,
+            0.9631751227495908
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_bb58f628412d4c8b",
+          "correct_iou_delta": [
+            0.10147208226091109,
+            0.9793604830263077
+          ],
+          "identity_margin_delta": [
+            0.10147208226091109,
+            1.8558970944640416
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_b971ae2bd565f957",
+          "correct_iou_delta": [
+            0.09023439281429024,
+            0.8291502872694285
+          ],
+          "identity_margin_delta": [
+            0.09023439281429024,
+            1.6919873329904132
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_9b48e1bf55655c4f",
+          "correct_iou_delta": [
+            0.08168153598734984,
+            0.03490724151881175
+          ],
+          "identity_margin_delta": [
+            0.08168153598734984,
+            0.03490724151881175
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_3c808c0b60040679",
+          "correct_iou_delta": [
+            0.9699067909454061,
+            0.04457629888228931
+          ],
+          "identity_margin_delta": [
+            1.901082797259534,
+            0.04457629888228931
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_74988f012eca875d",
+          "correct_iou_delta": [
+            0.9604119729642743,
+            0.41892341891665785
+          ],
+          "identity_margin_delta": [
+            1.4882278129204267,
+            0.41892341891665785
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_da20ba37af99334f",
+          "correct_iou_delta": [
+            0.9796178343949045,
+            0.1405530247929666
+          ],
+          "identity_margin_delta": [
+            1.8002999026017252,
+            0.1405530247929666
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_1ad6080365d3ad1e",
+          "correct_iou_delta": [
+            0.982908230344465,
+            0.04723373724489799
+          ],
+          "identity_margin_delta": [
+            1.9001464562246662,
+            0.04723373724489799
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_266ce9e05a0f1735",
+          "correct_iou_delta": [
+            0.9366432011856243,
+            0.028424630242597226
+          ],
+          "identity_margin_delta": [
+            1.7636022356918286,
+            0.028424630242597226
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_25b0eca4270731ac",
+          "correct_iou_delta": [
+            -0.017964475223654852,
+            0.9790999494353615
+          ],
+          "identity_margin_delta": [
+            -0.017964475223654852,
+            1.887583583369897
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_08482dd970f6f5c8",
+          "correct_iou_delta": [
+            0.9620721554116559,
+            0.06722797294716887
+          ],
+          "identity_margin_delta": [
+            1.8550203287336609,
+            0.06722797294716887
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_af67d78cc72355cd",
+          "correct_iou_delta": [
+            0.8766682006442706,
+            0.08116245980602455
+          ],
+          "identity_margin_delta": [
+            1.6368800009468425,
+            0.08116245980602455
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_aa258f9354a436ed",
+          "correct_iou_delta": [
+            0.0,
+            0.134391771450595
+          ],
+          "identity_margin_delta": [
+            -0.10547127910495979,
+            0.134391771450595
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_f9c7fa63403c9649",
+          "correct_iou_delta": [
+            0.9373970345963756,
+            0.043111725231014586
+          ],
+          "identity_margin_delta": [
+            1.8475590375418838,
+            0.043111725231014586
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_ae3a0a2228c79745",
+          "correct_iou_delta": [
+            0.06308670569075714,
+            0.9567418315692591
+          ],
+          "identity_margin_delta": [
+            0.06308670569075714,
+            1.8400751649025924
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_a0c99d5923bf85e7",
+          "correct_iou_delta": [
+            0.9841260112772738,
+            0.9002770083102493
+          ],
+          "identity_margin_delta": [
+            0.9841260112772738,
+            0.9002770083102493
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_75e6a11b1743f4ad",
+          "correct_iou_delta": [
+            0.12407701661981652,
+            0.9042944785276074
+          ],
+          "identity_margin_delta": [
+            0.12407701661981652,
+            1.7543352283238582
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_0d7e722460f3da50",
+          "correct_iou_delta": [
+            0.04624864433232012,
+            0.9110966904607398
+          ],
+          "identity_margin_delta": [
+            0.04624864433232012,
+            1.8591877418879348
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_e875e771c005658d",
+          "correct_iou_delta": [
+            0.02521474494767706,
+            0.8967897825336555
+          ],
+          "identity_margin_delta": [
+            0.02521474494767706,
+            1.76060301210564
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_904dd843db020d2b",
+          "correct_iou_delta": [
+            0.9728776312745778,
+            0.02433847976923631
+          ],
+          "identity_margin_delta": [
+            1.913506163944711,
+            0.02433847976923631
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_cc373975383c7fe5",
+          "correct_iou_delta": [
+            0.971718636693256,
+            0.9626379847155392
+          ],
+          "identity_margin_delta": [
+            0.971718636693256,
+            0.9626379847155392
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_0ecbd57897071f8b",
+          "correct_iou_delta": [
+            0.12081627609096068,
+            0.03485237483953785
+          ],
+          "identity_margin_delta": [
+            0.12081627609096068,
+            0.03485237483953785
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_7ddd6d4cb8cb2960",
+          "correct_iou_delta": [
+            -0.2510641575355772,
+            0.632467094161323
+          ],
+          "identity_margin_delta": [
+            -0.2510641575355772,
+            1.5578484175454994
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_833c107a138e4e8a",
+          "correct_iou_delta": [
+            0.1322314049586777,
+            0.9530267945749256
+          ],
+          "identity_margin_delta": [
+            0.1322314049586777,
+            0.9530267945749256
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_68d6cb4095308c80",
+          "correct_iou_delta": [
+            0.9484536082474226,
+            0.9537757437070938
+          ],
+          "identity_margin_delta": [
+            0.9484536082474226,
+            0.9537757437070938
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_365b8939fb090ec0",
+          "correct_iou_delta": [
+            0.9129353233830846,
+            0.9786448721328763
+          ],
+          "identity_margin_delta": [
+            0.9129353233830846,
+            0.9786448721328763
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_c2e0bdf8a8fccd3d",
+          "correct_iou_delta": [
+            0.055221334076452466,
+            0.9580327868852458
+          ],
+          "identity_margin_delta": [
+            0.055221334076452466,
+            1.7734427580430538
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_c2ae803bc34a0ed2",
+          "correct_iou_delta": [
+            0.03900020681523686,
+            0.5533720410897722
+          ],
+          "identity_margin_delta": [
+            0.03900020681523686,
+            1.488523109623302
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_907f0f412efeba12",
+          "correct_iou_delta": [
+            0.9567747298420615,
+            0.12345429759624515
+          ],
+          "identity_margin_delta": [
+            1.762564838406597,
+            0.12345429759624515
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_7852cef62ad9ec89",
+          "correct_iou_delta": [
+            0.18967517252947985,
+            0.9273504273504274
+          ],
+          "identity_margin_delta": [
+            0.18967517252947985,
+            1.7154612953300044
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_b98e59ba87e7a9ca",
+          "correct_iou_delta": [
+            0.06603778860377085,
+            0.9812293853073464
+          ],
+          "identity_margin_delta": [
+            0.06603778860377085,
+            1.8809824717270995
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_0d513a145da32cb5",
+          "correct_iou_delta": [
+            0.9282263630089717,
+            -0.05440145016171072
+          ],
+          "identity_margin_delta": [
+            1.8547270246233105,
+            -0.05440145016171072
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_1f3932d277ee9222",
+          "correct_iou_delta": [
+            0.9533360622185837,
+            0.10692385934321413
+          ],
+          "identity_margin_delta": [
+            1.8094128212804175,
+            0.10692385934321413
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_60c856af84a7a214",
+          "correct_iou_delta": [
+            0.2820763956904995,
+            0.09503700099767332
+          ],
+          "identity_margin_delta": [
+            0.5122715052548337,
+            0.05737286830935262
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_df6e1dfa96697098",
+          "correct_iou_delta": [
+            0.9788787998420845,
+            0.9736967957914874
+          ],
+          "identity_margin_delta": [
+            0.9788787998420845,
+            0.9736967957914874
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_82f83742cfa4c752",
+          "correct_iou_delta": [
+            0.011830722097877722,
+            0.316036428923701
+          ],
+          "identity_margin_delta": [
+            0.011830722097877722,
+            0.316036428923701
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_c5c1d98791e0b8d5",
+          "correct_iou_delta": [
+            0.021370071247273303,
+            0.9883776948091051
+          ],
+          "identity_margin_delta": [
+            0.021370071247273303,
+            1.9357768765741548
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_8814d027126c6986",
+          "correct_iou_delta": [
+            0.9542356377799416,
+            0.9656372335798173
+          ],
+          "identity_margin_delta": [
+            1.8159943289864855,
+            1.8915631595057434
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_6fc98bc0a067ea72",
+          "correct_iou_delta": [
+            0.9884412153236459,
+            0.030998119405591718
+          ],
+          "identity_margin_delta": [
+            1.9174942789413534,
+            0.030998119405591718
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_1a5b0b20bd3fddca",
+          "correct_iou_delta": [
+            0.035109884367335975,
+            0.9924674866121344
+          ],
+          "identity_margin_delta": [
+            0.035109884367335975,
+            1.904626524984765
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_2072c7948e4e5dff",
+          "correct_iou_delta": [
+            0.9523172905525846,
+            0.6662995594713657
+          ],
+          "identity_margin_delta": [
+            0.9523172905525846,
+            0.6662995594713657
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_519bc0cf5e30e5c8",
+          "correct_iou_delta": [
+            0.9804321239298818,
+            0.03253195266024478
+          ],
+          "identity_margin_delta": [
+            1.8881244316221895,
+            0.03253195266024478
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_2c6c749bedeac35f",
+          "correct_iou_delta": [
+            0.032031132580122246,
+            0.946852003270646
+          ],
+          "identity_margin_delta": [
+            0.032031132580122246,
+            1.8620225598236084
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_f7b217dda7be9512",
+          "correct_iou_delta": [
+            0.06945757942315123,
+            0.9680616740088106
+          ],
+          "identity_margin_delta": [
+            0.06945757942315123,
+            1.8556386760621986
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_16ee9d7dd3a98206",
+          "correct_iou_delta": [
+            0.030580573059373117,
+            0.7363253856942497
+          ],
+          "identity_margin_delta": [
+            0.030580573059373117,
+            1.6787017242970035
+          ],
+          "cmsa_delta": 1
+        }
+      ]
+    },
+    "target15_b": {
+      "direction": "cma_target15_b minus segllm_target15_b",
+      "aggregate": {
+        "target_miou": 0.4049383267504618,
+        "memory_fidelity": 0.49,
+        "cmsa": 0.58,
+        "identity_error_rate": -0.27999999999999997,
+        "mean_identity_margin": 0.6414089453155326,
+        "median_identity_margin": 0.8602438247249705,
+        "empty_masks": 0,
+        "cmsa_count": 29,
+        "fidelity_count": 49,
+        "ier_count": -28
+      },
+      "paired_groups": [
+        {
+          "group_id": "cf_5144903fbf634d62",
+          "correct_iou_delta": [
+            0.9461966604823747,
+            0.8930540242557883
+          ],
+          "identity_margin_delta": [
+            0.9461966604823747,
+            0.8930540242557883
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_e9834f04c3abb37c",
+          "correct_iou_delta": [
+            0.0032511932159763335,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.0032511932159763335,
+            0.6636363636363637
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_27c187e007537842",
+          "correct_iou_delta": [
+            0.0,
+            0.8713073477580173
+          ],
+          "identity_margin_delta": [
+            0.0006377551020408163,
+            0.8713073477580173
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_be4666754a3bf9d6",
+          "correct_iou_delta": [
+            0.027978122146639084,
+            0.9198975859546452
+          ],
+          "identity_margin_delta": [
+            0.027978122146639084,
+            1.6301831935708484
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_c85e301ae7579560",
+          "correct_iou_delta": [
+            0.019807583474816072,
+            0.22634848768357563
+          ],
+          "identity_margin_delta": [
+            0.4055106471040384,
+            0.22634848768357563
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_ac6ad3df6360675f",
+          "correct_iou_delta": [
+            0.0,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.0,
+            0.0
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_bb58f628412d4c8b",
+          "correct_iou_delta": [
+            0.880685174246899,
+            0.04564388475124492
+          ],
+          "identity_margin_delta": [
+            1.7598657992125752,
+            0.04564388475124492
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_b971ae2bd565f957",
+          "correct_iou_delta": [
+            -0.892726719415703,
+            0.07068181818181818
+          ],
+          "identity_margin_delta": [
+            -0.892726719415703,
+            0.9754731628495152
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_9b48e1bf55655c4f",
+          "correct_iou_delta": [
+            0.05121986561093972,
+            0.9675349188372971
+          ],
+          "identity_margin_delta": [
+            0.05121986561093972,
+            1.8743018361305301
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_3c808c0b60040679",
+          "correct_iou_delta": [
+            -0.811099930478082,
+            0.8171974522292994
+          ],
+          "identity_margin_delta": [
+            -1.1513552758095695,
+            1.7252101037843863
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_74988f012eca875d",
+          "correct_iou_delta": [
+            0.8291586384071933,
+            0.31558476004721436
+          ],
+          "identity_margin_delta": [
+            1.4527605187767831,
+            0.31558476004721436
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_da20ba37af99334f",
+          "correct_iou_delta": [
+            0.8594306049822064,
+            0.900578034682081
+          ],
+          "identity_margin_delta": [
+            0.8594306049822064,
+            0.900578034682081
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_1ad6080365d3ad1e",
+          "correct_iou_delta": [
+            0.8442687747035573,
+            -0.1421482194625936
+          ],
+          "identity_margin_delta": [
+            1.057255497898916,
+            -0.1421482194625936
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_266ce9e05a0f1735",
+          "correct_iou_delta": [
+            0.8256832515767344,
+            0.19421261621530472
+          ],
+          "identity_margin_delta": [
+            1.5425939397172908,
+            0.19421261621530472
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_25b0eca4270731ac",
+          "correct_iou_delta": [
+            0.03641403344727867,
+            0.8572614107883817
+          ],
+          "identity_margin_delta": [
+            0.03641403344727867,
+            1.739710657677707
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_08482dd970f6f5c8",
+          "correct_iou_delta": [
+            0.9371351594072743,
+            0.03772311763069214
+          ],
+          "identity_margin_delta": [
+            1.8374296482587678,
+            0.03772311763069214
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_af67d78cc72355cd",
+          "correct_iou_delta": [
+            0.0,
+            -0.0035334790787534542
+          ],
+          "identity_margin_delta": [
+            0.739101717305152,
+            -0.0035334790787534542
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_aa258f9354a436ed",
+          "correct_iou_delta": [
+            0.0,
+            0.7948626471637531
+          ],
+          "identity_margin_delta": [
+            -0.7289915966386554,
+            0.7948626471637531
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_f9c7fa63403c9649",
+          "correct_iou_delta": [
+            0.6807469986660738,
+            0.0018888974906374756
+          ],
+          "identity_margin_delta": [
+            1.542958980232894,
+            0.0018888974906374756
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_ae3a0a2228c79745",
+          "correct_iou_delta": [
+            0.00532319391634981,
+            0.35181410517733386
+          ],
+          "identity_margin_delta": [
+            0.00532319391634981,
+            0.35181410517733386
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_a0c99d5923bf85e7",
+          "correct_iou_delta": [
+            0.919345579793341,
+            0.9402247191011236
+          ],
+          "identity_margin_delta": [
+            0.919345579793341,
+            0.9402247191011236
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_75e6a11b1743f4ad",
+          "correct_iou_delta": [
+            0.06392615394554968,
+            0.746031746031746
+          ],
+          "identity_margin_delta": [
+            0.06392615394554968,
+            1.6216256985155475
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_0d7e722460f3da50",
+          "correct_iou_delta": [
+            0.9407941807774863,
+            -0.10405613034707453
+          ],
+          "identity_margin_delta": [
+            1.1044112020540822,
+            -0.10405613034707453
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_e875e771c005658d",
+          "correct_iou_delta": [
+            -0.10305776642433195,
+            0.8143439282803586
+          ],
+          "identity_margin_delta": [
+            -0.10305776642433195,
+            1.629145711062437
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_904dd843db020d2b",
+          "correct_iou_delta": [
+            0.7408188367597962,
+            0.06743256655442065
+          ],
+          "identity_margin_delta": [
+            1.5773732713451047,
+            0.06743256655442065
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_cc373975383c7fe5",
+          "correct_iou_delta": [
+            0.967992240543162,
+            0.7994121969140338
+          ],
+          "identity_margin_delta": [
+            0.967992240543162,
+            0.7994121969140338
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_0ecbd57897071f8b",
+          "correct_iou_delta": [
+            0.0,
+            0.0586390664289026
+          ],
+          "identity_margin_delta": [
+            0.8808846761453396,
+            0.0586390664289026
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_7ddd6d4cb8cb2960",
+          "correct_iou_delta": [
+            0.8177473797279736,
+            0.5202863961813843
+          ],
+          "identity_margin_delta": [
+            0.8177473797279736,
+            0.57192984715314
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_833c107a138e4e8a",
+          "correct_iou_delta": [
+            0.9040114613180515,
+            0.9359141184124918
+          ],
+          "identity_margin_delta": [
+            0.9040114613180515,
+            0.9359141184124918
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_68d6cb4095308c80",
+          "correct_iou_delta": [
+            0.4483798040693293,
+            -0.09460764051299353
+          ],
+          "identity_margin_delta": [
+            1.365119506085105,
+            -0.09460764051299353
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_365b8939fb090ec0",
+          "correct_iou_delta": [
+            0.0,
+            0.8764478764478765
+          ],
+          "identity_margin_delta": [
+            -0.8630853339671976,
+            0.8764478764478765
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_c2e0bdf8a8fccd3d",
+          "correct_iou_delta": [
+            0.5363482671174978,
+            0.8757097791798107
+          ],
+          "identity_margin_delta": [
+            0.5363482671174978,
+            0.8757097791798107
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_c2ae803bc34a0ed2",
+          "correct_iou_delta": [
+            -0.011905620387747229,
+            0.1715361175837964
+          ],
+          "identity_margin_delta": [
+            -0.011905620387747229,
+            1.0873098529438763
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_907f0f412efeba12",
+          "correct_iou_delta": [
+            0.6634203350214258,
+            -0.05046203907536506
+          ],
+          "identity_margin_delta": [
+            1.4474670276284298,
+            -0.05046203907536506
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_7852cef62ad9ec89",
+          "correct_iou_delta": [
+            0.04905807886132141,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.04905807886132141,
+            0.8071933204881182
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_b98e59ba87e7a9ca",
+          "correct_iou_delta": [
+            0.5980050397823276,
+            0.9855806938159879
+          ],
+          "identity_margin_delta": [
+            0.5980050397823276,
+            1.2021468074409252
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_0d513a145da32cb5",
+          "correct_iou_delta": [
+            0.8775599128540305,
+            0.3638299527210441
+          ],
+          "identity_margin_delta": [
+            1.4041172456474436,
+            0.3638299527210441
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_1f3932d277ee9222",
+          "correct_iou_delta": [
+            0.1679650930866987,
+            0.9279379157427938
+          ],
+          "identity_margin_delta": [
+            0.1679650930866987,
+            1.7764338805263595
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_60c856af84a7a214",
+          "correct_iou_delta": [
+            0.3808431316317752,
+            0.05950992190441917
+          ],
+          "identity_margin_delta": [
+            0.8186798159757371,
+            0.05950992190441917
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_df6e1dfa96697098",
+          "correct_iou_delta": [
+            0.936349392871132,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.936349392871132,
+            0.0
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_82f83742cfa4c752",
+          "correct_iou_delta": [
+            0.06955487507933056,
+            0.06373567922496759
+          ],
+          "identity_margin_delta": [
+            0.06955487507933056,
+            0.06373567922496759
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_c5c1d98791e0b8d5",
+          "correct_iou_delta": [
+            0.07526455607807514,
+            0.9837486457204767
+          ],
+          "identity_margin_delta": [
+            0.07526455607807514,
+            1.8600485909859392
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_8814d027126c6986",
+          "correct_iou_delta": [
+            0.9405989199803633,
+            0.023687923981150605
+          ],
+          "identity_margin_delta": [
+            1.8159496213831687,
+            0.023687923981150605
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_6fc98bc0a067ea72",
+          "correct_iou_delta": [
+            0.03509593160313973,
+            0.9182649749188552
+          ],
+          "identity_margin_delta": [
+            0.03509593160313973,
+            1.8449714864004532
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_1a5b0b20bd3fddca",
+          "correct_iou_delta": [
+            0.013664250342903528,
+            0.9790394551432597
+          ],
+          "identity_margin_delta": [
+            0.013664250342903528,
+            1.8283009668721912
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_2072c7948e4e5dff",
+          "correct_iou_delta": [
+            0.0,
+            0.32732516222062
+          ],
+          "identity_margin_delta": [
+            0.0,
+            0.32732516222062
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_519bc0cf5e30e5c8",
+          "correct_iou_delta": [
+            0.9138211382113821,
+            0.05097635578876547
+          ],
+          "identity_margin_delta": [
+            1.7586487244182787,
+            0.05097635578876547
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_2c6c749bedeac35f",
+          "correct_iou_delta": [
+            0.0029733464977971247,
+            0.7401574803149606
+          ],
+          "identity_margin_delta": [
+            0.0029733464977971247,
+            1.6645272282141204
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_f7b217dda7be9512",
+          "correct_iou_delta": [
+            0.9572222222222222,
+            0.9429824561403509
+          ],
+          "identity_margin_delta": [
+            0.9572222222222222,
+            0.9429824561403509
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_16ee9d7dd3a98206",
+          "correct_iou_delta": [
+            -0.0032841969597589005,
+            0.30430879712746856
+          ],
+          "identity_margin_delta": [
+            -0.0032841969597589005,
+            1.2140110065414935
+          ],
+          "cmsa_delta": 0
+        }
+      ]
+    }
+  },
+  "tuning_performed": false
+}

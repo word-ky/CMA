@@ -1,0 +1,1 @@
+Extracted the exact existing Cycle021 model-init block without edits into load_base_w15(root); returned its five objects. Existing train runner calls the same helper. No loader/model/prompt settings changed.

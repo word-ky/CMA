@@ -1,0 +1,5 @@
+method_condition,num_groups,num_references,num_pairs,target_miou,memory_fidelity,cmsa,identity_error_rate,mean_identity_margin,median_identity_margin,empty_masks,cmsa_count,fidelity_count,ier_count
+cma_clean,50,100,50,0.9086677832392657,0.98,0.94,0.02,0.8929930847278572,0.9567582807056603,0,47,98,2
+cma_target15_b,50,100,50,0.6801693725136052,0.87,0.6,0.02,0.657803018723887,0.8602438247249705,0,30,87,2
+segllm_clean,50,100,50,0.3729382004865751,0.43,0.06,0.38,0.0415679421258808,0.0,0,3,43,38
+segllm_target15_b,50,100,50,0.2752310457631434,0.38,0.02,0.3,0.016394073408354463,0.0,0,1,38,30

@@ -18,6 +18,33 @@ def sha(path):
     return h.hexdigest()
 
 
+def load_base_w15(root):
+    model_path = root / "shared/models/cmllm_lisa_plus_mr_ref_v2b_rank_long2ep_w15_lr5e6_merged_hf"
+    vision_path = root / "shared/models/clip-vit-large-patch14"
+    ref.torch.manual_seed(0)
+    ref.conversation_lib.default_conversation = ref.conversation_lib.conv_templates['llava_v1']
+    tokenizer = ref.AutoTokenizer.from_pretrained(str(model_path), model_max_length=512,
+                                                  padding_side='right', use_fast=False)
+    tokenizer.pad_token = tokenizer.unk_token
+    tokenizer.add_tokens(['[SEG]', '[REF]'])
+    dtype = ref.torch.bfloat16
+    model = ref.LISAForCausalLM.from_pretrained(
+        str(model_path), low_cpu_mem_usage=False, torch_dtype=dtype,
+        vision_tower=str(vision_path), vision_pretrained=None,
+        seg_token_idx=ref.get_added_token_id(tokenizer, '[SEG]'),
+        ref_token_idx=ref.get_added_token_id(tokenizer, '[REF]'))
+    model.config.eos_token_id = tokenizer.eos_token_id
+    model.config.bos_token_id = tokenizer.bos_token_id
+    model.config.pad_token_id = tokenizer.pad_token_id
+    model.get_model().initialize_vision_modules(model.get_model().config)
+    model.get_model().get_vision_tower().to(dtype=dtype)
+    model = model.bfloat16().cuda().eval()
+    model.get_model().get_vision_tower().to(device=0)
+    processor = ref.CLIPImageProcessor.from_pretrained(str(vision_path))
+    transform = ref.ResizeLongestSide(1024)
+    return model, tokenizer, dtype, processor, transform
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--root', required=True)
@@ -67,27 +94,7 @@ def main():
                   'conversation_mode': 'v1_multiround', 'ref_image_mode': 'crop',
                   'conditions': ['clean', 'target15_b'], 'read_targets': False}
     (out / 'inference_provenance.json').write_text(json.dumps(provenance, indent=2) + '\n')
-    ref.torch.manual_seed(0)
-    ref.conversation_lib.default_conversation = ref.conversation_lib.conv_templates['llava_v1']
-    tokenizer = ref.AutoTokenizer.from_pretrained(str(model_path), model_max_length=512,
-                                                  padding_side='right', use_fast=False)
-    tokenizer.pad_token = tokenizer.unk_token
-    tokenizer.add_tokens(['[SEG]', '[REF]'])
-    dtype = ref.torch.bfloat16
-    model = ref.LISAForCausalLM.from_pretrained(
-        str(model_path), low_cpu_mem_usage=False, torch_dtype=dtype,
-        vision_tower=str(vision_path), vision_pretrained=None,
-        seg_token_idx=ref.get_added_token_id(tokenizer, '[SEG]'),
-        ref_token_idx=ref.get_added_token_id(tokenizer, '[REF]'))
-    model.config.eos_token_id = tokenizer.eos_token_id
-    model.config.bos_token_id = tokenizer.bos_token_id
-    model.config.pad_token_id = tokenizer.pad_token_id
-    model.get_model().initialize_vision_modules(model.get_model().config)
-    model.get_model().get_vision_tower().to(dtype=dtype)
-    model = model.bfloat16().cuda().eval()
-    model.get_model().get_vision_tower().to(device=0)
-    processor = ref.CLIPImageProcessor.from_pretrained(str(vision_path))
-    transform = ref.ResizeLongestSide(1024)
+    model, tokenizer, dtype, processor, transform = load_base_w15(root)
     forwards = []
     def zero_target_hook(module, positional, kwargs):
         assert kwargs['inference']
