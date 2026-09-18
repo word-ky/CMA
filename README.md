@@ -55,3 +55,5 @@ Cycle 001 已新增 [共享 bridge 更新](CHATGPT_CODEX_BRIDGE.md#codex-update-
 [Cycle010](research_log/CYCLE010.md) 固定1.25倍 memory-guided crop 无训练验证失败：退化 mIoU0.6911→0.1740、CMSA29/50→0/50；GT-oracle 组合亦无增益。100个目标均完整覆盖于ROI，未调尺度或推进agent。
 
 [Cycle011](research_log/CYCLE011.md) 保留全图、添加矿工记忆SAM box prompt，验证 mIoU0.6911→0.6470、CMSA29/50→26/50。GT-oracle 联合仅+0.0210 mIoU、恢复2组，亦未达到预设互补性要求；停止无需训练的空间聚焦路线。
+
+[Cycle012](research_log/CYCLE012.md) 尚未训练：指定的 Up=0 与 alpha=0 同时初始化会使所有任务梯度为零，已用精确公式和反向传播复现。等待初始化协议修订；不是模型性能失败。

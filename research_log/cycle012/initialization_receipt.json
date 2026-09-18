@@ -1,0 +1,47 @@
+{
+  "kind": "synthetic algebra/backward check; NOT model performance or real-data smoke",
+  "seed": 20260528,
+  "channels": 256,
+  "bottleneck": 16,
+  "trainable_parameters": 12577,
+  "zero_init_exact_identity": true,
+  "loss": 2.05717134475708,
+  "parameters": {
+    "alpha": {
+      "numel": 1,
+      "gradient_norm": 0.0,
+      "gradient_finite": true,
+      "gradient_nonzero_elements": 0
+    },
+    "down.weight": {
+      "numel": 8208,
+      "gradient_norm": 0.0,
+      "gradient_finite": true,
+      "gradient_nonzero_elements": 0
+    },
+    "down.bias": {
+      "numel": 16,
+      "gradient_norm": 0.0,
+      "gradient_finite": true,
+      "gradient_nonzero_elements": 0
+    },
+    "up.weight": {
+      "numel": 4096,
+      "gradient_norm": 0.0,
+      "gradient_finite": true,
+      "gradient_nonzero_elements": 0
+    },
+    "up.bias": {
+      "numel": 256,
+      "gradient_norm": 0.0,
+      "gradient_finite": true,
+      "gradient_nonzero_elements": 0
+    }
+  },
+  "new_training_runs": 0,
+  "model_inference_calls": 0,
+  "status": "BLOCKED_INITIALIZATION_CONTRADICTION",
+  "one_synthetic_AdamW_step_keeps_output_exactly_global": true,
+  "alpha_after_synthetic_step": 0.0,
+  "source_sha256": "199a43863ced27cbae7ae77353a7cdde55614f4e0136e02c29aa4846cd2fc177"
+}
