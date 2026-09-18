@@ -1,0 +1,107 @@
+[
+  {
+    "candidate": "SegLLM",
+    "path": "llava/train/inference_cli.py",
+    "url": "https://raw.githubusercontent.com/berkeley-hipie/segllm/4593a069f09628ce3a5b46e657f5417fefd7be46/llava/train/inference_cli.py",
+    "sha256": "bd930ca593910f4a9f6c2c271424a118759a12785a9ebaafafd8258566e308eb"
+  },
+  {
+    "candidate": "SegLLM",
+    "path": "scripts/inference/launch_cli_demo.sh",
+    "url": "https://raw.githubusercontent.com/berkeley-hipie/segllm/4593a069f09628ce3a5b46e657f5417fefd7be46/scripts/inference/launch_cli_demo.sh",
+    "sha256": "a62fcf6026fb3837e5d4a4a8d499848add70022fe6c85b3ce000fffc97fe6d00"
+  },
+  {
+    "candidate": "SegLLM",
+    "path": "INSTALL.md",
+    "url": "https://raw.githubusercontent.com/berkeley-hipie/segllm/4593a069f09628ce3a5b46e657f5417fefd7be46/INSTALL.md",
+    "sha256": "888820b0303f6344353bc3935bbceeb0fdd16e914b9f16c83d283e810bf75b4e"
+  },
+  {
+    "candidate": "SegLLM",
+    "path": "requirements.txt",
+    "url": "https://raw.githubusercontent.com/berkeley-hipie/segllm/4593a069f09628ce3a5b46e657f5417fefd7be46/requirements.txt",
+    "sha256": "1b349ccbaeb1e8aa76700e37b1ae581eefd802fded8a1d2b4f5f513a485df037"
+  },
+  {
+    "candidate": "SegLLM",
+    "path": "llava/model/llava_arch.py",
+    "url": "https://raw.githubusercontent.com/berkeley-hipie/segllm/4593a069f09628ce3a5b46e657f5417fefd7be46/llava/model/llava_arch.py",
+    "sha256": "73544b40c0dc22f867571efcbb3e30e5ee006f404b8267fa1c27f875855ae88f"
+  },
+  {
+    "candidate": "SegLLM",
+    "path": "inference_images/example_conversations.py",
+    "url": "https://raw.githubusercontent.com/berkeley-hipie/segllm/4593a069f09628ce3a5b46e657f5417fefd7be46/inference_images/example_conversations.py",
+    "sha256": "ef6a6441238a1aca5f40fbbefb8417943579497ab523ddec68f1886bd47588dc"
+  },
+  {
+    "candidate": "GLaMM",
+    "path": "app.py",
+    "url": "https://raw.githubusercontent.com/mbzuai-oryx/groundingLMM/1454b456cdd9ae9731915d2b79e9ff3553c3224a/app.py",
+    "sha256": "3561793ce72da0f46732ed3a93ea74c44dce2b1e72cf7d61452ec22e0028b836"
+  },
+  {
+    "candidate": "GLaMM",
+    "path": "docs/evaluation.md",
+    "url": "https://raw.githubusercontent.com/mbzuai-oryx/groundingLMM/1454b456cdd9ae9731915d2b79e9ff3553c3224a/docs/evaluation.md",
+    "sha256": "ef179faf9e8d981bb712010f054986aa68595ee413ad78abb7bf6c8d14b55fec"
+  },
+  {
+    "candidate": "SAMTok",
+    "path": "projects/samtok/README.md",
+    "url": "https://raw.githubusercontent.com/bytedance/Sa2VA/b6fed1a7928ad4adfa124f1fe79031c1f58ec7a1/projects/samtok/README.md",
+    "sha256": "e03b338b89e12e6d778a0930dd848d4e1e4b2abc00659d8128e5ab9c17edf787"
+  },
+  {
+    "candidate": "SAMTok",
+    "path": "projects/samtok/demo/qwen3vl_samtok_infer.py",
+    "url": "https://raw.githubusercontent.com/bytedance/Sa2VA/b6fed1a7928ad4adfa124f1fe79031c1f58ec7a1/projects/samtok/demo/qwen3vl_samtok_infer.py",
+    "sha256": "1e7813958d7a4deef50976c098bb729596e55b7cb13afb3e0502453c67714405"
+  },
+  {
+    "candidate": "LISA",
+    "path": "chat.py",
+    "url": "https://raw.githubusercontent.com/dvlab-research/LISA/3cb2d4301f1af4691bd4f3938335ef06e76f155a/chat.py",
+    "sha256": "ca4aaa29df12c9aa6a300acfb2079fdb1df9af49f7e0a4b7e4013143e8fb4426"
+  },
+  {
+    "candidate": "RegionReasoner",
+    "path": "test/evaluation/evaluation_multi_segmentation.py",
+    "url": "https://raw.githubusercontent.com/lmsdss/RegionReasoner/f34dbfcbc9871121bcb5fe48c26da61b828aa4e6/test/evaluation/evaluation_multi_segmentation.py",
+    "sha256": "a0cb47159a4c534e0114a1f733e87adc0f46070aadbdca1a630b99104ddf30a6"
+  },
+  {
+    "candidate": "RegionReasoner",
+    "path": "test/vision_reasoner/models/vision_reasoner_model.py",
+    "url": "https://raw.githubusercontent.com/lmsdss/RegionReasoner/f34dbfcbc9871121bcb5fe48c26da61b828aa4e6/test/vision_reasoner/models/vision_reasoner_model.py",
+    "sha256": "d44c07f35f09d70d8525c0c3d9f3612bb364df6de0b95dd94038cbbf0967febc"
+  },
+  {
+    "candidate": "RegionReasoner",
+    "path": "test/vision_reasoner/models/qwen_vl.py",
+    "url": "https://raw.githubusercontent.com/lmsdss/RegionReasoner/f34dbfcbc9871121bcb5fe48c26da61b828aa4e6/test/vision_reasoner/models/qwen_vl.py",
+    "sha256": "017e63c43328575913570438c881168684560e7818c18a8ff999fa195d7b3001"
+  },
+  {
+    "candidate": "RegionReasoner",
+    "path": "test/vision_reasoner/models/task_router.py",
+    "url": "https://raw.githubusercontent.com/lmsdss/RegionReasoner/f34dbfcbc9871121bcb5fe48c26da61b828aa4e6/test/vision_reasoner/models/task_router.py",
+    "sha256": "e7e0da26c7149976731163e4f0f394a17d840163db1027a065ca03a8159d8e53"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/bytedance/Sa2VA/b6fed1a7928ad4adfa124f1fe79031c1f58ec7a1/projects/samtok/evaluation/qwen3vl/qwen3vl_dam_infer.py",
+    "sha256": "bf6b76c914874cb9b1dc081a474f9e24b220c9000fd2d1c0a671710f4b33242a",
+    "local_cache": "outputs\\cycle014_sources\\SAMTok__projects__samtok__evaluation__qwen3vl__qwen3vl_dam_infer.py"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/berkeley-hipie/segllm/4593a069f09628ce3a5b46e657f5417fefd7be46/pyproject.toml",
+    "sha256": "6d7ff9ef1b014a2a8557d3ad1ea009c2b3a00403147ffab5679a757dc8a92e8b",
+    "local_cache": "outputs\\cycle014_sources\\SegLLM__pyproject.toml"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/berkeley-hipie/segllm/4593a069f09628ce3a5b46e657f5417fefd7be46/uninext-segm/LICENSE",
+    "sha256": "29dcdd5351f2f3d5986a98c29e956b9552c85d7a60203c26d2b9e5525ae08bf1",
+    "local_cache": "outputs\\cycle014_sources\\SegLLM__uninext-segm__LICENSE"
+  }
+]

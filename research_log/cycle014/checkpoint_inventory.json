@@ -1,0 +1,908 @@
+[
+  {
+    "model": "Marlo-Z/SegLLM",
+    "url": "https://huggingface.co/api/models/Marlo-Z/SegLLM?blobs=true",
+    "sha": "095e0637fcba015a02c0686f67b848c79c3cc80b",
+    "gated": false,
+    "license": null,
+    "files": [
+      {
+        "name": ".gitattributes",
+        "size": 1519,
+        "lfs": null
+      },
+      {
+        "name": "all_data_checkpoint/added_tokens.json",
+        "size": 253,
+        "lfs": null
+      },
+      {
+        "name": "all_data_checkpoint/config.json",
+        "size": 1362,
+        "lfs": null
+      },
+      {
+        "name": "all_data_checkpoint/generation_config.json",
+        "size": 145,
+        "lfs": null
+      },
+      {
+        "name": "all_data_checkpoint/latest",
+        "size": 16,
+        "lfs": null
+      },
+      {
+        "name": "all_data_checkpoint/model-00001-of-00003.safetensors",
+        "size": 4939075464,
+        "lfs": {
+          "sha256": "490e9a7c216bb8b257fd10cf63eefff98c288ccd647ede1379105644bfc6cb2f",
+          "size": 4939075464,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "all_data_checkpoint/model-00002-of-00003.safetensors",
+        "size": 4947390880,
+        "lfs": {
+          "sha256": "c38c4d9637b2b47b1f48e30033e575cf7c9ff694024f18633fa458120441b6f8",
+          "size": 4947390880,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "all_data_checkpoint/model-00003-of-00003.safetensors",
+        "size": 4716774288,
+        "lfs": {
+          "sha256": "5e67f5ab544a014dd6fe7c1a7982ea870b2447e926e3bb31f512ca02ae625cf7",
+          "size": 4716774288,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "all_data_checkpoint/model.safetensors.index.json",
+        "size": 187830,
+        "lfs": null
+      },
+      {
+        "name": "all_data_checkpoint/rng_state_0.pth",
+        "size": 15984,
+        "lfs": {
+          "sha256": "2f413554d28c6d2702153a5369d517a1b20cb255d1ad978862a775a8c9dfc9de",
+          "size": 15984,
+          "pointerSize": 130
+        }
+      },
+      {
+        "name": "all_data_checkpoint/rng_state_1.pth",
+        "size": 15984,
+        "lfs": {
+          "sha256": "1ddbbfd174e04adeb8278eb39fe0c3bab5a263f78450f8768a49030d70e6d2eb",
+          "size": 15984,
+          "pointerSize": 130
+        }
+      },
+      {
+        "name": "all_data_checkpoint/rng_state_2.pth",
+        "size": 15984,
+        "lfs": {
+          "sha256": "5b8481e2263c1eca4aff5c64c47766f68fa13ed11804e31e7c48458d87de2b01",
+          "size": 15984,
+          "pointerSize": 130
+        }
+      },
+      {
+        "name": "all_data_checkpoint/rng_state_3.pth",
+        "size": 15984,
+        "lfs": {
+          "sha256": "ee1b7dc4da6839e0b8cc334bb83ba392ad57ca2447f204a73dd93c5bbae0833d",
+          "size": 15984,
+          "pointerSize": 130
+        }
+      },
+      {
+        "name": "all_data_checkpoint/rng_state_4.pth",
+        "size": 15984,
+        "lfs": {
+          "sha256": "6717c92cfeafd60be462bfc4fe120f956e6da4709cc792981907491de19c753f",
+          "size": 15984,
+          "pointerSize": 130
+        }
+      },
+      {
+        "name": "all_data_checkpoint/rng_state_5.pth",
+        "size": 15984,
+        "lfs": {
+          "sha256": "ae0c938ed2ad2046bcd94ec385b4d13829d5edb80bd3236774239b9961af41f2",
+          "size": 15984,
+          "pointerSize": 130
+        }
+      },
+      {
+        "name": "all_data_checkpoint/rng_state_6.pth",
+        "size": 15984,
+        "lfs": {
+          "sha256": "5f8b25d29e494702562825264b7ceac8a57b4559be200675f6b873b0bd684b34",
+          "size": 15984,
+          "pointerSize": 130
+        }
+      },
+      {
+        "name": "all_data_checkpoint/rng_state_7.pth",
+        "size": 15984,
+        "lfs": {
+          "sha256": "9afa299b3ad23805bb535215a7e4caa04ed273416974a8bca4d744f953658a86",
+          "size": 15984,
+          "pointerSize": 130
+        }
+      },
+      {
+        "name": "all_data_checkpoint/scheduler.pt",
+        "size": 1064,
+        "lfs": {
+          "sha256": "04435d9b55926a14226a1b25873c4b47ebff63135f4623f0331bb36f05a3d7ee",
+          "size": 1064,
+          "pointerSize": 129
+        }
+      },
+      {
+        "name": "all_data_checkpoint/special_tokens_map.json",
+        "size": 438,
+        "lfs": null
+      },
+      {
+        "name": "all_data_checkpoint/tokenizer.json",
+        "size": 1844695,
+        "lfs": null
+      },
+      {
+        "name": "all_data_checkpoint/tokenizer.model",
+        "size": 499723,
+        "lfs": {
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "size": 499723,
+          "pointerSize": 131
+        }
+      },
+      {
+        "name": "all_data_checkpoint/tokenizer_config.json",
+        "size": 2897,
+        "lfs": null
+      },
+      {
+        "name": "all_data_checkpoint/trainer_state.json",
+        "size": 3163419,
+        "lfs": null
+      },
+      {
+        "name": "all_data_checkpoint/training_args.bin",
+        "size": 6712,
+        "lfs": {
+          "sha256": "02ff19bfced45fca7ce64a0adbf76ab8745eaa7235b043d88c4590b3515189c7",
+          "size": 6712,
+          "pointerSize": 129
+        }
+      },
+      {
+        "name": "all_data_checkpoint/zero_to_fp32.py",
+        "size": 25314,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/added_tokens.json",
+        "size": 253,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/checkpoint-41852/added_tokens.json",
+        "size": 253,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/checkpoint-41852/config.json",
+        "size": 1376,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/checkpoint-41852/generation_config.json",
+        "size": 124,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/checkpoint-41852/model-00001-of-00003.safetensors",
+        "size": 4939075464,
+        "lfs": {
+          "sha256": "d2956a2975d805235af66ad95a85a6445eecaaa9d908acc7aac349b1bd6c77ba",
+          "size": 4939075464,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "mr_paco_checkpoint/checkpoint-41852/model-00002-of-00003.safetensors",
+        "size": 4947390880,
+        "lfs": {
+          "sha256": "fff9347e349a4b35f6d8d6ccaffb8a49750042df2f98180a768102ef8c299aa3",
+          "size": 4947390880,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "mr_paco_checkpoint/checkpoint-41852/model-00003-of-00003.safetensors",
+        "size": 4661380964,
+        "lfs": {
+          "sha256": "848fbf1b36b26ddcbd3502bf279be2e6d7e71e089289ad606375105826414c6e",
+          "size": 4661380964,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "mr_paco_checkpoint/checkpoint-41852/model.safetensors.index.json",
+        "size": 187830,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/checkpoint-41852/special_tokens_map.json",
+        "size": 438,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/checkpoint-41852/tokenizer.json",
+        "size": 1844695,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/checkpoint-41852/tokenizer.model",
+        "size": 499723,
+        "lfs": {
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "size": 499723,
+          "pointerSize": 131
+        }
+      },
+      {
+        "name": "mr_paco_checkpoint/checkpoint-41852/tokenizer_config.json",
+        "size": 2897,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/checkpoint-41852/trainer_state.json",
+        "size": 7327667,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/checkpoint-41852/training_args.bin",
+        "size": 6776,
+        "lfs": {
+          "sha256": "56ad1f80c0d2e76fd47c4b2d2638b7ddb511ffde91dfa3b5a24328ee80de3273",
+          "size": 6776,
+          "pointerSize": 129
+        }
+      },
+      {
+        "name": "mr_paco_checkpoint/config.json",
+        "size": 1375,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/generation_config.json",
+        "size": 124,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/model-00001-of-00003.safetensors",
+        "size": 4939075464,
+        "lfs": {
+          "sha256": "d2956a2975d805235af66ad95a85a6445eecaaa9d908acc7aac349b1bd6c77ba",
+          "size": 4939075464,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "mr_paco_checkpoint/model-00002-of-00003.safetensors",
+        "size": 4947390880,
+        "lfs": {
+          "sha256": "fff9347e349a4b35f6d8d6ccaffb8a49750042df2f98180a768102ef8c299aa3",
+          "size": 4947390880,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "mr_paco_checkpoint/model-00003-of-00003.safetensors",
+        "size": 4661380964,
+        "lfs": {
+          "sha256": "848fbf1b36b26ddcbd3502bf279be2e6d7e71e089289ad606375105826414c6e",
+          "size": 4661380964,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "mr_paco_checkpoint/model.safetensors.index.json",
+        "size": 187830,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/special_tokens_map.json",
+        "size": 438,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/tokenizer.json",
+        "size": 1844695,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/tokenizer.model",
+        "size": 499723,
+        "lfs": {
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "size": 499723,
+          "pointerSize": 131
+        }
+      },
+      {
+        "name": "mr_paco_checkpoint/tokenizer/added_tokens.json",
+        "size": 253,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/tokenizer/special_tokens_map.json",
+        "size": 438,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/tokenizer/tokenizer.json",
+        "size": 1844695,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/tokenizer/tokenizer.model",
+        "size": 499723,
+        "lfs": {
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "size": 499723,
+          "pointerSize": 131
+        }
+      },
+      {
+        "name": "mr_paco_checkpoint/tokenizer/tokenizer_config.json",
+        "size": 2897,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/tokenizer_config.json",
+        "size": 2897,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/trainer_state.json",
+        "size": 7327918,
+        "lfs": null
+      },
+      {
+        "name": "mr_paco_checkpoint/training_args.bin",
+        "size": 6776,
+        "lfs": {
+          "sha256": "56ad1f80c0d2e76fd47c4b2d2638b7ddb511ffde91dfa3b5a24328ee80de3273",
+          "size": 6776,
+          "pointerSize": 129
+        }
+      },
+      {
+        "name": "mr_refcoco_checkpoint/added_tokens.json",
+        "size": 253,
+        "lfs": null
+      },
+      {
+        "name": "mr_refcoco_checkpoint/config.json",
+        "size": 1375,
+        "lfs": null
+      },
+      {
+        "name": "mr_refcoco_checkpoint/generation_config.json",
+        "size": 124,
+        "lfs": null
+      },
+      {
+        "name": "mr_refcoco_checkpoint/model-00001-of-00003.safetensors",
+        "size": 4939075464,
+        "lfs": {
+          "sha256": "6f01714c690a14b9d026aa628b009bede027750594c7881954e31fe4001d050a",
+          "size": 4939075464,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "mr_refcoco_checkpoint/model-00002-of-00003.safetensors",
+        "size": 4947390880,
+        "lfs": {
+          "sha256": "b99a53ddd01bb995cf611f8ba5e8885880f5010705372845b91941d6041e4cc0",
+          "size": 4947390880,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "mr_refcoco_checkpoint/model-00003-of-00003.safetensors",
+        "size": 4661380964,
+        "lfs": {
+          "sha256": "aa6c8be5de8301f30f1fb7416d04e65f21370a4a5698f4b9848a4b67265161a3",
+          "size": 4661380964,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "mr_refcoco_checkpoint/model.safetensors.index.json",
+        "size": 187830,
+        "lfs": null
+      },
+      {
+        "name": "mr_refcoco_checkpoint/special_tokens_map.json",
+        "size": 438,
+        "lfs": null
+      },
+      {
+        "name": "mr_refcoco_checkpoint/tokenizer.json",
+        "size": 1844695,
+        "lfs": null
+      },
+      {
+        "name": "mr_refcoco_checkpoint/tokenizer.model",
+        "size": 499723,
+        "lfs": {
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "size": 499723,
+          "pointerSize": 131
+        }
+      },
+      {
+        "name": "mr_refcoco_checkpoint/tokenizer/added_tokens.json",
+        "size": 253,
+        "lfs": null
+      },
+      {
+        "name": "mr_refcoco_checkpoint/tokenizer/special_tokens_map.json",
+        "size": 438,
+        "lfs": null
+      },
+      {
+        "name": "mr_refcoco_checkpoint/tokenizer/tokenizer.json",
+        "size": 1844695,
+        "lfs": null
+      },
+      {
+        "name": "mr_refcoco_checkpoint/tokenizer/tokenizer.model",
+        "size": 499723,
+        "lfs": {
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "size": 499723,
+          "pointerSize": 131
+        }
+      },
+      {
+        "name": "mr_refcoco_checkpoint/tokenizer/tokenizer_config.json",
+        "size": 2897,
+        "lfs": null
+      },
+      {
+        "name": "mr_refcoco_checkpoint/tokenizer_config.json",
+        "size": 2897,
+        "lfs": null
+      },
+      {
+        "name": "mr_refcoco_checkpoint/trainer_state.json",
+        "size": 5275333,
+        "lfs": null
+      },
+      {
+        "name": "mr_refcoco_checkpoint/training_args.bin",
+        "size": 6904,
+        "lfs": {
+          "sha256": "5905c48d6065f11ee0a3bd99d65cd87e9d45927ecb52ab3dcbb658d4c773ba8c",
+          "size": 6904,
+          "pointerSize": 129
+        }
+      }
+    ]
+  },
+  {
+    "model": "MBZUAI/GLaMM-FullScope",
+    "url": "https://huggingface.co/api/models/MBZUAI/GLaMM-FullScope?blobs=true",
+    "sha": "95a4ab0c9ab7e8e583df3e8adc93b5c89586612e",
+    "gated": false,
+    "license": "apache-2.0",
+    "files": [
+      {
+        "name": ".gitattributes",
+        "size": 1519,
+        "lfs": null
+      },
+      {
+        "name": "README.md",
+        "size": 1390,
+        "lfs": null
+      },
+      {
+        "name": "added_tokens.json",
+        "size": 137,
+        "lfs": null
+      },
+      {
+        "name": "config.json",
+        "size": 1790,
+        "lfs": null
+      },
+      {
+        "name": "generation_config.json",
+        "size": 181,
+        "lfs": null
+      },
+      {
+        "name": "pytorch_model-00001-of-00002.bin",
+        "size": 9976691902,
+        "lfs": {
+          "sha256": "5dcdc7b329c5aaf02265d2eff7bdec0cc64418c0ef2310f567b442af11ce2f89",
+          "size": 9976691902,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "pytorch_model-00002-of-00002.bin",
+        "size": 6776538784,
+        "lfs": {
+          "sha256": "04c6e1fda509b04b701ee021ba81cef0240451d138367c51bd6658482704419f",
+          "size": 6776538784,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "pytorch_model.bin.index.json",
+        "size": 96091,
+        "lfs": null
+      },
+      {
+        "name": "special_tokens_map.json",
+        "size": 438,
+        "lfs": null
+      },
+      {
+        "name": "tokenizer.model",
+        "size": 499723,
+        "lfs": {
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "size": 499723,
+          "pointerSize": 131
+        }
+      },
+      {
+        "name": "tokenizer_config.json",
+        "size": 729,
+        "lfs": null
+      }
+    ]
+  },
+  {
+    "model": "lmsdss/RegionReasoner-7B",
+    "url": "https://huggingface.co/api/models/lmsdss/RegionReasoner-7B?blobs=true",
+    "sha": "e7db1c4f1459eb5141e51dea887a81ce9b19810a",
+    "gated": false,
+    "license": null,
+    "files": [
+      {
+        "name": ".gitattributes",
+        "size": 1570,
+        "lfs": null
+      },
+      {
+        "name": "README.md",
+        "size": 128,
+        "lfs": null
+      },
+      {
+        "name": "added_tokens.json",
+        "size": 605,
+        "lfs": null
+      },
+      {
+        "name": "chat_template.json",
+        "size": 1049,
+        "lfs": null
+      },
+      {
+        "name": "config.json",
+        "size": 1488,
+        "lfs": null
+      },
+      {
+        "name": "generation_config.json",
+        "size": 121,
+        "lfs": null
+      },
+      {
+        "name": "merges.txt",
+        "size": 1671853,
+        "lfs": null
+      },
+      {
+        "name": "model-00001-of-00004.safetensors",
+        "size": 4997891928,
+        "lfs": {
+          "sha256": "e5a5645dcb9d7079df226840813a2d7d0aecf3f34cd48acb70b683c0b115726e",
+          "size": 4997891928,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "model-00002-of-00004.safetensors",
+        "size": 4980487824,
+        "lfs": {
+          "sha256": "b8e777e437734a7fd0e20a11ffa91b32a9db5a1e00d12e9befaf70ce1ebd7b7e",
+          "size": 4980487824,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "model-00003-of-00004.safetensors",
+        "size": 4069396216,
+        "lfs": {
+          "sha256": "d10856a2707b227b4997b2fbebeca6e1055aa860d83b1cdf76784b78749a7ff3",
+          "size": 4069396216,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "model-00004-of-00004.safetensors",
+        "size": 2536638568,
+        "lfs": {
+          "sha256": "fdc0ad85a47dbf72107a13ed313498d6e92057459be68ab977cdbab719f19fa6",
+          "size": 2536638568,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "model.safetensors.index.json",
+        "size": 57619,
+        "lfs": null
+      },
+      {
+        "name": "preprocessor_config.json",
+        "size": 575,
+        "lfs": null
+      },
+      {
+        "name": "special_tokens_map.json",
+        "size": 613,
+        "lfs": null
+      },
+      {
+        "name": "tokenizer.json",
+        "size": 11421896,
+        "lfs": {
+          "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+          "size": 11421896,
+          "pointerSize": 133
+        }
+      },
+      {
+        "name": "tokenizer_config.json",
+        "size": 5776,
+        "lfs": null
+      },
+      {
+        "name": "vocab.json",
+        "size": 2776833,
+        "lfs": null
+      }
+    ]
+  },
+  {
+    "model": "zhouyik/Qwen3-VL-8B-SAMTok",
+    "url": "https://huggingface.co/api/models/zhouyik/Qwen3-VL-8B-SAMTok?blobs=true",
+    "sha": "b78aef1105d6a94049a2ba109f814dfcf21bec8e",
+    "gated": false,
+    "license": "apache-2.0",
+    "files": [
+      {
+        "name": ".gitattributes",
+        "size": 1570,
+        "lfs": null
+      },
+      {
+        "name": "README.md",
+        "size": 5132,
+        "lfs": null
+      },
+      {
+        "name": "added_tokens.json",
+        "size": 13557,
+        "lfs": null
+      },
+      {
+        "name": "args.json",
+        "size": 20489,
+        "lfs": null
+      },
+      {
+        "name": "chat_template.jinja",
+        "size": 5292,
+        "lfs": null
+      },
+      {
+        "name": "config.json",
+        "size": 1651,
+        "lfs": null
+      },
+      {
+        "name": "generation_config.json",
+        "size": 213,
+        "lfs": null
+      },
+      {
+        "name": "mask_tokenizer_256x2.pth",
+        "size": 912357638,
+        "lfs": {
+          "sha256": "28536f6fb5224060eedd370c483c95336714e034375e75016438cbd2f168795c",
+          "size": 912357638,
+          "pointerSize": 134
+        }
+      },
+      {
+        "name": "merges.txt",
+        "size": 1671853,
+        "lfs": null
+      },
+      {
+        "name": "model-00001-of-00004.safetensors",
+        "size": 4899416552,
+        "lfs": {
+          "sha256": "fa70e6dc6ea9295f08ac983e9a02bd9fb2eea0452c9f8f3fe7ffc430706ac9a9",
+          "size": 4899416552,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "model-00002-of-00004.safetensors",
+        "size": 4915962464,
+        "lfs": {
+          "sha256": "7a576feb32f9df4515d8b06e04dba904c5c276409ff81b3402cc9f979ed9c674",
+          "size": 4915962464,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "model-00003-of-00004.safetensors",
+        "size": 4983070600,
+        "lfs": {
+          "sha256": "268e7b5176cb8c86354b14a0a072eb14df60f6e83c3e7a66298dfb873567315c",
+          "size": 4983070600,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "model-00004-of-00004.safetensors",
+        "size": 2739936736,
+        "lfs": {
+          "sha256": "a5390e171f1f9d9a5f1d00427877f42b0fc6f89f4d6d85f9a26bb818cffb41c7",
+          "size": 2739936736,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "model.safetensors.index.json",
+        "size": 67795,
+        "lfs": null
+      },
+      {
+        "name": "preprocessor_config.json",
+        "size": 782,
+        "lfs": null
+      },
+      {
+        "name": "sam2.1_hiera_large.pt",
+        "size": 898083611,
+        "lfs": {
+          "sha256": "2647878d5dfa5098f2f8649825738a9345572bae2d4350a2468587ece47dd318",
+          "size": 898083611,
+          "pointerSize": 134
+        }
+      },
+      {
+        "name": "special_tokens_map.json",
+        "size": 613,
+        "lfs": null
+      },
+      {
+        "name": "tokenizer.json",
+        "size": 11519800,
+        "lfs": {
+          "sha256": "6decf21aa9d65430562d0aa9bb07611aa7d2e8dddb567f1f1ab6d3b1d545fad1",
+          "size": 11519800,
+          "pointerSize": 133
+        }
+      },
+      {
+        "name": "tokenizer_config.json",
+        "size": 97451,
+        "lfs": null
+      },
+      {
+        "name": "video_preprocessor_config.json",
+        "size": 861,
+        "lfs": null
+      },
+      {
+        "name": "vocab.json",
+        "size": 2776833,
+        "lfs": null
+      }
+    ]
+  },
+  {
+    "model": "xinlai/LISA-7B-v1",
+    "url": "https://huggingface.co/api/models/xinlai/LISA-7B-v1?blobs=true",
+    "sha": "43c754eef75871fcc11c84d3930a402f7b0a754f",
+    "gated": false,
+    "license": null,
+    "files": [
+      {
+        "name": ".gitattributes",
+        "size": 1519,
+        "lfs": null
+      },
+      {
+        "name": "added_tokens.json",
+        "size": 88,
+        "lfs": null
+      },
+      {
+        "name": "config.json",
+        "size": 1168,
+        "lfs": null
+      },
+      {
+        "name": "generation_config.json",
+        "size": 132,
+        "lfs": null
+      },
+      {
+        "name": "pytorch_model-00001-of-00002.bin",
+        "size": 9976667326,
+        "lfs": {
+          "sha256": "86c2b94e29646fc7949ca4957da54983fe91a53f5ffa7c4a80509377562af447",
+          "size": 9976667326,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "pytorch_model-00002-of-00002.bin",
+        "size": 6144646041,
+        "lfs": {
+          "sha256": "9290b230d2a80c782a21b508eff2da04ed373188f31e023302d73c18e55c28b6",
+          "size": 6144646041,
+          "pointerSize": 135
+        }
+      },
+      {
+        "name": "pytorch_model.bin.index.json",
+        "size": 88958,
+        "lfs": null
+      },
+      {
+        "name": "special_tokens_map.json",
+        "size": 435,
+        "lfs": null
+      },
+      {
+        "name": "tokenizer.model",
+        "size": 499723,
+        "lfs": {
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "size": 499723,
+          "pointerSize": 131
+        }
+      },
+      {
+        "name": "tokenizer_config.json",
+        "size": 744,
+        "lfs": null
+      }
+    ]
+  }
+]

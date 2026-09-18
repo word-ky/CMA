@@ -1,0 +1,154 @@
+{
+  "cycle": 14,
+  "as_of": "2026-09-18",
+  "protocol": "cma_baseline_val50_v1",
+  "selected_next_baseline": "SegLLM",
+  "selection_reason": "Native multi-round identity-conditioned relational segmentation, native masked appearance/bbox cue, released code and inference checkpoint files satisfy first three review criteria; priority rule selects SegLLM despite porting churn. Release availability is not local execution proof.",
+  "inventory_scope": "Windows recovered project named files; A6000 project shared/models and code depth2 and named candidates depth3; current project venv pip metadata. Not a server-wide absence claim. Local official-source cache is audit material, not installed baseline.",
+  "runtime_smoke": "Not run: selected baseline not already runnable; no installation or model download authorized in Cycle014.",
+  "candidates": [
+    {
+      "method": "LISA",
+      "paper": "https://arxiv.org/abs/2308.00692",
+      "repository": "https://github.com/dvlab-research/LISA",
+      "repository_revision": "3cb2d4301f1af4691bd4f3938335ef06e76f155a",
+      "proposed_tier": "B",
+      "tier_reason": "Cannot express the fixed supplied miner identity with its native interface; CMA REF modifications must not be attributed to original LISA.",
+      "native_input": "Image and text; generated SEG token decoded by SAM. No native supplied identity mask/region in chat.py.",
+      "supplied_identity_without_target_leakage": false,
+      "counterfactual_switching_meaningful": false,
+      "interface_status": "source-audited; not run",
+      "output_normalization": "Native mask logits thresholded at zero and restored to original image size. Binary export possible, but no CMF identity-trials export.",
+      "local_code_and_checkpoint": "Modified LISA code and domain-finetuned w15 checkpoint exist; unmodified official LISA checkpoint not present in scoped recovered model inventory.",
+      "checkpoint": {
+        "url": "https://huggingface.co/xinlai/LISA-7B-v1",
+        "revision": "43c754eef75871fcc11c84d3930a402f7b0a754f",
+        "released_files_confirmed": true,
+        "selected_subfolder": null,
+        "local_runnable_confirmed": false
+      },
+      "expected_burden": "7B autoregressive LLM plus CLIP and SAM. Planning estimate: single 48GB GPU may suffice at reduced precision; measured memory and latency unknown.",
+      "dependency_interface_blockers": "Separate clean baseline config/checkpoint required. Original LLM license terms also apply; HF card license unspecified.",
+      "license": "Apache-2.0 repository; upstream model terms separately applicable.",
+      "sources": [
+        "https://github.com/dvlab-research/LISA/blob/3cb2d4301f1af4691bd4f3938335ef06e76f155a/chat.py"
+      ]
+    },
+    {
+      "method": "GLaMM",
+      "paper": "https://arxiv.org/abs/2311.03356",
+      "repository": "https://github.com/mbzuai-oryx/groundingLMM",
+      "repository_revision": "1454b456cdd9ae9731915d2b79e9ff3553c3224a",
+      "proposed_tier": "A",
+      "tier_reason": "Supplied miner bbox can encode identity without helmet coordinates; bbox-only cue loses mask shape and is a separate information tier. Relational output is not verified here.",
+      "native_input": "Full image and region bboxes through region_enc_processor and model.evaluate(bboxes=...).",
+      "supplied_identity_without_target_leakage": true,
+      "counterfactual_switching_meaningful": true,
+      "interface_status": "source-audited; not run",
+      "output_normalization": "pred_masks logits -> threshold >0 in app.py; map requested grounded phrase to native output using a fixed predeclared native rule, never IoU.",
+      "local_code_and_checkpoint": "No GLaMM checkout/weights found in scoped project inventory; external port required.",
+      "checkpoint": {
+        "url": "https://huggingface.co/MBZUAI/GLaMM-FullScope",
+        "revision": "95a4ab0c9ab7e8e583df3e8adc93b5c89586612e",
+        "released_files_confirmed": true,
+        "selected_subfolder": null,
+        "local_runnable_confirmed": false
+      },
+      "expected_burden": "7B LLM, image/region encoders and SAM. Planning estimate: single 48GB GPU may suffice; runtime and peak memory unmeasured.",
+      "dependency_interface_blockers": "Legacy LLaVA stack and region encoder; prompt bbox binding and multi-phrase output handling require port verification. Demo inpainting dependency is not needed for segmentation.",
+      "license": "Apache-2.0 repository and HF metadata; dependent models retain their own terms.",
+      "sources": [
+        "https://github.com/mbzuai-oryx/groundingLMM/blob/1454b456cdd9ae9731915d2b79e9ff3553c3224a/app.py",
+        "https://github.com/mbzuai-oryx/groundingLMM/blob/1454b456cdd9ae9731915d2b79e9ff3553c3224a/docs/evaluation.md"
+      ]
+    },
+    {
+      "method": "SegLLM",
+      "paper": "https://arxiv.org/abs/2410.18923",
+      "repository": "https://github.com/berkeley-hipie/segllm",
+      "repository_revision": "4593a069f09628ce3a5b46e657f5417fefd7be46",
+      "proposed_tier": "A",
+      "tier_reason": "Seed native memory lists from supplied miner mask/bbox using condition-matched pixels; identity-conditioned relational task directly comparable. No helmet target needed.",
+      "native_input": "Native historical masked RGB crop and bbox, inserted as mask-encode and bbox-encode replacements in multi-round conversation.",
+      "supplied_identity_without_target_leakage": true,
+      "counterfactual_switching_meaningful": true,
+      "interface_status": "source-audited; not run",
+      "output_normalization": "Native segm_loss_mask and segm_loss_boxes; demo takes last mask. Strip native padding via input_size, restore original H/W; existing scorer accepts binary saved arrays.",
+      "local_code_and_checkpoint": "Recovered SegLLM-named scripts are REF-LISA experiments and references contain papers, not an installed SegLLM baseline. No remote checkout/weights and detectron2 absent.",
+      "checkpoint": {
+        "url": "https://huggingface.co/Marlo-Z/SegLLM",
+        "revision": "095e0637fcba015a02c0686f67b848c79c3cc80b",
+        "released_files_confirmed": true,
+        "selected_subfolder": "all_data_checkpoint",
+        "local_runnable_confirmed": false
+      },
+      "expected_burden": "LLaVA-family LLM plus HIPIE/CLIP/BERT. Planning estimate: budget one 48GB GPU; no memory-fit or latency measurement. CUDA compilation/setup is material churn.",
+      "dependency_interface_blockers": "Official INSTALL uses Python3.10/CUDA12.4 and two deformable-op builds, HIPIE r50_parts.pth and BERT weights. pyproject has older torch2.0.1/transformers4.31 pins: resolve in isolated env, do not rebuild current CMA env. Verify native yxyx/1024 box convention.",
+      "license": "No root LICENSE detected; pyproject advertises Apache classifier, uninext-segm LICENSE is MIT. HF card license unspecified. Clarify coverage before redistribution; do not assert blanket license.",
+      "sources": [
+        "https://github.com/berkeley-hipie/segllm/blob/4593a069f09628ce3a5b46e657f5417fefd7be46/llava/train/inference_cli.py",
+        "https://github.com/berkeley-hipie/segllm/blob/4593a069f09628ce3a5b46e657f5417fefd7be46/llava/model/llava_arch.py",
+        "https://github.com/berkeley-hipie/segllm/blob/4593a069f09628ce3a5b46e657f5417fefd7be46/INSTALL.md",
+        "https://github.com/berkeley-hipie/segllm/blob/4593a069f09628ce3a5b46e657f5417fefd7be46/pyproject.toml",
+        "https://github.com/berkeley-hipie/segllm/blob/4593a069f09628ce3a5b46e657f5417fefd7be46/uninext-segm/LICENSE"
+      ]
+    },
+    {
+      "method": "RegionReasoner",
+      "paper": "https://arxiv.org/abs/2602.03733",
+      "repository": "https://github.com/lmsdss/RegionReasoner",
+      "repository_revision": "f34dbfcbc9871121bcb5fe48c26da61b828aa4e6",
+      "proposed_tier": "A",
+      "tier_reason": "Supplied miner bbox is a native reference cue; preserve query semantics and document bbox-only information. Spatial prompt alone does not prove success on worn-by relation.",
+      "native_input": "Native reference bbox embedded in question; scene/focus/reasoning prompt, predicted target boxes/points feed SAM2.",
+      "supplied_identity_without_target_leakage": true,
+      "counterfactual_switching_meaningful": true,
+      "interface_status": "source-audited; not run",
+      "output_normalization": "SAM2 native predicted-quality choice, original-size Boolean mask union in generate_masks. Never choose boxes or masks by target IoU.",
+      "local_code_and_checkpoint": "No RegionReasoner checkout/weights in scoped project inventory; external port required.",
+      "checkpoint": {
+        "url": "https://huggingface.co/lmsdss/RegionReasoner-7B",
+        "revision": "e7db1c4f1459eb5141e51dea887a81ce9b19810a",
+        "released_files_confirmed": true,
+        "selected_subfolder": null,
+        "local_runnable_confirmed": false
+      },
+      "expected_burden": "7B Qwen2.5VL plus SAM2 and optional/default 1.5B router. Planning estimate: one 48GB GPU candidate; actual memory/latency unknown.",
+      "dependency_interface_blockers": "SAM2 absent; separate Qwen/FlashAttention stack and router weights. Constructor default names VisionReasoner: explicitly override with RegionReasoner checkpoint. Verify reference coordinate scaling.",
+      "license": "Repository API and HF card expose no explicit license; redistribution terms unresolved.",
+      "sources": [
+        "https://github.com/lmsdss/RegionReasoner/blob/f34dbfcbc9871121bcb5fe48c26da61b828aa4e6/test/vision_reasoner/models/vision_reasoner_model.py",
+        "https://github.com/lmsdss/RegionReasoner/blob/f34dbfcbc9871121bcb5fe48c26da61b828aa4e6/test/evaluation/evaluation_multi_segmentation.py"
+      ]
+    },
+    {
+      "method": "SAMTok",
+      "paper": "https://arxiv.org/abs/2601.16093",
+      "repository": "https://github.com/bytedance/Sa2VA",
+      "repository_revision": "b6fed1a7928ad4adfa124f1fe79031c1f58ec7a1",
+      "proposed_tier": "A",
+      "tier_reason": "Native tokens can represent supplied miner mask without helmet labels. Combined region-conditioned helmet generation is an interface-level inference, not an executed demo in this audit.",
+      "native_input": "Native VQ-SAM2 maps supplied mask/box/image to mask tokens; VLM consumes those tokens and can generate mask tokens decoded into 2D masks.",
+      "supplied_identity_without_target_leakage": true,
+      "counterfactual_switching_meaningful": true,
+      "interface_status": "source-audited; not run",
+      "output_normalization": "Generated mask tokens -> VQ-SAM2 decoder -> 2D masks, restored to original size; fixed native decoding then binary export.",
+      "local_code_and_checkpoint": "No SAMTok checkout/weights in scoped project inventory; external port required.",
+      "checkpoint": {
+        "url": "https://huggingface.co/zhouyik/Qwen3-VL-8B-SAMTok",
+        "revision": "b78aef1105d6a94049a2ba109f814dfcf21bec8e",
+        "released_files_confirmed": true,
+        "selected_subfolder": null,
+        "local_runnable_confirmed": false
+      },
+      "expected_burden": "8B Qwen3VL plus SAM2.1 and mask tokenizer. Planning estimate: single 48GB GPU candidate at BF16, runtime/fit unmeasured.",
+      "dependency_interface_blockers": "New Qwen3VL-compatible transformers plus mask_tokenizer_256x2.pth and sam2.1_hiera_large.pt; current environment lacks SAM2. Native mask-understanding demo is captioning; combined relational mask-generation needs wiring verification.",
+      "license": "Apache-2.0 repository and selected HF metadata; third-party component terms remain applicable.",
+      "sources": [
+        "https://github.com/bytedance/Sa2VA/blob/b6fed1a7928ad4adfa124f1fe79031c1f58ec7a1/projects/samtok/README.md",
+        "https://github.com/bytedance/Sa2VA/blob/b6fed1a7928ad4adfa124f1fe79031c1f58ec7a1/projects/samtok/demo/qwen3vl_samtok_infer.py",
+        "https://github.com/bytedance/Sa2VA/blob/b6fed1a7928ad4adfa124f1fe79031c1f58ec7a1/projects/samtok/evaluation/qwen3vl/qwen3vl_dam_infer.py"
+      ]
+    }
+  ]
+}

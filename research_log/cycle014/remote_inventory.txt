@@ -1,0 +1,32 @@
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/Qwen2.5-0.5B-Instruct
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/Qwen2.5-0.5B-Instruct/.cache
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/cmllm_lisa_plus_mr_ref_v2b_rank_long2ep_w15_lr5e6_merged_hf
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/src
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/tests
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/third_party
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/scripts
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/configs
+Name: transformers
+Version: 4.55.0
+Summary: State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow
+Home-page: https://github.com/huggingface/transformers
+Author: The Hugging Face team (past and future) with the help of all our contributors (https://github.com/huggingface/transformers/graphs/contributors)
+Author-email: transformers@huggingface.co
+License: Apache 2.0 License
+Location: /home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/.venv/lib/python3.12/site-packages
+Requires: filelock, huggingface-hub, numpy, packaging, pyyaml, regex, requests, safetensors, tokenizers, tqdm
+Required-by: peft
+---
+Name: torch
+Version: 2.4.0
+Summary: Tensors and Dynamic neural networks in Python with strong GPU acceleration
+Home-page: https://pytorch.org/
+Author: PyTorch Team
+Author-email: packages@pytorch.org
+License: BSD-3
+Location: /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages
+Requires: filelock, fsspec, jinja2, networkx, nvidia-cublas-cu12, nvidia-cuda-cupti-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-runtime-cu12, nvidia-cudnn-cu12, nvidia-cufft-cu12, nvidia-curand-cu12, nvidia-cusolver-cu12, nvidia-cusparse-cu12, nvidia-nccl-cu12, nvidia-nvtx-cu12, setuptools, sympy, triton, typing-extensions
+Required-by: accelerate, peft, rknn-toolkit2, torchvision
