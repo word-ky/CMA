@@ -1,0 +1,39 @@
+/home/wenchang/anaconda3/pkgs/cuda-cccl-12.1.55-0
+/home/wenchang/anaconda3/pkgs/cuda-cudart-dev-12.1.55-0
+Channels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - \ done
+Solving environment: / done
+
+## Package Plan ##
+
+  environment location: /home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-cuda121
+
+  added / updated specs:
+    - cuda-cccl=12.1
+    - cuda-cudart-dev=12.1
+    - cuda-nvcc=12.1
+
+
+The following NEW packages will be INSTALLED:
+
+  cuda-cccl          nvidia/label/cuda-12.1.0/linux-64::cuda-cccl-12.1.55-0
+  cuda-cudart        nvidia/linux-64::cuda-cudart-12.4.127-0
+  cuda-cudart-dev    nvidia/label/cuda-12.1.0/linux-64::cuda-cudart-dev-12.1.55-0
+  cuda-nvcc          nvidia/label/cuda-12.1.0/linux-64::cuda-nvcc-12.1.66-0
+
+
+
+Downloading and Extracting Packages: ...working... done
+Preparing transaction: \ done
+Verifying transaction: / - \ | / - \ done
+Executing transaction: / done
+#
+# To activate this environment, use
+#
+#     $ conda activate /home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-cuda121
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate

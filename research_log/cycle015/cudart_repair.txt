@@ -1,0 +1,9 @@
+lrwxrwxrwx 1 liujianhua wenchang     20  9月 18 14:07 /home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-cuda121/lib/libcudart.so -> libcudart.so.12.1.55
+lrwxrwxrwx 1 liujianhua wenchang     21  9月 18 14:07 /home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-cuda121/lib/libcudart.so.12 -> libcudart.so.12.4.127
+-rwxrwxr-x 4 wenchang   wenchang 724993  3月 16  2024 /home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-cuda121/lib/libcudart.so.12.4.127
+/home/wenchang/anaconda3/pkgs/cuda-cudart-12.1.105-0
+Channels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - done
+Solving environment: | failed

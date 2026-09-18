@@ -1,0 +1,27 @@
+Channels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / done
+Solving environment: \ done
+
+## Package Plan ##
+
+  environment location: /home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-cuda121
+
+  added / updated specs:
+    - cuda-cudart=12.1.105
+
+
+The following packages will be DOWNGRADED:
+
+  cuda-cudart                                    12.4.127-0 --> 12.1.105-0
+
+
+
+Downloading and Extracting Packages: ...working... done
+Preparing transaction: / done
+Verifying transaction: \ | / - \ done
+Executing transaction: / done
+lrwxrwxrwx 1 liujianhua wenchang     15  9月 18 14:15 /home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-cuda121/lib/libcudart.so -> libcudart.so.12
+lrwxrwxrwx 1 liujianhua wenchang     21  9月 18 14:15 /home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-cuda121/lib/libcudart.so.12 -> libcudart.so.12.1.105
+-rwxrwxr-x 3 wenchang   wenchang 695584  4月  4  2023 /home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-cuda121/lib/libcudart.so.12.1.105

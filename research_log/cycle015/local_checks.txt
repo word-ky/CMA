@@ -1,0 +1,7 @@
+AST syntax checks passed for 5 Python files. No native model imports/load/forward performed by this check.
+check_memory_state.py
+load_native.py
+memory_state.py
+prepare_inputs.py
+run_smoke.py
+Affected existing scorer/export tests: 15 passed (see terminal run); no native model execution.

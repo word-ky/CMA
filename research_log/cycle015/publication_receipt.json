@@ -1,0 +1,10 @@
+{
+  "cycle": 15,
+  "remote_mirror": "research_log/cycle015 and code/cmllm/external_baselines/segllm",
+  "mirror_status": "completed; closeout archive extracted and HANDOFF checked",
+  "archive_bytes": 101201,
+  "issue_latest_comment_checked": "2026-09-18T05:52:57Z",
+  "parent_commit": "b082c9596ca17da732ab1619b4aaecf18a3dfd52",
+  "published_commit": "resolve from git commit containing this receipt",
+  "model_forwards": 0
+}

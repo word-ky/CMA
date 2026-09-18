@@ -1,0 +1,27 @@
+[
+  {
+    "path": "llava/model/segmentator/hipie_utils.py",
+    "url": "https://raw.githubusercontent.com/berkeley-hipie/segllm/4593a069f09628ce3a5b46e657f5417fefd7be46/llava/model/segmentator/hipie_utils.py",
+    "sha256": "5e87385a1060dea3830f440d6572cd1382743577f13c0019e0fa9e9146d24734"
+  },
+  {
+    "path": "llava/train/train.py",
+    "url": "https://raw.githubusercontent.com/berkeley-hipie/segllm/4593a069f09628ce3a5b46e657f5417fefd7be46/llava/train/train.py",
+    "sha256": "07cd8da071b4c853673a33382f16914cd8925345f7165abeb3985eadc84ee96f"
+  },
+  {
+    "path": "llava/train/seg_register/register_dataset.py",
+    "url": "https://raw.githubusercontent.com/berkeley-hipie/segllm/4593a069f09628ce3a5b46e657f5417fefd7be46/llava/train/seg_register/register_dataset.py",
+    "sha256": "694c3f1c9e1f752c55d815259431ed946717b9bac85abdc7958a75ead7772638"
+  },
+  {
+    "path": "llava/model/segmentator/builder.py",
+    "url": "https://raw.githubusercontent.com/berkeley-hipie/segllm/4593a069f09628ce3a5b46e657f5417fefd7be46/llava/model/segmentator/builder.py",
+    "sha256": "90743886a6ed9f0b739bae568735613e0157295d7cf8dde2ae377195a02ec7dd"
+  },
+  {
+    "path": "uninext-segm/setup.py",
+    "url": "https://raw.githubusercontent.com/berkeley-hipie/segllm/4593a069f09628ce3a5b46e657f5417fefd7be46/uninext-segm/setup.py",
+    "sha256": "5ac96db2ee4e597c3be36ce8499b4ad8cedcddc7a2692644bad465350ac6915b"
+  }
+]

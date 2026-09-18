@@ -1,0 +1,12 @@
+/home/wenchang/anaconda3/pkgs/cuda-nvcc-tools-12.8.93-he02047a_3/bin/nvcc
+/home/wenchang/anaconda3/pkgs/cuda-nvcc-12.1.66-0/bin/nvcc
+/home/wenchang/anaconda3/pkgs/cuda-nvcc-11.7.99-0/bin/nvcc
+/home/wenchang/anaconda3/pkgs/cuda-nvcc-11.8.89-0/bin/nvcc
+/home/wenchang/anaconda3/pkgs/cuda-toolkit/bin/nvcc
+/home/wenchang/anaconda3/pkgs/cuda-nvcc-tools-13.3.73-hfa86176_0/bin/nvcc
+/home/wenchang/anaconda3/envs/lqt_canconv_cu118/bin/nvcc
+/home/wenchang/anaconda3/envs/dl/bin/nvcc
+/home/wenchang/anaconda3/envs/jianglei_py312/bin/nvcc
+/home/wenchang/anaconda3/envs/LineR/bin/nvcc
+Python 3.10.12
+pip 24.2 from /home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/pip (python 3.10)

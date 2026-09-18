@@ -1,0 +1,717 @@
+{
+  "reason": "Pinned SegLLM omits required hipie/data/datasets; issue20 identifies upstream native folder",
+  "issue": "https://github.com/berkeley-hipie/segllm/issues/20",
+  "repository": "https://github.com/berkeley-hipie/HIPIE",
+  "revision": "5cc2636427fa72b175e4639b1c063efa6cc6f642",
+  "operation": "Add missing native dataset metadata/registration directory only; do not replace tracked SegLLM/HIPIE model source",
+  "files": [
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/__init__.py",
+      "sha256": "f621cfd7e8a0e4518d3ea9b1881f4e09ff43de2dc253cc3ef3564e3e07764f36"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/bdd100k.py",
+      "sha256": "dac0fb7c5e642d9e428985dc400c3a48c9344aa5b90b3e3f0db791cd8ecf04cf"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/builtin.py",
+      "sha256": "f2fd8b7eb3c756537d77d0f11d54f7c46b626ff4d7aecfd8e98f116193e27327"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/catids.py",
+      "sha256": "e71ba97ea60b2bb2e986d80bf24222755307d44defcd6295a3864db2558f491c"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/coco_video_dataset.py",
+      "sha256": "1f05ae023aef5918cd23aca2bb90ed7b6039f31aa39e99b0d762b1be02d01bde"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/flicker.py",
+      "sha256": "e29eb51d1ad7adfe2232327587aa811b4085cb5b225052ab2e918462bec01bea"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/mot.py",
+      "sha256": "0705d6a7f2d4db0521b0facc5b7ed651e92a742542a239e1df74d8e2c75461d7"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/odinw_35.yaml",
+      "sha256": "42725af0d5218fa5e0b5c7f072b4b8d70e066aa31aee1f54643be31d2701a567"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/README.md",
+      "sha256": "28167bc34178be8af93892317c02120073cadb672af7e27b6452e5cdeb731df8"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/ade20k_150.txt",
+      "sha256": "524268ff427ff93990ee406693bdd39adfa6d988d3171deaac8a5cb5d5fc7e03"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/ade20k_150_with_prompt_eng.txt",
+      "sha256": "388e2a8aabc1cc485cc5c6de544a5dc7d5f1f7ae982ed6cf35688a7b118acf90"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/ade20k_847.txt",
+      "sha256": "753624708e7651aef2116e2ac183790a8ebc3885023820acd712f34daca623d1"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/ade20k_847_with_prompt_eng.txt",
+      "sha256": "792f7fa7233bd0fdf921be8e596cf46b8b7d22ce2265f532bf2a50a0b11767ff"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/cityscapes_panoptic_parts.txt",
+      "sha256": "b198152d26a0c362cd350955eae90d07202e5bdf69414c4b67e19b8d288da37c"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/cityscapes_panoptic_parts_merged.txt",
+      "sha256": "04bd2f6bda4f70bb5e7f282aab738b39345dc97468b9ab472e104db14b8a4b2b"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/cityscapes_panoptic_parts_merged_with_prompt_eng.txt",
+      "sha256": "04bd2f6bda4f70bb5e7f282aab738b39345dc97468b9ab472e104db14b8a4b2b"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/cityscapes_panoptic_parts_with_prompt_eng.txt",
+      "sha256": "b198152d26a0c362cd350955eae90d07202e5bdf69414c4b67e19b8d288da37c"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/cityscapes_parts.yaml",
+      "sha256": "e7c7718b23b2785e547b0d405bac6745e10a9398fe49d12d08f4d182e053000a"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/cityscapes_parts_meta.txt",
+      "sha256": "23752cb775dd009e59d53e67b21a19df0823a9d33fbc7f0f6c5932ed54bed1c9"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/cityscapes_parts_meta_merged.txt",
+      "sha256": "5e44430d7ece1ba0afba2fcc2c8e43de8a69161e40bf99bab37b79140a7f82fa"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/coco.txt",
+      "sha256": "8253ed1f42d3831ffff8d5e8a904f82d0e4b163a584b350feca75aaa98cdfde3"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/coco_panoptic.txt",
+      "sha256": "cebf1a3a967c62ff271fd2a4f76b66cdb73053c416ee6f674edcd52146b72e61"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/coco_panoptic_with_prompt_eng.txt",
+      "sha256": "26b556596bb4f59a6f7a77633589f4152a76537d56d040afd9960e29fed9350f"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/coco_with_prompt_eng.txt",
+      "sha256": "fce4a7ca3d0f239e58d4ee828ddaee71e98bd8423a5feed628cef31d11659543"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/lvis_1203.txt",
+      "sha256": "38e8151ba49b8c38ebe3e0d83a1468f786814c4484efcadc0efe6c609904590d"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/lvis_1203_with_prompt_eng.txt",
+      "sha256": "fded859c3cc683d399195f948273a2ce104b8980ecb1bfb97da405cfd233e103"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/obj365v2.txt",
+      "sha256": "1e4eb4bc004a532c0ab26e32218a6b188dd82f53a768067f0be0bbd62bdffeeb"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/obj365v2_with_prompt_eng.txt",
+      "sha256": "2994f8e353269dae8e71cd5241f41be087aadd336ee5e0751a3f810f9f559135"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_AerialMaritimeDrone_large.txt",
+      "sha256": "efd814bdafdebf362f0cdbabaedcc58aef9bee1defeffa93823a32f7a86dcade"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_AerialMaritimeDrone_large_with_prompt_eng.txt",
+      "sha256": "efd814bdafdebf362f0cdbabaedcc58aef9bee1defeffa93823a32f7a86dcade"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_AerialMaritimeDrone_tiled.txt",
+      "sha256": "efd814bdafdebf362f0cdbabaedcc58aef9bee1defeffa93823a32f7a86dcade"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_AerialMaritimeDrone_tiled_with_prompt_eng.txt",
+      "sha256": "efd814bdafdebf362f0cdbabaedcc58aef9bee1defeffa93823a32f7a86dcade"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_AmericanSignLanguageLetters_American_Sign_Language_Letters.v1-v1.coco.txt",
+      "sha256": "d46efd6b4c6789e0cab9c60b3cb4ed6be00b6884d01e6f4f38299def8fa9be41"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_AmericanSignLanguageLetters_American_Sign_Language_Letters.v1-v1.coco_with_prompt_eng.txt",
+      "sha256": "d46efd6b4c6789e0cab9c60b3cb4ed6be00b6884d01e6f4f38299def8fa9be41"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_Aquarium_Aquarium_Combined.v2-raw-1024.coco.txt",
+      "sha256": "7d373d1f8d5fdb437a491f063f802463d0bc883449f016015b4cebb7428b17e5"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_Aquarium_Aquarium_Combined.v2-raw-1024.coco_with_prompt_eng.txt",
+      "sha256": "7d373d1f8d5fdb437a491f063f802463d0bc883449f016015b4cebb7428b17e5"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_BCCD_BCCD.v3-raw.coco.txt",
+      "sha256": "f3c8daee7e17e9b66340f8a687975e2534c0e345409a270d26345a96a4890d84"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_BCCD_BCCD.v3-raw.coco_with_prompt_eng.txt",
+      "sha256": "f3c8daee7e17e9b66340f8a687975e2534c0e345409a270d26345a96a4890d84"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_ChessPieces_Chess_Pieces.v23-raw.coco.txt",
+      "sha256": "aa7e673689403f3423ee3554c4d5c550cccd113f86005f0cd132cd3b3f2f4626"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_ChessPieces_Chess_Pieces.v23-raw.coco_with_prompt_eng.txt",
+      "sha256": "aa7e673689403f3423ee3554c4d5c550cccd113f86005f0cd132cd3b3f2f4626"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_CottontailRabbits.txt",
+      "sha256": "21dbd4a94490b2589b7728565a4f4c3b25e9457f56887fe6e0a87118e9d0781b"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_CottontailRabbits_with_prompt_eng.txt",
+      "sha256": "21dbd4a94490b2589b7728565a4f4c3b25e9457f56887fe6e0a87118e9d0781b"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_DroneControl_Drone_Control.v3-raw.coco.txt",
+      "sha256": "f657ac292b7646bd0e8cf52ac422a8845aedf152b9b2970b86209b0b1a54c532"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_DroneControl_Drone_Control.v3-raw.coco_with_prompt_eng.txt",
+      "sha256": "f657ac292b7646bd0e8cf52ac422a8845aedf152b9b2970b86209b0b1a54c532"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_EgoHands_generic.txt",
+      "sha256": "41b73b69e1ea1780eb9d61ee7d8d3b884729e7b7d6ce2e678d670706eda60b08"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_EgoHands_generic_with_prompt_eng.txt",
+      "sha256": "41b73b69e1ea1780eb9d61ee7d8d3b884729e7b7d6ce2e678d670706eda60b08"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_EgoHands_specific.txt",
+      "sha256": "42217a931ab4c38b6a99e27ecfe64ace1df4075f8c36682c1e6b701e2dc53936"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_EgoHands_specific_with_prompt_eng.txt",
+      "sha256": "42217a931ab4c38b6a99e27ecfe64ace1df4075f8c36682c1e6b701e2dc53936"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_HardHatWorkers_raw.txt",
+      "sha256": "5a05f2ac02436e72dd6452d3a085e94d8da27c2d6bdf4b47a61dc3aa1d54ed43"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_HardHatWorkers_raw_with_prompt_eng.txt",
+      "sha256": "5a05f2ac02436e72dd6452d3a085e94d8da27c2d6bdf4b47a61dc3aa1d54ed43"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_MaskWearing_raw.txt",
+      "sha256": "ab2cb93ef8254f2e606f5f35b843f58d7a83f6ce482b8c53bf99654f018c2fbd"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_MaskWearing_raw_with_prompt_eng.txt",
+      "sha256": "ab2cb93ef8254f2e606f5f35b843f58d7a83f6ce482b8c53bf99654f018c2fbd"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_MountainDewCommercial.txt",
+      "sha256": "e4293efa5e454846b79cb7dc308ceab56ade23e912be3e7cc3c40d23e66b2260"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_MountainDewCommercial_with_prompt_eng.txt",
+      "sha256": "e4293efa5e454846b79cb7dc308ceab56ade23e912be3e7cc3c40d23e66b2260"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_NorthAmericaMushrooms_North_American_Mushrooms.v1-416x416.coco.txt",
+      "sha256": "32fc9128aae92debf41561f811beb4973fdc044211ccef2ea224881eec5e88da"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_NorthAmericaMushrooms_North_American_Mushrooms.v1-416x416.coco_with_prompt_eng.txt",
+      "sha256": "32fc9128aae92debf41561f811beb4973fdc044211ccef2ea224881eec5e88da"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_OxfordPets_by-breed.txt",
+      "sha256": "42f647b37ea79ea611e8c5521fff97c1637099c7b2c647e04c4a5d8d53f1c997"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_OxfordPets_by-breed_with_prompt_eng.txt",
+      "sha256": "42f647b37ea79ea611e8c5521fff97c1637099c7b2c647e04c4a5d8d53f1c997"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_OxfordPets_by-species.txt",
+      "sha256": "3d51e30901b3355e69b928e0c402df8e7bbcf495a2cfffe4a0bf475836d6a0cf"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_OxfordPets_by-species_with_prompt_eng.txt",
+      "sha256": "3d51e30901b3355e69b928e0c402df8e7bbcf495a2cfffe4a0bf475836d6a0cf"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_PKLot_640.txt",
+      "sha256": "4223182a1117d21f5a954264a24e9b15ba3fda84acc827b1c0e997770f1cf559"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_PKLot_640_with_prompt_eng.txt",
+      "sha256": "4223182a1117d21f5a954264a24e9b15ba3fda84acc827b1c0e997770f1cf559"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_Packages_Raw.txt",
+      "sha256": "519e755b45c222332e8355fa6a5e03d0ffaa93be8d774408efc182fe8a9adb91"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_Packages_Raw_with_prompt_eng.txt",
+      "sha256": "519e755b45c222332e8355fa6a5e03d0ffaa93be8d774408efc182fe8a9adb91"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_PascalVOC.txt",
+      "sha256": "cbf46dba8d16d12e0c1595d30c7a25262a682b8ab007053bbdefa10eac55a4e2"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_PascalVOC_with_prompt_eng.txt",
+      "sha256": "cbf46dba8d16d12e0c1595d30c7a25262a682b8ab007053bbdefa10eac55a4e2"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_Raccoon_Raccoon.v2-raw.coco.txt",
+      "sha256": "1cea9a0280d0911751480d4a3306f13e84a8f9210733799eedfdb305391ef8d1"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_Raccoon_Raccoon.v2-raw.coco_with_prompt_eng.txt",
+      "sha256": "1cea9a0280d0911751480d4a3306f13e84a8f9210733799eedfdb305391ef8d1"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_ShellfishOpenImages_raw.txt",
+      "sha256": "8669414954f8e49db48b01680173c1fa28313b98c79331badf6d7d4d8ec97b59"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_ShellfishOpenImages_raw_with_prompt_eng.txt",
+      "sha256": "8669414954f8e49db48b01680173c1fa28313b98c79331badf6d7d4d8ec97b59"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_ThermalCheetah.txt",
+      "sha256": "9569f217f16d2695f7d478b50682d2c6afbafd39a70932a11df9bec00ca571db"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_ThermalCheetah_with_prompt_eng.txt",
+      "sha256": "9569f217f16d2695f7d478b50682d2c6afbafd39a70932a11df9bec00ca571db"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_UnoCards_raw.txt",
+      "sha256": "ba45f98e22ec6ef4e5217771fbd3015417d7bf6c574ab45ff2803b13154c1653"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_UnoCards_raw_with_prompt_eng.txt",
+      "sha256": "ba45f98e22ec6ef4e5217771fbd3015417d7bf6c574ab45ff2803b13154c1653"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_VehiclesOpenImages_416x416.txt",
+      "sha256": "d0f8cde0d5f8c63a3b7a70d567c420303218b3d9ef9f938318fdfca10088aa20"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_VehiclesOpenImages_416x416_with_prompt_eng.txt",
+      "sha256": "d0f8cde0d5f8c63a3b7a70d567c420303218b3d9ef9f938318fdfca10088aa20"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_WildfireSmoke.txt",
+      "sha256": "4b096bd91f7d244acf040fcd8493df7737a8c5f76913df6e2a1e44dcfd011aeb"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_WildfireSmoke_with_prompt_eng.txt",
+      "sha256": "4b096bd91f7d244acf040fcd8493df7737a8c5f76913df6e2a1e44dcfd011aeb"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_boggleBoards_416x416AutoOrient_export_.txt",
+      "sha256": "4c564ade7687021b8de6c6cbcee8d11b98104096ac7daeac92919a168dff7bbc"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_boggleBoards_416x416AutoOrient_export__with_prompt_eng.txt",
+      "sha256": "4c564ade7687021b8de6c6cbcee8d11b98104096ac7daeac92919a168dff7bbc"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_brackishUnderwater_960x540.txt",
+      "sha256": "9c50f0d88b62d9b54890ea52f0d26a8bc0ab39f51c11bad3cf137dc2a666ccdd"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_brackishUnderwater_960x540_with_prompt_eng.txt",
+      "sha256": "9c50f0d88b62d9b54890ea52f0d26a8bc0ab39f51c11bad3cf137dc2a666ccdd"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_dice_mediumColor_export.txt",
+      "sha256": "20dff83b19ba63c4e069891acfcd269726be101d267cc7c66898ba020306005f"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_dice_mediumColor_export_with_prompt_eng.txt",
+      "sha256": "20dff83b19ba63c4e069891acfcd269726be101d267cc7c66898ba020306005f"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_openPoetryVision_512x512.txt",
+      "sha256": "a9e372f321ab16359e59c3a1a95b24f7a130efd6656cf692a010acdc4f3f94d3"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_openPoetryVision_512x512_with_prompt_eng.txt",
+      "sha256": "a9e372f321ab16359e59c3a1a95b24f7a130efd6656cf692a010acdc4f3f94d3"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_pistols_export.txt",
+      "sha256": "fa0958ed771cfcd10e119fffc41cbfc181fe7d71cbbc6b7180a5420f4937c0db"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_pistols_export_with_prompt_eng.txt",
+      "sha256": "fa0958ed771cfcd10e119fffc41cbfc181fe7d71cbbc6b7180a5420f4937c0db"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_plantdoc_416x416.txt",
+      "sha256": "ffd576d13497b1e505c22a08cf31d1687a9d8af680b00af4e8bc344172e4d1cf"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_plantdoc_416x416_with_prompt_eng.txt",
+      "sha256": "ffd576d13497b1e505c22a08cf31d1687a9d8af680b00af4e8bc344172e4d1cf"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_pothole.txt",
+      "sha256": "7f3546e3c7b9210e112a2b2d30882bc2515e353388b7b6e1093299ad26dcc9bb"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_pothole_with_prompt_eng.txt",
+      "sha256": "7f3546e3c7b9210e112a2b2d30882bc2515e353388b7b6e1093299ad26dcc9bb"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_selfdrivingCar_fixedLarge_export_.txt",
+      "sha256": "6c526893380516e01855b839c3a4b26dc176308f525f60e4b140e77bd586eee0"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_selfdrivingCar_fixedLarge_export__with_prompt_eng.txt",
+      "sha256": "6c526893380516e01855b839c3a4b26dc176308f525f60e4b140e77bd586eee0"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_thermalDogsAndPeople.txt",
+      "sha256": "2e244b95b316fd89aceb393e979a6601b90927fc28f8a9fe286c16469e0c452b"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_thermalDogsAndPeople_with_prompt_eng.txt",
+      "sha256": "2e244b95b316fd89aceb393e979a6601b90927fc28f8a9fe286c16469e0c452b"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_websiteScreenshots.txt",
+      "sha256": "f8a23a4e331354204c7d5e719652c1fc13d00b604bf083eb014fa8fc7933d10e"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/odinw_websiteScreenshots_with_prompt_eng.txt",
+      "sha256": "f8a23a4e331354204c7d5e719652c1fc13d00b604bf083eb014fa8fc7933d10e"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/paco.txt",
+      "sha256": "68c144dd6b86214f578e7993180f391a1890a3bdb0f15b825be8c1c50ad3438a"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/paco_with_prompt_eng.txt",
+      "sha256": "68c144dd6b86214f578e7993180f391a1890a3bdb0f15b825be8c1c50ad3438a"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/pascal_context_459.txt",
+      "sha256": "1154a6df52ff2ba9f1538617322398a26aca85005465615c502ccb4ae0ad67d9"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/pascal_context_459_with_prompt_eng.txt",
+      "sha256": "d3ef82d5d1b78fd7f312eacfaa47302c83d863ed27b16358139ff3fb179dd78f"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/pascal_context_59.txt",
+      "sha256": "d98ff299c763bb93936523ba1f285cbb59778a508a1509524b01d0adb51483be"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/pascal_context_59_with_prompt_eng.txt",
+      "sha256": "14cbfcfc457c27c196397db4b0534b8df11ea54bcfa057f0676ea645713a63dc"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/pascal_parts.yaml",
+      "sha256": "aafe191f91f34e13be56c2511d0adbfafe48a8fcaff234a6d8cbdef4f8758ca0"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/pascal_parts_merged.txt",
+      "sha256": "b85939f31764eb254d7f635c1d116d6eeca1821c2029d1cff6e8458326fb1860"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/pascal_parts_merged_with_prompt_eng.txt",
+      "sha256": "b85939f31764eb254d7f635c1d116d6eeca1821c2029d1cff6e8458326fb1860"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/pascal_parts_meta.txt",
+      "sha256": "2b17859e53f84c42cef650c4bc813f040052b93f4cd75862a42d390042ca656e"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/pascal_parts_meta_merged.txt",
+      "sha256": "fb400852085fe9b96e5a7625d39733e1b9e114f26c0d176b692e5f0d049cb781"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/pascal_parts_pano.txt",
+      "sha256": "7a91030781256d0b89cecfc50c103af2cd08aabba10f9366ffe84637333bdd6c"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/pascal_parts_pano_with_prompt_eng.txt",
+      "sha256": "7fd74307bc53b6e34d04d4641f7db73d952aaa3593327937c783b942bfba622e"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/pascal_voc_21.txt",
+      "sha256": "200c337d3f569822ccbd00b6a127d3a5d24a5687a0f72d043795a5fac61769c2"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/pascal_voc_21_with_prompt_eng.txt",
+      "sha256": "b27d7fd1c2c59616e726db49b34471db54825d3ff84c110a181a4976abd126eb"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Airplane-Parts.txt",
+      "sha256": "c653951dc7431ddfdafc478556421bac85e1901ad6b6c282baeae14680b9c5b4"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Airplane-Parts_with_prompt_eng.txt",
+      "sha256": "c653951dc7431ddfdafc478556421bac85e1901ad6b6c282baeae14680b9c5b4"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Bottles.txt",
+      "sha256": "7110b2f237e60ef9c3d868e2b8d6cbfe2af8eb5b45e2d1a418d4dba428e6c2b7"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Bottles_with_prompt_eng.txt",
+      "sha256": "7110b2f237e60ef9c3d868e2b8d6cbfe2af8eb5b45e2d1a418d4dba428e6c2b7"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Brain-Tumor.txt",
+      "sha256": "be9caab941e1813585059619c9675fe01d6715e897bc5740c509ab5b153a5be2"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Brain-Tumor_with_prompt_eng.txt",
+      "sha256": "be9caab941e1813585059619c9675fe01d6715e897bc5740c509ab5b153a5be2"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Chicken.txt",
+      "sha256": "c467c0420b7244ca4fd05c84fc789c2d1c202a2acf6792fc4360c76f1b1440b2"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Chicken_with_prompt_eng.txt",
+      "sha256": "c467c0420b7244ca4fd05c84fc789c2d1c202a2acf6792fc4360c76f1b1440b2"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Cows.txt",
+      "sha256": "14e7bdbd923580a9fb2aa79e4932c2e9f51d4562557b35e616a169099f49d5f8"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Cows_with_prompt_eng.txt",
+      "sha256": "14e7bdbd923580a9fb2aa79e4932c2e9f51d4562557b35e616a169099f49d5f8"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Electric-Shaver.txt",
+      "sha256": "75425ed35a249a8f67472a9b25e1eb8df6b66d4a367c915759604a9dad69b162"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Electric-Shaver_with_prompt_eng.txt",
+      "sha256": "28bbbdf25729037887a1ece67cb99b51360157e9a45838ed632494c0bc10b8b4"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Elephants.txt",
+      "sha256": "5615c200da4e852b0fd739add05de5bbfac45d0d51cdccdb93b192529a350d80"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Elephants_with_prompt_eng.txt",
+      "sha256": "5615c200da4e852b0fd739add05de5bbfac45d0d51cdccdb93b192529a350d80"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Fruits.txt",
+      "sha256": "d7fb3ffd0d5f796a0ce4361a88c2dfe09d0d1b56014af53d7a3a8ecb2d660d44"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Fruits_with_prompt_eng.txt",
+      "sha256": "d7fb3ffd0d5f796a0ce4361a88c2dfe09d0d1b56014af53d7a3a8ecb2d660d44"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Garbage.txt",
+      "sha256": "5603077aa37f5c74d8cfa6769219579890ad8f988d7980f5cc42b15b4b1b93c7"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Garbage_with_prompt_eng.txt",
+      "sha256": "5603077aa37f5c74d8cfa6769219579890ad8f988d7980f5cc42b15b4b1b93c7"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Ginger-Garlic.txt",
+      "sha256": "8fd3f4ed9fd9c363308a96903577df351dbec5686b3e19be007d0f02a7995e16"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Ginger-Garlic_with_prompt_eng.txt",
+      "sha256": "8fd3f4ed9fd9c363308a96903577df351dbec5686b3e19be007d0f02a7995e16"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Hand-Metal.txt",
+      "sha256": "d6299aa60badfc8de503da5b09f630053d10fa1e77ff9b966634268f70df4c99"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Hand-Metal_with_prompt_eng.txt",
+      "sha256": "d6299aa60badfc8de503da5b09f630053d10fa1e77ff9b966634268f70df4c99"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Hand.txt",
+      "sha256": "41b73b69e1ea1780eb9d61ee7d8d3b884729e7b7d6ce2e678d670706eda60b08"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Hand_with_prompt_eng.txt",
+      "sha256": "41b73b69e1ea1780eb9d61ee7d8d3b884729e7b7d6ce2e678d670706eda60b08"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_House-Parts.txt",
+      "sha256": "9d6437d5ca68052b6edc97cabe6d82b9120997d499c5b0e6461c85b0f43f9e9a"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_House-Parts_with_prompt_eng.txt",
+      "sha256": "9d6437d5ca68052b6edc97cabe6d82b9120997d499c5b0e6461c85b0f43f9e9a"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_HouseHold-Items.txt",
+      "sha256": "47a295f02ad3ac6fdc5d801a421d49dc46b82b8570c0b05d423ea29672ed42ed"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_HouseHold-Items_with_prompt_eng.txt",
+      "sha256": "47a295f02ad3ac6fdc5d801a421d49dc46b82b8570c0b05d423ea29672ed42ed"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Nutterfly-Squireel.txt",
+      "sha256": "ef156a4520ab9380d86120de64d7553d9b1ec05958fe9defceb9441f6ae9af2f"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Nutterfly-Squireel_with_prompt_eng.txt",
+      "sha256": "ef156a4520ab9380d86120de64d7553d9b1ec05958fe9defceb9441f6ae9af2f"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Phones.txt",
+      "sha256": "a9bf01e344b2c9c3bde4adc8ced614d6dc4b7ba8dcdc1d9d97a1cb673b21db3b"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Phones_with_prompt_eng.txt",
+      "sha256": "a9bf01e344b2c9c3bde4adc8ced614d6dc4b7ba8dcdc1d9d97a1cb673b21db3b"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Poles.txt",
+      "sha256": "5d6e70ed50968ce2a0473572792072da287db6656e733a373fc02ea051a4bd20"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Poles_with_prompt_eng.txt",
+      "sha256": "5d6e70ed50968ce2a0473572792072da287db6656e733a373fc02ea051a4bd20"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Puppies.txt",
+      "sha256": "f53476f2f38b2910493e0298d70cea47721406773cfb4d12e1185db7e7b5eff1"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Puppies_with_prompt_eng.txt",
+      "sha256": "f53476f2f38b2910493e0298d70cea47721406773cfb4d12e1185db7e7b5eff1"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Rail.txt",
+      "sha256": "fe30c4fcc88a3297ee176bace13d0fd698bb4d794668c535f82c7f3edcb75b9e"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Rail_with_prompt_eng.txt",
+      "sha256": "fe30c4fcc88a3297ee176bace13d0fd698bb4d794668c535f82c7f3edcb75b9e"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Salmon-Fillet.txt",
+      "sha256": "3058b2d09c956bb47457695153383f706940c98b4562e9b920cb6139734e90b9"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Salmon-Fillet_with_prompt_eng.txt",
+      "sha256": "3058b2d09c956bb47457695153383f706940c98b4562e9b920cb6139734e90b9"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Strawberry.txt",
+      "sha256": "b64634c813d7e8649eddfbabe542e60eb9b31bdfd37db77bcf050fbec1b135fb"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Strawberry_with_prompt_eng.txt",
+      "sha256": "b64634c813d7e8649eddfbabe542e60eb9b31bdfd37db77bcf050fbec1b135fb"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Tablets.txt",
+      "sha256": "483ab525fee5bf3b38d5c8410d176dfc62653cdf87d87fefde60cf874cc1f490"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Tablets_with_prompt_eng.txt",
+      "sha256": "483ab525fee5bf3b38d5c8410d176dfc62653cdf87d87fefde60cf874cc1f490"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Toolkits.txt",
+      "sha256": "c0d70f5d6a5ccf8a514a96c9b5496873284a9ab0afad4f3448da06fb44a26fac"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Toolkits_with_prompt_eng.txt",
+      "sha256": "c0d70f5d6a5ccf8a514a96c9b5496873284a9ab0afad4f3448da06fb44a26fac"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Trash.txt",
+      "sha256": "a2f6a86f54d3578a1aee04531f52dfe751efc8318d7ab5bdb55b6d7817476ec6"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Trash_with_prompt_eng.txt",
+      "sha256": "a2f6a86f54d3578a1aee04531f52dfe751efc8318d7ab5bdb55b6d7817476ec6"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Watermelon.txt",
+      "sha256": "8d8d301afd6c0de470047cbd17f7939fa4beb65f3b451f70cb44f3a4bd5fd7fa"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/openseg_labels/seginw_Watermelon_with_prompt_eng.txt",
+      "sha256": "8d8d301afd6c0de470047cbd17f7939fa4beb65f3b451f70cb44f3a4bd5fd7fa"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/paco.py",
+      "sha256": "d0af3bc178850598900b5805bce1ef8c41994c6631f82dcce18a33dabe48b893"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/parsers/__init__.py",
+      "sha256": "91357b3a4545668672c392e968fb3cf31608bcf6ca229570a896ec21e40ac2cb"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/parsers/coco_api.py",
+      "sha256": "5f34bf052ad32f53a6279f1b94d1b0a8e0306828b19397b8e69e4aaac519594f"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/parsers/coco_video_parser.py",
+      "sha256": "4549955373b8f142505ea252825d424d5a2ee94c3ae341b5905c6c9e2429899d"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/refcoco.py",
+      "sha256": "29701f149cdd52e54f17b2c3b7b56362cd64ca2d863d97f6d537bdb79ff222bc"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/register_ade20k_panoptic.py",
+      "sha256": "70e98c785962e4cdb60750e74054cfbd2a694fc8961dfee0cfafe0057571876a"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/register_ade_20k_full.py",
+      "sha256": "4bca1226f60904c0fcf03203415ce82813e85076de1439e1539f920957c9e679"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/register_cityscapes_parts.py",
+      "sha256": "e684502901389559c1920087566fc3404dabbab269f28304a758387cbf61f8df"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/register_coco_panoptic_annos_semseg.py",
+      "sha256": "5243fe15d1d7d49cdc88afef6c6527c1daf016e91a8ad4e7a2240bd244256efc"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/register_odinw.py",
+      "sha256": "c590d2c92298087bf7e5b5e4c3118b1921fbd0a6f02ad8bfa61dff138509aa76"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/register_pascal.py",
+      "sha256": "5ee2000878e161d2cd4dd90ebdc32446c0c11a02cf5018ec505deca512d03089"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/register_seginw.py",
+      "sha256": "1d1ace67aa6c5da63354dede83fb6cbc56661edbe23431bb67ae2ff5cb02e63e"
+    },
+    {
+      "upstream_path": "projects/HIPIE/hipie/data/datasets/ytvis.py",
+      "sha256": "ad5969822dd9344437c793bee328b396cf8af7f4319ffee55a1b9039fc1caef5"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "sha256": "29dcdd5351f2f3d5986a98c29e956b9552c85d7a60203c26d2b9e5525ae08bf1"
+    }
+  ]
+}

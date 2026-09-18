@@ -10,3 +10,7 @@
 ## 2026-09-18 13:15 +08:00 — heartbeat verification
 
 Verified the existing `cma-chatgpt` automation through its saved configuration and the app automation view: ACTIVE, every 15 minutes, current CMA collaboration task. No duplicate automation created. Exchange remains asynchronous through GitHub bridge/reviews; the Codex heartbeat does not directly wake ChatGPT or change the independently scheduled ChatGPT review interval. Current repository HEAD is `3d7c907`; Cycle014 source audit is in progress, with receipts in `research_log/cycle014/`.
+
+## 2026-09-18 14:45:14 +08:00 — 用户请求核对
+
+已读取现有配置并通过 automation view 核对：cma-chatgpt 为 ACTIVE，间隔 15 分钟。保留已有任务，不重复创建。通过 GitHub bridge 和 Issue #1 异步交换任务与结果；此心跳不直接唤醒 ChatGPT，也不更改 ChatGPT 一侧独立的 review 频率。无新任务或可操作变化时静默。

@@ -1,0 +1,2 @@
+* True check_forward_equal_with_pytorch_float: max_abs_err 4.66e-10 max_rel_err 1.01e-07
+* True check_forward_equal_with_pytorch_double: max_abs_err 8.67e-19 max_rel_err 1.83e-16

@@ -1,0 +1,62 @@
+HTTP/2 307
+accept-ranges: bytes
+access-control-allow-origin: https://hf-mirror.com
+access-control-expose-headers: X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash
+access-control-max-age: 86400
+alt-svc: h3=":443"; ma=2592000
+cache-control: no-cache
+content-disposition: inline; filename*=UTF-8''config.json; filename="config.json";
+content-security-policy: default-src 'none'; sandbox
+content-type: text/plain; charset=utf-8
+cross-origin-opener-policy: same-origin
+date: Fri, 18 Sep 2026 05:54:47 GMT
+location: /api/resolve-cache/models/Marlo-Z/SegLLM/095e0637fcba015a02c0686f67b848c79c3cc80b/all_data_checkpoint%2Fconfig.json?%2FMarlo-Z%2FSegLLM%2Fresolve%2F095e0637fcba015a02c0686f67b848c79c3cc80b%2Fall_data_checkpoint%2Fconfig.json=&etag=%22a00f9ae1e2bf54b3ffe37fda2f9263d61b48a47d%22
+ratelimit: "resolvers";r=56311;t=148
+ratelimit-policy: "fixed window";"resolvers";q=100000;w=300
+referrer-policy: strict-origin-when-cross-origin
+server: hf-mirror
+strict-transport-security: max-age=31536000
+vary: Origin, Accept
+via: 2.0 Caddy
+via: 1.1 4cf67b58b52960cded2156c06d93de28.cloudfront.net (CloudFront)
+x-amz-cf-id: 0DNv4WIJ3hYhemDDr0G9jUq_b_aIqhgxBbo8DiJI8SGPgXlgpeJiCg==
+x-amz-cf-pop: NRT12-P2
+x-cache: Miss from cloudfront
+x-hub-cache: MISS
+x-linked-etag: "a00f9ae1e2bf54b3ffe37fda2f9263d61b48a47d"
+x-powered-by: huggingface-moon
+x-repo-commit: 095e0637fcba015a02c0686f67b848c79c3cc80b
+x-request-id: Root=1-6aacd227-3daacd6d66564b204021f1ab
+content-length: 312
+
+HTTP/2 200
+accept-ranges: bytes
+access-control-allow-origin: https://hf-mirror.com
+access-control-expose-headers: X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash
+access-control-max-age: 86400
+alt-svc: h3=":443"; ma=2592000
+cache-control: no-store
+content-disposition: inline; filename*=UTF-8''config.json; filename="config.json";
+content-security-policy: default-src 'none'; sandbox
+content-type: text/plain; charset=utf-8
+cross-origin-opener-policy: same-origin
+date: Fri, 18 Sep 2026 05:54:48 GMT
+etag: "a00f9ae1e2bf54b3ffe37fda2f9263d61b48a47d"
+ratelimit: "resolvers";r=2866;t=96
+ratelimit-policy: "fixed window";"resolvers";q=3000;w=300
+referrer-policy: strict-origin-when-cross-origin
+server: hf-mirror
+strict-transport-security: max-age=31536000
+vary: Origin
+via: 2.0 Caddy
+via: 1.1 3c3704d1d972509b35eb599b7ec5b18e.cloudfront.net (CloudFront)
+x-amz-cf-id: vEecBvKH5KvdJfLnFinHJ2nwZDuYy6ru1pwUA6jFAjMMFLx8uAwgrw==
+x-amz-cf-pop: NRT12-P2
+x-cache: Miss from cloudfront
+x-hub-cache: MISS
+x-powered-by: huggingface-moon
+x-repo-commit: 095e0637fcba015a02c0686f67b848c79c3cc80b
+x-request-id: Root=1-6aacd228-65bfe5b10db1d94c06dd36d0
+content-length: 1362
+
+4593a069f09628ce3a5b46e657f5417fefd7be46	HEAD

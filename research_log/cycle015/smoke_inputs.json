@@ -1,0 +1,36 @@
+{
+  "group_id": "cf_c9029d27c0483181",
+  "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/images/cf_c9029d27c0483181.jpg",
+  "semantic_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+  "native_prompt": "Segment the mining helmet worn by instance 1.[REF:1]",
+  "seed": 0,
+  "conditions": [
+    "clean",
+    "target15_b"
+  ],
+  "history_index_one_based": 1,
+  "expected_native_index_zero_based": 0,
+  "identities": [
+    {
+      "entity_id": "pair_dfee24282f912128",
+      "miner_mask_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/miner_masks/pair_dfee24282f912128.png",
+      "miner_bbox_xyxy": [
+        602.2440795898438,
+        335.63299560546875,
+        1041.72998046875,
+        720.0
+      ]
+    },
+    {
+      "entity_id": "pair_ee869f891a591f2f",
+      "miner_mask_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle006/miner_masks/pair_ee869f891a591f2f.png",
+      "miner_bbox_xyxy": [
+        316.9733581542969,
+        419.959716796875,
+        474.5732116699219,
+        720.0
+      ]
+    }
+  ],
+  "note": "Inference-only input, excludes all helmet target/box/ID/score fields. Runtime wiring has not yet executed."
+}

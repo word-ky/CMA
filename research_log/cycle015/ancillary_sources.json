@@ -1,0 +1,36 @@
+{
+  "source": "https://github.com/berkeley-hipie/HIPIE#model-zoo",
+  "hipie": {
+    "repo": "KonstantinosKK/HIPIE",
+    "revision": "2bde18e63ba0db6afdd2e3d0ec90d3d53c3de6cc",
+    "file": "r50_parts.pth",
+    "sha256": "8c2e22a0cb2101cc1250552691b992b322be8a81c2c0a527da023b76c7d900a8",
+    "size": 2370897199
+  },
+  "bert": {
+    "repo": "google-bert/bert-base-uncased",
+    "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+    "files": [
+      {
+        "rfilename": "config.json",
+        "blobId": "45a2321a7ecfdaaf60a6c1fd7f5463994cc8907d",
+        "size": 570
+      },
+      {
+        "rfilename": "pytorch_model.bin",
+        "blobId": "ba5d19791be1dd7992e33bd61f20207b0f7f50a5",
+        "size": 440473133,
+        "lfs": {
+          "sha256": "097417381d6c7230bd9e3557456d726de6e83245ec8b24f529f60198a67b203a",
+          "size": 440473133,
+          "pointerSize": 134
+        }
+      },
+      {
+        "rfilename": "vocab.txt",
+        "blobId": "fb140275c155a9c7c5a3b3e0e77a9e839594a938",
+        "size": 231508
+      }
+    ]
+  }
+}

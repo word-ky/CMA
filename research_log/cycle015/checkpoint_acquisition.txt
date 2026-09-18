@@ -1,0 +1,9 @@
+[autodl] run_id=20260918-143738-cma-cycle015-last-shard
+[autodl] started_at=2026-09-18T14:37:43+08:00
+2026-09-18T14:37:43+08:00
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint/model-00001-of-00003.safetensors: 成功
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint/model-00002-of-00003.safetensors: 成功
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint/model-00003-of-00003.safetensors: 成功
+2026-09-18T14:46:30+08:00
+[autodl] finished_at=2026-09-18T14:46:30+08:00
+[autodl] exit_code=0
