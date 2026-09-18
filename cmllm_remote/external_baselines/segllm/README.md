@@ -1,6 +1,6 @@
 # Pinned SegLLM supplied-memory port (Cycle015)
 
-Status: one-hour cycle closed incomplete. Native ops/imports, checkpoint hashes and memory preprocessing passed; model loader and four-trial runner are unexecuted drafts. Zero predictions or model scores. See `research_log/CYCLE015_REPORT.md`.
+Status: Cycle016 loading returned but failed weight-fidelity acceptance: Transformers4.46.1 renames native gamma parameters to weight names. No forward or prediction. Native ops/imports, checkpoint hashes and preprocessing passed previously. Runner remains unexecuted. See `research_log/CYCLE016_REPORT.md`.
 
 Only upstream `berkeley-hipie/segllm` revision
 `4593a069f09628ce3a5b46e657f5417fefd7be46` and `Marlo-Z/SegLLM`

@@ -1,0 +1,51 @@
+[autodl] run_id=20260918-153806-cma-cycle016-native-load
+[autodl] started_at=2026-09-18T15:38:11+08:00
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/torch/cuda/__init__.py:619: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+pre_init
+Creating mask encode head: make sure BOX is contained conversation file name
+Traceback (most recent call last):
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': './uninext-segm/projects/HIPIE/bert-base-uncased'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/external_baselines/segllm/load_native.py", line 90, in <module>
+    main()
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/external_baselines/segllm/load_native.py", line 75, in main
+    model, tokenizer, _, _, _, receipt = load_native(args.checkpoint, args.clip_path, out)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/external_baselines/segllm/load_native.py", line 45, in load_native
+    model = LlavaLlamaForCausalLM.from_pretrained(checkpoint, config=config)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4097, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/llava/model/language_model/llava_llama.py", line 55, in __init__
+    self.model = LlavaLlamaModel(config)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/llava/model/language_model/llava_llama.py", line 43, in __init__
+    super(LlavaLlamaModel, self).__init__(config)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/llava/model/llava_arch.py", line 42, in __init__
+    self.segmentator = build_segmentator(config.segmentator)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/llava/model/segmentator/builder.py", line 30, in build_segmentator
+    model = instantiate_from_config(model_config)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/llava/model/segmentator/builder.py", line 20, in instantiate_from_config
+    return get_obj_from_str(config["target"])(**config.get("params", dict()))
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/llava/model/segmentator/hipie_utils.py", line 165, in __init__
+    model = build_model(cfg)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/uninext-segm/detectron2/modeling/meta_arch/build.py", line 22, in build_model
+    model = META_ARCH_REGISTRY.get(meta_arch)(cfg)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/uninext-segm/projects/HIPIE/hipie/hipie_img.py", line 153, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained("./uninext-segm/projects/HIPIE/bert-base-uncased")
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 857, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 689, in get_tokenizer_config
+    resolved_config_file = cached_file(
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm-venv/lib/python3.10/site-packages/transformers/utils/hub.py", line 469, in cached_file
+    raise EnvironmentError(
+OSError: Incorrect path_or_model_id: './uninext-segm/projects/HIPIE/bert-base-uncased'. Please provide either the path to a local folder or the repo_id of a model on the Hub.
+[autodl] finished_at=2026-09-18T15:38:20+08:00
+[autodl] exit_code=1

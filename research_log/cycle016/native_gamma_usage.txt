@@ -1,0 +1,31 @@
+            dropout - Amount of dropout to apply in the feed-forward network
+        """
+        super(BiAttentionBlockForCheckpoint, self).__init__()
+
+        # pre layer norm
+        self.layer_norm_v = nn.LayerNorm(v_dim)
+        self.layer_norm_l = nn.LayerNorm(l_dim)
+        self.attn = BiMultiHeadAttention(v_dim=v_dim,
+                                         l_dim=l_dim,
+                                         embed_dim=embed_dim,
+                                         num_heads=num_heads,
+                                         dropout=dropout,
+                                         cfg=cfg)
+
+        # add layer scale for training stability
+        self.drop_path = DropPath(drop_path) if drop_path > 0. else nn.Identity()
+        self.gamma_v = nn.Parameter(init_values * torch.ones((v_dim)), requires_grad=True)
+        self.gamma_l = nn.Parameter(init_values * torch.ones((l_dim)), requires_grad=True)
+
+        self.cfg = cfg
+
+    def forward(self, v, l, attention_mask_l=None, task=None):
+        # v: visual features, (bs, sigma(HW), 256)
+        # l: language features, (bs, seq_len, 768)
+        v = self.layer_norm_v(v.float())
+        l = self.layer_norm_l(l)
+        delta_v, delta_l = self.attn(v, l, attention_mask_l=attention_mask_l)
+        # v, l = v + delta_v, l + delta_l
+        v = v + self.drop_path(self.gamma_v * delta_v)
+        l = l + self.drop_path(self.gamma_l * delta_l)
+        return v, l

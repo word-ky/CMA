@@ -1,0 +1,31 @@
+{
+  "checkpoint_keys": [
+    {
+      "key": "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_l",
+      "shard": "model-00003-of-00003.safetensors",
+      "shape": [
+        768
+      ],
+      "dtype": "F32"
+    },
+    {
+      "key": "model.segmentator.hipie.detr.detr.transformer.encoder.vl_layers.0.b_attn.gamma_v",
+      "shard": "model-00003-of-00003.safetensors",
+      "shape": [
+        256
+      ],
+      "dtype": "F32"
+    }
+  ],
+  "hipie_expected_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/pretrained_weights/hipie/r50_parts.pth",
+  "hipie_resolved_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_ancillary/r50_parts.pth",
+  "hipie_sha256": "8c2e22a0cb2101cc1250552691b992b322be8a81c2c0a527da023b76c7d900a8",
+  "hipie_bytes": 2370897199,
+  "bert_transport_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/external_baselines/segllm/uninext-segm/projects/HIPIE/bert-base-uncased",
+  "bert_resolved_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_ancillary/bert-base-uncased",
+  "fuse_helper_sha256": "f82fbb6437cba16f7011357469ed20cde77c56a5d4076c7df94e24f1684d79b8",
+  "torch": "2.3.1+cu121",
+  "transformers": "4.46.1",
+  "forward_calls": 0,
+  "note": "Read-only metadata; no weight remapping or model loading."
+}

@@ -1,0 +1,3 @@
+# Cycle016 handoff
+
+Stopped on REVIEW015's non-transport loading stop condition. Read ../CYCLE016_REPORT.md and port_receipt.json. Model function returned once, but final from_pretrained omitted gamma_l/gamma_v: Transformers4.46.1 renames gamma substrings to weight. Raw safetensors contains the correct gamma keys. No compatibility fix applied, no forwards/masks/scores. BERT transport symlink is the only environment mutation. Assets already present; do not reinstall/redownload. Await explicit review of loader repair; full val50 remains unauthorized. The raw native_load_receipt.json status does not certify weight fidelity.
