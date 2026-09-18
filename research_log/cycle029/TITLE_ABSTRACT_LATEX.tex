@@ -1,0 +1,22 @@
+\title{CMA: Identity-Conditioned Relational Segmentation with Supplied Localized Entity Memory}
+\author{Working manuscript shell}
+\date{}
+\maketitle
+\begin{abstract}
+Segmenting the correct helmet among visually similar workers requires resolving
+whose equipment a query refers to. We study relational segmentation conditioned
+on supplied identity-localized entity memory: an appearance crop, miner mask and
+bounding box. CMA injects crop and box features at the language model's REF
+input and combines REF hidden state with mask and box geometry in the SAM
+prompt, alongside a paired counterfactual identity-ranking training objective.
+Evaluation fixes the observation and query while switching the supplied miner
+identity. Reference appearance comes from the same condition image; supplied
+geometry remains fixed. Under a fixed photometric/noise/blur stressor, the primary
+documented-protocol-disjoint confirmation yields 58\% versus 2\% CMSA and
+84\% versus 46\% Memory Fidelity for CMA versus pinned SegLLM through their
+native memory interfaces. This system-level result supports supplied-memory
+use, not autonomous tracking or memory acquisition. Targets are reconstructed
+pseudo labels, exact historical training exposure remains unknown, and the
+comparison does not establish isolated component gains or lower degradation
+sensitivity.
+\end{abstract}

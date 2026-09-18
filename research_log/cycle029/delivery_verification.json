@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-09-19T06:18:03.202099+08:00",
+  "unchanged_prior_artifact_count": 28,
+  "abstract_word_count": 157,
+  "abstract_comparisons": {
+    "cma": {
+      "source": "research_log\\cycle025\\scoring\\cma_target15_b_metrics.json",
+      "sha256": "65ff0d818faa73f2c94fececb743e1c6d25ccaad6283472a8668173f5ff6fa28",
+      "cmsa_percent": 58,
+      "fidelity_percent": 84
+    },
+    "segllm": {
+      "source": "research_log\\cycle025\\scoring\\segllm_target15_b_metrics.json",
+      "sha256": "96cfca364671bc7c63e3ade4127e3bb490e5f74d2e6fd9a622db4388b0b97a00",
+      "cmsa_percent": 2,
+      "fidelity_percent": 46
+    }
+  },
+  "figure_hashes_verified": true,
+  "model_calls": 0,
+  "scorer_calls": 0,
+  "metric_recomputation": false,
+  "new_scientific_selection": false,
+  "latex": {
+    "command": "pdflatex -disable-installer -interaction=nonstopmode -halt-on-error -output-directory=C:/work/CMA/outputs/cycle029_latex PAPER_SHELL.tex",
+    "passes": 2,
+    "exit_code": 0,
+    "pages": 6,
+    "unresolved_references": false,
+    "overfull_boxes": false,
+    "inherited_underfull_badness": [
+      4518,
+      3758,
+      1527
+    ],
+    "visual_qa": "All six pages inspected, including method figure at two-column width; no overlap/clipping. Generic shell, not final venue layout."
+  },
+  "files_sha256": {
+    "METHOD_FIGURE_LATEX.tex": "2c73aff6c7aa71a0abdaf5d577cdd8daeaa9bad7cdf3bd566afbd0bdc588fb1c",
+    "method_figure_receipt.json": "eb523759314a4ccd0d69549ac09ab97505119da24d7e50e5d927934927e044be",
+    "METHOD_FIGURE_SPEC.md": "05088688ebb959b96f09dc6207815fb8bceb73937034680b4a0674a47c0994f3",
+    "METHOD_OVERVIEW.pdf": "27439913442e11aeaf6f7a09ce74d72f6ef19add7e26379e30f177948781d88e",
+    "METHOD_OVERVIEW.png": "523939c0804ff9e4ef4150fc7c818b6172e8c5377c565459b9aa4b1b04b9bdcf",
+    "METHOD_OVERVIEW.svg": "4f0bed041227e42d614294021bb2fc79ebf61853026bf92095ef894410ed871a",
+    "PAPER_POSITIONING.md": "fa75c7658924bf0e7e1dd41ce115c5b8ff96c4dc4474a13994069217c50cf532",
+    "PAPER_SHELL.pdf": "f3309ef7593cef07065f6fd96755c25679ad7f823e2e0f147fa622969e59b9f6",
+    "PAPER_SHELL.tex": "eaade5b901b8cf55a18f3c8eea8faea0326c4b4f2d2125747a589bb6964f3e28",
+    "PAPER_SHELL_AUDIT.md": "54a9eddbc7ad7005a919540149a33c8972ec8d1d90d5c058f69c545f6b252602",
+    "render_method_overview.py": "54bb82ae04f55e56efe5f52713596e0e01a344979aeb44bee146a30a9c7745a6",
+    "source_receipt.json": "5ba5ee81f3acf654ecb705f6d2bd0fe41039b1d5fb5c5a2504fec72a8ecc9530",
+    "TITLE_ABSTRACT_LATEX.tex": "2d1a1c93ff17af8d6b6b8c36efb2891ccd5a20e4201cdc762624deb171861668"
+  }
+}

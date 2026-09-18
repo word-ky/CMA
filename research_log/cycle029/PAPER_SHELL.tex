@@ -1,0 +1,33 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[letterpaper,margin=0.7in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,booktabs,graphicx}
+\graphicspath{{./}{../cycle027/}}
+\renewcommand{\dbltopfraction}{0.95}
+\renewcommand{\textfraction}{0.05}
+\begin{document}
+\input{TITLE_ABSTRACT_LATEX.tex}
+\input{METHOD_FIGURE_LATEX.tex}
+\input{../cycle028/INTRODUCTION_LATEX.tex}
+\paragraph{Validated input and stressor.}
+Throughout the experiments, memory is a supplied identity-localized entity
+state: a miner mask, bounding box and appearance crop from the same condition
+image. Worker geometry is supplied and fixed. Dust and glare above describe
+broader motivation only; the tested \texttt{target15\_b} stressor combines
+gamma darkening, contrast/scale reduction, Gaussian noise and Gaussian blur.
+It does not simulate dust, glare or occlusion.
+\input{../cycle028/METHOD_LATEX.tex}
+\section{Results and limitations}
+\paragraph{Evaluation contract.}
+All degraded results below use this fixed photometric/noise/blur stressor.
+CMA and pinned SegLLM receive the same underlying observation/query and
+corresponding supplied miner identity information through method-native
+memory interfaces; internal memory encodings are not identical.
+\input{../cycle027/MAIN_TABLE_LATEX.tex}
+\input{../cycle027/RESULTS_LIMITATIONS_LATEX.tex}
+\input{../cycle027/MAIN_QUAL_FIGURE_LATEX.tex}
+\clearpage
+% Separate overlap-affected replication context; no pooling with primary evidence.
+\input{../cycle027/SUPPLEMENTARY_REPLICATION_TABLE_LATEX.tex}
+% Bibliography and Related Work integration remain pending verified sources.
+\end{document}

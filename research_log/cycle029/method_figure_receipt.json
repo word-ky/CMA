@@ -1,0 +1,14 @@
+{
+  "source_script_sha256": "54bb82ae04f55e56efe5f52713596e0e01a344979aeb44bee146a30a9c7745a6",
+  "outputs_sha256": {
+    "svg": "4f0bed041227e42d614294021bb2fc79ebf61853026bf92095ef894410ed871a",
+    "pdf": "27439913442e11aeaf6f7a09ce74d72f6ef19add7e26379e30f177948781d88e",
+    "png": "523939c0804ff9e4ef4150fc7c818b6172e8c5377c565459b9aa4b1b04b9bdcf"
+  },
+  "figure_width_inches": 7.2,
+  "model_calls": 0,
+  "scorer_calls": 0,
+  "new_case_selection": false,
+  "schematic_only": true,
+  "numeric_performance_values": []
+}

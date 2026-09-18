@@ -1,0 +1,14 @@
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{METHOD_OVERVIEW.pdf}
+\caption{CMA conditioned on supplied identity-localized entity memory.
+Each alternative A/B contains a miner mask, bounding box and appearance crop
+from the same condition image. Geometry is supplied and fixed. Crop/bbox
+features condition the language model at REF; REF hidden state and mask/bbox
+geometry augment the SEG-derived SAM prompt. Shared weights decode the
+relational helmet target. A/B outputs are schematic desired identities, not
+additional measured predictions. The separate training inset shows soft-IoU
+ranking; the offline evaluation inset uses binary IoU. Neither inset supplies
+helmet targets to inference.}
+\label{fig:method-overview}
+\end{figure*}
