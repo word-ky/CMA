@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-09-18T18:07:31.238505+00:00",
+  "run_id": "20260919-015702-cma-cycle025-final-confirmation",
+  "prediction_hashes_verified": 400,
+  "asset_audit_before_both_model_starts": true,
+  "both_prediction_freezes_before_scoring": true,
+  "frozen_kernel_hashes_equal_cycle022": true,
+  "cma_weights_equal_cycle022": true,
+  "groups": 50,
+  "identity_predictions_per_method_condition": 100,
+  "archive_bytes": 1378601,
+  "archive_sha256": "1188f4d69b9fdd61e4c7617a6c68f2694ee49447aadbef389f138fe188848386",
+  "cma_load_to_freeze_seconds": 95.0338761806488,
+  "segllm_load_to_freeze_seconds": 342.43039536476135,
+  "new_tuning": false,
+  "first_result_retained": true
+}

@@ -1,0 +1,2537 @@
+{
+  "summaries": {
+    "cma_clean": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.882756276338968,
+      "memory_fidelity": 0.97,
+      "cmsa": 0.92,
+      "identity_error_rate": 0.01,
+      "mean_identity_margin": 0.8739440872842417,
+      "median_identity_margin": 0.952628848675662,
+      "empty_masks": 0,
+      "cmsa_count": 46,
+      "fidelity_count": 97,
+      "ier_count": 1
+    },
+    "cma_target15_b": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.6752783679741409,
+      "memory_fidelity": 0.84,
+      "cmsa": 0.58,
+      "identity_error_rate": 0.03,
+      "mean_identity_margin": 0.6466656573442146,
+      "median_identity_margin": 0.8428751370835651,
+      "empty_masks": 0,
+      "cmsa_count": 29,
+      "fidelity_count": 84,
+      "ier_count": 3
+    },
+    "segllm_clean": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.4270578626539793,
+      "memory_fidelity": 0.49,
+      "cmsa": 0.04,
+      "identity_error_rate": 0.42,
+      "mean_identity_margin": 0.049033634623168225,
+      "median_identity_margin": 0.0,
+      "empty_masks": 0,
+      "cmsa_count": 2,
+      "fidelity_count": 49,
+      "ier_count": 42
+    },
+    "segllm_target15_b": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.3644353207205864,
+      "memory_fidelity": 0.46,
+      "cmsa": 0.02,
+      "identity_error_rate": 0.38,
+      "mean_identity_margin": 0.03181829587247446,
+      "median_identity_margin": 0.0,
+      "empty_masks": 0,
+      "cmsa_count": 1,
+      "fidelity_count": 46,
+      "ier_count": 38
+    }
+  },
+  "degradation_deltas": {
+    "cma": {
+      "direction": "cma_target15_b minus cma_clean",
+      "aggregate": {
+        "target_miou": -0.20747790836482716,
+        "memory_fidelity": -0.13,
+        "cmsa": -0.3400000000000001,
+        "identity_error_rate": 0.019999999999999997,
+        "mean_identity_margin": -0.22727842994002712,
+        "median_identity_margin": -0.1097537115920969,
+        "empty_masks": 0,
+        "cmsa_count": -17,
+        "fidelity_count": -13,
+        "ier_count": 2
+      },
+      "paired_groups": [
+        {
+          "group_id": "cf_778571dc8020b5df",
+          "correct_iou_delta": [
+            -0.12050348514492304,
+            -0.047669374295704614
+          ],
+          "identity_margin_delta": [
+            -0.12050348514492304,
+            -0.047669374295704614
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_18803244d947e2f7",
+          "correct_iou_delta": [
+            -0.01995420346745175,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.01995420346745175,
+            0.6819826071797348
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_56a9b1ea716e19d3",
+          "correct_iou_delta": [
+            0.2029573461215364,
+            -0.01704996034892947
+          ],
+          "identity_margin_delta": [
+            0.2029573461215364,
+            -0.01704996034892947
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_f6120ac9bd438a95",
+          "correct_iou_delta": [
+            -0.35172285687749605,
+            -0.06138623402216603
+          ],
+          "identity_margin_delta": [
+            -0.35172285687749605,
+            -0.06138623402216603
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_8809b4676725c499",
+          "correct_iou_delta": [
+            0.05083006071028051,
+            -0.14108747809007627
+          ],
+          "identity_margin_delta": [
+            0.05083006071028051,
+            -0.14108747809007627
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_b0d459c99cdff5e6",
+          "correct_iou_delta": [
+            -0.19071923910154753,
+            -0.05576456739456692
+          ],
+          "identity_margin_delta": [
+            -0.19071923910154753,
+            -0.05576456739456692
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_b914b3d4a14a9083",
+          "correct_iou_delta": [
+            -0.4120065805328047,
+            -0.05445264197899735
+          ],
+          "identity_margin_delta": [
+            -0.4120065805328047,
+            -0.05445264197899735
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_e0f5ae2d424569c9",
+          "correct_iou_delta": [
+            -0.08380881852016597,
+            -0.22754147586084728
+          ],
+          "identity_margin_delta": [
+            -0.08380881852016597,
+            -0.22754147586084728
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_4fbcb91b5cbb9181",
+          "correct_iou_delta": [
+            -0.017667714010900948,
+            -0.8965986394557823
+          ],
+          "identity_margin_delta": [
+            -0.017667714010900948,
+            -0.8965986394557823
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_7bda1a50e0ec27ba",
+          "correct_iou_delta": [
+            0.17075646161815905,
+            -0.19656455376125626
+          ],
+          "identity_margin_delta": [
+            0.17075646161815905,
+            -0.19656455376125626
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_8971bf1ad1c9a9cc",
+          "correct_iou_delta": [
+            -0.07854601815743434,
+            -0.07733629711957024
+          ],
+          "identity_margin_delta": [
+            -0.07854601815743434,
+            -0.07733629711957024
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_2a1ba9e169a854d9",
+          "correct_iou_delta": [
+            -0.5493036648445067,
+            -0.9214007782101167
+          ],
+          "identity_margin_delta": [
+            -0.5493036648445067,
+            -0.9214007782101167
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "acceptedpair_5b51488e49b46f60",
+          "correct_iou_delta": [
+            -0.022080597890066778,
+            -0.6774628879892037
+          ],
+          "identity_margin_delta": [
+            -0.022080597890066778,
+            -0.6774628879892037
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_ef28727ca9fdc521",
+          "correct_iou_delta": [
+            -0.031118082280266024,
+            -0.1472709454575838
+          ],
+          "identity_margin_delta": [
+            -0.031118082280266024,
+            -0.1472709454575838
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_a3bb77c2403a5b68",
+          "correct_iou_delta": [
+            -0.04524417478574971,
+            -0.9442484121383204
+          ],
+          "identity_margin_delta": [
+            -0.04524417478574971,
+            -0.9442484121383204
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_418a3cd9712751b3",
+          "correct_iou_delta": [
+            -0.03340192069446002,
+            -0.8486705831732992
+          ],
+          "identity_margin_delta": [
+            -0.03340192069446002,
+            -0.8486705831732992
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "acceptedpair_9d5b0fa45b1a8ff9",
+          "correct_iou_delta": [
+            -0.014943704264092639,
+            -0.02273090451844073
+          ],
+          "identity_margin_delta": [
+            -0.014943704264092639,
+            -0.02273090451844073
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_a3e566dd54fb7f38",
+          "correct_iou_delta": [
+            -0.08073870513459214,
+            -0.05384754550739179
+          ],
+          "identity_margin_delta": [
+            -0.08073870513459214,
+            -0.05384754550739179
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_7742007ec8b76d62",
+          "correct_iou_delta": [
+            -0.07056460303714551,
+            -0.13462811953186749
+          ],
+          "identity_margin_delta": [
+            -0.07056460303714551,
+            -0.13462811953186749
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_a7cf884bd45defa4",
+          "correct_iou_delta": [
+            -0.10380104678849522,
+            -0.21388402255171723
+          ],
+          "identity_margin_delta": [
+            -0.10380104678849522,
+            -0.21388402255171723
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_e92c4f4a3b9d9d20",
+          "correct_iou_delta": [
+            -0.5429799426934098,
+            -0.030967496651338133
+          ],
+          "identity_margin_delta": [
+            -0.5429799426934098,
+            -0.030967496651338133
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "acceptedpair_ef9f814da6e89020",
+          "correct_iou_delta": [
+            0.6520361205174958,
+            -0.09708123934901458
+          ],
+          "identity_margin_delta": [
+            0.6520361205174958,
+            -0.09708123934901458
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_e066f87c2c13ab94",
+          "correct_iou_delta": [
+            -0.9724014336917562,
+            -0.10647072442380234
+          ],
+          "identity_margin_delta": [
+            -0.9724014336917562,
+            -0.10647072442380234
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_b07b21c7f04f565f",
+          "correct_iou_delta": [
+            -0.9468926553672317,
+            -0.03781276517247745
+          ],
+          "identity_margin_delta": [
+            -0.9468926553672317,
+            -0.03781276517247745
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "acceptedpair_b6b4ada68df19e6d",
+          "correct_iou_delta": [
+            -0.12920459583939103,
+            -0.26143549579876657
+          ],
+          "identity_margin_delta": [
+            -0.12920459583939103,
+            -0.26143549579876657
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_e664875a29c6ca1e",
+          "correct_iou_delta": [
+            -0.06014580801944103,
+            -0.8873646209386281
+          ],
+          "identity_margin_delta": [
+            -0.06014580801944103,
+            -1.7866627594799769
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "acceptedpair_1faeba6a71c40b2f",
+          "correct_iou_delta": [
+            -0.9684625492772667,
+            -0.03428647630407888
+          ],
+          "identity_margin_delta": [
+            -1.9006159416076502,
+            -0.03428647630407888
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "acceptedpair_6b2f4de6e6befefc",
+          "correct_iou_delta": [
+            -0.13324053637612965,
+            -0.6392769104354972
+          ],
+          "identity_margin_delta": [
+            -0.13324053637612965,
+            -1.4543270776595776
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_5ca001bb055cee89",
+          "correct_iou_delta": [
+            -0.017228055364274852,
+            -0.09852540061370607
+          ],
+          "identity_margin_delta": [
+            -0.017228055364274852,
+            -0.09852540061370607
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_c1b61a58ef4476a5",
+          "correct_iou_delta": [
+            -0.052044368465891444,
+            -0.33614612807530775
+          ],
+          "identity_margin_delta": [
+            -0.052044368465891444,
+            -0.33614612807530775
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "acceptedpair_2bed1085c2cab83d",
+          "correct_iou_delta": [
+            -0.8719793939937179,
+            -0.03668508275669091
+          ],
+          "identity_margin_delta": [
+            -0.8875124605976248,
+            -0.03668508275669091
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "acceptedpair_89b5291120448df8",
+          "correct_iou_delta": [
+            -0.06338603560730782,
+            0.15284485268946413
+          ],
+          "identity_margin_delta": [
+            -0.06338603560730782,
+            0.15284485268946413
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_6a8a242a4bf160a8",
+          "correct_iou_delta": [
+            -0.021334482909085684,
+            -0.14399227066015885
+          ],
+          "identity_margin_delta": [
+            -0.021334482909085684,
+            -0.14399227066015885
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_f6ab2a187f2c42e6",
+          "correct_iou_delta": [
+            -0.008714175819287906,
+            -0.26604831952332186
+          ],
+          "identity_margin_delta": [
+            -0.008714175819287906,
+            -0.26604831952332186
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_ac04c7190000db27",
+          "correct_iou_delta": [
+            -0.13586865609093846,
+            -0.19865693914773663
+          ],
+          "identity_margin_delta": [
+            -0.13586865609093846,
+            -0.19865693914773663
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_cb35232aef588ad2",
+          "correct_iou_delta": [
+            -0.10652999964280985,
+            -0.080573645217341
+          ],
+          "identity_margin_delta": [
+            -0.10652999964280985,
+            -0.080573645217341
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_18df4546166abc7e",
+          "correct_iou_delta": [
+            -0.010182185656354092,
+            -0.0024677304287146207
+          ],
+          "identity_margin_delta": [
+            -0.010182185656354092,
+            -0.0024677304287146207
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_48529fa701b1d761",
+          "correct_iou_delta": [
+            -0.15557513335440754,
+            -0.07992762090292138
+          ],
+          "identity_margin_delta": [
+            -0.15557513335440754,
+            -0.07992762090292138
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_e84dca525185fb78",
+          "correct_iou_delta": [
+            -0.015210480548546679,
+            -0.18371870024605585
+          ],
+          "identity_margin_delta": [
+            -0.015210480548546679,
+            -0.18371870024605585
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_2ea2e959688af16f",
+          "correct_iou_delta": [
+            0.0,
+            -0.008683406088118684
+          ],
+          "identity_margin_delta": [
+            0.0,
+            -0.008683406088118684
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_18b4bb30bb9a0113",
+          "correct_iou_delta": [
+            -0.791894852135816,
+            -0.016385467668890596
+          ],
+          "identity_margin_delta": [
+            -0.791894852135816,
+            -0.016385467668890596
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "acceptedpair_3804e7a669ddae48",
+          "correct_iou_delta": [
+            -0.10179940681846256,
+            -0.3768937698589696
+          ],
+          "identity_margin_delta": [
+            -0.10179940681846256,
+            -0.3768937698589696
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_2882a85afb299b70",
+          "correct_iou_delta": [
+            -0.5647839000881538,
+            -0.0249436316920979
+          ],
+          "identity_margin_delta": [
+            -0.5647839000881538,
+            -0.0249436316920979
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "acceptedpair_561a0d1cc8671699",
+          "correct_iou_delta": [
+            -0.10541591927667937,
+            -0.3236941835557752
+          ],
+          "identity_margin_delta": [
+            -0.10541591927667937,
+            -0.3236941835557752
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_c50b19c1a731738f",
+          "correct_iou_delta": [
+            -0.016456717400797016,
+            -0.9426194233252044
+          ],
+          "identity_margin_delta": [
+            -0.016456717400797016,
+            -0.9426194233252044
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "cf_10bc8409db783c0b",
+          "correct_iou_delta": [
+            -0.3457274261457425,
+            -0.03593000774317068
+          ],
+          "identity_margin_delta": [
+            -0.3457274261457425,
+            -0.03593000774317068
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_598f6f7142e805f5",
+          "correct_iou_delta": [
+            -0.16496582724772202,
+            -0.9530349270939301
+          ],
+          "identity_margin_delta": [
+            -0.16496582724772202,
+            -0.9530349270939301
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "acceptedpair_17ff3a8081b79a20",
+          "correct_iou_delta": [
+            -0.09121337775998895,
+            -0.054084781807547055
+          ],
+          "identity_margin_delta": [
+            -0.09121337775998895,
+            -0.054084781807547055
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_44aeb1233b6d0930",
+          "correct_iou_delta": [
+            -0.035064584843264135,
+            -0.16290533397998064
+          ],
+          "identity_margin_delta": [
+            -0.035064584843264135,
+            -0.16290533397998064
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_4a446f5d1cf8fca4",
+          "correct_iou_delta": [
+            -0.14297188998111465,
+            -0.019207951327497308
+          ],
+          "identity_margin_delta": [
+            -0.14297188998111465,
+            -0.019207951327497308
+          ],
+          "cmsa_delta": 0
+        }
+      ]
+    },
+    "segllm": {
+      "direction": "segllm_target15_b minus segllm_clean",
+      "aggregate": {
+        "target_miou": -0.06262254193339295,
+        "memory_fidelity": -0.02999999999999997,
+        "cmsa": -0.02,
+        "identity_error_rate": -0.03999999999999998,
+        "mean_identity_margin": -0.017215338750693768,
+        "median_identity_margin": 0.0,
+        "empty_masks": 0,
+        "cmsa_count": -1,
+        "fidelity_count": -3,
+        "ier_count": -4
+      },
+      "paired_groups": [
+        {
+          "group_id": "cf_778571dc8020b5df",
+          "correct_iou_delta": [
+            0.0,
+            0.05459737900573469
+          ],
+          "identity_margin_delta": [
+            -0.044532714865481715,
+            0.05459737900573469
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_18803244d947e2f7",
+          "correct_iou_delta": [
+            0.0,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.0,
+            0.0
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_56a9b1ea716e19d3",
+          "correct_iou_delta": [
+            0.0,
+            -0.049469857742368784
+          ],
+          "identity_margin_delta": [
+            0.043826343001933665,
+            -0.049469857742368784
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_f6120ac9bd438a95",
+          "correct_iou_delta": [
+            -0.818346957311535,
+            0.8334553440702782
+          ],
+          "identity_margin_delta": [
+            -1.6707690376720308,
+            1.65047272741886
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_8809b4676725c499",
+          "correct_iou_delta": [
+            -0.8194313293463436,
+            0.7148584905660378
+          ],
+          "identity_margin_delta": [
+            -1.5363720012548496,
+            1.532181325211707
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_b0d459c99cdff5e6",
+          "correct_iou_delta": [
+            0.0,
+            0.020933760432980564
+          ],
+          "identity_margin_delta": [
+            -0.023618194957860883,
+            0.020933760432980564
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_b914b3d4a14a9083",
+          "correct_iou_delta": [
+            0.0,
+            -0.02733886171060984
+          ],
+          "identity_margin_delta": [
+            0.027956453616723276,
+            -0.02733886171060984
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_e0f5ae2d424569c9",
+          "correct_iou_delta": [
+            0.0,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.0,
+            0.0
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_4fbcb91b5cbb9181",
+          "correct_iou_delta": [
+            -0.022337662337662323,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.022337662337662323,
+            0.019111319041779318
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_7bda1a50e0ec27ba",
+          "correct_iou_delta": [
+            0.0,
+            0.014595808727077886
+          ],
+          "identity_margin_delta": [
+            0.10341583141402055,
+            0.014595808727077886
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_8971bf1ad1c9a9cc",
+          "correct_iou_delta": [
+            -0.8030176026823135,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.8030176026823135,
+            0.8087800759814268
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_2a1ba9e169a854d9",
+          "correct_iou_delta": [
+            -0.7333333333333333,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.7333333333333333,
+            0.7323232323232324
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_5b51488e49b46f60",
+          "correct_iou_delta": [
+            -0.03030202324503506,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.03030202324503506,
+            -0.933064050778996
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_ef28727ca9fdc521",
+          "correct_iou_delta": [
+            -0.35050802198177833,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.35050802198177833,
+            -0.041028242053071096
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_a3bb77c2403a5b68",
+          "correct_iou_delta": [
+            -0.04775215106934516,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.04775215106934516,
+            0.03625027713664597
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_418a3cd9712751b3",
+          "correct_iou_delta": [
+            -0.005305065311916546,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.005305065311916546,
+            0.00882547308734083
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_9d5b0fa45b1a8ff9",
+          "correct_iou_delta": [
+            -0.04426148378098704,
+            -0.928796913363732
+          ],
+          "identity_margin_delta": [
+            -0.04426148378098704,
+            -1.7750779050992693
+          ],
+          "cmsa_delta": -1
+        },
+        {
+          "group_id": "acceptedpair_a3e566dd54fb7f38",
+          "correct_iou_delta": [
+            0.0,
+            -0.0038296284861583096
+          ],
+          "identity_margin_delta": [
+            0.03917916050098347,
+            -0.0038296284861583096
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_7742007ec8b76d62",
+          "correct_iou_delta": [
+            0.02292473296171671,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.02292473296171671,
+            -0.02045301852385062
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_a7cf884bd45defa4",
+          "correct_iou_delta": [
+            0.0,
+            -0.013563921659670464
+          ],
+          "identity_margin_delta": [
+            0.403062734550877,
+            -0.013563921659670464
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_e92c4f4a3b9d9d20",
+          "correct_iou_delta": [
+            0.0,
+            -0.1917916292479136
+          ],
+          "identity_margin_delta": [
+            0.18521508655694086,
+            -0.1917916292479136
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_ef9f814da6e89020",
+          "correct_iou_delta": [
+            0.0,
+            -0.0031310797930276246
+          ],
+          "identity_margin_delta": [
+            0.00822080171636097,
+            -0.0031310797930276246
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_e066f87c2c13ab94",
+          "correct_iou_delta": [
+            0.007580751483190508,
+            -0.9155370177267987
+          ],
+          "identity_margin_delta": [
+            0.9252956361792073,
+            -0.9247566423563673
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_b07b21c7f04f565f",
+          "correct_iou_delta": [
+            0.0,
+            -0.01925261283059454
+          ],
+          "identity_margin_delta": [
+            0.01888549119976468,
+            -0.01925261283059454
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_b6b4ada68df19e6d",
+          "correct_iou_delta": [
+            0.0,
+            -0.033275921651545026
+          ],
+          "identity_margin_delta": [
+            0.042328389507645725,
+            -0.033275921651545026
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_e664875a29c6ca1e",
+          "correct_iou_delta": [
+            -0.023751525677597418,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.023751525677597418,
+            0.02585222190339964
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_1faeba6a71c40b2f",
+          "correct_iou_delta": [
+            0.0,
+            0.012479248679695965
+          ],
+          "identity_margin_delta": [
+            -0.009877762750520547,
+            0.012479248679695965
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_6b2f4de6e6befefc",
+          "correct_iou_delta": [
+            -0.02664709382668684,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.02664709382668684,
+            0.02431677528889864
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_5ca001bb055cee89",
+          "correct_iou_delta": [
+            0.9473056489211753,
+            -0.735457950355029
+          ],
+          "identity_margin_delta": [
+            1.8530824296278494,
+            -0.735457950355029
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_c1b61a58ef4476a5",
+          "correct_iou_delta": [
+            0.0,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.0,
+            0.0
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_2bed1085c2cab83d",
+          "correct_iou_delta": [
+            0.0,
+            -0.17156429190510414
+          ],
+          "identity_margin_delta": [
+            0.1694736365619518,
+            -0.17156429190510414
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_89b5291120448df8",
+          "correct_iou_delta": [
+            -0.27545856214295694,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.27545856214295694,
+            0.28102653737774164
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_6a8a242a4bf160a8",
+          "correct_iou_delta": [
+            0.0,
+            -0.35011503477795614
+          ],
+          "identity_margin_delta": [
+            0.34265064903137354,
+            -0.35011503477795614
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_f6ab2a187f2c42e6",
+          "correct_iou_delta": [
+            -0.036133396932370165,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.036133396932370165,
+            0.03374630752922991
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_ac04c7190000db27",
+          "correct_iou_delta": [
+            -0.02864334857467543,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.02864334857467543,
+            0.020400642656477896
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_cb35232aef588ad2",
+          "correct_iou_delta": [
+            -0.031662066887089835,
+            0.0
+          ],
+          "identity_margin_delta": [
+            -0.031662066887089835,
+            0.0317345120972653
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_18df4546166abc7e",
+          "correct_iou_delta": [
+            0.0,
+            -0.009434359047153396
+          ],
+          "identity_margin_delta": [
+            0.003919454059476024,
+            -0.009434359047153396
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_48529fa701b1d761",
+          "correct_iou_delta": [
+            0.0,
+            -0.10018494639215025
+          ],
+          "identity_margin_delta": [
+            0.09448850686399768,
+            -0.10018494639215025
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_e84dca525185fb78",
+          "correct_iou_delta": [
+            0.0,
+            0.009325130859714481
+          ],
+          "identity_margin_delta": [
+            -0.007889448601724691,
+            0.009325130859714481
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_2ea2e959688af16f",
+          "correct_iou_delta": [
+            0.0,
+            -0.012849040886424135
+          ],
+          "identity_margin_delta": [
+            0.01232570853979953,
+            -0.012849040886424135
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_18b4bb30bb9a0113",
+          "correct_iou_delta": [
+            0.0,
+            -0.04991655595878908
+          ],
+          "identity_margin_delta": [
+            0.05172754709740168,
+            -0.04991655595878908
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_3804e7a669ddae48",
+          "correct_iou_delta": [
+            0.004383453115079927,
+            -0.20016292548498893
+          ],
+          "identity_margin_delta": [
+            0.004383453115079927,
+            -0.20016292548498893
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_2882a85afb299b70",
+          "correct_iou_delta": [
+            0.0,
+            -0.07587481146304675
+          ],
+          "identity_margin_delta": [
+            0.05293017674705425,
+            -0.07587481146304675
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_561a0d1cc8671699",
+          "correct_iou_delta": [
+            0.9006249047401311,
+            -0.9267192784667418
+          ],
+          "identity_margin_delta": [
+            1.8293566668052266,
+            -1.8276447829425422
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_c50b19c1a731738f",
+          "correct_iou_delta": [
+            0.9127402771569065,
+            -0.8705650459921156
+          ],
+          "identity_margin_delta": [
+            1.7807434013433163,
+            -1.7840437731998382
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_10bc8409db783c0b",
+          "correct_iou_delta": [
+            0.0,
+            0.00011668806199433246
+          ],
+          "identity_margin_delta": [
+            -3.917552619800099e-05,
+            0.00011668806199433246
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_598f6f7142e805f5",
+          "correct_iou_delta": [
+            0.0,
+            -0.9008764940239044
+          ],
+          "identity_margin_delta": [
+            0.9001135073779796,
+            -0.9008764940239044
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_17ff3a8081b79a20",
+          "correct_iou_delta": [
+            0.0,
+            -0.0319305310431115
+          ],
+          "identity_margin_delta": [
+            0.03545935925393073,
+            -0.0319305310431115
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_44aeb1233b6d0930",
+          "correct_iou_delta": [
+            0.009356432252917934,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.009356432252917934,
+            -0.0060160239711513075
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_4a446f5d1cf8fca4",
+          "correct_iou_delta": [
+            0.0,
+            -0.009001909923366136
+          ],
+          "identity_margin_delta": [
+            0.05439356894630332,
+            -0.009001909923366136
+          ],
+          "cmsa_delta": 0
+        }
+      ]
+    }
+  },
+  "method_deltas": {
+    "clean": {
+      "direction": "cma_clean minus segllm_clean",
+      "aggregate": {
+        "target_miou": 0.4556984136849887,
+        "memory_fidelity": 0.48,
+        "cmsa": 0.88,
+        "identity_error_rate": -0.41,
+        "mean_identity_margin": 0.8249104526610734,
+        "median_identity_margin": 0.952628848675662,
+        "empty_masks": 0,
+        "cmsa_count": 44,
+        "fidelity_count": 48,
+        "ier_count": -41
+      },
+      "paired_groups": [
+        {
+          "group_id": "cf_778571dc8020b5df",
+          "correct_iou_delta": [
+            0.9449085123309467,
+            0.13828269756597023
+          ],
+          "identity_margin_delta": [
+            1.7703659149575042,
+            0.13828269756597023
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_18803244d947e2f7",
+          "correct_iou_delta": [
+            0.01995420346745175,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.01995420346745175,
+            -0.8812189054726368
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_56a9b1ea716e19d3",
+          "correct_iou_delta": [
+            0.0815811606391926,
+            0.002838267598317623
+          ],
+          "identity_margin_delta": [
+            1.038536375071856,
+            0.002838267598317623
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_f6120ac9bd438a95",
+          "correct_iou_delta": [
+            0.0780494390848614,
+            0.9647408666100254
+          ],
+          "identity_margin_delta": [
+            0.0780494390848614,
+            1.7817582499586073
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_8809b4676725c499",
+          "correct_iou_delta": [
+            0.052650002348439195,
+            0.9583866837387964
+          ],
+          "identity_margin_delta": [
+            0.052650002348439195,
+            1.7757095183844656
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_b0d459c99cdff5e6",
+          "correct_iou_delta": [
+            0.9432858214553639,
+            0.06699896068471689
+          ],
+          "identity_margin_delta": [
+            1.8527425618980198,
+            0.06699896068471689
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_b914b3d4a14a9083",
+          "correct_iou_delta": [
+            0.8731576596694953,
+            0.023298326552773974
+          ],
+          "identity_margin_delta": [
+            1.8361090268162288,
+            0.023298326552773974
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_e0f5ae2d424569c9",
+          "correct_iou_delta": [
+            0.9845831747240198,
+            0.8098980458793543
+          ],
+          "identity_margin_delta": [
+            0.9845831747240198,
+            0.8098980458793543
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_4fbcb91b5cbb9181",
+          "correct_iou_delta": [
+            0.04100465116279073,
+            0.8965986394557823
+          ],
+          "identity_margin_delta": [
+            0.04100465116279073,
+            1.8390200524654308
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_7bda1a50e0ec27ba",
+          "correct_iou_delta": [
+            0.725094577553594,
+            0.11212282744745206
+          ],
+          "identity_margin_delta": [
+            1.6545279668287478,
+            0.11212282744745206
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_8971bf1ad1c9a9cc",
+          "correct_iou_delta": [
+            0.1674334082041562,
+            0.8852459016393442
+          ],
+          "identity_margin_delta": [
+            0.1674334082041562,
+            1.694025977620771
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_2a1ba9e169a854d9",
+          "correct_iou_delta": [
+            0.11188051595383575,
+            0.9214007782101167
+          ],
+          "identity_margin_delta": [
+            0.11188051595383575,
+            1.653724010533349
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_5b51488e49b46f60",
+          "correct_iou_delta": [
+            0.015216580444177619,
+            0.6774628879892037
+          ],
+          "identity_margin_delta": [
+            0.015216580444177619,
+            0.6774628879892037
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_ef28727ca9fdc521",
+          "correct_iou_delta": [
+            0.01669179374103391,
+            0.952324431256182
+          ],
+          "identity_margin_delta": [
+            0.01669179374103391,
+            1.4665677546983185
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_a3bb77c2403a5b68",
+          "correct_iou_delta": [
+            0.022491360374122804,
+            0.9442484121383204
+          ],
+          "identity_margin_delta": [
+            0.022491360374122804,
+            1.9072601561839795
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_418a3cd9712751b3",
+          "correct_iou_delta": [
+            0.027486420294501657,
+            0.9549778059606848
+          ],
+          "identity_margin_delta": [
+            0.027486420294501657,
+            1.9190007004823528
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_9d5b0fa45b1a8ff9",
+          "correct_iou_delta": [
+            0.05243678610863889,
+            0.04656167435234004
+          ],
+          "identity_margin_delta": [
+            0.05243678610863889,
+            0.04656167435234004
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_a3e566dd54fb7f38",
+          "correct_iou_delta": [
+            0.9593934288121314,
+            0.04095819439207049
+          ],
+          "identity_margin_delta": [
+            1.8256282922308866,
+            0.04095819439207049
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_7742007ec8b76d62",
+          "correct_iou_delta": [
+            0.05715932820612968,
+            0.9737969676994067
+          ],
+          "identity_margin_delta": [
+            0.05715932820612968,
+            1.8853911705979574
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_a7cf884bd45defa4",
+          "correct_iou_delta": [
+            0.9772769259190837,
+            0.06591088367431552
+          ],
+          "identity_margin_delta": [
+            1.8379449219310477,
+            0.06591088367431552
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_e92c4f4a3b9d9d20",
+          "correct_iou_delta": [
+            0.5429799426934098,
+            0.03205809514528546
+          ],
+          "identity_margin_delta": [
+            1.4901363789750273,
+            0.03205809514528546
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_ef9f814da6e89020",
+          "correct_iou_delta": [
+            0.0,
+            0.07346304428674255
+          ],
+          "identity_margin_delta": [
+            0.8676428366350847,
+            0.07346304428674255
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_e066f87c2c13ab94",
+          "correct_iou_delta": [
+            0.9724014336917562,
+            0.03610188608835441
+          ],
+          "identity_margin_delta": [
+            1.890116318387773,
+            0.03610188608835441
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_b07b21c7f04f565f",
+          "correct_iou_delta": [
+            0.9468926553672317,
+            0.022978156400174754
+          ],
+          "identity_margin_delta": [
+            1.91321418125279,
+            0.022978156400174754
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_b6b4ada68df19e6d",
+          "correct_iou_delta": [
+            0.9725256537570341,
+            -0.10092974508036279
+          ],
+          "identity_margin_delta": [
+            1.866764690730379,
+            -0.10092974508036279
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_e664875a29c6ca1e",
+          "correct_iou_delta": [
+            0.06627994134737714,
+            0.8873646209386281
+          ],
+          "identity_margin_delta": [
+            0.06627994134737714,
+            1.7991715729639082
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_1faeba6a71c40b2f",
+          "correct_iou_delta": [
+            0.9684625492772667,
+            0.08573821358938571
+          ],
+          "identity_margin_delta": [
+            1.8481078195475371,
+            0.08573821358938571
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_6b2f4de6e6befefc",
+          "correct_iou_delta": [
+            0.1500634371063938,
+            0.6392769104354972
+          ],
+          "identity_margin_delta": [
+            0.1500634371063938,
+            1.411772665953324
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_5ca001bb055cee89",
+          "correct_iou_delta": [
+            0.9823925720432543,
+            0.060658042744656915
+          ],
+          "identity_margin_delta": [
+            1.8881693527499284,
+            0.060658042744656915
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_c1b61a58ef4476a5",
+          "correct_iou_delta": [
+            0.9715447154471545,
+            0.823237885462555
+          ],
+          "identity_margin_delta": [
+            0.9715447154471545,
+            0.823237885462555
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_2bed1085c2cab83d",
+          "correct_iou_delta": [
+            0.9466741509963514,
+            0.02411174233181068
+          ],
+          "identity_margin_delta": [
+            1.8932122754485863,
+            0.02411174233181068
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_89b5291120448df8",
+          "correct_iou_delta": [
+            0.04159311553508349,
+            0.5878438331854481
+          ],
+          "identity_margin_delta": [
+            0.04159311553508349,
+            1.5332745937909422
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_6a8a242a4bf160a8",
+          "correct_iou_delta": [
+            0.9738419938866683,
+            0.0707021739499154
+          ],
+          "identity_margin_delta": [
+            1.8732627416486483,
+            0.0707021739499154
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_f6ab2a187f2c42e6",
+          "correct_iou_delta": [
+            0.044884635753607904,
+            0.9453961456102784
+          ],
+          "identity_margin_delta": [
+            0.044884635753607904,
+            1.8742716777915958
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_ac04c7190000db27",
+          "correct_iou_delta": [
+            0.04882152098907422,
+            0.9432515337423313
+          ],
+          "identity_margin_delta": [
+            0.04882152098907422,
+            1.8756554205188416
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_cb35232aef588ad2",
+          "correct_iou_delta": [
+            0.10014557898047305,
+            0.9530132788559755
+          ],
+          "identity_margin_delta": [
+            0.10014557898047305,
+            1.8280325185050443
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_18df4546166abc7e",
+          "correct_iou_delta": [
+            0.871824480369515,
+            0.02688572588666094
+          ],
+          "identity_margin_delta": [
+            1.8009496187969791,
+            0.02688572588666094
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_48529fa701b1d761",
+          "correct_iou_delta": [
+            0.9697670282767206,
+            0.06004079511971194
+          ],
+          "identity_margin_delta": [
+            1.876835560748913,
+            0.06004079511971194
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_e84dca525185fb78",
+          "correct_iou_delta": [
+            0.9455587392550143,
+            0.5295683009559049
+          ],
+          "identity_margin_delta": [
+            1.3047522522946813,
+            0.5295683009559049
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_2ea2e959688af16f",
+          "correct_iou_delta": [
+            0.0,
+            0.028366671933475862
+          ],
+          "identity_margin_delta": [
+            0.9124554102259215,
+            0.028366671933475862
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_18b4bb30bb9a0113",
+          "correct_iou_delta": [
+            0.791894852135816,
+            0.049158165693535594
+          ],
+          "identity_margin_delta": [
+            1.6970631020150626,
+            0.049158165693535594
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_3804e7a669ddae48",
+          "correct_iou_delta": [
+            0.08591166104826731,
+            0.002672104901779049
+          ],
+          "identity_margin_delta": [
+            0.08591166104826731,
+            0.002672104901779049
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_2882a85afb299b70",
+          "correct_iou_delta": [
+            0.9391154508902929,
+            0.0633850595452905
+          ],
+          "identity_margin_delta": [
+            1.857313435478319,
+            0.0633850595452905
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_561a0d1cc8671699",
+          "correct_iou_delta": [
+            0.981086323957323,
+            0.03983204794617623
+          ],
+          "identity_margin_delta": [
+            1.9098180860224185,
+            0.03983204794617623
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_c50b19c1a731738f",
+          "correct_iou_delta": [
+            0.9759397130924278,
+            0.07205437733308884
+          ],
+          "identity_margin_delta": [
+            1.8439428372788376,
+            0.07205437733308884
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_10bc8409db783c0b",
+          "correct_iou_delta": [
+            0.9237242853326209,
+            0.9895863987275326
+          ],
+          "identity_margin_delta": [
+            0.9239948271893109,
+            0.9895863987275326
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_598f6f7142e805f5",
+          "correct_iou_delta": [
+            0.9244321800042454,
+            0.05215843307002577
+          ],
+          "identity_margin_delta": [
+            1.824545687382225,
+            0.05215843307002577
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_17ff3a8081b79a20",
+          "correct_iou_delta": [
+            0.9642039450510743,
+            0.022102260258942352
+          ],
+          "identity_margin_delta": [
+            1.9036883412518883,
+            0.022102260258942352
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_44aeb1233b6d0930",
+          "correct_iou_delta": [
+            0.024865442200143417,
+            0.9266688061617459
+          ],
+          "identity_margin_delta": [
+            0.024865442200143417,
+            1.8663689365398424
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_4a446f5d1cf8fca4",
+          "correct_iou_delta": [
+            0.8401869158878504,
+            0.0672924855657352
+          ],
+          "identity_margin_delta": [
+            1.7627155802820247,
+            0.0672924855657352
+          ],
+          "cmsa_delta": 1
+        }
+      ]
+    },
+    "target15_b": {
+      "direction": "cma_target15_b minus segllm_target15_b",
+      "aggregate": {
+        "target_miou": 0.3108430472535545,
+        "memory_fidelity": 0.37999999999999995,
+        "cmsa": 0.5599999999999999,
+        "identity_error_rate": -0.35,
+        "mean_identity_margin": 0.6148473614717401,
+        "median_identity_margin": 0.8428751370835651,
+        "empty_masks": 0,
+        "cmsa_count": 28,
+        "fidelity_count": 38,
+        "ier_count": -35
+      },
+      "paired_groups": [
+        {
+          "group_id": "cf_778571dc8020b5df",
+          "correct_iou_delta": [
+            0.8244050271860237,
+            0.03601594426453092
+          ],
+          "identity_margin_delta": [
+            1.694395144678063,
+            0.03601594426453092
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_18803244d947e2f7",
+          "correct_iou_delta": [
+            0.0,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.0,
+            -0.19923629829290207
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_56a9b1ea716e19d3",
+          "correct_iou_delta": [
+            0.284538506760729,
+            0.035258164991756935
+          ],
+          "identity_margin_delta": [
+            1.1976673781914586,
+            0.035258164991756935
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_f6120ac9bd438a95",
+          "correct_iou_delta": [
+            0.5446735395189003,
+            0.0698992885175812
+          ],
+          "identity_margin_delta": [
+            1.397095619879396,
+            0.0698992885175812
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_8809b4676725c499",
+          "correct_iou_delta": [
+            0.9229113924050633,
+            0.10244071508268238
+          ],
+          "identity_margin_delta": [
+            1.6398520643135694,
+            0.10244071508268238
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_b0d459c99cdff5e6",
+          "correct_iou_delta": [
+            0.7525665823538163,
+            -0.009699367142830595
+          ],
+          "identity_margin_delta": [
+            1.6856415177543331,
+            -0.009699367142830595
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_b914b3d4a14a9083",
+          "correct_iou_delta": [
+            0.4611510791366906,
+            -0.003815453715613537
+          ],
+          "identity_margin_delta": [
+            1.3961459926667008,
+            -0.003815453715613537
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_e0f5ae2d424569c9",
+          "correct_iou_delta": [
+            0.9007743562038538,
+            0.582356570018507
+          ],
+          "identity_margin_delta": [
+            0.9007743562038538,
+            0.582356570018507
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_4fbcb91b5cbb9181",
+          "correct_iou_delta": [
+            0.045674599489552103,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.045674599489552103,
+            0.923310093967869
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_7bda1a50e0ec27ba",
+          "correct_iou_delta": [
+            0.895851039171753,
+            -0.09903753504088209
+          ],
+          "identity_margin_delta": [
+            1.7218685970328864,
+            -0.09903753504088209
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_8971bf1ad1c9a9cc",
+          "correct_iou_delta": [
+            0.8919049927290353,
+            0.807909604519774
+          ],
+          "identity_margin_delta": [
+            0.8919049927290353,
+            0.807909604519774
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_2a1ba9e169a854d9",
+          "correct_iou_delta": [
+            0.29591018444266237,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.29591018444266237,
+            0.0
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_5b51488e49b46f60",
+          "correct_iou_delta": [
+            0.0234380057991459,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.0234380057991459,
+            0.933064050778996
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_ef28727ca9fdc521",
+          "correct_iou_delta": [
+            0.3360817334425462,
+            0.8050534857985983
+          ],
+          "identity_margin_delta": [
+            0.3360817334425462,
+            1.3603250512938059
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_a3bb77c2403a5b68",
+          "correct_iou_delta": [
+            0.024999336657718252,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.024999336657718252,
+            0.9267614669090132
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_418a3cd9712751b3",
+          "correct_iou_delta": [
+            -0.0006104350880418163,
+            0.10630722278738555
+          ],
+          "identity_margin_delta": [
+            -0.0006104350880418163,
+            1.0615046442217126
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_9d5b0fa45b1a8ff9",
+          "correct_iou_delta": [
+            0.0817545656255333,
+            0.9526276831976314
+          ],
+          "identity_margin_delta": [
+            0.0817545656255333,
+            1.7989086749331684
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_a3e566dd54fb7f38",
+          "correct_iou_delta": [
+            0.8786547236775393,
+            -0.009059722629162992
+          ],
+          "identity_margin_delta": [
+            1.7057104265953111,
+            -0.009059722629162992
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_7742007ec8b76d62",
+          "correct_iou_delta": [
+            -0.036330007792732544,
+            0.8391688481675392
+          ],
+          "identity_margin_delta": [
+            -0.036330007792732544,
+            1.7712160695899406
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_a7cf884bd45defa4",
+          "correct_iou_delta": [
+            0.8734758791305884,
+            -0.13440921721773125
+          ],
+          "identity_margin_delta": [
+            1.3310811405916756,
+            -0.13440921721773125
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_e92c4f4a3b9d9d20",
+          "correct_iou_delta": [
+            0.0,
+            0.19288222774186092
+          ],
+          "identity_margin_delta": [
+            0.7619413497246766,
+            0.19288222774186092
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_ef9f814da6e89020",
+          "correct_iou_delta": [
+            0.6520361205174958,
+            -0.020487115269244405
+          ],
+          "identity_margin_delta": [
+            1.5114581554362196,
+            -0.020487115269244405
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_e066f87c2c13ab94",
+          "correct_iou_delta": [
+            -0.007580751483190508,
+            0.8451681793913508
+          ],
+          "identity_margin_delta": [
+            -0.007580751483190508,
+            0.8543878040209194
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_b07b21c7f04f565f",
+          "correct_iou_delta": [
+            0.0,
+            0.004418004058291847
+          ],
+          "identity_margin_delta": [
+            0.9474360346857938,
+            0.004418004058291847
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_b6b4ada68df19e6d",
+          "correct_iou_delta": [
+            0.8433210579176431,
+            -0.32908931922758433
+          ],
+          "identity_margin_delta": [
+            1.6952317053833421,
+            -0.32908931922758433
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_e664875a29c6ca1e",
+          "correct_iou_delta": [
+            0.029885659005533527,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.029885659005533527,
+            -0.01334340841946835
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_1faeba6a71c40b2f",
+          "correct_iou_delta": [
+            0.0,
+            0.03897248860561087
+          ],
+          "identity_margin_delta": [
+            -0.04263035930959269,
+            0.03897248860561087
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_6b2f4de6e6befefc",
+          "correct_iou_delta": [
+            0.043469994556951,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.043469994556951,
+            -0.06687118699515215
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_5ca001bb055cee89",
+          "correct_iou_delta": [
+            0.017858867757804098,
+            0.6975905924859799
+          ],
+          "identity_margin_delta": [
+            0.017858867757804098,
+            0.6975905924859799
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_c1b61a58ef4476a5",
+          "correct_iou_delta": [
+            0.919500346981263,
+            0.4870917573872473
+          ],
+          "identity_margin_delta": [
+            0.919500346981263,
+            0.4870917573872473
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_2bed1085c2cab83d",
+          "correct_iou_delta": [
+            0.07469475700263346,
+            0.1589909514802239
+          ],
+          "identity_margin_delta": [
+            0.8362261782890097,
+            0.1589909514802239
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_89b5291120448df8",
+          "correct_iou_delta": [
+            0.2536656420707326,
+            0.7406886858749122
+          ],
+          "identity_margin_delta": [
+            0.2536656420707326,
+            1.405092909102665
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_6a8a242a4bf160a8",
+          "correct_iou_delta": [
+            0.9525075109775826,
+            0.2768249380677127
+          ],
+          "identity_margin_delta": [
+            1.509277609708189,
+            0.2768249380677127
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_f6ab2a187f2c42e6",
+          "correct_iou_delta": [
+            0.07230385686669016,
+            0.6793478260869565
+          ],
+          "identity_margin_delta": [
+            0.07230385686669016,
+            1.574477050739044
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_ac04c7190000db27",
+          "correct_iou_delta": [
+            -0.058403786527188806,
+            0.7445945945945946
+          ],
+          "identity_margin_delta": [
+            -0.058403786527188806,
+            1.6565978387146272
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_cb35232aef588ad2",
+          "correct_iou_delta": [
+            0.025277646224753036,
+            0.8724396336386345
+          ],
+          "identity_margin_delta": [
+            0.025277646224753036,
+            1.715724361190438
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_18df4546166abc7e",
+          "correct_iou_delta": [
+            0.8616422947131609,
+            0.03385235450509971
+          ],
+          "identity_margin_delta": [
+            1.786847979081149,
+            0.03385235450509971
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_48529fa701b1d761",
+          "correct_iou_delta": [
+            0.814191894922313,
+            0.08029812060894082
+          ],
+          "identity_margin_delta": [
+            1.6267719205305076,
+            0.08029812060894082
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_e84dca525185fb78",
+          "correct_iou_delta": [
+            0.9303482587064676,
+            0.3365244698501346
+          ],
+          "identity_margin_delta": [
+            1.2974312203478593,
+            0.3365244698501346
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_2ea2e959688af16f",
+          "correct_iou_delta": [
+            0.0,
+            0.03253230673178131
+          ],
+          "identity_margin_delta": [
+            0.9001297016861219,
+            0.03253230673178131
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_18b4bb30bb9a0113",
+          "correct_iou_delta": [
+            0.0,
+            0.08268925398343407
+          ],
+          "identity_margin_delta": [
+            0.8534407027818448,
+            0.08268925398343407
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_3804e7a669ddae48",
+          "correct_iou_delta": [
+            -0.020271198885275177,
+            -0.17405873947220163
+          ],
+          "identity_margin_delta": [
+            -0.020271198885275177,
+            -0.17405873947220163
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_2882a85afb299b70",
+          "correct_iou_delta": [
+            0.37433155080213903,
+            0.11431623931623935
+          ],
+          "identity_margin_delta": [
+            1.2395993586431109,
+            0.11431623931623935
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_561a0d1cc8671699",
+          "correct_iou_delta": [
+            -0.024954500059487517,
+            0.6428571428571429
+          ],
+          "identity_margin_delta": [
+            -0.024954500059487517,
+            1.5437826473329432
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_c50b19c1a731738f",
+          "correct_iou_delta": [
+            0.046742718534724226,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.046742718534724226,
+            0.9134787272077226
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "cf_10bc8409db783c0b",
+          "correct_iou_delta": [
+            0.5779968591868784,
+            0.9535397029223677
+          ],
+          "identity_margin_delta": [
+            0.5783065765697665,
+            0.9535397029223677
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_598f6f7142e805f5",
+          "correct_iou_delta": [
+            0.7594663527565234,
+            0.0
+          ],
+          "identity_margin_delta": [
+            0.7594663527565234,
+            0.0
+          ],
+          "cmsa_delta": 0
+        },
+        {
+          "group_id": "acceptedpair_17ff3a8081b79a20",
+          "correct_iou_delta": [
+            0.8729905672910854,
+            -5.199050549320461e-05
+          ],
+          "identity_margin_delta": [
+            1.7770156042379688,
+            -5.199050549320461e-05
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "acceptedpair_44aeb1233b6d0930",
+          "correct_iou_delta": [
+            -0.019555574896038652,
+            0.7637634721817652
+          ],
+          "identity_margin_delta": [
+            -0.019555574896038652,
+            1.709479626531013
+          ],
+          "cmsa_delta": 1
+        },
+        {
+          "group_id": "cf_4a446f5d1cf8fca4",
+          "correct_iou_delta": [
+            0.6972150259067358,
+            0.05708644416160402
+          ],
+          "identity_margin_delta": [
+            1.5653501213546066,
+            0.05708644416160402
+          ],
+          "cmsa_delta": 1
+        }
+      ]
+    }
+  },
+  "tuning_performed": false
+}

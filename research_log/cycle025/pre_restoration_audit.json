@@ -1,0 +1,1275 @@
+{
+  "frozen_unix": 1789754229.990118,
+  "selection_sha256": "de4335243a9188cf0e2b55046668eca338fc85ec0e8a5b3c609d490f07e8503f",
+  "accepted_pair_manifest_sha256": "d6d586e9800f518eab7e2efa976cebe2406049e9e17e042fc9187e7d84fc76d6",
+  "valid_groups": 50,
+  "groups": [
+    {
+      "group_id": "cf_778571dc8020b5df",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_778571dc8020b5df",
+        "original_group_record": {
+          "counterfactual_id": "cf_778571dc8020b5df",
+          "image_member": "mining_helmet/images/val/041_00068.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/041_00068-ann3062-6d2e19296c.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_21cb479cc47007c7",
+            "pair_348ceef65e08eac8"
+          ],
+          "helmet_ids": [
+            "mining_helmet-6d2e19296c08",
+            "mining_helmet-67d2ccb8611c"
+          ],
+          "pseudo_miner_ids": [
+            "pm_9aaf1f1bed2b88d8",
+            "pm_a5c9360eb85b0f7e"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9945229063200085,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_18803244d947e2f7",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_18803244d947e2f7",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_56a9b1ea716e19d3",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_56a9b1ea716e19d3",
+        "original_group_record": {
+          "counterfactual_id": "cf_56a9b1ea716e19d3",
+          "image_member": "mining_helmet/images/train/009_00892.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/009_00892-ann2313-c1a93ca4e7.jpg",
+          "split_source": "train",
+          "pair_ids": [
+            "pair_3245d3291f51e0b1",
+            "pair_bc727c6632846fda"
+          ],
+          "helmet_ids": [
+            "mining_helmet-c1a93ca4e75d",
+            "mining_helmet-8ca0cf358a7c"
+          ],
+          "pseudo_miner_ids": [
+            "pm_4da14535248f5332",
+            "pm_dc1818bce7c1916e"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9903118671109827,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_f6120ac9bd438a95",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_f6120ac9bd438a95",
+        "original_group_record": {
+          "counterfactual_id": "cf_f6120ac9bd438a95",
+          "image_member": "mining_helmet/images/val/014_00450.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/014_00450-ann722-973d019f1b.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_da4d13d0cd0668d1",
+            "pair_f8716df3909bb9c3"
+          ],
+          "helmet_ids": [
+            "mining_helmet-973d019f1b9a",
+            "mining_helmet-08498f8af99e"
+          ],
+          "pseudo_miner_ids": [
+            "pm_5c07ae22c15c1c22",
+            "pm_72ba0d09d7c2189a"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9898377425316409,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_8809b4676725c499",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_8809b4676725c499",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_b0d459c99cdff5e6",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_b0d459c99cdff5e6",
+        "original_group_record": {
+          "counterfactual_id": "cf_b0d459c99cdff5e6",
+          "image_member": "mining_helmet/images/val/025_04788.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_04788-ann1621-cf405773ab.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_1c4d44c7e5945518",
+            "pair_b883d470609f1928"
+          ],
+          "helmet_ids": [
+            "mining_helmet-cf405773ab89",
+            "mining_helmet-cedc08fed9bd"
+          ],
+          "pseudo_miner_ids": [
+            "pm_c558a893331b75d5",
+            "pm_73000066bd3a79af"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9790391092195976,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_b914b3d4a14a9083",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_b914b3d4a14a9083",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_e0f5ae2d424569c9",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_e0f5ae2d424569c9",
+        "original_group_record": {
+          "counterfactual_id": "cf_e0f5ae2d424569c9",
+          "image_member": "mining_helmet/images/val/025_00623.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_00623-ann1402-5bd17d5a02.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_1ed44e57c0ee803f",
+            "pair_8f84d0f2c99ff26c"
+          ],
+          "helmet_ids": [
+            "mining_helmet-5bd17d5a027b",
+            "mining_helmet-8a7e51830a74"
+          ],
+          "pseudo_miner_ids": [
+            "pm_28f0f697a0b1538e",
+            "pm_fe6afafaadf42b6f"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9836657691770119,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_4fbcb91b5cbb9181",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_4fbcb91b5cbb9181",
+        "original_group_record": {
+          "counterfactual_id": "cf_4fbcb91b5cbb9181",
+          "image_member": "mining_helmet/images/val/057_00440.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/057_00440-ann3996-a371f2cf92.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_78b3683cb850a6da",
+            "pair_bcdb4a638a425a53"
+          ],
+          "helmet_ids": [
+            "mining_helmet-a371f2cf9222",
+            "mining_helmet-7b8ae7399248"
+          ],
+          "pseudo_miner_ids": [
+            "pm_b3739713b2ab40f6",
+            "pm_fcc7c692c7d8af91"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9901627607869483,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_7bda1a50e0ec27ba",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_7bda1a50e0ec27ba",
+        "original_group_record": {
+          "counterfactual_id": "cf_7bda1a50e0ec27ba",
+          "image_member": "mining_helmet/images/train/043_01064.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/043_01064-ann12334-a90428819d.jpg",
+          "split_source": "train",
+          "pair_ids": [
+            "pair_142bf936ebde6b70",
+            "pair_bfbf36f50191a789"
+          ],
+          "helmet_ids": [
+            "mining_helmet-a90428819d54",
+            "mining_helmet-246799303e0c"
+          ],
+          "pseudo_miner_ids": [
+            "pm_5b128601b88231d6",
+            "pm_78821eb0051cf0f3"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9942672663550622,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_8971bf1ad1c9a9cc",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_8971bf1ad1c9a9cc",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_2a1ba9e169a854d9",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_2a1ba9e169a854d9",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_5b51488e49b46f60",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_5b51488e49b46f60",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_ef28727ca9fdc521",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_ef28727ca9fdc521",
+        "original_group_record": {
+          "counterfactual_id": "cf_ef28727ca9fdc521",
+          "image_member": "mining_helmet/images/val/025_05391.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_05391-ann1692-d3080846c0.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_752fd5084da71f5d",
+            "pair_dec0d6a764c6cb93"
+          ],
+          "helmet_ids": [
+            "mining_helmet-d3080846c016",
+            "mining_helmet-ea69f9f1cd67"
+          ],
+          "pseudo_miner_ids": [
+            "pm_b81869c2b21ebb10",
+            "pm_1e39575ab3d84920"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9790479547059743,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_a3bb77c2403a5b68",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_a3bb77c2403a5b68",
+        "original_group_record": {
+          "counterfactual_id": "cf_a3bb77c2403a5b68",
+          "image_member": "mining_helmet/images/val/008_00734.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_00734-ann353-5712839f1e.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_6de08c418a33d5fb",
+            "pair_985793682cb15598"
+          ],
+          "helmet_ids": [
+            "mining_helmet-5712839f1eef",
+            "mining_helmet-152a4172e67c"
+          ],
+          "pseudo_miner_ids": [
+            "pm_d9bb2ef312c5e9c5",
+            "pm_363e051813c99346"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9930082986251096,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_418a3cd9712751b3",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_418a3cd9712751b3",
+        "original_group_record": {
+          "counterfactual_id": "cf_418a3cd9712751b3",
+          "image_member": "mining_helmet/images/train/053_00894.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/053_00894-ann14705-4a9ed7e14a.jpg",
+          "split_source": "train",
+          "pair_ids": [
+            "pair_061980af08b17fad",
+            "pair_f048d1a6ada5671c"
+          ],
+          "helmet_ids": [
+            "mining_helmet-4a9ed7e14ad5",
+            "mining_helmet-4200d514e9cf"
+          ],
+          "pseudo_miner_ids": [
+            "pm_0bbb489c7f81ae85",
+            "pm_42cc938b18d838ec"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9945438574927874,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_9d5b0fa45b1a8ff9",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_9d5b0fa45b1a8ff9",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_a3e566dd54fb7f38",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_a3e566dd54fb7f38",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_7742007ec8b76d62",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_7742007ec8b76d62",
+        "original_group_record": {
+          "counterfactual_id": "cf_7742007ec8b76d62",
+          "image_member": "mining_helmet/images/train/033_00529.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/033_00529-ann9927-53d5484a65.jpg",
+          "split_source": "train",
+          "pair_ids": [
+            "pair_7028dfadd0267b11",
+            "pair_84f5693e8ed71aa2"
+          ],
+          "helmet_ids": [
+            "mining_helmet-53d5484a657c",
+            "mining_helmet-580400e78c63"
+          ],
+          "pseudo_miner_ids": [
+            "pm_b4723fd329b4b92a",
+            "pm_72cad0f474d7d8c6"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9446711035070481,
+          "miner_separation": 0.8578661002792138,
+          "helmet_separation": 0.9905383070371874,
+          "non_overlap_score": 0.9242022036582006,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_a7cf884bd45defa4",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_a7cf884bd45defa4",
+        "original_group_record": {
+          "counterfactual_id": "cf_a7cf884bd45defa4",
+          "image_member": "mining_helmet/images/val/025_05815.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/025_05815-ann1725-f65d84a9a7.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_4a758ac026801dc4",
+            "pair_b89d49ce7e9e4439"
+          ],
+          "helmet_ids": [
+            "mining_helmet-f65d84a9a715",
+            "mining_helmet-192a308b8d34"
+          ],
+          "pseudo_miner_ids": [
+            "pm_3e5d3d016ce13117",
+            "pm_cf08830f63133a02"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.989295742119384,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_e92c4f4a3b9d9d20",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_e92c4f4a3b9d9d20",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_ef9f814da6e89020",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_ef9f814da6e89020",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_e066f87c2c13ab94",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_e066f87c2c13ab94",
+        "original_group_record": {
+          "counterfactual_id": "cf_e066f87c2c13ab94",
+          "image_member": "mining_helmet/images/val/045_01379.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/045_01379-ann3228-5080a8b25c.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_2f0a6c68d9a3c55c",
+            "pair_daa5001d517daee9"
+          ],
+          "helmet_ids": [
+            "mining_helmet-5080a8b25cfa",
+            "mining_helmet-c3972a51215f"
+          ],
+          "pseudo_miner_ids": [
+            "pm_bee45ebd2b0b0f65",
+            "pm_22c57380764fc7a4"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9956221105709666,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_b07b21c7f04f565f",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_b07b21c7f04f565f",
+        "original_group_record": {
+          "counterfactual_id": "cf_b07b21c7f04f565f",
+          "image_member": "mining_helmet/images/val/008_00409.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/008_00409-ann337-8996625b3e.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_61aea198d266d76e",
+            "pair_8436740f3c4e99ce"
+          ],
+          "helmet_ids": [
+            "mining_helmet-8996625b3e52",
+            "mining_helmet-2730692ad239"
+          ],
+          "pseudo_miner_ids": [
+            "pm_4729afca2c0721e8",
+            "pm_dbfe8171947e40bf"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9877140918549483,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_b6b4ada68df19e6d",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_b6b4ada68df19e6d",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_e664875a29c6ca1e",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_e664875a29c6ca1e",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_1faeba6a71c40b2f",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_1faeba6a71c40b2f",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_6b2f4de6e6befefc",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_6b2f4de6e6befefc",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_5ca001bb055cee89",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_5ca001bb055cee89",
+        "original_group_record": {
+          "counterfactual_id": "cf_5ca001bb055cee89",
+          "image_member": "mining_helmet/images/val/030_01219.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/030_01219-ann2191-0e38541845.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_8811502705d94c48",
+            "pair_962ba69c621add1b"
+          ],
+          "helmet_ids": [
+            "mining_helmet-0e38541845e8",
+            "mining_helmet-dab00e15977c"
+          ],
+          "pseudo_miner_ids": [
+            "pm_a7ae3f9f8bc96adb",
+            "pm_91502bc34b72a2e9"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9849491923094287,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_c1b61a58ef4476a5",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_c1b61a58ef4476a5",
+        "original_group_record": {
+          "counterfactual_id": "cf_c1b61a58ef4476a5",
+          "image_member": "mining_helmet/images/val/018_01340.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/018_01340-ann961-7c3e631765.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_bc30a1358377eb92",
+            "pair_c106ef56a3e59212"
+          ],
+          "helmet_ids": [
+            "mining_helmet-7c3e631765d7",
+            "mining_helmet-50f34f57c607"
+          ],
+          "pseudo_miner_ids": [
+            "pm_ff2e1f854e8a8866",
+            "pm_68c38854c1c6df03"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9946995919978965,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_2bed1085c2cab83d",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_2bed1085c2cab83d",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_89b5291120448df8",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_89b5291120448df8",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_6a8a242a4bf160a8",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_6a8a242a4bf160a8",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_f6ab2a187f2c42e6",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_f6ab2a187f2c42e6",
+        "original_group_record": {
+          "counterfactual_id": "cf_f6ab2a187f2c42e6",
+          "image_member": "mining_helmet/images/val/023_01962.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/023_01962-ann1274-49baf58629.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_373b43b1b112d765",
+            "pair_d9fdf618df58ffd5"
+          ],
+          "helmet_ids": [
+            "mining_helmet-49baf586296a",
+            "mining_helmet-c2ff07aa5618"
+          ],
+          "pseudo_miner_ids": [
+            "pm_139d2f30bbf2beca",
+            "pm_947f2229eb1fb42f"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9910537445647991,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_ac04c7190000db27",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_ac04c7190000db27",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_cb35232aef588ad2",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_cb35232aef588ad2",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_18df4546166abc7e",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_18df4546166abc7e",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_48529fa701b1d761",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_48529fa701b1d761",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_e84dca525185fb78",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_e84dca525185fb78",
+        "original_group_record": {
+          "counterfactual_id": "cf_e84dca525185fb78",
+          "image_member": "mining_helmet/images/train/046_00246.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/046_00246-ann12849-d0ce7bddbe.jpg",
+          "split_source": "train",
+          "pair_ids": [
+            "pair_84399364fa3b0597",
+            "pair_ccd7a306799aff36"
+          ],
+          "helmet_ids": [
+            "mining_helmet-d0ce7bddbec3",
+            "mining_helmet-01da3ce510a6"
+          ],
+          "pseudo_miner_ids": [
+            "pm_d064e34d4b31caeb",
+            "pm_7f91dd50c98468bb"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9903582082052871,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_2ea2e959688af16f",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_2ea2e959688af16f",
+        "original_group_record": {
+          "counterfactual_id": "cf_2ea2e959688af16f",
+          "image_member": "mining_helmet/images/val/012_02003.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/012_02003-ann675-20ab34d607.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_29a4beeeb24449cc",
+            "pair_4e875f7adc9010d2"
+          ],
+          "helmet_ids": [
+            "mining_helmet-20ab34d60733",
+            "mining_helmet-70dbf410ce4d"
+          ],
+          "pseudo_miner_ids": [
+            "pm_bf0bcbb751c48cdd",
+            "pm_08126cd627526844"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9963339443067636,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_18b4bb30bb9a0113",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_18b4bb30bb9a0113",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_3804e7a669ddae48",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_3804e7a669ddae48",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_2882a85afb299b70",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_2882a85afb299b70",
+        "original_group_record": {
+          "counterfactual_id": "cf_2882a85afb299b70",
+          "image_member": "mining_helmet/images/train/014_01327.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/014_01327-ann2991-26e064b76a.jpg",
+          "split_source": "train",
+          "pair_ids": [
+            "pair_3b07420b22a2dd05",
+            "pair_e6bdcc6fb8cae4e7"
+          ],
+          "helmet_ids": [
+            "mining_helmet-26e064b76abe",
+            "mining_helmet-ba35b4ca7da1"
+          ],
+          "pseudo_miner_ids": [
+            "pm_37425f2252b9895f",
+            "pm_1d6e27c8c6db0f8a"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9902248243823777,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_561a0d1cc8671699",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_561a0d1cc8671699",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_c50b19c1a731738f",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_c50b19c1a731738f",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_10bc8409db783c0b",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_10bc8409db783c0b",
+        "original_group_record": {
+          "counterfactual_id": "cf_10bc8409db783c0b",
+          "image_member": "mining_helmet/images/val/037_02972.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/037_02972-ann2863-b3183f5dc2.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_52397f42e408dd6e",
+            "pair_a7dc54286b6cfb73"
+          ],
+          "helmet_ids": [
+            "mining_helmet-b3183f5dc27b",
+            "mining_helmet-57a2b8bcdaa2"
+          ],
+          "pseudo_miner_ids": [
+            "pm_c20ab9d4ebf2cec4",
+            "pm_2cfd1c8a66fd8240"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9495398854705379,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_598f6f7142e805f5",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_598f6f7142e805f5",
+        "original_group_record": {
+          "counterfactual_id": "cf_598f6f7142e805f5",
+          "image_member": "mining_helmet/images/val/012_02022.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/012_02022-ann681-4763a36f57.jpg",
+          "split_source": "val",
+          "pair_ids": [
+            "pair_8768c748e0066fd4",
+            "pair_b1b9180968527e33"
+          ],
+          "helmet_ids": [
+            "mining_helmet-4763a36f5756",
+            "mining_helmet-705f05b845b4"
+          ],
+          "pseudo_miner_ids": [
+            "pm_a61668dad65ddc72",
+            "pm_1e7850bfa049fcf6"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9954841069741063,
+          "miner_separation": 1.0,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 1.0,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_17ff3a8081b79a20",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_17ff3a8081b79a20",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "acceptedpair_44aeb1233b6d0930",
+      "source": "accepted_pair_combinations",
+      "original_qc": {
+        "counterfactual_id": "acceptedpair_44aeb1233b6d0930",
+        "original_group_record": null,
+        "generation_provenance": "Two existing accepted pairs on the same source image; pair IDs and full accepted annotations preserved in frozen manifest.",
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "group_id": "cf_4a446f5d1cf8fca4",
+      "source": "episodes_counterfactual_review.jsonl",
+      "original_qc": {
+        "counterfactual_id": "cf_4a446f5d1cf8fca4",
+        "original_group_record": {
+          "counterfactual_id": "cf_4a446f5d1cf8fca4",
+          "image_member": "mining_helmet/images/train/011_01215.jpg",
+          "image_path": "/home/wjq/cmllm/data/interim/dsdpm66_mining_helmet_fullinst21618_keyed/images/mining_helmet/011_01215-ann2439-5c65e3391c.jpg",
+          "split_source": "train",
+          "pair_ids": [
+            "pair_119217933712a378",
+            "pair_bfc0839061de7557"
+          ],
+          "helmet_ids": [
+            "mining_helmet-5c65e3391cbd",
+            "mining_helmet-2524968c514f"
+          ],
+          "pseudo_miner_ids": [
+            "pm_be7618e78b7102a8",
+            "pm_a88aad6447f02d33"
+          ],
+          "same_round2_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+          "cf_score": 0.9751087689709855,
+          "miner_separation": 0.9313715503464379,
+          "helmet_separation": 1.0,
+          "non_overlap_score": 0.965685775173219,
+          "use_as_core_counterfactual": true,
+          "qc": {
+            "all_pairs_deepseek_accept": true,
+            "all_pairs_have_clean_episode": false,
+            "overlay_subjective_check": "passed_by_user_2026-05-13",
+            "final_acceptance_rule": "core_counterfactual=true AND all pair_ids accepted high AND all pair_ids have clean episodes AND overlay_passed"
+          }
+        },
+        "generation_provenance": null,
+        "all_pairs_accepted": true
+      },
+      "valid": true,
+      "reasons": []
+    }
+  ]
+}

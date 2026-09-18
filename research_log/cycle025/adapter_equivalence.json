@@ -1,0 +1,34 @@
+[
+  {
+    "source": "research_log/freeze_cycle022_assets.py",
+    "target": "research_log/freeze_cycle025_assets.py",
+    "source_lf_sha256": "cefd5b026ab2fe4a449a487b7f67566952473e6565dfc25eac59edad3888118b",
+    "target_sha256": "b7d40cb77091c314cbd67a37397043f0b3e2b70b6a2b984d5c19113bfbc6a551",
+    "only_change": "cycle022/Cycle022 path and documentation substitution",
+    "inverse_substitution_equal": true
+  },
+  {
+    "source": "research_log/score_cycle022.py",
+    "target": "research_log/score_cycle025.py",
+    "source_lf_sha256": "f9eb27d0d5edd04dd8de4a0935ae0ffcce9b7ecabec3fe821d29d1e853a5f02b",
+    "target_sha256": "0ec99bca9931f8fdec3e381c0474dd9b142405e15b0da215fcc7a50777b92f4b",
+    "only_change": "cycle022/Cycle022 path and documentation substitution",
+    "inverse_substitution_equal": true
+  },
+  {
+    "source": "research_log/audit_cycle022_weights.py",
+    "target": "research_log/audit_cycle025_weights.py",
+    "source_lf_sha256": "316721b132020c7c3209a11ecc9f2ff81ded4eef28386b2479bcea883815c9f3",
+    "target_sha256": "b4559b3f3c60dd3a7751658ea634a511e47c3f0e84591d2c65378474b13f9ea1",
+    "only_change": "cycle022/Cycle022 path and documentation substitution",
+    "inverse_substitution_equal": true
+  },
+  {
+    "source": "cmllm_remote/scripts/run_cma_confirmation.py",
+    "target": "research_log/run_cma_cycle025.py",
+    "source_lf_sha256": "418851f644afd1df7b509c51a1f628de0a938f4d3afc09b31602986937d45304",
+    "target_sha256": "5f3054ac46687f689e90d01dd858c8a0c804b74e2e93b62579c63bdc4c3b623d",
+    "only_change": "cycle022/Cycle022 path and documentation substitution",
+    "inverse_substitution_equal": true
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "recorded_unix": 1789754322.3617692,
+  "scope": "Post-run immutable weight/source audit; no inference rerun or model modification",
+  "checkpoint_revision": "095e0637fcba015a02c0686f67b848c79c3cc80b",
+  "checkpoint_shards": [
+    {
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint/model-00001-of-00003.safetensors",
+      "sha256": "490e9a7c216bb8b257fd10cf63eefff98c288ccd647ede1379105644bfc6cb2f",
+      "matches_pinned_lfs": true
+    },
+    {
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint/model-00002-of-00003.safetensors",
+      "sha256": "c38c4d9637b2b47b1f48e30033e575cf7c9ff694024f18633fa458120441b6f8",
+      "matches_pinned_lfs": true
+    },
+    {
+      "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/models/segllm_095e0637/all_data_checkpoint/model-00003-of-00003.safetensors",
+      "sha256": "5e67f5ab544a014dd6fe7c1a7982ea870b2447e926e3bb31f512ca02ae625cf7",
+      "matches_pinned_lfs": true
+    }
+  ],
+  "source_files": [
+    {
+      "path": "llava/model/segmentator/hipie_utils.py",
+      "sha256": "5b3ef11c842e53f8b4662c7551a241ff5ccf5ac3327ead16088c04414d83b296",
+      "lf_sha256": "5e87385a1060dea3830f440d6572cd1382743577f13c0019e0fa9e9146d24734",
+      "pinned_raw_sha256": "5e87385a1060dea3830f440d6572cd1382743577f13c0019e0fa9e9146d24734",
+      "raw_equal": false,
+      "lf_equal": true
+    },
+    {
+      "path": "llava/train/train.py",
+      "sha256": "ab7f887722caf22a77f86203966c320f1b7758ef73e49eba9e3f3982716bc2c1",
+      "lf_sha256": "07cd8da071b4c853673a33382f16914cd8925345f7165abeb3985eadc84ee96f",
+      "pinned_raw_sha256": "07cd8da071b4c853673a33382f16914cd8925345f7165abeb3985eadc84ee96f",
+      "raw_equal": false,
+      "lf_equal": true
+    },
+    {
+      "path": "llava/train/seg_register/register_dataset.py",
+      "sha256": "681ecd9a89f8ce4f2bb1632dab32e51f426e1df568d9f908341714d5c2ad5434",
+      "lf_sha256": "694c3f1c9e1f752c55d815259431ed946717b9bac85abdc7958a75ead7772638",
+      "pinned_raw_sha256": "694c3f1c9e1f752c55d815259431ed946717b9bac85abdc7958a75ead7772638",
+      "raw_equal": false,
+      "lf_equal": true
+    },
+    {
+      "path": "llava/model/segmentator/builder.py",
+      "sha256": "b382bbf37838f42e731c3011410bd249653153baeab563d5eb4c22dc82207106",
+      "lf_sha256": "90743886a6ed9f0b739bae568735613e0157295d7cf8dde2ae377195a02ec7dd",
+      "pinned_raw_sha256": "90743886a6ed9f0b739bae568735613e0157295d7cf8dde2ae377195a02ec7dd",
+      "raw_equal": false,
+      "lf_equal": true
+    },
+    {
+      "path": "uninext-segm/setup.py",
+      "sha256": "d5403b077ae5e634daf1c49b29f494299880b9034fd4f526936416f858d562ca",
+      "lf_sha256": "5ac96db2ee4e597c3be36ce8499b4ad8cedcddc7a2692644bad465350ac6915b",
+      "pinned_raw_sha256": "5ac96db2ee4e597c3be36ce8499b4ad8cedcddc7a2692644bad465350ac6915b",
+      "raw_equal": false,
+      "lf_equal": true
+    }
+  ]
+}

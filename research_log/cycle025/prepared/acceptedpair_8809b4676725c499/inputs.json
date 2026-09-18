@@ -1,0 +1,38 @@
+{
+  "group_id": "acceptedpair_8809b4676725c499",
+  "source_image": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_8809b4676725c499.jpg",
+  "semantic_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+  "native_prompt": "Segment the mining helmet worn by instance 1.[REF:1]",
+  "seed": 0,
+  "conditions": [
+    "clean",
+    "target15_b"
+  ],
+  "identities": [
+    {
+      "miner_mask_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_11fc102c97dcb9e6.png",
+      "miner_bbox_xyxy": [
+        140.45272827148438,
+        3.1254477500915527,
+        360.2066345214844,
+        675.7847900390625
+      ],
+      "entity_id": "pair_11fc102c97dcb9e6"
+    },
+    {
+      "miner_mask_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_b7401de0da0cca74.png",
+      "miner_bbox_xyxy": [
+        855.5848388671875,
+        88.67765808105469,
+        1146.1658935546875,
+        520.016357421875
+      ],
+      "entity_id": "pair_b7401de0da0cca74"
+    }
+  ],
+  "input_asset_hashes": {
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_8809b4676725c499.jpg": "77b128f8dc45354d904ed427205eec3bb008c2bd12f512e614c1bd8c62ad5523",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_11fc102c97dcb9e6.png": "03a4909cfc4b496781b0ca85f9a703488734100f9ac30a8524d0e0f784502a21",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_b7401de0da0cca74.png": "129883a3ad9f3f8a96d9da8f9b23f6b5757d582316bc0a5b26e7fb88c3980a02"
+  }
+}

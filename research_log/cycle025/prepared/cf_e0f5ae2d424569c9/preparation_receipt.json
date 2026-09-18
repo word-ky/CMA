@@ -1,0 +1,75 @@
+{
+  "status": "COMMON_INPUTS_PREPARED_NOT_NATIVE_WIRING",
+  "group_id": "cf_e0f5ae2d424569c9",
+  "seed": 0,
+  "group_seed": 2390621771,
+  "semantic_query": "Based on the miner mask from the previous round, segment only the mining helmet worn by that miner.",
+  "native_prompt": "Segment the mining helmet worn by instance 1.[REF:1]",
+  "original_hw": [
+    720,
+    1280
+  ],
+  "observations": [
+    {
+      "condition": "clean",
+      "image_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_e0f5ae2d424569c9/clean.png",
+      "rgb_sha256": "72435651f2be8f4f57adce1b3fc9b43fe0d7b50d59018fd3e09692b7320c9108",
+      "file_sha256": "4dc14bf338cee37885c9da723ff05c15ac38e9250fdaba95a0f648b88adba9c1",
+      "identities": [
+        {
+          "miner_mask_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_1ed44e57c0ee803f.png",
+          "miner_bbox_xyxy": [
+            1041.10791015625,
+            505.3448181152344,
+            1280.0,
+            719.6452026367188
+          ],
+          "entity_id": "pair_1ed44e57c0ee803f",
+          "miner_mask_sha256": "15082989fcafee090712d114f5b6bf0f83abb0e46f2a6ff84083bdb057e8132e"
+        },
+        {
+          "miner_mask_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_8f84d0f2c99ff26c.png",
+          "miner_bbox_xyxy": [
+            0.0,
+            241.11392211914062,
+            175.28485107421875,
+            688.24267578125
+          ],
+          "entity_id": "pair_8f84d0f2c99ff26c",
+          "miner_mask_sha256": "2369dc429335835bc856b6d6cfba0db6d035d49a560dcfb5df295a9f1ffbafc2"
+        }
+      ]
+    },
+    {
+      "condition": "target15_b",
+      "image_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_e0f5ae2d424569c9/target15_b.png",
+      "rgb_sha256": "ef1a583c373a418fcb3025e018056dc5ef391bc419bbc94b5c8ffe2d4505b63a",
+      "file_sha256": "919b51d19520cb498f8cc67b2899358a4532058608bafaa7bd068175b2929741",
+      "identities": [
+        {
+          "miner_mask_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_1ed44e57c0ee803f.png",
+          "miner_bbox_xyxy": [
+            1041.10791015625,
+            505.3448181152344,
+            1280.0,
+            719.6452026367188
+          ],
+          "entity_id": "pair_1ed44e57c0ee803f",
+          "miner_mask_sha256": "15082989fcafee090712d114f5b6bf0f83abb0e46f2a6ff84083bdb057e8132e"
+        },
+        {
+          "miner_mask_path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_8f84d0f2c99ff26c.png",
+          "miner_bbox_xyxy": [
+            0.0,
+            241.11392211914062,
+            175.28485107421875,
+            688.24267578125
+          ],
+          "entity_id": "pair_8f84d0f2c99ff26c",
+          "miner_mask_sha256": "2369dc429335835bc856b6d6cfba0db6d035d49a560dcfb5df295a9f1ffbafc2"
+        }
+      ]
+    }
+  ],
+  "note": "Each A/B pair references one identical image file; supplied geometry is shared across conditions. Native crop/CLIP/bbox/index receipts still required."
+}

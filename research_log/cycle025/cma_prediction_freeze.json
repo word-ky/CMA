@@ -1,0 +1,1679 @@
+{
+  "started_unix": 1789754353.7446544,
+  "frozen_unix": 1789754448.7782187,
+  "groups": 50,
+  "group_forward_count": 100,
+  "identity_predictions": 200,
+  "trials": [
+    {
+      "group_id": "cf_778571dc8020b5df",
+      "condition": "clean",
+      "entity_id": "pair_21cb479cc47007c7",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_778571dc8020b5df_clean_pair_21cb479cc47007c7.npy",
+      "prediction_sha256": "06d09a86ab7a83c286f6c4d2c2c34e5b72bd8fc397590bfcfe3d2a2b6c8c13f4"
+    },
+    {
+      "group_id": "cf_778571dc8020b5df",
+      "condition": "clean",
+      "entity_id": "pair_348ceef65e08eac8",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_778571dc8020b5df_clean_pair_348ceef65e08eac8.npy",
+      "prediction_sha256": "7cdf67df319e8b56b3bda5e2730d85f2b0dad7b024e837585c18ab832fe90d4b"
+    },
+    {
+      "group_id": "acceptedpair_18803244d947e2f7",
+      "condition": "clean",
+      "entity_id": "pair_20e0ca585eed85e3",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18803244d947e2f7_clean_pair_20e0ca585eed85e3.npy",
+      "prediction_sha256": "2e9ca29ca8f99a0e72ca003532bda4df758f5419a2e2904586df9861a2497740"
+    },
+    {
+      "group_id": "acceptedpair_18803244d947e2f7",
+      "condition": "clean",
+      "entity_id": "pair_60e47b5cca7db0ac",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18803244d947e2f7_clean_pair_60e47b5cca7db0ac.npy",
+      "prediction_sha256": "8d7468552adcccb2f7047f157583ed439b120b6af03203f5c1738b5f630c24a2"
+    },
+    {
+      "group_id": "cf_56a9b1ea716e19d3",
+      "condition": "clean",
+      "entity_id": "pair_3245d3291f51e0b1",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_56a9b1ea716e19d3_clean_pair_3245d3291f51e0b1.npy",
+      "prediction_sha256": "1b6a24ae8fc38ce7d5ca06b5d0cdb65ff35cf1eae6abf27c5e7f7f6258199f80"
+    },
+    {
+      "group_id": "cf_56a9b1ea716e19d3",
+      "condition": "clean",
+      "entity_id": "pair_bc727c6632846fda",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_56a9b1ea716e19d3_clean_pair_bc727c6632846fda.npy",
+      "prediction_sha256": "4eb7edb21ace3865b350430f4979b827f48cd38ea0a7638a4be5ceea4dfcde30"
+    },
+    {
+      "group_id": "cf_f6120ac9bd438a95",
+      "condition": "clean",
+      "entity_id": "pair_da4d13d0cd0668d1",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_f6120ac9bd438a95_clean_pair_da4d13d0cd0668d1.npy",
+      "prediction_sha256": "6054da0220bcdbea0baa3887fe95baca32a2f54c2f0e012f2de11fa8a82c6ea4"
+    },
+    {
+      "group_id": "cf_f6120ac9bd438a95",
+      "condition": "clean",
+      "entity_id": "pair_f8716df3909bb9c3",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_f6120ac9bd438a95_clean_pair_f8716df3909bb9c3.npy",
+      "prediction_sha256": "9eeba63000e30d46d2eb94884f679732836fd9574999380fee970ca2ae346358"
+    },
+    {
+      "group_id": "acceptedpair_8809b4676725c499",
+      "condition": "clean",
+      "entity_id": "pair_11fc102c97dcb9e6",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_8809b4676725c499_clean_pair_11fc102c97dcb9e6.npy",
+      "prediction_sha256": "dd6fc7c7fabc5cdbd8b6dbf8116924f068eb5b8987bc43babddced104b31d3f1"
+    },
+    {
+      "group_id": "acceptedpair_8809b4676725c499",
+      "condition": "clean",
+      "entity_id": "pair_b7401de0da0cca74",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_8809b4676725c499_clean_pair_b7401de0da0cca74.npy",
+      "prediction_sha256": "f357ebe424bb70458c4057b4518ce264aaec34d2c1cf45aa04dfbe5ca393c771"
+    },
+    {
+      "group_id": "cf_b0d459c99cdff5e6",
+      "condition": "clean",
+      "entity_id": "pair_1c4d44c7e5945518",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_b0d459c99cdff5e6_clean_pair_1c4d44c7e5945518.npy",
+      "prediction_sha256": "76650a251e3ea07a4ea9c4e82df0c4c88bd8e6027be792c2b316d511f1b7ad38"
+    },
+    {
+      "group_id": "cf_b0d459c99cdff5e6",
+      "condition": "clean",
+      "entity_id": "pair_b883d470609f1928",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_b0d459c99cdff5e6_clean_pair_b883d470609f1928.npy",
+      "prediction_sha256": "c6181c85fc8063a842c33f3fe7fa025cd17519df1ddc42908df8b301fcf86fa2"
+    },
+    {
+      "group_id": "acceptedpair_b914b3d4a14a9083",
+      "condition": "clean",
+      "entity_id": "pair_1b3903f27c3c4b20",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_b914b3d4a14a9083_clean_pair_1b3903f27c3c4b20.npy",
+      "prediction_sha256": "3bc801e7396274f3fb849ca5d13f04c71f312a5895e6c24fc084ae20b22e9154"
+    },
+    {
+      "group_id": "acceptedpair_b914b3d4a14a9083",
+      "condition": "clean",
+      "entity_id": "pair_892a74d8f93ae161",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_b914b3d4a14a9083_clean_pair_892a74d8f93ae161.npy",
+      "prediction_sha256": "cb1064675cf7812f0a02a61de0b1bfdc2f7929b1de72ec68a0f0b71fb68c4507"
+    },
+    {
+      "group_id": "cf_e0f5ae2d424569c9",
+      "condition": "clean",
+      "entity_id": "pair_1ed44e57c0ee803f",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_e0f5ae2d424569c9_clean_pair_1ed44e57c0ee803f.npy",
+      "prediction_sha256": "0b4758209dbf425dd508e63079f3be4248a1f5cd6bafa536c25ba2b35c55f062"
+    },
+    {
+      "group_id": "cf_e0f5ae2d424569c9",
+      "condition": "clean",
+      "entity_id": "pair_8f84d0f2c99ff26c",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_e0f5ae2d424569c9_clean_pair_8f84d0f2c99ff26c.npy",
+      "prediction_sha256": "ef6705fdd1e32878340fbfb498438071d236bb2760fa8915cc7f22830bf54ecd"
+    },
+    {
+      "group_id": "cf_4fbcb91b5cbb9181",
+      "condition": "clean",
+      "entity_id": "pair_78b3683cb850a6da",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_4fbcb91b5cbb9181_clean_pair_78b3683cb850a6da.npy",
+      "prediction_sha256": "8e39f541403f343ccb4671c765fb1818e5c94b36105cca44b6f7e7e0985c9cc9"
+    },
+    {
+      "group_id": "cf_4fbcb91b5cbb9181",
+      "condition": "clean",
+      "entity_id": "pair_bcdb4a638a425a53",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_4fbcb91b5cbb9181_clean_pair_bcdb4a638a425a53.npy",
+      "prediction_sha256": "87dc49ea9afc371fc6525a6630e407174120cfbf153a78703b37e4d5378b3eff"
+    },
+    {
+      "group_id": "cf_7bda1a50e0ec27ba",
+      "condition": "clean",
+      "entity_id": "pair_142bf936ebde6b70",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_7bda1a50e0ec27ba_clean_pair_142bf936ebde6b70.npy",
+      "prediction_sha256": "942635566f60f98a8bfdb3d20f10f06721e397312dcc5de4c834bfabdfcb1750"
+    },
+    {
+      "group_id": "cf_7bda1a50e0ec27ba",
+      "condition": "clean",
+      "entity_id": "pair_bfbf36f50191a789",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_7bda1a50e0ec27ba_clean_pair_bfbf36f50191a789.npy",
+      "prediction_sha256": "16d9d62c5237746db45529fdde281570dc298a478b76779cb08accf5ddc6c8c6"
+    },
+    {
+      "group_id": "acceptedpair_8971bf1ad1c9a9cc",
+      "condition": "clean",
+      "entity_id": "pair_ba4518e613727675",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_8971bf1ad1c9a9cc_clean_pair_ba4518e613727675.npy",
+      "prediction_sha256": "b89510b0487f98b47dad65eda8a119cf25bc7fd93c680d4b3b52da02035b89d3"
+    },
+    {
+      "group_id": "acceptedpair_8971bf1ad1c9a9cc",
+      "condition": "clean",
+      "entity_id": "pair_ee6a627f7f38f62d",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_8971bf1ad1c9a9cc_clean_pair_ee6a627f7f38f62d.npy",
+      "prediction_sha256": "a17f9d900b7eea15a937d7848ddecc9534972a6a11d7b9bd58fbce97fafc1aa7"
+    },
+    {
+      "group_id": "acceptedpair_2a1ba9e169a854d9",
+      "condition": "clean",
+      "entity_id": "pair_52f7343aae1e8978",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_2a1ba9e169a854d9_clean_pair_52f7343aae1e8978.npy",
+      "prediction_sha256": "a845211b94db4b8e34e54ca4c1eaf988582a3c06e73006184f5dcbb0af80d29d"
+    },
+    {
+      "group_id": "acceptedpair_2a1ba9e169a854d9",
+      "condition": "clean",
+      "entity_id": "pair_a7bdec01268c5cd7",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_2a1ba9e169a854d9_clean_pair_a7bdec01268c5cd7.npy",
+      "prediction_sha256": "481351a5f45609700dd5535861f90ee630d51ae61c477cfa0a237e93b61ae6a9"
+    },
+    {
+      "group_id": "acceptedpair_5b51488e49b46f60",
+      "condition": "clean",
+      "entity_id": "pair_0cb7753221ef341d",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_5b51488e49b46f60_clean_pair_0cb7753221ef341d.npy",
+      "prediction_sha256": "cc56d6ab88a08e2eb999b8e49d3da2c446c8261ab2d1973841975637f8eb7ffc"
+    },
+    {
+      "group_id": "acceptedpair_5b51488e49b46f60",
+      "condition": "clean",
+      "entity_id": "pair_3913c7727f61b3bc",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_5b51488e49b46f60_clean_pair_3913c7727f61b3bc.npy",
+      "prediction_sha256": "ec6f561971c67cdb93b26e5025376a11b34af07ef1b8ec65ac147a84404aedf6"
+    },
+    {
+      "group_id": "cf_ef28727ca9fdc521",
+      "condition": "clean",
+      "entity_id": "pair_752fd5084da71f5d",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_ef28727ca9fdc521_clean_pair_752fd5084da71f5d.npy",
+      "prediction_sha256": "19e2620ab6415a40e6362a147a791bafa2b94e3ac46e43469106c96cd91c4117"
+    },
+    {
+      "group_id": "cf_ef28727ca9fdc521",
+      "condition": "clean",
+      "entity_id": "pair_dec0d6a764c6cb93",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_ef28727ca9fdc521_clean_pair_dec0d6a764c6cb93.npy",
+      "prediction_sha256": "7ca612c9cc008c04acf2560f3da3d6e5501faf234372a07e37461eecaddd54a0"
+    },
+    {
+      "group_id": "cf_a3bb77c2403a5b68",
+      "condition": "clean",
+      "entity_id": "pair_6de08c418a33d5fb",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_a3bb77c2403a5b68_clean_pair_6de08c418a33d5fb.npy",
+      "prediction_sha256": "c88b5b99b01d46acb175bd689b32f85676661e68a93c0fe2669a23f8231b821c"
+    },
+    {
+      "group_id": "cf_a3bb77c2403a5b68",
+      "condition": "clean",
+      "entity_id": "pair_985793682cb15598",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_a3bb77c2403a5b68_clean_pair_985793682cb15598.npy",
+      "prediction_sha256": "e44a09eafcb9796330ad1b444fa7fd1de3c3b0740141aa402782db864fae3dc4"
+    },
+    {
+      "group_id": "cf_418a3cd9712751b3",
+      "condition": "clean",
+      "entity_id": "pair_061980af08b17fad",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_418a3cd9712751b3_clean_pair_061980af08b17fad.npy",
+      "prediction_sha256": "25b250708de260aad4a83a78126e45aeec852cd0186df6323f2891eca66920c4"
+    },
+    {
+      "group_id": "cf_418a3cd9712751b3",
+      "condition": "clean",
+      "entity_id": "pair_f048d1a6ada5671c",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_418a3cd9712751b3_clean_pair_f048d1a6ada5671c.npy",
+      "prediction_sha256": "eedfd3550be2b9b7e0eb8d34e10976cd828c84765e70b9976803c33e5b99e8f0"
+    },
+    {
+      "group_id": "acceptedpair_9d5b0fa45b1a8ff9",
+      "condition": "clean",
+      "entity_id": "pair_1f9b556d5861e7cb",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_9d5b0fa45b1a8ff9_clean_pair_1f9b556d5861e7cb.npy",
+      "prediction_sha256": "e6b2216dab83cc6a2f638e436c3345fed488d7ff9fcd81ce2fc6ddf721353c13"
+    },
+    {
+      "group_id": "acceptedpair_9d5b0fa45b1a8ff9",
+      "condition": "clean",
+      "entity_id": "pair_79b775d2c230d342",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_9d5b0fa45b1a8ff9_clean_pair_79b775d2c230d342.npy",
+      "prediction_sha256": "37781b95dfc9145c0b058e03be3e216b2a5e3c1a88cf625ef0c9619d61acdc7c"
+    },
+    {
+      "group_id": "acceptedpair_a3e566dd54fb7f38",
+      "condition": "clean",
+      "entity_id": "pair_6f21b317274cbd29",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_a3e566dd54fb7f38_clean_pair_6f21b317274cbd29.npy",
+      "prediction_sha256": "7bfd81482c4bff88f3986bc451e5cf7bd1bb9b48c00fc2bab5e2bc618a3b0a61"
+    },
+    {
+      "group_id": "acceptedpair_a3e566dd54fb7f38",
+      "condition": "clean",
+      "entity_id": "pair_f45b0c9a2695e417",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_a3e566dd54fb7f38_clean_pair_f45b0c9a2695e417.npy",
+      "prediction_sha256": "736781e08c8bbc04b4f12a8be202f4c2bf27b26c498268eca6e48bdcd47cfdeb"
+    },
+    {
+      "group_id": "cf_7742007ec8b76d62",
+      "condition": "clean",
+      "entity_id": "pair_7028dfadd0267b11",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_7742007ec8b76d62_clean_pair_7028dfadd0267b11.npy",
+      "prediction_sha256": "059473a0b959440dc2d4771c1235de7b10e883d60ec159f7a4ba1088b0915fae"
+    },
+    {
+      "group_id": "cf_7742007ec8b76d62",
+      "condition": "clean",
+      "entity_id": "pair_84f5693e8ed71aa2",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_7742007ec8b76d62_clean_pair_84f5693e8ed71aa2.npy",
+      "prediction_sha256": "d63f9eadeb098e58dd61ff45d3917ad2f7ca7884ea56e62fb5af09e193e332b7"
+    },
+    {
+      "group_id": "cf_a7cf884bd45defa4",
+      "condition": "clean",
+      "entity_id": "pair_4a758ac026801dc4",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_a7cf884bd45defa4_clean_pair_4a758ac026801dc4.npy",
+      "prediction_sha256": "a6f9b88a4738170cc61b2ccdb38860efe9dd24bd39861f28b651f61d2584e4f2"
+    },
+    {
+      "group_id": "cf_a7cf884bd45defa4",
+      "condition": "clean",
+      "entity_id": "pair_b89d49ce7e9e4439",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_a7cf884bd45defa4_clean_pair_b89d49ce7e9e4439.npy",
+      "prediction_sha256": "f0c9994ff545e110f7efc89f03a15e0b6435cfad21a00615af9a06e70195d344"
+    },
+    {
+      "group_id": "acceptedpair_e92c4f4a3b9d9d20",
+      "condition": "clean",
+      "entity_id": "pair_0a33423ebd25e3dd",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_e92c4f4a3b9d9d20_clean_pair_0a33423ebd25e3dd.npy",
+      "prediction_sha256": "d3005c7a5736f2b68831778b707d39585d8f99dc829b6c1dd32c17f4ab4526a2"
+    },
+    {
+      "group_id": "acceptedpair_e92c4f4a3b9d9d20",
+      "condition": "clean",
+      "entity_id": "pair_6aeabe195d56df11",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_e92c4f4a3b9d9d20_clean_pair_6aeabe195d56df11.npy",
+      "prediction_sha256": "9f1bcd12af4b2321551f33e3ed2b8530a6374ebdc3fbebcbfad94718255db5ec"
+    },
+    {
+      "group_id": "acceptedpair_ef9f814da6e89020",
+      "condition": "clean",
+      "entity_id": "pair_48838638e7d108f1",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_ef9f814da6e89020_clean_pair_48838638e7d108f1.npy",
+      "prediction_sha256": "e1c754f7d2ec96411805278e1842145815c6f5f47c9a6ac5f46d9c1e5f677b80"
+    },
+    {
+      "group_id": "acceptedpair_ef9f814da6e89020",
+      "condition": "clean",
+      "entity_id": "pair_bc6c24a08081a30f",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_ef9f814da6e89020_clean_pair_bc6c24a08081a30f.npy",
+      "prediction_sha256": "8a00f5d5bdbcd06a3e228112dc158060963c70daf382662dd99382f166a7bdfc"
+    },
+    {
+      "group_id": "cf_e066f87c2c13ab94",
+      "condition": "clean",
+      "entity_id": "pair_2f0a6c68d9a3c55c",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_e066f87c2c13ab94_clean_pair_2f0a6c68d9a3c55c.npy",
+      "prediction_sha256": "f7548d8989a6a1d785ef9765f89de30c8e88d53e347665ff3ce7d43d5c426e21"
+    },
+    {
+      "group_id": "cf_e066f87c2c13ab94",
+      "condition": "clean",
+      "entity_id": "pair_daa5001d517daee9",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_e066f87c2c13ab94_clean_pair_daa5001d517daee9.npy",
+      "prediction_sha256": "4e8ee8c5e1a9b08be8c0091012df9627ad7e473b626549519948837ea8c5d792"
+    },
+    {
+      "group_id": "cf_b07b21c7f04f565f",
+      "condition": "clean",
+      "entity_id": "pair_61aea198d266d76e",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_b07b21c7f04f565f_clean_pair_61aea198d266d76e.npy",
+      "prediction_sha256": "98188c201ca4a29a71d2b966ab5d91ceeb32c893b1e1e67703f04b28f371e94b"
+    },
+    {
+      "group_id": "cf_b07b21c7f04f565f",
+      "condition": "clean",
+      "entity_id": "pair_8436740f3c4e99ce",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_b07b21c7f04f565f_clean_pair_8436740f3c4e99ce.npy",
+      "prediction_sha256": "38eda9e4b03644b9de4ac711875be8caaf5215abe174577fcf4eb04ca2916a26"
+    },
+    {
+      "group_id": "acceptedpair_b6b4ada68df19e6d",
+      "condition": "clean",
+      "entity_id": "pair_1444b07c9a4f92cd",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_b6b4ada68df19e6d_clean_pair_1444b07c9a4f92cd.npy",
+      "prediction_sha256": "e5921a6700b32720594e0b0f52ffbb523244200dd66082de170c0dffed2deeee"
+    },
+    {
+      "group_id": "acceptedpair_b6b4ada68df19e6d",
+      "condition": "clean",
+      "entity_id": "pair_89665f9f3014b686",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_b6b4ada68df19e6d_clean_pair_89665f9f3014b686.npy",
+      "prediction_sha256": "d090a0b9130f35e6e75191346021c683016a69bb85133e968814147dee51da7e"
+    },
+    {
+      "group_id": "acceptedpair_e664875a29c6ca1e",
+      "condition": "clean",
+      "entity_id": "pair_57e92eb7c220c677",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_e664875a29c6ca1e_clean_pair_57e92eb7c220c677.npy",
+      "prediction_sha256": "af3b72d19871715e7b9bc751a28c56e7cd26b983151621a1f278b110d2c7a3dc"
+    },
+    {
+      "group_id": "acceptedpair_e664875a29c6ca1e",
+      "condition": "clean",
+      "entity_id": "pair_8ff0ec7d2f565630",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_e664875a29c6ca1e_clean_pair_8ff0ec7d2f565630.npy",
+      "prediction_sha256": "294aaafd94210595feabe0bab7a9058c3b1e58c1e81298944dc5072f79f5f8f7"
+    },
+    {
+      "group_id": "acceptedpair_1faeba6a71c40b2f",
+      "condition": "clean",
+      "entity_id": "pair_08a0b2f55c23bb9c",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_1faeba6a71c40b2f_clean_pair_08a0b2f55c23bb9c.npy",
+      "prediction_sha256": "8470efcf1bf6436d65ed4a0eb7db6df9870930d74f93bb52092ab3ec02c2529d"
+    },
+    {
+      "group_id": "acceptedpair_1faeba6a71c40b2f",
+      "condition": "clean",
+      "entity_id": "pair_70cc3046b23f63b9",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_1faeba6a71c40b2f_clean_pair_70cc3046b23f63b9.npy",
+      "prediction_sha256": "9d4f77b8e3ecb918a6e0e295d4085dac75c819e20a5af7d3e54cd229df468cae"
+    },
+    {
+      "group_id": "acceptedpair_6b2f4de6e6befefc",
+      "condition": "clean",
+      "entity_id": "pair_2ffa558d03f42a81",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_6b2f4de6e6befefc_clean_pair_2ffa558d03f42a81.npy",
+      "prediction_sha256": "99933cc0cfcb6d2c336499c862be1390e7e51a0535c2a0d57a52b19fb9d69cce"
+    },
+    {
+      "group_id": "acceptedpair_6b2f4de6e6befefc",
+      "condition": "clean",
+      "entity_id": "pair_883720f1268e0c3b",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_6b2f4de6e6befefc_clean_pair_883720f1268e0c3b.npy",
+      "prediction_sha256": "5529c8adc2fcdb2ee3885e0bb941ddc4478fff9f2eaee53e74e7c74bf4b15d25"
+    },
+    {
+      "group_id": "cf_5ca001bb055cee89",
+      "condition": "clean",
+      "entity_id": "pair_8811502705d94c48",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_5ca001bb055cee89_clean_pair_8811502705d94c48.npy",
+      "prediction_sha256": "9eebe600c7852ebeb88b69dffa9510c7471eb38d2ed5791667efb18c28bb76e0"
+    },
+    {
+      "group_id": "cf_5ca001bb055cee89",
+      "condition": "clean",
+      "entity_id": "pair_962ba69c621add1b",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_5ca001bb055cee89_clean_pair_962ba69c621add1b.npy",
+      "prediction_sha256": "b12b2f158816347986f94da9bf543f87fde680ede49d6d72910699e61f6512a9"
+    },
+    {
+      "group_id": "cf_c1b61a58ef4476a5",
+      "condition": "clean",
+      "entity_id": "pair_bc30a1358377eb92",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_c1b61a58ef4476a5_clean_pair_bc30a1358377eb92.npy",
+      "prediction_sha256": "07e11f7a20cc7d98bda31c311c60c76640048ca8546af58f8fbe0eb2d36e29b7"
+    },
+    {
+      "group_id": "cf_c1b61a58ef4476a5",
+      "condition": "clean",
+      "entity_id": "pair_c106ef56a3e59212",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_c1b61a58ef4476a5_clean_pair_c106ef56a3e59212.npy",
+      "prediction_sha256": "cbff0388dcc26bbbf0be6e1b669e8cb9f12bb2d7976d50bfc8ba3bea36ce370e"
+    },
+    {
+      "group_id": "acceptedpair_2bed1085c2cab83d",
+      "condition": "clean",
+      "entity_id": "pair_a64742b38cfbab82",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_2bed1085c2cab83d_clean_pair_a64742b38cfbab82.npy",
+      "prediction_sha256": "efd51cc481c246bb96941a9d2121fb51c59687747f56459be0922210bb5adfdd"
+    },
+    {
+      "group_id": "acceptedpair_2bed1085c2cab83d",
+      "condition": "clean",
+      "entity_id": "pair_df6f169574cf8bbd",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_2bed1085c2cab83d_clean_pair_df6f169574cf8bbd.npy",
+      "prediction_sha256": "b163a7d409c795754827b3a8078eeb435eb91d6957c4b9cd331ea238a4acc2e3"
+    },
+    {
+      "group_id": "acceptedpair_89b5291120448df8",
+      "condition": "clean",
+      "entity_id": "pair_b7d9b42f3e4c77f3",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_89b5291120448df8_clean_pair_b7d9b42f3e4c77f3.npy",
+      "prediction_sha256": "c7f12c0d34b1bca1b9c77dcfdf9dbe03c07e0c975d00123f0d006ed3fa248e3a"
+    },
+    {
+      "group_id": "acceptedpair_89b5291120448df8",
+      "condition": "clean",
+      "entity_id": "pair_e8c3cb54d48222fa",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_89b5291120448df8_clean_pair_e8c3cb54d48222fa.npy",
+      "prediction_sha256": "16900e9cd97adc613211e04604c098f153957c15e4fe98ae4bb368fda24b1e0f"
+    },
+    {
+      "group_id": "acceptedpair_6a8a242a4bf160a8",
+      "condition": "clean",
+      "entity_id": "pair_0d5591fc1ee09975",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_6a8a242a4bf160a8_clean_pair_0d5591fc1ee09975.npy",
+      "prediction_sha256": "024344bb06f0697e6809cd54eb24a37d24c02147b1039e4406958e1fbb953fab"
+    },
+    {
+      "group_id": "acceptedpair_6a8a242a4bf160a8",
+      "condition": "clean",
+      "entity_id": "pair_96260e7471f10a39",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_6a8a242a4bf160a8_clean_pair_96260e7471f10a39.npy",
+      "prediction_sha256": "eb64955fdc0645837a0995b5d5a304623edfaaa94a68b0f128b9d75327006271"
+    },
+    {
+      "group_id": "cf_f6ab2a187f2c42e6",
+      "condition": "clean",
+      "entity_id": "pair_373b43b1b112d765",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_f6ab2a187f2c42e6_clean_pair_373b43b1b112d765.npy",
+      "prediction_sha256": "d8c764f63ea53c51fbd78d78d038958acf37185ed5035819e290e782a2129620"
+    },
+    {
+      "group_id": "cf_f6ab2a187f2c42e6",
+      "condition": "clean",
+      "entity_id": "pair_d9fdf618df58ffd5",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_f6ab2a187f2c42e6_clean_pair_d9fdf618df58ffd5.npy",
+      "prediction_sha256": "5792ed80b1d0b3c19f46c8b221c07e7d2db02cccc7696a21eaec5268d5a8d86a"
+    },
+    {
+      "group_id": "acceptedpair_ac04c7190000db27",
+      "condition": "clean",
+      "entity_id": "pair_6bd1ea5308884b24",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_ac04c7190000db27_clean_pair_6bd1ea5308884b24.npy",
+      "prediction_sha256": "579ad3bcb55931f7364a83fb6e8936e7866687574e4e74f4e31c23429e83f224"
+    },
+    {
+      "group_id": "acceptedpair_ac04c7190000db27",
+      "condition": "clean",
+      "entity_id": "pair_ec5c4514b8aa01d9",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_ac04c7190000db27_clean_pair_ec5c4514b8aa01d9.npy",
+      "prediction_sha256": "a22e0ec06351b1603f32b90428d7ac2a6214de84092556e70e97ee8dda7167f6"
+    },
+    {
+      "group_id": "acceptedpair_cb35232aef588ad2",
+      "condition": "clean",
+      "entity_id": "pair_254f9940cdb83d3c",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_cb35232aef588ad2_clean_pair_254f9940cdb83d3c.npy",
+      "prediction_sha256": "a8b57d306fe08d9f4af1e05276eda0da4b3ef084229b1309a6ccfa10f19bc822"
+    },
+    {
+      "group_id": "acceptedpair_cb35232aef588ad2",
+      "condition": "clean",
+      "entity_id": "pair_8381ac36785619df",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_cb35232aef588ad2_clean_pair_8381ac36785619df.npy",
+      "prediction_sha256": "07e5e0a8e22897db8b0ff28b1b4bb3d673a763040cfb4b4c22a6d974071f513a"
+    },
+    {
+      "group_id": "acceptedpair_18df4546166abc7e",
+      "condition": "clean",
+      "entity_id": "pair_47dc61f33a4ca4b6",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18df4546166abc7e_clean_pair_47dc61f33a4ca4b6.npy",
+      "prediction_sha256": "e88d5c1859e3ee218c4a38d0238a8726ef442a21919e318a0b27dd26d9d1f6a5"
+    },
+    {
+      "group_id": "acceptedpair_18df4546166abc7e",
+      "condition": "clean",
+      "entity_id": "pair_98c2e734418dde38",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18df4546166abc7e_clean_pair_98c2e734418dde38.npy",
+      "prediction_sha256": "9f7577374703423fffd74880078ed1880396c21bc668cefde9d6f8aa00e2de78"
+    },
+    {
+      "group_id": "acceptedpair_48529fa701b1d761",
+      "condition": "clean",
+      "entity_id": "pair_1e2ff9477e5c8ac1",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_48529fa701b1d761_clean_pair_1e2ff9477e5c8ac1.npy",
+      "prediction_sha256": "61690f17327deffdf82181f7756124f4b59bc4a5af198a136da175b2bd72ff89"
+    },
+    {
+      "group_id": "acceptedpair_48529fa701b1d761",
+      "condition": "clean",
+      "entity_id": "pair_a2dfaceea88df475",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_48529fa701b1d761_clean_pair_a2dfaceea88df475.npy",
+      "prediction_sha256": "f60bde31727bd695ca84d332cac671e555de138e5aaa00c5ded53686c83c9a67"
+    },
+    {
+      "group_id": "cf_e84dca525185fb78",
+      "condition": "clean",
+      "entity_id": "pair_84399364fa3b0597",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_e84dca525185fb78_clean_pair_84399364fa3b0597.npy",
+      "prediction_sha256": "2db77f6016eb3b9b75ee89de5775563268b9fc3b99443cf2db8fcb05c761ec3b"
+    },
+    {
+      "group_id": "cf_e84dca525185fb78",
+      "condition": "clean",
+      "entity_id": "pair_ccd7a306799aff36",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_e84dca525185fb78_clean_pair_ccd7a306799aff36.npy",
+      "prediction_sha256": "65ee8171e3bac254eff024ee7ddf2d088fa5b8ba1e1001e05e252704b7b1bf1c"
+    },
+    {
+      "group_id": "cf_2ea2e959688af16f",
+      "condition": "clean",
+      "entity_id": "pair_29a4beeeb24449cc",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_2ea2e959688af16f_clean_pair_29a4beeeb24449cc.npy",
+      "prediction_sha256": "eeaddd9c91bb9747ed6a47c8d378844bbdeaa327e39c2cd8626cdc64dd2f2246"
+    },
+    {
+      "group_id": "cf_2ea2e959688af16f",
+      "condition": "clean",
+      "entity_id": "pair_4e875f7adc9010d2",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_2ea2e959688af16f_clean_pair_4e875f7adc9010d2.npy",
+      "prediction_sha256": "fad359cb1369ebd243f82eec5f2182e2c18119a8d44ea3640577372c99fdb91e"
+    },
+    {
+      "group_id": "acceptedpair_18b4bb30bb9a0113",
+      "condition": "clean",
+      "entity_id": "pair_5264720a1672fc51",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18b4bb30bb9a0113_clean_pair_5264720a1672fc51.npy",
+      "prediction_sha256": "718a22990863e3202fb31ce549bb903b5729b81a44d61d3cc78a72435b61dbf3"
+    },
+    {
+      "group_id": "acceptedpair_18b4bb30bb9a0113",
+      "condition": "clean",
+      "entity_id": "pair_a50a80da04403722",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18b4bb30bb9a0113_clean_pair_a50a80da04403722.npy",
+      "prediction_sha256": "88cec6b67d86317380ee09fd4a8a724a107f4dbed1c4597811638d81e31437b6"
+    },
+    {
+      "group_id": "acceptedpair_3804e7a669ddae48",
+      "condition": "clean",
+      "entity_id": "pair_3c631bd7ef063cde",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_3804e7a669ddae48_clean_pair_3c631bd7ef063cde.npy",
+      "prediction_sha256": "fe76a328532d5eece47e193bb072c6fe6e16a2fe52cd816299f0808de8763ed5"
+    },
+    {
+      "group_id": "acceptedpair_3804e7a669ddae48",
+      "condition": "clean",
+      "entity_id": "pair_848d009a85c938b2",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_3804e7a669ddae48_clean_pair_848d009a85c938b2.npy",
+      "prediction_sha256": "14b35f3bf75493571e60067921e05c27f4a322761a5e0454c113a988175fe452"
+    },
+    {
+      "group_id": "cf_2882a85afb299b70",
+      "condition": "clean",
+      "entity_id": "pair_3b07420b22a2dd05",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_2882a85afb299b70_clean_pair_3b07420b22a2dd05.npy",
+      "prediction_sha256": "e5c97a7ab797c321fb634f11b97231399b9282770c387c63f04a2bfb68831c33"
+    },
+    {
+      "group_id": "cf_2882a85afb299b70",
+      "condition": "clean",
+      "entity_id": "pair_e6bdcc6fb8cae4e7",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_2882a85afb299b70_clean_pair_e6bdcc6fb8cae4e7.npy",
+      "prediction_sha256": "05ed9987635a5bc1a167708ae7ac8ace59a9ba91ed90ec8d698ede921f352045"
+    },
+    {
+      "group_id": "acceptedpair_561a0d1cc8671699",
+      "condition": "clean",
+      "entity_id": "pair_82fb0ad22cb3da95",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_561a0d1cc8671699_clean_pair_82fb0ad22cb3da95.npy",
+      "prediction_sha256": "5e19e3ce99951ca8d7e2f23cb008ee16ac318e1b631f8be60e88c884c1e109d0"
+    },
+    {
+      "group_id": "acceptedpair_561a0d1cc8671699",
+      "condition": "clean",
+      "entity_id": "pair_e48f1fb3b6adcb86",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_561a0d1cc8671699_clean_pair_e48f1fb3b6adcb86.npy",
+      "prediction_sha256": "4afd99654de0244e08d10f1f7e5de75e199e6a68263aae1b391f9219ed828a64"
+    },
+    {
+      "group_id": "acceptedpair_c50b19c1a731738f",
+      "condition": "clean",
+      "entity_id": "pair_5719816447047436",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_c50b19c1a731738f_clean_pair_5719816447047436.npy",
+      "prediction_sha256": "fc91a65298e147edf1309b56d67c61dbcf2ca0f74d375d5b4822be5409b2eeec"
+    },
+    {
+      "group_id": "acceptedpair_c50b19c1a731738f",
+      "condition": "clean",
+      "entity_id": "pair_b9d462e806f56da5",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_c50b19c1a731738f_clean_pair_b9d462e806f56da5.npy",
+      "prediction_sha256": "a8312384daaf27e2ea26ce8cdbaa66970f741c70d87721fe09a3b24147c712c4"
+    },
+    {
+      "group_id": "cf_10bc8409db783c0b",
+      "condition": "clean",
+      "entity_id": "pair_52397f42e408dd6e",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_10bc8409db783c0b_clean_pair_52397f42e408dd6e.npy",
+      "prediction_sha256": "91d999ccb9699833a9c727cdbf0ceb63b06a300ce5fcc01d99278e9928444821"
+    },
+    {
+      "group_id": "cf_10bc8409db783c0b",
+      "condition": "clean",
+      "entity_id": "pair_a7dc54286b6cfb73",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_10bc8409db783c0b_clean_pair_a7dc54286b6cfb73.npy",
+      "prediction_sha256": "dabd6420be49b13a34342019600fbc1ecce00004acaf45e3b9cf4dba639612f2"
+    },
+    {
+      "group_id": "cf_598f6f7142e805f5",
+      "condition": "clean",
+      "entity_id": "pair_8768c748e0066fd4",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_598f6f7142e805f5_clean_pair_8768c748e0066fd4.npy",
+      "prediction_sha256": "56df3716663e3cdc2503f8e8ed699ed66755391ddc25b6dca98930f8ab2a4c9d"
+    },
+    {
+      "group_id": "cf_598f6f7142e805f5",
+      "condition": "clean",
+      "entity_id": "pair_b1b9180968527e33",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_598f6f7142e805f5_clean_pair_b1b9180968527e33.npy",
+      "prediction_sha256": "d76ff59ac737064e8e24ba1e1515185bc54104083febc94b408955778038421f"
+    },
+    {
+      "group_id": "acceptedpair_17ff3a8081b79a20",
+      "condition": "clean",
+      "entity_id": "pair_39ca849f042fdaf5",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_17ff3a8081b79a20_clean_pair_39ca849f042fdaf5.npy",
+      "prediction_sha256": "8d120f5e4244e66eb421e8c48e44f14553559761f65b525887b4cb28325925c6"
+    },
+    {
+      "group_id": "acceptedpair_17ff3a8081b79a20",
+      "condition": "clean",
+      "entity_id": "pair_eb9eddddc380d577",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_17ff3a8081b79a20_clean_pair_eb9eddddc380d577.npy",
+      "prediction_sha256": "e2aa24ffb8a072d9012d3038407ce90525f3a3a90ad3ced98950070a5a41dda7"
+    },
+    {
+      "group_id": "acceptedpair_44aeb1233b6d0930",
+      "condition": "clean",
+      "entity_id": "pair_04b929bdccc032c6",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_44aeb1233b6d0930_clean_pair_04b929bdccc032c6.npy",
+      "prediction_sha256": "fbfd97783d4ad0c791860f4a5be329c4de87564a67e54ad07d7d4a0e13339b4e"
+    },
+    {
+      "group_id": "acceptedpair_44aeb1233b6d0930",
+      "condition": "clean",
+      "entity_id": "pair_927f44c87ad7b472",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_44aeb1233b6d0930_clean_pair_927f44c87ad7b472.npy",
+      "prediction_sha256": "145201f1b3fba832a286596bea9c50bd994abe1a031c628fa4cf3ee556c4983a"
+    },
+    {
+      "group_id": "cf_4a446f5d1cf8fca4",
+      "condition": "clean",
+      "entity_id": "pair_119217933712a378",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_4a446f5d1cf8fca4_clean_pair_119217933712a378.npy",
+      "prediction_sha256": "907e4908d0e9f4455a258ec1f8544f8a553e0f24751163f8dff8f6cc31a29516"
+    },
+    {
+      "group_id": "cf_4a446f5d1cf8fca4",
+      "condition": "clean",
+      "entity_id": "pair_bfc0839061de7557",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_4a446f5d1cf8fca4_clean_pair_bfc0839061de7557.npy",
+      "prediction_sha256": "d1511a78e5ceefc76d4f66677db8a30f133c5d9c96980deda077195764f81297"
+    },
+    {
+      "group_id": "cf_778571dc8020b5df",
+      "condition": "target15_b",
+      "entity_id": "pair_21cb479cc47007c7",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_778571dc8020b5df_target15_b_pair_21cb479cc47007c7.npy",
+      "prediction_sha256": "b66ab4668b8084d0c04fe3c764a33f6cb6724ff7f7570488d79e8b158a485fb8"
+    },
+    {
+      "group_id": "cf_778571dc8020b5df",
+      "condition": "target15_b",
+      "entity_id": "pair_348ceef65e08eac8",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_778571dc8020b5df_target15_b_pair_348ceef65e08eac8.npy",
+      "prediction_sha256": "f3a54f0b76e9b496320a615fc2d7d089cdf99144cfd37cbd31012b28ca8e9345"
+    },
+    {
+      "group_id": "acceptedpair_18803244d947e2f7",
+      "condition": "target15_b",
+      "entity_id": "pair_20e0ca585eed85e3",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18803244d947e2f7_target15_b_pair_20e0ca585eed85e3.npy",
+      "prediction_sha256": "0055ba27d29bb2f7fda5f67757da2f4e84a7534b76817fb39033bf58ce88c7ba"
+    },
+    {
+      "group_id": "acceptedpair_18803244d947e2f7",
+      "condition": "target15_b",
+      "entity_id": "pair_60e47b5cca7db0ac",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18803244d947e2f7_target15_b_pair_60e47b5cca7db0ac.npy",
+      "prediction_sha256": "7f9246367f67fabb1b6855557959f1020292ab21df7f9f5c8dd051c2aaeb5ec1"
+    },
+    {
+      "group_id": "cf_56a9b1ea716e19d3",
+      "condition": "target15_b",
+      "entity_id": "pair_3245d3291f51e0b1",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_56a9b1ea716e19d3_target15_b_pair_3245d3291f51e0b1.npy",
+      "prediction_sha256": "51adeb9e2b643a14fedf548acbae855bf18b8f3bece78e1950aa77d572c4b00e"
+    },
+    {
+      "group_id": "cf_56a9b1ea716e19d3",
+      "condition": "target15_b",
+      "entity_id": "pair_bc727c6632846fda",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_56a9b1ea716e19d3_target15_b_pair_bc727c6632846fda.npy",
+      "prediction_sha256": "91adc59750142b8ac5b932cf164b418fcfdb023abb242c6b4145f82cce0bed00"
+    },
+    {
+      "group_id": "cf_f6120ac9bd438a95",
+      "condition": "target15_b",
+      "entity_id": "pair_da4d13d0cd0668d1",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_f6120ac9bd438a95_target15_b_pair_da4d13d0cd0668d1.npy",
+      "prediction_sha256": "c4f9554b9959f8c6f27132810f5ad04da25545f056e23c753c635987a37fe5aa"
+    },
+    {
+      "group_id": "cf_f6120ac9bd438a95",
+      "condition": "target15_b",
+      "entity_id": "pair_f8716df3909bb9c3",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_f6120ac9bd438a95_target15_b_pair_f8716df3909bb9c3.npy",
+      "prediction_sha256": "a62f89ffe8dca8a7743ad400b92ffeb7f1d1b15c59dda05920ffdcd32dd9bf26"
+    },
+    {
+      "group_id": "acceptedpair_8809b4676725c499",
+      "condition": "target15_b",
+      "entity_id": "pair_11fc102c97dcb9e6",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_8809b4676725c499_target15_b_pair_11fc102c97dcb9e6.npy",
+      "prediction_sha256": "8ac64bf05a3122b7ae72f53f90fa6c3f3279c184848969d42f475154f7f5f09e"
+    },
+    {
+      "group_id": "acceptedpair_8809b4676725c499",
+      "condition": "target15_b",
+      "entity_id": "pair_b7401de0da0cca74",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_8809b4676725c499_target15_b_pair_b7401de0da0cca74.npy",
+      "prediction_sha256": "b09b3e6fe095e4d52deea33638090207d1d9c9249d4ee80642abd4e19555d552"
+    },
+    {
+      "group_id": "cf_b0d459c99cdff5e6",
+      "condition": "target15_b",
+      "entity_id": "pair_1c4d44c7e5945518",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_b0d459c99cdff5e6_target15_b_pair_1c4d44c7e5945518.npy",
+      "prediction_sha256": "de2ee49fd1d26c9af4991a53c97347cdde302035eda3f1b4cea1225cca8b0ae1"
+    },
+    {
+      "group_id": "cf_b0d459c99cdff5e6",
+      "condition": "target15_b",
+      "entity_id": "pair_b883d470609f1928",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_b0d459c99cdff5e6_target15_b_pair_b883d470609f1928.npy",
+      "prediction_sha256": "f3990e39ab34458c705266994c6f83c1025f1b093d14507755e1f5ebedbe920a"
+    },
+    {
+      "group_id": "acceptedpair_b914b3d4a14a9083",
+      "condition": "target15_b",
+      "entity_id": "pair_1b3903f27c3c4b20",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_b914b3d4a14a9083_target15_b_pair_1b3903f27c3c4b20.npy",
+      "prediction_sha256": "53fc80724fc163c7330369aa019c1e2ea47b864ac8a2d868bbe7c811a57cd410"
+    },
+    {
+      "group_id": "acceptedpair_b914b3d4a14a9083",
+      "condition": "target15_b",
+      "entity_id": "pair_892a74d8f93ae161",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_b914b3d4a14a9083_target15_b_pair_892a74d8f93ae161.npy",
+      "prediction_sha256": "c867e3fc72c3eb1704b8e331e4bb61c8f9a1dbe2c29694b2ac8560546312817b"
+    },
+    {
+      "group_id": "cf_e0f5ae2d424569c9",
+      "condition": "target15_b",
+      "entity_id": "pair_1ed44e57c0ee803f",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_e0f5ae2d424569c9_target15_b_pair_1ed44e57c0ee803f.npy",
+      "prediction_sha256": "618c1ab0f1d0d1f53802e182849088b8b8ebe8f64e306ee0b5cdeca67aed0e48"
+    },
+    {
+      "group_id": "cf_e0f5ae2d424569c9",
+      "condition": "target15_b",
+      "entity_id": "pair_8f84d0f2c99ff26c",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_e0f5ae2d424569c9_target15_b_pair_8f84d0f2c99ff26c.npy",
+      "prediction_sha256": "b4227c072e934d550891d382323e85d9afb67e960eb6881ac1cebac2e0137d98"
+    },
+    {
+      "group_id": "cf_4fbcb91b5cbb9181",
+      "condition": "target15_b",
+      "entity_id": "pair_78b3683cb850a6da",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_4fbcb91b5cbb9181_target15_b_pair_78b3683cb850a6da.npy",
+      "prediction_sha256": "a0917dd7b2ef2519bec50f708bcb9f2d68e3057ba55b899e5ac6c312662df88a"
+    },
+    {
+      "group_id": "cf_4fbcb91b5cbb9181",
+      "condition": "target15_b",
+      "entity_id": "pair_bcdb4a638a425a53",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_4fbcb91b5cbb9181_target15_b_pair_bcdb4a638a425a53.npy",
+      "prediction_sha256": "78fbebb8dfd8da16f419ce810630676e14259d051c7fe9f32fcb21bb9df268d9"
+    },
+    {
+      "group_id": "cf_7bda1a50e0ec27ba",
+      "condition": "target15_b",
+      "entity_id": "pair_142bf936ebde6b70",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_7bda1a50e0ec27ba_target15_b_pair_142bf936ebde6b70.npy",
+      "prediction_sha256": "cbc33c2905197705de64198ab0e3b85956c7b8a9b3a49b05d969b9e3ee448f97"
+    },
+    {
+      "group_id": "cf_7bda1a50e0ec27ba",
+      "condition": "target15_b",
+      "entity_id": "pair_bfbf36f50191a789",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_7bda1a50e0ec27ba_target15_b_pair_bfbf36f50191a789.npy",
+      "prediction_sha256": "8e38aa265e4f2baa111ee5f29f5c32ded2fec282070b9fe7fcc71ced01de9280"
+    },
+    {
+      "group_id": "acceptedpair_8971bf1ad1c9a9cc",
+      "condition": "target15_b",
+      "entity_id": "pair_ba4518e613727675",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_8971bf1ad1c9a9cc_target15_b_pair_ba4518e613727675.npy",
+      "prediction_sha256": "e4d69092c588a79d95ab5decd51e581e4b212161cb4403cb8fee4a82568f2163"
+    },
+    {
+      "group_id": "acceptedpair_8971bf1ad1c9a9cc",
+      "condition": "target15_b",
+      "entity_id": "pair_ee6a627f7f38f62d",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_8971bf1ad1c9a9cc_target15_b_pair_ee6a627f7f38f62d.npy",
+      "prediction_sha256": "53b63461f785149d99e46c8bb41a3c621c3c398060f819069dcbc88a0d851bac"
+    },
+    {
+      "group_id": "acceptedpair_2a1ba9e169a854d9",
+      "condition": "target15_b",
+      "entity_id": "pair_52f7343aae1e8978",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_2a1ba9e169a854d9_target15_b_pair_52f7343aae1e8978.npy",
+      "prediction_sha256": "23e9304936c82a782fd9f8d89f0351b87b6dfdb34c4496bb4a09e9570dfa0c4b"
+    },
+    {
+      "group_id": "acceptedpair_2a1ba9e169a854d9",
+      "condition": "target15_b",
+      "entity_id": "pair_a7bdec01268c5cd7",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_2a1ba9e169a854d9_target15_b_pair_a7bdec01268c5cd7.npy",
+      "prediction_sha256": "a1963689c129d7689127e4717b9fd615677aebe681a7fde37403deea18feae87"
+    },
+    {
+      "group_id": "acceptedpair_5b51488e49b46f60",
+      "condition": "target15_b",
+      "entity_id": "pair_0cb7753221ef341d",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_5b51488e49b46f60_target15_b_pair_0cb7753221ef341d.npy",
+      "prediction_sha256": "a8099f233315e0e6ff5afaace77b09666bdff1f4eb6e00dd4399f223c0f7c226"
+    },
+    {
+      "group_id": "acceptedpair_5b51488e49b46f60",
+      "condition": "target15_b",
+      "entity_id": "pair_3913c7727f61b3bc",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_5b51488e49b46f60_target15_b_pair_3913c7727f61b3bc.npy",
+      "prediction_sha256": "40266a5694546fc65b9cb26fe87adebb3cc09a16113e7463fc5bb6224e9983f5"
+    },
+    {
+      "group_id": "cf_ef28727ca9fdc521",
+      "condition": "target15_b",
+      "entity_id": "pair_752fd5084da71f5d",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_ef28727ca9fdc521_target15_b_pair_752fd5084da71f5d.npy",
+      "prediction_sha256": "ece3235bbd0d41b1965e7d442e28944849ae8619f88d2499df84f96d835380a6"
+    },
+    {
+      "group_id": "cf_ef28727ca9fdc521",
+      "condition": "target15_b",
+      "entity_id": "pair_dec0d6a764c6cb93",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_ef28727ca9fdc521_target15_b_pair_dec0d6a764c6cb93.npy",
+      "prediction_sha256": "3e660193ff244733e23a9d870f784f0095038ba2822bdf16d220bce39803404a"
+    },
+    {
+      "group_id": "cf_a3bb77c2403a5b68",
+      "condition": "target15_b",
+      "entity_id": "pair_6de08c418a33d5fb",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_a3bb77c2403a5b68_target15_b_pair_6de08c418a33d5fb.npy",
+      "prediction_sha256": "479df48dd1c64b9ace6047f922b768a95ff3b50452d601c2200522071a4bf4e6"
+    },
+    {
+      "group_id": "cf_a3bb77c2403a5b68",
+      "condition": "target15_b",
+      "entity_id": "pair_985793682cb15598",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_a3bb77c2403a5b68_target15_b_pair_985793682cb15598.npy",
+      "prediction_sha256": "8011132ba4a97b640069cc23c400e3998027f092d06b50458e911f277c099932"
+    },
+    {
+      "group_id": "cf_418a3cd9712751b3",
+      "condition": "target15_b",
+      "entity_id": "pair_061980af08b17fad",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_418a3cd9712751b3_target15_b_pair_061980af08b17fad.npy",
+      "prediction_sha256": "4892dd012fb91bb11577cb256777f62969557be9a42e245b9aefd2bf2f2c1047"
+    },
+    {
+      "group_id": "cf_418a3cd9712751b3",
+      "condition": "target15_b",
+      "entity_id": "pair_f048d1a6ada5671c",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_418a3cd9712751b3_target15_b_pair_f048d1a6ada5671c.npy",
+      "prediction_sha256": "a77a14795d939bb2b8afcdda24fbe6b02854ff78b31f0b29c4eb02c63e9f036b"
+    },
+    {
+      "group_id": "acceptedpair_9d5b0fa45b1a8ff9",
+      "condition": "target15_b",
+      "entity_id": "pair_1f9b556d5861e7cb",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_9d5b0fa45b1a8ff9_target15_b_pair_1f9b556d5861e7cb.npy",
+      "prediction_sha256": "ca0fd269dceb3cc1d171cf46e64cd107113ab812cdd1ff594596695a53ea1830"
+    },
+    {
+      "group_id": "acceptedpair_9d5b0fa45b1a8ff9",
+      "condition": "target15_b",
+      "entity_id": "pair_79b775d2c230d342",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_9d5b0fa45b1a8ff9_target15_b_pair_79b775d2c230d342.npy",
+      "prediction_sha256": "41187c9a5b519fa5e636cb4f76667dbc2ff9dc422946aeb9dc8a35d1aa2d14a8"
+    },
+    {
+      "group_id": "acceptedpair_a3e566dd54fb7f38",
+      "condition": "target15_b",
+      "entity_id": "pair_6f21b317274cbd29",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_a3e566dd54fb7f38_target15_b_pair_6f21b317274cbd29.npy",
+      "prediction_sha256": "a966eb68edab2d88a79d35ca6825ceeba7c1f58c6dca571e2377eead042ba373"
+    },
+    {
+      "group_id": "acceptedpair_a3e566dd54fb7f38",
+      "condition": "target15_b",
+      "entity_id": "pair_f45b0c9a2695e417",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_a3e566dd54fb7f38_target15_b_pair_f45b0c9a2695e417.npy",
+      "prediction_sha256": "c68ca6f42374516dfab7513ab2379aaa41cc7f3e3e2ebfa823bb3cfee1f17a1f"
+    },
+    {
+      "group_id": "cf_7742007ec8b76d62",
+      "condition": "target15_b",
+      "entity_id": "pair_7028dfadd0267b11",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_7742007ec8b76d62_target15_b_pair_7028dfadd0267b11.npy",
+      "prediction_sha256": "10bd12577871ed560115b6d15e113714df2d72454a6406644f9e1d58d943783b"
+    },
+    {
+      "group_id": "cf_7742007ec8b76d62",
+      "condition": "target15_b",
+      "entity_id": "pair_84f5693e8ed71aa2",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_7742007ec8b76d62_target15_b_pair_84f5693e8ed71aa2.npy",
+      "prediction_sha256": "10efc4a46d3ae128b92550e7381dd69ca31c228dca9c8658c7a1c16b9f640bf3"
+    },
+    {
+      "group_id": "cf_a7cf884bd45defa4",
+      "condition": "target15_b",
+      "entity_id": "pair_4a758ac026801dc4",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_a7cf884bd45defa4_target15_b_pair_4a758ac026801dc4.npy",
+      "prediction_sha256": "ca167c7f2c6d9ecfef5c2d73142fd9fa106a43f83bc2edd500a22ed4d794cba7"
+    },
+    {
+      "group_id": "cf_a7cf884bd45defa4",
+      "condition": "target15_b",
+      "entity_id": "pair_b89d49ce7e9e4439",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_a7cf884bd45defa4_target15_b_pair_b89d49ce7e9e4439.npy",
+      "prediction_sha256": "a93f38b7d6a36447209b02e3e79c4c5d74d93cf9bd077c562eb23cf4635e1691"
+    },
+    {
+      "group_id": "acceptedpair_e92c4f4a3b9d9d20",
+      "condition": "target15_b",
+      "entity_id": "pair_0a33423ebd25e3dd",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_e92c4f4a3b9d9d20_target15_b_pair_0a33423ebd25e3dd.npy",
+      "prediction_sha256": "2c626d1073ddb0d828c3790c58ca6e9ed28d7ae8ad8b3fda57f99cd2c94229c1"
+    },
+    {
+      "group_id": "acceptedpair_e92c4f4a3b9d9d20",
+      "condition": "target15_b",
+      "entity_id": "pair_6aeabe195d56df11",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_e92c4f4a3b9d9d20_target15_b_pair_6aeabe195d56df11.npy",
+      "prediction_sha256": "04c0f11f36c86fa769ef25b00d01ddfc23974bb79c6d45c3b5a4adb1b57f6b6b"
+    },
+    {
+      "group_id": "acceptedpair_ef9f814da6e89020",
+      "condition": "target15_b",
+      "entity_id": "pair_48838638e7d108f1",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_ef9f814da6e89020_target15_b_pair_48838638e7d108f1.npy",
+      "prediction_sha256": "a086623312f71130014187902aacc51880397c5634fa497c600b9f01d579e5d9"
+    },
+    {
+      "group_id": "acceptedpair_ef9f814da6e89020",
+      "condition": "target15_b",
+      "entity_id": "pair_bc6c24a08081a30f",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_ef9f814da6e89020_target15_b_pair_bc6c24a08081a30f.npy",
+      "prediction_sha256": "500bb689f689e4a22183b5bd788056d828b75f25f1dd9126cacf0be2bc2bef5a"
+    },
+    {
+      "group_id": "cf_e066f87c2c13ab94",
+      "condition": "target15_b",
+      "entity_id": "pair_2f0a6c68d9a3c55c",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_e066f87c2c13ab94_target15_b_pair_2f0a6c68d9a3c55c.npy",
+      "prediction_sha256": "ff4c7c5c21e4d20b7f34b00ad777cb0d144840ebd42d07d19197af91da87fbc7"
+    },
+    {
+      "group_id": "cf_e066f87c2c13ab94",
+      "condition": "target15_b",
+      "entity_id": "pair_daa5001d517daee9",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_e066f87c2c13ab94_target15_b_pair_daa5001d517daee9.npy",
+      "prediction_sha256": "d3715a927c870898763d5b2adc7fd781c01fa75ab454c5561bd78a5e353dbf8d"
+    },
+    {
+      "group_id": "cf_b07b21c7f04f565f",
+      "condition": "target15_b",
+      "entity_id": "pair_61aea198d266d76e",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_b07b21c7f04f565f_target15_b_pair_61aea198d266d76e.npy",
+      "prediction_sha256": "46eaf7b18e4ebbfa53b0edf1a4401ba0f07cb762ccce5279ad6ec8d049227567"
+    },
+    {
+      "group_id": "cf_b07b21c7f04f565f",
+      "condition": "target15_b",
+      "entity_id": "pair_8436740f3c4e99ce",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_b07b21c7f04f565f_target15_b_pair_8436740f3c4e99ce.npy",
+      "prediction_sha256": "00ef4aa7924e1c9be98345c2eb8d290b508276843ec51fd6cd7dd60ee98e2fc6"
+    },
+    {
+      "group_id": "acceptedpair_b6b4ada68df19e6d",
+      "condition": "target15_b",
+      "entity_id": "pair_1444b07c9a4f92cd",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_b6b4ada68df19e6d_target15_b_pair_1444b07c9a4f92cd.npy",
+      "prediction_sha256": "c4679e3360c2d4e811a78bc37ffb012ade4d5178b5d714a289747762cf17dd56"
+    },
+    {
+      "group_id": "acceptedpair_b6b4ada68df19e6d",
+      "condition": "target15_b",
+      "entity_id": "pair_89665f9f3014b686",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_b6b4ada68df19e6d_target15_b_pair_89665f9f3014b686.npy",
+      "prediction_sha256": "5927d460d552186acc5f50139d4b6b279d46284ab87be7f3a1ed2164e43ed42f"
+    },
+    {
+      "group_id": "acceptedpair_e664875a29c6ca1e",
+      "condition": "target15_b",
+      "entity_id": "pair_57e92eb7c220c677",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_e664875a29c6ca1e_target15_b_pair_57e92eb7c220c677.npy",
+      "prediction_sha256": "1ee43e0b529bb0f37f07733f6abd7bb02f05a267d46bf39c8787d8e5ef2da268"
+    },
+    {
+      "group_id": "acceptedpair_e664875a29c6ca1e",
+      "condition": "target15_b",
+      "entity_id": "pair_8ff0ec7d2f565630",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_e664875a29c6ca1e_target15_b_pair_8ff0ec7d2f565630.npy",
+      "prediction_sha256": "cde2fed51f37bdc1f0447f1f5893634402cb1625ee85190883166d54d41ebd6a"
+    },
+    {
+      "group_id": "acceptedpair_1faeba6a71c40b2f",
+      "condition": "target15_b",
+      "entity_id": "pair_08a0b2f55c23bb9c",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_1faeba6a71c40b2f_target15_b_pair_08a0b2f55c23bb9c.npy",
+      "prediction_sha256": "f3b09b28433d508b69897136873a45a4da3bb33f8d8d71a74226c0ad6e31611b"
+    },
+    {
+      "group_id": "acceptedpair_1faeba6a71c40b2f",
+      "condition": "target15_b",
+      "entity_id": "pair_70cc3046b23f63b9",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_1faeba6a71c40b2f_target15_b_pair_70cc3046b23f63b9.npy",
+      "prediction_sha256": "1fc2b4f9dd1857c1d99d378553e8042c0a5bd9120c2e7bb73b4b925e135602ef"
+    },
+    {
+      "group_id": "acceptedpair_6b2f4de6e6befefc",
+      "condition": "target15_b",
+      "entity_id": "pair_2ffa558d03f42a81",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_6b2f4de6e6befefc_target15_b_pair_2ffa558d03f42a81.npy",
+      "prediction_sha256": "19b31713d58623ad9bc1f7dbb45e889d5f9b4d50531ffd0a62069b569f34c262"
+    },
+    {
+      "group_id": "acceptedpair_6b2f4de6e6befefc",
+      "condition": "target15_b",
+      "entity_id": "pair_883720f1268e0c3b",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_6b2f4de6e6befefc_target15_b_pair_883720f1268e0c3b.npy",
+      "prediction_sha256": "5906b2e4ad28f0946de68f8455d6d3d7d8ebe2e8b99f2d370e2d602910322473"
+    },
+    {
+      "group_id": "cf_5ca001bb055cee89",
+      "condition": "target15_b",
+      "entity_id": "pair_8811502705d94c48",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_5ca001bb055cee89_target15_b_pair_8811502705d94c48.npy",
+      "prediction_sha256": "8cb47bb34918c31552b931b1b374d5e0eb09e33f4066be7aa861b14e62674ea4"
+    },
+    {
+      "group_id": "cf_5ca001bb055cee89",
+      "condition": "target15_b",
+      "entity_id": "pair_962ba69c621add1b",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_5ca001bb055cee89_target15_b_pair_962ba69c621add1b.npy",
+      "prediction_sha256": "4feb1a1ddd1ebb1d60dbebe620ced1ee565cc3abfc498bcddec5f1c2275e082a"
+    },
+    {
+      "group_id": "cf_c1b61a58ef4476a5",
+      "condition": "target15_b",
+      "entity_id": "pair_bc30a1358377eb92",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_c1b61a58ef4476a5_target15_b_pair_bc30a1358377eb92.npy",
+      "prediction_sha256": "9250f4e888b1b19905379aa1c6f61b725fe351a3a88af69771c5df3fdb4b4e4b"
+    },
+    {
+      "group_id": "cf_c1b61a58ef4476a5",
+      "condition": "target15_b",
+      "entity_id": "pair_c106ef56a3e59212",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_c1b61a58ef4476a5_target15_b_pair_c106ef56a3e59212.npy",
+      "prediction_sha256": "9bc79fc7ad1fb8ba04739f0a4ddea8a85cedbade9b854a0e81d0fe5b37f435e0"
+    },
+    {
+      "group_id": "acceptedpair_2bed1085c2cab83d",
+      "condition": "target15_b",
+      "entity_id": "pair_a64742b38cfbab82",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_2bed1085c2cab83d_target15_b_pair_a64742b38cfbab82.npy",
+      "prediction_sha256": "69d6f5c3a58e6daf1d23f678f5dbbc6d49b4cb23c1a5d703993d0b3a7189c45d"
+    },
+    {
+      "group_id": "acceptedpair_2bed1085c2cab83d",
+      "condition": "target15_b",
+      "entity_id": "pair_df6f169574cf8bbd",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_2bed1085c2cab83d_target15_b_pair_df6f169574cf8bbd.npy",
+      "prediction_sha256": "a4444b9305fef50caee04e3007285a15cd2fcc9043694a1714bc2e50b5f49685"
+    },
+    {
+      "group_id": "acceptedpair_89b5291120448df8",
+      "condition": "target15_b",
+      "entity_id": "pair_b7d9b42f3e4c77f3",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_89b5291120448df8_target15_b_pair_b7d9b42f3e4c77f3.npy",
+      "prediction_sha256": "dc97dd08cd6c1e43f4fb7ed522a47d9c36b619d92f8ab41a083a95aa220847f4"
+    },
+    {
+      "group_id": "acceptedpair_89b5291120448df8",
+      "condition": "target15_b",
+      "entity_id": "pair_e8c3cb54d48222fa",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_89b5291120448df8_target15_b_pair_e8c3cb54d48222fa.npy",
+      "prediction_sha256": "6f15ac0a62dd9325da720a068de5fad71eb72a71ad8889fdf286b6cc0b7d1749"
+    },
+    {
+      "group_id": "acceptedpair_6a8a242a4bf160a8",
+      "condition": "target15_b",
+      "entity_id": "pair_0d5591fc1ee09975",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_6a8a242a4bf160a8_target15_b_pair_0d5591fc1ee09975.npy",
+      "prediction_sha256": "1a0fbc2b0e8183eeed1f3de462835a98cc1d2361e9b195cefc0965b870f6fe69"
+    },
+    {
+      "group_id": "acceptedpair_6a8a242a4bf160a8",
+      "condition": "target15_b",
+      "entity_id": "pair_96260e7471f10a39",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_6a8a242a4bf160a8_target15_b_pair_96260e7471f10a39.npy",
+      "prediction_sha256": "ef7fab6333bcf2ca7b4c152d63ca9e7d05207c353cb495650a483d2ddbd38016"
+    },
+    {
+      "group_id": "cf_f6ab2a187f2c42e6",
+      "condition": "target15_b",
+      "entity_id": "pair_373b43b1b112d765",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_f6ab2a187f2c42e6_target15_b_pair_373b43b1b112d765.npy",
+      "prediction_sha256": "1f0c973ad4bbfa25368904ee762ecf4ae243ffdf6a145b54fe65ecbcc487fa10"
+    },
+    {
+      "group_id": "cf_f6ab2a187f2c42e6",
+      "condition": "target15_b",
+      "entity_id": "pair_d9fdf618df58ffd5",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_f6ab2a187f2c42e6_target15_b_pair_d9fdf618df58ffd5.npy",
+      "prediction_sha256": "a125bc5f855edc940d9dffc34b5eb717a0f8daaf1ccf4a3120649508621934c4"
+    },
+    {
+      "group_id": "acceptedpair_ac04c7190000db27",
+      "condition": "target15_b",
+      "entity_id": "pair_6bd1ea5308884b24",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_ac04c7190000db27_target15_b_pair_6bd1ea5308884b24.npy",
+      "prediction_sha256": "09b76dfd29f308df38f8822e6e99fc66f4549609d9de8759a4956908835c73cc"
+    },
+    {
+      "group_id": "acceptedpair_ac04c7190000db27",
+      "condition": "target15_b",
+      "entity_id": "pair_ec5c4514b8aa01d9",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_ac04c7190000db27_target15_b_pair_ec5c4514b8aa01d9.npy",
+      "prediction_sha256": "cc4cceea50e62ef028cded5ff1c664d9fe7f5a94b958573cc78c6b255fea8451"
+    },
+    {
+      "group_id": "acceptedpair_cb35232aef588ad2",
+      "condition": "target15_b",
+      "entity_id": "pair_254f9940cdb83d3c",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_cb35232aef588ad2_target15_b_pair_254f9940cdb83d3c.npy",
+      "prediction_sha256": "98a12aa58b4af0a7c56880f35f9a8f87629050192ed9765d3f5184134e56219e"
+    },
+    {
+      "group_id": "acceptedpair_cb35232aef588ad2",
+      "condition": "target15_b",
+      "entity_id": "pair_8381ac36785619df",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_cb35232aef588ad2_target15_b_pair_8381ac36785619df.npy",
+      "prediction_sha256": "10218bb5aa8f9527585a888268f3ca91cb55667a906aad7ddcb1d24fa8a21cbc"
+    },
+    {
+      "group_id": "acceptedpair_18df4546166abc7e",
+      "condition": "target15_b",
+      "entity_id": "pair_47dc61f33a4ca4b6",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18df4546166abc7e_target15_b_pair_47dc61f33a4ca4b6.npy",
+      "prediction_sha256": "fb6d34c93126b98ee40eea1f7cc5d91bfc192e33cc6380b8acac4cd4e6715149"
+    },
+    {
+      "group_id": "acceptedpair_18df4546166abc7e",
+      "condition": "target15_b",
+      "entity_id": "pair_98c2e734418dde38",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18df4546166abc7e_target15_b_pair_98c2e734418dde38.npy",
+      "prediction_sha256": "df9db6b75baed0a155a006fb291f3f17dae9254654a9a72d2b02d519c69c0a5a"
+    },
+    {
+      "group_id": "acceptedpair_48529fa701b1d761",
+      "condition": "target15_b",
+      "entity_id": "pair_1e2ff9477e5c8ac1",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_48529fa701b1d761_target15_b_pair_1e2ff9477e5c8ac1.npy",
+      "prediction_sha256": "19191330b27897cbb23d62d98da29463f4722963abcb0ca0c28c29a87f8e1bf5"
+    },
+    {
+      "group_id": "acceptedpair_48529fa701b1d761",
+      "condition": "target15_b",
+      "entity_id": "pair_a2dfaceea88df475",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_48529fa701b1d761_target15_b_pair_a2dfaceea88df475.npy",
+      "prediction_sha256": "9d77edb2b329585ed7c6f4f83ed4a2e4deabac5f7e83b3eabce4258a43c2d469"
+    },
+    {
+      "group_id": "cf_e84dca525185fb78",
+      "condition": "target15_b",
+      "entity_id": "pair_84399364fa3b0597",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_e84dca525185fb78_target15_b_pair_84399364fa3b0597.npy",
+      "prediction_sha256": "e5e94b85db4c5be15dcb208e2dc705dea3e0ce6123e95102d9163a33de81f4d7"
+    },
+    {
+      "group_id": "cf_e84dca525185fb78",
+      "condition": "target15_b",
+      "entity_id": "pair_ccd7a306799aff36",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_e84dca525185fb78_target15_b_pair_ccd7a306799aff36.npy",
+      "prediction_sha256": "272d055bdf0b3028eeae22ac8a126c07b475b1d2b97471940fb7a7e59d4f4843"
+    },
+    {
+      "group_id": "cf_2ea2e959688af16f",
+      "condition": "target15_b",
+      "entity_id": "pair_29a4beeeb24449cc",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_2ea2e959688af16f_target15_b_pair_29a4beeeb24449cc.npy",
+      "prediction_sha256": "d6db97b604ecf778a873c832db8a4e5c0151b14ca7b568fa7f630a564ca0d9b7"
+    },
+    {
+      "group_id": "cf_2ea2e959688af16f",
+      "condition": "target15_b",
+      "entity_id": "pair_4e875f7adc9010d2",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_2ea2e959688af16f_target15_b_pair_4e875f7adc9010d2.npy",
+      "prediction_sha256": "ba1f40c1e7ce4e2c47ac1507ac22b923b18db3b6a31982e9fa624950e16795d4"
+    },
+    {
+      "group_id": "acceptedpair_18b4bb30bb9a0113",
+      "condition": "target15_b",
+      "entity_id": "pair_5264720a1672fc51",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18b4bb30bb9a0113_target15_b_pair_5264720a1672fc51.npy",
+      "prediction_sha256": "b295c94e61c46ba54ac1b23f2607b7b9d07f0c0e311db26f9f306d351952de1a"
+    },
+    {
+      "group_id": "acceptedpair_18b4bb30bb9a0113",
+      "condition": "target15_b",
+      "entity_id": "pair_a50a80da04403722",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_18b4bb30bb9a0113_target15_b_pair_a50a80da04403722.npy",
+      "prediction_sha256": "b69560ef65f5dd36cd0c20e68ea199e0da84fb1479a7da81b788c95983ff8e7a"
+    },
+    {
+      "group_id": "acceptedpair_3804e7a669ddae48",
+      "condition": "target15_b",
+      "entity_id": "pair_3c631bd7ef063cde",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_3804e7a669ddae48_target15_b_pair_3c631bd7ef063cde.npy",
+      "prediction_sha256": "eed52e105c447bc6f09e8a2f1497d0f2e30f1ac2722f11ee176c7bb7390e4ae0"
+    },
+    {
+      "group_id": "acceptedpair_3804e7a669ddae48",
+      "condition": "target15_b",
+      "entity_id": "pair_848d009a85c938b2",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_3804e7a669ddae48_target15_b_pair_848d009a85c938b2.npy",
+      "prediction_sha256": "56b9b4526a9b16b085d381f1ce6ced84d6829b05a5df008779b14bc051fbce26"
+    },
+    {
+      "group_id": "cf_2882a85afb299b70",
+      "condition": "target15_b",
+      "entity_id": "pair_3b07420b22a2dd05",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_2882a85afb299b70_target15_b_pair_3b07420b22a2dd05.npy",
+      "prediction_sha256": "e3456bfaeb7a4fbd2db8f8c66a94a3385e017e69857d5cf87cbf58a793687864"
+    },
+    {
+      "group_id": "cf_2882a85afb299b70",
+      "condition": "target15_b",
+      "entity_id": "pair_e6bdcc6fb8cae4e7",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_2882a85afb299b70_target15_b_pair_e6bdcc6fb8cae4e7.npy",
+      "prediction_sha256": "72cc223e96eb0159df3d7149b279355d8893051d88b86725227cad798b4128e2"
+    },
+    {
+      "group_id": "acceptedpair_561a0d1cc8671699",
+      "condition": "target15_b",
+      "entity_id": "pair_82fb0ad22cb3da95",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_561a0d1cc8671699_target15_b_pair_82fb0ad22cb3da95.npy",
+      "prediction_sha256": "bed81602c5e6a70a753bf87474c6e3c61a8106574d967386a0b8a1a713340589"
+    },
+    {
+      "group_id": "acceptedpair_561a0d1cc8671699",
+      "condition": "target15_b",
+      "entity_id": "pair_e48f1fb3b6adcb86",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_561a0d1cc8671699_target15_b_pair_e48f1fb3b6adcb86.npy",
+      "prediction_sha256": "2886ca90d8db039492e654aa86e609418770ed1c91d09165f3912d562fccd1c4"
+    },
+    {
+      "group_id": "acceptedpair_c50b19c1a731738f",
+      "condition": "target15_b",
+      "entity_id": "pair_5719816447047436",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_c50b19c1a731738f_target15_b_pair_5719816447047436.npy",
+      "prediction_sha256": "5f89812a254c15f9528e45edb6d469d887a1f54bd5a0ee42b7cfcb74828c3b75"
+    },
+    {
+      "group_id": "acceptedpair_c50b19c1a731738f",
+      "condition": "target15_b",
+      "entity_id": "pair_b9d462e806f56da5",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_c50b19c1a731738f_target15_b_pair_b9d462e806f56da5.npy",
+      "prediction_sha256": "0ba88a05b587c67a12e966e74c31c26770da9bd36286c8f8f3dcaf33508aae52"
+    },
+    {
+      "group_id": "cf_10bc8409db783c0b",
+      "condition": "target15_b",
+      "entity_id": "pair_52397f42e408dd6e",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_10bc8409db783c0b_target15_b_pair_52397f42e408dd6e.npy",
+      "prediction_sha256": "028a6b724e11b1379a8ac06377522e192455ca3a9a02532fbb46c5afbe2f4a1f"
+    },
+    {
+      "group_id": "cf_10bc8409db783c0b",
+      "condition": "target15_b",
+      "entity_id": "pair_a7dc54286b6cfb73",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_10bc8409db783c0b_target15_b_pair_a7dc54286b6cfb73.npy",
+      "prediction_sha256": "a67bce87ac5514c3620092e394925a812c87e59866209e8e6027dd2fa8de33cb"
+    },
+    {
+      "group_id": "cf_598f6f7142e805f5",
+      "condition": "target15_b",
+      "entity_id": "pair_8768c748e0066fd4",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_598f6f7142e805f5_target15_b_pair_8768c748e0066fd4.npy",
+      "prediction_sha256": "bc0b4f748a19f43ed853692edbc746f978fbaa81887b0b61b018acd98c845802"
+    },
+    {
+      "group_id": "cf_598f6f7142e805f5",
+      "condition": "target15_b",
+      "entity_id": "pair_b1b9180968527e33",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_598f6f7142e805f5_target15_b_pair_b1b9180968527e33.npy",
+      "prediction_sha256": "83fd9b273c50494ea0c3c87963f618d91ae26d13c6dcce8ac7b8a38ae65dfb0a"
+    },
+    {
+      "group_id": "acceptedpair_17ff3a8081b79a20",
+      "condition": "target15_b",
+      "entity_id": "pair_39ca849f042fdaf5",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_17ff3a8081b79a20_target15_b_pair_39ca849f042fdaf5.npy",
+      "prediction_sha256": "e7fd732569f8db315457228c2224e1edf3b7cb0e03f005d1bdcbd6f5e7cf504b"
+    },
+    {
+      "group_id": "acceptedpair_17ff3a8081b79a20",
+      "condition": "target15_b",
+      "entity_id": "pair_eb9eddddc380d577",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_17ff3a8081b79a20_target15_b_pair_eb9eddddc380d577.npy",
+      "prediction_sha256": "915110e8d2b38c4abafc3785578081da4fa3576addb5f9b7398de8c1b41ad8cf"
+    },
+    {
+      "group_id": "acceptedpair_44aeb1233b6d0930",
+      "condition": "target15_b",
+      "entity_id": "pair_04b929bdccc032c6",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_44aeb1233b6d0930_target15_b_pair_04b929bdccc032c6.npy",
+      "prediction_sha256": "fc2195d6100fec9c64af3cef566fa66892a93a6cc36e244af696e50eec8dbde0"
+    },
+    {
+      "group_id": "acceptedpair_44aeb1233b6d0930",
+      "condition": "target15_b",
+      "entity_id": "pair_927f44c87ad7b472",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/acceptedpair_44aeb1233b6d0930_target15_b_pair_927f44c87ad7b472.npy",
+      "prediction_sha256": "24186938c9c464f4cf460c181f96a16dcbbebf5ed2bc3314112e946f093d9b8f"
+    },
+    {
+      "group_id": "cf_4a446f5d1cf8fca4",
+      "condition": "target15_b",
+      "entity_id": "pair_119217933712a378",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_4a446f5d1cf8fca4_target15_b_pair_119217933712a378.npy",
+      "prediction_sha256": "d032f58914f27be95c7e88c2ca6ddc42cf5147a2cca67acfeb94b4f81f917b2e"
+    },
+    {
+      "group_id": "cf_4a446f5d1cf8fca4",
+      "condition": "target15_b",
+      "entity_id": "pair_bfc0839061de7557",
+      "prediction": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle025/cma/cf_4a446f5d1cf8fca4_target15_b_pair_bfc0839061de7557.npy",
+      "prediction_sha256": "ce7ad68b99562c93e06f2a58e60e8dad927ab1a504abb82976eb42d02264de05"
+    }
+  ],
+  "raster_reads": [
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_17ff3a8081b79a20/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_17ff3a8081b79a20/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_18803244d947e2f7/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_18803244d947e2f7/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_18b4bb30bb9a0113/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_18b4bb30bb9a0113/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_18df4546166abc7e/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_18df4546166abc7e/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_1faeba6a71c40b2f/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_1faeba6a71c40b2f/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_2a1ba9e169a854d9/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_2a1ba9e169a854d9/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_2bed1085c2cab83d/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_2bed1085c2cab83d/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_3804e7a669ddae48/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_3804e7a669ddae48/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_44aeb1233b6d0930/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_44aeb1233b6d0930/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_48529fa701b1d761/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_48529fa701b1d761/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_561a0d1cc8671699/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_561a0d1cc8671699/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_5b51488e49b46f60/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_5b51488e49b46f60/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_6a8a242a4bf160a8/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_6a8a242a4bf160a8/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_6b2f4de6e6befefc/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_6b2f4de6e6befefc/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_8809b4676725c499/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_8809b4676725c499/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_8971bf1ad1c9a9cc/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_8971bf1ad1c9a9cc/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_89b5291120448df8/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_89b5291120448df8/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_9d5b0fa45b1a8ff9/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_9d5b0fa45b1a8ff9/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_a3e566dd54fb7f38/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_a3e566dd54fb7f38/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_ac04c7190000db27/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_ac04c7190000db27/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_b6b4ada68df19e6d/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_b6b4ada68df19e6d/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_b914b3d4a14a9083/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_b914b3d4a14a9083/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_c50b19c1a731738f/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_c50b19c1a731738f/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_cb35232aef588ad2/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_cb35232aef588ad2/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_e664875a29c6ca1e/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_e664875a29c6ca1e/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_e92c4f4a3b9d9d20/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_e92c4f4a3b9d9d20/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_ef9f814da6e89020/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/acceptedpair_ef9f814da6e89020/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_10bc8409db783c0b/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_10bc8409db783c0b/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_2882a85afb299b70/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_2882a85afb299b70/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_2ea2e959688af16f/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_2ea2e959688af16f/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_418a3cd9712751b3/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_418a3cd9712751b3/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_4a446f5d1cf8fca4/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_4a446f5d1cf8fca4/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_4fbcb91b5cbb9181/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_4fbcb91b5cbb9181/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_56a9b1ea716e19d3/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_56a9b1ea716e19d3/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_598f6f7142e805f5/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_598f6f7142e805f5/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_5ca001bb055cee89/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_5ca001bb055cee89/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_7742007ec8b76d62/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_7742007ec8b76d62/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_778571dc8020b5df/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_778571dc8020b5df/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_7bda1a50e0ec27ba/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_7bda1a50e0ec27ba/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_a3bb77c2403a5b68/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_a3bb77c2403a5b68/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_a7cf884bd45defa4/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_a7cf884bd45defa4/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_b07b21c7f04f565f/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_b07b21c7f04f565f/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_b0d459c99cdff5e6/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_b0d459c99cdff5e6/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_c1b61a58ef4476a5/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_c1b61a58ef4476a5/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_e066f87c2c13ab94/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_e066f87c2c13ab94/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_e0f5ae2d424569c9/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_e0f5ae2d424569c9/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_e84dca525185fb78/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_e84dca525185fb78/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_ef28727ca9fdc521/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_ef28727ca9fdc521/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_f6120ac9bd438a95/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_f6120ac9bd438a95/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_f6ab2a187f2c42e6/clean.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle025/prepared/cf_f6ab2a187f2c42e6/target15_b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_17ff3a8081b79a20.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_18803244d947e2f7.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_18b4bb30bb9a0113.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_18df4546166abc7e.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_1faeba6a71c40b2f.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_2a1ba9e169a854d9.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_2bed1085c2cab83d.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_3804e7a669ddae48.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_44aeb1233b6d0930.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_48529fa701b1d761.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_561a0d1cc8671699.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_5b51488e49b46f60.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_6a8a242a4bf160a8.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_6b2f4de6e6befefc.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_8809b4676725c499.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_8971bf1ad1c9a9cc.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_89b5291120448df8.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_9d5b0fa45b1a8ff9.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_a3e566dd54fb7f38.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_ac04c7190000db27.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_b6b4ada68df19e6d.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_b914b3d4a14a9083.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_c50b19c1a731738f.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_cb35232aef588ad2.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_e664875a29c6ca1e.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_e92c4f4a3b9d9d20.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/acceptedpair_ef9f814da6e89020.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_10bc8409db783c0b.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_2882a85afb299b70.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_2ea2e959688af16f.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_418a3cd9712751b3.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_4a446f5d1cf8fca4.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_4fbcb91b5cbb9181.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_56a9b1ea716e19d3.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_598f6f7142e805f5.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_5ca001bb055cee89.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_7742007ec8b76d62.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_778571dc8020b5df.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_7bda1a50e0ec27ba.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_a3bb77c2403a5b68.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_a7cf884bd45defa4.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_b07b21c7f04f565f.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_b0d459c99cdff5e6.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_c1b61a58ef4476a5.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_e066f87c2c13ab94.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_e0f5ae2d424569c9.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_e84dca525185fb78.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_ef28727ca9fdc521.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_f6120ac9bd438a95.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/images/cf_f6ab2a187f2c42e6.jpg",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_04b929bdccc032c6.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_061980af08b17fad.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_08a0b2f55c23bb9c.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_0a33423ebd25e3dd.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_0cb7753221ef341d.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_0d5591fc1ee09975.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_119217933712a378.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_11fc102c97dcb9e6.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_142bf936ebde6b70.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_1444b07c9a4f92cd.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_1b3903f27c3c4b20.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_1c4d44c7e5945518.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_1e2ff9477e5c8ac1.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_1ed44e57c0ee803f.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_1f9b556d5861e7cb.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_20e0ca585eed85e3.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_21cb479cc47007c7.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_254f9940cdb83d3c.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_29a4beeeb24449cc.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_2f0a6c68d9a3c55c.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_2ffa558d03f42a81.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_3245d3291f51e0b1.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_348ceef65e08eac8.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_373b43b1b112d765.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_3913c7727f61b3bc.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_39ca849f042fdaf5.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_3b07420b22a2dd05.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_3c631bd7ef063cde.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_47dc61f33a4ca4b6.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_48838638e7d108f1.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_4a758ac026801dc4.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_4e875f7adc9010d2.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_52397f42e408dd6e.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_5264720a1672fc51.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_52f7343aae1e8978.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_5719816447047436.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_57e92eb7c220c677.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_60e47b5cca7db0ac.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_61aea198d266d76e.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_6aeabe195d56df11.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_6bd1ea5308884b24.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_6de08c418a33d5fb.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_6f21b317274cbd29.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_7028dfadd0267b11.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_70cc3046b23f63b9.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_752fd5084da71f5d.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_78b3683cb850a6da.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_79b775d2c230d342.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_82fb0ad22cb3da95.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_8381ac36785619df.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_8436740f3c4e99ce.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_84399364fa3b0597.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_848d009a85c938b2.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_84f5693e8ed71aa2.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_8768c748e0066fd4.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_8811502705d94c48.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_883720f1268e0c3b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_892a74d8f93ae161.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_89665f9f3014b686.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_8f84d0f2c99ff26c.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_8ff0ec7d2f565630.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_927f44c87ad7b472.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_96260e7471f10a39.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_962ba69c621add1b.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_985793682cb15598.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_98c2e734418dde38.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_a2dfaceea88df475.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_a50a80da04403722.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_a64742b38cfbab82.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_a7bdec01268c5cd7.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_a7dc54286b6cfb73.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_b1b9180968527e33.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_b7401de0da0cca74.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_b7d9b42f3e4c77f3.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_b883d470609f1928.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_b89d49ce7e9e4439.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_b9d462e806f56da5.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_ba4518e613727675.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_bc30a1358377eb92.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_bc6c24a08081a30f.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_bc727c6632846fda.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_bcdb4a638a425a53.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_bfbf36f50191a789.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_bfc0839061de7557.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_c106ef56a3e59212.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_ccd7a306799aff36.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_d9fdf618df58ffd5.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_da4d13d0cd0668d1.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_daa5001d517daee9.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_dec0d6a764c6cb93.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_df6f169574cf8bbd.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_e48f1fb3b6adcb86.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_e6bdcc6fb8cae4e7.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_e8c3cb54d48222fa.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_eb9eddddc380d577.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_ec5c4514b8aa01d9.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_ee6a627f7f38f62d.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_f048d1a6ada5671c.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_f45b0c9a2695e417.png",
+    "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/cycle025/miner_masks/pair_f8716df3909bb9c3.png"
+  ],
+  "zero_target_hook_passed": true,
+  "same_condition_pixels_as_segllm": true,
+  "protocol_sha256": "b1b234244a18a245a93ab50b95fb45a1e04d5b2cd4161c6b4740f4d15a8dce7a",
+  "elapsed_seconds": 95.0338761806488,
+  "peak_cuda_bytes": 17322769920,
+  "checkpoint_provenance": {
+    "added_tokens.json": "2fe7d7069f251c367d65cdb8f4b3cb103d9ef0f9f9536bfc8b388294f15cfe10",
+    "config.json": "2713d1a90022fa0e511063afbba73a269e0846e22a2d8f735931562aa36b28f3",
+    "generation_config.json": "7779e8100d571fa25da277947041f715feea34377294ed0e74ec372ed3a0f1cf",
+    "model-00001-of-00004.safetensors": "045c59fab79c0bfac08bd8d4da0bfd52944d3eadf3cb26ef554ac87626d64431",
+    "model-00002-of-00004.safetensors": "76db53501af5a730dea94e2a087b6c507b7294c5fc8914bc876370549cb77479",
+    "model-00003-of-00004.safetensors": "81981b218677e34a07b18db4a9d4abe7a26ef5898a89ac2b6da30ae244244e52",
+    "model-00004-of-00004.safetensors": "aede44f1356e8c1a1c27989b2a4365d3997d68dddf272c662365d770158cc9f8",
+    "model.safetensors.index.json": "5f36c3c82fa35c0752b4d940fd665b20449d7b0583da89b19bdb5a2950e0fcce",
+    "special_tokens_map.json": "719833ff26ac897a3ec8ed946028a135de2a351470af59b4008744ab1f0ee9b7",
+    "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+    "tokenizer_config.json": "c79eea18fb072436083e89184315f975db46494c8a35420dd68323319ba5e908"
+  }
+}
