@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-19T05:53:58.362032+08:00",
+  "source_files_unchanged": 14,
+  "config_hash_matches_cycle025": true,
+  "contribution_count": 3,
+  "model_calls": 0,
+  "scorer_calls": 0,
+  "new_scientific_selection": false,
+  "latex": {
+    "command": "pdflatex -disable-installer -interaction=nonstopmode -halt-on-error -output-directory=C:/work/CMA/outputs/cycle028_latex ASSEMBLY_PREVIEW.tex",
+    "final_passes": 2,
+    "exit_code": 0,
+    "pages": 2,
+    "overfull_boxes": false,
+    "undefined_references": false,
+    "underfull_hbox_badness": [
+      4518,
+      3758
+    ],
+    "visual_qa": "Both pages inspected; the overlong metric equation was split and page 2 reinspected. No clipping. Generic section preview, not full-paper venue layout."
+  },
+  "source_verification": "Read-only SHA256 and AST function-anchor inspection; no model/evaluator imports.",
+  "files_sha256": {
+    "ASSEMBLY_PREVIEW.pdf": "da0098ae5511c034492911e68e46eeefc13de0ab40d66aee4e41e3b6bda27dd0",
+    "ASSEMBLY_PREVIEW.tex": "8015a0fcf3edda58024b5ea4d1a14dc54656a93bebeee065f7fdcca0cede0d3c",
+    "INTRO_METHOD_AUDIT.md": "94b18a9928adfaacaa978987947fda34eaa17efc13da00ed7622b4821db41a52",
+    "INTRODUCTION_LATEX.tex": "44fa9c40d637e691b8e1276e73bb5fd1cfdc192786e6952314fcb69f7aa75b17",
+    "METHOD_LATEX.tex": "3ef78db7d5bfa179c19d6341182eaa8e3fbdc892c5520cdffed2fd3c4ecc22d7",
+    "METHOD_TRACEABILITY.md": "0932a1a0317003d1c9d1f8794c9fd38422f37d9c457cf7ccb5e522efb528bef0",
+    "source_receipt.json": "f4d504e1cc6e0639e4fa7bae14257845efd4a1b72452632c1310f30fc504ff48",
+    "W15_CONFIG_SNAPSHOT.json": "2713d1a90022fa0e511063afbba73a269e0846e22a2d8f735931562aa36b28f3"
+  }
+}

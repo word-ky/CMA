@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-09-19T05:48:07.927105+08:00",
+  "code_revision": "73f07c7109144f3c80d2cb017c66e8935c19474e",
+  "config_sha256": "2713d1a90022fa0e511063afbba73a269e0846e22a2d8f735931562aa36b28f3",
+  "config_matches_cycle025_checkpoint_provenance": true,
+  "source_sha256": {
+    "cmllm_remote/third_party/LISA/model/LISA.py": "9f880960c5f0b9744306962bd5852929f39b7f2f7ee06ed13e7c36836e9811f5",
+    "cmllm_remote/third_party/LISA/model/llava/model/language_model/llava_llama.py": "cac2ff97dae714b497281a97de47fd0cfa931238b1fee142ba881b7d91492a9a",
+    "cmllm_remote/third_party/LISA/utils/mr_ref_seg_dataset.py": "2ab9b976a00ea3b9f3530f1246f83d97f86e814a59ab9f0b596a0c5e4be09a4d",
+    "cmllm_remote/scripts/build_mr_ref_counterfactual_train.py": "3530d54b46c653b3d0147ef45626db6127dfa69667924f283388c04fc5dc43bb",
+    "cmllm_remote/scripts/eval_mr_ref_counterfactual_v0.py": "d04c0ee75b2ddff74da208b08caaefb30d38468419e0acb40d65c543b8670e4d",
+    "cmllm_remote/scripts/run_mcr_train_predictions.py": "f3eee67c895555b9ec3329f390ae5bb313c6f18cb7f03f25e75ed74d7555f380",
+    "cmllm_remote/scripts/eval_counterfactual_memory_fidelity.py": "3cc6192b3ddd97f0010f3382ab0204ee99286e1e372ee0c86f50898c623939d4",
+    "cmllm_remote/external_baselines/segllm/memory_state.py": "7b7afe8c81c62867c12646fb865c42660b8b6985126b3d911b41873591493c07",
+    "research_log/run_cma_cycle025.py": "5f3054ac46687f689e90d01dd858c8a0c804b74e2e93b62579c63bdc4c3b623d",
+    "research_log/score_cycle025.py": "0ec99bca9931f8fdec3e381c0474dd9b142405e15b0da215fcc7a50777b92f4b",
+    "research_log/cycle025/protocol_receipt.json": "b1b234244a18a245a93ab50b95fb45a1e04d5b2cd4161c6b4740f4d15a8dce7a",
+    "research_log/cycle025/cma_prediction_freeze.json": "d2c62fb9af4d005afb76b77913d1cd8da97adfa4c1415882702356bb7fd5339f",
+    "research_log/cycle023/historical_log_excerpts.json": "43cb3b3ad8564be17c265d632550518d3cb70a6a65a19e9caa764747928a2553",
+    "research_log/cycle023/w15_training_exposure_audit.json": "151eae44e2e220ee6721a727b80ca62b0e11192de574b498647cb538cbcdf31f"
+  },
+  "model_calls": 0,
+  "scorer_calls": 0
+}

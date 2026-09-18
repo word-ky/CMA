@@ -1,0 +1,125 @@
+\section{Method}
+\label{sec:method}
+% Traceability: research_log/cycle028/METHOD_TRACEABILITY.md at revision 73f07c7.
+% Citation slots: LISA/LLaVA, CLIP and SAM. Bibliography integration is pending; do not invent entries.
+\subsection{Task and supplied identity memory}
+Let $I$ be an observation, $q$ a relational query, $R_i$ a supplied miner
+reference mask, $b_i$ its normalized bounding box, and $Y_i$ the corresponding
+helmet target. We denote the supplied identity condition by
+$M_i=(R_i,b_i,C(I,R_i,b_i))$, where $C$ masks the background, crops the reference
+box, zero-pads to a square and applies the reference-image processor.
+For two workers in the same image, the desired behavior is
+\begin{equation}
+ f(I,q,M_A)\rightarrow Y_A,\qquad
+ f(I,q,M_B)\rightarrow Y_B.
+\end{equation}
+Here memory denotes supplied identity evidence, not an autonomously maintained
+state. Under degradation the reference appearance is taken from the same
+degraded observation as the main image; the supplied mask and box identify the
+worker. This protocol tests memory use under degraded appearance, not recovery
+of an independently corrupted reference mask.
+
+\subsection{Dual-stage identity-memory conditioning}
+The following equations abstract the verified implementation rather than
+specifying every layer. First, visual tokens from the reference crop are
+averaged and combined with a bounding-box projection:
+\begin{align}
+ v_i &= \operatorname{mean} E_{\mathrm{vis}}(C(I,R_i,b_i)),\\
+ r_i &= P_{\mathrm{in}}\bigl(v_i+B(b_i)\bigr),\\
+ e'_{\mathrm{REF},i} &= e_{\mathrm{REF}}+\alpha r_i.
+\end{align}
+The frozen configuration uses $\alpha=0.5$. This scalar addition is implemented
+as \texttt{gated\_add}; it is not an estimated memory-reliability gate. The
+language model processes the image and conversation with the injected
+reference embedding.
+
+For output-side conditioning, let $h_i$ denote the projected REF-associated
+language hidden representation and $z_i$ the SEG-derived text prompt. The
+supplied mask is bilinearly resized to $16\times16$, flattened and concatenated
+with $b_i$ before a geometry projection $G$. The memory prompt is
+\begin{align}
+ g_i &= G\bigl([\operatorname{vec}(\operatorname{resize}_{16}(R_i));b_i]\bigr),\\
+ c_i &= s\,\operatorname{cap}_{20}(h_i+g_i),\\
+ t_i &= \operatorname{clip}_{[-50,50]}(z_i+c_i),\\
+ \hat Y_i &= D_{\mathrm{SAM}}\bigl(E_{\mathrm{SAM}}(I),t_i\bigr).
+\end{align}
+The operator $\operatorname{cap}_{20}$ bounds vector norm; $s$ is a learned
+reference scale, whose configured initialization is 0.2 rather than its final
+learned value. Validity flags restrict reference conditioning to the relevant
+rows. The frozen prompt mode adds context to the text prompt before SAM prompt
+encoding and single-mask decoding. Its contribution is evaluated as part of
+the complete system, not through a component-isolated ablation.
+
+\subsection{Counterfactual identity objective}
+The documented training construction groups worker--helmet pairs from the
+same image and assigns the same second-round query to each pair. Training
+outputs alternate miner and helmet masks. In addition to token
+cross-entropy and weighted mask BCE/Dice losses, an auxiliary REF decoding
+branch reconstructs the supplied miner mask on valid reference rows.
+Writing these normalized losses as $\mathcal L_{\mathrm{text}}$,
+$\mathcal L_{\mathrm{seg}}$ and $\mathcal L_{\mathrm{ref}}$, the implemented
+objective has the form
+\begin{equation}
+ \mathcal L=\mathcal L_{\mathrm{text}}+\mathcal L_{\mathrm{seg}}
+ +\lambda_{\mathrm{ref}}\mathcal L_{\mathrm{ref}}
+ +\lambda_{\mathrm{rank}}\mathcal L_{\mathrm{rank}}.
+\end{equation}
+For a grouped example, let $p_i$ be the sigmoid helmet prediction conditioned
+on identity $i$. The differentiable overlap matrix and ranking term are
+\begin{align}
+ S_{ij} &= \frac{\sum_x p_i(x)Y_j(x)}
+ {\max\{\sum_x[p_i(x)+Y_j(x)-p_i(x)Y_j(x)],\epsilon\}},\\
+ \mathcal L_{\mathrm{rank}} &= \frac{1}{N}\sum_i
+ \left[\mu+\max_{j\ne i}S_{ij}-S_{ii}\right]_+.
+\end{align}
+Here $N$ is the number of helmet references in the group.
+The code uses $\epsilon=10^{-6}$ and selects helmet entries from the alternating
+mask sequence; the rank term is applied only to eligible groups with at least
+two helmet targets. The saved w15 configuration records
+$\lambda_{\mathrm{ref}}=1.0$, $\lambda_{\mathrm{rank}}=1.5$ and $\mu=0.05$.
+These are hash-verified checkpoint metadata. Exact historical run-bound data
+and CE/BCE/Dice coefficient overrides remain unknown, so launcher defaults are
+not presented as verified historical settings. We make no claim that the rank
+term alone caused the whole-system comparison gap.
+
+\subsection{Counterfactual memory evaluation}
+Evaluation uses binary masks, separately from the soft training objective.
+Within each fixed observation/query group, define
+\begin{align}
+ J_{ij}&=\operatorname{IoU}(\hat Y_i,Y_j),\qquad d_i=J_{ii},\\
+ w_i&=\max_{j\ne i}J_{ij},\qquad \Delta_i=d_i-w_i.
+\end{align}
+Memory Fidelity is the reference-wise mean of $\mathbf{1}[d_i>w_i]$;
+ties, including all-zero rows, fail. With $\tau=0.5$, define
+$a_i=\mathbf{1}[d_i>w_i\ \land\ d_i\geq\tau]$.
+CMSA is the fraction of identity pairs for which both references succeed:
+\begin{equation}
+ \mathrm{CMSA}=\frac{1}{|\mathcal P|}
+ \sum_{(i,j)\in\mathcal P}a_i a_j.
+\end{equation}
+Pairs are formed within each group; the primary set has two identities per
+group, so each group contributes one pair. Identity Error Rate is the
+reference-wise mean of $\mathbf{1}[w_i>d_i\ \land\ w_i\geq\tau]$.
+The mean identity margin averages $\Delta_i$, while target mIoU averages $d_i$.
+Thus Fidelity can be correct despite poor localization, and IER is not its
+complement. Aggregation weights references equally for these reference-level
+metrics and pairs equally for CMSA.
+
+The frozen Cycle025 runner loads base-w15 in BF16 and uses a fixed multiround
+conversation containing SEG placeholders. It performs a direct forward pass,
+extracts helmet rows, and thresholds mask logits at zero; it does not generate
+an autonomous dialogue or select candidates using target IoU. Helmet targets
+are excluded from inference raster reads and supervision-mask placeholders
+are zero. Predictions are frozen before offline scoring. CMA and pinned
+SegLLM receive the same underlying observation/query and corresponding supplied
+miner identity information through their method-native memory interfaces,
+not identical internal memory encodings. The primary protocol is disjoint
+from documented training/evaluation image-byte registries; exact run-bound
+and ancestor exposure remain unknown.
+
+\subsection{Scope boundary}
+The evidence evaluates supplied-memory use under a fixed compound stressor.
+It does not establish autonomous memory writing, persistence or repair, a
+successful inference-time agent controller, safety guarantees, or isolated
+component superiority. Earlier Layer-2 controller/verifier attempts remain
+negative evidence and are not part of the validated method contribution.
