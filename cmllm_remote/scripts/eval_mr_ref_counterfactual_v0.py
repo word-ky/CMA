@@ -215,6 +215,7 @@ def build_item(
     ref_condition=None,
     enhance_image=None,
     reobservation_receipt=None,
+    read_targets=True,
 ):
     pair_ids = cf["pair_ids"]
     pairs = [pairs_by_id[pair_id] for pair_id in pair_ids]
@@ -234,7 +235,8 @@ def build_item(
         ref_rgb = image_rgb
     ori_size = image_rgb.shape[:2]
 
-    target_masks = [read_mask(pair["helmet_mask_path"], ori_size) for pair in pairs]
+    target_masks = ([read_mask(pair["helmet_mask_path"], ori_size) for pair in pairs]
+                    if read_targets else [np.zeros(ori_size, dtype=np.float32) for _ in pairs])
     ref_masks = [read_mask(pair["miner_mask_path"], ori_size) for pair in pairs]
     original_rgb, original_targets, original_refs = image_rgb, target_masks, ref_masks
     pixel_bboxes = [pair["miner_bbox_xyxy"] for pair in pairs]

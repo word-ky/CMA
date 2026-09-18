@@ -1,0 +1,19 @@
+{
+  "recorded_utc": "2026-09-18T13:03:01.732689+00:00",
+  "baseline_mcr_tests": {
+    "passed": 6,
+    "seconds": 2.27
+  },
+  "focused_tests": {
+    "passed": 10,
+    "seconds": 16.07
+  },
+  "full_cpu_suite": {
+    "passed": 54,
+    "seconds": 20.52,
+    "command": "PYTHONPATH=cmllm_remote/src python -m pytest cmllm_remote/tests -q"
+  },
+  "observed_collection_failure": "First full-suite invocation lacked cmllm_remote/src in PYTHONPATH; test_smoke could not import cmllm. Corrected environment, no code change.",
+  "target_free_equivalence": "Actual build_item function body tested with read_targets=False; only labels differ, all other model inputs equal default legacy mode.",
+  "runtime_hook": "Every actual model forward asserts inference=True and zero masks_list; actual cv2 raster reads restricted to train images and miner masks."
+}

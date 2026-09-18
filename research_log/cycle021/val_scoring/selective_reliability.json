@@ -1,0 +1,88 @@
+{
+  "clean": {
+    "coverage": 0.96,
+    "accepted_cmsa": 0.9583333333333334,
+    "failure_recall": 0.3333333333333333,
+    "abstention_precision": 0.5,
+    "counts": {
+      "success_to_accept": 46,
+      "success_to_abstain": 1,
+      "failure_to_accept": 2,
+      "failure_to_abstain": 1
+    },
+    "accepted_groups": 48,
+    "total_groups": 50,
+    "accepted_summary": {
+      "num_groups": 48,
+      "num_references": 96,
+      "num_pairs": 48,
+      "target_miou": 0.9291031004126326,
+      "memory_fidelity": 1.0,
+      "cmsa": 0.9583333333333334,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.9291031004126328,
+      "median_identity_margin": 0.9631895116958757
+    },
+    "base_summary": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.9197182918768901,
+      "memory_fidelity": 0.99,
+      "cmsa": 0.94,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.9197182918768901,
+      "median_identity_margin": 0.9631895116958757
+    }
+  },
+  "target15_b": {
+    "coverage": 0.8,
+    "accepted_cmsa": 0.7,
+    "failure_recall": 0.42857142857142855,
+    "abstention_precision": 0.9,
+    "counts": {
+      "success_to_accept": 28,
+      "success_to_abstain": 1,
+      "failure_to_accept": 12,
+      "failure_to_abstain": 9
+    },
+    "accepted_groups": 40,
+    "total_groups": 50,
+    "accepted_summary": {
+      "num_groups": 40,
+      "num_references": 80,
+      "num_pairs": 40,
+      "target_miou": 0.7575817108180029,
+      "memory_fidelity": 0.975,
+      "cmsa": 0.7,
+      "identity_error_rate": 0.0,
+      "mean_identity_margin": 0.7574148463860835,
+      "median_identity_margin": 0.8592313820034292
+    },
+    "base_summary": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.6911134046687633,
+      "memory_fidelity": 0.89,
+      "cmsa": 0.58,
+      "identity_error_rate": 0.03,
+      "mean_identity_margin": 0.6629313123212343,
+      "median_identity_margin": 0.8474629071282657
+    }
+  },
+  "tau": 0.38560267857142855,
+  "fixed_gate": {
+    "passed": false,
+    "checks": {
+      "both_degraded_actions": true,
+      "degraded_coverage": true,
+      "degraded_cmsa": false,
+      "degraded_failures_caught": false,
+      "abstention_precision": true,
+      "clean_coverage": true,
+      "clean_cmsa": true
+    }
+  },
+  "next_step": "retire_Layer2"
+}

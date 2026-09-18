@@ -1,0 +1,23 @@
+{
+  "recorded_utc": "2026-09-18T13:08:48.741436+00:00",
+  "status": "complete_fixed_validation_gate_failed_retire_Layer2",
+  "run_id": "20260918-205906-cma-cycle021-train-predictions",
+  "failed_prepython_launcher": "20260918-205705-cma-cycle021-train-predictions",
+  "model_forwards": 600,
+  "identity_predictions": 1200,
+  "elapsed_seconds": 306.0278902053833,
+  "peak_cuda_bytes": 17322769920,
+  "all_1200_local_prediction_hashes_verified": true,
+  "freeze_order_verified": true,
+  "archive_bytes": 2411187,
+  "archive_sha256": "f7444c0868f545592411179da587ee79523b1b5d4d7d999fabeb2e1985486d5a",
+  "tau": 0.38560267857142855,
+  "val_model_forwards": 0,
+  "val_evaluations": 1,
+  "thresholds_deployed": 1,
+  "unchanged_sources": {
+    "memory_contrast_reliability.py": "3ecbe1a0b2babb777948d3890ef525b2c32f6d77c86c3e91b9bc6efa87b9417a",
+    "helmet_geometry.py": "37044ab9a5be9944cdad3f351d0c511d0de96a09afce141f5d88a1113e75b36b",
+    "eval_counterfactual_memory_fidelity.py": "3cc6192b3ddd97f0010f3382ab0204ee99286e1e372ee0c86f50898c623939d4"
+  }
+}

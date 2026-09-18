@@ -1,0 +1,6 @@
+[autodl] run_id=20260918-205705-cma-cycle021-train-predictions
+[autodl] started_at=2026-09-18T20:57:10+08:00
+/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/run_cycle021_train.sh: 第 2 行： set: pipefail
+: 无效的选项名
+[autodl] finished_at=2026-09-18T20:57:10+08:00
+[autodl] exit_code=2

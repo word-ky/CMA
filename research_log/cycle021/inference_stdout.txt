@@ -1,0 +1,34 @@
+[autodl] run_id=20260918-205906-cma-cycle021-train-predictions
+[autodl] started_at=2026-09-18T20:59:11+08:00
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 46.03it/s]
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+clean 1 groups; zero-target forward verified
+clean 26 groups; zero-target forward verified
+clean 51 groups; zero-target forward verified
+clean 76 groups; zero-target forward verified
+clean 101 groups; zero-target forward verified
+clean 126 groups; zero-target forward verified
+clean 151 groups; zero-target forward verified
+clean 176 groups; zero-target forward verified
+clean 201 groups; zero-target forward verified
+clean 226 groups; zero-target forward verified
+clean 251 groups; zero-target forward verified
+clean 276 groups; zero-target forward verified
+target15_b 1 groups; zero-target forward verified
+target15_b 26 groups; zero-target forward verified
+target15_b 51 groups; zero-target forward verified
+target15_b 76 groups; zero-target forward verified
+target15_b 101 groups; zero-target forward verified
+target15_b 126 groups; zero-target forward verified
+target15_b 151 groups; zero-target forward verified
+target15_b 176 groups; zero-target forward verified
+target15_b 201 groups; zero-target forward verified
+target15_b 226 groups; zero-target forward verified
+target15_b 251 groups; zero-target forward verified
+target15_b 276 groups; zero-target forward verified
+TRAIN_PREDICTIONS_AND_SCORES_FROZEN 600
+[autodl] finished_at=2026-09-18T21:04:22+08:00
+[autodl] exit_code=0
