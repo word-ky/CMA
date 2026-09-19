@@ -1,0 +1,62 @@
+{
+  "status": "BLOCKED_GPU_CAPACITY",
+  "review_commit": "7a025c0",
+  "snapshots": [
+    {
+      "remote_time": "2026-09-19T18:48:33+08:00",
+      "gpus": [
+        {
+          "index": 0,
+          "total_MiB": 49140,
+          "used_MiB": 46461,
+          "free_MiB": 2079,
+          "compute_pid": 708004,
+          "compute_name": "VLLM::Worker_TP0",
+          "compute_used_MiB": 46402
+        },
+        {
+          "index": 1,
+          "total_MiB": 49140,
+          "used_MiB": 46459,
+          "free_MiB": 2081,
+          "compute_pid": 708005,
+          "compute_name": "VLLM::Worker_TP1",
+          "compute_used_MiB": 46402
+        }
+      ]
+    },
+    {
+      "remote_time": "2026-09-19T18:49:12+08:00",
+      "gpus": [
+        {
+          "index": 0,
+          "total_MiB": 49140,
+          "used_MiB": 46461,
+          "free_MiB": 2079,
+          "compute_pid": 708004,
+          "compute_name": "VLLM::Worker_TP0",
+          "compute_used_MiB": 46402
+        },
+        {
+          "index": 1,
+          "total_MiB": 49140,
+          "used_MiB": 46459,
+          "free_MiB": 2081,
+          "compute_pid": 708005,
+          "compute_name": "VLLM::Worker_TP1",
+          "compute_used_MiB": 46402
+        }
+      ]
+    }
+  ],
+  "interval_seconds": 39,
+  "required_free_MiB_both_snapshots": 24576,
+  "qualifying_devices": [],
+  "launch_attempts": 0,
+  "model_forwards": 0,
+  "new_predictions": 0,
+  "scorer_calls": 0,
+  "cycle036_output_files_found": 0,
+  "unrelated_processes_modified": false,
+  "issue_check": "Connector UNAUTHORIZED / reauthentication required; gh CLI unavailable; latest review read from git origin/main successfully"
+}
