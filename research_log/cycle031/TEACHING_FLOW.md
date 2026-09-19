@@ -7,7 +7,7 @@ flowchart TD
   V --> R[4096维REF向量：实际REF槽加0.5倍]
   R --> L
   M --> G[mask缩至16×16 + bbox：260维输入转256维几何]
-  L --> H[移位索引REF-associated hidden：投影256维]
+  X[共享主图与REF之前的token] --> H[共享pre-REF hidden：不读取后面的REF注入；投影256维]
   L --> S[SEG-associated prompt：256维]
   H --> C[几何融合context：norm cap20 × learned scale × valid]
   G --> C
@@ -25,5 +25,7 @@ flowchart TD
 ```
 
 索引要点：H不是注入REF槽本身的hidden；辅助A采用未移位槽。当前代码即使推理也执行辅助解码，但只有训练计算其损失。图中“LLM关系条件化”是功能路径说明，不是独立测得的推理能力归因。主mask BCE/Dice与token CE同样属于训练，图为避免拥挤未单列。
+
+Cycle032已用源码提取测试确认偏移，并对冻结50组确认A/B前缀相同。H属于共享前缀路径，R可以影响后续SEG路径；不能画出R→H的反向时间依赖。详细带边类型的实际因果图见 `../cycle032/CURRENT_W15_CAUSAL_GRAPH.md`。当前简述：REF条件化SEG语义 + worker几何prompt + counterfactual排序。
 
 离线另做：冻结二值预测→读取评分目标→binary IoU→Fidelity/CMSA/IER，不把这些指标反馈给推理。代码锚点及shape依据全部见 METHOD_WALKTHROUGH.md；这不是新增网络或论文图。

@@ -2,6 +2,8 @@
 
 依据静态源码与w15配置；未加载权重、图像或模型。源版本7763f3b。
 
+Cycle032补记：已增加不加载模型的CPU源码索引测试与50组消息构造审计，确认限定布局下一位REF偏移、A/B相同前缀。修订walkthrough、flow及memory contract以明确输出分量是共享pre-REF上下文，而不是注入身份的直接语义readout。旧历史handoff保留原记录；新结论见Cycle032。
+
 - 输入/crop/REF注入/LLM/几何/SAM/训练/离线指标都有具体文件和函数行号；source_receipt.json记录源码哈希。
 - 数字维度来自config与Linear定义；本例行数来自builder/collate逻辑。CLIP处理尺寸、P、SAM低分辨率网格及学习后的scale未实测，明确未确认。输入token512上限不冒充展开后序列T。
 - 监督目标与推理输入分离：helmet训练目标仅用于loss或离线评分；推理清零监督列表，supplied miner参考仍是允许输入。

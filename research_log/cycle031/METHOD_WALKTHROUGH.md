@@ -2,6 +2,8 @@
 
 依据：仓库 `7763f3b`，冻结 w15 配置见 `../cycle028/W15_CONFIG_SNAPSHOT.json`。以下是静态代码核查，不是新推理或实验。路径均相对仓库根目录；行号对应此次源文件。先读本文件，再读 TOY_COUNTERFACTUAL_EXAMPLE.md。
 
+**Cycle032教学修订：** 确定性源码索引测试已证实，在单个前方图像展开256patch的布局下，输出REF分支读取真实REF前一位置。冻结50组A/B对话构造全部相同；当前identity不能经REF注入倒流进pre-REF分量。应称“REF条件化的后续SEG语义 + 显式矿工几何prompt + counterfactual排序”，不能称输出分支是注入身份的第二次语义读取。详见 `../cycle032/REF_ALIGNMENT_AUDIT.md`；原模型与结果未改。
+
 ## 1. 实际需求 → 思路
 
 一张图有矿工 A/B 及其安全帽 A/B。“找到一个安全帽”不够：用户要的是**这个矿工的安全帽**。即使 mask 外观像安全帽，选错所属矿工仍是错误。给定相同图像和相同关系问题，只更换已定位的矿工参考，输出应跟着切换。
@@ -11,7 +13,7 @@
 | 动机 / 可能失败 | 对应实现 | 能声称到哪里 |
 |---|---|---|
 | 问题相同却应指向不同人 | crop+bbox注入输入REF | 身份条件进入语言路径；未独立证明这一路贡献多大 |
-| 输出分割需要位置与形状信息 | mask+bbox几何与REF-associated表示融合SAM prompt | 显式提供worker空间条件；不是直接提供helmet答案 |
+| 输出分割需要位置与形状信息 | mask+bbox几何与共享pre-REF前缀表示融合SAM prompt | 身份定位来自几何；不能说前缀分量直接读取了稍后的REF注入 |
 | REF表示可能缺少对象约束 | 参考miner mask辅助重建 | 训练监督设计；没有证明其单独提升性能 |
 | 两个条件都输出显眼的同一顶帽子 | 同组correct-vs-wrong soft-IoU hinge | 显式身份间隔目标；仍需像素定位loss |
 | 平均IoU隐藏身份切换失败 | 固定图/query的离线身份矩阵 | 可以诊断identity control；本身不是可微训练模块 |

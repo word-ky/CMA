@@ -1,0 +1,513 @@
+{
+  "status": "PASS",
+  "kind": "zero-model CPU indexing/source-construction audit",
+  "cases": [
+    {
+      "name": "single_front_image_256",
+      "raw_tokens": [
+        1,
+        -200,
+        11,
+        32000,
+        12,
+        32001,
+        13,
+        32000,
+        2
+      ],
+      "image_patches": 256,
+      "expanded_length": 264,
+      "injected_REF": [
+        260
+      ],
+      "manual_output_REF": [
+        259
+      ],
+      "auxiliary_REF": [
+        260
+      ],
+      "true_SEG": [
+        258,
+        262
+      ],
+      "manual_SEG": [
+        257,
+        261
+      ],
+      "manual_mask_length": 264,
+      "output_REF_exactly_one_before": true,
+      "source_manual_REF_lines": [
+        433,
+        434,
+        441
+      ],
+      "source_manual_SEG_lines": [
+        346,
+        347,
+        355
+      ]
+    },
+    {
+      "name": "different_patch_count_196",
+      "raw_tokens": [
+        1,
+        -200,
+        11,
+        32000,
+        12,
+        32001,
+        13,
+        32000,
+        2
+      ],
+      "image_patches": 196,
+      "expanded_length": 204,
+      "injected_REF": [
+        200
+      ],
+      "manual_output_REF": [
+        259
+      ],
+      "auxiliary_REF": [
+        200
+      ],
+      "true_SEG": [
+        198,
+        202
+      ],
+      "manual_SEG": [
+        257,
+        261
+      ],
+      "manual_mask_length": 264,
+      "output_REF_exactly_one_before": false,
+      "source_manual_REF_lines": [
+        433,
+        434,
+        441
+      ],
+      "source_manual_SEG_lines": [
+        346,
+        347,
+        355
+      ]
+    },
+    {
+      "name": "image_after_REF",
+      "raw_tokens": [
+        1,
+        11,
+        32001,
+        12,
+        -200,
+        13,
+        32000,
+        2
+      ],
+      "image_patches": 256,
+      "expanded_length": 263,
+      "injected_REF": [
+        2
+      ],
+      "manual_output_REF": [
+        256
+      ],
+      "auxiliary_REF": [
+        2
+      ],
+      "true_SEG": [
+        261
+      ],
+      "manual_SEG": [
+        260
+      ],
+      "manual_mask_length": 263,
+      "output_REF_exactly_one_before": false,
+      "source_manual_REF_lines": [
+        433,
+        434,
+        441
+      ],
+      "source_manual_SEG_lines": [
+        346,
+        347,
+        355
+      ]
+    },
+    {
+      "name": "two_images_before_REF",
+      "raw_tokens": [
+        1,
+        -200,
+        11,
+        -200,
+        32001,
+        13,
+        32000,
+        2
+      ],
+      "image_patches": 256,
+      "expanded_length": 518,
+      "injected_REF": [
+        514
+      ],
+      "manual_output_REF": [
+        258
+      ],
+      "auxiliary_REF": [
+        514
+      ],
+      "true_SEG": [
+        516
+      ],
+      "manual_SEG": [
+        260
+      ],
+      "manual_mask_length": 263,
+      "output_REF_exactly_one_before": false,
+      "source_manual_REF_lines": [
+        433,
+        434,
+        441
+      ],
+      "source_manual_SEG_lines": [
+        346,
+        347,
+        355
+      ]
+    }
+  ],
+  "prefix_status": "PREFIX_IDENTICAL_BEFORE_REF",
+  "prefix_evidence": "Actual builder/list-comprehension AST executed with message recorder; all 50 frozen groups have identical A/B messages. Same deterministic tokenizer/template therefore yields identical raw token prefixes. No actual tokenizer IDs claimed.",
+  "conversation_builder": "def build_multiround_conversation(round1_query, round2_query):\n    conv = conversation_lib.default_conversation.copy()\n    conv.messages = []\n    conv.append_message(conv.roles[0], DEFAULT_IMAGE_TOKEN + '\\n' + round1_query.strip())\n    conv.append_message(conv.roles[1], '[SEG].')\n    conv.append_message(conv.roles[0], '[REF] ' + round2_query.strip())\n    conv.append_message(conv.roles[1], '[SEG].')\n    return conv.get_prompt()",
+  "conversation_construction": "conversations = [build_multiround_conversation('Segment the miner whose helmet should be segmented next.', cf['same_round2_query']) for _ in pair_ids]",
+  "representative_messages": [
+    [
+      "USER",
+      "<image>\nSegment the miner whose helmet should be segmented next."
+    ],
+    [
+      "ASSISTANT",
+      "[SEG]."
+    ],
+    [
+      "USER",
+      "[REF] Based on the miner mask from the previous round, segment only the mining helmet worn by that miner."
+    ],
+    [
+      "ASSISTANT",
+      "[SEG]."
+    ]
+  ],
+  "prefix_groups": [
+    {
+      "group_id": "cf_778571dc8020b5df",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_18803244d947e2f7",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_56a9b1ea716e19d3",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_f6120ac9bd438a95",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_8809b4676725c499",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_b0d459c99cdff5e6",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_b914b3d4a14a9083",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_e0f5ae2d424569c9",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_4fbcb91b5cbb9181",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_7bda1a50e0ec27ba",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_8971bf1ad1c9a9cc",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_2a1ba9e169a854d9",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_5b51488e49b46f60",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_ef28727ca9fdc521",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_a3bb77c2403a5b68",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_418a3cd9712751b3",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_9d5b0fa45b1a8ff9",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_a3e566dd54fb7f38",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_7742007ec8b76d62",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_a7cf884bd45defa4",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_e92c4f4a3b9d9d20",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_ef9f814da6e89020",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_e066f87c2c13ab94",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_b07b21c7f04f565f",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_b6b4ada68df19e6d",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_e664875a29c6ca1e",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_1faeba6a71c40b2f",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_6b2f4de6e6befefc",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_5ca001bb055cee89",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_c1b61a58ef4476a5",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_2bed1085c2cab83d",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_89b5291120448df8",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_6a8a242a4bf160a8",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_f6ab2a187f2c42e6",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_ac04c7190000db27",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_cb35232aef588ad2",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_18df4546166abc7e",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_48529fa701b1d761",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_e84dca525185fb78",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_2ea2e959688af16f",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_18b4bb30bb9a0113",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_3804e7a669ddae48",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_2882a85afb299b70",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_561a0d1cc8671699",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_c50b19c1a731738f",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_10bc8409db783c0b",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_598f6f7142e805f5",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_17ff3a8081b79a20",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "acceptedpair_44aeb1233b6d0930",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    },
+    {
+      "group_id": "cf_4a446f5d1cf8fca4",
+      "identity_rows": 2,
+      "messages_equal": true,
+      "messages_sha256": "099056dd6e6848d1b29160e59bfaa72b9c59eeefd74e7f4d399859fc2e9efc87"
+    }
+  ],
+  "source_sha256": {
+    "cmllm_remote\\third_party\\LISA\\model\\LISA.py": "9f880960c5f0b9744306962bd5852929f39b7f2f7ee06ed13e7c36836e9811f5",
+    "cmllm_remote\\third_party\\LISA\\model\\llava\\model\\language_model\\llava_llama.py": "cac2ff97dae714b497281a97de47fd0cfa931238b1fee142ba881b7d91492a9a",
+    "cmllm_remote\\scripts\\eval_mr_ref_counterfactual_v0.py": "d04c0ee75b2ddff74da208b08caaefb30d38468419e0acb40d65c543b8670e4d"
+  },
+  "device_only_substitution": ".cuda() -> .cpu() in the three extracted manual-mask assignments",
+  "model_calls": 0,
+  "tokenizer_loaded": false,
+  "scorer_calls": 0
+}
