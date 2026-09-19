@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-09-19T16:07:24.052510+08:00",
+  "source_revision": "1e7b1e5177eb46831c6d67a7aa5a59b29f0d0abc",
+  "metadata_check": "PASS_METADATA_ONLY",
+  "model_calls": 0,
+  "scorer_calls": 0,
+  "scientific_result_changes": 0,
+  "production_changes": 0,
+  "manuscript_changes": 0,
+  "source_sha256": {
+    "cmllm_remote/external_baselines/segllm/memory_state.py": "7b7afe8c81c62867c12646fb865c42660b8b6985126b3d911b41873591493c07",
+    "cmllm_remote/external_baselines/segllm/run_smoke.py": "3ae4d8535be9bb340bb4b9527aff8bf682c28d4842e50304b6a9e7ac79d7580a",
+    "cmllm_remote/external_baselines/segllm/prepare_inputs.py": "0a638971196e764687dd9ce5767c6bb80fbeabd729bbf410d6074cbb38a02b25",
+    "cmllm_remote/external_baselines/segllm/run_val50.py": "f2f6dafed7382bc173cb5c442119f6cb0cf2eb08ebdd21e31551a846a169e08f",
+    "research_log/run_cma_cycle025.py": "5f3054ac46687f689e90d01dd858c8a0c804b74e2e93b62579c63bdc4c3b623d",
+    "research_log/score_cycle025.py": "0ec99bca9931f8fdec3e381c0474dd9b142405e15b0da215fcc7a50777b92f4b",
+    "cmllm_remote/scripts/eval_mr_ref_counterfactual_v0.py": "d04c0ee75b2ddff74da208b08caaefb30d38468419e0acb40d65c543b8670e4d",
+    "cmllm_remote/third_party/LISA/model/LISA.py": "9f880960c5f0b9744306962bd5852929f39b7f2f7ee06ed13e7c36836e9811f5"
+  }
+}

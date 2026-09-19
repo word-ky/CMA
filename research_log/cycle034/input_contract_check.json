@@ -1,0 +1,27 @@
+{
+  "status": "PASS_METADATA_ONLY",
+  "groups": 50,
+  "paired_keys_per_method": 200,
+  "segllm_injected_trials_verified": 200,
+  "same_raw_identity_sources": true,
+  "CMA_pixel_equality": "recorded Cycle025 assertion; not re-read images",
+  "prepared_geometry_fixed_across_conditions": true,
+  "native_bbox_fixed_across_conditions": true,
+  "native_appearance_changes_across_conditions": true,
+  "runtime_raster_paths_within_target_free_allowlist": true,
+  "both_freezes_before_scoring": true,
+  "cma_freeze_unix": 1789754448.7782187,
+  "segllm_freeze_unix": 1789754795.864617,
+  "scoring_start_unix": 1789754800.283603,
+  "source_sha256": {
+    "protocol_receipt.json": "b1b234244a18a245a93ab50b95fb45a1e04d5b2cd4161c6b4740f4d15a8dce7a",
+    "inference_specs.json": "67f74da069e680ccdb72da234eecae4cb162032b9aecb46cca9983b00d6d831a",
+    "cma_prediction_freeze.json": "d2c62fb9af4d005afb76b77913d1cd8da97adfa4c1415882702356bb7fd5339f",
+    "segllm_prediction_freeze.json": "4472a00291d8cab6440357a07f0ad857c312956dc4a6b7485ae43e0f8c771b40",
+    "scoring/prediction_freeze_audit.json": "3b6ef4197b275280835f3d14bfb32ecbae6b21baa8740cd1cd6d1870490387cf",
+    "local_verification.json": "f9a8f58454e62e110421c96f9d3b5e6c0619e0ba9f3a23a830f90121c1713156"
+  },
+  "model_calls": 0,
+  "scorer_calls": 0,
+  "images_or_predictions_opened": false
+}
