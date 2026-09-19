@@ -1,0 +1,7 @@
+{
+  "scoring_started_unix": 1789835571.1611362,
+  "crop_zero_freeze_sha256": "59dfae934f2c726c69d39961f3682b2d37d0f7e9896278b9b05b0d6421b9d14d",
+  "control_freeze_sha256": "d2c62fb9af4d005afb76b77913d1cd8da97adfa4c1415882702356bb7fd5339f",
+  "prediction_hashes_verified": true,
+  "target_free_runtime_reads_verified": true
+}

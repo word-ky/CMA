@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE",
+  "run_id": "20260920-003129-cma-cycle038-crop-zero",
+  "exit_code": 0,
+  "capacity_gate": "PASS",
+  "launch_attempts": 1,
+  "predictions": 200,
+  "hook_calls": 100,
+  "all_prediction_hashes_verified_locally": true,
+  "control_metric_hashes_match_cycle025": true,
+  "freeze_before_scoring": true,
+  "archive_sha256": "8fca763a0a48cac5fd3d05e4fb3f7661c3829277addec851bff75bb11fbcea47",
+  "archive_bytes": 436259,
+  "intervention": {
+    "original_method_sha256": "90dbc1cb360408112e5bdda534e7c74b27a9674e3836986cb3da71515206d332",
+    "intervened_method_sha256": "50291d5fbce7634be8d19b3fb6d3b34f7f9a9442f68fd0fff6a70b8778821a14",
+    "location": "LISA.py build_ref_input_embeddings immediately after pooled crop_features assignment"
+  },
+  "artifact_sha256": {
+    "prediction_freeze.json": "59dfae934f2c726c69d39961f3682b2d37d0f7e9896278b9b05b0d6421b9d14d",
+    "prediction_freeze_audit.json": "58cbeb61ebc9bb32de3756eaa119347a9e5ba38eb2302573ad1ea0f384c1ed7a",
+    "paired_results.json": "4f554ab1842d66674d9e8229d66b1768aa3a34f97e70da8f2c029c3226654471",
+    "clean_metrics.json": "f97c7d2cd01d7c6a3ab2de5f50f0f1c35138ab55aba8e5eebfceb9ec595a3b85",
+    "target15_b_metrics.json": "e9f7251fd45d1b911ea6d53b5eb2158d16253bc703107a760a3ae48a079ada49",
+    "PAIRED_GROUP_DELTAS.csv": "68a6a8942b638df368a61ba3fc30c87f7b4dbac8cfc5f940755b0225ee6b7593",
+    "run.log": "f1207a0c8f47451f52a0122980d0209c82ef38f3ffa1901b1a521e8a6a697d2f"
+  }
+}

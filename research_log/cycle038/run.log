@@ -1,0 +1,91 @@
+[autodl] run_id=20260920-003129-cma-cycle038-crop-zero
+[autodl] started_at=2026-09-20T00:31:34+08:00
+PASS: pooled crop removed; bbox/input tensors, dtype, shape and device preserved
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 46.73it/s]
+clean 1 groups
+clean 11 groups
+clean 21 groups
+clean 31 groups
+clean 41 groups
+target15_b 1 groups
+target15_b 11 groups
+target15_b 21 groups
+target15_b 31 groups
+target15_b 41 groups
+CMA_ALL_PREDICTIONS_FROZEN 200
+{
+  "clean": {
+    "full": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.882756276338968,
+      "memory_fidelity": 0.97,
+      "cmsa": 0.92,
+      "identity_error_rate": 0.01,
+      "mean_identity_margin": 0.8739440872842417,
+      "median_identity_margin": 0.952628848675662
+    },
+    "zero": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.3998563989697609,
+      "memory_fidelity": 0.48,
+      "cmsa": 0.04,
+      "identity_error_rate": 0.39,
+      "mean_identity_margin": 0.043327437977507,
+      "median_identity_margin": 0.0
+    },
+    "delta": {
+      "target_miou": -0.48289987736920714,
+      "cmsa": -0.88,
+      "memory_fidelity": -0.49,
+      "identity_error_rate": 0.38,
+      "mean_identity_margin": -0.8306166493067346,
+      "median_identity_margin": -0.952628848675662
+    },
+    "cmsa_lost": 44,
+    "cmsa_gained": 0,
+    "cmsa_changed": 44,
+    "control_metrics_sha256": "76d69c5bcc8412e5cfd8a6a97248f795458b5265b7633b1a796ef945130fc912"
+  },
+  "target15_b": {
+    "full": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.6752783679741409,
+      "memory_fidelity": 0.84,
+      "cmsa": 0.58,
+      "identity_error_rate": 0.03,
+      "mean_identity_margin": 0.6466656573442146,
+      "median_identity_margin": 0.8428751370835651
+    },
+    "zero": {
+      "num_groups": 50,
+      "num_references": 100,
+      "num_pairs": 50,
+      "target_miou": 0.3427800440468014,
+      "memory_fidelity": 0.47,
+      "cmsa": 0.0,
+      "identity_error_rate": 0.37,
+      "mean_identity_margin": 0.005094536613928643,
+      "median_identity_margin": 0.0
+    },
+    "delta": {
+      "target_miou": -0.33249832392733947,
+      "cmsa": -0.58,
+      "memory_fidelity": -0.37,
+      "identity_error_rate": 0.33999999999999997,
+      "mean_identity_margin": -0.6415711207302859,
+      "median_identity_margin": -0.8428751370835651
+    },
+    "cmsa_lost": 29,
+    "cmsa_gained": 0,
+    "cmsa_changed": 29,
+    "control_metrics_sha256": "65ff0d818faa73f2c94fececb743e1c6d25ccaad6283472a8668173f5ff6fa28"
+  }
+}
+[autodl] finished_at=2026-09-20T00:32:55+08:00
+[autodl] exit_code=0
