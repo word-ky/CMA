@@ -11,3 +11,5 @@ REVIEW031/33c8b72 implemented. No model weights/tokenizer/inference/training/sco
 Exactly one next recommendation: review the verified causal graph with the user until the distinction between pre-REF context, later SEG semantics and explicit geometry is clear.
 
 Delivery status: GitHub delivery proceeds; A6000 mirror is pending. SCP default/legacy upload and a read-only SSH check were closed by the server (2026-09-19). No successful remote extraction is claimed. Local archive outputs/cycle032_delivery.tgz SHA256 fad727471c7d756f6d5af8eae3890f13dadffac6281cd9a3fdaee7dc31b46125 contains the teaching delivery before this status note; rebuild the archive including the note when retrying.
+
+Delivery follow-up 2026-09-19T13:48:20.222520+08:00: A6000 connection recovered. Rebuilt Cycle032 archive, uploaded and extracted successfully; local/remote SHA256 matched da59304a549cef3fff20a732c7c9124a8caac40af7a0209ed013ccb858e357ed. The previous PENDING mirror status is resolved. No model/scorer executed; no new review/task as of this check.
