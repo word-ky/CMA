@@ -1,0 +1,12 @@
+# Cycle033 — supplied identity channels and training paths
+
+REVIEW032/c251a1c completed as method teaching only. No weights/images loaded, model forward, training, scoring, production patch, manuscript work or Layer2 revival.
+
+- `verify_runtime_layout.py` / `runtime_layout_receipt.json`: configuration+tokenizer-only execution in recovered A6000 environment, PASS. Actual CLIP image224/patch14 gives256patches. Five w15 tokenizer/config assets match Cycle025 hashes. Real llava_v1 serialization and image-start/end processing produce REF32001/SEG32000. Representative raw REF72 expands327; current output REF reads326; auxiliary reads327. SEG raw66/103 expands321/358; current selections320/357. All50 frozen A/B rows have identical real token IDs. No hidden-state comparison.
+- `RUNTIME_LAYOUT_VERIFICATION.md` records precise source/config scope. Initial audit-only singleton-token assumption failed because isolated REF/SEG encodings include a leading29871; the script now uses the actual frozen get_added_token_id helper. Production token handling was already correct and was not changed.
+- `IDENTITY_CHANNEL_BUNDLE.md`: separates shared scene/text, changing crop/mask/bbox, legitimate inference reference fields and training/scoring-only helmet targets. Current evidence identifies the joint supplied-memory bundle, not isolated appearance or geometry effects.
+- `TRAINABLE_PATH_AUDIT.md`: source training recipe enables LoRA defaults, embeddings/lm_head, REF/text projections, output scale and SAM mask decoder, while freezing vision/mm projector/SAM image+prompt parameters. Exact historical per-parameter requires_grad/optimizer snapshot is UNKNOWN; source defaults are not promoted to recovered historical facts. Auxiliary reconstruction reuses text_hidden_fcs and SAM decoder.
+- `TRAINING_GRADIENT_GRAPH.md`: CE, helmet BCE/Dice, reference BCE/Dice and rank connectivity, explicitly separated from trainability and measured importance. Frozen prompt operations can pass gradients to their inputs; image encoders' no_grad paths cannot. Pre-REF loss gradients can update shared language parameters without making the earlier forward state identity-aware.
+- `TEACHING_NOTE.md`: concise Chinese answers to what MinerA supplies, which signals reach SAM explicitly, which reach later SEG through the decoder, and which losses enforce identity distinction.
+
+Exactly one next recommendation: continue teaching the difference between a supplied identity bundle, learnable transformations and independently demonstrated component benefit.
