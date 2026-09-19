@@ -1,0 +1,33 @@
+{
+  "name": "CMA_BENCH_LARGE_V1",
+  "status": "FROZEN_BEFORE_TASK_MODEL_INFERENCE",
+  "groups": 352,
+  "source_images": 352,
+  "identities": 704,
+  "conditions": [
+    "clean",
+    "target15_b"
+  ],
+  "predictions_per_method": 1408,
+  "frozen_unix": 1789838250.4036596,
+  "files_sha256": {
+    "candidate_manifest.jsonl": "e5635de999933389f69b170132d2fa82464f98044773973946eff327cb62672e",
+    "exclusion_registry.json": "17aaec67ea302dab77b489d1fb2bcf5d2ea8aca83e1df6a03eba5fa7fdfdc780",
+    "selection_receipt.json": "eb66fe6c464801aea60c481232b5ea40613efa5809c6fabea24ca4c1e86e013b",
+    "frozen_assets.json": "9703d60f617dc9c0c15c99e80b8f075e81efb68e9d68f175a3c0cfeb89b6e77b",
+    "asset_integrity_audit.json": "d55c83e0e26a9bf5d560a00233343e003b22bc34045795f5465e83d68e02e153",
+    "protocol_receipt.json": "849753613fb15ba7351a7a0768d4ea26483fa2630daccba46bcb7f5cc3afeb6e",
+    "execution_manifest.json": "8155ba41580e2b3604ed99113fb06fe29b4bf01149106cb9f7e5797f2b3ec864",
+    "inference_specs.json": "00d281b4aba4bacf8601780d02f7a49ce56ffe8aaacfcdd4fac73c0ab4763783",
+    "selected_group_qc_provenance.json": "c963398e1ea41784c61d80fbd30101075d07b73d99cd5b61c4a2fc42b9e165ff",
+    "counterfactual_selected_restored.jsonl": "55aff4958768ec5a164534a19f216a4216677720ff322f849818dd80f8d08ccf",
+    "helmet_miner_pairs_restored.jsonl": "c69ee79934e5c0da6be0ea12d96d64a219df462a51265636b9006751210aa17b"
+  },
+  "source_group_manifest_sha256": "55aff4958768ec5a164534a19f216a4216677720ff322f849818dd80f8d08ccf",
+  "source_pair_manifest_sha256": "c69ee79934e5c0da6be0ea12d96d64a219df462a51265636b9006751210aa17b",
+  "scorer_sha256": "3cc6192b3ddd97f0010f3382ab0204ee99286e1e372ee0c86f50898c623939d4",
+  "new_task_model_predictions": 0,
+  "labels": "Reconstructed SAM-B pseudo-targets; not original human segmentation ground truth",
+  "disjointness": "Zero exact-image-byte overlap with documented 9599-image registry; unknown historical w15 exposure remains unknown",
+  "quality": "193 accepted-pair combinations + 159 historical review groups, original QC preserved; mechanical validity does not promote to clean human annotations"
+}

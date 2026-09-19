@@ -1,0 +1,79 @@
+[
+  {
+    "name": "RAS_README",
+    "url": "https://raw.githubusercontent.com/Shengcao-Cao/RAS/main/README.md",
+    "status": "FETCHED",
+    "sha256": "7e45a5d44261363d494997fc3afbef2a45058793d424019484f693fb3bcbb021",
+    "bytes": 9198
+  },
+  {
+    "name": "RAS_tree",
+    "url": "https://api.github.com/repos/Shengcao-Cao/RAS/git/trees/main?recursive=1",
+    "status": "FETCHED",
+    "sha256": "c148612ffd9f6b53df83856d2a2b2b800334fa0b94846561f2b1c4f4da522a9a",
+    "bytes": 6866
+  },
+  {
+    "name": "VRP_README",
+    "url": "https://raw.githubusercontent.com/syp2ysy/VRP-SAM/main/README.md",
+    "status": "FETCHED",
+    "sha256": "419f1aa932d2c527ba353b7e290062c476798a23821631b04b84a86c22439f9c",
+    "bytes": 4426
+  },
+  {
+    "name": "VRP_tree",
+    "url": "https://api.github.com/repos/syp2ysy/VRP-SAM/git/trees/main?recursive=1",
+    "status": "FETCHED",
+    "sha256": "0fa7f10142cac9ea5be15ebb2a60fc467558a98cf18e8a99636d568b019d48a7",
+    "bytes": 37548
+  },
+  {
+    "name": "LISA_README",
+    "url": "https://raw.githubusercontent.com/JIA-Lab-research/LISA/main/README.md",
+    "status": "FETCHED",
+    "sha256": "a01579f1fde6db5b7cc33305817aa9e56ba3ed57a5b0e7e1f07ec8bae17c1ebb",
+    "bytes": 18740
+  },
+  {
+    "name": "RAS_checkpoint",
+    "url": "https://huggingface.co/api/models/Shengcao1006/RAS-13B-General",
+    "status": "FETCHED",
+    "sha256": "d3896fad3488a1fc10825803a92265a4e2badbaba10d7475c73a74e08c599fe2",
+    "bytes": 1490
+  },
+  {
+    "name": "LISA_checkpoint",
+    "url": "https://huggingface.co/api/models/xinlai/LISA-7B-v1",
+    "status": "FETCHED",
+    "sha256": "306953c268397f0984a69706cc116475c1a350dbf43ed45606e0de7dba454089",
+    "bytes": 1720
+  },
+  {
+    "name": "RAS_eval_ores",
+    "url": "https://raw.githubusercontent.com/Shengcao-Cao/RAS/7eacf350248067fc5f17261ea4b48382a9f6c11e/eval_ores.py",
+    "status": "FETCHED",
+    "sha256": "1ae431c493a3d73e92b373f6d1937ab445c402ec80d461e59d2d8cfebe4e2909",
+    "bytes": 3268
+  },
+  {
+    "name": "RAS_config",
+    "url": "https://huggingface.co/Shengcao1006/RAS-13B-General/resolve/13f85fc38645e0b452045e425f5f5c1707e10058/config.json",
+    "status": "FETCHED",
+    "sha256": "8e5736dbc95e8af78c073772923c80bf234fc36f23c6daebc7547412e82ccfde",
+    "bytes": 2195
+  },
+  {
+    "name": "VRP_train",
+    "url": "https://raw.githubusercontent.com/syp2ysy/VRP-SAM/9c53a6a43373165d7cd185d96707b6a4d6665413/train.py",
+    "status": "FETCHED",
+    "sha256": "1a92357fc19b0e7979125b4df5b012a4389c3d07ff852060a351c38bb7b04e17",
+    "bytes": 6580
+  },
+  {
+    "name": "LISA_chat",
+    "url": "https://raw.githubusercontent.com/JIA-Lab-research/LISA/main/chat.py",
+    "status": "FETCHED",
+    "sha256": "ca4aaa29df12c9aa6a300acfb2079fdb1df9af49f7e0a4b7e4013143e8fb4426",
+    "bytes": 8647
+  }
+]

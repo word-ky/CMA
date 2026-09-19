@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-09-20T01:20:07.994075+08:00",
+  "run_id": "20260920-011153-cma-cycle039-benchmark-assets",
+  "exit_code": 0,
+  "asset_groups": 352,
+  "invalid_groups": 0,
+  "unique_pairs": 704,
+  "receipt_hash_bindings_match": true,
+  "source_images_unique": true,
+  "order_matches_selection": true,
+  "asset_archive_sha256": "f5fdec155131cf46c7e5f0fb02e2e35ad6d7ccc726301adce6dd10c0acc84fcf",
+  "asset_archive_bytes": 2087298,
+  "train_log_sha256": "7a6fdf7de8a0558a7544a462177d3c71ac5b598ffa619fb0c635cec6a4a31fb3",
+  "github_write_check_issue_comment": 5743843894,
+  "new_task_model_predictions": 0,
+  "restored_manifest_hashes_match": true,
+  "focused_asset_tests": "3 passed",
+  "new_python_syntax": "passed"
+}

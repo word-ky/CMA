@@ -1,0 +1,29 @@
+{
+  "frozen_unix": 1789838250.4036596,
+  "groups": 352,
+  "selection_sha256": "eb66fe6c464801aea60c481232b5ea40613efa5809c6fabea24ca4c1e86e013b",
+  "asset_receipt_sha256": "9703d60f617dc9c0c15c99e80b8f075e81efb68e9d68f175a3c0cfeb89b6e77b",
+  "group_manifest_sha256": "55aff4958768ec5a164534a19f216a4216677720ff322f849818dd80f8d08ccf",
+  "pair_manifest_sha256": "c69ee79934e5c0da6be0ea12d96d64a219df462a51265636b9006751210aa17b",
+  "execution_manifest_sha256": "8155ba41580e2b3604ed99113fb06fe29b4bf01149106cb9f7e5797f2b3ec864",
+  "frozen_code_hashes": {
+    "scripts/eval_mr_ref_counterfactual_v0.py": "d04c0ee75b2ddff74da208b08caaefb30d38468419e0acb40d65c543b8670e4d",
+    "scripts/counterfactual_export.py": "6e77025f62d0325bf894af329f95b9ec47d37f7fd681d90e89c5cac891ac3121",
+    "scripts/eval_counterfactual_memory_fidelity.py": "3cc6192b3ddd97f0010f3382ab0204ee99286e1e372ee0c86f50898c623939d4",
+    "scripts/run_mcr_train_predictions.py": "f3eee67c895555b9ec3329f390ae5bb313c6f18cb7f03f25e75ed74d7555f380",
+    "external_baselines/segllm/run_smoke.py": "3ae4d8535be9bb340bb4b9527aff8bf682c28d4842e50304b6a9e7ac79d7580a",
+    "external_baselines/segllm/load_native.py": "cf7fd4a41e462308c2234e322412c37603acb70899c50ae0223e7a49f711f10d",
+    "external_baselines/segllm/weight_fidelity.py": "effe58373763fe0d7d364edcabd7c6cf0f50c70f7ee70a672ec98270657c464a",
+    "external_baselines/segllm/memory_state.py": "7b7afe8c81c62867c12646fb865c42660b8b6985126b3d911b41873591493c07",
+    "external_baselines/segllm/prepare_inputs.py": "0a638971196e764687dd9ce5767c6bb80fbeabd729bbf410d6074cbb38a02b25",
+    "external_baselines/segllm/run_val50.py": "f2f6dafed7382bc173cb5c442119f6cb0cf2eb08ebdd21e31551a846a169e08f"
+  },
+  "zero_overlap_with_prior_used_images": true,
+  "segllm_source_revision": "4593a069f09628ce3a5b46e657f5417fefd7be46",
+  "segllm_checkpoint_revision": "095e0637fcba015a02c0686f67b848c79c3cc80b",
+  "all_segllm_port_hashes_equal_cycle018": true,
+  "target_access_here": "asset validity/hash freeze only, before model inference; no prediction scoring",
+  "pseudo_labels": "Same fixed SAM-B restoration pipeline; no hand corrections",
+  "layer2": false,
+  "tuning": false
+}

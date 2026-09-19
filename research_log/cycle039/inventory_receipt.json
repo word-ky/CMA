@@ -1,0 +1,24 @@
+{
+  "name": "CMA_BENCH_LARGE_V1",
+  "selection_frozen_unix": 1789837881.7039998,
+  "ordering": "sha256(CMA_BENCH_LARGE_V1: + image_sha256 + : + counterfactual_id), then ID",
+  "policy": "All mechanically valid distinct-source-image groups; no model output filtering; preserve Cycle024 representative per image",
+  "cycle024_candidates": 402,
+  "later_used_images_excluded": 50,
+  "selected_metadata_candidates": 352,
+  "exclusion_registry_images": 9599,
+  "source_counts": {
+    "accepted_pair_combinations": 193,
+    "episodes_counterfactual_review.jsonl": 159
+  },
+  "candidate_manifest_sha256": "e5635de999933389f69b170132d2fa82464f98044773973946eff327cb62672e",
+  "exclusion_registry_sha256": "17aaec67ea302dab77b489d1fb2bcf5d2ea8aca83e1df6a03eba5fa7fdfdc780",
+  "prior_inventory_sha256": "69bc3a724c49fd3707bfbc1b3529cd177b4839cee8fd29999258c74454b0cc8b",
+  "prior_candidate_audit_sha256": "82c622509a1dd92814e65834fddc7804d194e748ba1790054f8d271206b4ab6a",
+  "prior_metadata_sha256": "61064598f29bd69bbfc64ae27559692296a43614b0476d343c392bc4c0bc9efa",
+  "mechanical_mask_validity": "VALID_FOR_FROZEN_INFERENCE",
+  "new_task_model_predictions": 0,
+  "valid_groups": 352,
+  "invalid_groups": 0,
+  "protocol_frozen_unix": 1789838250.4036596
+}
