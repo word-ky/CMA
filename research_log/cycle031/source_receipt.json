@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-09-19T12:21:25.974450+08:00",
+  "source_revision": "7763f3b19e99a8db80dd4c132ebbaa30de510f01",
+  "inspection": "static source/config only",
+  "source_sha256": {
+    "cmllm_remote/third_party/LISA/model/LISA.py": "9f880960c5f0b9744306962bd5852929f39b7f2f7ee06ed13e7c36836e9811f5",
+    "cmllm_remote/third_party/LISA/model/llava/model/language_model/llava_llama.py": "cac2ff97dae714b497281a97de47fd0cfa931238b1fee142ba881b7d91492a9a",
+    "cmllm_remote/third_party/LISA/model/llava/model/llava_arch.py": "16566c448eca4d9dfee14114fd702242407e90023b1670f2f40f9452107d32b0",
+    "cmllm_remote/third_party/LISA/utils/dataset.py": "580cdecfca4bbc2f978aa2c79fc3f9c2345fdd28b9fde04e574f868f311a3886",
+    "cmllm_remote/third_party/LISA/utils/mr_ref_seg_dataset.py": "2ab9b976a00ea3b9f3530f1246f83d97f86e814a59ab9f0b596a0c5e4be09a4d",
+    "cmllm_remote/scripts/eval_mr_ref_counterfactual_v0.py": "d04c0ee75b2ddff74da208b08caaefb30d38468419e0acb40d65c543b8670e4d",
+    "cmllm_remote/scripts/build_mr_ref_counterfactual_train.py": "3530d54b46c653b3d0147ef45626db6127dfa69667924f283388c04fc5dc43bb",
+    "cmllm_remote/scripts/run_mcr_train_predictions.py": "f3eee67c895555b9ec3329f390ae5bb313c6f18cb7f03f25e75ed74d7555f380",
+    "cmllm_remote/scripts/eval_counterfactual_memory_fidelity.py": "3cc6192b3ddd97f0010f3382ab0204ee99286e1e372ee0c86f50898c623939d4",
+    "research_log/run_cma_cycle025.py": "5f3054ac46687f689e90d01dd858c8a0c804b74e2e93b62579c63bdc4c3b623d",
+    "research_log/cycle028/W15_CONFIG_SNAPSHOT.json": "2713d1a90022fa0e511063afbba73a269e0846e22a2d8f735931562aa36b28f3"
+  },
+  "model_calls": 0,
+  "scorer_calls": 0,
+  "manuscript_changes": 0,
+  "upstream_exact_diff": "not established",
+  "toy_numbers": "pedagogical, hand-calculated; not model evidence"
+}
