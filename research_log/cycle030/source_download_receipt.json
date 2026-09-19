@@ -1,0 +1,54 @@
+[
+  {
+    "id": "sam",
+    "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Kirillov_Segment_Anything_ICCV_2023_paper.pdf",
+    "local_path": "outputs\\cycle030_sources\\sam.pdf",
+    "sha256": "77992e7a518edcaf5200a750299b98f99de051066f7c1dac357e6baf8ce068bb",
+    "bytes": 10985226
+  },
+  {
+    "id": "lisa",
+    "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Lai_LISA_Reasoning_Segmentation_via_Large_Language_Model_CVPR_2024_paper.pdf",
+    "local_path": "outputs\\cycle030_sources\\lisa.pdf",
+    "sha256": "730ab4ddde132309466e6d4a3f3315ef30ec3d1b4bda904ac92e53cb27846208",
+    "bytes": 5315200
+  },
+  {
+    "id": "vrp",
+    "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Sun_VRP-SAM_SAM_with_Visual_Reference_Prompt_CVPR_2024_paper.pdf",
+    "local_path": "outputs\\cycle030_sources\\vrp.pdf",
+    "sha256": "64b51913f72eef2824e6e238172323db7730fef6d7f6ddaa079ec89776349a94",
+    "bytes": 4401422
+  },
+  {
+    "id": "dinov",
+    "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Visual_In-Context_Prompting_CVPR_2024_paper.pdf",
+    "local_path": "outputs\\cycle030_sources\\dinov.pdf",
+    "sha256": "60cdce7659a900ce372092cb278714201b8bf30bdf3e90aae2ef03bd92ccfabb",
+    "bytes": 5577092
+  },
+  {
+    "id": "ris",
+    "url": "https://openaccess.thecvf.com/content_CVPR_2019/papers/Ye_Cross-Modal_Self-Attention_Network_for_Referring_Image_Segmentation_CVPR_2019_paper.pdf",
+    "local_path": "outputs\\cycle030_sources\\ris.pdf",
+    "sha256": "63aa7ecdc95ce0a1d7b5565d48d614f552f322ef1472a15b6659fcd31ef17a59",
+    "bytes": 836552
+  },
+  {
+    "id": "segllm",
+    "url": "https://openreview.net/pdf?id=Pm1NXHgzyf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "segllm_arxiv",
+    "url": "https://arxiv.org/pdf/2410.18923",
+    "sha256": "050a326ccc590e9d8757cb9780dbf946c54e8739bd8c7dfc9a67bab4167714df",
+    "bytes": 13744126
+  },
+  {
+    "id": "segllm_published",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/8e125fb53198f2143716d969584d0a28-Paper-Conference.pdf",
+    "sha256": "61e663ad8e5526d464df590c9ad83e496f0b427ab3353654942411667236f045",
+    "bytes": 13587519
+  }
+]

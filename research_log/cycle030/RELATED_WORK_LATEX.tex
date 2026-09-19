@@ -1,0 +1,59 @@
+\section{Related work}
+\label{sec:related}
+\paragraph{Referring and reasoning segmentation.}
+Referring image segmentation uses language to specify the object whose pixels
+should be predicted. Cross-Modal Self-Attention Network~\cite{ye2019cross}
+models interactions between linguistic and visual features for this task.
+LISA~\cite{lai2024lisa} extends the instruction interface to reasoning-oriented
+requests and decodes a segmentation-token representation into a mask.
+These formulations establish that identifying the requested target can require
+more than recognizing its category. Our question concerns an additional
+conditioning variable: when a localized worker reference changes, does a
+fixed relational request select the corresponding equipment instance?
+The output remains a segmentation mask, but correctness includes following
+the supplied identity intervention. Language understanding and mask quality
+are therefore necessary without being sufficient evidence of identity control.
+CMA inherits the LISA-style language-to-mask path and the promptable SAM
+backbone~\cite{kirillov2023segment}; these inherited capabilities are not
+presented as contributions of our reference-conditioning mechanism.
+
+\paragraph{Visual reference and in-context segmentation.}
+SAM~\cite{kirillov2023segment} provides a promptable interface for selecting
+image regions. Visual references can additionally specify what should be
+segmented through examples. VRP-SAM~\cite{sun2024vrp} encodes an annotated
+reference image to guide segmentation in a target image, supporting several
+forms of reference annotation. Visual In-Context Prompting, implemented by
+DINOv~\cite{li2024visual}, supports referring and generic segmentation using
+visual prompts and reference image segments, including single-image and
+cross-image settings. These works establish relevant ways to communicate
+visual intent; they should not be reduced to text-only segmentation methods.
+For CMA, the supplied reference localizes a miner, whereas the requested
+output is the helmet associated with that miner. The memory contains a miner
+mask, bounding box and appearance crop from the same condition image.
+Consequently, the evaluated task does not require discovering the worker
+from an unlocalized identity token. Nor does it test cross-image appearance
+transfer from a separately preserved clean exemplar. Our contrast with visual
+reference segmentation concerns this particular input-to-target relation and
+the controlled evaluation, rather than a claim that those architectures cannot
+express relations. VRP-SAM and DINOv provide literature context here; neither
+has been evaluated as a baseline in the frozen comparison.
+
+\paragraph{Multi-round and memory-conditioned segmentation.}
+SegLLM~\cite{wang2025segllm} explicitly reuses visual and textual outputs from
+previous rounds and segments objects related to previously identified
+entities. Its relational task therefore already overlaps the broad idea of
+using entity context to select a different target. We do not claim priority
+for that capability. CMA studies a narrower intervention: supplied localized
+miner memory selects a relationally associated helmet, and switching that
+memory while holding scene and query fixed tests whether target identity
+follows the reference. The paired overlap matrix separates correct-identity
+preference, successful localization of both identities, and confident
+wrong-identity selection. The inspected literature does not establish an
+identical evaluation contract; this observation is not an exhaustive absence
+claim. Our pinned SegLLM comparison measures complete released/trained
+systems through their native memory interfaces. It does not control training
+exposure or isolate architectural effects. The resulting evidence is limited
+to supplied-memory use on the frozen pseudo-labelled subset under one
+compound stressor. Conversational memory in prior work also does not turn
+our fixed-forward evaluation into autonomous memory acquisition, persistent
+tracking, or an agent that repairs unreliable state.

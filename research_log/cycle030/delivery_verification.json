@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-09-19T11:58:51.357451+08:00",
+  "prior_artifacts_verified_unchanged": 45,
+  "cited_keys": [
+    "kirillov2023segment",
+    "lai2024lisa",
+    "li2024visual",
+    "sun2024vrp",
+    "wang2025segllm",
+    "ye2019cross"
+  ],
+  "uncited_entries": [],
+  "unresolved_citations": [],
+  "overfull_boxes": 0,
+  "underfull_boxes": 5,
+  "pages": 7,
+  "visual_inspection": "Seven-page contact sheet; no clipping",
+  "model_calls": 0,
+  "scorer_calls": 0,
+  "new_scientific_selection": false,
+  "artifact_hashes": {
+    "HANDOFF.md": "ed2fb3ae1c17b175391453f732cc44a0582cdc7dcc486a22f111ffc74a297aba",
+    "INTRODUCTION_LATEX.tex": "ff1709bd0da988a95edfdb938442946fe185811557189d209a36a86a13c3d59c",
+    "METHOD_LATEX.tex": "f4bcdbbf756bb996ed80ab5e931eb34b4772bf8ffa11bb7d1ce8b1be025c68f1",
+    "PAPER_SHELL.pdf": "6eb9f679029f2612b92d742a141be617659e5662f9404121ae9366edee2eaeaa",
+    "PAPER_SHELL.tex": "3a0f7d01bb03fb485caf9fcf2cf84ded988ff2f4e27b70b0010a6243def7c706",
+    "references.bib": "979f14b93f1341c547f7366ba1aac9b73acb736abb3993b4d53281d2d633b8bc",
+    "RELATED_WORK_AUDIT.md": "16eac2f1819f989918979cbde2008802e59a673e8ab9ddfba9c50710231c8d95",
+    "RELATED_WORK_LATEX.tex": "50af6f9b9e0803057bcf28b00c157c562d0d68226dcd18db481f1c520fdd4266",
+    "RELATED_WORK_MAP.md": "b71ec1c7691b3cfcd634763e2b0b1b0f8e3464885dd6b2ce88d6f97e26ba806f",
+    "source_download_receipt.json": "6c4f890d7c7629699e9b67c6ec6f23995ac9eda804c68650aa78ac0b974bfaa1",
+    "source_receipt.json": "046567a55aedaf35733aabb83ee1bfa93a80295cfa96d0cf636c2c18bd3d9d08",
+    "VERIFIED_REFERENCES.md": "5bdbc733e389f9549f808189f81e6130c3cdde4d049bfbf62b5efb13ed4ebd7a"
+  }
+}

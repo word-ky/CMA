@@ -1,0 +1,48 @@
+\section{Introduction}
+\label{sec:introduction}
+Referring and reasoning segmentation connect language requests to object
+regions~\cite{ye2019cross,lai2024lisa}. In scenes containing visually similar workers, locating a helmet is only part
+of the task: a relational request must identify whose helmet is intended.
+Small equipment regions provide limited visual evidence, and darkness, dust,
+blur and glare can further obscure that evidence. A category-correct mask can
+therefore answer the wrong worker-specific question. We study this ambiguity
+through supplied miner identity memory: a reference identifies the worker,
+while a shared query requests the helmet belonging to that worker.
+
+An aggregate segmentation score does not by itself test whether this reference
+controls target identity. A model can repeatedly select a plausible helmet
+without following a change in the requested worker. We consequently hold the
+observation and relational query fixed and switch only the supplied identity
+memory. Each switch has a corresponding helmet target. This controlled
+intervention distinguishes memory-dependent target selection from a preference
+for one visually salient object, while a localization criterion prevents
+identity ranking alone from being counted as successful segmentation.
+
+Building on LISA~\cite{lai2024lisa} and SAM~\cite{kirillov2023segment},
+our implemented CMA design conditions segmentation on entity memory at two
+stages. Reference appearance and bounding-box geometry are mapped into the
+language-model input at the \texttt{[REF]} token. The associated language
+representation and reference-mask geometry then condition the SAM prompt used
+to decode the equipment mask. A paired counterfactual objective encourages a
+memory-conditioned helmet prediction to overlap its own target more than the
+other worker's target. These mechanisms describe the implemented system; our
+comparison does not isolate the gain of each component.
+
+We summarize the contributions as follows:
+\begin{itemize}
+\item We formulate counterfactual identity-memory relational perception for
+visually similar workers and small PPE targets, asking whether a supplied
+worker identity controls which equipment instance is segmented.
+\item We instantiate dual-stage REF conditioning through appearance/bbox input
+injection and reference-conditioned segmentation prompts, with a paired
+counterfactual identity-ranking objective. We evaluate supplied-memory use by
+switching identity under a fixed observation/query and measuring CMSA, Memory
+Fidelity, Identity Error Rate and mIoU, without attributing isolated causal
+gains to components that lack matched ablations.
+\item We provide a frozen system-level comparison under a fixed coal-mine-style
+compound degradation. The primary documented-protocol-disjoint confirmation
+shows stronger absolute degraded segmentation and identity fidelity than the
+pinned SegLLM comparator~\cite{wang2025segllm}. Exact historical exposure remains unknown; this is
+not a claim of lower degradation sensitivity or exact training-unseen
+generalization.
+\end{itemize}
