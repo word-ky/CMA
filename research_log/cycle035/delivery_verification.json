@@ -1,0 +1,14 @@
+{
+  "review_verbatim_before_update": true,
+  "claim_rows": 7,
+  "document_sha256": {
+    "CAUSAL_IDENTIFIABILITY.md": "abae26a26a652da4fc13e3563a5bd0d9bcd48ff02d41e484aa85901673f01f85",
+    "FUTURE_CROP_ABLATION_PREREG.md": "339d25b4f806897963213baac72787336d32bebc1640f25492fb0e3f9cfaf31b",
+    "HANDOFF.md": "247942953e41ec654337cf0eb4196dbbcd03aceaea0a58c09c24f87b33c7d19b",
+    "MATCHED_ABLATION_FEASIBILITY.md": "19c89515456a84547f9f9b7ca7e33a3302da9a945e4752f5dfac8fcf43b1bdf0",
+    "MINIMAL_INTERVENTION_GRAPH.md": "57783b480e08c3fc10ef235aaf4d68f78a0d084a508e5316c0118b786dda375b",
+    "PROGRESS.md": "ad825dcc02aa6eee17d085cb1827e620c15c9be5f05c5296dcf25796e1fa2e7f",
+    "TEACHING_SUMMARY.md": "901ad51ce6a0850ea76850e14ad5b1a3c1c31dee20175823b0edff26a88068b3"
+  },
+  "checks": "Read-only document/source/metadata inspection; no model tests appropriate or run"
+}

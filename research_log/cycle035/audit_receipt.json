@@ -1,0 +1,48 @@
+{
+  "created_at": "2026-09-19T17:02:32.817929+08:00",
+  "mode": "metadata_and_source_only",
+  "checkpoint_model_files": {
+    "added_tokens.json": "2fe7d7069f251c367d65cdb8f4b3cb103d9ef0f9f9536bfc8b388294f15cfe10",
+    "config.json": "2713d1a90022fa0e511063afbba73a269e0846e22a2d8f735931562aa36b28f3",
+    "generation_config.json": "7779e8100d571fa25da277947041f715feea34377294ed0e74ec372ed3a0f1cf",
+    "model-00001-of-00004.safetensors": "045c59fab79c0bfac08bd8d4da0bfd52944d3eadf3cb26ef554ac87626d64431",
+    "model-00002-of-00004.safetensors": "76db53501af5a730dea94e2a087b6c507b7294c5fc8914bc876370549cb77479",
+    "model-00003-of-00004.safetensors": "81981b218677e34a07b18db4a9d4abe7a26ef5898a89ac2b6da30ae244244e52",
+    "model-00004-of-00004.safetensors": "aede44f1356e8c1a1c27989b2a4365d3997d68dddf272c662365d770158cc9f8",
+    "model.safetensors.index.json": "5f36c3c82fa35c0752b4d940fd665b20449d7b0583da89b19bdb5a2950e0fcce",
+    "special_tokens_map.json": "719833ff26ac897a3ec8ed946028a135de2a351470af59b4008744ab1f0ee9b7",
+    "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+    "tokenizer_config.json": "c79eea18fb072436083e89184315f975db46494c8a35420dd68323319ba5e908"
+  },
+  "reconstructed_manifest": {
+    "path": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/outputs/cycle023/episodes_miner_to_helmet_plus_counterfactual_train_reconstructed.jsonl",
+    "sha256": "9e9c6c7f288e7c7a50c9537d6394091f411724871b6caedaf8c8ed9541f001d1",
+    "regular_rows": 9724,
+    "counterfactual_rows": 3731,
+    "total_rows": 13455,
+    "unique_image_bytes": 8123,
+    "matches_historical_log_counts": true,
+    "source_hashes": {
+      "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/episodes_miner_to_helmet_clean_train.jsonl": "26811716f2bf70ad58ccb12d235b31c6c1ee6d60a3e4b8c1c31b8c05f7b01b42",
+      "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/episodes_counterfactual_clean_val.jsonl": "03d41867ed0185466689eb551bf0701c4bf3e5a937367eafb5f2e3c6c70f6650",
+      "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/helmet_miner_pairs_accept_high.jsonl": "d6d586e9800f518eab7e2efa976cebe2406049e9e17e042fc9187e7d84fc76d6"
+    },
+    "builder_sha256": "3530d54b46c653b3d0147ef45626db6127dfa69667924f283388c04fc5dc43bb",
+    "regular_input": "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/shared/data/final_accepted_v1/episodes_miner_to_helmet_clean_train.jsonl",
+    "bucket_rule": "md5(image_path) first8hex modulo10 in0..7; paths may alias identical image bytes"
+  },
+  "source_sha256": {
+    "research_log/CHATGPT_REVIEW_034.md": "77a767b56e95c588e5a7c180d96890ace9b3afd7ec11f91a44e7c9cb94c4b58f",
+    "research_log/cycle023/w15_training_exposure_audit.json": "151eae44e2e220ee6721a727b80ca62b0e11192de574b498647cb538cbcdf31f",
+    "research_log/cycle025/protocol_receipt.json": "b1b234244a18a245a93ab50b95fb45a1e04d5b2cd4161c6b4740f4d15a8dce7a",
+    "research_log/cycle033/TRAINABLE_PATH_AUDIT.md": "867905939e5358399ea456e0b13ba7b626c41ae7f01f05d6816052eaea5c06f2",
+    "cmllm_remote/third_party/LISA/model/LISA.py": "9f880960c5f0b9744306962bd5852929f39b7f2f7ee06ed13e7c36836e9811f5",
+    "cmllm_remote/third_party/LISA/train_ds.py": "03834c12aed411ebfd56867de0c12e20c5ba0622a0a7dab468a5b730946825af",
+    "cmllm_remote/scripts/run_lisa_finetune_mr_ref_v2b_rank.sh": "83616e861ba2499edbd9f68ef3a70b46890ce8e263c446958b6424ff5e05c1cd"
+  },
+  "model_calls": 0,
+  "scorer_calls": 0,
+  "weights_images_predictions_loaded": 0,
+  "production_source_changes": 0,
+  "scientific_result_changes": 0
+}
