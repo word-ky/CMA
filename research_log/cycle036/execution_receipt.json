@@ -1,0 +1,42 @@
+{
+  "status": "BLOCKED_GPU_MEMORY",
+  "time": "2026-09-19T17:43:36.205693+08:00",
+  "run_id": "20260919-174012-cma-cycle036-crop-zero",
+  "exit_code": 1,
+  "preload_binding_checks_passed_by_control_flow": true,
+  "completed_model_forwards": 0,
+  "new_predictions": 0,
+  "scorer_calls": 0,
+  "self_check": "PASS local and remote",
+  "focused_tests": "15 passed in16.04s",
+  "full_tests": "54 passed in27.69s",
+  "cuda_failure": {
+    "physical_gpu": 1,
+    "other_process": 708005,
+    "other_process_GiB": 45.31,
+    "free_MiB": 13.31,
+    "allocation_MiB": 32
+  },
+  "checkpoint_model_files": {
+    "added_tokens.json": "2fe7d7069f251c367d65cdb8f4b3cb103d9ef0f9f9536bfc8b388294f15cfe10",
+    "config.json": "2713d1a90022fa0e511063afbba73a269e0846e22a2d8f735931562aa36b28f3",
+    "generation_config.json": "7779e8100d571fa25da277947041f715feea34377294ed0e74ec372ed3a0f1cf",
+    "model-00001-of-00004.safetensors": "045c59fab79c0bfac08bd8d4da0bfd52944d3eadf3cb26ef554ac87626d64431",
+    "model-00002-of-00004.safetensors": "76db53501af5a730dea94e2a087b6c507b7294c5fc8914bc876370549cb77479",
+    "model-00003-of-00004.safetensors": "81981b218677e34a07b18db4a9d4abe7a26ef5898a89ac2b6da30ae244244e52",
+    "model-00004-of-00004.safetensors": "aede44f1356e8c1a1c27989b2a4365d3997d68dddf272c662365d770158cc9f8",
+    "model.safetensors.index.json": "5f36c3c82fa35c0752b4d940fd665b20449d7b0583da89b19bdb5a2950e0fcce",
+    "special_tokens_map.json": "719833ff26ac897a3ec8ed946028a135de2a351470af59b4008744ab1f0ee9b7",
+    "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+    "tokenizer_config.json": "c79eea18fb072436083e89184315f975db46494c8a35420dd68323319ba5e908"
+  },
+  "hashes": {
+    "research_log\\cycle036\\crop_zero_hook.py": "dd57f5fbfc33d41293607bf9ce45516e4053bbc31ac320f70f1391c881e1f1cb",
+    "research_log\\cycle036\\run_crop_zero.py": "70d35c2e1995b38322a1bc92896769a4f7f70c67c524f2b3f0b61ca3bd3b3516",
+    "research_log\\cycle036\\score_probe.py": "8922fe2745fc9cb9fb5c7368f88e36b066b5d21ab65304915365395f36423089",
+    "research_log\\cycle036\\run.sh": "b7852c37a8ec560e9f5180c29a03ad40195addfa1186b43ec7094b843e1c4bb5",
+    "research_log\\cycle036\\run.log": "47caf460f106f84da3a03f899024607965113d57e135c3e631e906fab6b28573",
+    "research_log\\cycle025\\protocol_receipt.json": "b1b234244a18a245a93ab50b95fb45a1e04d5b2cd4161c6b4740f4d15a8dce7a",
+    "research_log\\cycle025\\cma_prediction_freeze.json": "d2c62fb9af4d005afb76b77913d1cd8da97adfa4c1415882702356bb7fd5339f"
+  }
+}

@@ -1,0 +1,35 @@
+[autodl] run_id=20260919-174012-cma-cycle036-crop-zero
+[autodl] started_at=2026-09-19T17:40:19+08:00
+PASS: pooled crop removed; bbox/input tensors, dtype, shape and device preserved
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00, 29.70it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 39.37it/s]
+Traceback (most recent call last):
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle036/run_crop_zero.py", line 102, in <module>
+    main()
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/research_log/cycle036/run_crop_zero.py", line 57, in main
+    model, tokenizer, dtype, processor, transform = load_base_w15(root)
+                                                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/code/cmllm/scripts/run_mcr_train_predictions.py", line 41, in load_base_w15
+    model = model.bfloat16().cuda().eval()
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/asdasdsad/wjq/coalminellm_recovery_20260917/.venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4266, in cuda
+    return super().cuda(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 916, in cuda
+    return self._apply(lambda t: t.cuda(device))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 780, in _apply
+    module._apply(fn)
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 780, in _apply
+    module._apply(fn)
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 780, in _apply
+    module._apply(fn)
+  [Previous line repeated 2 more times]
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 805, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 916, in <lambda>
+    return self._apply(lambda t: t.cuda(device))
+                                 ^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 47.40 GiB of which 13.31 MiB is free. Process 708005 has 45.31 GiB memory in use. Including non-PyTorch memory, this process has 2.01 GiB memory in use. Of the allocated memory 1.75 GiB is allocated by PyTorch, and 3.92 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[autodl] finished_at=2026-09-19T17:40:45+08:00
+[autodl] exit_code=1
